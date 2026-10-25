@@ -136,7 +136,7 @@ export function checkGuess(specimenId, guess) {
  */
 export function recordRows(identified) {
   const kinds = new Set(DROP.filter((d) => identified.includes(d.id)).map((d) => kindById(d.kind)));
-  return KINDS.filter((k) => kinds.has(k));
+  return KINDS.filter((k) => k.living && kinds.has(k));
 }
 
 /** Kinds that can photosynthesise: those with chloroplasts. */

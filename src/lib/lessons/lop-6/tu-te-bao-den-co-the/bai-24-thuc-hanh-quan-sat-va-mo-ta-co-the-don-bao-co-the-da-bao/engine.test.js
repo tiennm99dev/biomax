@@ -42,6 +42,7 @@ describe('pond-water microscope', () => {
     expect(checkGuess('a', 'trung-roi')).toBe(false);
     expect(checkGuess('zz', 'trung-roi')).toBe(false);
     expect(recordRows(['b', 'f']).map((k) => k.id)).toEqual(['trung-roi']);
+    expect(recordRows(['a', 'e']).map((k) => k.id)).toEqual(['trung-giay']);
     expect(photosynthetic()).toEqual(['trung-roi', 'tao-luc']);
   });
 });

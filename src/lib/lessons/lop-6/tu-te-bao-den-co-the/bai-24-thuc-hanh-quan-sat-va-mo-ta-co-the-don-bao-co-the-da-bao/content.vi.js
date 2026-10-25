@@ -255,7 +255,7 @@ export default {
       answers: [0, 2, 4],
       hints: ['Dấu hiệu nhận biết là màu xanh của lục lạp hoặc chất diệp lục.'],
       solution:
-        'Trùng roi xanh, tảo lục đơn bào và vi khuẩn lam có lục lạp (hoặc chất diệp lục) nên quang hợp được. Trùng giày và trùng biến hình không có.',
+        'Trùng roi xanh và tảo lục đơn bào có lục lạp, vi khuẩn lam không có lục lạp nhưng có chất diệp lục, nên cả ba quang hợp được. Trùng giày và trùng biến hình không có.',
     },
     {
       type: 'text',
@@ -340,7 +340,7 @@ export default {
   takeaways: [
     'Làm tiêu bản giọt nước ao: nhỏ nước lên lam kính, thêm sợi bông, đậy lamen từ từ, thấm nước thừa; tìm mẫu ở vật kính $10\\times$ rồi quan sát ở $40\\times$.',
     'Trùng roi xanh hình thoi, bơi bằng roi, có lục lạp; trùng giày hình đế giày, bơi bằng lông bơi, không có lục lạp.',
-    'Cơ thể đơn bào có lục lạp (trùng roi xanh, tảo lục đơn bào, vi khuẩn lam) quang hợp được.',
+    'Cơ thể đơn bào có lục lạp (trùng roi xanh, tảo lục đơn bào) hoặc có chất diệp lục (vi khuẩn lam) thì quang hợp được.',
     'Cơ thể đa bào gồm các cơ quan và hệ cơ quan: ở cây có hệ rễ và hệ chồi; ở người có hệ tiêu hoá, tuần hoàn, hô hấp, thần kinh, bài tiết...',
   ],
 };

@@ -46,7 +46,7 @@
     if (!d) return;
     const small = kindById(d.kind).size * scale < SHAPE_PX;
     if (identified.includes(id))
-      message = `Đối tượng ${numberOf(id)} là ${kindById(d.kind).name.toLowerCase()}, em đã ghi vào bảng.`;
+      message = `Đối tượng ${numberOf(id)} là ${kindById(d.kind).name.toLowerCase()}, em đã gọi tên đúng.`;
     else if (lensId === 'vat-kinh-10')
       message = `Đã đánh dấu đối tượng ${numberOf(id)}. ${small ? 'Ảnh còn quá nhỏ, chỉ là một chấm: ' : ''}Chuyển sang vật kính 40× để thấy rõ hình dạng rồi gọi tên.`;
     else
@@ -68,10 +68,12 @@
     if (checkGuess(sel.id, kind)) {
       identified = [...identified, sel.id];
       const k = kindById(kind);
-      message = `Đúng: đối tượng ${numberOf(sel.id)} là ${k.name.toLowerCase()}. ${k.living ? `Hình dạng: ${k.shape}. Di chuyển: ${k.moves}.` : 'Nó không có cấu tạo tế bào.'} Đã ghi vào bảng thu hoạch.`;
+      message = `Đúng: đối tượng ${numberOf(sel.id)} là ${k.name.toLowerCase()}. ${k.living ? `Hình dạng: ${k.shape}. Di chuyển: ${k.moves}. Đã ghi vào bảng thu hoạch.` : 'Nó không có cấu tạo tế bào nên không ghi vào bảng thu hoạch sinh vật.'}`;
     } else {
       const real = kindById(sel.kind);
-      message = `Chưa đúng. Gợi ý: nhìn kĩ cách di chuyển (${real.living ? 'roi, lông bơi hay chân giả' : 'có cấu tạo tế bào không'}) và màu xanh của lục lạp.`;
+      message = real.living
+        ? 'Chưa đúng. Gợi ý: nhìn kĩ cách di chuyển (roi, lông bơi hay chân giả) và màu xanh của lục lạp.'
+        : 'Chưa đúng. Gợi ý: vật này có màng, tế bào chất và nhân không? Nó có tự di chuyển không?';
     }
   }
 

@@ -16,14 +16,23 @@
   function choose(id) {
     thingId = id;
     checked = [];
+    unchecked = null;
   }
+
+  /** @type {string | null} */
+  let unchecked = $state(null);
 
   /** @param {string} id */
   function toggle(id) {
-    checked = checked.includes(id) ? checked.filter((x) => x !== id) : [...checked, id];
+    unchecked = checked.includes(id) ? id : null;
+    checked = unchecked ? checked.filter((x) => x !== id) : [...checked, id];
   }
 
   const verdict = $derived.by(() => {
+    if (unchecked) {
+      const off = PROCESSES.find((p) => p.id === unchecked);
+      return `Đã bỏ kiểm tra ${off ? off.name.toLowerCase() : ''}. Đã kiểm tra ${checked.length}/${PROCESSES.length} quá trình.`;
+    }
     if (checked.length === 0)
       return `Bấm vào từng quá trình sống để kiểm tra ${thing.name.toLowerCase()}.`;
     if (!allChecked) {
