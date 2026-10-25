@@ -2,7 +2,14 @@
   import OrderInput from '#lib/core/order-input.svelte';
   import SliderField from '#lib/core/slider-field.svelte';
   import { button } from '#lib/core/ui.js';
-  import { RESULT_TEXT, START_ORDER, STEPS, correctPlaces, yogurtOutcome } from './engine.js';
+  import {
+    RESULT_TEXT,
+    START_ORDER,
+    STEPS,
+    correctPlaces,
+    startNote,
+    yogurtOutcome,
+  } from './engine.js';
 
   const uid = $props.id();
 
@@ -137,6 +144,7 @@
       aria-live="polite"
     >
       {RESULT_TEXT[outcome.state]}
+      {startNote(mixTemp)}
     </p>
     <p class="text-xs text-slate-600">
       Mô hình đơn giản theo cách làm trong sách: hỗn hợp ban đầu khoảng 50 °C, ủ kín trong thùng xốp

@@ -1,5 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { RESULT_TEXT, START_ORDER, STEPS, correctPlaces, rateAt, yogurtOutcome } from './engine.js';
+import {
+  RESULT_TEXT,
+  START_ORDER,
+  STEPS,
+  correctPlaces,
+  rateAt,
+  startNote,
+  yogurtOutcome,
+} from './engine.js';
 
 describe('yogurt practical', () => {
   it('starts from a shuffled order of every step', () => {
@@ -26,6 +34,15 @@ describe('yogurt practical', () => {
   it('ferments slowly from a cool start', () => {
     expect(yogurtOutcome(25, 12).state).toBe('long');
     expect(yogurtOutcome(35, 12).state).toBe('sanh');
+  });
+
+  it('loses part of the starter just below the killing temperature', () => {
+    expect(rateAt(58)).toBeLessThan(rateAt(50));
+    expect(yogurtOutcome(58, 12).state).toBe('sanh');
+    expect(yogurtOutcome(55, 12).state).toBe('dat');
+    expect(startNote(58)).toContain('chết một phần');
+    expect(startNote(50)).toBe('');
+    expect(startNote(25)).toContain('nguội');
   });
 
   it('explains every result', () => {

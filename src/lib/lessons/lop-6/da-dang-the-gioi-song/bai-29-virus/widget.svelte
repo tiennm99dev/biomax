@@ -77,7 +77,7 @@
 
   <svg
     viewBox="0 0 {W} {H}"
-    class="w-full max-w-xl cursor-grab touch-none rounded-xl border border-slate-200 bg-slate-950"
+    class="w-full max-w-xl cursor-grab touch-pan-y rounded-xl select-none border border-slate-200 bg-slate-950"
     role="img"
     aria-label="Mô hình virus {shape.name.toLowerCase()}, đang xoay {fmtDeg(angle)}. {shape.parts}"
     use:spin

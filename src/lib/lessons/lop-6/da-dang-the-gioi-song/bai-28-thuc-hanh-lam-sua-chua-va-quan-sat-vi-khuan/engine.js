@@ -5,8 +5,9 @@
  * incubation in the insulated box.
  *
  * Lactic acid bacteria are killed when the milk is too hot (60 °C and
- * above), work best when it starts warm (about 40-59 °C; the book cools the
- * water to about 50 °C) and slowly when it is cool. At the best start the
+ * above), lose part of the starter just below that (above 55 °C), work best
+ * when it starts warm (about 40-55 °C; the book cools the water to about
+ * 50 °C) and slowly when it is cool. At the best start the
  * milk sets in about 10-14 hours; longer makes it too sour.
  */
 
@@ -37,9 +38,24 @@ export function correctPlaces(order) {
  */
 export function rateAt(mixTemp) {
   if (mixTemp >= 60) return 0;
+  if (mixTemp > 55) return 0.5;
   if (mixTemp >= 40) return 1;
   if (mixTemp >= 30) return 0.6;
   return 0.3;
+}
+
+/**
+ * Why the milk sets more slowly than at the book temperature, or '' when
+ * the start is right (or the starter was killed, which RESULT_TEXT explains).
+ * @param {number} mixTemp °C of the milk when the starter is added
+ */
+export function startNote(mixTemp) {
+  if (mixTemp >= 60) return '';
+  if (mixTemp > 55)
+    return 'Hỗn hợp hơi nóng (trên 55 °C) đã làm chết một phần vi khuẩn lactic, nên sữa đông chậm hơn.';
+  if (mixTemp < 40)
+    return 'Hỗn hợp còn nguội (dưới 40 °C) nên vi khuẩn lactic hoạt động chậm, sữa lâu đông.';
+  return '';
 }
 
 /** Hours to set at the best rate. */
@@ -68,7 +84,7 @@ export function yogurtOutcome(mixTemp, hours) {
 /** What the learner sees for each result, and why. @type {Record<YogurtState, string>} */
 export const RESULT_TEXT = {
   chet: 'Sữa không đông: hỗn hợp quá nóng (từ 60 °C trở lên) đã tiêu diệt vi khuẩn lactic trong sữa chua giống. Vì vậy không pha sữa chua giống bằng nước sôi.',
-  long: 'Sữa vẫn còn lỏng: vi khuẩn lactic mới tạo ra ít acid lactic. Cần ủ thêm, hoặc giữ hỗn hợp ấm hơn.',
+  long: 'Sữa vẫn còn lỏng: vi khuẩn lactic mới tạo ra ít acid lactic. Cần ủ thêm.',
   sanh: 'Sữa đã sánh lại nhưng chưa đông hẳn: vi khuẩn lactic đang biến đường thành acid lactic. Ủ thêm một thời gian nữa.',
   dat: 'Sữa chua đã đông mịn, có vị chua dịu: đạt. Cho ngay vào tủ lạnh để vi khuẩn lactic hoạt động chậm lại.',
   'qua-chua':
