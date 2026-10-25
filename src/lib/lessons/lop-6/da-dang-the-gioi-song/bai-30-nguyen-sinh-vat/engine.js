@@ -153,7 +153,7 @@ export const DISEASES = [
     measures: [
       {
         id: 'man',
-        text: 'Ngủ trong màn, kể cả ban ngày',
+        text: 'Ngủ trong màn',
         breaks: 1,
         why: 'Muỗi không đốt được người nên không mang trùng đi được.',
       },

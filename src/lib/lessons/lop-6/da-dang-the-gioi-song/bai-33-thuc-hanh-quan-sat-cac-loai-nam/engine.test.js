@@ -21,8 +21,8 @@ describe('fungi diagrams', () => {
 describe('mould growth model', () => {
   it('shows nothing during the lag, then grows on moist bread at room temperature', () => {
     expect(mouldCover('phong', 'am', LAG_DAYS)).toBe(0);
-    expect(mouldCover('phong', 'am', 3)).toBe(45);
-    expect(mouldCover('phong', 'am', 5)).toBe(83);
+    expect(mouldCover('phong', 'am', 3)).toBe(30);
+    expect(mouldCover('phong', 'am', 5)).toBe(65);
     expect(mouldCover('phong', 'am', 10)).toBeLessThanOrEqual(100);
   });
 
@@ -35,7 +35,8 @@ describe('mould growth model', () => {
   it('describes each stage', () => {
     expect(mouldStage('tu-lanh', 'am', 5).text).toContain('lạnh hoặc khô');
     expect(mouldStage('phong', 'am', 1).cover).toBeLessThan(VISIBLE);
-    expect(mouldStage('phong', 'am', 2.5).text).toContain('sợi nấm');
+    expect(mouldStage('phong', 'am', 3).text).toContain('sợi nấm');
+    expect(mouldStage('phong', 'am', 4).text).toContain('túi bào tử');
     expect(mouldStage('phong', 'am', 5).text).toContain('túi bào tử');
   });
 });

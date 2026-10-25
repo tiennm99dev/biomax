@@ -227,6 +227,12 @@ export const BREAD_MOULD = {
 /** Growth days before any mould shows. */
 export const LAG_DAYS = 2;
 
+/**
+ * Growth per day once mould shows: moist bread at room temperature passes the
+ * white-threads stage on day 3 and turns dark from day 4.
+ */
+export const GROWTH = 0.35;
+
 /** How fast mould grows, relative to a moist slice at room temperature. */
 export const PLACE_RATE = { 'tu-lanh': 0.15, phong: 1 };
 export const MOISTURE_RATE = { kho: 0.1, am: 1 };
@@ -241,7 +247,7 @@ export const MOISTURE_RATE = { kho: 0.1, am: 1 };
 export function mouldCover(place, moisture, days) {
   const e = PLACE_RATE[place] * MOISTURE_RATE[moisture] * days;
   if (e <= LAG_DAYS) return 0;
-  return Math.min(100, Math.round(100 * (1 - Math.exp(-0.6 * (e - LAG_DAYS)))));
+  return Math.min(100, Math.round(100 * (1 - Math.exp(-GROWTH * (e - LAG_DAYS)))));
 }
 
 /** Cover (%) from which mould is seen by eye. */

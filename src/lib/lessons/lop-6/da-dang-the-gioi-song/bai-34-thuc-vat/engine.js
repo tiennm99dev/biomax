@@ -96,7 +96,7 @@ export function emptyReason(f) {
   if (f.hoa === 'co' && f.hat === 'khong')
     return 'Không có nhóm nào: cây có hoa thì đều có hạt (hạt nằm trong quả).';
   if ((f.hat === 'co' || f.hoa === 'co') && f.mach === 'khong')
-    return 'Không có nhóm nào: cây có hạt đều có mạch dẫn. Chỉ rêu là chưa có mạch dẫn.';
+    return 'Không có nhóm nào: cây có hạt, có hoa đều có mạch dẫn. Chỉ rêu là chưa có mạch dẫn.';
   return 'Không có nhóm nào phù hợp.';
 }
 

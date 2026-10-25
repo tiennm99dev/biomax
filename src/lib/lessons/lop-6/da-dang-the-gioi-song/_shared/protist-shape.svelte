@@ -23,13 +23,19 @@
    */
   let { kind, L, t = 0, dotBelow = 0 } = $props();
 
-  const GREEN = new Set(['trung-roi', 'tao-luc', 'tao-silic']);
+  const GREEN = new Set(['trung-roi', 'tao-luc']);
 </script>
 
 {#if L < dotBelow}
   <circle
     r={Math.max(2, L / 2)}
-    fill={kind === 'bot-khi' ? 'none' : GREEN.has(kind) ? '#16a34a' : '#78716c'}
+    fill={kind === 'bot-khi'
+      ? 'none'
+      : kind === 'tao-silic'
+        ? '#a16207'
+        : GREEN.has(kind)
+          ? '#16a34a'
+          : '#78716c'}
     stroke={kind === 'bot-khi' ? '#334155' : 'none'}
   />
 {:else if kind === 'trung-roi'}
