@@ -25,6 +25,7 @@ describe('cell sizes and magnification', () => {
     expect(isVisible(1000, 1)).toBe(true);
     expect(isVisible(60, 1)).toBe(false);
     expect(isVisible(60, 2)).toBe(true);
+    expect(STOPS.filter((m) => m > 1 && m < 3)).toEqual([]);
   });
 
   it('names the instrument for each magnification', () => {
@@ -41,15 +42,16 @@ describe('cell sizes and magnification', () => {
       'vi-khuan': 100,
       'nam-men': 20,
       'hong-cau': 20,
-      'niem-mac': 2,
+      'niem-mac': 3,
       'vay-hanh': 1,
       'trung-ca': 1,
     });
     expect(firstVisibleStop(0.01)).toBeNull();
   });
 
-  it('needs an image of about 1 mm to see a cell clearly', () => {
-    expect(viewState(1000, 1)).toBe('clear');
+  it('needs an image of about 2 mm to see a cell clearly', () => {
+    expect(viewState(1000, 1)).toBe('dot');
+    expect(viewState(1000, 3)).toBe('clear');
     expect(viewState(300, 1)).toBe('dot');
     expect(viewState(2, 10)).toBe('hidden');
     const clear = Object.fromEntries(CELLS.map((c) => [c.id, firstClearStop(c.size)]));
@@ -57,11 +59,15 @@ describe('cell sizes and magnification', () => {
       'vi-khuan': 1000,
       'nam-men': 400,
       'hong-cau': 400,
-      'niem-mac': 20,
-      'vay-hanh': 5,
-      'trung-ca': 1,
+      'niem-mac': 40,
+      'vay-hanh': 10,
+      'trung-ca': 3,
     });
     expect(firstClearStop(0.5)).toBeNull();
+    // Cells smaller than 0,1 mm need the microscope, as the lesson says.
+    for (const c of CELLS.filter((x) => x.size < 100)) {
+      expect(toolFor(firstClearStop(c.size) ?? 1)).toBe('Kính hiển vi quang học');
+    }
   });
 
   it('writes lengths with a readable unit and a decimal comma', () => {

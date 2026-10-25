@@ -93,15 +93,17 @@
             stroke="#3f6212"
             stroke-width="6"
           />
-          <rect
-            x={c.x - c.rx * 0.2}
-            y={cy - c.ry * 0.6}
-            width={c.rx * 0.9}
-            height={c.ry * 1.2}
-            rx="8"
-            fill="#e0f2fe"
-            stroke="#0284c7"
-          />
+          {#if c.nuclei.length === 1}
+            <rect
+              x={c.x - c.rx * 0.2}
+              y={cy - c.ry * 0.6}
+              width={c.rx * 0.9}
+              height={c.ry * 1.2}
+              rx="8"
+              fill="#e0f2fe"
+              stroke="#0284c7"
+            />
+          {/if}
         {/if}
         {#each c.nuclei as nx (nx)}
           <circle

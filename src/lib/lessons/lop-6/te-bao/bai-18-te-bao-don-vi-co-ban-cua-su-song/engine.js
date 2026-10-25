@@ -21,12 +21,14 @@ export const EYE_LIMIT_UM = 100;
 
 /**
  * In this model the shape of a cell is seen clearly once its image is about
- * 1 mm = 1000 µm across; between 0,1 mm and 1 mm it is only a speck.
+ * 2 mm = 2000 µm across; between 0,1 mm and 2 mm it is only a speck. With
+ * this threshold a cheek cell needs the microscope (2,4 mm at 40×, 1,2 mm at
+ * the strongest magnifying glass), as the lesson text says.
  */
-export const CLEAR_UM = 1000;
+export const CLEAR_UM = 2000;
 
 /** Magnifications the slider offers (times). */
-export const STOPS = [1, 2, 3, 5, 10, 20, 40, 100, 400, 1000];
+export const STOPS = [1, 3, 5, 10, 20, 40, 100, 400, 1000];
 
 /**
  * Typical sizes (µm, the longest dimension) of the cells the lesson compares.
@@ -73,7 +75,7 @@ export const CELLS = [
     name: 'Tế bào trứng cá',
     size: 1000,
     shape: 'egg',
-    note: 'Hình cầu, đường kính khoảng 1 mm, nhìn được bằng mắt thường.',
+    note: 'Hình cầu, đường kính khoảng 1 mm: mắt thường thấy được, kính lúp thấy rõ hình dạng.',
   },
 ];
 
@@ -119,7 +121,8 @@ export function firstClearStop(size) {
 
 /**
  * Instrument that gives magnification `mag`: the naked eye (1×), a
- * magnifying glass (up to 20×) or a light microscope (40× and more).
+ * magnifying glass (3× to 20×) or a light microscope (40× and more), the
+ * ranges the lesson text gives.
  * @param {number} mag
  */
 export function toolFor(mag) {

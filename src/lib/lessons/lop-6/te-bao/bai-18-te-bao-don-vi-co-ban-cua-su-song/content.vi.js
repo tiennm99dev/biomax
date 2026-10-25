@@ -97,7 +97,7 @@ export default {
             [
               'Tế bào biểu bì vảy hành',
               'dài khoảng $200$ đến $400\\ \\mu\\text{m}$',
-              'Kính hiển vi',
+              'Kính hiển vi (kính lúp chỉ thấy hình dạng)',
             ],
             ['Tế bào trứng cá', 'đường kính khoảng $1\\ \\text{mm}$', 'Mắt thường, kính lúp'],
             ['Tế bào trứng gà (lòng đỏ)', 'đường kính khoảng $3\\ \\text{cm}$', 'Mắt thường'],
