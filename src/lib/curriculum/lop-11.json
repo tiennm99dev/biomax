@@ -1,0 +1,430 @@
+{
+  "grade": 11,
+  "volumes": ["Sách giáo khoa (1 tập)", "Chuyên đề học tập Sinh học 11"],
+  "chapters": [
+    {
+      "no": 1,
+      "label": "Chương 1",
+      "title": "Trao đổi chất và chuyển hóa năng lượng ở sinh vật",
+      "slug": "trao-doi-chat-va-chuyen-hoa-nang-luong-o-sinh-vat",
+      "strand": "sinh-hoc-co-the",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 1,
+          "title": "Bài 1. Khái quát về trao đổi chất và chuyển hóa năng lượng",
+          "slug": "bai-1-khai-quat-ve-trao-doi-chat-va-chuyen-hoa-nang-luong",
+          "kind": "theory",
+          "keyIdeas": [
+            "Các giai đoạn chuyển hóa năng lượng trong sinh giới",
+            "Phương thức trao đổi chất"
+          ],
+          "interactiveIdea": "Sơ đồ dòng năng lượng từ Mặt Trời qua sinh vật tự dưỡng và dị dưỡng."
+        },
+        {
+          "no": 2,
+          "title": "Bài 2. Trao đổi nước và khoáng ở thực vật",
+          "slug": "bai-2-trao-doi-nuoc-va-khoang-o-thuc-vat",
+          "kind": "theory",
+          "keyIdeas": [
+            "Hấp thụ nước và khoáng ở rễ",
+            "Vận chuyển trong cây",
+            "Thoát hơi nước",
+            "Vai trò nguyên tố khoáng"
+          ],
+          "interactiveIdea": "Mô phỏng cây với dòng mạch gỗ và mạch rây; thanh trượt độ ẩm, ánh sáng ảnh hưởng thoát hơi nước."
+        },
+        {
+          "no": 3,
+          "title": "Bài 3. Thực hành: Trao đổi nước và khoáng ở thực vật",
+          "slug": "bai-3-thuc-hanh-trao-doi-nuoc-va-khoang-o-thuc-vat",
+          "kind": "practice",
+          "keyIdeas": ["Thí nghiệm thoát hơi nước", "Thí nghiệm vai trò phân bón"],
+          "interactiveIdea": "Thí nghiệm ảo cân cành cây theo thời gian, vẽ đồ thị lượng nước thoát."
+        },
+        {
+          "no": 4,
+          "title": "Bài 4. Quang hợp ở thực vật",
+          "slug": "bai-4-quang-hop-o-thuc-vat",
+          "kind": "theory",
+          "keyIdeas": ["Pha sáng và pha tối", "Thực vật C3, C4, CAM", "Yếu tố ảnh hưởng"],
+          "interactiveIdea": "Sơ đồ lục lạp hoạt hình pha sáng và chu trình Calvin; đồ thị điểm bù và điểm bão hòa ánh sáng."
+        },
+        {
+          "no": 5,
+          "title": "Bài 5. Thực hành: Quang hợp ở thực vật",
+          "slug": "bai-5-thuc-hanh-quang-hop-o-thuc-vat",
+          "kind": "practice",
+          "keyIdeas": ["Tách chiết sắc tố", "Thí nghiệm sản phẩm quang hợp"],
+          "interactiveIdea": "Sắc kí giấy ảo tách các dải sắc tố lục lạp."
+        },
+        {
+          "no": 6,
+          "title": "Bài 6. Hô hấp ở thực vật",
+          "slug": "bai-6-ho-hap-o-thuc-vat",
+          "kind": "theory",
+          "keyIdeas": ["Các con đường hô hấp", "Hô hấp sáng", "Quan hệ với quang hợp"],
+          "interactiveIdea": "Sơ đồ hô hấp hiếu khí và lên men, so sánh số ATP tạo ra."
+        },
+        {
+          "no": 7,
+          "title": "Bài 7. Thực hành: Hô hấp ở thực vật",
+          "slug": "bai-7-thuc-hanh-ho-hap-o-thuc-vat",
+          "kind": "practice",
+          "keyIdeas": ["Thí nghiệm hô hấp thải CO₂, tỏa nhiệt"],
+          "interactiveIdea": "Thí nghiệm ảo đo nhiệt độ bình hạt nảy mầm theo thời gian."
+        },
+        {
+          "no": 8,
+          "title": "Bài 8. Dinh dưỡng và tiêu hóa ở động vật",
+          "slug": "bai-8-dinh-duong-va-tieu-hoa-o-dong-vat",
+          "kind": "theory",
+          "keyIdeas": ["Các hình thức tiêu hóa", "Tiêu hóa ở người", "Dinh dưỡng hợp lí"],
+          "interactiveIdea": "So sánh ống tiêu hóa thú ăn thịt và thú ăn cỏ bằng hai sơ đồ tương tác."
+        },
+        {
+          "no": 9,
+          "title": "Bài 9. Hô hấp ở động vật",
+          "slug": "bai-9-ho-hap-o-dong-vat",
+          "kind": "theory",
+          "keyIdeas": ["Bề mặt trao đổi khí", "Các hình thức hô hấp", "Bệnh hô hấp"],
+          "interactiveIdea": "Hoạt hình mang cá và ống khí côn trùng, so sánh hiệu quả trao đổi khí."
+        },
+        {
+          "no": 10,
+          "title": "Bài 10. Tuần hoàn ở động vật",
+          "slug": "bai-10-tuan-hoan-o-dong-vat",
+          "kind": "theory",
+          "keyIdeas": ["Hệ tuần hoàn hở và kín", "Tính tự động của tim", "Huyết áp và vận tốc máu"],
+          "interactiveIdea": "Mô hình tim với chu kì tim, đồ thị huyết áp theo loại mạch."
+        },
+        {
+          "no": 11,
+          "title": "Bài 11. Thực hành: Một số thí nghiệm về tuần hoàn",
+          "slug": "bai-11-thuc-hanh-mot-so-thi-nghiem-ve-tuan-hoan",
+          "kind": "practice",
+          "keyIdeas": ["Đo nhịp tim, huyết áp", "Ảnh hưởng của vận động"],
+          "interactiveIdea": "Công cụ ghi nhịp tim trước/sau vận động và vẽ biểu đồ so sánh."
+        },
+        {
+          "no": 12,
+          "title": "Bài 12. Miễn dịch ở người và động vật",
+          "slug": "bai-12-mien-dich-o-nguoi-va-dong-vat",
+          "kind": "theory",
+          "keyIdeas": [
+            "Miễn dịch không đặc hiệu và đặc hiệu",
+            "Miễn dịch dịch thể và tế bào",
+            "Vắc-xin"
+          ],
+          "interactiveIdea": "Trò chơi phòng thủ cơ thể: tế bào miễn dịch nhận diện và tiêu diệt mầm bệnh theo hai lớp bảo vệ."
+        },
+        {
+          "no": 13,
+          "title": "Bài 13. Bài tiết và cân bằng nội môi",
+          "slug": "bai-13-bai-tiet-va-can-bang-noi-moi",
+          "kind": "theory",
+          "keyIdeas": ["Cơ quan bài tiết", "Cơ chế cân bằng nội môi", "Vai trò của thận và gan"],
+          "interactiveIdea": "Sơ đồ vòng điều hòa ngược: chỉnh đường huyết và xem insulin/glucagon phản hồi."
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "label": "Chương 2",
+      "title": "Cảm ứng ở sinh vật",
+      "slug": "cam-ung-o-sinh-vat",
+      "strand": "cam-ung",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 14,
+          "title": "Bài 14. Khái quát về cảm ứng ở sinh vật",
+          "slug": "bai-14-khai-quat-ve-cam-ung-o-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Khái niệm cảm ứng", "Các bộ phận tham gia cảm ứng"],
+          "interactiveIdea": "Sơ đồ cung phản xạ tổng quát với các khâu tiếp nhận, dẫn truyền, xử lí, trả lời."
+        },
+        {
+          "no": 15,
+          "title": "Bài 15. Cảm ứng ở thực vật",
+          "slug": "bai-15-cam-ung-o-thuc-vat",
+          "kind": "theory",
+          "keyIdeas": ["Các kiểu hướng động", "Ứng động", "Ứng dụng"],
+          "interactiveIdea": "Mô phỏng hướng sáng, hướng trọng lực: xoay chậu và đặt nguồn sáng để quan sát cây uốn."
+        },
+        {
+          "no": 16,
+          "title": "Bài 16. Thực hành: Cảm ứng ở thực vật",
+          "slug": "bai-16-thuc-hanh-cam-ung-o-thuc-vat",
+          "kind": "practice",
+          "keyIdeas": ["Thí nghiệm hướng động", "Ghi chép kết quả"],
+          "interactiveIdea": "Nhật kí thí nghiệm số với ảnh theo ngày và đo góc uốn của cây."
+        },
+        {
+          "no": 17,
+          "title": "Bài 17. Cảm ứng ở động vật",
+          "slug": "bai-17-cam-ung-o-dong-vat",
+          "kind": "theory",
+          "keyIdeas": ["Hệ thần kinh các dạng", "Điện thế nghỉ, điện thế hoạt động", "Synapse"],
+          "interactiveIdea": "Mô phỏng điện thế hoạt động trên neuron với đồ thị điện thế màng và hoạt hình synapse."
+        },
+        {
+          "no": 18,
+          "title": "Bài 18. Tập tính ở động vật",
+          "slug": "bai-18-tap-tinh-o-dong-vat",
+          "kind": "theory",
+          "keyIdeas": ["Tập tính bẩm sinh và học được", "Các hình thức học tập", "Ứng dụng"],
+          "interactiveIdea": "Mô phỏng thí nghiệm điều kiện hóa của Pavlov với chuông và thức ăn."
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "label": "Chương 3",
+      "title": "Sinh trưởng và phát triển ở sinh vật",
+      "slug": "sinh-truong-va-phat-trien-o-sinh-vat",
+      "strand": "sinh-truong-phat-trien",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 19,
+          "title": "Bài 19. Khái quát về sinh trưởng và phát triển ở sinh vật",
+          "slug": "bai-19-khai-quat-ve-sinh-truong-va-phat-trien-o-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Khái niệm sinh trưởng, phát triển", "Vòng đời và tuổi thọ"],
+          "interactiveIdea": "Dòng thời gian vòng đời của các loài so sánh tuổi thọ."
+        },
+        {
+          "no": 20,
+          "title": "Bài 20. Sinh trưởng và phát triển ở thực vật",
+          "slug": "bai-20-sinh-truong-va-phat-trien-o-thuc-vat",
+          "kind": "theory",
+          "keyIdeas": [
+            "Mô phân sinh",
+            "Sinh trưởng sơ cấp và thứ cấp",
+            "Hormone thực vật",
+            "Quang chu kì"
+          ],
+          "interactiveIdea": "Mô phỏng ra hoa theo quang chu kì: chỉnh độ dài ngày đêm cho cây ngày dài/ngày ngắn."
+        },
+        {
+          "no": 21,
+          "title": "Bài 21. Thực hành: Bấm ngọn, tỉa cành, xử lí kích thích tố và tính tuổi cây",
+          "slug": "bai-21-thuc-hanh-bam-ngon-tia-canh-xu-li-kich-thich-to-va-tinh-tuoi-cay",
+          "kind": "practice",
+          "keyIdeas": ["Bấm ngọn, tỉa cành", "Xử lí auxin", "Đếm vòng gỗ"],
+          "interactiveIdea": "Lát cắt thân cây ảo đếm vòng năm để tính tuổi cây."
+        },
+        {
+          "no": 22,
+          "title": "Bài 22. Sinh trưởng và phát triển ở động vật",
+          "slug": "bai-22-sinh-truong-va-phat-trien-o-dong-vat",
+          "kind": "theory",
+          "keyIdeas": [
+            "Phát triển qua và không qua biến thái",
+            "Hormone sinh trưởng",
+            "Yếu tố ảnh hưởng"
+          ],
+          "interactiveIdea": "So sánh vòng đời bướm (biến thái hoàn toàn) và châu chấu (không hoàn toàn) bằng hoạt hình."
+        },
+        {
+          "no": 23,
+          "title": "Bài 23. Thực hành: Quan sát biến thái ở động vật",
+          "slug": "bai-23-thuc-hanh-quan-sat-bien-thai-o-dong-vat",
+          "kind": "practice",
+          "keyIdeas": ["Quan sát vòng đời côn trùng, ếch", "Mô tả các giai đoạn"],
+          "interactiveIdea": "Ảnh tua thời gian vòng đời ếch, học sinh gán nhãn từng giai đoạn."
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "label": "Chương 4",
+      "title": "Sinh sản ở sinh vật",
+      "slug": "sinh-san-o-sinh-vat",
+      "strand": "sinh-san",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 24,
+          "title": "Bài 24. Khái quát về sinh sản ở sinh vật",
+          "slug": "bai-24-khai-quat-ve-sinh-san-o-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Sinh sản vô tính và hữu tính", "Ưu nhược điểm"],
+          "interactiveIdea": "Bảng so sánh tương tác đa dạng di truyền của con trong hai hình thức sinh sản."
+        },
+        {
+          "no": 25,
+          "title": "Bài 25. Sinh sản ở thực vật",
+          "slug": "bai-25-sinh-san-o-thuc-vat",
+          "kind": "theory",
+          "keyIdeas": ["Sinh sản vô tính ở thực vật", "Thụ phấn, thụ tinh kép", "Quả và hạt"],
+          "interactiveIdea": "Hoạt hình thụ tinh kép ở thực vật có hoa từng bước."
+        },
+        {
+          "no": 26,
+          "title": "Bài 26. Thực hành: Nhân giống vô tính và thụ phấn cho cây",
+          "slug": "bai-26-thuc-hanh-nhan-giong-vo-tinh-va-thu-phan-cho-cay",
+          "kind": "practice",
+          "keyIdeas": ["Giâm, chiết, ghép", "Thụ phấn nhân tạo"],
+          "interactiveIdea": "Hướng dẫn tương tác các bước chiết cành, ghép cây với kiểm tra hiểu bài."
+        },
+        {
+          "no": 27,
+          "title": "Bài 27. Sinh sản ở động vật",
+          "slug": "bai-27-sinh-san-o-dong-vat",
+          "kind": "theory",
+          "keyIdeas": ["Sinh sản vô tính và hữu tính", "Điều hòa sinh sản", "Sinh đẻ có kế hoạch"],
+          "interactiveIdea": "Sơ đồ trục hormone điều hòa sinh tinh, sinh trứng với điều hòa ngược."
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "label": "Chương 5",
+      "title": "Mối quan hệ giữa các quá trình sinh lí trong cơ thể sinh vật và một số ngành nghề liên quan đến sinh học cơ thể",
+      "slug": "moi-quan-he-giua-cac-qua-trinh-sinh-li-trong-co-the-sinh-vat-va-mot-so-nganh",
+      "strand": "sinh-hoc-co-the",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 28,
+          "title": "Bài 28. Mối quan hệ giữa các quá trình sinh lí trong cơ thể sinh vật",
+          "slug": "bai-28-moi-quan-he-giua-cac-qua-trinh-sinh-li-trong-co-the-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": [
+            "Cơ thể là hệ thống mở, tự điều chỉnh",
+            "Quan hệ giữa các quá trình sinh lí"
+          ],
+          "interactiveIdea": "Mạng liên kết các quá trình sinh lí; tắt một quá trình để xem ảnh hưởng dây chuyền."
+        },
+        {
+          "no": 29,
+          "title": "Bài 29. Một số ngành nghề liên quan đến sinh học cơ thể",
+          "slug": "bai-29-mot-so-nganh-nghe-lien-quan-den-sinh-hoc-co-the",
+          "kind": "theory",
+          "keyIdeas": ["Ngành nghề y dược, nông nghiệp", "Định hướng nghề nghiệp"],
+          "interactiveIdea": "Trắc nghiệm sở thích gợi ý ngành nghề sinh học cơ thể phù hợp."
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "label": "Chuyên đề 1",
+      "title": "Dinh dưỡng khoáng - Tăng năng suất cây trồng và nông nghiệp sạch",
+      "slug": "cd-dinh-duong-khoang-tang-nang-suat-cay-trong-va-nong-nghiep-sach",
+      "strand": "chuyen-de",
+      "volume": "Chuyên đề học tập Sinh học 11",
+      "lessons": [
+        {
+          "no": 1,
+          "title": "Bài 1. Nguyên tắc và các biện pháp kĩ thuật sử dụng dinh dưỡng khoáng trong nền nông nghiệp sạch",
+          "slug": "cd-bai-1-nguyen-tac-va-cac-bien-phap-ki-thuat-su-dung-dinh-duong-khoang-trong",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Nông nghiệp sạch", "Nguyên tắc bón phân hợp lí"],
+          "interactiveIdea": "Máy tính lượng phân bón theo loại cây, giai đoạn và loại đất."
+        },
+        {
+          "no": 2,
+          "title": "Bài 2. Mô hình thủy canh theo hướng phát triển nông nghiệp sạch",
+          "slug": "cd-bai-2-mo-hinh-thuy-canh-theo-huong-phat-trien-nong-nghiep-sach",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Nguyên lí thủy canh", "Các mô hình thủy canh"],
+          "interactiveIdea": "Mô phỏng hệ thủy canh chỉnh pH, EC dung dịch và theo dõi cây phát triển."
+        },
+        {
+          "no": 3,
+          "title": "Bài 3. Dự án: Điều tra tình hình sử dụng phân bón tại địa phương hoặc thực hành trồng cây với các kĩ thuật bón phân phù hợp",
+          "slug": "cd-bai-3-du-an-dieu-tra-tinh-hinh-su-dung-phan-bon-tai-dia-phuong-hoac-thuc-hanh",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Thiết kế điều tra", "Báo cáo kết quả"],
+          "interactiveIdea": "Khung dự án với biểu mẫu khảo sát và biểu đồ tổng hợp."
+        },
+        {
+          "no": 4,
+          "title": "Bài 4. Thực hành: Thí nghiệm chứng minh tác dụng của loại phân bón, cách bón và hàm lượng phân bón đối với cây trồng",
+          "slug": "cd-bai-4-thuc-hanh-thi-nghiem-chung-minh-tac-dung-cua-loai-phan-bon-cach-bon-va",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Bố trí thí nghiệm đối chứng", "Phân tích kết quả"],
+          "interactiveIdea": "Thí nghiệm ảo nhiều chậu với loại và liều phân khác nhau, so sánh chiều cao cây."
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "label": "Chuyên đề 2",
+      "title": "Một số bệnh dịch ở người và cách phòng, chống",
+      "slug": "cd-mot-so-benh-dich-o-nguoi-va-cach-phong-chong",
+      "strand": "chuyen-de",
+      "volume": "Chuyên đề học tập Sinh học 11",
+      "lessons": [
+        {
+          "no": 5,
+          "title": "Bài 5. Bệnh dịch và tác nhân gây bệnh ở người",
+          "slug": "cd-bai-5-benh-dich-va-tac-nhan-gay-benh-o-nguoi",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Khái niệm bệnh dịch", "Tác nhân gây bệnh"],
+          "interactiveIdea": "Thẻ tác nhân gây bệnh (virus, vi khuẩn, nấm, kí sinh trùng) với ví dụ bệnh dịch."
+        },
+        {
+          "no": 6,
+          "title": "Bài 6. Nguyên nhân lây nhiễm bệnh dịch ở người",
+          "slug": "cd-bai-6-nguyen-nhan-lay-nhiem-benh-dich-o-nguoi",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Con đường lây truyền", "Yếu tố thuận lợi cho dịch"],
+          "interactiveIdea": "Mô phỏng lây truyền SIR với các con đường lây khác nhau."
+        },
+        {
+          "no": 7,
+          "title": "Bài 7. Các biện pháp phòng, chống bệnh dịch ở người",
+          "slug": "cd-bai-7-cac-bien-phap-phong-chong-benh-dich-o-nguoi",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Vệ sinh, vắc-xin", "Cách li và điều trị"],
+          "interactiveIdea": "Mô phỏng dịch: bật/tắt biện pháp phòng chống và xem đường cong ca bệnh thay đổi."
+        },
+        {
+          "no": 8,
+          "title": "Bài 8. Dự án: Điều tra một số bệnh dịch phổ biến ở người và tuyên truyền phòng, chống bệnh",
+          "slug": "cd-bai-8-du-an-dieu-tra-mot-so-benh-dich-pho-bien-o-nguoi-va-tuyen-truyen-phong",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Điều tra bệnh dịch phổ biến", "Sản phẩm tuyên truyền"],
+          "interactiveIdea": "Công cụ tạo áp phích tuyên truyền và biểu đồ số liệu điều tra."
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "label": "Chuyên đề 3",
+      "title": "Vệ sinh an toàn thực phẩm",
+      "slug": "cd-ve-sinh-an-toan-thuc-pham",
+      "strand": "chuyen-de",
+      "volume": "Chuyên đề học tập Sinh học 11",
+      "lessons": [
+        {
+          "no": 9,
+          "title": "Bài 9. Khái quát về vệ sinh an toàn thực phẩm",
+          "slug": "cd-bai-9-khai-quat-ve-ve-sinh-an-toan-thuc-pham",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Khái niệm vệ sinh an toàn thực phẩm", "Nguyên nhân mất an toàn"],
+          "interactiveIdea": "Trò chơi bếp ăn: phát hiện các vi phạm vệ sinh an toàn thực phẩm trong hình."
+        },
+        {
+          "no": 10,
+          "title": "Bài 10. Ngộ độc thực phẩm",
+          "slug": "cd-bai-10-ngo-doc-thuc-pham",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Nguyên nhân ngộ độc", "Triệu chứng và xử lí", "Phòng ngừa"],
+          "interactiveIdea": "Cây quyết định sơ cứu khi ngộ độc thực phẩm theo triệu chứng."
+        },
+        {
+          "no": 11,
+          "title": "Bài 11. Dự án: Điều tra về hiện trạng mất vệ sinh an toàn thực phẩm tại địa phương",
+          "slug": "cd-bai-11-du-an-dieu-tra-ve-hien-trang-mat-ve-sinh-an-toan-thuc-pham-tai-dia",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Khảo sát thực tế", "Đề xuất giải pháp"],
+          "interactiveIdea": "Bản đồ khảo sát điểm bán thực phẩm với phiếu đánh giá."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,455 @@
+{
+  "grade": 10,
+  "volumes": ["Sách giáo khoa (1 tập)", "Chuyên đề học tập Sinh học 10"],
+  "chapters": [
+    {
+      "no": 0,
+      "label": "Phần mở đầu",
+      "title": "Mở đầu",
+      "slug": "mo-dau",
+      "strand": "mo-dau",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 1,
+          "title": "Bài 1. Giới thiệu khái quát môn sinh học",
+          "slug": "bai-1-gioi-thieu-khai-quat-mon-sinh-hoc",
+          "kind": "theory",
+          "keyIdeas": [
+            "Đối tượng và mục tiêu môn sinh học",
+            "Ngành nghề liên quan",
+            "Sinh học và phát triển bền vững"
+          ],
+          "interactiveIdea": "Bản đồ ngành nghề sinh học bấm để xem mô tả công việc và lĩnh vực ứng dụng."
+        },
+        {
+          "no": 2,
+          "title": "Bài 2. Phương pháp nghiên cứu và học tập môn sinh học",
+          "slug": "bai-2-phuong-phap-nghien-cuu-va-hoc-tap-mon-sinh-hoc",
+          "kind": "theory",
+          "keyIdeas": [
+            "Phương pháp quan sát, thực nghiệm",
+            "Tiến trình nghiên cứu khoa học",
+            "Tin sinh học"
+          ],
+          "interactiveIdea": "Sơ đồ tiến trình nghiên cứu: học sinh sắp xếp các bước và áp vào một tình huống."
+        },
+        {
+          "no": 3,
+          "title": "Bài 3. Các cấp độ tổ chức của thế giới sống",
+          "slug": "bai-3-cac-cap-do-to-chuc-cua-the-gioi-song",
+          "kind": "theory",
+          "keyIdeas": ["Các cấp độ tổ chức sống", "Đặc điểm chung của cấp độ tổ chức sống"],
+          "interactiveIdea": "Thanh thu phóng từ phân tử đến sinh quyển, mỗi cấp hiển thị ví dụ và đặc điểm."
+        }
+      ]
+    },
+    {
+      "no": 1,
+      "label": "Chương 1",
+      "title": "Thành phần hóa học của tế bào",
+      "slug": "thanh-phan-hoa-hoc-cua-te-bao",
+      "strand": "te-bao",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 4,
+          "title": "Bài 4. Các nguyên tố hóa học và nước",
+          "slug": "bai-4-cac-nguyen-to-hoa-hoc-va-nuoc",
+          "kind": "theory",
+          "keyIdeas": [
+            "Nguyên tố đa lượng, vi lượng",
+            "Vai trò carbon",
+            "Cấu trúc và vai trò của nước"
+          ],
+          "interactiveIdea": "Biểu đồ tỉ lệ nguyên tố trong cơ thể; mô hình liên kết hydrogen giữa các phân tử nước."
+        },
+        {
+          "no": 5,
+          "title": "Bài 5. Các phân tử sinh học",
+          "slug": "bai-5-cac-phan-tu-sinh-hoc",
+          "kind": "theory",
+          "keyIdeas": ["Carbohydrate, lipid", "Protein và các bậc cấu trúc", "Nucleic acid"],
+          "interactiveIdea": "Bộ lắp ghép đơn phân thành đa phân (glucose → tinh bột, amino acid → protein), xem các bậc cấu trúc protein."
+        },
+        {
+          "no": 6,
+          "title": "Bài 6. Thực hành nhận biết một số phân tử sinh học",
+          "slug": "bai-6-thuc-hanh-nhan-biet-mot-so-phan-tu-sinh-hoc",
+          "kind": "practice",
+          "keyIdeas": ["Nhận biết tinh bột, đường khử, lipid, protein", "Thuốc thử đặc trưng"],
+          "interactiveIdea": "Phòng thí nghiệm ảo nhỏ thuốc thử vào mẫu thực phẩm và quan sát đổi màu."
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "label": "Chương 2",
+      "title": "Cấu trúc tế bào",
+      "slug": "cau-truc-te-bao",
+      "strand": "te-bao",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 7,
+          "title": "Bài 7. Tế bào nhân sơ",
+          "slug": "bai-7-te-bao-nhan-so",
+          "kind": "theory",
+          "keyIdeas": ["Kích thước nhỏ và ưu thế", "Cấu tạo tế bào vi khuẩn"],
+          "interactiveIdea": "Mô hình tế bào vi khuẩn có nhãn; thanh trượt kích thước minh họa tỉ lệ S/V."
+        },
+        {
+          "no": 8,
+          "title": "Bài 8. Tế bào nhân thực",
+          "slug": "bai-8-te-bao-nhan-thuc",
+          "kind": "theory",
+          "keyIdeas": [
+            "Nhân và các bào quan",
+            "Hệ thống nội màng",
+            "So sánh tế bào động vật và thực vật"
+          ],
+          "interactiveIdea": "Tế bào nhân thực 3D bấm từng bào quan; trò chơi theo dõi protein từ ribosome qua Golgi ra màng."
+        },
+        {
+          "no": 9,
+          "title": "Bài 9. Thực hành: Quan sát tế bào",
+          "slug": "bai-9-thuc-hanh-quan-sat-te-bao",
+          "kind": "practice",
+          "keyIdeas": ["Làm tiêu bản", "Quan sát tế bào nhân sơ và nhân thực"],
+          "interactiveIdea": "Kính hiển vi ảo chuyển vật kính và chụp ảnh tiêu bản tế bào."
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "label": "Chương 3",
+      "title": "Trao đổi chất qua màng và truyền tin tế bào",
+      "slug": "trao-doi-chat-qua-mang-va-truyen-tin-te-bao",
+      "strand": "te-bao",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 10,
+          "title": "Bài 10. Trao đổi chất qua màng tế bào",
+          "slug": "bai-10-trao-doi-chat-qua-mang-te-bao",
+          "kind": "theory",
+          "keyIdeas": [
+            "Cấu trúc khảm động của màng",
+            "Vận chuyển thụ động và chủ động",
+            "Nhập bào, xuất bào"
+          ],
+          "interactiveIdea": "Mô phỏng màng với phân tử khuếch tán theo gradient; chỉnh nồng độ hai bên và bật bơm ATP."
+        },
+        {
+          "no": 11,
+          "title": "Bài 11. Thực hành: Thí nghiệm co và phản co nguyên sinh",
+          "slug": "bai-11-thuc-hanh-thi-nghiem-co-va-phan-co-nguyen-sinh",
+          "kind": "practice",
+          "keyIdeas": ["Môi trường ưu trương, nhược trương", "Quan sát tế bào biểu bì"],
+          "interactiveIdea": "Tế bào thực vật ảo thay đổi kích thước không bào khi kéo thanh nồng độ muối."
+        },
+        {
+          "no": 12,
+          "title": "Bài 12. Truyền tin tế bào",
+          "slug": "bai-12-truyen-tin-te-bao",
+          "kind": "theory",
+          "keyIdeas": ["Các giai đoạn truyền tin", "Thụ thể và phân tử tín hiệu"],
+          "interactiveIdea": "Hoạt hình chuỗi truyền tin: tiếp nhận → truyền tin nội bào → đáp ứng, có thể chặn từng bước."
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "label": "Chương 4",
+      "title": "Chuyển hóa năng lượng trong tế bào",
+      "slug": "chuyen-hoa-nang-luong-trong-te-bao",
+      "strand": "te-bao",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 13,
+          "title": "Bài 13. Khái quát về chuyển hóa vật chất và năng lượng",
+          "slug": "bai-13-khai-quat-ve-chuyen-hoa-vat-chat-va-nang-luong",
+          "kind": "theory",
+          "keyIdeas": ["Các dạng năng lượng", "ATP", "Enzyme và cơ chế tác động"],
+          "interactiveIdea": "Đồ thị năng lượng hoạt hóa có/không enzyme; thanh trượt nhiệt độ, pH ảnh hưởng hoạt tính."
+        },
+        {
+          "no": 14,
+          "title": "Bài 14. Phân giải và tổng hợp các chất trong tế bào",
+          "slug": "bai-14-phan-giai-va-tong-hop-cac-chat-trong-te-bao",
+          "kind": "theory",
+          "keyIdeas": ["Hô hấp tế bào", "Lên men", "Quang hợp"],
+          "interactiveIdea": "Sơ đồ các giai đoạn hô hấp và quang hợp bấm để xem đầu vào, đầu ra và số ATP."
+        },
+        {
+          "no": 15,
+          "title": "Bài 15. Thực hành: Thí nghiệm phân tích ảnh hưởng của một số yếu tố đến hoạt tính của enzyme và kiểm tra hoạt tính của enzyme amylase",
+          "slug": "bai-15-thuc-hanh-thi-nghiem-phan-tich-anh-huong-cua-mot-so-yeu-to-den-hoat-tinh",
+          "kind": "practice",
+          "keyIdeas": ["Ảnh hưởng nhiệt độ, pH, nồng độ", "Thử iodine với tinh bột"],
+          "interactiveIdea": "Phòng thí nghiệm ảo chỉnh nhiệt độ/pH ống nghiệm amylase và quan sát màu iodine."
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "label": "Chương 5",
+      "title": "Chu kì tế bào và phân bào",
+      "slug": "chu-ki-te-bao-va-phan-bao",
+      "strand": "te-bao",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 16,
+          "title": "Bài 16. Chu kì tế bào và nguyên phân",
+          "slug": "bai-16-chu-ki-te-bao-va-nguyen-phan",
+          "kind": "theory",
+          "keyIdeas": [
+            "Các pha chu kì tế bào",
+            "Diễn biến nguyên phân",
+            "Ung thư và kiểm soát chu kì"
+          ],
+          "interactiveIdea": "Vòng chu kì tế bào tương tác với điểm kiểm soát; hoạt hình nguyên phân điều khiển từng kì."
+        },
+        {
+          "no": 17,
+          "title": "Bài 17. Giảm phân",
+          "slug": "bai-17-giam-phan",
+          "kind": "theory",
+          "keyIdeas": ["Giảm phân I và II", "Trao đổi chéo", "Ý nghĩa của giảm phân"],
+          "interactiveIdea": "Hoạt hình giảm phân có trao đổi chéo, đếm số tổ hợp giao tử có thể có với n cặp NST."
+        },
+        {
+          "no": 18,
+          "title": "Bài 18. Thực hành: Làm và quan sát tiêu bản quá trình nguyên phân và giảm phân",
+          "slug": "bai-18-thuc-hanh-lam-va-quan-sat-tieu-ban-qua-trinh-nguyen-phan-va-giam-phan",
+          "kind": "practice",
+          "keyIdeas": ["Làm tiêu bản rễ hành", "Nhận biết các kì phân bào"],
+          "interactiveIdea": "Trò chơi nhận diện kì phân bào trên ảnh tiêu bản thật."
+        },
+        {
+          "no": 19,
+          "title": "Bài 19. Công nghệ tế bào",
+          "slug": "bai-19-cong-nghe-te-bao",
+          "kind": "theory",
+          "keyIdeas": [
+            "Tính toàn năng của tế bào",
+            "Công nghệ tế bào thực vật và động vật",
+            "Tế bào gốc"
+          ],
+          "interactiveIdea": "Sơ đồ quy trình nuôi cấy mô thực vật và nhân bản vô tính kéo thả đúng thứ tự."
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "label": "Chương 6",
+      "title": "Sinh học vi sinh vật",
+      "slug": "sinh-hoc-vi-sinh-vat",
+      "strand": "vi-sinh-vat-virus",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 20,
+          "title": "Bài 20. Sự đa dạng và phương pháp nghiên cứu vi sinh vật",
+          "slug": "bai-20-su-da-dang-va-phuong-phap-nghien-cuu-vi-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Các kiểu dinh dưỡng", "Phương pháp nghiên cứu vi sinh vật"],
+          "interactiveIdea": "Ma trận nguồn năng lượng × nguồn carbon, kéo vi sinh vật vào đúng kiểu dinh dưỡng."
+        },
+        {
+          "no": 21,
+          "title": "Bài 21. Trao đổi chất, sinh trưởng và sinh sản ở vi sinh vật",
+          "slug": "bai-21-trao-doi-chat-sinh-truong-va-sinh-san-o-vi-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Các pha sinh trưởng", "Yếu tố ảnh hưởng", "Hình thức sinh sản"],
+          "interactiveIdea": "Đồ thị sinh trưởng quần thể vi khuẩn trong nuôi cấy không liên tục, chỉnh thời gian thế hệ."
+        },
+        {
+          "no": 22,
+          "title": "Bài 22. Vai trò và ứng dụng của vi sinh vật",
+          "slug": "bai-22-vai-tro-va-ung-dung-cua-vi-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": [
+            "Vai trò trong tự nhiên và đời sống",
+            "Ứng dụng trong thực phẩm, nông nghiệp, y học"
+          ],
+          "interactiveIdea": "Bản đồ ứng dụng vi sinh vật theo lĩnh vực bấm để xem sản phẩm và vi sinh vật tạo ra."
+        },
+        {
+          "no": 23,
+          "title": "Bài 23. Thực hành: Một số phương pháp nghiên cứu vi sinh vật thông dụng, tìm hiểu về các sản phẩm công nghệ vi sinh vật và làm một số sản phẩm lên men từ vi sinh vật",
+          "slug": "bai-23-thuc-hanh-mot-so-phuong-phap-nghien-cuu-vi-sinh-vat-thong-dung-tim-hieu",
+          "kind": "practice",
+          "keyIdeas": ["Nhuộm và quan sát vi sinh vật", "Làm sữa chua, dưa muối"],
+          "interactiveIdea": "Quy trình làm dưa muối ảo với thanh trượt nồng độ muối, nhiệt độ và kết quả lên men."
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "label": "Chương 7",
+      "title": "Virus",
+      "slug": "virus",
+      "strand": "vi-sinh-vat-virus",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 24,
+          "title": "Bài 24. Khái quát về virus",
+          "slug": "bai-24-khai-quat-ve-virus",
+          "kind": "theory",
+          "keyIdeas": ["Cấu tạo virus", "Chu trình nhân lên của virus"],
+          "interactiveIdea": "Hoạt hình năm giai đoạn nhân lên của virus, học sinh sắp xếp đúng thứ tự."
+        },
+        {
+          "no": 25,
+          "title": "Bài 25. Một số bệnh do virus và các thành tựu nghiên cứu ứng dụng virus",
+          "slug": "bai-25-mot-so-benh-do-virus-va-cac-thanh-tuu-nghien-cuu-ung-dung-virus",
+          "kind": "theory",
+          "keyIdeas": [
+            "Bệnh do virus ở người, động vật, thực vật",
+            "Phòng chống bệnh",
+            "Ứng dụng virus"
+          ],
+          "interactiveIdea": "Mô phỏng lây lan dịch: chỉnh tỉ lệ tiêm vắc-xin và đeo khẩu trang để xem đường cong ca bệnh."
+        },
+        {
+          "no": 26,
+          "title": "Bài 26. Thực hành: Điều tra một số bệnh do virus và tuyên truyền phòng chống bệnh",
+          "slug": "bai-26-thuc-hanh-dieu-tra-mot-so-benh-do-virus-va-tuyen-truyen-phong-chong-benh",
+          "kind": "practice",
+          "keyIdeas": ["Thiết kế phiếu điều tra", "Tuyên truyền phòng bệnh"],
+          "interactiveIdea": "Công cụ tạo phiếu khảo sát và biểu đồ kết quả tự động."
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "label": "Chuyên đề 1",
+      "title": "Công nghệ tế bào và một số thành tựu",
+      "slug": "cd-cong-nghe-te-bao-va-mot-so-thanh-tuu",
+      "strand": "chuyen-de",
+      "volume": "Chuyên đề học tập Sinh học 10",
+      "lessons": [
+        {
+          "no": 1,
+          "title": "Bài 1. Công nghệ tế bào thực vật và thành tựu",
+          "slug": "cd-bai-1-cong-nghe-te-bao-thuc-vat-va-thanh-tuu",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Nguyên lí nuôi cấy mô, tế bào thực vật", "Vi nhân giống", "Thành tựu"],
+          "interactiveIdea": "Quy trình vi nhân giống tương tác: chọn mẫu, khử trùng, nuôi cấy, ra cây."
+        },
+        {
+          "no": 2,
+          "title": "Bài 2. Tế bào gốc và một số thành tựu",
+          "slug": "cd-bai-2-te-bao-goc-va-mot-so-thanh-tuu",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Khái niệm và phân loại tế bào gốc", "Ứng dụng trong y học"],
+          "interactiveIdea": "Cây biệt hóa tế bào gốc bấm để xem loại tế bào có thể tạo ra."
+        },
+        {
+          "no": 3,
+          "title": "Bài 3. Công nghệ tế bào động vật và thành tựu",
+          "slug": "cd-bai-3-cong-nghe-te-bao-dong-vat-va-thanh-tuu",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Nuôi cấy tế bào động vật", "Nhân bản vô tính", "Thành tựu"],
+          "interactiveIdea": "Hoạt hình nhân bản cừu Dolly kéo thả các bước."
+        },
+        {
+          "no": 4,
+          "title": "Bài 4. Dự án: Tìm hiểu về một số thành tựu công nghệ tế bào",
+          "slug": "cd-bai-4-du-an-tim-hieu-ve-mot-so-thanh-tuu-cong-nghe-te-bao",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Thu thập thông tin", "Trình bày sản phẩm dự án"],
+          "interactiveIdea": "Khung dự án số với dòng thời gian thành tựu học sinh tự thêm mốc."
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "label": "Chuyên đề 2",
+      "title": "Công nghệ enzyme và ứng dụng",
+      "slug": "cd-cong-nghe-enzyme-va-ung-dung",
+      "strand": "chuyen-de",
+      "volume": "Chuyên đề học tập Sinh học 10",
+      "lessons": [
+        {
+          "no": 5,
+          "title": "Bài 5. Khái quát về công nghệ enzyme",
+          "slug": "cd-bai-5-khai-quat-ve-cong-nghe-enzyme",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Khái niệm công nghệ enzyme", "Nguồn nguyên liệu enzyme"],
+          "interactiveIdea": "Đồ thị hoạt tính enzyme theo nhiệt độ và pH với thanh trượt."
+        },
+        {
+          "no": 6,
+          "title": "Bài 6. Quy trình công nghệ sản xuất enzyme",
+          "slug": "cd-bai-6-quy-trinh-cong-nghe-san-xuat-enzyme",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Các bước sản xuất", "Enzyme từ vi sinh vật, thực vật, động vật"],
+          "interactiveIdea": "Dây chuyền sản xuất enzyme ảo sắp xếp các công đoạn."
+        },
+        {
+          "no": 7,
+          "title": "Bài 7. Ứng dụng của enzyme",
+          "slug": "cd-bai-7-ung-dung-cua-enzyme",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Ứng dụng trong thực phẩm, y học, công nghiệp", "Xử lí môi trường"],
+          "interactiveIdea": "Thẻ ứng dụng: ghép enzyme với sản phẩm (amylase → mạch nha, protease → bột giặt)."
+        },
+        {
+          "no": 8,
+          "title": "Bài 8. Dự án: Tìm hiểu về ứng dụng enzyme",
+          "slug": "cd-bai-8-du-an-tim-hieu-ve-ung-dung-enzyme",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Thực hiện dự án", "Đề xuất ứng dụng đơn giản"],
+          "interactiveIdea": "Khung dự án với bảng so sánh hiệu quả bột giặt có/không enzyme."
+        }
+      ]
+    },
+    {
+      "no": 10,
+      "label": "Chuyên đề 3",
+      "title": "Công nghệ vi sinh vật trong xử lí ô nhiễm môi trường",
+      "slug": "cd-cong-nghe-vi-sinh-vat-trong-xu-li-o-nhiem-moi-truong",
+      "strand": "chuyen-de",
+      "volume": "Chuyên đề học tập Sinh học 10",
+      "lessons": [
+        {
+          "no": 9,
+          "title": "Bài 9. Vai trò của vi sinh vật trong xử lí ô nhiễm môi trường",
+          "slug": "cd-bai-9-vai-tro-cua-vi-sinh-vat-trong-xu-li-o-nhiem-moi-truong",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Ô nhiễm môi trường", "Vi sinh vật phân giải chất ô nhiễm"],
+          "interactiveIdea": "Mô phỏng hồ ô nhiễm: thêm vi sinh vật và xem nồng độ chất ô nhiễm giảm."
+        },
+        {
+          "no": 10,
+          "title": "Bài 10. Vi sinh vật trong phân giải các hợp chất làm ô nhiễm môi trường",
+          "slug": "cd-bai-10-vi-sinh-vat-trong-phan-giai-cac-hop-chat-lam-o-nhiem-moi-truong",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Phân giải hợp chất hữu cơ", "Phân giải chất khó phân hủy"],
+          "interactiveIdea": "Sơ đồ con đường phân giải bấm vào từng nhóm vi sinh vật."
+        },
+        {
+          "no": 11,
+          "title": "Bài 11. Công nghệ ứng dụng vi sinh vật trong xử lí ô nhiễm môi trường",
+          "slug": "cd-bai-11-cong-nghe-ung-dung-vi-sinh-vat-trong-xu-li-o-nhiem-moi-truong",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Xử lí nước thải", "Xử lí rác thải, khí sinh học"],
+          "interactiveIdea": "Mô hình trạm xử lí nước thải hiếu khí/kị khí theo từng bể."
+        },
+        {
+          "no": 12,
+          "title": "Bài 12. Dự án: Điều tra công nghệ ứng dụng vi sinh vật trong xử lí ô nhiễm môi trường tại địa phương",
+          "slug": "cd-bai-12-du-an-dieu-tra-cong-nghe-ung-dung-vi-sinh-vat-trong-xu-li-o-nhiem-moi",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Điều tra thực tế", "Báo cáo kết quả"],
+          "interactiveIdea": "Bản đồ địa phương đánh dấu điểm xử lí ô nhiễm và ghi chú khảo sát."
+        }
+      ]
+    }
+  ]
+}

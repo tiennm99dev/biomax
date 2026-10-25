@@ -1,0 +1,181 @@
+{
+  "grade": 8,
+  "volumes": ["Sách giáo khoa (1 tập)"],
+  "chapters": [
+    {
+      "no": 7,
+      "label": "Chương VII",
+      "title": "Sinh học cơ thể người",
+      "slug": "sinh-hoc-co-the-nguoi",
+      "strand": "co-the-nguoi",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 30,
+          "title": "Bài 30. Khái quát về cơ thể người",
+          "slug": "bai-30-khai-quat-ve-co-the-nguoi",
+          "kind": "theory",
+          "keyIdeas": ["Các phần cơ thể", "Các hệ cơ quan và chức năng"],
+          "interactiveIdea": "Hình người tương tác bật/tắt từng hệ cơ quan để xem vị trí và chức năng."
+        },
+        {
+          "no": 31,
+          "title": "Bài 31. Hệ vận động ở người",
+          "slug": "bai-31-he-van-dong-o-nguoi",
+          "kind": "theory",
+          "keyIdeas": ["Xương, khớp, cơ", "Cơ chế vận động", "Bảo vệ hệ vận động"],
+          "interactiveIdea": "Bộ xương người bấm từng xương; mô hình khuỷu tay cơ co duỗi như đòn bẩy."
+        },
+        {
+          "no": 32,
+          "title": "Bài 32. Dinh dưỡng và tiêu hóa ở người",
+          "slug": "bai-32-dinh-duong-va-tieu-hoa-o-nguoi",
+          "kind": "theory",
+          "keyIdeas": ["Chất dinh dưỡng và khẩu phần", "Các cơ quan tiêu hóa", "An toàn thực phẩm"],
+          "interactiveIdea": "Công cụ lập khẩu phần ăn tính năng lượng và nhóm chất; hoạt hình đường đi thức ăn."
+        },
+        {
+          "no": 33,
+          "title": "Bài 33. Máu và hệ tuần hoàn của cơ thể người",
+          "slug": "bai-33-mau-va-he-tuan-hoan-cua-co-the-nguoi",
+          "kind": "theory",
+          "keyIdeas": ["Thành phần máu", "Nhóm máu và truyền máu", "Tim và vòng tuần hoàn"],
+          "interactiveIdea": "Trò chơi truyền máu ABO: chọn người cho và nhận; sơ đồ tim với dòng máu chạy trong hai vòng tuần hoàn."
+        },
+        {
+          "no": 34,
+          "title": "Bài 34. Hệ hô hấp ở người",
+          "slug": "bai-34-he-ho-hap-o-nguoi",
+          "kind": "theory",
+          "keyIdeas": ["Các cơ quan hô hấp", "Trao đổi khí ở phổi và tế bào", "Bệnh hô hấp"],
+          "interactiveIdea": "Mô hình phổi phồng xẹp theo cơ hoành, phóng to phế nang thấy O₂/CO₂ khuếch tán."
+        },
+        {
+          "no": 35,
+          "title": "Bài 35. Hệ bài tiết ở người",
+          "slug": "bai-35-he-bai-tiet-o-nguoi",
+          "kind": "theory",
+          "keyIdeas": ["Cấu tạo thận", "Quá trình tạo nước tiểu", "Bảo vệ hệ bài tiết"],
+          "interactiveIdea": "Sơ đồ nephron hoạt hình lọc, hấp thụ lại và bài tiết, theo dõi từng chất."
+        },
+        {
+          "no": 36,
+          "title": "Bài 36. Điều hòa môi trường trong của cơ thể người",
+          "slug": "bai-36-dieu-hoa-moi-truong-trong-cua-co-the-nguoi",
+          "kind": "theory",
+          "keyIdeas": [
+            "Môi trường trong và cân bằng",
+            "Chỉ số sinh lí: đường huyết, pH, thân nhiệt"
+          ],
+          "interactiveIdea": "Đồng hồ chỉ số sinh lí: chỉnh đường huyết hoặc nhiệt độ và xem cơ thể phản hồi đưa về ngưỡng."
+        },
+        {
+          "no": 37,
+          "title": "Bài 37. Hệ thần kinh và các giác quan ở người",
+          "slug": "bai-37-he-than-kinh-va-cac-giac-quan-o-nguoi",
+          "kind": "theory",
+          "keyIdeas": ["Cấu tạo hệ thần kinh", "Mắt và tai", "Bệnh và bảo vệ giác quan"],
+          "interactiveIdea": "Mô phỏng mắt: điều chỉnh khoảng cách vật để thấy ảnh trên võng mạc và tật cận/viễn."
+        },
+        {
+          "no": 38,
+          "title": "Bài 38. Hệ nội tiết ở người",
+          "slug": "bai-38-he-noi-tiet-o-nguoi",
+          "kind": "theory",
+          "keyIdeas": ["Các tuyến nội tiết", "Hormone và vai trò", "Bệnh nội tiết"],
+          "interactiveIdea": "Bản đồ tuyến nội tiết trên cơ thể, bấm để xem hormone tiết ra và cơ quan đích."
+        },
+        {
+          "no": 39,
+          "title": "Bài 39. Da và điều hòa thân nhiệt ở người",
+          "slug": "bai-39-da-va-dieu-hoa-than-nhiet-o-nguoi",
+          "kind": "theory",
+          "keyIdeas": ["Cấu tạo da", "Cơ chế điều hòa thân nhiệt", "Bảo vệ da"],
+          "interactiveIdea": "Lát cắt da tương tác; thanh trượt nhiệt độ môi trường làm mạch máu giãn/co và tiết mồ hôi."
+        },
+        {
+          "no": 40,
+          "title": "Bài 40. Sinh sản ở người",
+          "slug": "bai-40-sinh-san-o-nguoi",
+          "kind": "theory",
+          "keyIdeas": ["Cơ quan sinh dục", "Thụ tinh và thụ thai", "Bảo vệ sức khỏe sinh sản"],
+          "interactiveIdea": "Lịch chu kì kinh nguyệt tương tác thể hiện các giai đoạn và hormone."
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "label": "Chương VIII",
+      "title": "Sinh vật và môi trường",
+      "slug": "sinh-vat-va-moi-truong",
+      "strand": "sinh-thai",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 41,
+          "title": "Bài 41. Môi trường và các nhân tố sinh thái",
+          "slug": "bai-41-moi-truong-va-cac-nhan-to-sinh-thai",
+          "kind": "theory",
+          "keyIdeas": [
+            "Các loại môi trường sống",
+            "Nhân tố vô sinh và hữu sinh",
+            "Giới hạn sinh thái"
+          ],
+          "interactiveIdea": "Đồ thị giới hạn sinh thái: kéo nhiệt độ để thấy vùng thuận lợi, chống chịu và chết."
+        },
+        {
+          "no": 42,
+          "title": "Bài 42. Quần thể sinh vật",
+          "slug": "bai-42-quan-the-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": [
+            "Khái niệm quần thể",
+            "Mật độ, tỉ lệ giới tính, nhóm tuổi",
+            "Bảo vệ quần thể"
+          ],
+          "interactiveIdea": "Tháp tuổi tương tác chỉnh tỉ lệ nhóm tuổi để thấy quần thể phát triển, ổn định hay suy giảm."
+        },
+        {
+          "no": 43,
+          "title": "Bài 43. Quần xã sinh vật",
+          "slug": "bai-43-quan-xa-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Đặc trưng quần xã", "Quan hệ giữa các loài", "Loài ưu thế, đặc trưng"],
+          "interactiveIdea": "Thẻ ghép cặp loài với kiểu quan hệ (cộng sinh, kí sinh, cạnh tranh, sinh vật ăn sinh vật)."
+        },
+        {
+          "no": 44,
+          "title": "Bài 44. Hệ sinh thái",
+          "slug": "bai-44-he-sinh-thai",
+          "kind": "theory",
+          "keyIdeas": ["Thành phần hệ sinh thái", "Chuỗi và lưới thức ăn", "Các kiểu hệ sinh thái"],
+          "interactiveIdea": "Trình dựng lưới thức ăn kéo thả sinh vật và nối mũi tên; loại bỏ một loài để xem ảnh hưởng."
+        },
+        {
+          "no": 45,
+          "title": "Bài 45. Sinh quyển",
+          "slug": "bai-45-sinh-quyen",
+          "kind": "theory",
+          "keyIdeas": ["Khái niệm sinh quyển", "Các khu sinh học chính"],
+          "interactiveIdea": "Bản đồ thế giới các khu sinh học bấm vào để xem khí hậu và sinh vật đặc trưng."
+        },
+        {
+          "no": 46,
+          "title": "Bài 46. Cân bằng tự nhiên",
+          "slug": "bai-46-can-bang-tu-nhien",
+          "kind": "theory",
+          "keyIdeas": ["Trạng thái cân bằng", "Nguyên nhân mất cân bằng", "Biện pháp duy trì"],
+          "interactiveIdea": "Mô phỏng thỏ–cáo: thay đổi số lượng ban đầu, săn bắt để thấy dao động và mất cân bằng."
+        },
+        {
+          "no": 47,
+          "title": "Bài 47. Bảo vệ môi trường",
+          "slug": "bai-47-bao-ve-moi-truong",
+          "kind": "theory",
+          "keyIdeas": ["Ô nhiễm môi trường", "Biến đổi khí hậu", "Bảo vệ động vật hoang dã"],
+          "interactiveIdea": "Bảng điều khiển hành động của mỗi người và tác động ước tính lên lượng rác, khí thải."
+        }
+      ]
+    }
+  ]
+}

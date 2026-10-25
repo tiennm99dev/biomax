@@ -1,0 +1,484 @@
+{
+  "grade": 12,
+  "volumes": ["Sách giáo khoa (1 tập)", "Chuyên đề học tập Sinh học 12"],
+  "chapters": [
+    {
+      "no": 1,
+      "label": "Chương 1",
+      "title": "Di truyền phân tử",
+      "slug": "di-truyen-phan-tu",
+      "strand": "di-truyen",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 1,
+          "title": "Bài 1. DNA và cơ chế tái bản DNA",
+          "slug": "bai-1-dna-va-co-che-tai-ban-dna",
+          "kind": "theory",
+          "keyIdeas": ["Cấu trúc và chức năng DNA", "Cơ chế tái bản bán bảo toàn"],
+          "interactiveIdea": "Hoạt hình chạc tái bản với mạch dẫn đầu và mạch ra chậm, đoạn Okazaki."
+        },
+        {
+          "no": 2,
+          "title": "Bài 2. Gene, quá trình truyền đạt thông tin di truyền và hệ gene",
+          "slug": "bai-2-gene-qua-trinh-truyen-dat-thong-tin-di-truyen-va-he-gene",
+          "kind": "theory",
+          "keyIdeas": ["Cấu trúc gene", "Phiên mã và dịch mã", "Hệ gene"],
+          "interactiveIdea": "Bộ giải mã gene → mRNA → protein tương tác với bảng mã di truyền."
+        },
+        {
+          "no": 3,
+          "title": "Bài 3. Điều hòa biểu hiện gene",
+          "slug": "bai-3-dieu-hoa-bieu-hien-gene",
+          "kind": "theory",
+          "keyIdeas": ["Mô hình operon Lac", "Ý nghĩa điều hòa"],
+          "interactiveIdea": "Mô phỏng operon Lac: thêm/bớt lactose để thấy protein ức chế gắn/rời và gene bật/tắt."
+        },
+        {
+          "no": 4,
+          "title": "Bài 4. Đột biến gene",
+          "slug": "bai-4-dot-bien-gene",
+          "kind": "theory",
+          "keyIdeas": ["Các dạng đột biến gene", "Cơ chế và hậu quả", "Vai trò"],
+          "interactiveIdea": "Trình soạn trình tự DNA thay đổi nucleotide và xem ảnh hưởng tới protein."
+        },
+        {
+          "no": 5,
+          "title": "Bài 5. Công nghệ di truyền",
+          "slug": "bai-5-cong-nghe-di-truyen",
+          "kind": "theory",
+          "keyIdeas": ["Công nghệ DNA tái tổ hợp", "Sinh vật biến đổi gene", "Thành tựu"],
+          "interactiveIdea": "Phòng lab ảo cắt-nối plasmid và biến nạp vào vi khuẩn."
+        },
+        {
+          "no": 6,
+          "title": "Bài 6. Thực hành: Tách chiết DNA",
+          "slug": "bai-6-thuc-hanh-tach-chiet-dna",
+          "kind": "practice",
+          "keyIdeas": ["Các bước tách chiết DNA", "Quan sát DNA kết tủa"],
+          "interactiveIdea": "Quy trình tách chiết DNA từ chuối/gan gà kéo thả đúng bước, hoạt hình kết tủa."
+        }
+      ]
+    },
+    {
+      "no": 2,
+      "label": "Chương 2",
+      "title": "Di truyền nhiễm sắc thể",
+      "slug": "di-truyen-nhiem-sac-the",
+      "strand": "di-truyen",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 7,
+          "title": "Bài 7. Cấu trúc và chức năng của nhiễm sắc thể",
+          "slug": "bai-7-cau-truc-va-chuc-nang-cua-nhiem-sac-the",
+          "kind": "theory",
+          "keyIdeas": ["Các mức xoắn của NST", "Chức năng NST"],
+          "interactiveIdea": "Thanh thu phóng từ chuỗi DNA đến nucleosome đến NST kì giữa."
+        },
+        {
+          "no": 8,
+          "title": "Bài 8. Học thuyết di truyền của Mendel",
+          "slug": "bai-8-hoc-thuyet-di-truyen-cua-mendel",
+          "kind": "theory",
+          "keyIdeas": ["Phương pháp nghiên cứu của Mendel", "Quy luật phân li và phân li độc lập"],
+          "interactiveIdea": "Bảng Punnett lai hai cặp tính trạng tương tác, đếm tỉ lệ 9:3:3:1."
+        },
+        {
+          "no": 9,
+          "title": "Bài 9. Mở rộng học thuyết Mendel",
+          "slug": "bai-9-mo-rong-hoc-thuyet-mendel",
+          "kind": "theory",
+          "keyIdeas": ["Tương tác gene", "Tác động đa hiệu", "Trội không hoàn toàn"],
+          "interactiveIdea": "Mô phỏng lai với lựa chọn kiểu tương tác gene và tỉ lệ kiểu hình thay đổi tương ứng."
+        },
+        {
+          "no": 10,
+          "title": "Bài 10. Di truyền giới tính và di truyền liên kết với giới tính",
+          "slug": "bai-10-di-truyen-gioi-tinh-va-di-truyen-lien-ket-voi-gioi-tinh",
+          "kind": "theory",
+          "keyIdeas": ["Cơ chế xác định giới tính", "Gene trên X và Y", "Ứng dụng"],
+          "interactiveIdea": "Bảng lai di truyền liên kết X (mù màu, máu khó đông) với phả hệ."
+        },
+        {
+          "no": 11,
+          "title": "Bài 11. Liên kết gene và hoán vị gene",
+          "slug": "bai-11-lien-ket-gene-va-hoan-vi-gene",
+          "kind": "theory",
+          "keyIdeas": ["Liên kết hoàn toàn", "Hoán vị gene và tần số", "Bản đồ di truyền"],
+          "interactiveIdea": "Trình dựng bản đồ gene từ tần số hoán vị, kéo thả gene trên NST."
+        },
+        {
+          "no": 12,
+          "title": "Bài 12. Đột biến nhiễm sắc thể",
+          "slug": "bai-12-dot-bien-nhiem-sac-the",
+          "kind": "theory",
+          "keyIdeas": ["Đột biến cấu trúc", "Đột biến số lượng: lệch bội, đa bội"],
+          "interactiveIdea": "Kéo thả biến đổi NST tạo các dạng đột biến và xem karyotype kết quả."
+        },
+        {
+          "no": 13,
+          "title": "Bài 13. Di truyền học người và di truyền y học",
+          "slug": "bai-13-di-truyen-hoc-nguoi-va-di-truyen-y-hoc",
+          "kind": "theory",
+          "keyIdeas": [
+            "Phương pháp nghiên cứu di truyền người",
+            "Bệnh di truyền",
+            "Liệu pháp gene, tư vấn di truyền"
+          ],
+          "interactiveIdea": "Trình phân tích phả hệ xác định kiểu di truyền của bệnh."
+        },
+        {
+          "no": 14,
+          "title": "Bài 14. Thực hành: Quan sát một số dạng đột biến nhiễm sắc thể",
+          "slug": "bai-14-thuc-hanh-quan-sat-mot-so-dang-dot-bien-nhiem-sac-the",
+          "kind": "practice",
+          "keyIdeas": ["Quan sát tiêu bản đột biến", "Nhận dạng đột biến"],
+          "interactiveIdea": "Trò chơi nhận diện dạng đột biến từ ảnh karyotype."
+        }
+      ]
+    },
+    {
+      "no": 3,
+      "label": "Chương 3",
+      "title": "Mở rộng học thuyết di truyền nhiễm sắc thể",
+      "slug": "mo-rong-hoc-thuyet-di-truyen-nhiem-sac-the",
+      "strand": "di-truyen",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 15,
+          "title": "Bài 15. Di truyền gene ngoài nhân",
+          "slug": "bai-15-di-truyen-gene-ngoai-nhan",
+          "kind": "theory",
+          "keyIdeas": ["Gene trong ti thể, lục lạp", "Di truyền theo dòng mẹ"],
+          "interactiveIdea": "Phép lai thuận nghịch tương tác cho thấy đời con theo kiểu hình mẹ."
+        },
+        {
+          "no": 16,
+          "title": "Bài 16. Tương tác giữa kiểu gene với môi trường và thành tựu chọn giống",
+          "slug": "bai-16-tuong-tac-giua-kieu-gene-voi-moi-truong-va-thanh-tuu-chon-giong",
+          "kind": "theory",
+          "keyIdeas": ["Thường biến và mức phản ứng", "Chọn giống vật nuôi, cây trồng"],
+          "interactiveIdea": "Đồ thị mức phản ứng: chọn kiểu gene và điều kiện môi trường để xem kiểu hình."
+        },
+        {
+          "no": 17,
+          "title": "Bài 17. Thực hành: Thí nghiệm về thường biến ở cây trồng",
+          "slug": "bai-17-thuc-hanh-thi-nghiem-ve-thuong-bien-o-cay-trong",
+          "kind": "practice",
+          "keyIdeas": ["Bố trí thí nghiệm", "So sánh kiểu hình"],
+          "interactiveIdea": "Thí nghiệm ảo trồng cùng giống cây ở các điều kiện khác nhau và so sánh."
+        }
+      ]
+    },
+    {
+      "no": 4,
+      "label": "Chương 4",
+      "title": "Di truyền quần thể",
+      "slug": "di-truyen-quan-the",
+      "strand": "di-truyen",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 18,
+          "title": "Bài 18. Di truyền quần thể",
+          "slug": "bai-18-di-truyen-quan-the",
+          "kind": "theory",
+          "keyIdeas": [
+            "Tần số allele và kiểu gene",
+            "Quần thể tự phối và ngẫu phối",
+            "Định luật Hardy-Weinberg"
+          ],
+          "interactiveIdea": "Máy tính Hardy–Weinberg: chỉnh p, q và xem cấu trúc di truyền qua các thế hệ."
+        }
+      ]
+    },
+    {
+      "no": 5,
+      "label": "Chương 5",
+      "title": "Bằng chứng và các học thuyết tiến hóa",
+      "slug": "bang-chung-va-cac-hoc-thuyet-tien-hoa",
+      "strand": "tien-hoa",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 19,
+          "title": "Bài 19. Các bằng chứng tiến hóa",
+          "slug": "bai-19-cac-bang-chung-tien-hoa",
+          "kind": "theory",
+          "keyIdeas": ["Bằng chứng hóa thạch", "Giải phẫu so sánh", "Tế bào và sinh học phân tử"],
+          "interactiveIdea": "So sánh xương chi trước các loài (cơ quan tương đồng) bằng lớp phủ màu tương ứng."
+        },
+        {
+          "no": 20,
+          "title": "Bài 20. Quan niệm của Darwin về chọn lọc tự nhiên và hình thành loài",
+          "slug": "bai-20-quan-niem-cua-darwin-ve-chon-loc-tu-nhien-va-hinh-thanh-loai",
+          "kind": "theory",
+          "keyIdeas": ["Biến dị cá thể", "Chọn lọc tự nhiên", "Hình thành loài"],
+          "interactiveIdea": "Mô phỏng chim sẻ Darwin: thay đổi loại hạt và xem kích thước mỏ trung bình qua thế hệ."
+        },
+        {
+          "no": 21,
+          "title": "Bài 21. Học thuyết tiến hóa tổng hợp hiện đại",
+          "slug": "bai-21-hoc-thuyet-tien-hoa-tong-hop-hien-dai",
+          "kind": "theory",
+          "keyIdeas": ["Tiến hóa nhỏ", "Các nhân tố tiến hóa", "Cơ chế hình thành loài"],
+          "interactiveIdea": "Mô phỏng tần số allele với các nhân tố: đột biến, di nhập gene, phiêu bạt, chọn lọc."
+        },
+        {
+          "no": 22,
+          "title": "Bài 22. Tiến hóa lớn và quá trình phát sinh chủng loại",
+          "slug": "bai-22-tien-hoa-lon-va-qua-trinh-phat-sinh-chung-loai",
+          "kind": "theory",
+          "keyIdeas": ["Tiến hóa lớn", "Cây phát sinh chủng loại", "Sự phát sinh loài người"],
+          "interactiveIdea": "Cây phát sinh chủng loại tương tác thu phóng theo thời gian địa chất."
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "label": "Chương 6",
+      "title": "Môi trường và sinh thái học quần thể",
+      "slug": "moi-truong-va-sinh-thai-hoc-quan-the",
+      "strand": "sinh-thai",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 23,
+          "title": "Bài 23. Môi trường và các nhân tố sinh thái",
+          "slug": "bai-23-moi-truong-va-cac-nhan-to-sinh-thai",
+          "kind": "theory",
+          "keyIdeas": ["Nhân tố sinh thái", "Giới hạn sinh thái", "Nhịp sinh học"],
+          "interactiveIdea": "Đồ thị giới hạn sinh thái nhiều nhân tố chồng lên để tìm ổ sinh thái."
+        },
+        {
+          "no": 24,
+          "title": "Bài 24. Sinh thái học quần thể",
+          "slug": "bai-24-sinh-thai-hoc-quan-the",
+          "kind": "theory",
+          "keyIdeas": ["Đặc trưng quần thể", "Tăng trưởng quần thể", "Điều hòa số lượng"],
+          "interactiveIdea": "Mô phỏng tăng trưởng hàm mũ và logistic với thanh trượt r và K."
+        },
+        {
+          "no": 25,
+          "title": "Bài 25. Thực hành: Xác định một số đặc trưng của quần thể",
+          "slug": "bai-25-thuc-hanh-xac-dinh-mot-so-dac-trung-cua-quan-the",
+          "kind": "practice",
+          "keyIdeas": ["Ước lượng mật độ", "Phương pháp ô tiêu chuẩn, bắt-thả"],
+          "interactiveIdea": "Mô phỏng bắt–đánh dấu–thả lại để ước tính kích thước quần thể."
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "label": "Chương 7",
+      "title": "Sinh thái học quần xã",
+      "slug": "sinh-thai-hoc-quan-xa",
+      "strand": "sinh-thai",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 26,
+          "title": "Bài 26. Quần xã sinh vật",
+          "slug": "bai-26-quan-xa-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Đặc trưng quần xã", "Quan hệ giữa các loài", "Ổ sinh thái"],
+          "interactiveIdea": "Mô phỏng Lotka–Volterra vật ăn thịt–con mồi và cạnh tranh."
+        },
+        {
+          "no": 27,
+          "title": "Bài 27. Thực hành: Tìm hiểu một số đặc trưng cơ bản của quần xã trong tự nhiên",
+          "slug": "bai-27-thuc-hanh-tim-hieu-mot-so-dac-trung-co-ban-cua-quan-xa-trong-tu-nhien",
+          "kind": "practice",
+          "keyIdeas": ["Khảo sát thành phần loài", "Độ phong phú và đa dạng"],
+          "interactiveIdea": "Công cụ nhập số liệu khảo sát và tính chỉ số đa dạng."
+        },
+        {
+          "no": 28,
+          "title": "Bài 28. Hệ sinh thái",
+          "slug": "bai-28-he-sinh-thai",
+          "kind": "theory",
+          "keyIdeas": ["Thành phần hệ sinh thái", "Các kiểu hệ sinh thái"],
+          "interactiveIdea": "Trình dựng hệ sinh thái kéo thả thành phần vô sinh và hữu sinh."
+        },
+        {
+          "no": 29,
+          "title": "Bài 29. Trao đổi vật chất và chuyển hóa năng lượng trong hệ sinh thái",
+          "slug": "bai-29-trao-doi-vat-chat-va-chuyen-hoa-nang-luong-trong-he-sinh-thai",
+          "kind": "theory",
+          "keyIdeas": ["Chuỗi, lưới thức ăn", "Bậc dinh dưỡng", "Tháp sinh thái và hiệu suất"],
+          "interactiveIdea": "Tháp năng lượng tương tác với quy tắc 10%, chỉnh năng lượng đầu vào."
+        },
+        {
+          "no": 30,
+          "title": "Bài 30. Diễn thế sinh thái",
+          "slug": "bai-30-dien-the-sinh-thai",
+          "kind": "theory",
+          "keyIdeas": ["Diễn thế nguyên sinh", "Diễn thế thứ sinh", "Nguyên nhân và ý nghĩa"],
+          "interactiveIdea": "Tua thời gian diễn thế từ đất trống đến rừng, hiển thị các quần xã trung gian."
+        },
+        {
+          "no": 31,
+          "title": "Bài 31. Sinh quyển, khu sinh học và chu trình sinh - địa - hóa",
+          "slug": "bai-31-sinh-quyen-khu-sinh-hoc-va-chu-trinh-sinh-dia-hoa",
+          "kind": "theory",
+          "keyIdeas": ["Các khu sinh học", "Chu trình carbon, nitrogen, nước"],
+          "interactiveIdea": "Sơ đồ chu trình carbon động, chỉnh lượng đốt nhiên liệu hóa thạch và xem CO₂ khí quyển."
+        },
+        {
+          "no": 32,
+          "title": "Bài 32. Thực hành: Thiết kế một hệ sinh thái nhân tạo",
+          "slug": "bai-32-thuc-hanh-thiet-ke-mot-he-sinh-thai-nhan-tao",
+          "kind": "practice",
+          "keyIdeas": ["Thiết kế bể thủy sinh/terrarium", "Duy trì cân bằng"],
+          "interactiveIdea": "Trình thiết kế bể thủy sinh ảo, chọn sinh vật và theo dõi cân bằng qua thời gian."
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "label": "Chương 8",
+      "title": "Sinh thái học phục hồi, bảo tồn và phát triển bền vững",
+      "slug": "sinh-thai-hoc-phuc-hoi-bao-ton-va-phat-trien-ben-vung",
+      "strand": "sinh-thai",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 33,
+          "title": "Bài 33. Sinh thái học phục hồi và bảo tồn đa dạng sinh vật",
+          "slug": "bai-33-sinh-thai-hoc-phuc-hoi-va-bao-ton-da-dang-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Phục hồi hệ sinh thái", "Bảo tồn tại chỗ và chuyển chỗ"],
+          "interactiveIdea": "Mô phỏng phục hồi rừng ngập mặn: chọn biện pháp và xem đa dạng loài theo năm."
+        },
+        {
+          "no": 34,
+          "title": "Bài 34. Phát triển bền vững",
+          "slug": "bai-34-phat-trien-ben-vung",
+          "kind": "theory",
+          "keyIdeas": ["Khái niệm phát triển bền vững", "Biện pháp sử dụng tài nguyên hợp lí"],
+          "interactiveIdea": "Máy tính dấu chân sinh thái cá nhân với gợi ý giảm tác động."
+        },
+        {
+          "no": 35,
+          "title": "Bài 35. Dự án: Tìm hiểu thực trạng bảo tồn sinh thái tại địa phương và đề xuất giải pháp bảo tồn",
+          "slug": "bai-35-du-an-tim-hieu-thuc-trang-bao-ton-sinh-thai-tai-dia-phuong-va-de-xuat",
+          "kind": "activity",
+          "keyIdeas": ["Khảo sát thực trạng", "Đề xuất giải pháp"],
+          "interactiveIdea": "Bản đồ địa phương đánh dấu khu bảo tồn và ghi chú khảo sát, xuất báo cáo."
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "label": "Chuyên đề 1",
+      "title": "Sinh học phân tử",
+      "slug": "cd-sinh-hoc-phan-tu",
+      "strand": "chuyen-de",
+      "volume": "Chuyên đề học tập Sinh học 12",
+      "lessons": [
+        {
+          "no": 1,
+          "title": "Bài 1. Khái quát sinh học phân tử và các thành tựu",
+          "slug": "cd-bai-1-khai-quat-sinh-hoc-phan-tu-va-cac-thanh-tuu",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Đối tượng sinh học phân tử", "Thành tựu nổi bật"],
+          "interactiveIdea": "Dòng thời gian thành tựu sinh học phân tử từ cấu trúc DNA đến CRISPR."
+        },
+        {
+          "no": 2,
+          "title": "Bài 2. Phương pháp tách chiết DNA",
+          "slug": "cd-bai-2-phuong-phap-tach-chiet-dna",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Nguyên lí tách chiết", "Các bước thực hiện"],
+          "interactiveIdea": "Quy trình tách chiết DNA tương tác với giải thích vai trò từng hóa chất."
+        },
+        {
+          "no": 3,
+          "title": "Bài 3. Công nghệ gene",
+          "slug": "cd-bai-3-cong-nghe-gene",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Kĩ thuật PCR, điện di", "Tạo DNA tái tổ hợp", "Ứng dụng"],
+          "interactiveIdea": "Mô phỏng PCR theo chu kì nhân đôi số bản sao và mô phỏng điện di gel."
+        },
+        {
+          "no": 4,
+          "title": "Bài 4. Dự án: Tìm hiểu về các sản phẩm chuyển gene và thu thập các thông tin đánh giá về triển vọng của công nghệ gene trong tương lai",
+          "slug": "cd-bai-4-du-an-tim-hieu-ve-cac-san-pham-chuyen-gene-va-thu-thap-cac-thong-tin",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Tìm hiểu sản phẩm chuyển gene", "Đánh giá triển vọng"],
+          "interactiveIdea": "Bảng tranh luận lợi ích – rủi ro sản phẩm GMO với bình chọn."
+        }
+      ]
+    },
+    {
+      "no": 10,
+      "label": "Chuyên đề 2",
+      "title": "Kiểm soát sinh học",
+      "slug": "cd-kiem-soat-sinh-hoc",
+      "strand": "chuyen-de",
+      "volume": "Chuyên đề học tập Sinh học 12",
+      "lessons": [
+        {
+          "no": 5,
+          "title": "Bài 5. Khái niệm, cơ sở khoa học và vai trò của kiểm soát sinh học",
+          "slug": "cd-bai-5-khai-niem-co-so-khoa-hoc-va-vai-tro-cua-kiem-soat-sinh-hoc",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Khái niệm kiểm soát sinh học", "Cơ sở sinh thái học"],
+          "interactiveIdea": "Mô phỏng sâu hại – thiên địch: thả thiên địch và xem mật độ sâu hại giảm."
+        },
+        {
+          "no": 6,
+          "title": "Bài 6. Biện pháp kiểm soát sinh học",
+          "slug": "cd-bai-6-bien-phap-kiem-soat-sinh-hoc",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Sử dụng thiên địch", "Chế phẩm sinh học", "Kĩ thuật di truyền"],
+          "interactiveIdea": "Thẻ ghép biện pháp kiểm soát sinh học với loài gây hại phù hợp."
+        },
+        {
+          "no": 7,
+          "title": "Bài 7. Dự án: Sưu tầm/điều tra ứng dụng kiểm soát sinh học",
+          "slug": "cd-bai-7-du-an-suu-tam-dieu-tra-ung-dung-kiem-soat-sinh-hoc",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Sưu tầm, điều tra", "Báo cáo kết quả"],
+          "interactiveIdea": "Khung dự án với biểu mẫu thu thập ví dụ và bản đồ điểm áp dụng."
+        }
+      ]
+    },
+    {
+      "no": 11,
+      "label": "Chuyên đề 3",
+      "title": "Sinh thái nhân văn",
+      "slug": "cd-sinh-thai-nhan-van",
+      "strand": "chuyen-de",
+      "volume": "Chuyên đề học tập Sinh học 12",
+      "lessons": [
+        {
+          "no": 8,
+          "title": "Bài 8. Khái niệm và giá trị của sinh thái nhân văn trong phát triển bền vững",
+          "slug": "cd-bai-8-khai-niem-va-gia-tri-cua-sinh-thai-nhan-van-trong-phat-trien-ben-vung",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Khái niệm sinh thái nhân văn", "Giá trị với phát triển bền vững"],
+          "interactiveIdea": "Sơ đồ quan hệ con người – tự nhiên – xã hội bấm để xem tác động hai chiều."
+        },
+        {
+          "no": 9,
+          "title": "Bài 9. Giá trị của sinh thái nhân văn trong một số lĩnh vực",
+          "slug": "cd-bai-9-gia-tri-cua-sinh-thai-nhan-van-trong-mot-so-linh-vuc",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Nông nghiệp, đô thị, du lịch", "Ví dụ thực tiễn"],
+          "interactiveIdea": "Mô phỏng quy hoạch đô thị xanh chỉnh diện tích cây xanh và xem chỉ số chất lượng sống."
+        },
+        {
+          "no": 10,
+          "title": "Bài 10. Dự án: Điều tra, tìm hiểu về một trong các lĩnh vực sinh thái nhân văn tại địa phương",
+          "slug": "cd-bai-10-du-an-dieu-tra-tim-hieu-ve-mot-trong-cac-linh-vuc-sinh-thai-nhan-van",
+          "kind": "chuyen-de",
+          "keyIdeas": ["Điều tra thực tế", "Đề xuất giải pháp"],
+          "interactiveIdea": "Khung dự án với bản đồ địa phương và biểu đồ kết quả khảo sát."
+        }
+      ]
+    }
+  ]
+}

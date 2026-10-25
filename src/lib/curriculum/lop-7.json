@@ -1,0 +1,249 @@
+{
+  "grade": 7,
+  "volumes": ["Sách giáo khoa (1 tập)"],
+  "chapters": [
+    {
+      "no": 7,
+      "label": "Chương VII",
+      "title": "Trao đổi chất và chuyển hóa năng lượng ở sinh vật",
+      "slug": "trao-doi-chat-va-chuyen-hoa-nang-luong-o-sinh-vat",
+      "strand": "trao-doi-chat",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 21,
+          "title": "Bài 21. Khái quát về trao đổi chất và chuyển hóa năng lượng",
+          "slug": "bai-21-khai-quat-ve-trao-doi-chat-va-chuyen-hoa-nang-luong",
+          "kind": "theory",
+          "keyIdeas": [
+            "Trao đổi chất với môi trường",
+            "Chuyển hóa năng lượng",
+            "Vai trò đối với sự sống"
+          ],
+          "interactiveIdea": "Sơ đồ dòng vật chất và năng lượng vào/ra cơ thể, bấm từng mũi tên để xem chất được trao đổi."
+        },
+        {
+          "no": 22,
+          "title": "Bài 22. Quang hợp ở thực vật",
+          "slug": "bai-22-quang-hop-o-thuc-vat",
+          "kind": "theory",
+          "keyIdeas": [
+            "Nguyên liệu và sản phẩm quang hợp",
+            "Lá là cơ quan quang hợp",
+            "Chuyển hóa quang năng thành hóa năng"
+          ],
+          "interactiveIdea": "Mô hình lá cây: kéo CO₂, nước, ánh sáng vào để tạo glucose và O₂, phương trình chữ hiện dần."
+        },
+        {
+          "no": 23,
+          "title": "Bài 23. Một số yếu tố ảnh hưởng đến quang hợp",
+          "slug": "bai-23-mot-so-yeu-to-anh-huong-den-quang-hop",
+          "kind": "theory",
+          "keyIdeas": ["Ánh sáng, CO₂, nước, nhiệt độ", "Ứng dụng trong trồng trọt"],
+          "interactiveIdea": "Thanh trượt cường độ ánh sáng, CO₂, nhiệt độ và đồ thị tốc độ quang hợp thay đổi theo."
+        },
+        {
+          "no": 24,
+          "title": "Bài 24. Thực hành: Chứng minh quang hợp ở cây xanh",
+          "slug": "bai-24-thuc-hanh-chung-minh-quang-hop-o-cay-xanh",
+          "kind": "practice",
+          "keyIdeas": ["Thí nghiệm tinh bột với iodine", "Thí nghiệm thải O₂"],
+          "interactiveIdea": "Phòng thí nghiệm ảo: che lá, chiếu sáng, nhỏ iodine và quan sát màu."
+        },
+        {
+          "no": 25,
+          "title": "Bài 25. Hô hấp tế bào",
+          "slug": "bai-25-ho-hap-te-bao",
+          "kind": "theory",
+          "keyIdeas": [
+            "Phân giải glucose tạo năng lượng",
+            "Ti thể là nơi hô hấp",
+            "So sánh với quang hợp"
+          ],
+          "interactiveIdea": "Hoạt hình ti thể nhận glucose và O₂, giải phóng CO₂, nước và ATP; bảng so sánh với quang hợp."
+        },
+        {
+          "no": 26,
+          "title": "Bài 26. Một số yếu tố ảnh hưởng đến hô hấp tế bào",
+          "slug": "bai-26-mot-so-yeu-to-anh-huong-den-ho-hap-te-bao",
+          "kind": "theory",
+          "keyIdeas": ["Nhiệt độ, nước, O₂, CO₂", "Bảo quản nông sản"],
+          "interactiveIdea": "Mô phỏng kho bảo quản nông sản: điều chỉnh nhiệt độ, độ ẩm, O₂ và xem tốc độ hô hấp, thời gian bảo quản."
+        },
+        {
+          "no": 27,
+          "title": "Bài 27. Thực hành: Hô hấp ở thực vật",
+          "slug": "bai-27-thuc-hanh-ho-hap-o-thuc-vat",
+          "kind": "practice",
+          "keyIdeas": ["Thí nghiệm hạt nảy mầm thải CO₂", "Nước vôi trong vẩn đục"],
+          "interactiveIdea": "Thí nghiệm ảo bình hạt nảy mầm nối ống nước vôi trong, quan sát độ đục theo thời gian."
+        },
+        {
+          "no": 28,
+          "title": "Bài 28. Trao đổi khí ở sinh vật",
+          "slug": "bai-28-trao-doi-khi-o-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Khí khổng ở lá", "Trao đổi khí ở động vật", "Cơ quan hô hấp"],
+          "interactiveIdea": "Hoạt hình khí khổng đóng mở theo ánh sáng và nước, mũi tên O₂/CO₂ ra vào."
+        },
+        {
+          "no": 29,
+          "title": "Bài 29. Vai trò của nước và chất dinh dưỡng đối với sinh vật",
+          "slug": "bai-29-vai-tro-cua-nuoc-va-chat-dinh-duong-doi-voi-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Cấu trúc và tính chất của nước", "Vai trò của nước và chất dinh dưỡng"],
+          "interactiveIdea": "Mô hình phân tử nước có cực, kéo các phân tử để thấy liên kết và khả năng hòa tan."
+        },
+        {
+          "no": 30,
+          "title": "Bài 30. Trao đổi nước và chất dinh dưỡng ở thực vật",
+          "slug": "bai-30-trao-doi-nuoc-va-chat-dinh-duong-o-thuc-vat",
+          "kind": "theory",
+          "keyIdeas": ["Hấp thụ ở rễ", "Vận chuyển trong thân", "Thoát hơi nước ở lá"],
+          "interactiveIdea": "Hoạt hình dòng nước từ lông hút qua mạch gỗ lên lá, thanh trượt độ ẩm không khí."
+        },
+        {
+          "no": 31,
+          "title": "Bài 31. Trao đổi nước và chất dinh dưỡng ở động vật",
+          "slug": "bai-31-trao-doi-nuoc-va-chat-dinh-duong-o-dong-vat",
+          "kind": "theory",
+          "keyIdeas": [
+            "Nhu cầu nước ở động vật",
+            "Con đường thu nhận và tiêu hóa thức ăn",
+            "Vận chuyển chất"
+          ],
+          "interactiveIdea": "Sơ đồ ống tiêu hóa người tương tác theo dõi miếng thức ăn qua từng cơ quan."
+        },
+        {
+          "no": 32,
+          "title": "Bài 32. Thực hành: Chứng minh thân vận chuyển nước và lá thoát hơi nước",
+          "slug": "bai-32-thuc-hanh-chung-minh-than-van-chuyen-nuoc-va-la-thoat-hoi-nuoc",
+          "kind": "practice",
+          "keyIdeas": ["Cành cây cắm nước màu", "Túi nilon bọc lá"],
+          "interactiveIdea": "Thí nghiệm ảo cắm cành hoa trắng vào nước màu, tua thời gian để thấy màu lan lên cánh."
+        }
+      ]
+    },
+    {
+      "no": 8,
+      "label": "Chương VIII",
+      "title": "Cảm ứng ở sinh vật",
+      "slug": "cam-ung-o-sinh-vat",
+      "strand": "cam-ung",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 33,
+          "title": "Bài 33. Cảm ứng ở sinh vật và tập tính ở động vật",
+          "slug": "bai-33-cam-ung-o-sinh-vat-va-tap-tinh-o-dong-vat",
+          "kind": "theory",
+          "keyIdeas": [
+            "Khái niệm cảm ứng",
+            "Cảm ứng ở thực vật và động vật",
+            "Tập tính bẩm sinh và học được"
+          ],
+          "interactiveIdea": "Mô phỏng cây hướng sáng và cây trinh nữ cụp lá khi chạm; thẻ phân loại tập tính."
+        },
+        {
+          "no": 34,
+          "title": "Bài 34. Vận dụng hiện tượng cảm ứng ở sinh vật vào thực tiễn",
+          "slug": "bai-34-van-dung-hien-tuong-cam-ung-o-sinh-vat-vao-thuc-tien",
+          "kind": "theory",
+          "keyIdeas": ["Ứng dụng trong trồng trọt", "Ứng dụng trong chăn nuôi, học tập"],
+          "interactiveIdea": "Thẻ tình huống: chọn biện pháp dựa trên cảm ứng (làm giàn, bẫy đèn, huấn luyện vật nuôi)."
+        },
+        {
+          "no": 35,
+          "title": "Bài 35. Thực hành: Cảm ứng ở sinh vật",
+          "slug": "bai-35-thuc-hanh-cam-ung-o-sinh-vat",
+          "kind": "practice",
+          "keyIdeas": ["Thí nghiệm hướng sáng, hướng nước", "Ghi nhận kết quả"],
+          "interactiveIdea": "Thí nghiệm ảo đặt chậu cây cạnh nguồn sáng, tua ngày để quan sát ngọn cây uốn cong."
+        }
+      ]
+    },
+    {
+      "no": 9,
+      "label": "Chương IX",
+      "title": "Sinh trưởng và phát triển ở sinh vật",
+      "slug": "sinh-truong-va-phat-trien-o-sinh-vat",
+      "strand": "sinh-truong-phat-trien",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 36,
+          "title": "Bài 36. Khái quát về sinh trưởng và phát triển ở sinh vật",
+          "slug": "bai-36-khai-quat-ve-sinh-truong-va-phat-trien-o-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": [
+            "Phân biệt sinh trưởng và phát triển",
+            "Mô phân sinh",
+            "Các giai đoạn vòng đời"
+          ],
+          "interactiveIdea": "Dòng thời gian vòng đời ếch, bướm, cây đậu với thanh trượt tuổi."
+        },
+        {
+          "no": 37,
+          "title": "Bài 37. Ứng dụng sinh trưởng và phát triển ở sinh vật vào thực tiễn",
+          "slug": "bai-37-ung-dung-sinh-truong-va-phat-trien-o-sinh-vat-vao-thuc-tien",
+          "kind": "theory",
+          "keyIdeas": [
+            "Yếu tố ảnh hưởng: nhiệt, nước, ánh sáng, dinh dưỡng",
+            "Ứng dụng trong trồng trọt, chăn nuôi"
+          ],
+          "interactiveIdea": "Mô phỏng nuôi cây/vật nuôi: điều chỉnh yếu tố môi trường và xem đường cong sinh trưởng."
+        },
+        {
+          "no": 38,
+          "title": "Bài 38. Thực hành: Quan sát, mô tả sự sinh trưởng và phát triển ở một số sinh vật",
+          "slug": "bai-38-thuc-hanh-quan-sat-mo-ta-su-sinh-truong-va-phat-trien-o-mot-so-sinh-vat",
+          "kind": "practice",
+          "keyIdeas": ["Quan sát hạt nảy mầm", "Ghi đo chiều cao theo ngày"],
+          "interactiveIdea": "Bảng ghi số liệu chiều cao cây theo ngày tự vẽ đồ thị sinh trưởng."
+        }
+      ]
+    },
+    {
+      "no": 10,
+      "label": "Chương X",
+      "title": "Sinh sản ở sinh vật",
+      "slug": "sinh-san-o-sinh-vat",
+      "strand": "sinh-san",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 39,
+          "title": "Bài 39. Sinh sản vô tính ở sinh vật",
+          "slug": "bai-39-sinh-san-vo-tinh-o-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Sinh sản sinh dưỡng, nảy chồi, phân đôi", "Giâm, chiết, ghép, nuôi cấy mô"],
+          "interactiveIdea": "Hoạt hình các hình thức sinh sản vô tính, kéo thả ví dụ vào hình thức đúng."
+        },
+        {
+          "no": 40,
+          "title": "Bài 40. Sinh sản hữu tính ở sinh vật",
+          "slug": "bai-40-sinh-san-huu-tinh-o-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Cấu tạo hoa", "Thụ phấn và thụ tinh", "Sinh sản hữu tính ở động vật"],
+          "interactiveIdea": "Sơ đồ hoa bấm từng bộ phận; hoạt hình hạt phấn tới nhụy, hình thành quả và hạt."
+        },
+        {
+          "no": 41,
+          "title": "Bài 41. Một số yếu tố ảnh hưởng và điều hòa, điều khiển sinh sản ở sinh vật",
+          "slug": "bai-41-mot-so-yeu-to-anh-huong-va-dieu-hoa-dieu-khien-sinh-san-o-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Yếu tố môi trường và bên trong", "Ứng dụng điều khiển sinh sản"],
+          "interactiveIdea": "Thanh trượt nhiệt độ, ánh sáng, dinh dưỡng thay đổi số trứng/tỉ lệ ra hoa trong mô phỏng."
+        },
+        {
+          "no": 42,
+          "title": "Bài 42. Cơ thể sinh vật là một thể thống nhất",
+          "slug": "bai-42-co-the-sinh-vat-la-mot-the-thong-nhat",
+          "kind": "theory",
+          "keyIdeas": ["Mối quan hệ giữa các quá trình sống", "Cơ thể và môi trường"],
+          "interactiveIdea": "Sơ đồ mạng liên kết các quá trình trao đổi chất, cảm ứng, sinh trưởng, sinh sản; bấm vào để xem quan hệ."
+        }
+      ]
+    }
+  ]
+}

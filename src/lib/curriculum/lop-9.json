@@ -1,0 +1,189 @@
+{
+  "grade": 9,
+  "volumes": ["Sách giáo khoa (1 tập)"],
+  "chapters": [
+    {
+      "no": 11,
+      "label": "Chương XI",
+      "title": "Di truyền học Mendel. Cơ sở phân tử của hiện tượng di truyền",
+      "slug": "di-truyen-hoc-mendel-co-so-phan-tu-cua-hien-tuong-di-truyen",
+      "strand": "di-truyen",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 36,
+          "title": "Bài 36. Khái quát về di truyền học",
+          "slug": "bai-36-khai-quat-ve-di-truyen-hoc",
+          "kind": "theory",
+          "keyIdeas": [
+            "Di truyền và biến dị",
+            "Thuật ngữ cơ bản: gene, allele, kiểu gene, kiểu hình"
+          ],
+          "interactiveIdea": "Thẻ thuật ngữ lật mặt kèm ví dụ hình ảnh đậu Hà Lan."
+        },
+        {
+          "no": 37,
+          "title": "Bài 37. Các quy luật di truyền của Mendel",
+          "slug": "bai-37-cac-quy-luat-di-truyen-cua-mendel",
+          "kind": "theory",
+          "keyIdeas": [
+            "Phép lai một cặp tính trạng",
+            "Quy luật phân li và phân li độc lập",
+            "Lai phân tích"
+          ],
+          "interactiveIdea": "Bảng Punnett tương tác: chọn kiểu gene bố mẹ và xem tỉ lệ kiểu gene, kiểu hình ở đời con."
+        },
+        {
+          "no": 38,
+          "title": "Bài 38. Nucleic acid và gene",
+          "slug": "bai-38-nucleic-acid-va-gene",
+          "kind": "theory",
+          "keyIdeas": ["Cấu trúc DNA và RNA", "Nguyên tắc bổ sung", "Gene là đoạn DNA"],
+          "interactiveIdea": "Mô hình xoắn kép DNA 3D, nhập một mạch để tự sinh mạch bổ sung."
+        },
+        {
+          "no": 39,
+          "title": "Bài 39. Tái bản DNA và phiên mã tạo RNA",
+          "slug": "bai-39-tai-ban-dna-va-phien-ma-tao-rna",
+          "kind": "theory",
+          "keyIdeas": ["Tái bản bán bảo toàn", "Phiên mã tạo mRNA"],
+          "interactiveIdea": "Hoạt hình tái bản và phiên mã từng bước, học sinh kéo nucleotide đúng vào vị trí."
+        },
+        {
+          "no": 40,
+          "title": "Bài 40. Dịch mã và mối quan hệ từ gene đến tính trạng",
+          "slug": "bai-40-dich-ma-va-moi-quan-he-tu-gene-den-tinh-trang",
+          "kind": "theory",
+          "keyIdeas": [
+            "Mã di truyền",
+            "Dịch mã tạo chuỗi amino acid",
+            "Gene → mRNA → protein → tính trạng"
+          ],
+          "interactiveIdea": "Bộ giải mã: nhập trình tự mRNA và tra bảng mã di truyền để dựng chuỗi polypeptide."
+        },
+        {
+          "no": 41,
+          "title": "Bài 41. Đột biến gene",
+          "slug": "bai-41-dot-bien-gene",
+          "kind": "theory",
+          "keyIdeas": ["Các dạng đột biến điểm", "Nguyên nhân và hậu quả"],
+          "interactiveIdea": "Trình soạn trình tự: thay, thêm, mất một nucleotide và xem chuỗi amino acid thay đổi."
+        }
+      ]
+    },
+    {
+      "no": 12,
+      "label": "Chương XII",
+      "title": "Di truyền nhiễm sắc thể",
+      "slug": "di-truyen-nhiem-sac-the",
+      "strand": "di-truyen",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 42,
+          "title": "Bài 42. Nhiễm sắc thể và bộ nhiễm sắc thể",
+          "slug": "bai-42-nhiem-sac-the-va-bo-nhiem-sac-the",
+          "kind": "theory",
+          "keyIdeas": [
+            "Cấu trúc nhiễm sắc thể",
+            "Bộ NST lưỡng bội, đơn bội",
+            "Bộ NST đặc trưng loài"
+          ],
+          "interactiveIdea": "Bộ NST người (karyotype) kéo thả xếp cặp tương đồng."
+        },
+        {
+          "no": 43,
+          "title": "Bài 43. Nguyên phân và giảm phân",
+          "slug": "bai-43-nguyen-phan-va-giam-phan",
+          "kind": "theory",
+          "keyIdeas": ["Các kì của nguyên phân", "Giảm phân tạo giao tử", "So sánh hai quá trình"],
+          "interactiveIdea": "Hoạt hình nguyên phân và giảm phân điều khiển từng kì, theo dõi số NST."
+        },
+        {
+          "no": 44,
+          "title": "Bài 44. Nhiễm sắc thể giới tính và cơ chế xác định giới tính",
+          "slug": "bai-44-nhiem-sac-the-gioi-tinh-va-co-che-xac-dinh-gioi-tinh",
+          "kind": "theory",
+          "keyIdeas": ["NST giới tính XX, XY", "Cơ chế xác định giới tính", "Tỉ lệ nam : nữ 1 : 1"],
+          "interactiveIdea": "Mô phỏng thụ tinh ngẫu nhiên nhiều lần đếm tỉ lệ con trai/con gái."
+        },
+        {
+          "no": 45,
+          "title": "Bài 45. Di truyền liên kết",
+          "slug": "bai-45-di-truyen-lien-ket",
+          "kind": "theory",
+          "keyIdeas": ["Gene liên kết trên một NST", "Thí nghiệm Morgan", "Ý nghĩa"],
+          "interactiveIdea": "So sánh kết quả lai khi gene phân li độc lập và liên kết qua bảng Punnett song song."
+        },
+        {
+          "no": 46,
+          "title": "Bài 46. Đột biến nhiễm sắc thể",
+          "slug": "bai-46-dot-bien-nhiem-sac-the",
+          "kind": "theory",
+          "keyIdeas": ["Đột biến cấu trúc NST", "Đột biến số lượng NST", "Hậu quả"],
+          "interactiveIdea": "Kéo thả đoạn NST để tạo mất, lặp, đảo, chuyển đoạn; thêm/bớt NST để tạo thể lệch bội."
+        }
+      ]
+    },
+    {
+      "no": 13,
+      "label": "Chương XIII",
+      "title": "Di truyền học với con người và đời sống",
+      "slug": "di-truyen-hoc-voi-con-nguoi-va-doi-song",
+      "strand": "di-truyen",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 47,
+          "title": "Bài 47. Di truyền học với con người",
+          "slug": "bai-47-di-truyen-hoc-voi-con-nguoi",
+          "kind": "theory",
+          "keyIdeas": ["Tính trạng và bệnh di truyền ở người", "Phả hệ", "Tư vấn di truyền"],
+          "interactiveIdea": "Trình vẽ phả hệ tương tác, suy luận kiểu gene từng thành viên."
+        },
+        {
+          "no": 48,
+          "title": "Bài 48. Ứng dụng công nghệ di truyền vào đời sống",
+          "slug": "bai-48-ung-dung-cong-nghe-di-truyen-vao-doi-song",
+          "kind": "theory",
+          "keyIdeas": ["Công nghệ DNA tái tổ hợp", "Sinh vật biến đổi gene", "Đạo đức sinh học"],
+          "interactiveIdea": "Phòng lab ảo cắt-nối gene bằng enzyme cắt giới hạn để tạo vi khuẩn sản xuất insulin."
+        }
+      ]
+    },
+    {
+      "no": 14,
+      "label": "Chương XIV",
+      "title": "Tiến hóa",
+      "slug": "tien-hoa",
+      "strand": "tien-hoa",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 49,
+          "title": "Bài 49. Khái niệm tiến hóa và các hình thức chọn lọc",
+          "slug": "bai-49-khai-niem-tien-hoa-va-cac-hinh-thuc-chon-loc",
+          "kind": "theory",
+          "keyIdeas": ["Khái niệm tiến hóa", "Chọn lọc nhân tạo", "Chọn lọc tự nhiên"],
+          "interactiveIdea": "Mô phỏng bướm sáng/tối trên thân cây: chọn lọc tự nhiên làm thay đổi tỉ lệ qua các thế hệ."
+        },
+        {
+          "no": 50,
+          "title": "Bài 50. Cơ chế tiến hóa",
+          "slug": "bai-50-co-che-tien-hoa",
+          "kind": "theory",
+          "keyIdeas": ["Quan điểm của Darwin", "Thuyết tiến hóa hiện đại"],
+          "interactiveIdea": "Mô phỏng quần thể với biến dị, chọn lọc và di truyền, đồ thị tần số đặc điểm theo thế hệ."
+        },
+        {
+          "no": 51,
+          "title": "Bài 51. Sự phát sinh và phát triển của sự sống trên Trái Đất",
+          "slug": "bai-51-su-phat-sinh-va-phat-trien-cua-su-song-tren-trai-dat",
+          "kind": "theory",
+          "keyIdeas": ["Nguồn gốc sự sống", "Các đại địa chất", "Sự phát sinh loài người"],
+          "interactiveIdea": "Dòng thời gian địa chất cuộn được với các mốc xuất hiện nhóm sinh vật."
+        }
+      ]
+    }
+  ]
+}

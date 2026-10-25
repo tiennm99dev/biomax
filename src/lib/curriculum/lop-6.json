@@ -1,0 +1,243 @@
+{
+  "grade": 6,
+  "volumes": ["Sách giáo khoa (1 tập)"],
+  "chapters": [
+    {
+      "no": 5,
+      "label": "Chương V",
+      "title": "Tế bào",
+      "slug": "te-bao",
+      "strand": "te-bao",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 18,
+          "title": "Bài 18. Tế bào - Đơn vị cơ bản của sự sống",
+          "slug": "bai-18-te-bao-don-vi-co-ban-cua-su-song",
+          "kind": "theory",
+          "keyIdeas": ["Tế bào là đơn vị cấu trúc và chức năng", "Hình dạng, kích thước tế bào"],
+          "interactiveIdea": "Thanh trượt thu phóng từ cơ thể đến mô đến tế bào, so sánh kích thước các loại tế bào với thước đo micromet."
+        },
+        {
+          "no": 19,
+          "title": "Bài 19. Cấu tạo và chức năng các thành phần của tế bào",
+          "slug": "bai-19-cau-tao-va-chuc-nang-cac-thanh-phan-cua-te-bao",
+          "kind": "theory",
+          "keyIdeas": [
+            "Màng, chất tế bào, nhân",
+            "Tế bào nhân sơ và nhân thực",
+            "Tế bào động vật và thực vật"
+          ],
+          "interactiveIdea": "Sơ đồ tế bào động vật và thực vật bấm vào từng bào quan để xem tên và chức năng, kéo thả ghép nhãn."
+        },
+        {
+          "no": 20,
+          "title": "Bài 20. Sự lớn lên và sinh sản của tế bào",
+          "slug": "bai-20-su-lon-len-va-sinh-san-cua-te-bao",
+          "kind": "theory",
+          "keyIdeas": [
+            "Tế bào lớn lên rồi phân chia",
+            "Một tế bào tạo ra 2, 4, 8 tế bào",
+            "Ý nghĩa với cơ thể"
+          ],
+          "interactiveIdea": "Hoạt hình phân chia tế bào theo lượt, đếm số tế bào sau n lần phân chia (2^n)."
+        },
+        {
+          "no": 21,
+          "title": "Bài 21. Thực hành: Quan sát và phân biệt một số loại tế bào",
+          "slug": "bai-21-thuc-hanh-quan-sat-va-phan-biet-mot-so-loai-te-bao",
+          "kind": "practice",
+          "keyIdeas": [
+            "Làm tiêu bản tế bào",
+            "Quan sát dưới kính hiển vi",
+            "Phân biệt tế bào động vật và thực vật"
+          ],
+          "interactiveIdea": "Kính hiển vi ảo: chỉnh vật kính và tiêu cự để thấy tế bào vảy hành, tế bào trứng cá."
+        }
+      ]
+    },
+    {
+      "no": 6,
+      "label": "Chương VI",
+      "title": "Từ tế bào đến cơ thể",
+      "slug": "tu-te-bao-den-co-the",
+      "strand": "te-bao",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 22,
+          "title": "Bài 22. Cơ thể sinh vật",
+          "slug": "bai-22-co-the-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Vật sống và vật không sống", "Cơ thể đơn bào và đa bào"],
+          "interactiveIdea": "Trò chơi phân loại kéo thả: vật sống/không sống, đơn bào/đa bào."
+        },
+        {
+          "no": 23,
+          "title": "Bài 23. Tổ chức cơ thể đa bào",
+          "slug": "bai-23-to-chuc-co-the-da-bao",
+          "kind": "theory",
+          "keyIdeas": [
+            "Tế bào → mô → cơ quan → hệ cơ quan → cơ thể",
+            "Hệ cơ quan ở thực vật và người"
+          ],
+          "interactiveIdea": "Sơ đồ phân cấp có thể mở rộng từng tầng tổ chức, ví dụ cây xanh và cơ thể người."
+        },
+        {
+          "no": 24,
+          "title": "Bài 24. Thực hành: Quan sát và mô tả cơ thể đơn bào, cơ thể đa bào",
+          "slug": "bai-24-thuc-hanh-quan-sat-va-mo-ta-co-the-don-bao-co-the-da-bao",
+          "kind": "practice",
+          "keyIdeas": ["Quan sát trùng roi, trùng giày", "Mô tả cơ quan của cây và động vật"],
+          "interactiveIdea": "Kính hiển vi ảo quan sát giọt nước ao, đánh dấu và mô tả sinh vật đơn bào thấy được."
+        }
+      ]
+    },
+    {
+      "no": 7,
+      "label": "Chương VII",
+      "title": "Đa dạng thế giới sống",
+      "slug": "da-dang-the-gioi-song",
+      "strand": "da-dang-the-gioi-song",
+      "volume": "Sách giáo khoa (1 tập)",
+      "lessons": [
+        {
+          "no": 25,
+          "title": "Bài 25. Hệ thống phân loại sinh vật",
+          "slug": "bai-25-he-thong-phan-loai-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": ["Các bậc phân loại", "Năm giới sinh vật", "Tên khoa học"],
+          "interactiveIdea": "Cây phân loại tương tác: chọn một loài và đi từ giới xuống loài, xem các bậc phân loại."
+        },
+        {
+          "no": 26,
+          "title": "Bài 26. Khóa lưỡng phân",
+          "slug": "bai-26-khoa-luong-phan",
+          "kind": "theory",
+          "keyIdeas": ["Phân chia theo cặp đặc điểm đối lập", "Xây dựng khóa lưỡng phân"],
+          "interactiveIdea": "Trình tạo khóa lưỡng phân: trả lời câu hỏi có/không để xác định sinh vật, và tự dựng khóa cho nhóm mới."
+        },
+        {
+          "no": 27,
+          "title": "Bài 27. Vi khuẩn",
+          "slug": "bai-27-vi-khuan",
+          "kind": "theory",
+          "keyIdeas": [
+            "Hình dạng và cấu tạo vi khuẩn",
+            "Vai trò và tác hại",
+            "Phòng bệnh do vi khuẩn"
+          ],
+          "interactiveIdea": "Mô phỏng vi khuẩn sinh sản theo thời gian, thanh trượt nhiệt độ và vệ sinh ảnh hưởng tốc độ tăng."
+        },
+        {
+          "no": 28,
+          "title": "Bài 28. Thực hành: Làm sữa chua và quan sát vi khuẩn",
+          "slug": "bai-28-thuc-hanh-lam-sua-chua-va-quan-sat-vi-khuan",
+          "kind": "practice",
+          "keyIdeas": ["Quy trình làm sữa chua", "Vai trò vi khuẩn lactic", "Quan sát vi khuẩn"],
+          "interactiveIdea": "Trình tự các bước làm sữa chua kéo thả đúng thứ tự, kèm đồng hồ ủ và nhiệt độ."
+        },
+        {
+          "no": 29,
+          "title": "Bài 29. Virus",
+          "slug": "bai-29-virus",
+          "kind": "theory",
+          "keyIdeas": [
+            "Hình dạng và cấu tạo virus",
+            "Virus chỉ sống kí sinh",
+            "Bệnh do virus và phòng tránh"
+          ],
+          "interactiveIdea": "Mô hình 3D virus xoay được và hoạt hình virus xâm nhập, nhân lên trong tế bào."
+        },
+        {
+          "no": 30,
+          "title": "Bài 30. Nguyên sinh vật",
+          "slug": "bai-30-nguyen-sinh-vat",
+          "kind": "theory",
+          "keyIdeas": [
+            "Đa dạng nguyên sinh vật",
+            "Vai trò và bệnh do nguyên sinh vật",
+            "Bệnh sốt rét, kiết lị"
+          ],
+          "interactiveIdea": "Thẻ so sánh trùng roi, trùng giày, trùng biến hình với hoạt hình cách di chuyển."
+        },
+        {
+          "no": 31,
+          "title": "Bài 31. Thực hành: Quan sát nguyên sinh vật",
+          "slug": "bai-31-thuc-hanh-quan-sat-nguyen-sinh-vat",
+          "kind": "practice",
+          "keyIdeas": ["Lấy mẫu nước ao", "Quan sát và vẽ nguyên sinh vật"],
+          "interactiveIdea": "Kính hiển vi ảo với mẫu nước ao, đếm và nhận dạng nguyên sinh vật."
+        },
+        {
+          "no": 32,
+          "title": "Bài 32. Nấm",
+          "slug": "bai-32-nam",
+          "kind": "theory",
+          "keyIdeas": ["Đa dạng nấm", "Nấm có lợi và nấm độc", "Bệnh do nấm"],
+          "interactiveIdea": "Trò chơi nhận diện nấm ăn được và nấm độc qua đặc điểm mũ, phiến, vòng, bao gốc."
+        },
+        {
+          "no": 33,
+          "title": "Bài 33. Thực hành: Quan sát các loại nấm",
+          "slug": "bai-33-thuc-hanh-quan-sat-cac-loai-nam",
+          "kind": "practice",
+          "keyIdeas": ["Quan sát nấm mốc, nấm đảm", "Nhận biết cấu tạo nấm"],
+          "interactiveIdea": "Ảnh phóng to có điểm nóng chỉ các phần của nấm mũ và sợi nấm mốc."
+        },
+        {
+          "no": 34,
+          "title": "Bài 34. Thực vật",
+          "slug": "bai-34-thuc-vat",
+          "kind": "theory",
+          "keyIdeas": ["Rêu, dương xỉ, hạt trần, hạt kín", "Vai trò của thực vật"],
+          "interactiveIdea": "Bảng so sánh các nhóm thực vật với bộ lọc có mạch, có hạt, có hoa."
+        },
+        {
+          "no": 35,
+          "title": "Bài 35. Thực hành: Quan sát và phân biệt một số nhóm thực vật",
+          "slug": "bai-35-thuc-hanh-quan-sat-va-phan-biet-mot-so-nhom-thuc-vat",
+          "kind": "practice",
+          "keyIdeas": ["Quan sát mẫu cây", "Phân loại vào các nhóm"],
+          "interactiveIdea": "Kéo thả ảnh mẫu cây vào đúng nhóm thực vật, giải thích dấu hiệu nhận biết."
+        },
+        {
+          "no": 36,
+          "title": "Bài 36. Động vật",
+          "slug": "bai-36-dong-vat",
+          "kind": "theory",
+          "keyIdeas": ["Động vật không xương sống", "Động vật có xương sống", "Vai trò và tác hại"],
+          "interactiveIdea": "Cây phân loại động vật tương tác, mở từng ngành/lớp để xem đại diện."
+        },
+        {
+          "no": 37,
+          "title": "Bài 37. Thực hành: Quan sát và nhận biết một số nhóm động vật ngoài thiên nhiên",
+          "slug": "bai-37-thuc-hanh-quan-sat-va-nhan-biet-mot-so-nhom-dong-vat-ngoai-thien-nhien",
+          "kind": "practice",
+          "keyIdeas": ["Quan sát động vật ngoài tự nhiên", "Ghi chép và phân loại"],
+          "interactiveIdea": "Nhật kí thực địa số: chụp/chọn ảnh động vật và gán vào nhóm phân loại."
+        },
+        {
+          "no": 38,
+          "title": "Bài 38. Đa dạng sinh học",
+          "slug": "bai-38-da-dang-sinh-hoc",
+          "kind": "theory",
+          "keyIdeas": [
+            "Đa dạng loài và môi trường sống",
+            "Vai trò đa dạng sinh học",
+            "Bảo vệ đa dạng sinh học"
+          ],
+          "interactiveIdea": "So sánh độ đa dạng giữa rừng mưa, sa mạc, hoang mạc lạnh qua biểu đồ số loài."
+        },
+        {
+          "no": 39,
+          "title": "Bài 39. Tìm hiểu sinh vật ngoài thiên nhiên",
+          "slug": "bai-39-tim-hieu-sinh-vat-ngoai-thien-nhien",
+          "kind": "activity",
+          "keyIdeas": ["Kĩ năng quan sát thực địa", "Dùng khóa lưỡng phân nhận diện"],
+          "interactiveIdea": "Bản đồ dã ngoại ảo: đi qua các điểm, quan sát sinh vật và dùng khóa lưỡng phân để định danh."
+        }
+      ]
+    }
+  ]
+}
