@@ -3,7 +3,7 @@
   import SliderField from '#lib/core/slider-field.svelte';
   import { button, focusRing } from '#lib/core/ui.js';
   import { formatNumber } from '#lib/core/number-format.js';
-  import { frameLoop, reducedMotion } from '../_shared/motion.js';
+  import { frameLoop, reducedMotion } from '#lib/core/motion.js';
   import ProtistShape from '../_shared/protist-shape.svelte';
   import { CLUES, PROTISTS, checkClue, protistById, travel } from './engine.js';
 

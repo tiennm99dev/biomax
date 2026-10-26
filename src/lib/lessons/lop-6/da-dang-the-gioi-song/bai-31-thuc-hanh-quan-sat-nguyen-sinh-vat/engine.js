@@ -5,7 +5,7 @@
  * a few cotton fibres to slow them down. Sizes and positions are in µm.
  */
 import { int, rng } from '#lib/core/drill.js';
-import { wrap } from '../_shared/motion.js';
+import { wrap } from '#lib/core/motion.js';
 
 /** @typedef {'trung-roi' | 'trung-giay' | 'trung-bien-hinh' | 'tao-luc' | 'tao-silic' | 'bot-khi' | 'manh-vun'} KindId */
 /** @typedef {'vang-ao' | 'bun-day' | 'binh-rom' | 'nuoc-soi'} SourceId */

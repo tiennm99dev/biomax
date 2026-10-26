@@ -3,7 +3,7 @@
   import SliderField from '#lib/core/slider-field.svelte';
   import { button } from '#lib/core/ui.js';
   import ProtistShape from '../_shared/protist-shape.svelte';
-  import { frameLoop, reducedMotion } from '../_shared/motion.js';
+  import { frameLoop, reducedMotion } from '#lib/core/motion.js';
   import {
     KINDS,
     LENSES,
