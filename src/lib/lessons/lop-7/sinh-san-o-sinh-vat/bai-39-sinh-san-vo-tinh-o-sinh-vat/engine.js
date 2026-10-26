@@ -24,12 +24,12 @@ export const FORMS = [
     organism: 'Trùng roi',
     stages: [
       'Một cá thể trùng roi trưởng thành, có một nhân.',
-      'Nhân phân chia thành hai nhân; cơ thể kéo dài ra.',
-      'Chất tế bào thắt lại ở giữa, chia cơ thể làm hai phần, mỗi phần có một nhân.',
+      'Nhân phân chia thành hai nhân; cơ thể phình rộng ra.',
+      'Cơ thể thắt lại theo chiều dọc, chia làm hai phần, mỗi phần có một nhân.',
       'Hai cá thể con tách rời nhau, giống hệt nhau và giống cơ thể mẹ.',
     ],
     summary:
-      'Phân đôi: cơ thể mẹ tự chia thành hai cá thể con giống nhau (trùng roi, trùng biến hình, trùng giày).',
+      'Phân đôi: cơ thể mẹ tự chia thành hai cá thể con giống nhau (trùng roi phân đôi theo chiều dọc cơ thể; trùng biến hình, trùng giày cũng phân đôi).',
   },
   {
     id: 'nay-choi',

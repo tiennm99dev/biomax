@@ -88,7 +88,7 @@ export default {
           type: 'list',
           ordered: true,
           items: [
-            'Thụ phấn là hiện tượng hạt phấn tiếp xúc với đầu nhụy. Hạt phấn có thể được chuyển tới đầu nhụy nhờ gió, nhờ côn trùng (ong, bướm, ...) hoặc nhờ con người.',
+            'Thụ phấn là hiện tượng hạt phấn tiếp xúc với đầu nhụy. Hoa tự thụ phấn khi hạt phấn rơi vào đầu nhụy của chính hoa đó; hoa giao phấn khi hạt phấn được chuyển tới đầu nhụy của hoa khác. Hạt phấn có thể được chuyển tới đầu nhụy nhờ gió, nhờ côn trùng (ong, bướm, ...), nhờ nước hoặc nhờ con người.',
             'Hạt phấn nảy mầm thành ống phấn; ống phấn xuyên qua vòi nhụy vào bầu nhụy, tới noãn.',
             'Thụ tinh là sự kết hợp giữa giao tử đực và giao tử cái (thực chất là sự hợp nhất nhân của chúng) tạo thành hợp tử.',
             'Sau thụ tinh: hợp tử phát triển thành phôi; noãn phát triển thành hạt chứa phôi; bầu nhụy phát triển thành quả chứa hạt. Mỗi noãn được thụ tinh tạo thành một hạt.',

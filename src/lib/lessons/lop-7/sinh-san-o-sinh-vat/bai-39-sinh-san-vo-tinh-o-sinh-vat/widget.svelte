@@ -9,17 +9,21 @@
   const form = $derived(formById(formId));
   const last = $derived(stage === form.stages.length - 1);
 
-  /** Euglena-like cells for each stage of binary fission. */
+  /**
+   * Euglena-like cells for each stage of binary fission. Euglena splits
+   * along its length, so the cell widens and the halves part side by side
+   * (stacked here), each keeping a flagellum at the front.
+   */
   const FISSION = [
-    [{ cx: 120, rx: 34, nuclei: [120] }],
-    [{ cx: 120, rx: 46, nuclei: [104, 136] }],
+    [{ cy: 90, ry: 18, nuclei: [90] }],
+    [{ cy: 90, ry: 28, nuclei: [80, 100] }],
     [
-      { cx: 98, rx: 27, nuclei: [96] },
-      { cx: 142, rx: 27, nuclei: [144] },
+      { cy: 77, ry: 13, nuclei: [77] },
+      { cy: 103, ry: 13, nuclei: [103] },
     ],
     [
-      { cx: 72, rx: 32, nuclei: [72] },
-      { cx: 168, rx: 32, nuclei: [168] },
+      { cy: 60, ry: 17, nuclei: [60] },
+      { cy: 118, ry: 17, nuclei: [118] },
     ],
   ];
 
@@ -78,29 +82,24 @@
     {#if formId === 'phan-doi'}
       {#each FISSION[stage] as c, i (i)}
         <g class="motion-safe:transition-all motion-safe:duration-500">
-          <path
-            d="M {c.cx - c.rx} 90 q -18 -14 -30 -4"
-            fill="none"
-            stroke="#15803d"
-            stroke-width="2"
-          />
+          <path d="M 76 {c.cy} q -18 -14 -30 -4" fill="none" stroke="#15803d" stroke-width="2" />
           <ellipse
-            cx={c.cx}
-            cy="90"
-            rx={c.rx}
-            ry="20"
+            cx="120"
+            cy={c.cy}
+            rx="44"
+            ry={c.ry}
             fill="#bbf7d0"
             stroke="#15803d"
             stroke-width="2"
           />
           {#each c.nuclei as n (n)}
-            <circle cx={n} cy="90" r="7" fill="#7c3aed" />
+            <circle cx="124" cy={n} r="6" fill="#7c3aed" />
           {/each}
-          <circle cx={c.cx - c.rx + 10} cy="84" r="3" fill="#dc2626" />
+          <circle cx="86" cy={c.cy - 4} r="3" fill="#dc2626" />
         </g>
       {/each}
       {#if stage === 3}
-        <text x="120" y="150" text-anchor="middle" font-size="12" fill="#334155"
+        <text x="120" y="160" text-anchor="middle" font-size="12" fill="#334155"
           >2 trùng roi con giống nhau</text
         >
       {/if}

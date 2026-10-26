@@ -33,7 +33,7 @@
 {#snippet sperm(/** @type {number} */ x, /** @type {number} */ y)}
   <g transform="translate({x} {y})">
     <ellipse cx="0" cy="0" rx="4" ry="3" fill="#2563eb" />
-    <path d="M 4 0 q 5 -4 10 0 q 5 4 10 0" fill="none" stroke="#2563eb" stroke-width="1.5" />
+    <path d="M -4 0 q -5 -4 -10 0 q -5 4 -10 0" fill="none" stroke="#2563eb" stroke-width="1.5" />
   </g>
 {/snippet}
 
@@ -164,10 +164,12 @@
             stroke-width="2"
             stroke-dasharray={stage === 2 ? '4 3' : undefined}
           />
-          <text x="186" y="130" font-size="10" fill="#9a3412">ống phấn</text>
+          <line x1="120" y1="118" x2="182" y2="126" stroke="#9a3412" />
+          <text x="185" y="130" font-size="10" fill="#9a3412">ống phấn</text>
         {/if}
         {#if stage === 3}
-          <text x="60" y="200" font-size="10" fill="#6b21a8">hợp tử trong noãn</text>
+          <line x1="110" y1="159" x2="88" y2="194" stroke="#6b21a8" />
+          <text x="30" y="204" font-size="10" fill="#6b21a8">hợp tử trong noãn</text>
         {/if}
         {#if stage === 1}
           {#if p === 'con-trung'}

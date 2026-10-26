@@ -218,12 +218,18 @@ export default {
     },
     {
       type: 'multi',
-      prompt: 'Những cây nào dưới đây có thể sinh sản sinh dưỡng bằng thân?',
-      options: ['Khoai tây', 'Lá bỏng', 'Gừng', 'Cỏ gấu', 'Khoai lang'],
+      prompt: 'Cây mới mọc ra từ những bộ phận nào dưới đây là sinh sản sinh dưỡng bằng thân?',
+      options: [
+        'Mầm mọc từ củ khoai tây',
+        'Cây con mọc ở mép lá bỏng',
+        'Chồi mọc từ củ gừng',
+        'Cây con mọc từ thân bò của rau má',
+        'Mầm mọc từ củ khoai lang',
+      ],
       answers: [0, 2, 3],
       hints: ['Củ khoai tây là thân củ, củ gừng là thân rễ. Còn củ khoai lang là rễ hay thân?'],
       solution:
-        'Khoai tây (thân củ), gừng (thân rễ), cỏ gấu (thân rễ) sinh sản bằng thân. Lá bỏng sinh sản bằng lá, khoai lang sinh sản bằng rễ củ.',
+        'Củ khoai tây (thân củ), củ gừng (thân rễ), thân bò của rau má đều là thân. Lá bỏng sinh sản bằng lá; củ khoai lang là rễ củ nên mầm mọc từ củ khoai lang là sinh sản bằng rễ.',
     },
     {
       type: 'choice',
