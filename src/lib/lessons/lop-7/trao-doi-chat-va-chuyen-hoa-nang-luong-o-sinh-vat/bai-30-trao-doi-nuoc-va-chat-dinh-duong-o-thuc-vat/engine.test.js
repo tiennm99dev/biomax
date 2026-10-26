@@ -15,7 +15,9 @@ describe('plant water budget', () => {
     expect(budget({ ...DAY, light: false }).transpiration).toBeLessThan(
       budget(DAY).transpiration / 3,
     );
-    expect(budget({ ...DAY, light: false }).sugar).toBe(0);
+    const night = budget({ ...DAY, light: false }).sugar;
+    expect(night).toBeGreaterThan(0);
+    expect(night).toBeLessThan(budget(DAY).sugar);
   });
 
   it('takes up as much water as it loses while the soil is moist', () => {

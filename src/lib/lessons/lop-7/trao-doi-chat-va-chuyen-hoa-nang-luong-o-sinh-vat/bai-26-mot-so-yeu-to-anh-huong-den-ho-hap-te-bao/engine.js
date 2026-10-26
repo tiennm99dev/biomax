@@ -119,7 +119,10 @@ export function damage(s) {
   if (s.temp >= 40)
     return {
       id: 'nong',
-      text: 'Kho quá nóng: nông sản nhanh mất nước, héo, chất lượng giảm nhanh.',
+      text:
+        s.produce === 'qua'
+          ? 'Kho quá nóng: rau quả nhanh mất nước, héo, chất lượng giảm nhanh.'
+          : 'Kho quá nóng: hạt nóng lên, dễ mất sức nảy mầm và giảm chất lượng nhanh.',
     };
   return null;
 }

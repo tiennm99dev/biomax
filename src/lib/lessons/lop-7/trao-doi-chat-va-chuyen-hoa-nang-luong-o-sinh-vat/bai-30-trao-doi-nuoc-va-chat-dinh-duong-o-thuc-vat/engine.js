@@ -26,6 +26,9 @@ export const SOIL_NAME = {
   ngap: 'đất ngập úng',
 };
 
+/** Phloem flow at night, from sugar the leaf stored during the day. */
+export const NIGHT_SUGAR = 0.25;
+
 /**
  * How wide the stomata open (0-1) before any shortage of water.
  * @param {boolean} light
@@ -47,7 +50,9 @@ export function budget({ humidity, light, soil }) {
   const aperture = short
     ? Math.max(0.05, openByLight(light) * (supply / demand))
     : openByLight(light);
-  const sugar = light ? Math.min(1, aperture) * 0.9 : 0;
+  // at night no new sugar is made, but the leaf keeps exporting what it
+  // stored by day, more slowly
+  const sugar = light ? Math.min(1, aperture) * 0.9 : NIGHT_SUGAR;
   return {
     demand: round(demand),
     transpiration: round(transpiration),
@@ -72,7 +77,7 @@ export function explain(w) {
   if (b.wilting)
     return 'Đất khô hạn: rễ hút không kịp lượng nước thoát ra ở lá. Cây thiếu nước, khí khổng khép lại, lá héo. Cần tưới nước cho cây.';
   if (!w.light)
-    return 'Trong tối, khí khổng gần như khép: thoát hơi nước rất yếu nên dòng nước trong mạch gỗ chảy chậm; lá không quang hợp nên mạch rây ít chất hữu cơ mới.';
+    return 'Trong tối, khí khổng gần như khép: thoát hơi nước rất yếu nên dòng nước trong mạch gỗ chảy chậm; lá không quang hợp nên không tạo thêm chất hữu cơ, mạch rây chỉ chuyển chậm phần chất hữu cơ lá đã tích luỹ ban ngày.';
   if (w.humidity >= 85)
     return 'Không khí rất ẩm nên hơi nước khó thoát ra khỏi lá: thoát hơi nước yếu, lực kéo nước lên yếu, dòng nước trong mạch gỗ chậm lại.';
   if (w.humidity <= 40)
