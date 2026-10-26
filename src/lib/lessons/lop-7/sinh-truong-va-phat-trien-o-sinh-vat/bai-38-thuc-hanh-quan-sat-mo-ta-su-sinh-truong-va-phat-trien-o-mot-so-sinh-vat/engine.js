@@ -73,11 +73,23 @@ export function analyse(heights) {
       text: `Ngày ${drop + 2} thấp hơn ngày ${drop + 1}: cây không thể thấp đi. Hãy kiểm tra lại cách đo (đo từ mặt đất đến đỉnh ngọn) hoặc xem ngọn cây có bị gãy không.`,
     };
   }
+  if (increases.every((d) => d === 0)) {
+    return {
+      ok: false,
+      increases,
+      average,
+      fastest,
+      text: 'Chiều cao cây chưa thay đổi qua các ngày: chưa thấy cây sinh trưởng. Hãy tiếp tục chăm sóc, đo thêm vài ngày và kiểm tra xem hạt đã nảy mầm chưa.',
+    };
+  }
+  const lead = increases.every((d) => d > 0)
+    ? 'Cây cao thêm mỗi ngày: cây có sinh trưởng.'
+    : 'Chiều cao cây tăng dần qua các ngày (có ngày không đổi): cây có sinh trưởng.';
   return {
     ok: true,
     increases,
     average,
     fastest,
-    text: `Cây cao thêm mỗi ngày: cây có sinh trưởng. Từ ngày 1 đến ngày ${n}, trung bình mỗi ngày cây cao thêm khoảng ${formatNumber(average, 1)} cm; tăng nhiều nhất từ ngày ${fastest + 1} sang ngày ${fastest + 2} (${formatNumber(increases[fastest], 1)} cm).`,
+    text: `${lead} Từ ngày 1 đến ngày ${n}, trung bình mỗi ngày cây cao thêm khoảng ${formatNumber(average, 1)} cm; tăng nhiều nhất từ ngày ${fastest + 1} sang ngày ${fastest + 2} (${formatNumber(increases[fastest], 1)} cm).`,
   };
 }

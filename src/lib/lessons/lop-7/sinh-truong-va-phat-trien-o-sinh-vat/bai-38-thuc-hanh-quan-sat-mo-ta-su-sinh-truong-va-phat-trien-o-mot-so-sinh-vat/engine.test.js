@@ -31,4 +31,14 @@ describe('growth log', () => {
     expect(a.ok).toBe(false);
     expect(a.text).toContain('Ngày 3 thấp hơn ngày 2');
   });
+
+  it('does not claim daily growth when the height stays the same', () => {
+    const flat = analyse([2, 2, 2]);
+    expect(flat.ok).toBe(false);
+    expect(flat.text).toContain('chưa thấy cây sinh trưởng');
+    const pause = analyse([2, 2, 3]);
+    expect(pause.ok).toBe(true);
+    expect(pause.text).not.toContain('Cây cao thêm mỗi ngày');
+    expect(pause.text).toContain('có ngày không đổi');
+  });
 });

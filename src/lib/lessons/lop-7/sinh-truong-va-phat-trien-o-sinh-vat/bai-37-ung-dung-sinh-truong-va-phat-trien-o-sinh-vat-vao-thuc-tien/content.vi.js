@@ -84,7 +84,11 @@ export default {
           head: ['Đối tượng', 'Loại hormone', 'Lợi ích'],
           rows: [
             ['Cây lấy sợi, lấy gỗ', 'Kích thích sinh trưởng', 'Thân vươn cao, cho nhiều sợi, gỗ'],
-            ['Cây quất cảnh', 'Ức chế sinh trưởng', 'Cây thấp, gọn, nhiều quả, đẹp hơn'],
+            [
+              'Cây quất cảnh',
+              'Kích thích sinh trưởng',
+              'Cây ra nhiều quả, tăng giá trị thẩm mĩ của cây cảnh',
+            ],
             [
               'Củ hành, tỏi, khoai tây',
               'Ức chế sinh trưởng',
