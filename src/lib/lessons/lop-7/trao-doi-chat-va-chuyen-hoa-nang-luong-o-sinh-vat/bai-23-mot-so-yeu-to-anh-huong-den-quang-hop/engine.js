@@ -5,7 +5,8 @@
  * - light: the rate rises with light intensity up to a limit; shade plants
  *   reach their limit in weak light and are harmed by strong light;
  * - carbon dioxide: the rate rises with its concentration up to a limit;
- *   about 0,2 % and above poisons the plant;
+ *   near about 0,2 % it poisons the plant (the rate falls from 0,16 % and
+ *   is half the best at 0,2 %);
  * - temperature: best at about 25-35 °C; above 40 °C or below 10 °C the
  *   rate falls sharply or stops;
  * - water: lacking water, stomata close and the rate falls.
@@ -34,13 +35,16 @@ export function lightFactor(light, plant) {
   return 1 - (0.4 * Math.min(50, light - 50)) / 50;
 }
 
+/** CO₂ level (%) from which the plant starts to be poisoned. */
+export const CO2_TOXIC_FROM = 0.16;
+
 /** @param {number} co2 % of the air, 0-0,3 */
 export function co2Factor(co2) {
   if (co2 <= 0.01) return 0;
-  if (co2 <= 0.15) return ease((co2 - 0.01) / 0.14);
-  if (co2 <= 0.2) return 1;
-  if (co2 >= 0.3 - 1e-9) return 0;
-  return 1 - (co2 - 0.2) / 0.1;
+  if (co2 < 0.12) return ease((co2 - 0.01) / 0.11);
+  if (co2 <= CO2_TOXIC_FROM + 1e-9) return 1;
+  if (co2 >= 0.24 - 1e-9) return 0;
+  return 1 - (co2 - CO2_TOXIC_FROM) / 0.08;
 }
 
 /** @param {number} temp °C */
@@ -114,25 +118,35 @@ export function limiting(c) {
         text: 'Ánh sáng còn yếu: diệp lục nhận được ít năng lượng ánh sáng. Tăng cường độ ánh sáng thì quang hợp tăng (đến một giới hạn).',
       };
     case 'co2':
-      if (c.co2 > 0.2)
+      if (c.co2 > CO2_TOXIC_FROM)
         return {
           id: 'co2',
-          text: 'Nồng độ carbon dioxide quá cao (trên khoảng 0,2%) gây ngộ độc, cây có thể chết, quang hợp giảm mạnh hoặc ngừng.',
+          text: 'Nồng độ carbon dioxide quá cao (khoảng 0,2%) gây ngộ độc cho cây: quang hợp giảm mạnh hoặc ngừng, cây có thể chết.',
         };
       return {
         id: 'co2',
         text: 'Thiếu carbon dioxide, nguyên liệu của quang hợp. Tăng nồng độ carbon dioxide thì quang hợp tăng (đến một giới hạn).',
       };
     case 'temp':
-      return c.temp > 35
-        ? {
-            id: 'temp',
-            text: 'Nhiệt độ quá cao: trên khoảng 40 °C, quang hợp giảm mạnh hoặc ngừng hẳn.',
-          }
-        : {
-            id: 'temp',
-            text: 'Nhiệt độ thấp: dưới khoảng 10 °C, quang hợp giảm mạnh hoặc ngừng hẳn. Hầu hết cây quang hợp tốt nhất ở 25 °C đến 35 °C.',
-          };
+      if (c.temp > 40)
+        return {
+          id: 'temp',
+          text: 'Nhiệt độ quá cao: trên khoảng 40 °C, quang hợp giảm mạnh hoặc ngừng hẳn.',
+        };
+      if (c.temp > 35)
+        return {
+          id: 'temp',
+          text: 'Nhiệt độ cao hơn khoảng thuận lợi 25 °C đến 35 °C nên quang hợp bắt đầu giảm; trên khoảng 40 °C quang hợp giảm mạnh hoặc ngừng hẳn.',
+        };
+      if (c.temp < 10)
+        return {
+          id: 'temp',
+          text: 'Nhiệt độ quá thấp: dưới khoảng 10 °C, quang hợp giảm mạnh hoặc ngừng hẳn.',
+        };
+      return {
+        id: 'temp',
+        text: 'Nhiệt độ thấp hơn khoảng thuận lợi 25 °C đến 35 °C nên quang hợp còn chậm; dưới khoảng 10 °C quang hợp giảm mạnh hoặc ngừng hẳn.',
+      };
     default:
       return {
         id: 'water',

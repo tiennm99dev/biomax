@@ -37,7 +37,7 @@ export function starchLevel({ darkFirst, covered, hours }) {
  * @returns {IodineColour}
  */
 export function iodineColour(level) {
-  if (level >= 0.75) return 'xanh-tim';
+  if (level >= 1) return 'xanh-tim';
   if (level >= 0.25) return 'xanh-tim-nhat';
   return 'vang-nau';
 }

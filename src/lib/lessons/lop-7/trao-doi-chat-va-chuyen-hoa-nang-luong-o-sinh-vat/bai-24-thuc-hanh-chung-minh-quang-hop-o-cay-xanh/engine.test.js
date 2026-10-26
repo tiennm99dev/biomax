@@ -26,6 +26,7 @@ describe('starch practical', () => {
     const short = starchResult({ darkFirst: true, hours: 2, alcohol: true });
     expect(short.verdict).toBe('it-sang');
     expect(short.open).toBe('xanh-tim-nhat');
+    expect(starchResult({ darkFirst: true, hours: 3, alcohol: true }).open).toBe('xanh-tim-nhat');
     expect(starchResult({ darkFirst: true, hours: 0, alcohol: true }).open).toBe('vang-nau');
   });
 

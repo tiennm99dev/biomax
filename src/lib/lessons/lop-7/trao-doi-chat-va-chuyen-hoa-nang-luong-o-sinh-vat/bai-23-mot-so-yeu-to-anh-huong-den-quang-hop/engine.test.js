@@ -11,7 +11,7 @@ import {
 } from './engine.js';
 
 /** @type {import('./engine.js').Conditions} */
-const BEST = { light: 80, co2: 0.18, temp: 30, water: true, plant: 'ua-sang' };
+const BEST = { light: 80, co2: 0.14, temp: 30, water: true, plant: 'ua-sang' };
 
 describe('photosynthesis rate model', () => {
   it('reaches 100 % only when every factor is at its best', () => {
@@ -33,8 +33,10 @@ describe('photosynthesis rate model', () => {
     expect(co2Factor(0)).toBe(0);
     expect(co2Factor(AIR_CO2)).toBeGreaterThan(0);
     expect(co2Factor(AIR_CO2)).toBeLessThan(co2Factor(0.1));
-    expect(co2Factor(0.2)).toBe(1);
-    expect(co2Factor(0.25)).toBeLessThan(1);
+    expect(co2Factor(0.14)).toBe(1);
+    expect(co2Factor(0.2)).toBeLessThan(1);
+    expect(co2Factor(0.2)).toBeGreaterThan(0);
+    expect(co2Factor(0.25)).toBe(0);
     expect(co2Factor(0.3)).toBe(0);
   });
 
@@ -60,6 +62,9 @@ describe('photosynthesis rate model', () => {
     expect(limiting({ ...BEST, co2: 0.26 })?.text).toContain('ngộ độc');
     expect(limiting({ ...BEST, temp: 42 })?.text).toContain('cao');
     expect(limiting({ ...BEST, temp: 8 })?.text).toContain('thấp');
+    expect(limiting({ ...BEST, co2: 0.2 })?.text).toContain('ngộ độc');
+    expect(limiting({ ...BEST, temp: 37 })?.text).not.toContain('quá cao');
+    expect(limiting({ ...BEST, temp: 20 })?.text).not.toContain('quá thấp');
   });
 
   it('draws a curve over the whole range of a factor', () => {
