@@ -40,7 +40,7 @@ export function skinResponse(air, exercising = false) {
       sweat: 0,
       hairErect: true,
       shiver: true,
-      text: 'Rất lạnh: mạch máu dưới da co mạnh, giảm lượng máu qua da để giảm tỏa nhiệt; cơ co chân lông co (sởn gai ốc); cơ run lên để sinh thêm nhiệt; không tiết mồ hôi.',
+      text: 'Rất lạnh: mạch máu dưới da co mạnh, giảm lượng máu qua da để giảm tỏa nhiệt; cơ co chân lông co (sởn gai ốc); cơ run lên để sinh thêm nhiệt; gần như không tiết mồ hôi.',
     };
   if (load < 20)
     return {

@@ -127,7 +127,7 @@
       />
       <g font-size="9" fill="#334155">
         <text x="6" y="14">máu đến</text>
-        <text x="98" y="120">cầu thận, nang cầu thận</text>
+        <text x="94" y="38">cầu thận, nang cầu thận</text>
         <text x="132" y="78">ống thận</text>
         <text x="110" y="156">mao mạch quanh ống thận</text>
         <text x="272" y="168">máu đi</text>

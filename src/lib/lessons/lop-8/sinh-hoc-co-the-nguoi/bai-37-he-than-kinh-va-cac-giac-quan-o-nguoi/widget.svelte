@@ -89,12 +89,8 @@
     <!-- eyeball -->
     <circle cx="205" cy="90" r="66" fill="#ffffff" stroke="#94a3b8" stroke-width="3" />
     <path d="M 142 62 Q 128 90 142 118" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" />
-    <path
-      d="M {RETINA - 6} 40 Q {RETINA + 8} 90 {RETINA - 6} 140"
-      fill="none"
-      stroke="#e11d48"
-      stroke-width="4"
-    />
+    <!-- retina: lines the back of the eyeball, an arc of radius 63 through x = RETINA -->
+    <path d="M 253 50 A 63 63 0 0 1 253 130" fill="none" stroke="#e11d48" stroke-width="4" />
     {#if wearing}
       <rect
         x="120"
@@ -144,7 +140,7 @@
     {/if}
     <g font-size="9" fill="#334155">
       <text x={LENS} y="132" text-anchor="middle">thể thủy tinh</text>
-      <text x="276" y="30" text-anchor="middle">màng lưới</text>
+      <text x="292" y="60" text-anchor="middle">màng lưới</text>
       <text x="8" y="170">(khoảng cách và độ lệch ảnh vẽ không theo tỉ lệ)</text>
     </g>
   </svg>

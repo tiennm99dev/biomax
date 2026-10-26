@@ -19,6 +19,18 @@
     r.vessel === 'dan' ? [40, 70, 170, 200] : r.vessel === 'co' ? [] : [55, 185],
   );
   const tone = $derived(r.band === 'de-chiu' ? 'ok' : 'info');
+  // At a comfortable temperature the glands still secrete a little sweat that evaporates unseen.
+  const sweatText = $derived(
+    r.sweat === 2
+      ? 'tiết nhiều mồ hôi'
+      : r.sweat === 1
+        ? 'tiết ít mồ hôi'
+        : r.band === 'de-chiu'
+          ? 'tiết rất ít mồ hôi'
+          : r.band === 'lanh'
+            ? 'giảm tiết mồ hôi'
+            : 'gần như không tiết mồ hôi',
+  );
 </script>
 
 <div class="space-y-4">
@@ -44,11 +56,9 @@
       ? 'dãn ra'
       : r.vessel === 'co'
         ? 'co lại'
-        : 'bình thường'}, {r.sweat === 0
-      ? 'không tiết mồ hôi'
-      : r.sweat === 1
-        ? 'tiết ít mồ hôi'
-        : 'tiết nhiều mồ hôi'}{r.hairErect ? ', lông dựng lên' : ''}{r.shiver ? ', cơ run' : ''}."
+        : 'bình thường'}, {sweatText}{r.hairErect ? ', lông dựng lên' : ''}{r.shiver
+      ? ', cơ run'
+      : ''}."
   >
     <rect
       x="0"
@@ -89,7 +99,7 @@
       fill="none"
       stroke-linecap="round"
     />
-    <text x="250" y="160" font-size="9" fill="#7f1d1d">mạch máu</text>
+    <text x="14" y="164" font-size="9" fill="#7f1d1d">mạch máu</text>
     <!-- hair, follicle, muscle -->
     <ellipse cx="96" cy="126" rx="8" ry="14" fill="#fcd34d" stroke="#92400e" />
     <path d="M 96 124 L {hairTip[0]} {hairTip[1]}" stroke="#422006" stroke-width="3" />
@@ -135,7 +145,7 @@
     <div class="rounded-lg bg-white px-3 py-2 ring-1 ring-slate-200">
       <dt class="text-slate-600">Mồ hôi</dt>
       <dd class="font-semibold">
-        {r.sweat === 0 ? 'Không tiết' : r.sweat === 1 ? 'Tiết ít' : 'Tiết nhiều'}
+        {sweatText.charAt(0).toUpperCase() + sweatText.slice(1).replace(' mồ hôi', '')}
       </dd>
     </div>
     <div class="rounded-lg bg-white px-3 py-2 ring-1 ring-slate-200">
