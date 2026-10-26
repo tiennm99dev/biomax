@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { countPairs } from '../bai-26-khoa-luong-phan/engine.js';
+import { countPairs } from '../_shared/dichotomous-key.js';
 import { FIELD_SET, FINDS, STATIONS, findsAt, identify, keyTable, readKey } from './engine.js';
 
 describe('field-trip key', () => {

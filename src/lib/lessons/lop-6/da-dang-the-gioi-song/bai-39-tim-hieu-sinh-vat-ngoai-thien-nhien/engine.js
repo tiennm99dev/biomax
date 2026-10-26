@@ -2,13 +2,13 @@
  * Logic for the field-trip activity: four stations around a school garden,
  * the unnamed organisms found at each (with what the learner observes and
  * the tool used), and one dichotomous key for all of them, read with the
- * key helpers of the dichotomous-key lesson.
+ * chapter's dichotomous-key helpers.
  */
-import { hasTrait, identify, keyTable, nameOf } from '../bai-26-khoa-luong-phan/engine.js';
+import { hasTrait, identify, keyTable, nameOf } from '../_shared/dichotomous-key.js';
 
 export { hasTrait, identify, keyTable, nameOf };
 
-/** @type {import('../bai-26-khoa-luong-phan/engine.js').OrganismSet} */
+/** @type {import('../_shared/dichotomous-key.js').OrganismSet} */
 export const FIELD_SET = {
   id: 'da-ngoai',
   label: 'Sinh vật ở vườn trường',
