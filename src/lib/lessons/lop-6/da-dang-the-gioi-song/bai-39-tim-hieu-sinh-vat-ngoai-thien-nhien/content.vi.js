@@ -147,7 +147,7 @@ export default {
       problem:
         'Nhóm em đặt một khung vuông $1\\ \\text{m}^2$ ở hai nơi: bãi cỏ ven đường đếm được 4 loài cây, góc vườn ít người qua lại đếm được 11 loài. Em rút ra nhận xét gì?',
       steps: [
-        'So sánh: $11 - 4 = 7$, góc vườn có nhiều hơn 7 loài trên cùng diện tích.',
+        'So sánh: $11 - 4 = 7$, trên cùng diện tích, góc vườn có nhiều hơn bãi cỏ ven đường 7 loài.',
         'Bãi cỏ ven đường bị giẫm đạp, cắt cỏ thường xuyên nên ít loài sống được.',
         'Nơi ít bị con người tác động có độ đa dạng cao hơn.',
       ],

@@ -49,7 +49,7 @@ export default {
           head: ['Quan sát thấy', 'Nghĩ tới nhóm'],
           rows: [
             ['Cơ thể đối xứng tỏa tròn, có tua, sống ở nước', 'Ruột khoang'],
-            ['Cơ thể dài, mềm, không có chân', 'Giun'],
+            ['Cơ thể dài, mềm, không có chân, không có xương sống', 'Giun'],
             ['Cơ thể mềm, có vỏ đá vôi', 'Thân mềm'],
             ['Chân phân đốt, có vỏ cứng hoặc cánh', 'Chân khớp'],
             ['Có vây, sống dưới nước, thở bằng mang', 'Cá'],

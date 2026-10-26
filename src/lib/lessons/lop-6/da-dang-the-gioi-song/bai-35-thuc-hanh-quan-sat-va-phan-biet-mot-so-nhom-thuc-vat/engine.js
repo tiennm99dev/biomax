@@ -146,9 +146,9 @@ export const SAMPLES = [
         why: 'Có hoa là dấu hiệu của hạt kín.',
       },
       {
-        text: 'Hạt thóc là quả; bóc vỏ trấu thấy hạt gạo bên trong',
+        text: 'Sau khi ra hoa, mỗi hoa lúa phát triển thành một hạt thóc: đó là quả, bên trong chứa hạt',
         decisive: true,
-        why: 'Hạt nằm trong quả: hạt kín.',
+        why: 'Hoa tạo thành quả, hạt nằm trong quả: hạt kín.',
       },
       {
         text: 'Rễ chùm',

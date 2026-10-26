@@ -72,6 +72,7 @@
 
   function nextAnimal() {
     qi = (qi + 1) % QUIZ.length;
+    if (qi === 0) score = 0;
     branchDone = null;
     solved = false;
     firstTry = true;
