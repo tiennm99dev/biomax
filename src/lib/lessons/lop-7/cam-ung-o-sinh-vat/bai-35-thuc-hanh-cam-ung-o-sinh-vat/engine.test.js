@@ -1,6 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import { MAX_ROOT_BEND, MAX_SHOOT_BEND } from '../_shared/tropism.js';
-import { coilPoints, contactOutcome, lightOutcome, waterOutcome } from './engine.js';
+import {
+  MAX_SPRAWL,
+  coilPoints,
+  contactOutcome,
+  fallenStem,
+  lightOutcome,
+  waterOutcome,
+} from './engine.js';
 
 describe('phototropism practical', () => {
   it('bends the stem towards a side hole only', () => {
@@ -31,8 +38,20 @@ describe('thigmotropism practical', () => {
     expect(withStake.text).toContain('hướng tiếp xúc');
     const without = contactOutcome(false, 5);
     expect(without.turns).toBe(0);
-    expect(without.sprawl).toBe(80);
-    expect(contactOutcome(false, 1).sprawl).toBe(0);
+    expect(without.sprawl).toBe(MAX_SPRAWL);
+    expect(without.text).toContain('bò lan');
+    expect(contactOutcome(false, 0).sprawl).toBe(0);
+    expect(contactOutcome(false, 1).sprawl).toBeGreaterThan(0);
+    expect(contactOutcome(false, 1).text).toContain('bắt đầu ngả');
+  });
+
+  it('lays an unsupported stem down close to the ground', () => {
+    const upright = fallenStem(110, 170, 100, 0);
+    expect(upright.tip.x).toBeCloseTo(110);
+    expect(upright.tip.y).toBeCloseTo(70);
+    const lying = fallenStem(110, 170, 100, MAX_SPRAWL);
+    expect(170 - lying.tip.y).toBeLessThan(10);
+    expect(lying.tip.x).toBeGreaterThan(200);
   });
 
   it('draws a coil from bottom to top', () => {

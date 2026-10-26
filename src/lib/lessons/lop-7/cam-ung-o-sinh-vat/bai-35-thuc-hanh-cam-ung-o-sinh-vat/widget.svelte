@@ -3,8 +3,15 @@
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import { button } from '#lib/core/ui.js';
   import Seedling from '../_shared/seedling.svelte';
-  import { FULL_DAYS, bentOrgan, shootLength } from '../_shared/tropism.js';
-  import { MAX_DAYS, coilPoints, contactOutcome, lightOutcome, waterOutcome } from './engine.js';
+  import { FULL_DAYS, shootLength } from '../_shared/tropism.js';
+  import {
+    MAX_DAYS,
+    coilPoints,
+    contactOutcome,
+    fallenStem,
+    lightOutcome,
+    waterOutcome,
+  } from './engine.js';
 
   let tab = $state('sang');
   let days = $state(0);
@@ -21,7 +28,8 @@
   let stake = $state('co');
   const contact = $derived(contactOutcome(stake === 'co', days));
   const climbLength = $derived(30 + 22 * Math.min(days, MAX_DAYS));
-  const fallen = $derived(bentOrgan(110, 170, climbLength, contact.sprawl, -1));
+  // Lying on the ground, the stem is drawn shorter so it stays inside the picture.
+  const fallen = $derived(fallenStem(110, 170, climbLength * 0.8, contact.sprawl));
 
   function restart() {
     days = 0;
@@ -141,9 +149,10 @@
           >{pot.test ? 'Chậu thí nghiệm' : 'Chậu đối chứng'}</text
         >
       {/each}
-      <rect x="120" y="70" width="14" height="60" rx="4" fill="#bae6fd" stroke="#0369a1" />
-      <circle cx="119" cy="122" r="2" fill="#0369a1" />
-      <circle cx="117" cy="130" r="2" fill="#0369a1" />
+      <!-- The pierced bottle stands in the soil at the right edge of the test pot only. -->
+      <rect x="100" y="70" width="12" height="60" rx="4" fill="#bae6fd" stroke="#0369a1" />
+      <circle cx="97" cy="120" r="2" fill="#0369a1" />
+      <circle cx="95" cy="128" r="2" fill="#0369a1" />
     </svg>
     <button type="button" class={button.secondary} onclick={() => (lifted = !lifted)}
       >{lifted ? 'Trồng cây lại vào chậu' : 'Nhấc cây ra xem rễ'}</button
@@ -164,7 +173,7 @@
       role="img"
       aria-label={stake === 'co'
         ? `Ngày ${days}: cây leo có cọc, tua cuốn quấn ${contact.turns >= 3 ? 'chặt' : 'một phần'} quanh cọc`
-        : `Ngày ${days}: cây leo không có cọc, thân ${contact.sprawl > 40 ? 'bò lan trên mặt đất' : 'đang ngả xuống'}`}
+        : `Ngày ${days}: cây leo không có cọc, thân ${days >= FULL_DAYS ? 'bò lan trên mặt đất' : days > 0 ? 'đang ngả xuống' : 'mọc thẳng'}`}
     >
       <rect width="240" height="200" rx="12" fill="#f0fdf4" />
       <rect x="0" y="170" width="240" height="30" fill="#a16207" />

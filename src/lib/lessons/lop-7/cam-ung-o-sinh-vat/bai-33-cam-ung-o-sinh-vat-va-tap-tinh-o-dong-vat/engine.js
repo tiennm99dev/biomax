@@ -18,7 +18,7 @@ import { FULL_DAYS } from '../_shared/tropism.js';
 export function lightText(light, days) {
   if (days === 0) return 'Ngày 0: cây non mọc thẳng. Bấm "Thêm 1 ngày" để theo dõi ngọn cây.';
   if (light === 'tren')
-    return `Ngày ${days}: ánh sáng chiếu từ trên xuống, đều mọi phía, nên ngọn cây vẫn mọc thẳng lên phía ánh sáng.`;
+    return `Ngày ${days}: ánh sáng chiếu từ trên xuống, các phía của ngọn cây nhận ánh sáng như nhau, nên ngọn cây vẫn mọc thẳng lên phía ánh sáng.`;
   const side = light === 'trai' ? 'bên trái' : 'bên phải';
   if (days < FULL_DAYS)
     return `Ngày ${days}: ánh sáng chỉ chiếu từ ${side}, ngọn cây bắt đầu uốn cong về ${side}.`;

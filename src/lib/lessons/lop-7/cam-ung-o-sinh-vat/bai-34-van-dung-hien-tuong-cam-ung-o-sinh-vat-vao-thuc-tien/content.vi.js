@@ -216,15 +216,17 @@ export default {
       prompt:
         'Sắp xếp các việc theo thứ tự hợp lí để bạn Lan tạo được thói quen tập thể dục buổi sáng.',
       items: [
-        'Kiên trì tập vào giờ đó mỗi sáng trong nhiều tuần',
-        'Quyết định thời gian tập và đặt báo thức',
-        'Tiếp tục duy trì việc tập để thói quen không bị mất',
-        'Đi ngủ sớm để sáng dậy đúng giờ',
+        'Kiên trì lặp lại việc tập vào giờ đó mỗi sáng trong nhiều tuần',
+        'Quyết định tập thể dục và chọn một giờ tập cố định mỗi sáng',
+        'Việc tập đã thành thói quen; tiếp tục duy trì để thói quen không bị mất',
+        'Sáng hôm đầu tiên, dậy theo báo thức và tập đúng giờ đã chọn',
       ],
       answer: [1, 3, 0, 2],
-      hints: ['Phải có kế hoạch trước, rồi mới lặp lại, cuối cùng là duy trì.'],
+      hints: [
+        'Phải có kế hoạch trước, rồi bắt đầu, sau đó lặp lại nhiều lần, cuối cùng là duy trì.',
+      ],
       solution:
-        'Quyết định giờ tập, đặt báo thức → đi ngủ sớm để dậy đúng giờ → kiên trì tập mỗi sáng nhiều tuần → tiếp tục duy trì.',
+        'Quyết định tập và chọn giờ cố định → sáng đầu tiên dậy tập đúng giờ → kiên trì lặp lại mỗi sáng nhiều tuần → việc tập thành thói quen, tiếp tục duy trì.',
     },
     {
       type: 'choice',

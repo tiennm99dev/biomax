@@ -58,8 +58,9 @@ export function waterOutcome(days) {
  */
 export function contactOutcome(support, days) {
   const turns = tendrilTurns(support, days);
-  // Without a support, the long weak stem falls over and creeps on the ground.
-  const sprawl = support ? 0 : Math.min(80, Math.max(0, days - 1) * 27);
+  // Without a support, the long weak stem tilts over day by day until it lies
+  // on the ground.
+  const sprawl = support ? 0 : Math.min(MAX_SPRAWL, days * 22);
   /** @type {string} */
   let text;
   if (days === 0) text = 'Ngày 0: cây non vừa có tua cuốn đầu tiên.';
@@ -69,8 +70,32 @@ export function contactOutcome(support, days) {
         ? `Ngày ${days}: tua cuốn chạm vào cọc và bắt đầu quấn quanh cọc.`
         : `Ngày ${days}: tua cuốn đã quấn chặt quanh cọc, thân cây leo lên cao. Kết luận: tua cuốn có tính hướng tiếp xúc.`;
   else
-    text = `Ngày ${days}: không có vật để bám, thân cây mềm yếu ngả xuống và bò lan trên mặt đất.`;
+    text =
+      days < FULL_DAYS
+        ? `Ngày ${days}: không có vật để bám, thân cây mềm yếu bắt đầu ngả xuống.`
+        : `Ngày ${days}: không có vật để bám, thân cây mềm yếu đã ngả hẳn xuống và bò lan trên mặt đất.`;
   return { turns, sprawl, text };
+}
+
+/** Largest tilt of an unsupported stem from the vertical, in degrees: lying on the ground. */
+export const MAX_SPRAWL = 85;
+
+/**
+ * A stem of length `len` rooted at (x0, y0) that has tilted `tilt` degrees to
+ * the right of the vertical: upright at 0, lying almost flat on the ground at
+ * `MAX_SPRAWL`, with a small hump near its base. Returns its tip and SVG path.
+ * @param {number} x0 @param {number} y0 @param {number} len @param {number} tilt
+ */
+export function fallenStem(x0, y0, len, tilt) {
+  const a = (tilt * Math.PI) / 180;
+  const tip = { x: x0 + len * Math.sin(a), y: y0 - len * Math.cos(a) };
+  const control = {
+    x: x0 + 0.2 * len * Math.sin(a),
+    y: y0 - 0.6 * len * Math.cos(a) - 12 * Math.sin(a),
+  };
+  const r = (/** @type {number} */ v) => Math.round(v * 10) / 10;
+  const path = `M ${r(x0)} ${r(y0)} Q ${r(control.x)} ${r(control.y)} ${r(tip.x)} ${r(tip.y)}`;
+  return { tip, path };
 }
 
 /**

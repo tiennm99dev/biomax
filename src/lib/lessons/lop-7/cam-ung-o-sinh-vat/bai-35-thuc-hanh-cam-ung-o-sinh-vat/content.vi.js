@@ -226,9 +226,9 @@ export default {
         'Hộp có lỗ ở thành bên, xoay chậu mỗi ngày',
       ],
       right: [
-        'Thân mọc thẳng lên',
+        'Thân mọc thẳng lên về phía lỗ trên nắp',
         'Thân uốn cong về phía lỗ thủng',
-        'Thân gần như mọc thẳng',
+        'Thân gần như thẳng vì các phía lần lượt được chiếu sáng như nhau',
         'Thân uốn cong tránh xa lỗ thủng',
       ],
       pairs: [
