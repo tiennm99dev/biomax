@@ -78,7 +78,7 @@ export default {
           type: 'callout',
           tone: 'theorem',
           title: 'Nhu cầu nước ở tuổi vị thành niên',
-          text: 'Theo khuyến nghị của Viện Dinh dưỡng (năm 2012), mỗi ngày trẻ vị thành niên cần khoảng $40$ mL nước cho mỗi kilôgam khối lượng cơ thể: $V = 40 \\cdot m$ (mL), với $m$ là khối lượng cơ thể tính bằng kg.',
+          text: 'Theo khuyến nghị năm 2012 của Viện Dinh dưỡng Quốc gia, mỗi ngày trẻ vị thành niên cần khoảng $40$ mL nước cho mỗi kilôgam khối lượng cơ thể: $V = 40 \\cdot m$ (mL), với $m$ là khối lượng cơ thể tính bằng kg.',
         },
         { type: 'widget', name: 'nhu-cau-nuoc' },
         {
@@ -152,8 +152,7 @@ export default {
         'Nhu cầu nước của Minh: $V = 40 \\cdot 42 = 1\\,680$ (mL).',
         'Đổi đơn vị: $1\\,680\\ \\text{mL} = 1{,}68$ lít.',
       ],
-      answer:
-        'Khoảng $1\\,680$ mL, tức khoảng $1{,}68$ lít nước mỗi ngày (gồm cả nước có trong thức ăn).',
+      answer: 'Khoảng $1\\,680$ mL, tức khoảng $1{,}68$ lít nước mỗi ngày.',
     },
     {
       problem:

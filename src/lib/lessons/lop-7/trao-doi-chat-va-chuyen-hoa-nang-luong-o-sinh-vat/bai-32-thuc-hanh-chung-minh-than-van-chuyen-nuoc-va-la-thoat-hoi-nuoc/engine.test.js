@@ -35,6 +35,19 @@ describe('plastic bags over the shoots', () => {
     expect(mist({ ...o, light: 'ram' })).toBeLessThan(mist({ ...o, light: 'nang' }));
   });
 
+  it('only blames the shade when the pots stand in the shade', () => {
+    expect(leafResult('nang', 'than-la', 20).text).not.toContain('râm');
+    expect(leafResult('ram', 'than-la', 30).text).toContain('râm');
+  });
+
+  it('never calls bag B thick with mist while it is only slightly misted', () => {
+    for (const light of /** @type {const} */ (['nang', 'ram']))
+      for (let t = 15; t <= 120; t += 5) {
+        const r = leafResult(light, 'than-la', t);
+        if (r.b < 0.5) expect(r.text).not.toContain('Kết luận');
+      }
+  });
+
   it('warns that bagging the whole pot spoils the test', () => {
     const r = leafResult('nang', 'ca-chau', 60);
     expect(r.a).toBeGreaterThan(0.5);

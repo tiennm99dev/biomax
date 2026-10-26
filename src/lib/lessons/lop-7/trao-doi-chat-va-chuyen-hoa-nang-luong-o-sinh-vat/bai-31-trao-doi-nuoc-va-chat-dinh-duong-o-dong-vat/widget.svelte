@@ -30,7 +30,7 @@
       id: 'mieng',
       d: 'M 118 42 Q 150 14 182 42 Q 150 62 118 42 Z',
       fill: '#fecaca',
-      label: { x: 196, y: 36, t: 'khoang miệng' },
+      label: { x: 226, y: 40, t: 'khoang miệng' },
     },
     {
       id: 'thuc-quan',

@@ -27,7 +27,7 @@
   </div>
   <p class="rounded-xl bg-sky-50 px-4 py-3 text-sm text-sky-950" aria-live="polite">
     Nhu cầu nước mỗi ngày: {fmt(ML_PER_KG)} mL × {fmt(kg)} kg = {fmt(ml)} mL, tức khoảng
-    {formatNumber(ml / 1000, 1)} lít, bằng khoảng {cups} cốc 250 mL. Lượng này gồm cả nước có trong thức
-    ăn; trời nóng, vận động nhiều, sốt hay tiêu chảy thì cơ thể mất thêm nước nên cần bù thêm.
+    {formatNumber(ml / 1000, 1)} lít, bằng khoảng {cups} cốc 250 mL. Khi trời nóng, vận động nhiều, sốt
+    hay tiêu chảy thì cơ thể mất thêm nước nên cần bù thêm.
   </p>
 </div>

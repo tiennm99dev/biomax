@@ -36,7 +36,7 @@
   const leafFill = $derived(
     mix(specimen === 'can-tay' ? '#86efac' : '#ffffff', dyeColor, coloured ? tint * 0.75 : 0),
   );
-  const dotFill = $derived(coloured && s.h > 0.02 ? dyeColor : '#d9f99d');
+  const dotFill = $derived(coloured && s.h >= 0.05 ? dyeColor : '#d9f99d');
 
   // experiment 2: plastic bags over the shoots
   /** @type {import('./engine.js').Light} */

@@ -114,9 +114,11 @@ export function leafResult(light, cover, minutes) {
   else if (cover === 'ca-chau')
     text =
       'Trùm cả chậu là sai: đất ẩm cũng bốc hơi nước, nên túi ở chậu A (không có lá) cũng mờ. Không thể kết luận hơi nước là do lá thoát ra. Chỉ trùm kín phần thân và lá.';
-  else if (b - a < 0.2)
+  else if (b < 0.5)
     text =
-      'Túi ở chậu B mới hơi mờ. Ở nơi râm, khí khổng mở ít nên lá thoát hơi nước chậm; chờ thêm hoặc đưa ra chỗ nắng.';
+      light === 'ram'
+        ? 'Túi ở chậu B mới hơi mờ. Ở nơi râm, khí khổng mở ít nên lá thoát hơi nước chậm; chờ thêm hoặc đưa ra chỗ nắng.'
+        : 'Túi ở chậu B đã hơi mờ, túi ở chậu A vẫn trong. Chờ thêm để hơi nước đọng rõ hơn rồi so sánh.';
   else
     text =
       'Túi trùm cây có lá (chậu B) mờ đục, đọng hơi nước; túi trùm cây đã ngắt hết lá (chậu A) hầu như không đổi. Kết luận: lá là cơ quan thoát hơi nước chủ yếu của cây.';
