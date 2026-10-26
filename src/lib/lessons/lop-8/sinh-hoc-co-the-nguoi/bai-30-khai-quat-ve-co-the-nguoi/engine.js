@@ -363,16 +363,16 @@ export const ORGAN_CARDS = [
     why: 'Tuyến yên tiết hormone, thuộc hệ nội tiết.',
   },
   {
-    id: 'buong-trung',
-    label: 'Buồng trứng',
+    id: 'tu-cung',
+    label: 'Tử cung',
     bin: 'sinh-duc',
-    why: 'Buồng trứng tạo trứng, thuộc hệ sinh dục nữ.',
+    why: 'Tử cung là nơi thai phát triển, thuộc hệ sinh dục nữ.',
   },
   {
-    id: 'tinh-hoan',
-    label: 'Tinh hoàn',
+    id: 'ong-dan-tinh',
+    label: 'Ống dẫn tinh',
     bin: 'sinh-duc',
-    why: 'Tinh hoàn tạo tinh trùng, thuộc hệ sinh dục nam.',
+    why: 'Ống dẫn tinh dẫn tinh trùng, thuộc hệ sinh dục nam.',
   },
 ];
 

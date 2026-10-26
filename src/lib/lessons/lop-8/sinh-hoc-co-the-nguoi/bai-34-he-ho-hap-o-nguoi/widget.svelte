@@ -98,7 +98,7 @@
       />
       <!-- lungs -->
       <ellipse
-        cx="96"
+        cx="92"
         cy={150 + 10 * p}
         rx={c.lungRx}
         ry={c.lungRy}
@@ -107,7 +107,7 @@
         stroke-width="2"
       />
       <ellipse
-        cx="164"
+        cx="168"
         cy={150 + 10 * p}
         rx={c.lungRx}
         ry={c.lungRy}

@@ -20,7 +20,7 @@
 export function chest(p) {
   const q = Math.min(1, Math.max(0, p));
   return {
-    lungRx: 30 + 9 * q,
+    lungRx: 30 + 6 * q,
     lungRy: 50 + 14 * q,
     // Height of the diaphragm dome above its rim: flatter when contracted.
     dome: 46 - 22 * q,

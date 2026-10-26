@@ -129,8 +129,14 @@ export default {
           items: [
             'Hô hấp nhân tạo khi cấp cứu người đuối nước: đưa nạn nhân lên bờ, đến chỗ khô ráo, thoáng khí; loại bỏ nước, dị vật trong miệng.',
             'Hà hơi thổi ngạt: đặt nạn nhân nằm ngửa, đầu hơi ngửa ra sau; bịt mũi nạn nhân; hít sâu rồi áp miệng vào miệng nạn nhân và thổi hết sức; lặp lại khoảng 12–20 lần mỗi phút đến khi nạn nhân tự thở được.',
-            'Ấn lồng ngực: đặt nạn nhân nằm ngửa; đặt hai bàn tay chồng lên nhau lên ngực nạn nhân, dùng sức nặng cơ thể ấn mạnh rồi thả ra; lặp lại khoảng 12–20 lần mỗi phút.',
+            'Ấn lồng ngực: đặt nạn nhân nằm ngửa, kê gối mềm dưới lưng để đầu hơi ngửa ra sau; cầm hai cẳng tay (hoặc cổ tay) nạn nhân, dùng sức nặng cơ thể ép vào ngực nạn nhân để đẩy không khí trong phổi ra ngoài; rồi dang tay nạn nhân đưa về phía đầu để lồng ngực giãn ra, không khí vào phổi; lặp lại khoảng 12–20 lần mỗi phút.',
           ],
+        },
+        {
+          type: 'callout',
+          tone: 'warning',
+          title: 'Khi tim ngừng đập',
+          text: 'Nếu tim nạn nhân cũng ngừng đập thì phải vừa thổi ngạt vừa ép tim ngoài lồng ngực (xoa bóp tim): đặt hai bàn tay chồng lên nhau ở giữa ngực, ép nhanh và mạnh khoảng 100–120 lần mỗi phút, cứ 30 lần ép tim thì thổi ngạt 2 lần. Đồng thời gọi ngay cấp cứu 115 và nhờ người lớn giúp đỡ.',
         },
       ],
     },
