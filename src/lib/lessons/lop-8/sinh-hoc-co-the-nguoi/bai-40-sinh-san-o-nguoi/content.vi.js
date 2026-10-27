@@ -1,14 +1,14 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Chức năng và cấu tạo cơ quan sinh dục nam, nữ; thụ tinh và thụ thai; hiện tượng kinh nguyệt; các biện pháp tránh thai; một số bệnh lây truyền qua đường tình dục và bảo vệ sức khỏe sinh sản ở tuổi vị thành niên.',
+    'Chức năng và cấu tạo cơ quan sinh dục nam, nữ; thụ tinh và thụ thai; hiện tượng kinh nguyệt; các biện pháp tránh thai; một số bệnh lây truyền qua đường sinh dục và bảo vệ sức khỏe sinh sản ở tuổi vị thành niên.',
   intro:
     'Mỗi người chúng ta đều bắt đầu từ một tế bào duy nhất, hợp tử, hình thành khi một tinh trùng kết hợp với một trứng. Hệ sinh dục làm thế nào để tạo ra tinh trùng, trứng và nuôi dưỡng một em bé? Ở tuổi dậy thì, em cần biết gì để bảo vệ sức khỏe sinh sản của mình?',
   objectives: [
     'Nêu được chức năng của hệ sinh dục; kể tên và nêu được chức năng của các cơ quan sinh dục nam và nữ.',
     'Phân biệt được thụ tinh và thụ thai; nêu được hiện tượng kinh nguyệt.',
     'Nêu được các nguyên tắc và một số biện pháp tránh thai.',
-    'Kể tên được một số bệnh lây truyền qua đường tình dục và cách phòng tránh; nêu được ý nghĩa của bảo vệ sức khỏe sinh sản vị thành niên.',
+    'Kể tên được một số bệnh lây truyền qua đường sinh dục và cách phòng tránh; nêu được ý nghĩa của bảo vệ sức khỏe sinh sản vị thành niên.',
   ],
   sections: [
     {
@@ -153,7 +153,7 @@ export default {
           type: 'callout',
           tone: 'warning',
           title: 'Lưu ý',
-          text: 'Bao cao su là biện pháp vừa tránh thai vừa phòng được các bệnh lây truyền qua đường tình dục. Cách tính ngày trứng rụng kém tin cậy vì chu kì kinh nguyệt có thể không đều, nhất là ở tuổi vị thành niên.',
+          text: 'Bao cao su là biện pháp vừa tránh thai vừa phòng được các bệnh lây truyền qua đường sinh dục. Cách tính ngày trứng rụng kém tin cậy vì chu kì kinh nguyệt có thể không đều, nhất là ở tuổi vị thành niên.',
         },
       ],
     },
@@ -162,7 +162,7 @@ export default {
       blocks: [
         {
           type: 'table',
-          caption: 'Một số bệnh lây truyền qua đường tình dục',
+          caption: 'Một số bệnh lây truyền qua đường sinh dục',
           head: ['Bệnh', 'Tác nhân', 'Tác hại'],
           rows: [
             [
@@ -354,7 +354,7 @@ export default {
     {
       type: 'choice',
       prompt:
-        'Biện pháp nào vừa giúp tránh thai vừa phòng được bệnh lây truyền qua đường tình dục?',
+        'Biện pháp nào vừa giúp tránh thai vừa phòng được bệnh lây truyền qua đường sinh dục?',
       options: [
         'Uống thuốc tránh thai',
         'Dùng bao cao su',
@@ -387,6 +387,6 @@ export default {
     'Thụ tinh: trứng kết hợp tinh trùng tạo hợp tử, ở ống dẫn trứng. Thụ thai: phôi làm tổ trong niêm mạc tử cung.',
     'Kinh nguyệt: trứng không được thụ tinh, niêm mạc tử cung bong ra cùng máu và dịch nhầy; chu kì $28$ – $32$ ngày, kéo dài $3$ – $5$ ngày; trứng rụng khoảng $14$ ngày trước kì kinh sau.',
     'Tránh thai: ngăn trứng chín và rụng, ngăn tinh trùng gặp trứng, ngăn trứng đã thụ tinh làm tổ.',
-    'Phòng bệnh lây truyền qua đường tình dục (lậu, giang mai, HIV/AIDS): không quan hệ tình dục sớm, dùng bao cao su, không dùng chung kim tiêm; tránh mang thai ở tuổi vị thành niên.',
+    'Phòng bệnh lây truyền qua đường sinh dục (lậu, giang mai, HIV/AIDS): không quan hệ tình dục sớm, dùng bao cao su, không dùng chung kim tiêm; tránh mang thai ở tuổi vị thành niên.',
   ],
 };

@@ -355,7 +355,7 @@ export const METHOD_CARDS = [
     id: 'bao-cao-su',
     label: 'Dùng bao cao su',
     bin: 'ngan-gap',
-    why: 'Bao cao su giữ tinh trùng lại, không cho tinh trùng vào âm đạo gặp trứng; còn giúp phòng bệnh lây qua đường tình dục.',
+    why: 'Bao cao su giữ tinh trùng lại, không cho tinh trùng vào âm đạo gặp trứng; còn giúp phòng bệnh lây qua đường sinh dục.',
   },
   {
     id: 'that-ong-tinh',

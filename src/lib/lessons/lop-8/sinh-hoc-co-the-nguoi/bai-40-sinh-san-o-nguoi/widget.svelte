@@ -160,9 +160,9 @@
         type="button"
         role="radio"
         aria-checked={d === day}
-        aria-label="Ngày {d}: {PHASES[p].name}{!challenge && isFertile(d, length)
-          ? ', dễ thụ thai'
-          : ''}"
+        aria-label={challenge
+          ? `Ngày ${d}`
+          : `Ngày ${d}: ${PHASES[p].name}${isFertile(d, length) ? ', dễ thụ thai' : ''}`}
         tabindex={d === day ? 0 : -1}
         class="relative flex min-h-11 items-center justify-center rounded-lg text-sm font-semibold tabular-nums {focusRing} {d ===
         day
