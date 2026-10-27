@@ -99,6 +99,10 @@ export default {
           ],
         },
         {
+          type: 'p',
+          text: 'Ở biển, sinh vật phân bố theo chiều thẳng đứng thành nhiều tầng: sinh vật nổi (tảo, động vật nhỏ trôi nổi) ở lớp nước mặt, sinh vật bơi tự do (cá, mực…) ở các tầng nước, sinh vật đáy (san hô, sao biển, hải sâm…) ở đáy biển. Theo chiều ngang, biển chia thành vùng ven bờ và vùng khơi; vùng ven bờ thường có thành phần loài phong phú hơn.',
+        },
+        {
           type: 'callout',
           tone: 'note',
           text: 'Ở biển, ánh sáng chỉ chiếu tới lớp nước gần mặt nên tảo và các sinh vật quang hợp tập trung ở lớp nước mặt và vùng ven bờ; càng xuống sâu, nước càng tối, lạnh và sinh vật càng ít.',
@@ -213,6 +217,22 @@ export default {
       answer: 3,
       hints: ['Nơi có khí hậu thuận lợi nhất cho sự sống quanh năm.'],
       solution: 'Rừng mưa nhiệt đới nóng ẩm quanh năm nên có số loài nhiều nhất.',
+    },
+    {
+      type: 'match',
+      prompt: 'Nối mỗi sinh vật biển với tầng nước nơi nó sống chủ yếu.',
+      left: ['Tảo trôi nổi', 'Cá ngừ', 'Hải sâm'],
+      right: ['Sinh vật đáy', 'Sinh vật nổi ở lớp nước mặt', 'Sinh vật bơi tự do ở các tầng nước'],
+      pairs: [
+        [0, 1],
+        [1, 2],
+        [2, 0],
+      ],
+      hints: [
+        'Sinh vật nào trôi theo dòng nước, sinh vật nào bơi chủ động, sinh vật nào bò trên đáy?',
+      ],
+      solution:
+        'Tảo trôi nổi: sinh vật nổi ở lớp nước mặt; cá ngừ: sinh vật bơi tự do; hải sâm: sinh vật đáy.',
     },
     {
       type: 'choice',

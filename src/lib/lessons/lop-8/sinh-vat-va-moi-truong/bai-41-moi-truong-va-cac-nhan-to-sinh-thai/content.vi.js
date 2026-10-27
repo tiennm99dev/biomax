@@ -109,7 +109,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Ứng dụng: chọn giống cây trồng, vật nuôi có giới hạn sinh thái phù hợp với điều kiện địa phương; gieo trồng đúng thời vụ; trồng cây ưa bóng (như cà phê, chè, sa nhân) dưới tán cây khác để có ánh sáng phù hợp. Thử chọn loài cá để nuôi ở một địa phương:',
+          text: 'Ứng dụng: chọn giống cây trồng, vật nuôi có giới hạn sinh thái phù hợp với điều kiện địa phương; gieo trồng đúng thời vụ; trồng cây ưa bóng (như cà phê, ca cao, sa nhân) dưới tán cây khác để có ánh sáng phù hợp. Thử chọn loài cá để nuôi ở một địa phương:',
         },
         { type: 'widget', name: 'chon-loai' },
       ],

@@ -43,7 +43,7 @@ export default {
           type: 'list',
           items: [
             'Loài ưu thế: loài có số lượng cá thể nhiều, sinh khối lớn hoặc hoạt động mạnh, đóng vai trò quan trọng trong quần xã. Ví dụ: cây lúa trong quần xã ruộng lúa.',
-            'Loài đặc trưng: loài chỉ có ở một quần xã nào đó hoặc có số lượng nhiều hơn hẳn các loài khác trong quần xã. Ví dụ: cây đước ở rừng ngập mặn, cây lim xanh ở rừng lim Hữu Lũng (Lạng Sơn), lạc đà ở hoang mạc, gấu trắng ở vùng Bắc Cực.',
+            'Loài đặc trưng: loài chỉ có ở một quần xã nào đó hoặc có số lượng nhiều hơn hẳn các loài khác trong quần xã. Ví dụ: cá cóc ở Vườn quốc gia Tam Đảo, cây đước ở rừng ngập mặn, cây lim xanh ở rừng lim Hữu Lũng (Lạng Sơn), lạc đà ở hoang mạc, gấu trắng ở vùng Bắc Cực.',
           ],
         },
         { type: 'widget', name: 'uu-the' },

@@ -24,6 +24,6 @@ describe('community samples', () => {
     expect(COMMUNITIES.map(dominant)).toEqual(['Lúa', 'Cây đước', 'Lim xanh']);
     expect(COMMUNITIES.map(richness)).toEqual([4, 6, 7]);
     for (const c of COMMUNITIES)
-      expect(c.counts.some((x) => x.species === c.characteristic)).toBe(true);
+      if (c.characteristic) expect(c.counts.some((x) => x.species === c.characteristic)).toBe(true);
   });
 });

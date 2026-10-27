@@ -131,7 +131,7 @@ export default {
   explore: {
     title: 'Dựng lưới thức ăn đồng cỏ',
     instruction:
-      'Chọn một sinh vật làm thức ăn rồi chọn sinh vật ăn nó để vẽ mũi tên; dựng đủ 9 mũi tên của lưới. Sau đó chuyển sang "Loại bỏ một loài", bấm vào một loài để loại nó và xem những loài nào mất nguồn thức ăn.',
+      'Chọn một sinh vật làm thức ăn rồi chọn sinh vật ăn nó để vẽ mũi tên; dựng đủ 9 mũi tên của lưới. Sau đó chuyển sang "Xem và loại bỏ loài", chọn "Loại bỏ loài" rồi bấm vào một loài để loại nó và xem những loài nào mất nguồn thức ăn.',
   },
   examples: [
     {

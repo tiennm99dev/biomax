@@ -1,5 +1,6 @@
 <script>
   import { draggable } from '#lib/actions/draggable.svelte.js';
+  import { intText } from '#lib/core/number-format.js';
   import { button } from '#lib/core/ui.js';
   import { BIOMES, P_MAX, P_MIN, REGIONS, T_MAX, T_MIN, biomeAt } from './engine.js';
 
@@ -84,13 +85,13 @@
         <text x={xOf(13)} y={yOf(6)}>hoang mạc</text>
         <text x={xOf(25)} y={yOf(95)}>savan</text>
         <text x={xOf(25)} y={yOf(280)}>rừng mưa</text>
-        <text x={xOf(25)} y={yOf(265)}>nhiệt đới</text>
+        <text x={xOf(25)} y={yOf(258)}>nhiệt đới</text>
       </g>
       <line x1={L} y1={BOTTOM} x2={R} y2={BOTTOM} stroke="#334155" />
       <line x1={L} y1={TOP} x2={L} y2={BOTTOM} stroke="#334155" />
       <g font-size="9" fill="#334155">
         {#each [-15, -5, 5, 20, 30] as v (v)}
-          <text x={xOf(v)} y={BOTTOM + 12} text-anchor="middle">{v}</text>
+          <text x={xOf(v)} y={BOTTOM + 12} text-anchor="middle">{intText(v)}</text>
         {/each}
         {#each [0, 100, 200, 300, 400] as v (v)}
           <text x={L - 4} y={yOf(v) + 3} text-anchor="end">{v}</text>
@@ -108,7 +109,7 @@
         aria-valuemin={T_MIN}
         aria-valuemax={T_MAX}
         aria-valuenow={t}
-        aria-valuetext="{t} độ C, {p} xentimét mưa mỗi năm: {biome.name}"
+        aria-valuetext="{intText(t)} độ C, {p} xentimét mưa mỗi năm: {biome.name}"
         style="cursor: grab; outline: none"
         use:draggable={drag}
       >
@@ -126,7 +127,7 @@
 
     <div class="space-y-2 rounded-xl border border-slate-200 p-4 text-sm">
       <p class="text-xs text-slate-600 tabular-nums">
-        Nhiệt độ {t} °C · lượng mưa {p} cm/năm
+        Nhiệt độ {intText(t)} °C · lượng mưa {p} cm/năm
       </p>
       <p class="text-lg font-bold" aria-live="polite">{biome.name}</p>
       <p><span class="font-semibold">Khí hậu:</span> {biome.climate}</p>

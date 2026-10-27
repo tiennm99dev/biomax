@@ -143,7 +143,7 @@ export function groupOf(relation) {
  *   label: string;
  *   name: string;
  *   counts: Array<{ species: string, n: number }>;
- *   characteristic: string;
+ *   characteristic: string | null;
  * }} Community
  */
 
@@ -162,7 +162,7 @@ export const COMMUNITIES = [
       { species: 'Ốc bươu vàng', n: 12 },
       { species: 'Cua đồng', n: 6 },
     ],
-    characteristic: 'Lúa',
+    characteristic: null,
   },
   {
     id: 'rung-ngap-man',

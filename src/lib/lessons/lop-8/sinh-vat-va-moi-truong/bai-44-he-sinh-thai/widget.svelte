@@ -108,7 +108,7 @@
     label="Hoạt động"
     options={[
       { value: 'build', label: 'Dựng lưới thức ăn' },
-      { value: 'remove', label: 'Loại bỏ một loài' },
+      { value: 'remove', label: 'Xem và loại bỏ loài' },
     ]}
     bind:value={mode}
   />
@@ -153,10 +153,21 @@
           tabindex="0"
           aria-pressed={from === s.id}
           aria-label="{s.name}{from === s.id ? ', đang chọn làm thức ăn' : ''}"
-          class="cursor-pointer outline-none"
+          class="group cursor-pointer outline-none"
           onclick={() => tap(s.id)}
           onkeydown={(e) => onKey(e, s.id)}
         >
+          <rect
+            x={p.x - NODE_W / 2 - 4}
+            y={p.y - NODE_H / 2 - 4}
+            width={NODE_W + 8}
+            height={NODE_H + 8}
+            rx="13"
+            fill="none"
+            stroke="#6366f1"
+            stroke-width="3"
+            class="opacity-0 group-focus-visible:opacity-100"
+          />
           <rect
             x={p.x - NODE_W / 2}
             y={p.y - NODE_H / 2}
@@ -191,8 +202,8 @@
     <button type="button" class={button.quiet} onclick={reset}>Xóa các mũi tên</button>
   {:else}
     <p class="text-sm text-slate-700">
-      Chọn "Loại bỏ loài" rồi bấm vào một loài để loại nó khỏi hệ sinh thái; các loài mất hết nguồn
-      thức ăn sẽ bị đánh dấu.
+      Bấm vào một loài để xem nó ăn gì và bị loài nào ăn. Chọn "Loại bỏ loài" rồi bấm vào một loài
+      để loại nó khỏi hệ sinh thái; các loài mất hết nguồn thức ăn sẽ bị đánh dấu.
     </p>
     <FoodWeb web={WEB} label="Lưới thức ăn đồng cỏ" />
   {/if}

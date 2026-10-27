@@ -22,7 +22,7 @@
     picked === null
       ? `Ô mẫu có ${richness(c)} loài. Bấm vào loài em cho là loài ưu thế.`
       : picked === best
-        ? `Đúng: ${best} có số cá thể nhiều nhất, chiếm ưu thế và quyết định đặc điểm của quần xã ${c.name}. ${c.characteristic} cũng là loài đặc trưng của quần xã này.`
+        ? `Đúng: ${best} có số cá thể nhiều nhất trong ô mẫu, là loài ưu thế, đóng vai trò quan trọng trong quần xã ${c.name}.${c.characteristic ? ` ${c.characteristic} cũng là loài đặc trưng của quần xã này.` : ''}`
         : `${picked} chưa phải loài có nhiều cá thể nhất. Hãy so sánh độ dài các thanh.`,
   );
 </script>

@@ -1,12 +1,12 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Khái niệm quần thể sinh vật; các đặc trưng cơ bản của quần thể: kích thước, mật độ cá thể, tỉ lệ giới tính, thành phần nhóm tuổi và ba dạng tháp tuổi; các biện pháp bảo vệ quần thể.',
+    'Khái niệm quần thể sinh vật; các đặc trưng cơ bản của quần thể: kích thước, mật độ cá thể, tỉ lệ giới tính, thành phần nhóm tuổi với ba dạng tháp tuổi, kiểu phân bố cá thể; các biện pháp bảo vệ quần thể.',
   intro:
     'Trong một ruộng lúa có hàng nghìn cây lúa, hàng trăm con cua đồng, vài chục con chim sáo. Mỗi nhóm sinh vật cùng loài ấy có phải là một "quần thể"? Làm sao biết một quần thể đang phát triển hay đang suy giảm?',
   objectives: [
     'Phát biểu được khái niệm quần thể sinh vật và lấy được ví dụ.',
-    'Nêu được các đặc trưng cơ bản của quần thể: kích thước, mật độ, tỉ lệ giới tính, thành phần nhóm tuổi; tính được mật độ cá thể.',
+    'Nêu được các đặc trưng cơ bản của quần thể: kích thước, mật độ, tỉ lệ giới tính, thành phần nhóm tuổi, kiểu phân bố cá thể; tính được mật độ cá thể.',
     'Nhận biết được ba dạng tháp tuổi và đề xuất được biện pháp bảo vệ quần thể.',
   ],
   sections: [
@@ -63,7 +63,7 @@ export default {
           type: 'callout',
           tone: 'definition',
           title: 'Tỉ lệ giới tính',
-          text: 'Tỉ lệ giới tính là tỉ lệ giữa số lượng cá thể đực và số lượng cá thể cái trong quần thể. Ở đa số loài, tỉ lệ này xấp xỉ $1 : 1$; nó thay đổi theo loài, theo lứa tuổi và điều kiện sống. Ở gà, hươu, nai, số cá thể cái nhiều hơn cá thể đực.',
+          text: 'Tỉ lệ giới tính là tỉ lệ giữa số lượng cá thể đực và số lượng cá thể cái trong quần thể. Ở đa số loài, tỉ lệ này xấp xỉ $1 : 1$ (ở người, lúc mới sinh khoảng $1{,}05$ nam : $1$ nữ); nó thay đổi theo loài, theo thời gian và điều kiện sống. Ví dụ: vào mùa sinh sản, quần thể rắn có số cá thể cái nhiều hơn cá thể đực, sau mùa sinh sản số cá thể đực và cái lại xấp xỉ nhau.',
         },
         {
           type: 'p',
@@ -77,6 +77,36 @@ export default {
             ['Phát triển', 'Nhiều hơn (đáy tháp rộng)', 'Số lượng cá thể tăng'],
             ['Ổn định', 'Bằng hoặc xấp xỉ bằng', 'Số lượng cá thể ít thay đổi'],
             ['Suy thoái', 'Ít hơn (đáy tháp hẹp)', 'Số lượng cá thể giảm'],
+          ],
+        },
+        {
+          type: 'p',
+          text: 'Nghiên cứu thành phần nhóm tuổi giúp con người khai thác và bảo vệ quần thể hợp lí, ví dụ quy định kích thước mắt lưới để không đánh bắt cá con.',
+        },
+        {
+          type: 'p',
+          text: 'Kiểu phân bố cá thể: các cá thể trong quần thể phân bố trong không gian theo ba kiểu.',
+        },
+        {
+          type: 'table',
+          caption: 'Các kiểu phân bố cá thể trong quần thể',
+          head: ['Kiểu phân bố', 'Điều kiện', 'Ví dụ'],
+          rows: [
+            [
+              'Phân bố đều',
+              'Điều kiện sống phân bố đồng đều, các cá thể cạnh tranh gay gắt',
+              'Cây thông trong rừng thông, chim hải âu làm tổ',
+            ],
+            [
+              'Phân bố theo nhóm',
+              'Điều kiện sống không đồng đều, các cá thể thích sống tụ họp',
+              'Các bụi cây hoang dại, đàn trâu rừng',
+            ],
+            [
+              'Phân bố ngẫu nhiên',
+              'Điều kiện sống tương đối đồng đều, các cá thể không cạnh tranh gay gắt',
+              'Cây gỗ trong rừng mưa nhiệt đới, sâu trên tán cây, ngao sò ở bãi triều',
+            ],
           ],
         },
       ],
@@ -205,6 +235,21 @@ export default {
       solution: '$55\\% > 35\\%$: tháp phát triển, số lượng chuột sẽ tăng.',
     },
     {
+      type: 'choice',
+      prompt:
+        'Các cây thông trong một rừng thông mọc cách nhau khá đều. Đây là kiểu phân bố cá thể nào và vì sao?',
+      options: [
+        'Phân bố đều, vì điều kiện sống đồng đều và các cây cạnh tranh gay gắt về ánh sáng, nước',
+        'Phân bố theo nhóm, vì các cây thích sống tụ họp',
+        'Phân bố ngẫu nhiên, vì các cây không cạnh tranh với nhau',
+        'Phân bố theo nhóm, vì điều kiện sống không đồng đều',
+      ],
+      answer: 0,
+      hints: ['Khoảng cách giữa các cây gần như bằng nhau cho biết điều gì về sự cạnh tranh?'],
+      solution:
+        'Rừng thông có điều kiện sống tương đối đồng đều, các cây cạnh tranh gay gắt nên mỗi cây giữ một khoảng không gian riêng: phân bố đều.',
+    },
+    {
       type: 'multi',
       prompt: 'Chọn tất cả các biện pháp bảo vệ quần thể sinh vật.',
       options: [
@@ -222,7 +267,7 @@ export default {
   ],
   takeaways: [
     'Quần thể sinh vật là tập hợp các cá thể cùng loài, sống trong một khoảng không gian xác định, ở một thời điểm nhất định, có khả năng sinh sản tạo thế hệ mới.',
-    'Đặc trưng cơ bản: kích thước quần thể, mật độ cá thể (số cá thể / đơn vị diện tích hoặc thể tích), tỉ lệ giới tính, thành phần nhóm tuổi.',
+    'Đặc trưng cơ bản: kích thước quần thể, mật độ cá thể (số cá thể / đơn vị diện tích hoặc thể tích), tỉ lệ giới tính, thành phần nhóm tuổi, kiểu phân bố cá thể (đều, theo nhóm, ngẫu nhiên).',
     'Tháp tuổi có ba dạng: phát triển (đáy rộng), ổn định, suy thoái (đáy hẹp).',
     'Bảo vệ môi trường sống của quần thể chính là bảo vệ quần thể.',
   ],

@@ -114,10 +114,11 @@
       fill="#bbf7d0"
     />
     <g font-size="8" fill="#334155" text-anchor="middle">
-      <text x={LEFT + 2} y={TOP - 4} text-anchor="start">sinh trưởng</text>
+      <text x={(LEFT + xOf(s.lower)) / 2} y={TOP - 4}>chết</text>
       <text x={(xOf(s.lower) + xOf(s.favLow)) / 2} y={TOP - 4}>chống chịu</text>
       <text x={(xOf(s.favLow) + xOf(s.favHigh)) / 2} y={TOP - 4}>thuận lợi</text>
       <text x={(xOf(s.favHigh) + xOf(s.upper)) / 2} y={TOP - 4}>chống chịu</text>
+      <text x={(xOf(s.upper) + RIGHT) / 2} y={TOP - 4}>chết</text>
     </g>
     <!-- axis -->
     <line x1={LEFT} y1={BASE} x2={RIGHT} y2={BASE} stroke="#475569" />
