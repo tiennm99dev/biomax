@@ -3,7 +3,7 @@
   import { fmt } from '#lib/core/number-format.js';
   import SliderField from '#lib/core/slider-field.svelte';
   import { button } from '#lib/core/ui.js';
-  import { OUTCOME_TEXT, PARAMS, YEARS, outcome, simulate } from './engine.js';
+  import { OUTCOME_TEXT, PARAMS, YEARS, simulate, verdict } from './engine.js';
 
   const W = 360;
   const H = 230;
@@ -25,7 +25,7 @@
   const run = $derived(
     simulate({ rabbits, foxes, huntFox: huntFox / 100, huntRabbit: huntRabbit / 100 }),
   );
-  const result = $derived(outcome(run));
+  const result = $derived(verdict(run, huntFox / 100));
   const last = $derived(run[run.length - 1]);
   const atYear = $derived(run[Math.round(year * 4)] ?? last);
 
@@ -46,7 +46,7 @@
   /** @param {number} n */
   const count = (n) => fmt(Math.round(n));
 
-  const verdict = $derived.by(() => {
+  const verdictText = $derived.by(() => {
     let text = OUTCOME_TEXT[result];
     if (result === 'balanced' && last.foxes < 10)
       text += ` Nhưng chỉ còn khoảng ${count(last.foxes)} con cáo: quần thể cáo có nguy cơ biến mất.`;
@@ -168,7 +168,7 @@
     />
   </div>
 
-  <FeedbackNote {tone} text={verdict} />
+  <FeedbackNote {tone} text={verdictText} />
 
   <button type="button" class="{button.quiet} text-sm" onclick={reset}
     >Đặt lại: không săn bắt</button

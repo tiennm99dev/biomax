@@ -106,14 +106,36 @@ export function outcome(run) {
   return spread <= 0.2 * mean ? 'balanced' : 'swinging';
 }
 
-/** @type {Record<Outcome, string>} */
+/** @typedef {Outcome | 'fox-starved' | 'both-hunted'} Verdict */
+
+/**
+ * The verdict the widget shows, which also says why foxes vanished: hunted
+ * out themselves (their hunting alone is more than they can bear), or starved
+ * because the rabbits were hunted too hard; and whether the rabbits left
+ * behind overran the grassland or were kept low by hunting too.
+ * @param {Array<{ t: number, rabbits: number, foxes: number }>} run
+ * @param {number} huntFox share of foxes taken each year, 0–1
+ * @returns {Verdict}
+ */
+export function verdict(run, huntFox = 0) {
+  const result = outcome(run);
+  if (result !== 'no-fox') return result;
+  if (equilibrium(huntFox, 0) !== null) return 'fox-starved';
+  return run[run.length - 1].rabbits >= PARAMS.K / 2 ? 'no-fox' : 'both-hunted';
+}
+
+/** @type {Record<Verdict, string>} */
 export const OUTCOME_TEXT = {
   balanced:
     'Cân bằng: số thỏ và số cáo dao động rồi ổn định quanh một mức. Thỏ nhiều thì cáo có nhiều thức ăn, cáo tăng và ăn bớt thỏ; thỏ giảm thì cáo thiếu ăn, cáo giảm và thỏ lại tăng.',
   swinging:
     'Hai quần thể vẫn dao động mạnh nhưng cả hai cùng tồn tại; chúng đang dần trở về trạng thái cân bằng.',
   'no-fox':
-    'Mất cân bằng: cáo bị săn bắt quá mức nên biến mất. Không còn kẻ thù khống chế, thỏ tăng tới mức đồng cỏ chỉ vừa đủ nuôi, cỏ bị ăn trụi.',
+    'Mất cân bằng: cáo bị săn bắt quá mức nên biến mất. Không còn kẻ thù khống chế, thỏ tăng mạnh, vượt xa mức cân bằng lúc còn cáo.',
+  'both-hunted':
+    'Mất cân bằng: cáo bị săn bắt quá mức nên biến mất; thỏ cũng bị săn bắt nhiều nên chỉ còn rất ít. Quần xã đồng cỏ mất cả kẻ thù lẫn con mồi.',
+  'fox-starved':
+    'Mất cân bằng: thỏ bị săn bắt quá nhiều nên cáo thiếu thức ăn và biến mất, dù riêng việc săn cáo không đủ làm cáo biến mất. Thỏ chỉ còn ở mức thấp do bị săn bắt.',
   'no-rabbit':
     'Mất cân bằng: thỏ bị săn bắt quá mức nên biến mất, cáo mất nguồn thức ăn và cũng chết dần.',
 };

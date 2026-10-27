@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { YEARS, equilibrium, huntRate, outcome, peakYear, simulate } from './engine.js';
+import { YEARS, equilibrium, huntRate, outcome, peakYear, simulate, verdict } from './engine.js';
 
 describe('rabbit and fox model', () => {
   it('turns a yearly hunting share into a removal rate', () => {
@@ -57,5 +57,26 @@ describe('total hunting', () => {
     expect(run.every((p) => Number.isFinite(p.rabbits) && Number.isFinite(p.foxes))).toBe(true);
     expect(outcome(run)).toBe('no-fox');
     expect(outcome(simulate({ rabbits: 500, foxes: 20, huntRabbit: 1 }))).toBe('no-rabbit');
+  });
+});
+
+describe('verdict', () => {
+  /** @param {number} huntFox @param {number} huntRabbit */
+  const judge = (huntFox, huntRabbit) =>
+    verdict(simulate({ rabbits: 500, foxes: 20, huntFox, huntRabbit }), huntFox);
+
+  it('blames fox hunting when the foxes are hunted out', () => {
+    expect(judge(0.9, 0)).toBe('no-fox');
+    expect(judge(0.9, 0.65)).toBe('both-hunted');
+  });
+
+  it('blames rabbit hunting when the foxes starve', () => {
+    expect(judge(0, 0.6)).toBe('fox-starved');
+    expect(judge(0.3, 0.55)).toBe('fox-starved');
+  });
+
+  it('keeps the plain outcome otherwise', () => {
+    expect(judge(0, 0)).toBe('balanced');
+    expect(judge(0, 0.8)).toBe('no-rabbit');
   });
 });

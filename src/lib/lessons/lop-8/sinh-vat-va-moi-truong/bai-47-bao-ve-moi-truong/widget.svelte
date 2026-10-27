@@ -26,6 +26,10 @@
   /** @param {number} kg */
   const kgText = (kg) => (kg >= 100 ? fmt(Math.round(kg)) : formatNumber(kg, kg >= 10 ? 1 : 2));
 
+  /** @param {number} trees */
+  const treeText = (trees) =>
+    trees >= 10 ? fmt(Math.round(trees)) : formatNumber(trees, trees >= 1 ? 1 : 2);
+
   /** @param {string} id */
   function toggle(id) {
     chosen = chosen.includes(id) ? chosen.filter((x) => x !== id) : [...chosen, id];
@@ -33,10 +37,10 @@
 
   const summary = $derived.by(() => {
     if (chosen.length === 0) return 'Hãy chọn ít nhất một hành động để xem tác động.';
-    const who = people === 1 ? 'Một bạn' : `${people} bạn`;
-    let text = `${who} cùng làm trong ${period} bớt được khoảng ${kgText(total.waste)} kg rác và ${kgText(total.co2)} kg CO₂.`;
+    const who = people === 1 ? 'Một bạn làm' : `${people} bạn cùng làm`;
+    let text = `${who} trong ${period} bớt được khoảng ${kgText(total.waste)} kg rác và ${kgText(total.co2)} kg CO₂.`;
     if (total.co2 > 0)
-      text += ` Lượng CO₂ này bằng lượng khoảng ${formatNumber(treeYears(total.co2), 1)} cây xanh hấp thụ trong một năm.`;
+      text += ` Lượng CO₂ này bằng lượng khoảng ${treeText(treeYears(total.co2))} cây xanh hấp thụ trong một năm.`;
     if (best) text += ` Hành động giảm CO₂ nhiều nhất em đã chọn: ${best.label.toLowerCase()}.`;
     if (people === 1) text += ' Thử tăng số bạn cùng làm để thấy việc nhỏ nhân lên thế nào.';
     return text;
