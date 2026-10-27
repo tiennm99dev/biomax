@@ -103,7 +103,7 @@ export default {
           type: 'callout',
           tone: 'note',
           title: 'Ví dụ',
-          text: 'Ở người, một gene quy định enzyme tham gia tổng hợp sắc tố melanin. Khi gene bình thường, enzyme được tạo ra, da và tóc có sắc tố. Khi gene bị biến đổi, enzyme không hoạt động, cơ thể không tạo được melanin: da, tóc rất trắng (bệnh bạch tạng). Tương tự, ở đậu Hà Lan, hoa tím hay hoa trắng phụ thuộc vào việc gene có tạo ra enzyme tổng hợp sắc tố hay không.',
+          text: 'Ở người, một gene quy định enzyme tham gia tổng hợp sắc tố melanin. Khi gene bình thường, enzyme được tạo ra, da và tóc có sắc tố. Khi gene bị biến đổi, enzyme không hoạt động, cơ thể không tạo được melanin: da, tóc rất trắng (bệnh bạch tạng). Tương tự, ở đậu Hà Lan, hoa tím hay hoa trắng phụ thuộc vào việc gene quy định màu hoa có tạo ra được protein cần cho quá trình tổng hợp sắc tố ở cánh hoa hay không.',
         },
         {
           type: 'p',
@@ -179,7 +179,7 @@ export default {
       type: 'text',
       prompt:
         "Dùng bảng mã di truyền, viết chuỗi amino acid do mRNA $5'$-AUGGCUUGGUAA-$3'$ quy định (viết tên viết tắt, nối bằng dấu gạch, ví dụ Met-Gly).",
-      accept: ['Met-Ala-Trp', 'Met - Ala - Trp', 'Met – Ala – Trp', 'Met Ala Trp'],
+      accept: ['Met-Ala-Trp', 'Met - Ala - Trp', 'Met–Ala–Trp', 'Met – Ala – Trp', 'Met Ala Trp'],
       hints: ['Chia thành các bộ ba: AUG, GCU, UGG, UAA.', 'GCU: khối hàng G, cột C, dòng U.'],
       solution: 'AUG → Met, GCU → Ala, UGG → Trp, UAA → kết thúc: chuỗi Met – Ala – Trp.',
     },

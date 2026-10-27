@@ -73,10 +73,11 @@
     if (!counts) {
       return `Bảng Punnett cho tỉ lệ lí thuyết. Bấm "Gieo ${N} hạt" để xem số hạt thực tế dao động quanh tỉ lệ đó, như số liệu Mendel đếm được.`;
     }
-    const r = observedRatio(counts);
-    const theory = classes.map((c) => c.count);
-    const g = theory.reduce((a, b) => (b ? gcdOf(a, b) : a), 0) || 1;
-    return `Thu được ${counts.map((c, i) => `${c} ${classes[i].name}`).join(', ')}: tỉ lệ ≈ ${r.map((x) => formatNumber(x, 1)).join(' : ')}, gần với tỉ lệ lí thuyết ${theory.map((t) => t / g).join(' : ')}.`;
+    const raw = classes.map((c) => c.count);
+    const g = raw.reduce((a, b) => (b ? gcdOf(a, b) : a), 0) || 1;
+    const theory = raw.map((t) => t / g);
+    const r = observedRatio(counts, theory);
+    return `Thu được ${counts.map((c, i) => `${c} ${classes[i].name}`).join(', ')}: tỉ lệ ≈ ${r.map((x) => formatNumber(x, 1)).join(' : ')}, gần với tỉ lệ lí thuyết ${theory.join(' : ')}.`;
   });
 
   /** @param {number} a @param {number} b @returns {number} */

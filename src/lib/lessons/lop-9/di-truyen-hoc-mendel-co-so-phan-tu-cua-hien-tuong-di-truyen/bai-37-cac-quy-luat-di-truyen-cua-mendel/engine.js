@@ -97,14 +97,19 @@ export function sample(mother, father, n, rand) {
 }
 
 /**
- * Observed counts as a ratio to the smallest non-zero count, rounded to one
- * decimal: [301, 99] → [3.04, 1] shown as 3,0 : 1.
- * @param {number[]} counts
+ * Observed counts written on the scale of the theoretical ratio, rounded to
+ * one decimal: the counts are rescaled to the same number of parts as the
+ * theory, so 301 : 99 against 3 : 1 reads 3,0 : 1,0 and 216 : 72 : 94 : 18
+ * against 9 : 3 : 3 : 1 reads 8,6 : 2,9 : 3,8 : 0,7. Dividing by the
+ * smallest count instead would blow up the noise of a small class.
+ * @param {number[]} counts observed counts
+ * @param {number[]} theory theoretical ratio, same order
  */
-export function observedRatio(counts) {
-  const min = Math.min(...counts.filter((c) => c > 0));
-  if (!Number.isFinite(min)) return counts.map(() => 0);
-  return counts.map((c) => Math.round((c / min) * 10) / 10);
+export function observedRatio(counts, theory) {
+  const total = counts.reduce((a, b) => a + b, 0);
+  const parts = theory.reduce((a, b) => a + b, 0);
+  if (!total || !parts) return counts.map(() => 0);
+  return counts.map((c) => Math.round(((c * parts) / total) * 10) / 10);
 }
 
 /**

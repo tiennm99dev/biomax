@@ -62,9 +62,10 @@ describe('pea crosses', () => {
   });
 
   it('writes observed ratios to the smallest class', () => {
-    expect(observedRatio([301, 99])).toEqual([3, 1]);
-    expect(observedRatio([315, 108, 101, 32])).toEqual([9.8, 3.4, 3.2, 1]);
-    expect(observedRatio([0, 0])).toEqual([0, 0]);
+    expect(observedRatio([301, 99], [3, 1])).toEqual([3, 1]);
+    expect(observedRatio([315, 108, 101, 32], [9, 3, 3, 1])).toEqual([9.1, 3.1, 2.9, 0.9]);
+    expect(observedRatio([216, 72, 94, 18], [9, 3, 3, 1])).toEqual([8.6, 2.9, 3.8, 0.7]);
+    expect(observedRatio([0, 0], [3, 1])).toEqual([0, 0]);
   });
 
   it('reads a test cross', () => {

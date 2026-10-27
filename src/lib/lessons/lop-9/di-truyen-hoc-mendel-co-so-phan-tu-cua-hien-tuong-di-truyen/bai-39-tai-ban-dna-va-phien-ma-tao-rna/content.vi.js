@@ -211,7 +211,7 @@ export default {
       type: 'text',
       prompt:
         "Mạch khuôn của một gene có trình tự $3'$-TACGGA-$5'$. Viết trình tự mRNA (chiều $5' \\to 3'$, chỉ ghi các chữ cái).",
-      accept: ['AUGCCU'],
+      accept: ['AUGCCU', "5'-AUGCCU-3'", "5' AUGCCU 3'", 'AUG CCU', 'AUG-CCU'],
       hints: ['Trong phiên mã: A – U, T – A, G – C, C – G.', 'RNA không có T.'],
       solution: "T → A, A → U, C → G, G → C, G → C, A → U: mRNA là $5'$-AUGCCU-$3'$.",
     },

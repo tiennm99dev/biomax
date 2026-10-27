@@ -191,7 +191,7 @@ export default {
       type: 'text',
       prompt:
         "Một mạch DNA có trình tự $5'$-ATGCTAC-$3'$. Viết trình tự mạch bổ sung theo chiều $3' \\to 5'$ (chỉ ghi các chữ cái, ví dụ TACG).",
-      accept: ['TACGATG'],
+      accept: ['TACGATG', "3'-TACGATG-5'", "3' TACGATG 5'"],
       hints: [
         'A ghép với T, G ghép với C.',
         'Viết lần lượt nucleotide bổ sung với từng chữ của mạch đã cho.',

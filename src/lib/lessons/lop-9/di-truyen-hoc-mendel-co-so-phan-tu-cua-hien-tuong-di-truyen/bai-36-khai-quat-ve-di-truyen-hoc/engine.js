@@ -173,7 +173,7 @@ export const QUESTIONS = [
     example: 'Lai hạt vàng thuần chủng với hạt xanh thuần chủng, $F_1$ đều hạt vàng.',
     pictures: [YELLOW],
     answer: 'troi',
-    options: ['lan', 'di-truyen', 'troi', 'kieu-gene'],
+    options: ['lan', 'allele', 'troi', 'kieu-gene'],
     why: 'Tính trạng biểu hiện ở $F_1$ khi lai hai dòng thuần chủng tương phản là tính trạng trội.',
   },
   {
@@ -189,7 +189,7 @@ export const QUESTIONS = [
     example: 'Hai cây con cùng bố mẹ, một cây hạt vàng, một cây hạt xanh.',
     pictures: [YELLOW, GREEN],
     answer: 'bien-di',
-    options: ['di-truyen', 'bien-di', 'tuong-phan', 'lan'],
+    options: ['di-truyen', 'bien-di', 'thuan-chung', 'lan'],
     why: 'Con sinh ra khác bố mẹ và khác nhau ở nhiều chi tiết là biến dị.',
   },
   {
@@ -197,7 +197,7 @@ export const QUESTIONS = [
     example: 'Dòng đậu thân thấp tự thụ phấn qua nhiều đời đều cho cây thân thấp.',
     pictures: [{ kind: 'plant', tall: false }],
     answer: 'thuan-chung',
-    options: ['thuan-chung', 'di-truyen', 'dong-di-hop', 'lan'],
+    options: ['thuan-chung', 'kieu-hinh', 'dong-di-hop', 'lan'],
     why: 'Các thế hệ sau giống hệt thế hệ trước về tính trạng đang xét: đó là dòng thuần chủng.',
   },
 ];

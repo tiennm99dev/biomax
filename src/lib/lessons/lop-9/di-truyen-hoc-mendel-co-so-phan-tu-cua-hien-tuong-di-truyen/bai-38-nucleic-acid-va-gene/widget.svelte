@@ -165,8 +165,17 @@
           onclick={() => place(b)}>{b}</button
         >
       {/each}
-      <button type="button" class={button.quiet} onclick={() => (built = built.slice(0, -1))}
-        >Gỡ nucleotide cuối</button
+      <button
+        type="button"
+        class={button.quiet}
+        disabled={!built.length}
+        onclick={() => {
+          built = built.slice(0, -1);
+          pairNote = {
+            tone: 'info',
+            text: 'Đã gỡ nucleotide cuối. Chọn nucleotide bổ sung cho vị trí đang sáng trên mạch 1.',
+          };
+        }}>Gỡ nucleotide cuối</button
       >
       <button type="button" class={button.quiet} onclick={newTarget}>Đoạn khác</button>
     </div>
