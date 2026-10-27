@@ -8,6 +8,7 @@
 </script>
 
 <FoodWeb web={RICE_FIELD} />
+<FoodWeb web={RICE_FIELD} mode="remove" label="Mở sẵn chế độ loại bỏ loài" />
 <FoodWeb
   web={{
     species: [

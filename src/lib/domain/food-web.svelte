@@ -1,4 +1,5 @@
 <script>
+  import { untrack } from 'svelte';
   import SegmentedControl from '#lib/core/segmented-control.svelte';
   import { button } from '#lib/core/ui.js';
   import {
@@ -24,16 +25,25 @@
    *
    * - `web`: `{ species, links }` from `food-web.js`.
    * - `removable`: offer the remove mode.
+   * - `mode`: the mode it opens in, 'view' (default) or 'remove' (only when
+   *   `removable`); the learner can still switch.
    * - `chains`: list the food chains of the web.
    *
    * @type {{
    *   web: import('./food-web.js').FoodWeb;
    *   removable?: boolean;
+   *   mode?: 'view' | 'remove';
    *   chains?: boolean;
    *   label?: string;
    * }}
    */
-  let { web, removable = true, chains = true, label = 'Lưới thức ăn' } = $props();
+  let {
+    web,
+    removable = true,
+    mode: initialMode = 'view',
+    chains = true,
+    label = 'Lưới thức ăn',
+  } = $props();
 
   const NODE_W = 96;
   const NODE_H = 32;
@@ -64,7 +74,7 @@
   const allChains = $derived(foodChains(web));
 
   /** @type {'view' | 'remove'} */
-  let mode = $state('view');
+  let mode = $state(untrack(() => (removable ? initialMode : 'view')));
   /** @type {string | null} */
   let selected = $state(null);
   /** @type {string[]} */

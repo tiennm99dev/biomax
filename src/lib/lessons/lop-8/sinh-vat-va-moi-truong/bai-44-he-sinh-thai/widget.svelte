@@ -202,9 +202,9 @@
     <button type="button" class={button.quiet} onclick={reset}>Xóa các mũi tên</button>
   {:else}
     <p class="text-sm text-slate-700">
-      Bấm vào một loài để xem nó ăn gì và bị loài nào ăn. Chọn "Loại bỏ loài" rồi bấm vào một loài
-      để loại nó khỏi hệ sinh thái; các loài mất hết nguồn thức ăn sẽ bị đánh dấu.
+      Bấm vào một loài để loại nó khỏi hệ sinh thái; các loài mất hết nguồn thức ăn sẽ bị đánh dấu.
+      Chọn "Xem quan hệ" để xem mỗi loài ăn gì và bị loài nào ăn.
     </p>
-    <FoodWeb web={WEB} label="Lưới thức ăn đồng cỏ" />
+    <FoodWeb web={WEB} mode="remove" label="Lưới thức ăn đồng cỏ" />
   {/if}
 </div>
