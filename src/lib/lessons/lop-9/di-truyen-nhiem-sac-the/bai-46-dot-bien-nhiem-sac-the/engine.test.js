@@ -67,10 +67,17 @@ describe('numerical chromosome mutations', () => {
     expect(classifyNumber([4, 2, 2, 2]).name).toContain('Thể bốn');
     expect(classifyNumber([3, 1, 2, 2])).toEqual({
       kind: 'lech-boi',
-      name: 'Thể lệch bội ở 2 cặp NST',
-      formula: '8 NST',
+      name: 'Thể lệch bội (lệch bội ở 2 cặp NST)',
+      formula: '2n + 1 − 1 = 8',
     });
-    expect(classifyNumber([3, 3, 2, 2]).formula).toBe('2n + 2 = 10');
+    expect(classifyNumber([3, 3, 2, 2])).toEqual({
+      kind: 'lech-boi',
+      name: 'Thể ba kép (lệch bội ở 2 cặp NST)',
+      formula: '2n + 1 + 1 = 10',
+    });
+    expect(classifyNumber([1, 2, 1, 2]).formula).toBe('2n − 1 − 1 = 6');
+    expect(classifyNumber([1, 2, 1, 2]).name).toContain('Thể một kép');
+    expect(classifyNumber([4, 2, 2, 2]).formula).toBe('2n + 2 = 10');
   });
 
   it('keeps copies between 0 and 4', () => {

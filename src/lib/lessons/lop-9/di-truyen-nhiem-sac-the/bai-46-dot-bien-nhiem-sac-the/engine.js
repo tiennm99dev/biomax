@@ -126,7 +126,6 @@ export const MAX_COPIES = 4;
  */
 export function classifyNumber(counts) {
   const total = counts.reduce((s, c) => s + c, 0);
-  const n = counts.length;
   const all = (/** @type {number} */ k) => counts.every((c) => c === k);
   if (all(2))
     return { kind: 'binh-thuong', name: 'Bộ NST lưỡng bội bình thường', formula: `2n = ${total}` };
@@ -148,11 +147,18 @@ export function classifyNumber(counts) {
       formula: `2n${sign(d)} = ${total}`,
     };
   }
-  const net = total - 2 * n;
+  // Several pairs changed: the book writes one term per pair, so two trisomic
+  // pairs are 2n + 1 + 1 (thể ba kép), never 2n + 2, which is one pair of four.
+  const twin =
+    changed.length === 2 && changed[0] === changed[1] && Math.abs(changed[0]) === 1
+      ? changed[0] > 0
+        ? 'Thể ba kép'
+        : 'Thể một kép'
+      : 'Thể lệch bội';
   return {
     kind: 'lech-boi',
-    name: `Thể lệch bội ở ${changed.length} cặp NST`,
-    formula: net === 0 ? `${total} NST` : `2n${sign(net)} = ${total}`,
+    name: `${twin} (lệch bội ở ${changed.length} cặp NST)`,
+    formula: `2n${changed.map(sign).join('')} = ${total}`,
   };
 }
 

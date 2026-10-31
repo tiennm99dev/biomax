@@ -99,18 +99,19 @@
   /** @type {string[]} */
   let numberDone = $state([]);
   const type = $derived(classifyNumber(counts));
+  const total = $derived(counts.reduce((s, c) => s + c, 0));
   const PAIR_LENGTHS = [40, 32, 24, 14];
 
   const NUMBER_MISSIONS = [
     {
       id: 'the-ba',
       label: 'Thể ba (2n + 1)',
-      test: (/** @type {string} */ f) => f.startsWith('2n + 1'),
+      test: (/** @type {string} */ f) => /^2n \+ 1 = /.test(f),
     },
     {
       id: 'the-mot',
       label: 'Thể một (2n − 1)',
-      test: (/** @type {string} */ f) => f.startsWith('2n − 1'),
+      test: (/** @type {string} */ f) => /^2n − 1 = /.test(f),
     },
     {
       id: 'tam-boi',
@@ -276,7 +277,7 @@
                 type="button"
                 class="h-11 w-11 rounded-lg border border-slate-300 text-lg font-bold {focusRing}"
                 aria-label="Bớt một NST ở cặp {p + 1}"
-                disabled={c === 0}
+                disabled={c === 0 || total <= 1}
                 onclick={() => setCounts(changeCopies(counts, p, -1))}>−</button
               >
               <button

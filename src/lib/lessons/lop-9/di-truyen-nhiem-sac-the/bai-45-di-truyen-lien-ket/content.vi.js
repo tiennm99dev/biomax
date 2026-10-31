@@ -3,7 +3,7 @@ export default {
   summary:
     'Di truyền liên kết: các gene cùng nằm trên một NST có xu hướng di truyền cùng nhau; thí nghiệm của Morgan trên ruồi giấm, so sánh với phân li độc lập và ý nghĩa của di truyền liên kết.',
   intro:
-    'Theo Mendel, hai cặp gene quy định hai tính trạng phân li độc lập với nhau. Nhưng ruồi giấm chỉ có $4$ cặp NST mà lại có hàng nghìn gene, nên mỗi NST phải mang rất nhiều gene. Các gene cùng nằm trên một NST có còn phân li độc lập không? Năm 1910, Thomas Hunt Morgan trả lời câu hỏi này bằng thí nghiệm trên ruồi giấm. Trong bài này, em sẽ so sánh song song hai bảng Punnett: khi hai gene nằm trên hai cặp NST và khi chúng nằm trên cùng một NST.',
+    'Theo Mendel, hai cặp gene quy định hai tính trạng phân li độc lập với nhau. Nhưng ruồi giấm chỉ có $4$ cặp NST mà lại có hàng nghìn gene, nên mỗi NST phải mang rất nhiều gene. Các gene cùng nằm trên một NST có còn phân li độc lập không? Đầu thế kỉ XX, nhà di truyền học người Mỹ Thomas Hunt Morgan đã trả lời câu hỏi này bằng thí nghiệm trên ruồi giấm. Trong bài này, em sẽ so sánh song song hai bảng Punnett: khi hai gene nằm trên hai cặp NST và khi chúng nằm trên cùng một NST.',
   objectives: [
     'Mô tả được thí nghiệm của Morgan về di truyền liên kết trên ruồi giấm.',
     'Giải thích được kết quả thí nghiệm bằng sơ đồ lai; nêu được khái niệm di truyền liên kết.',
