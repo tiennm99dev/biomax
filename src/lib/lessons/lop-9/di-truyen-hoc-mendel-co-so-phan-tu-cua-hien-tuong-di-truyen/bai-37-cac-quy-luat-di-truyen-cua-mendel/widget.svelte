@@ -6,7 +6,7 @@
   import { formatNumber } from '#lib/core/number-format.js';
   import { button, focusRing } from '#lib/core/ui.js';
   import PunnettSquare from '#lib/domain/punnett-square.svelte';
-  import Pea from '../_shared/pea.svelte';
+  import Pea from '#lib/domain/pea.svelte';
   import {
     ONE_GENE,
     TRAITS,

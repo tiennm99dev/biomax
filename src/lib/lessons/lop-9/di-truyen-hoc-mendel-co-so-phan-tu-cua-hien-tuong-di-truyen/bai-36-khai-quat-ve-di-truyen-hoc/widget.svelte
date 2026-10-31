@@ -4,7 +4,7 @@
   import SegmentedControl from '#lib/core/segmented-control.svelte';
   import { texText } from '#lib/core/tex-text.js';
   import { button, focusRing } from '#lib/core/ui.js';
-  import Pea from '../_shared/pea.svelte';
+  import Pea from '#lib/domain/pea.svelte';
   import { QUESTIONS, TERMS, isRight, score, termName } from './engine.js';
 
   let mode = $state('cards');
