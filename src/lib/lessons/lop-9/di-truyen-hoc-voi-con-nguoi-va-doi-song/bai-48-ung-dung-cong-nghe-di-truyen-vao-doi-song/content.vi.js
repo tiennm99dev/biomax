@@ -82,7 +82,10 @@ export default {
             ['Ngô Bt', 'Mang gene của vi khuẩn Bacillus thuringiensis, tạo protein diệt sâu hại'],
             ['Lúa vàng', 'Tổng hợp được β-carotene (tiền vitamin A) trong hạt gạo'],
             ['Đu đủ biến đổi gene', 'Kháng virus gây bệnh'],
-            ['Cá chép biến đổi gene', 'Sinh trưởng nhanh, kháng virus'],
+            [
+              'Cá chép biến đổi gene',
+              'Mang gene hormone sinh trưởng của người nên lớn nhanh, kháng virus',
+            ],
             ['Bò biến đổi gene', 'Sữa có chất lượng cao hơn'],
             [
               'Dê biến đổi gene',
@@ -281,7 +284,7 @@ export default {
         'Tổng hợp β-carotene trong hạt gạo',
         'Kháng virus gây bệnh',
         'Cho sữa chứa protein tơ nhện',
-        'Sinh trưởng nhanh, kháng virus',
+        'Mang gene hormone sinh trưởng của người, lớn nhanh',
         'Sản xuất insulin người',
       ],
       pairs: [
@@ -293,7 +296,7 @@ export default {
       ],
       hints: ['Chữ "Bt" là viết tắt tên một loài vi khuẩn; "vàng" là màu của β-carotene.'],
       solution:
-        'Ngô Bt: kháng sâu; lúa vàng: β-carotene; đu đủ: kháng virus; dê: sữa chứa protein tơ nhện; cá chép: sinh trưởng nhanh, kháng virus. Insulin người do vi khuẩn E. coli biến đổi gene sản xuất.',
+        'Ngô Bt: kháng sâu; lúa vàng: β-carotene; đu đủ: kháng virus; dê: sữa chứa protein tơ nhện; cá chép: mang gene hormone sinh trưởng, lớn nhanh. Insulin người do vi khuẩn E. coli biến đổi gene sản xuất.',
     },
     {
       type: 'choice',
