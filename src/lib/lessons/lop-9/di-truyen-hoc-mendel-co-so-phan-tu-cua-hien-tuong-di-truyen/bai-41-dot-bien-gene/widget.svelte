@@ -20,10 +20,16 @@
   const before = $derived(geneStats(gene.seq));
   const after = $derived(geneStats(sequence));
 
-  /** @param {string | number} id */
+  /**
+   * The translator keeps the sequence it mounts with as its starting gene
+   * (for its reset button and the protein comparison), so the new sequence
+   * must be in place before the gene id remounts it.
+   * @param {string | number} id
+   */
   function chooseGene(id) {
     const g = GENES.find((x) => x.id === id) ?? GENES[0];
     sequence = g.seq;
+    geneId = g.id;
     done = [];
     note = null;
     hintFor = null;
@@ -58,7 +64,7 @@
   <SegmentedControl
     label="Chọn gene"
     options={GENES.map((g) => ({ value: g.id, label: g.label }))}
-    bind:value={geneId}
+    value={geneId}
     onchange={chooseGene}
   />
   <p class="text-sm text-slate-600"><LiveRichText text={gene.note} /></p>

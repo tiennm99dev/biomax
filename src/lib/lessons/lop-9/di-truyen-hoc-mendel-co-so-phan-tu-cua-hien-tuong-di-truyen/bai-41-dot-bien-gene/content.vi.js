@@ -22,7 +22,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Các dạng đột biến điểm gồm: mất một cặp nucleotide, thêm một cặp nucleotide và thay thế một cặp nucleotide này bằng một cặp nucleotide khác. Gene bị đột biến tạo ra một allele mới của gene đó.',
+          text: 'Các dạng đột biến điểm gồm: mất một cặp nucleotide, thêm một cặp nucleotide và thay thế một cặp nucleotide này bằng một cặp nucleotide khác. Gene bị đột biến tạo ra một allele mới của gene đó. Mỗi cặp nucleotide dài $3{,}4$ Å $= 0{,}34$ nm, nên mất hoặc thêm một cặp làm gene ngắn đi hoặc dài thêm $3{,}4$ Å.',
         },
         {
           type: 'table',
@@ -53,7 +53,7 @@ export default {
           type: 'callout',
           tone: 'note',
           title: 'Ví dụ: bệnh hồng cầu hình liềm',
-          text: 'Trong gene quy định chuỗi β-globin, cặp A – T ở bộ ba thứ $6$ bị thay bằng cặp T – A: trên mạch mã hoá, bộ ba GAG thành GTG, nên trên mRNA GAG thành GUG. Amino acid glutamic acid (Glu) bị thay bằng valine (Val), hemoglobin bị biến đổi và hồng cầu có hình lưỡi liềm. Đây là đột biến thay thế một cặp nucleotide.',
+          text: 'Trong gene quy định chuỗi β-globin, cặp A – T ở bộ ba thứ $6$ (không tính bộ ba mở đầu) bị thay bằng cặp T – A: trên mạch mã hoá, bộ ba GAG thành GTG, nên trên mRNA GAG thành GUG. Amino acid glutamic acid (Glu) bị thay bằng valine (Val), hemoglobin bị biến đổi và hồng cầu có hình lưỡi liềm. Đây là đột biến thay thế một cặp nucleotide.',
         },
       ],
     },
@@ -97,8 +97,8 @@ export default {
         {
           type: 'list',
           items: [
-            'Đột biến gene có tính vô hướng: gene nào cũng có thể bị đột biến, vào bất kì thời điểm nào; một gene có thể đột biến theo nhiều hướng, tạo ra nhiều allele khác nhau.',
-            'Tần số đột biến của mỗi gene rất thấp, phụ thuộc vào loại tác nhân, cường độ, liều lượng của tác nhân và cấu trúc của gene.',
+            'Đột biến gene là biến dị di truyền và có tính vô hướng: gene nào cũng có thể bị đột biến, vào bất kì thời điểm nào; một gene có thể đột biến theo nhiều hướng, tạo ra nhiều allele khác nhau.',
+            'Tần số đột biến của mỗi gene rất thấp (khoảng $10^{-6}$ đến $10^{-4}$), phụ thuộc vào loại tác nhân, cường độ, liều lượng của tác nhân và cấu trúc của gene.',
             'Đột biến gene có lợi, có hại hay trung tính tuỳ thuộc vào chức năng của gene và điều kiện môi trường trong và ngoài cơ thể.',
           ],
         },
