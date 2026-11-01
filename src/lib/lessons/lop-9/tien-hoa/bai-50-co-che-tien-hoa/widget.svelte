@@ -70,6 +70,10 @@
       </label>
     {/each}
   </fieldset>
+  <p class="text-xs text-slate-600">
+    Tốc độ đột biến và di - nhập gene ở đây được phóng đại để dễ quan sát; trong tự nhiên, đột biến
+    làm đổi tần số allele rất chậm.
+  </p>
 
   <div class="grid gap-3 sm:grid-cols-2">
     <SliderField

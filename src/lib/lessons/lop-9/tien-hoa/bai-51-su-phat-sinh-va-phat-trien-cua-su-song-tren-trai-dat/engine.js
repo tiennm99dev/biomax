@@ -171,11 +171,13 @@ export const VIEWS = [
 ];
 
 /**
- * The era at a time; a boundary belongs to the younger era.
+ * The era at a time. A boundary belongs to the older era, because the
+ * event that marks it (the great extinctions at 250 and 66 million years ago)
+ * closes that era: the dinosaurs die out at the end of the Mesozoic.
  * @param {number} t millions of years ago
  */
 export function eraAt(t) {
-  return ERAS.find((e) => t <= e.from && t > e.to) ?? ERAS[ERAS.length - 1];
+  return ERAS.find((e) => t <= e.from && t >= e.to) ?? ERAS[ERAS.length - 1];
 }
 
 /**

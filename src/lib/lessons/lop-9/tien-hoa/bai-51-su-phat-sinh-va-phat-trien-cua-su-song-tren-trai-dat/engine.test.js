@@ -26,7 +26,9 @@ describe('the geological time line', () => {
     expect(eraAt(150).name).toBe('Đại Trung sinh');
     expect(eraAt(0.15).name).toBe('Đại Tân sinh');
     expect(eraAt(0).name).toBe('Đại Tân sinh');
-    expect(eraAt(66).name).toBe('Đại Tân sinh');
+    expect(eraAt(66).name).toBe('Đại Trung sinh');
+    expect(eraAt(250).name).toBe('Đại Cổ sinh');
+    expect(eraAt(4600).id).toBe('hinh-thanh');
   });
 
   it('lists events oldest first and puts each group in its era', () => {

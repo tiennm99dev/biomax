@@ -214,7 +214,7 @@ export default {
     },
     {
       type: 'text',
-      prompt: 'Động lực của chọn lọc tự nhiên là gì? (ghi cụm từ ba chữ)',
+      prompt: 'Động lực của chọn lọc tự nhiên là gì? (ghi một cụm từ gồm bốn chữ)',
       accept: ['đấu tranh sinh tồn', 'sự đấu tranh sinh tồn'],
       hints: [
         'Sinh vật phải tranh giành thức ăn, chỗ ở, chống lại kẻ thù và điều kiện bất lợi để sống sót.',

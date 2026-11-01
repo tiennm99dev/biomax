@@ -1,16 +1,46 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Quan điểm của Darwin về cơ chế tiến hóa bằng chọn lọc tự nhiên và những hạn chế của nó; thuyết tiến hóa tổng hợp hiện đại: quần thể là đơn vị tiến hóa, nguồn biến dị di truyền, các nhân tố tiến hóa, tiến hóa nhỏ và tiến hóa lớn.',
+    'Quan điểm của Lamarck và của Darwin về cơ chế tiến hóa và những hạn chế của nó; thuyết tiến hóa tổng hợp hiện đại: quần thể là đơn vị tiến hóa, nguồn biến dị di truyền, các nhân tố tiến hóa, tiến hóa nhỏ và tiến hóa lớn.',
   intro:
-    'Tổ tiên của loài hươu cao cổ có cổ không dài như ngày nay. Vì sao qua thời gian, hươu cao cổ lại có chiếc cổ dài vượt trội? Darwin đã đưa ra một lời giải thích nổi tiếng từ thế kỉ XIX. Một thế kỉ sau, khi di truyền học phát triển, các nhà khoa học bổ sung lời giải thích ấy bằng thuyết tiến hóa tổng hợp hiện đại. Trong bài này, em sẽ tự bật, tắt từng nhân tố tiến hóa và quan sát cấu trúc di truyền của một quần thể thay đổi qua các thế hệ.',
+    'Tổ tiên của loài hươu cao cổ có cổ không dài như ngày nay. Vì sao qua thời gian, hươu cao cổ lại có chiếc cổ dài vượt trội? Đầu thế kỉ XIX, Lamarck cho rằng hươu đã vươn cổ để ăn lá trên cao; vài chục năm sau, Darwin đưa ra một lời giải thích khác bằng chọn lọc tự nhiên. Một thế kỉ sau, khi di truyền học phát triển, các nhà khoa học bổ sung lời giải thích ấy bằng thuyết tiến hóa tổng hợp hiện đại. Trong bài này, em sẽ tự bật, tắt từng nhân tố tiến hóa và quan sát cấu trúc di truyền của một quần thể thay đổi qua các thế hệ.',
   objectives: [
+    'Trình bày được quan điểm của Lamarck về cơ chế tiến hóa.',
     'Trình bày được quan điểm của Darwin về cơ chế tiến hóa và nêu được hạn chế của học thuyết.',
+    'Phân biệt được cách Lamarck và Darwin giải thích sự hình thành đặc điểm thích nghi.',
     'Nêu được quần thể là đơn vị tiến hóa; phân biệt được tiến hóa nhỏ và tiến hóa lớn.',
     'Kể tên và nêu được vai trò của các nhân tố tiến hóa theo thuyết tiến hóa hiện đại.',
     'Tính được tần số allele của quần thể từ số lượng các kiểu gene.',
   ],
   sections: [
+    {
+      heading: 'Quan điểm của Lamarck về cơ chế tiến hóa',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Jean-Baptiste Lamarck (1744 – 1829), nhà tự nhiên học người Pháp, là người đầu tiên xây dựng một học thuyết tiến hóa (1809). Ông cho rằng sinh giới phát triển từ đơn giản đến phức tạp, và loài mới được hình thành dần dần qua nhiều dạng trung gian.',
+        },
+        {
+          type: 'list',
+          items: [
+            'Ngoại cảnh thay đổi chậm, nên sinh vật có khả năng phản ứng phù hợp, chủ động thích nghi với sự thay đổi đó; vì vậy không có loài nào bị đào thải.',
+            'Ngoại cảnh không đồng nhất và thay đổi thường xuyên làm cho các sinh vật có chung tổ tiên biến đổi theo nhiều hướng khác nhau. Những biến đổi do ngoại cảnh và do tập quán hoạt động (dùng nhiều thì phát triển, ít dùng thì tiêu biến) đều được di truyền và tích lũy qua nhiều thế hệ, hình thành loài mới.',
+          ],
+        },
+        {
+          type: 'callout',
+          tone: 'note',
+          title: 'Lamarck giải thích chiếc cổ của hươu cao cổ',
+          text: 'Khi thức ăn ở tầng thấp khan hiếm, hươu phải thường xuyên vươn cổ để ăn lá trên cao, nên cổ dài ra một chút. Đặc điểm cổ dài thêm ấy được truyền cho con, tích lũy qua nhiều thế hệ thành chiếc cổ rất dài.',
+        },
+        {
+          type: 'callout',
+          tone: 'warning',
+          title: 'Hạn chế của học thuyết Lamarck',
+          text: 'Những biến đổi do tập quán hoạt động hay do ngoại cảnh trong đời một cá thể (thường biến) không di truyền được. Lamarck cũng cho rằng không loài nào bị đào thải, trong khi thực tế rất nhiều loài đã tuyệt chủng.',
+        },
+      ],
+    },
     {
       heading: 'Quan điểm của Darwin về cơ chế tiến hóa',
       blocks: [
@@ -145,6 +175,24 @@ export default {
     },
   ],
   practice: [
+    {
+      type: 'match',
+      prompt: 'Ghép mỗi cách giải thích chiếc cổ dài của hươu cao cổ với tác giả của nó.',
+      left: [
+        'Hươu thường xuyên vươn cổ ăn lá trên cao nên cổ dài ra, rồi truyền đặc điểm đó cho con.',
+        'Trong đàn có sẵn con cổ dài, con cổ ngắn; con cổ dài sống sót, sinh sản nhiều hơn.',
+      ],
+      right: ['Lamarck', 'Darwin'],
+      pairs: [
+        [0, 0],
+        [1, 1],
+      ],
+      hints: [
+        'Ai cho rằng sinh vật chủ động biến đổi để thích nghi? Ai cho rằng biến dị có sẵn rồi mới được chọn lọc?',
+      ],
+      solution:
+        'Lamarck: tập quán hoạt động (vươn cổ) làm cổ dài ra và biến đổi đó di truyền. Darwin: biến dị cá thể có sẵn, chọn lọc tự nhiên giữ lại những con cổ dài.',
+    },
     {
       type: 'choice',
       prompt: 'Theo Darwin, nguyên liệu chủ yếu của chọn lọc tự nhiên là',
@@ -299,6 +347,7 @@ export default {
     },
   ],
   takeaways: [
+    'Lamarck: ngoại cảnh và tập quán hoạt động làm sinh vật chủ động biến đổi để thích nghi, mọi biến đổi đó đều di truyền và không loài nào bị đào thải; nay ta biết thường biến không di truyền.',
     'Darwin: biến dị cá thể + đấu tranh sinh tồn → chọn lọc tự nhiên tích lũy biến dị có lợi; loài mới hình thành dần theo con đường phân li tính trạng từ một nguồn gốc chung.',
     'Hạn chế của Darwin: chưa giải thích được nguyên nhân phát sinh và cơ chế di truyền biến dị.',
     'Tiến hóa nhỏ là sự biến đổi tần số allele và tần số kiểu gene của quần thể; quần thể là đơn vị tiến hóa.',

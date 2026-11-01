@@ -1,4 +1,5 @@
 <script>
+  import { tick } from 'svelte';
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import SegmentedControl from '#lib/core/segmented-control.svelte';
   import LineChart from '#lib/core/visuals/line-chart.svelte';
@@ -31,6 +32,8 @@
   let eaten = $state([]);
   let history = $state([START_DARK / POPULATION]);
   let message = $state('');
+  /** @type {SVGSVGElement | undefined} */
+  let board = $state();
 
   const left = $derived(MEALS - eaten.length);
   const alive = $derived(moths.filter((m) => !eaten.includes(m.id)));
@@ -58,11 +61,17 @@
   }
 
   /** @param {KeyboardEvent} e @param {number} id */
-  function onKey(e, id) {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault();
-      catchMoth(id);
-    }
+  async function onKey(e, id) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    e.preventDefault();
+    // The caught moth leaves the board; keep keyboard focus on the next one.
+    const order = alive.map((m) => m.id);
+    const at = order.indexOf(id);
+    catchMoth(id);
+    const nextMoth = order[at + 1] ?? order[at - 1];
+    await tick();
+    const target = done ? null : board?.querySelector(`[data-moth="${nextMoth}"]`);
+    if (target instanceof SVGElement) target.focus();
   }
 
   function autoHunt() {
@@ -135,6 +144,7 @@
   </p>
 
   <svg
+    bind:this={board}
     viewBox="0 0 {W} {H}"
     class="block h-auto w-full touch-manipulation rounded-xl select-none"
     role="group"
@@ -162,6 +172,7 @@
           class="drag-handle cursor-pointer outline-none"
           role="button"
           tabindex="0"
+          data-moth={m.id}
           aria-label="Bướm {colorName(m.color)}"
           transform="translate({(m.x / 100) * W} {(m.y / 100) * H}) rotate({m.turn})"
           onclick={() => catchMoth(m.id)}
