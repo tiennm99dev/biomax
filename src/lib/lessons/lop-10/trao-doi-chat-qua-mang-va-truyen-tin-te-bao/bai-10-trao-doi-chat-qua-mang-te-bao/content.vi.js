@@ -56,13 +56,13 @@ export default {
         },
         {
           type: 'p',
-          text: 'Tốc độ khuếch tán tăng cường phụ thuộc vào chênh lệch nồng độ và số protein vận chuyển trên màng. Với ion, tốc độ còn phụ thuộc vào chênh lệch điện thế giữa hai phía màng.',
+          text: 'Tốc độ khuếch tán phụ thuộc vào bản chất của chất và chênh lệch nồng độ giữa hai phía màng. Khuếch tán đơn giản còn phụ thuộc vào thành phần của lớp phospholipid; khuếch tán tăng cường còn phụ thuộc vào số protein vận chuyển trên màng. Với ion, tốc độ còn phụ thuộc vào chênh lệch điện thế giữa hai phía màng.',
         },
         {
           type: 'callout',
           tone: 'definition',
           title: 'Thẩm thấu',
-          text: 'Thẩm thấu là sự khuếch tán của nước qua màng, từ nơi có thế nước cao (ít chất tan) đến nơi có thế nước thấp (nhiều chất tan). Phần lớn phân tử nước đi qua kênh protein aquaporin.',
+          text: 'Thẩm thấu là sự khuếch tán của nước qua màng, từ nơi có nồng độ chất tan thấp (nhiều phân tử nước) đến nơi có nồng độ chất tan cao (ít phân tử nước). Phần lớn phân tử nước đi qua kênh protein aquaporin. Chênh lệch nồng độ chất tan càng lớn thì áp suất thẩm thấu càng lớn và nước đi qua màng càng nhanh.',
         },
         {
           type: 'table',
@@ -144,7 +144,7 @@ export default {
   explore: {
     title: 'Mô phỏng màng tế bào',
     instruction:
-      'Chọn một chất, kéo hai thanh để đặt số phân tử mỗi bên rồi bấm chạy. Với glucose và ion K⁺, thử bỏ hết protein vận chuyển rồi tăng dần để so sánh tốc độ. Với K⁺, bật bơm ATP và xem nồng độ trong tế bào có vượt nồng độ bên ngoài không; khi hết ATP, chuyện gì xảy ra?',
+      'Chọn một chất, kéo hai thanh để đặt số hạt mỗi bên rồi bấm chạy hoặc tua. Với glucose và ion K⁺, thử bỏ hết protein vận chuyển rồi tăng dần để so sánh tốc độ. Với K⁺, bật bơm ATP và xem nồng độ trong tế bào có vượt nồng độ bên ngoài không; khi hết ATP, chuyện gì xảy ra?',
   },
   examples: [
     {
@@ -152,7 +152,7 @@ export default {
         'Cho hồng cầu người vào ba ống: nước cất, dung dịch NaCl $0{,}9\\%$ (đẳng trương với hồng cầu) và dung dịch NaCl $5\\%$. Dự đoán hiện tượng ở mỗi ống và giải thích.',
       steps: [
         'So sánh nồng độ chất tan của mỗi dung dịch với trong tế bào: nước cất thấp hơn (nhược trương), NaCl $0{,}9\\%$ bằng (đẳng trương), NaCl $5\\%$ cao hơn (ưu trương).',
-        'Nước đi từ nơi có thế nước cao (ít chất tan) đến nơi có thế nước thấp (nhiều chất tan).',
+        'Nước đi từ nơi có nồng độ chất tan thấp đến nơi có nồng độ chất tan cao.',
         'Trong nước cất, nước đi vào tế bào. Hồng cầu không có thành tế bào nên trương lên và có thể vỡ.',
         'Trong NaCl $0{,}9\\%$, nước vào và ra bằng nhau, hình dạng không đổi. Trong NaCl $5\\%$, nước đi ra, hồng cầu co lại.',
       ],
@@ -197,7 +197,7 @@ export default {
     {
       type: 'text',
       prompt: 'Sự khuếch tán của nước qua màng được gọi là gì?',
-      accept: ['thẩm thấu', 'sự thẩm thấu'],
+      accept: ['thẩm thấu', 'sự thẩm thấu', 'hiện tượng thẩm thấu', 'quá trình thẩm thấu'],
       hints: ['Đây là một từ ghép có chữ "thấu".'],
       solution: 'Sự khuếch tán của nước qua màng gọi là thẩm thấu.',
     },

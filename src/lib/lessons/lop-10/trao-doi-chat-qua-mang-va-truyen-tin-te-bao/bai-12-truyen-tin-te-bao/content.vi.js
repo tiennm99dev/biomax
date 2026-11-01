@@ -19,7 +19,7 @@ export default {
           type: 'callout',
           tone: 'definition',
           title: 'Truyền tin tế bào',
-          text: 'Truyền tin tế bào là quá trình các tế bào phát và nhận các phân tử tín hiệu qua lại với nhau. Nhờ đó, các tế bào trong cơ thể đa bào phối hợp hoạt động và giữ được sự thống nhất của cơ thể.',
+          text: 'Truyền tin tế bào là quá trình các tế bào phát và nhận các phân tử tín hiệu qua lại với nhau. Nhờ đó, các tế bào trong cơ thể đa bào phối hợp hoạt động và giữ được sự thống nhất của cơ thể. Sinh vật đơn bào cũng truyền tin: vi khuẩn phát tín hiệu cho nhau để tụ lại và hỗ trợ nhau khi điều kiện bất lợi.',
         },
         {
           type: 'p',
@@ -192,7 +192,7 @@ export default {
     {
       type: 'number',
       prompt:
-        'Giả sử trong một chuỗi truyền tin có $3$ bậc, mỗi phân tử được hoạt hoá lại hoạt hoá $10$ phân tử ở bậc kế tiếp. Từ $1$ thụ thể ban đầu, bậc thứ ba có bao nhiêu phân tử được hoạt hoá?',
+        'Giả sử $1$ thụ thể hoạt hoá $10$ phân tử ở bậc thứ nhất của chuỗi truyền tin, rồi mỗi phân tử được hoạt hoá lại hoạt hoá $10$ phân tử ở bậc kế tiếp. Bậc thứ ba có bao nhiêu phân tử được hoạt hoá?',
       answer: 1000,
       hints: ['Bậc thứ nhất có $10$ phân tử, bậc thứ hai có $10 \\times 10$ phân tử.'],
       solution:

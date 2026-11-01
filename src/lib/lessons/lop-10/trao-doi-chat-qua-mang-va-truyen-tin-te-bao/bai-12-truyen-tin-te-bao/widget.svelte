@@ -41,7 +41,7 @@
     phase === 'done'
       ? outcome(scenario, blocks)
       : phase === 'running'
-        ? { tone: 'info', text: 'Tín hiệu đang đi dọc con đường truyền tin.' }
+        ? { tone: 'info', text: 'Thông tin đang đi dọc con đường truyền tin.' }
         : { tone: 'info', text: `${scenario.signal} Bấm phát tín hiệu để theo dõi.` },
   );
 

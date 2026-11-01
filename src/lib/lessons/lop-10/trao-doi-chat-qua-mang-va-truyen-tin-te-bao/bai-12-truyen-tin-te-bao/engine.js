@@ -46,7 +46,7 @@ const SURFACE_LABELS = {
 
 const SURFACE_TEXTS = {
   'tiep-nhan':
-    'Tín hiệu không gắn được với thụ thể nên không đi vào được tế bào. Tế bào không có thụ thể phù hợp cũng không nhận được tín hiệu.',
+    'Tín hiệu không gắn được với thụ thể nên thông tin không được chuyển vào trong tế bào. Tế bào không có thụ thể phù hợp cũng không nhận được tín hiệu.',
   'truyen-tin':
     'Thụ thể đã nhận tín hiệu nhưng chuỗi protein bị đứt, thông tin không đến được protein đích nên tế bào không đáp ứng.',
   'dap-ung': 'Thông tin đã đi hết chuỗi nhưng protein đích bị hỏng, tế bào không tạo ra đáp ứng.',

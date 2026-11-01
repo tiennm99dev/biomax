@@ -54,6 +54,11 @@ group('passive transport', () => {
     expect(outside + inside).toBe(36);
   });
 
+  it('asks for particles when both sides are empty', () => {
+    const empty = createSim({ substance: 'o2', outside: 0, inside: 0, channels: 0 });
+    expect(describe(empty, false).text).toContain('Chưa có');
+  });
+
   it('says the sides are balanced once they are', () => {
     const end = run(createSim({ substance: 'o2', outside: 18, inside: 18, channels: 0 }), 5);
     expect(describe(end, false).tone).toBe('ok');

@@ -23,7 +23,7 @@ const SPEED = 120;
 const WANDER = 5;
 const PUMP_RATE = 3;
 const PUMP_REACH = 80;
-const SMOOTH_TIME = 6;
+const SMOOTH_TIME = 3;
 /** The smoothed difference must drop this low to call the sides balanced. */
 const BALANCED_WITHIN = 3;
 /** And must rise this high to call a side richer again, so noise does not flip the text. */
@@ -251,6 +251,12 @@ function nearestToPump(particles) {
  */
 export function describe(sim, pumpOn) {
   const sub = substanceOf(sim.substance);
+  if (sim.particles.length === 0) {
+    return {
+      tone: 'info',
+      text: `Chưa có ${sub.name} ở cả hai bên. Hãy kéo thanh để đặt số hạt ở mỗi bên.`,
+    };
+  }
   if (pumpOn && sub.pumpable) {
     if (sim.atp <= 0) {
       return {
@@ -272,7 +278,7 @@ export function describe(sim, pumpOn) {
   if (sim.trend === 0) {
     return {
       tone: 'ok',
-      text: `Hai bên đã gần cân bằng. Phân tử vẫn qua lại nhưng số đi vào gần bằng số đi ra. Con đường: ${sub.route.toLowerCase()}.`,
+      text: `Hai bên đã gần cân bằng. Các hạt vẫn qua lại nhưng số đi vào gần bằng số đi ra. Con đường: ${sub.route.toLowerCase()}.`,
     };
   }
   const way = sim.trend > 0 ? 'từ ngoài vào trong tế bào' : 'từ trong tế bào ra ngoài';
@@ -418,8 +424,8 @@ export const MEMBRANE = {
   shapes: [
     { kind: 'rect', x: 0, y: 0, w: 360, h: 78, fill: '#f0f9ff' },
     { kind: 'rect', x: 0, y: 162, w: 360, h: 68, fill: '#fff1f2' },
-    { kind: 'text', x: 8, y: 18, text: 'Ngoài tế bào', size: 12 },
-    { kind: 'text', x: 8, y: 222, text: 'Tế bào chất', size: 12 },
+    { kind: 'text', x: 48, y: 18, text: 'Ngoài tế bào', size: 12 },
+    { kind: 'text', x: 44, y: 222, text: 'Tế bào chất', size: 12 },
     ...LIPIDS,
     { kind: 'path', d: 'M 130 66 q -8 -12 0 -22 q 8 -10 0 -22', stroke: '#be185d', width: 3 },
     { kind: 'circle', cx: 130, cy: 44, r: 4, fill: '#ec4899' },
@@ -483,14 +489,14 @@ export const MEMBRANE = {
       accept: ['colesterol'],
       info: 'Xen trong lớp kép ở tế bào động vật, giúp điều chỉnh độ linh hoạt của màng.',
       x: 204,
-      y: 104,
+      y: 76,
     },
     {
       id: 'carbohydrate',
       name: 'Chuỗi carbohydrate',
       accept: ['carbohydrate', 'glycoprotein'],
       info: 'Gắn với protein tạo glycoprotein ở mặt ngoài màng, giúp các tế bào nhận biết nhau và tiếp nhận thông tin.',
-      x: 130,
+      x: 152,
       y: 30,
     },
   ],

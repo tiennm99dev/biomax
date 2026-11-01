@@ -86,7 +86,7 @@
     viewBox="0 0 {BOARD_W} {BOARD_H}"
     class="mx-auto block w-full max-w-lg rounded-xl"
     role="img"
-    aria-label="Màng tế bào: ngoài tế bào có {now.outside} phân tử {sub.name}, trong tế bào có {now.inside} phân tử"
+    aria-label="Màng tế bào, chất {sub.name}: ngoài tế bào có {now.outside} hạt, trong tế bào có {now.inside} hạt"
   >
     <rect x="0" y="0" width={MEMBRANE_X} height={BOARD_H} fill="#f0f9ff" />
     <rect x={MEMBRANE_X} y="0" width={MEMBRANE_X} height={BOARD_H} fill="#fff1f2" />
@@ -168,14 +168,14 @@
 
   <div class="grid gap-3 sm:grid-cols-2">
     <SliderField
-      label="Lúc đầu, số phân tử ngoài tế bào"
+      label="Lúc đầu, số hạt ngoài tế bào"
       bind:value={outside}
       min={0}
       max={40}
       oninput={rebuild}
     />
     <SliderField
-      label="Lúc đầu, số phân tử trong tế bào"
+      label="Lúc đầu, số hạt trong tế bào"
       bind:value={inside}
       min={0}
       max={40}

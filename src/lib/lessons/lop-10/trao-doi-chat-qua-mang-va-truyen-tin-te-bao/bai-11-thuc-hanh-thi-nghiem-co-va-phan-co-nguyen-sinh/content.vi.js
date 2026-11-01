@@ -3,7 +3,7 @@ export default {
   summary:
     'Bài thực hành làm tiêu bản biểu bì lá thài lài tía, quan sát hiện tượng co nguyên sinh trong dung dịch NaCl và phản co nguyên sinh khi nhỏ nước cất, sau đó giải thích kết quả và viết báo cáo.',
   intro:
-    'Rau muống héo nhanh khi xào với muối, nhưng rau héo ngâm vào nước lại tươi lên. Dưới kính hiển vi, em có thể thấy chính điều đó xảy ra trong từng tế bào: nguyên sinh chất co lại khỏi thành tế bào rồi lại trở về như cũ khi có nước.',
+    'Rau sống trộn muối nhanh chóng héo lại, còn rau héo ngâm vào nước lại tươi lên. Dưới kính hiển vi, em có thể thấy chính điều đó xảy ra trong từng tế bào: nguyên sinh chất co lại khỏi thành tế bào rồi lại trở về như cũ khi có nước.',
   objectives: [
     'Làm được tiêu bản biểu bì lá và quan sát được tế bào dưới kính hiển vi.',
     'Thực hiện được thí nghiệm co nguyên sinh và phản co nguyên sinh.',
