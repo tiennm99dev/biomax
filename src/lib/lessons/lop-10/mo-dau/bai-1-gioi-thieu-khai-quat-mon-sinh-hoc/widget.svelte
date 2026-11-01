@@ -62,12 +62,14 @@
     mapBox?.querySelector(/** @type {'button'} */ ('button:not(:disabled)'))?.focus();
   }
 
-  function restart() {
+  async function restart() {
     caseIndex = 0;
     right = 0;
     firstTry = 0;
     verdict = null;
     triedThis = false;
+    await tick();
+    mapBox?.querySelector(/** @type {'button'} */ ('button:not(:disabled)'))?.focus();
   }
 </script>
 

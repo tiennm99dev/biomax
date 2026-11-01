@@ -136,7 +136,7 @@ export default {
     {
       type: 'text',
       prompt: 'Cấp độ tổ chức nhỏ nhất có đầy đủ các đặc tính của sự sống là gì?',
-      accept: ['tế bào', 'te bao'],
+      accept: ['tế bào'],
       hints: [
         'Mọi sinh vật đều được cấu tạo từ đơn vị này.',
         'Vi khuẩn chỉ gồm đúng một đơn vị như vậy.',
@@ -171,12 +171,12 @@ export default {
       type: 'choice',
       prompt: 'Đặc tính nổi trội của một cấp độ tổ chức sống là đặc tính',
       options: [
-        'hình thành do tương tác giữa các bộ phận cấu thành, không có ở các cấp nhỏ hơn',
         'có sẵn ở mọi phân tử và được cộng dồn lên cấp trên',
         'chỉ xuất hiện ở con người',
         'mà cấp nhỏ hơn có, còn cấp lớn hơn thì mất đi',
+        'hình thành do tương tác giữa các bộ phận cấu thành, không có ở các cấp nhỏ hơn',
       ],
-      answer: 0,
+      answer: 3,
       hints: [
         'Nhớ ví dụ về tế bào thần kinh và bộ não.',
         'Từ "nổi trội" nói đến điều mới xuất hiện ở cấp trên.',
@@ -188,12 +188,12 @@ export default {
       type: 'choice',
       prompt: 'Các cấp độ tổ chức sống được gọi là hệ mở vì chúng',
       options: [
-        'liên tục trao đổi vật chất, năng lượng và thông tin với môi trường',
-        'luôn tách biệt với môi trường bên ngoài',
         'chỉ nhận năng lượng mà không thải gì ra môi trường',
         'không làm biến đổi môi trường',
+        'liên tục trao đổi vật chất, năng lượng và thông tin với môi trường',
+        'luôn tách biệt với môi trường bên ngoài',
       ],
-      answer: 0,
+      answer: 2,
       hints: [
         'Hãy nghĩ đến việc em ăn, thở và bài tiết mỗi ngày.',
         'Sinh vật còn làm biến đổi cả môi trường sống.',
@@ -228,12 +228,12 @@ export default {
       type: 'choice',
       prompt: 'Vì sao các loài sinh vật rất khác nhau nhưng vẫn có nhiều đặc điểm chung?',
       options: [
+        'Mọi sinh vật có cùng kích thước tế bào',
         'Thông tin di truyền trong DNA được truyền qua các thế hệ tương đối chính xác',
         'Mọi sinh vật đều sống trong cùng một môi trường',
         'Đột biến không bao giờ xảy ra',
-        'Mọi sinh vật có cùng kích thước tế bào',
       ],
-      answer: 0,
+      answer: 1,
       hints: [
         'Đây là ý của đặc điểm "liên tục tiến hoá".',
         'Hãy nghĩ đến vật chất được truyền từ đời này sang đời khác.',

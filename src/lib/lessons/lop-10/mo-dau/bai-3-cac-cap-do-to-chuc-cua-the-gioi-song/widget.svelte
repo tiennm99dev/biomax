@@ -31,6 +31,10 @@
   let round = $state(0);
   /** @type {HTMLButtonElement | undefined} */
   let checkButton = $state();
+  /** @type {HTMLButtonElement | undefined} */
+  let nextButton = $state();
+  /** @type {HTMLButtonElement | undefined} */
+  let againButton = $state();
   let verdict = $state(/** @type {{ ok: boolean, text: string } | null} */ (null));
 
   const level = $derived(LEVELS[index]);
@@ -38,21 +42,32 @@
   const lower = $derived(index > 0 ? LEVELS[index - 1].name : null);
   const higher = $derived(index + 1 < LEVELS.length ? LEVELS[index + 1].name : null);
 
-  function check() {
-    if (challenge) verdict = judgeLevel(challenge.level, index);
+  async function check() {
+    if (!challenge) return;
+    verdict = judgeLevel(challenge.level, index);
+    if (verdict.ok) {
+      await tick();
+      nextButton?.focus();
+    }
   }
 
   async function next() {
     round += 1;
     verdict = null;
     await tick();
-    checkButton?.focus();
+    (challenge ? checkButton : againButton)?.focus();
   }
 
   function restart() {
     round = 0;
     index = 0;
     verdict = null;
+  }
+
+  async function again() {
+    restart();
+    await tick();
+    checkButton?.focus();
   }
 </script>
 
@@ -100,7 +115,9 @@
         tone="ok"
         text="Hoàn thành: em đã tìm đúng mọi cấp độ. Cấp dưới luôn làm nền tảng để tạo nên cấp trên."
       />
-      <button type="button" class={button.quiet} onclick={restart}>Làm lại</button>
+      <button type="button" class={button.quiet} bind:this={againButton} onclick={again}>
+        Làm lại
+      </button>
     {/if}
   {/if}
 
@@ -250,7 +267,7 @@
         Kiểm tra
       </button>
       {#if verdict?.ok}
-        <button type="button" class={button.secondary} onclick={next}>
+        <button type="button" class={button.secondary} bind:this={nextButton} onclick={next}>
           {round + 1 < CHALLENGES.length ? 'Câu tiếp theo' : 'Xem kết quả'}
         </button>
       {/if}

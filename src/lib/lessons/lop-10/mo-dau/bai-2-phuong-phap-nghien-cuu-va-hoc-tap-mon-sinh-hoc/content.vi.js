@@ -49,7 +49,7 @@ export default {
           rows: [
             ['Nguồn chiếu', 'Ánh sáng (đèn hoặc Mặt Trời)', 'Chùm electron'],
             ['Thấu kính', 'Thuỷ tinh', 'Thấu kính điện tử'],
-            ['Mẫu quan sát', 'Mẫu sống hoặc mẫu chết', 'Chỉ mẫu đã chết, đã khô'],
+            ['Mẫu quan sát', 'Mẫu sống hoặc mẫu chết', 'Chỉ mẫu chết hoặc mẫu đã làm khô'],
             ['Độ phóng đại tối đa', 'Khoảng $1500$ lần', 'Tới hàng chục triệu lần'],
             [
               'Dùng để quan sát',
@@ -180,12 +180,12 @@ export default {
       prompt:
         'Một phương pháp thu nhận thông tin gồm ba bước: chuẩn bị, tiến hành, báo cáo kết quả. Đó là',
       options: [
-        'phương pháp làm việc trong phòng thí nghiệm',
-        'phương pháp quan sát',
         'phương pháp điều tra xã hội',
         'phương pháp tin sinh học',
+        'phương pháp làm việc trong phòng thí nghiệm',
+        'phương pháp quan sát',
       ],
-      answer: 0,
+      answer: 2,
       hints: [
         'Phương pháp quan sát có các bước khác: chọn đối tượng, chọn công cụ, ghi chép.',
         'Từ "báo cáo kết quả" gợi đến một buổi làm thí nghiệm.',
@@ -196,8 +196,8 @@ export default {
     {
       type: 'choice',
       prompt: 'Để quan sát cấu trúc bên trong ti thể, nên dùng thiết bị nào?',
-      options: ['Kính hiển vi điện tử', 'Kính hiển vi quang học', 'Kính lúp', 'Máy li tâm'],
-      answer: 0,
+      options: ['Kính hiển vi quang học', 'Kính lúp', 'Máy li tâm', 'Kính hiển vi điện tử'],
+      answer: 3,
       hints: [
         'Bên trong bào quan là cấu trúc siêu hiển vi.',
         'Hãy so sánh độ phóng đại của các loại kính trong bảng.',
@@ -210,18 +210,18 @@ export default {
       prompt:
         'Một học sinh muốn quan sát trùng giày đang bơi trong giọt nước ao. Em chọn kính nào?',
       options: [
+        'Không cần dụng cụ',
         'Kính hiển vi quang học',
         'Kính hiển vi điện tử',
         'Máy li tâm',
-        'Không cần dụng cụ',
       ],
-      answer: 0,
+      answer: 1,
       hints: [
         'Mẫu đang còn sống.',
         'Với kính hiển vi điện tử, mẫu phải được xử lí và không còn sống.',
       ],
       solution:
-        'Kính hiển vi quang học quan sát được mẫu sống và phóng đại đủ để thấy trùng giày; kính hiển vi điện tử chỉ dùng cho mẫu đã chết, đã khô.',
+        'Kính hiển vi quang học quan sát được mẫu sống và phóng đại đủ để thấy trùng giày; kính hiển vi điện tử chỉ dùng cho mẫu chết hoặc mẫu đã làm khô.',
     },
     {
       type: 'match',
@@ -256,12 +256,12 @@ export default {
       type: 'choice',
       prompt: 'Trong thí nghiệm về ảnh hưởng của phân đạm đến cây ngô, lô đối chứng là lô',
       options: [
-        'được trồng như lô kia nhưng không bón phân đạm',
-        'được bón nhiều phân đạm hơn và tưới nhiều nước hơn',
         'được bón phân đạm và trồng trong bóng râm',
         'gồm một giống ngô khác và không bón phân đạm',
+        'được trồng như lô kia nhưng không bón phân đạm',
+        'được bón nhiều phân đạm hơn và tưới nhiều nước hơn',
       ],
-      answer: 0,
+      answer: 2,
       hints: [
         'Yếu tố nghiên cứu ở đây là phân đạm.',
         'Hai lô chỉ được phép khác nhau ở đúng một yếu tố.',
@@ -302,12 +302,12 @@ export default {
       type: 'choice',
       prompt: 'Giả thuyết bị kết quả thí nghiệm bác bỏ thì nhà khoa học cần làm gì?',
       options: [
+        'Dừng nghiên cứu và không ghi lại kết quả',
         'Hình thành giả thuyết mới hoặc điều chỉnh giả thuyết, rồi kiểm chứng lại',
         'Sửa số liệu để khớp với giả thuyết',
         'Công bố giả thuyết thành học thuyết khoa học',
-        'Dừng nghiên cứu và không ghi lại kết quả',
       ],
-      answer: 0,
+      answer: 1,
       hints: [
         'Một kết quả bác bỏ giả thuyết vẫn là một kết quả có giá trị.',
         'Tiến trình nghiên cứu có một vòng lặp quay lại.',

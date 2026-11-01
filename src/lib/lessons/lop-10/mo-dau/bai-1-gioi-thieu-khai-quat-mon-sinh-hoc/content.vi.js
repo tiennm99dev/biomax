@@ -184,12 +184,12 @@ export default {
       type: 'choice',
       prompt: 'Đối tượng nghiên cứu của sinh học là',
       options: [
-        'các sinh vật và các cấp độ tổ chức của thế giới sống',
-        'chỉ riêng cơ thể con người',
         'các chất hoá học trong tự nhiên',
         'chỉ các loài động vật và thực vật quý hiếm',
+        'các sinh vật và các cấp độ tổ chức của thế giới sống',
+        'chỉ riêng cơ thể con người',
       ],
-      answer: 0,
+      answer: 2,
       hints: [
         'Sinh học là khoa học về sự sống.',
         'Vi khuẩn, cây xanh, con người hay một khu rừng đều có thể được nghiên cứu.',
@@ -259,12 +259,12 @@ export default {
       type: 'choice',
       prompt: 'Phát biểu nào đúng về phát triển bền vững?',
       options: [
+        'Chỉ bảo vệ môi trường, không cần phát triển kinh tế',
         'Đáp ứng nhu cầu hiện tại mà không làm ảnh hưởng đến khả năng đáp ứng nhu cầu của các thế hệ tương lai',
         'Tăng trưởng kinh tế nhanh nhất có thể trong thời gian ngắn',
         'Ngừng khai thác mọi nguồn tài nguyên thiên nhiên',
-        'Chỉ bảo vệ môi trường, không cần phát triển kinh tế',
       ],
-      answer: 0,
+      answer: 1,
       hints: [
         'Khái niệm nhắc đến hai đối tượng: hiện tại và tương lai.',
         'Bền vững không có nghĩa là ngừng sử dụng tài nguyên, mà là sử dụng hợp lí.',
@@ -306,12 +306,12 @@ export default {
       type: 'choice',
       prompt: 'Ví dụ nào thể hiện rõ nhất mối quan hệ giữa sinh học và công nghệ?',
       options: [
-        'Thiết kế robot dựa trên cách di chuyển của động vật',
         'Tranh luận về việc nhân bản vô tính con người',
         'Giống lúa mới bán được giá cao hơn',
         'Trồng thêm cây xanh trong sân trường',
+        'Thiết kế robot dựa trên cách di chuyển của động vật',
       ],
-      answer: 0,
+      answer: 3,
       hints: [
         'Nghiên cứu sinh học cơ bản có thể làm nền cho các công nghệ bắt chước sinh vật.',
         'Có một lựa chọn nói về đạo đức, một lựa chọn nói về kinh tế.',

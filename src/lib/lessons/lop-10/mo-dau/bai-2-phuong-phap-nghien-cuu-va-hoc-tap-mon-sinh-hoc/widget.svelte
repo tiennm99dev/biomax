@@ -20,13 +20,18 @@
   let orderNote = $state(/** @type {{ tone: 'ok' | 'warn', text: string } | null} */ (null));
   const orderDone = $derived(orderNote?.tone === 'ok');
 
-  function checkOrder() {
+  /** @type {HTMLButtonElement | undefined} */
+  let toApplyButton = $state();
+
+  async function checkOrder() {
     const r = orderResult(order);
     if (r.ok) {
       orderNote = {
         tone: 'ok',
         text: 'Đúng trình tự. Bây giờ hãy áp dụng các bước này vào một tình huống nghiên cứu cụ thể.',
       };
+      await tick();
+      toApplyButton?.focus();
       return;
     }
     const expected = STEPS[r.firstWrong];
@@ -59,6 +64,8 @@
   let choicesBox = $state();
   /** @type {HTMLDivElement | undefined} */
   let loopBox = $state();
+  /** @type {HTMLButtonElement | undefined} */
+  let redoButton = $state();
 
   const scenario = $derived(SCENARIOS.find((s) => s.id === scenarioId) ?? SCENARIOS[0]);
   const actions = $derived(
@@ -77,16 +84,34 @@
     loopNote = '';
   }
 
+  // A control that is about to vanish or lock must hand focus on, or a keyboard
+  // user lands back at the top of the page.
+  async function focusApplyStep() {
+    await tick();
+    if (finished && loopAnswered) redoButton?.focus();
+    else
+      (finished ? loopBox : choicesBox)
+        ?.querySelector(/** @type {'button'} */ ('button:not(:disabled)'))
+        ?.focus();
+  }
+
+  function goToApply() {
+    mode = 'apply';
+    focusApplyStep();
+  }
+
+  function redoScenario() {
+    resetScenario();
+    focusApplyStep();
+  }
+
   /** @param {string} text */
-  async function pick(text) {
+  function pick(text) {
     const belongs = stepOfAction(scenario, text);
     if (belongs?.id === currentStep?.id) {
       stepIndex += 1;
       wrongText = '';
-      await tick();
-      (finished ? loopBox : choicesBox)
-        ?.querySelector(/** @type {'button'} */ ('button:not(:disabled)'))
-        ?.focus();
+      focusApplyStep();
     } else if (belongs) {
       wrongText = `Việc này thuộc bước "${belongs.name}". Hãy tìm việc của bước "${currentStep?.name}".`;
     }
@@ -98,6 +123,7 @@
       loopAnswered = true;
       loopNote =
         'Đúng. Giả thuyết bị bác bỏ thì cần hình thành giả thuyết mới rồi kiểm chứng lại. Giả thuyết được kiểm nghiệm rộng rãi, được cộng đồng khoa học thừa nhận thì trở thành học thuyết khoa học.';
+      focusApplyStep();
     } else {
       loopNote = 'Chưa đúng. Dữ liệu và câu hỏi vẫn còn đó; điều bị bác bỏ mới là thứ cần thay.';
     }
@@ -140,7 +166,12 @@
         Làm lại
       </button>
       {#if orderDone}
-        <button type="button" class={button.secondary} onclick={() => (mode = 'apply')}>
+        <button
+          type="button"
+          class={button.secondary}
+          bind:this={toApplyButton}
+          onclick={goToApply}
+        >
           Áp vào tình huống
         </button>
       {/if}
@@ -222,7 +253,9 @@
         tone={loopNote ? (loopAnswered ? 'ok' : 'warn') : 'info'}
         text={loopNote || 'Em đã đi hết tiến trình của tình huống này.'}
       />
-      <button type="button" class={button.quiet} onclick={resetScenario}>Làm lại tình huống</button>
+      <button type="button" class={button.quiet} bind:this={redoButton} onclick={redoScenario}>
+        Làm lại tình huống
+      </button>
     {/if}
   {/if}
 </div>

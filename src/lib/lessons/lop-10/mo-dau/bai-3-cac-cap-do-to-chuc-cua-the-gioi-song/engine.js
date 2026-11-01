@@ -81,7 +81,7 @@ export const LEVELS = [
     kind: 'co-ban',
     example: 'Một con người, một cây lúa, một con cá.',
     made: 'Do các hệ cơ quan phối hợp nhịp nhàng tạo thành (sinh vật đơn bào chỉ gồm một tế bào).',
-    trait: 'Có khả năng tư duy (ở người), sinh sản và tự điều chỉnh cả cơ thể.',
+    trait: 'Là một cá thể sống độc lập: trao đổi chất với môi trường, sinh sản và tự điều chỉnh.',
   },
   {
     id: 'quan-the',
