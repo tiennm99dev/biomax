@@ -115,7 +115,7 @@ export const SAMPLES = [
   {
     id: 'bi-an-b',
     name: 'Bí ẩn B',
-    color: CLEAR,
+    color: '#f1f5f9',
     sugar: 0,
     groups: ['lipid', 'protein'],
     mystery: true,

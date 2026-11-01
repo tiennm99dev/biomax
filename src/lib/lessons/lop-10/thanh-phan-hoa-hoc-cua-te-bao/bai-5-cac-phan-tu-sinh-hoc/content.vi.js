@@ -3,7 +3,7 @@ export default {
   summary:
     'Bốn nhóm phân tử sinh học của tế bào: carbohydrate, lipid, protein với bốn bậc cấu trúc và nucleic acid, cùng cấu tạo và chức năng của mỗi nhóm.',
   intro:
-    'Bữa cơm hằng ngày cho em cơm, thịt, rau, dầu ăn; tất cả đều là các phân tử sinh học do sinh vật khác tạo ra. Ăn quá nhiều hoặc quá ít nhóm chất nào cũng có hại cho sức khoẻ: thừa chất có thể gây béo phì, thiếu chất có thể gây suy dinh dưỡng. Để hiểu vì sao, em cần biết mỗi nhóm phân tử được tạo nên như thế nào và đảm nhiệm vai trò gì trong tế bào.',
+    'Bữa cơm hằng ngày có cơm, thịt, rau, dầu ăn; những thức ăn này đều chứa các phân tử sinh học do sinh vật khác tạo ra. Ăn quá nhiều hoặc quá ít nhóm chất nào cũng có hại cho sức khoẻ: thừa chất có thể gây béo phì, thiếu chất có thể gây suy dinh dưỡng. Để hiểu vì sao, em cần biết mỗi nhóm phân tử được tạo nên như thế nào và đảm nhiệm vai trò gì trong tế bào.',
   objectives: [
     'Nêu được khái niệm phân tử sinh học và nguyên tắc đa phân.',
     'Trình bày được thành phần cấu tạo và chức năng của carbohydrate, lipid.',

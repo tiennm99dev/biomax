@@ -1,4 +1,5 @@
 <script>
+  import { tick } from 'svelte';
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import { fmt } from '#lib/core/number-format.js';
   import SegmentedControl from '#lib/core/segmented-control.svelte';
@@ -25,6 +26,26 @@
   const KINDS = POLYSACCHARIDES.map((p) => ({ value: p.id, label: p.name }));
 
   let mode = $state('duong');
+  /** @type {HTMLDivElement | undefined} */
+  let sizeBox = $state();
+  /** @type {HTMLDivElement | undefined} */
+  let missionBox = $state();
+  /** @type {HTMLDivElement | undefined} */
+  let chainBox = $state();
+
+  /**
+   * A button that locks or vanishes after its own press hands focus to the next
+   * control, or a keyboard user loses their place.
+   * @param {Event} event
+   * @param {HTMLElement | undefined} box
+   */
+  async function keepFocus(event, box) {
+    const pressed = /** @type {HTMLButtonElement} */ (event.currentTarget);
+    await tick();
+    if (pressed.disabled || !pressed.isConnected) {
+      box?.querySelector(/** @type {'button'} */ ('button:not(:disabled)'))?.focus();
+    }
+  }
 
   /** @type {string} */
   let kind = $state('tinh-bot');
@@ -47,8 +68,10 @@
   );
   const HEX = '14,0 7,12.1 -7,12.1 -14,0 -7,-12.1 7,-12.1';
 
-  function answerMission() {
+  /** @param {Event} event */
+  function answerMission(event) {
     if (!mission) return;
+    keepFocus(event, missionBox);
     if (mission.answer === sugar.id) {
       missionNote = { tone: 'ok', text: `Đúng: ${sugar.name} có vai trò ${lower(sugar.role)}.` };
       missionAt += 1;
@@ -74,11 +97,13 @@
     relation === 'same' ? 'ok' : relation === 'reordered' ? 'warn' : 'info',
   );
   const chainText = $derived(
-    relation === 'same'
-      ? 'Trùng với chuỗi mẫu: cùng thành phần, cùng trình tự.'
-      : relation === 'reordered'
-        ? 'Cùng thành phần với chuỗi mẫu nhưng khác trình tự: đây là một chuỗi polypeptide khác.'
-        : `Chuỗi có ${chain.length} amino acid, khác chuỗi mẫu về số lượng hoặc thành phần.`,
+    chain.length === 0
+      ? 'Chuỗi đang trống: hãy chọn một amino acid để bắt đầu nối.'
+      : relation === 'same'
+        ? 'Trùng với chuỗi mẫu: cùng thành phần, cùng trình tự.'
+        : relation === 'reordered'
+          ? 'Cùng thành phần với chuỗi mẫu nhưng khác trình tự: đây là một chuỗi polypeptide khác.'
+          : `Chuỗi có ${chain.length} amino acid, khác chuỗi mẫu về số lượng hoặc thành phần.`,
   );
 
   /** @param {string} id */
@@ -128,15 +153,24 @@
       {/each}
     </svg>
 
-    <div class="flex flex-wrap items-center gap-2">
+    <div class="flex flex-wrap items-center gap-2" bind:this={sizeBox}>
       <button
         type="button"
         class={button.primary}
         disabled={count >= MAX_GLUCOSE}
-        onclick={() => (count += 1)}>Nối thêm glucose</button
+        onclick={(e) => {
+          count += 1;
+          keepFocus(e, sizeBox);
+        }}>Nối thêm glucose</button
       >
-      <button type="button" class={button.quiet} disabled={count <= 1} onclick={() => (count -= 1)}
-        >Bớt một glucose</button
+      <button
+        type="button"
+        class={button.quiet}
+        disabled={count <= 1}
+        onclick={(e) => {
+          count -= 1;
+          keepFocus(e, sizeBox);
+        }}>Bớt một glucose</button
       >
     </div>
 
@@ -165,7 +199,10 @@
       hàng nghìn đơn phân.
     </p>
 
-    <div class="space-y-2 rounded-xl border border-indigo-200 bg-indigo-50 p-3">
+    <div
+      class="space-y-2 rounded-xl border border-indigo-200 bg-indigo-50 p-3"
+      bind:this={missionBox}
+    >
       {#if mission}
         <p class="text-sm font-semibold text-indigo-950">
           Tình huống {missionAt + 1}/{MISSIONS.length}: {mission.text} Cần dạng đường đa nào?
@@ -181,9 +218,10 @@
         <button
           type="button"
           class={button.quiet}
-          onclick={() => {
+          onclick={(e) => {
             missionAt = 0;
             missionNote = null;
+            keepFocus(e, missionBox);
           }}>Làm lại</button
         >
       {/if}
@@ -192,67 +230,99 @@
       <FeedbackNote tone={missionNote.tone} text={missionNote.text} />
     {/if}
   {:else}
-    <p class="text-sm text-slate-700">
-      Chuỗi mẫu: <strong>{TARGET_CHAIN.join(' – ')}</strong>
-    </p>
+    <div class="space-y-4" bind:this={chainBox}>
+      <p class="text-sm text-slate-700">
+        Chuỗi mẫu: <strong>{TARGET_CHAIN.join(' – ')}</strong>
+      </p>
 
-    <div class="grid grid-cols-3 gap-2" role="group" aria-label="Chọn amino acid để nối vào chuỗi">
-      {#each AMINO_ACIDS as a (a.id)}
+      <div
+        class="grid grid-cols-3 gap-2"
+        role="group"
+        aria-label="Chọn amino acid để nối vào chuỗi"
+      >
+        {#each AMINO_ACIDS as a (a.id)}
+          <button
+            type="button"
+            class="{button.quiet} flex-col !gap-0 !px-1"
+            disabled={chain.length >= MAX_AMINO}
+            aria-label="Nối {a.name}"
+            onclick={(e) => {
+              addAmino(a.id);
+              keepFocus(e, chainBox);
+            }}
+          >
+            <span class="font-bold" style="color: {a.color}">{a.id}</span>
+            <span class="text-[10px] font-normal leading-tight">{a.name}</span>
+          </button>
+        {/each}
+      </div>
+
+      <svg
+        viewBox="0 0 360 76"
+        class="block w-full rounded-xl bg-slate-50"
+        role="img"
+        aria-label="Chuỗi polypeptide: {chain.join(', ') || 'chưa có amino acid'}"
+      >
+        {#each chain as _, i (i)}
+          {#if i > 0}
+            <line
+              x1={beadX(i - 1)}
+              y1="38"
+              x2={beadX(i)}
+              y2="38"
+              stroke="#64748b"
+              stroke-width="3"
+            />
+          {/if}
+        {/each}
+        {#each chain as a, i (i)}
+          <circle cx={beadX(i)} cy="38" r="19" fill={aminoOf(a)?.color} />
+          <text
+            x={beadX(i)}
+            y="42"
+            font-size="12"
+            font-weight="700"
+            text-anchor="middle"
+            fill="#fff">{a}</text
+          >
+        {/each}
+      </svg>
+
+      <div class="flex flex-wrap gap-2">
         <button
           type="button"
-          class="{button.quiet} flex-col !gap-0 !px-1"
-          disabled={chain.length >= MAX_AMINO}
-          aria-label="Nối {a.name}"
-          onclick={() => addAmino(a.id)}
+          class={button.quiet}
+          disabled={chain.length < 2}
+          onclick={swapFirstTwo}>Đổi chỗ hai amino acid đầu</button
         >
-          <span class="font-bold" style="color: {a.color}">{a.id}</span>
-          <span class="text-[10px] font-normal leading-tight">{a.name}</span>
-        </button>
-      {/each}
-    </div>
-
-    <svg
-      viewBox="0 0 360 76"
-      class="block w-full rounded-xl bg-slate-50"
-      role="img"
-      aria-label="Chuỗi polypeptide: {chain.join(', ') || 'chưa có amino acid'}"
-    >
-      {#each chain as _, i (i)}
-        {#if i > 0}
-          <line x1={beadX(i - 1)} y1="38" x2={beadX(i)} y2="38" stroke="#64748b" stroke-width="3" />
-        {/if}
-      {/each}
-      {#each chain as a, i (i)}
-        <circle cx={beadX(i)} cy="38" r="19" fill={aminoOf(a)?.color} />
-        <text x={beadX(i)} y="42" font-size="12" font-weight="700" text-anchor="middle" fill="#fff"
-          >{a}</text
+        <button
+          type="button"
+          class={button.quiet}
+          disabled={chain.length === 0}
+          onclick={(e) => {
+            chain = chain.slice(0, -1);
+            keepFocus(e, chainBox);
+          }}>Bỏ amino acid cuối</button
         >
-      {/each}
-    </svg>
+        <button
+          type="button"
+          class={button.quiet}
+          disabled={chain.length === 0}
+          onclick={(e) => {
+            chain = [];
+            keepFocus(e, chainBox);
+          }}>Làm lại</button
+        >
+      </div>
 
-    <div class="flex flex-wrap gap-2">
-      <button type="button" class={button.quiet} disabled={chain.length < 2} onclick={swapFirstTwo}
-        >Đổi chỗ hai amino acid đầu</button
-      >
-      <button
-        type="button"
-        class={button.quiet}
-        disabled={chain.length === 0}
-        onclick={() => (chain = chain.slice(0, -1))}>Bỏ amino acid cuối</button
-      >
-      <button
-        type="button"
-        class={button.quiet}
-        disabled={chain.length === 0}
-        onclick={() => (chain = [])}>Làm lại</button
-      >
+      {#if chain.length > 0}
+        <p class="text-sm text-slate-700">
+          {chain.length} amino acid nối bằng <strong>{bondCount(chain.length)}</strong> liên kết
+          peptide, tách ra {bondCount(chain.length)} phân tử nước. Với 20 loại amino acid, chuỗi dài {chain.length}
+          có thể có <strong>{fmt(sequenceCount(chain.length))}</strong> trình tự khác nhau.
+        </p>
+      {/if}
+      <FeedbackNote tone={chainTone} text={chainText} />
     </div>
-
-    <p class="text-sm text-slate-700">
-      {chain.length} amino acid nối bằng <strong>{bondCount(chain.length)}</strong> liên kết
-      peptide, tách ra {bondCount(chain.length)} phân tử nước. Với 20 loại amino acid, chuỗi dài {chain.length}
-      có thể có <strong>{fmt(sequenceCount(chain.length))}</strong> trình tự khác nhau.
-    </p>
-    <FeedbackNote tone={chainTone} text={chainText} />
   {/if}
 </div>

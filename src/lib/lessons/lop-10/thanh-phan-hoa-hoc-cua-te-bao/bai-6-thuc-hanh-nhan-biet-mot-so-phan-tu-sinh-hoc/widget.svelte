@@ -1,5 +1,5 @@
 <script>
-  import { onDestroy } from 'svelte';
+  import { onDestroy, tick } from 'svelte';
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import { frameLoop, reducedMotion } from '#lib/core/motion.js';
   import SegmentedControl from '#lib/core/segmented-control.svelte';
@@ -37,6 +37,10 @@
 
   /** @type {(() => void) | null} */
   let stopLoop = null;
+  /** @type {HTMLOListElement | undefined} */
+  let stepsBox = $state();
+  /** @type {HTMLButtonElement | undefined} */
+  let washButton = $state();
 
   const sample = $derived(sampleOf(sampleId));
   const test = $derived(testOf(testId));
@@ -62,6 +66,19 @@
 
   function record() {
     done = { ...done, [`${sampleId}:${testId}`]: true };
+    verdict = null;
+  }
+
+  // A step button locks once pressed, so hand focus on or a keyboard user loses their place.
+  async function focusNextControl() {
+    await tick();
+    const next = stepsBox?.querySelector(/** @type {'button'} */ ('button:not(:disabled)'));
+    (next ?? washButton)?.focus();
+  }
+
+  function washTube() {
+    clearBench();
+    focusNextControl();
   }
 
   function runSlowStep() {
@@ -89,6 +106,7 @@
     }
     stepWarning = null;
     step += 1;
+    focusNextControl();
     if (step < test.steps.length) return;
     if (test.slowLastStep) runSlowStep();
     else record();
@@ -150,7 +168,7 @@
       <p class="text-sm text-slate-700">
         Phép thử <strong>{test.name}</strong> nhận biết {test.finds}. Làm theo thứ tự:
       </p>
-      <ol class="space-y-2">
+      <ol class="space-y-2" bind:this={stepsBox}>
         {#each test.steps as label, i (label)}
           <li>
             <button
@@ -163,7 +181,9 @@
         {/each}
       </ol>
       {#if step > 0}
-        <button type="button" class={button.quiet} onclick={clearBench}>Rửa ống, làm lại</button>
+        <button type="button" class={button.quiet} bind:this={washButton} onclick={washTube}
+          >Rửa ống, làm lại</button
+        >
       {/if}
     </div>
   </div>

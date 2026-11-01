@@ -95,14 +95,14 @@ export default {
         },
         {
           type: 'p',
-          text: 'Nhận biết protein (phép thử Biuret). Trong môi trường kiềm, các liên kết peptide tạo phức màu tím với ion $\\mathrm{Cu^{2+}}$. Phép thử chỉ dương tính với phân tử có từ hai liên kết peptide trở lên.',
+          text: 'Nhận biết protein (phép thử Biuret). Trong môi trường kiềm, các liên kết peptide tạo phức màu xanh tím với ion $\\mathrm{Cu^{2+}}$. Phép thử chỉ dương tính với phân tử có từ hai liên kết peptide trở lên.',
         },
         {
           type: 'list',
           ordered: true,
           items: [
-            'Cho dung dịch albumin $1\\%$ hoặc lòng trắng trứng và dung dịch NaOH loãng vào ống nghiệm.',
-            'Thêm dung dịch $\\mathrm{CuSO_4}$ $1\\%$, lắc nhẹ.',
+            'Cho một ít dung dịch albumin $1\\%$ hoặc lòng trắng trứng và $5$ mL dung dịch NaOH loãng vào ống nghiệm.',
+            'Thêm $5$ mL dung dịch $\\mathrm{CuSO_4}$ $1\\%$, lắc nhẹ.',
             'Sau vài phút, dung dịch chuyển dần từ xanh sang xanh tím nếu có protein.',
           ],
         },
@@ -307,7 +307,7 @@ export default {
       answer: 1,
       hints: ['Vai trò của cồn trong phép thử là gì?'],
       solution:
-        'Lipid chỉ tan trong dung môi không phân cực như cồn. Pha trong nước thì dầu nổi thành lớp riêng, không phân tán thành các giọt nhỏ khi rót sang ống nước.',
+        'Lipid không tan trong nước nhưng tan trong dung môi hữu cơ như cồn. Pha trong nước thì dầu nổi thành lớp riêng, không phân tán thành các giọt nhỏ khi rót sang ống nước.',
     },
     {
       type: 'multi',

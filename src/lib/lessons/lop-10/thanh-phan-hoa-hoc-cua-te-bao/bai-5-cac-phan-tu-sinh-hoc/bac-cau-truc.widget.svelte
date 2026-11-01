@@ -29,7 +29,9 @@
     viewBox="0 0 320 170"
     class="block w-full rounded-xl bg-slate-50"
     role="img"
-    aria-label="Protein {info.label}, giữ được {Math.round(fold * 100)}% cấu trúc không gian"
+    aria-label="Protein {info.label}, {level === 1
+      ? 'trình tự amino acid giữ nguyên'
+      : `giữ được ${Math.round(fold * 100)}% cấu trúc không gian`}"
   >
     {#each chains as chain, c (c)}
       <polyline
