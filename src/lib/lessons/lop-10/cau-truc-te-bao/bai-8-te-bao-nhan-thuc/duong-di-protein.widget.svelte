@@ -25,7 +25,7 @@
     note = {
       tone: result.ok ? 'ok' : 'warn',
       text: result.done
-        ? `${result.text} Protein đã đi qua đủ ${ROUTE.length} trạm của hệ thống nội màng.`
+        ? `${result.text} Protein đã đi hết ${ROUTE.length} trạm và được tiết ra khỏi tế bào.`
         : result.text,
     };
   }

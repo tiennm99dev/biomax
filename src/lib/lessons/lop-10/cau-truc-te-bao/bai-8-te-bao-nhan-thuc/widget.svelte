@@ -161,6 +161,12 @@
     };
   }
 
+  /**
+   * A part's name inside a sentence, keeping proper names such as Golgi.
+   * @param {string} name
+   */
+  const inSentence = (name) => name[0].toLowerCase() + name.slice(1);
+
   /** @param {string} id */
   function pick(id) {
     if (dragged) {
@@ -173,11 +179,11 @@
     if (mode !== 'do' || !target) return;
     if (id === target.id) {
       found += 1;
-      feedback = { tone: 'ok', text: `Đúng, đó là ${part.name.toLowerCase()}. ${part.info}` };
+      feedback = { tone: 'ok', text: `Đúng, đó là ${inSentence(part.name)}. ${part.info}` };
     } else {
       feedback = {
         tone: 'warn',
-        text: `Đây là ${part.name.toLowerCase()}: ${part.clue} Hãy tìm bào quan khác.`,
+        text: `Đây là ${inSentence(part.name)}: ${part.clue} Hãy tìm bộ phận khác.`,
       };
     }
   }
@@ -322,7 +328,7 @@
 
   {#if target}
     <p class="rounded-xl bg-indigo-50 px-4 py-3 text-sm font-semibold text-indigo-950">
-      Câu {found + 1}/{order.length}: bào quan nào đảm nhiệm vai trò sau?
+      Câu {found + 1}/{order.length}: bộ phận nào đảm nhiệm vai trò sau?
       <span class="block font-normal"><LiveRichText text={target.clue} /></span>
     </p>
   {/if}
@@ -363,6 +369,21 @@
         fill="url(#cell-than)"
         stroke={selected === 'mang-sinh-chat' ? '#4f46e5' : '#be185d'}
         stroke-width={selected === 'mang-sinh-chat' ? 6 : 3}
+      />
+      <circle
+        role="button"
+        tabindex="-1"
+        cx={CX}
+        cy={CY}
+        r={RADIUS}
+        fill="none"
+        stroke="transparent"
+        stroke-width="16"
+        class="cursor-pointer"
+        onclick={() => pick('mang-sinh-chat')}
+        onkeydown={(e) => {
+          if (e.key === 'Enter') pick('mang-sinh-chat');
+        }}
       />
     {:else}
       {#each edges.filter((e) => e.depth < 0) as e, i (i)}
@@ -421,6 +442,21 @@
           stroke-width={e.wall ? 5 : 2.5}
           stroke-linecap="round"
         />
+        <line
+          role="button"
+          tabindex="-1"
+          x1={e.x1}
+          y1={e.y1}
+          x2={e.x2}
+          y2={e.y2}
+          stroke="transparent"
+          stroke-width="10"
+          class="cursor-pointer"
+          onclick={() => pick(e.wall ? 'thanh-te-bao' : 'mang-sinh-chat')}
+          onkeydown={(k) => {
+            if (k.key === 'Enter') pick(e.wall ? 'thanh-te-bao' : 'mang-sinh-chat');
+          }}
+        />
       {/each}
     {/if}
   </svg>
@@ -447,7 +483,7 @@
     {/if}
     {#if target}
       <p class="text-sm text-slate-700">
-        Chạm vào bào quan trên hình hoặc tên của nó bên dưới. Xoay tế bào nếu bào quan bị che.
+        Chạm vào bộ phận trên hình hoặc tên của nó bên dưới. Xoay tế bào nếu bộ phận bị che.
       </p>
     {:else}
       <p class="text-sm font-semibold text-emerald-800" aria-live="polite">

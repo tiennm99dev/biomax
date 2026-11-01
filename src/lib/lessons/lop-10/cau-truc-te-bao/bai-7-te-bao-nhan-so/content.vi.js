@@ -73,7 +73,7 @@ export default {
           head: ['Thành phần', 'Cấu trúc', 'Chức năng'],
           rows: [
             ['Lông', 'Ngắn, số lượng nhiều', 'Bám dính, tiếp hợp, bám vào tế bào khác'],
-            ['Roi', 'Bó sợi protein dài, một hoặc vài roi', 'Di chuyển'],
+            ['Roi', 'Sợi protein dài, một hoặc vài roi', 'Di chuyển'],
             ['Màng ngoài', 'Có ở vi khuẩn Gram âm, chứa lipopolysaccharide', 'Bảo vệ tế bào'],
             [
               'Thành tế bào',

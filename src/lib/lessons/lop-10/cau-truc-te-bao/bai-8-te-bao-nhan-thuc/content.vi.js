@@ -200,7 +200,7 @@ export default {
       problem:
         'Quan sát dưới kính hiển vi điện tử, một tế bào có thành tế bào, không bào trung tâm lớn nhưng không có lục lạp. Tế bào này có thể là tế bào động vật không? Có thể là tế bào nào?',
       steps: [
-        'Tế bào động vật không có thành cellulose và không có không bào trung tâm lớn, nên tế bào này không phải tế bào động vật.',
+        'Tế bào động vật không có thành tế bào và không có không bào trung tâm lớn, nên tế bào này không phải tế bào động vật.',
         'Thành tế bào và không bào lớn phù hợp với tế bào thực vật.',
         'Không có lục lạp cho thấy tế bào này không quang hợp, ví dụ tế bào rễ cây hoặc tế bào vảy hành.',
       ],

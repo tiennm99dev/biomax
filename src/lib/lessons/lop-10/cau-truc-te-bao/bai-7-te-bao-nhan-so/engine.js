@@ -181,7 +181,7 @@ export const BACTERIUM = {
     {
       id: 'roi',
       name: 'Roi',
-      info: 'Bó sợi protein dài, mỗi tế bào có một hoặc vài roi; giúp vi khuẩn di chuyển.',
+      info: 'Sợi protein dài, mỗi tế bào có một hoặc vài roi; giúp vi khuẩn di chuyển.',
       x: 408,
       y: 112,
     },

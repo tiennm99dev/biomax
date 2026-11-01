@@ -78,7 +78,10 @@
       } else {
         note = {
           tone: 'info',
-          text: `Vật kính ${objective}×: vặn nhẹ ốc điều chỉnh để lấy nét lại.`,
+          text:
+            objective === 100 && !oil
+              ? 'Vật kính 100× cần một giọt dầu soi. Nhỏ dầu rồi vặn nhẹ ốc điều chỉnh để lấy nét lại.'
+              : `Vật kính ${objective}×: vặn nhẹ ốc điều chỉnh để lấy nét lại.`,
         };
       }
     } else if (objective === 100 && !oil) {
@@ -211,7 +214,7 @@
   </div>
 
   <div class="mx-auto max-w-xs text-center text-xs text-slate-700">
-    <div class="mx-auto h-1 bg-slate-800" style="width: {(bar / fov) * 100}%"></div>
+    <div class="mx-auto h-1 bg-slate-800" style="width: calc((100% - 16px) * {bar / fov})"></div>
     <p class="mt-1">
       {bar} µm. Độ phóng đại {magnification(objective)}× (thị kính 10×, vật kính {objective}×).
     </p>

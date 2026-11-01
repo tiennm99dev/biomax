@@ -61,8 +61,17 @@ describe('protein game', () => {
     expect(pressStation(4, 'golgi').ok).toBe(true);
   });
 
+  it('says a station was already passed rather than still to come', () => {
+    const again = pressStation(5, 'golgi');
+    expect(again.ok).toBe(false);
+    expect(again.step).toBe(5);
+    expect(again.text).toContain('Đã qua trạm');
+    expect(pressStation(2, 'nhan').text).toContain('Đã qua trạm');
+    expect(pressStation(2, 'golgi').text).not.toContain('Đã qua trạm');
+  });
+
   it('has a wrong-press text for every station and a story for every step', () => {
-    expect(STATIONS.filter((s) => !s.wrong)).toEqual([]);
+    expect(STATIONS.filter((s) => s.id !== ROUTE[0] && !s.wrong)).toEqual([]);
     expect(ROUTE.filter((id) => !STATIONS.find((s) => s.id === id)?.done)).toEqual([]);
   });
 });

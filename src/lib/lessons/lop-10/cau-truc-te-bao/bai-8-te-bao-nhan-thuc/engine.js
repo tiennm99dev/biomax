@@ -251,7 +251,8 @@ export function quizOrder(type, seed) {
 
 /**
  * Stations on the protein game board. The ones in `ROUTE` are visited in
- * order; the others are distractors with their own explanation.
+ * order; the others are distractors with their own explanation. `wrong` is for
+ * a press that comes too early, so the first station of the route needs none.
  * @type {Station[]}
  */
 export const STATIONS = [
@@ -261,7 +262,7 @@ export const STATIONS = [
     x: 300,
     y: 135,
     done: 'DNA trong nhân được phiên mã thành mRNA. mRNA đi qua lỗ màng nhân ra tế bào chất.',
-    wrong: 'Bản thông tin mRNA đã rời nhân rồi, không quay lại nữa.',
+    wrong: '',
   },
   {
     id: 'ribosome',
@@ -365,5 +366,7 @@ export function pressStation(step, id) {
     const next = step + 1;
     return { ok: true, step: next, done: next === ROUTE.length, text: station.done };
   }
-  return { ok: false, step, done: false, text: station.wrong };
+  const passed = ROUTE.indexOf(id) >= 0 && ROUTE.indexOf(id) < step;
+  const text = passed ? `Đã qua trạm ${station.name} rồi. Hãy tìm trạm tiếp theo.` : station.wrong;
+  return { ok: false, step, done: false, text };
 }

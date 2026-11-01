@@ -17,7 +17,7 @@ export default {
         {
           type: 'list',
           items: [
-            'Dụng cụ: kính hiển vi quang học (vật kính $10\\times$, $40\\times$, $100\\times$), lam kính, lamen, kim mũi mác, dao nhỏ, ống nhỏ giọt, đèn cồn, giấy thấm, bình nước rửa.',
+            'Dụng cụ: kính hiển vi quang học (vật kính $10\\times$, $40\\times$, $100\\times$), lam kính, lamen, que cấy, kim mũi mác, dao nhỏ, ống nhỏ giọt, đèn cồn, giấy thấm, bình nước rửa.',
             'Hoá chất: nước cất, xanh methylene (có thể thay bằng thuốc nhuộm khác như fuchsine), dầu soi nếu dùng vật kính $100\\times$.',
             'Mẫu vật: nước dưa muối (chứa vi khuẩn), củ hành tây hoặc lá thài lài tía, tế bào niêm mạc miệng.',
           ],
@@ -37,7 +37,7 @@ export default {
           type: 'list',
           ordered: true,
           items: [
-            'Cố định mẫu: nhỏ một giọt nước cất lên lam kính, thêm một giọt nước dưa muối, dàn mỏng rồi để khô tự nhiên hoặc hơ nhẹ trên đèn cồn, không hơ quá nóng.',
+            'Cố định mẫu: nhỏ một giọt nước cất lên lam kính, thêm một giọt nước dưa muối, dàn mỏng bằng que cấy hoặc mép lamen rồi để khô tự nhiên hoặc hơ nhanh qua ngọn lửa đèn cồn $2 - 3$ lần, không hơ quá nóng vì có thể làm biến dạng vi khuẩn.',
             'Nhuộm: nhỏ $1 - 2$ giọt xanh methylene, để khoảng $1 - 2$ phút.',
             'Rửa: nghiêng lam kính, rửa nhẹ bằng nước từ một đầu đến khi nước chảy ra không còn màu thuốc nhuộm, rồi thấm khô.',
             'Quan sát: tìm vùng mỏng ở vật kính $10\\times$, chuyển sang $40\\times$; vẽ và nhận xét kích thước, hình dạng vi khuẩn.',
