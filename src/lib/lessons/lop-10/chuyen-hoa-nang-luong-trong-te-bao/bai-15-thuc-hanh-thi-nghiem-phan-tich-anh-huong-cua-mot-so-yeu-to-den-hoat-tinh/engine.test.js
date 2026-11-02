@@ -12,6 +12,7 @@ import {
   tubeRate,
   updateSeen,
   widestDent,
+  withTemp,
 } from './engine.js';
 
 const [ROOM, LIME, BOILED, ICE] = BOOK_TUBES;
@@ -38,6 +39,16 @@ describe('amylase in a tube', () => {
     expect(starchLeft({ temp: 25, ph: 6, amount: 0 }, MAX_MINUTES)).toBe(1);
     expect(starchLeft(BOILED, MAX_MINUTES)).toBe(1);
     expect(tubeRate(BOILED)).toBe(0);
+  });
+
+  it('does not bring a boiled enzyme back when it cools', () => {
+    const cooled = withTemp(BOILED, 25);
+    expect(starchLeft(cooled, MAX_MINUTES)).toBe(1);
+    expect(describeTube(cooled, MAX_MINUTES, true).tone).toBe('warn');
+    const heated = withTemp(withTemp(ROOM, 90), 25);
+    expect(tubeRate(heated)).toBe(0);
+    expect(dentWidth(heated, MAX_MINUTES)).toBe(0);
+    expect(tubeRate(withTemp(ROOM, 60))).toBeGreaterThan(0);
   });
 
   it('slows down with less enzyme', () => {

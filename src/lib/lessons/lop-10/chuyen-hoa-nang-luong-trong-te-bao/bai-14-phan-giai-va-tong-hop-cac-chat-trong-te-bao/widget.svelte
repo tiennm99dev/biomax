@@ -150,7 +150,9 @@
     </div>
     <p class="mt-2">{stage.note}</p>
     <p class="mt-2 font-semibold" aria-live="polite">
-      {#if stage.usesAtp}
+      {#if halted}
+        Trong tối, pha sáng không tạo thêm ATP; pha tối chỉ dùng nốt phần ATP còn lại.
+      {:else if stage.usesAtp}
         Giai đoạn này dùng {stage.usesAtp} ATP cho mỗi glucose, không tạo ATP cho tế bào dùng.
       {:else if inBreakdown}
         Cộng dồn đến hết giai đoạn này: {atpText(running)} ATP cho mỗi glucose.

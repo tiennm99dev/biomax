@@ -5,7 +5,11 @@
  * down in the cold.
  */
 
-/** @typedef {{ temp: number, ph: number, amount: number }} TubeConditions */
+/**
+ * `ruined` marks an enzyme that was once heated past repair: cooling it later
+ * does not bring it back.
+ * @typedef {{ temp: number, ph: number, amount: number, ruined?: boolean }} TubeConditions
+ */
 /** @typedef {TubeConditions & { id: number, name: string }} Tube */
 
 export const BEST_TEMP = 60;
@@ -20,7 +24,7 @@ const STARCH_SPEED = 0.9;
 export const BOOK_TUBES = [
   { id: 1, name: 'Nước cất, nhiệt độ phòng', temp: 25, ph: 6, amount: 100 },
   { id: 2, name: 'Nước vôi trong', temp: 25, ph: 10, amount: 100 },
-  { id: 3, name: 'Đun sôi $10$ phút', temp: 100, ph: 6, amount: 100 },
+  { id: 3, name: 'Đun sôi $10$ phút', temp: 100, ph: 6, amount: 100, ruined: true },
   { id: 4, name: 'Trong nước đá', temp: 0, ph: 6, amount: 100 },
 ];
 
@@ -42,7 +46,27 @@ export const phFactor = (ph) => Math.exp(-(((ph - BEST_PH) / PH_WIDTH) ** 2));
  * The speed of the enzyme while it stays in these conditions, from 0 to 1.
  * @param {TubeConditions} c
  */
-export const tubeRate = (c) => tempFactor(c.temp) * phFactor(c.ph) * (c.amount / 100);
+export const tubeRate = (c) =>
+  isDestroyed(c) ? 0 : tempFactor(c.temp) * phFactor(c.ph) * (c.amount / 100);
+
+/**
+ * Whether heat has destroyed this tube's enzyme, now or earlier.
+ * @param {TubeConditions} c
+ */
+export const isDestroyed = (c) => Boolean(c.ruined) || c.temp >= DESTROY_TEMP;
+
+/**
+ * A tube at a new temperature; heat past repair stays with it.
+ * @template {TubeConditions} T
+ * @param {T} tube
+ * @param {number} temp
+ * @returns {T}
+ */
+export const withTemp = (tube, temp) => ({
+  ...tube,
+  temp,
+  ruined: Boolean(tube.ruined) || temp >= DESTROY_TEMP,
+});
 
 /**
  * Share of the starch left in a tube, from 1 down to 0.
@@ -93,10 +117,10 @@ export function describeTube(c, minutes, iodine) {
       text: 'Ống đối chứng không có enzyme nên tinh bột còn nguyên, màu xanh đen không đổi.',
     };
   }
-  if (c.temp >= DESTROY_TEMP) {
+  if (isDestroyed(c)) {
     return {
       tone: 'warn',
-      text: 'Đun sôi làm amylase biến tính nên tinh bột còn nguyên, dù để bao lâu cũng vẫn xanh đen.',
+      text: 'Đun nóng quá mức làm amylase biến tính nên tinh bột còn nguyên, dù để bao lâu cũng vẫn xanh đen. Để nguội cũng không phục hồi; bấm "Đặt lại như sách" để có ống mới.',
     };
   }
   if (phFactor(c.ph) < 0.3) {
@@ -148,7 +172,7 @@ export function updateSeen(seen, tubes, minutes, iodine) {
       seen.diluted ||
       (minutes > 0 &&
         tubes.some(
-          (t, i) => t.amount > 0 && t.amount < 100 && t.temp < DESTROY_TEMP && colors[i] !== 'vang',
+          (t, i) => t.amount > 0 && t.amount < 100 && !isDestroyed(t) && colors[i] !== 'vang',
         )),
   };
 }
@@ -165,7 +189,7 @@ const COLD_START = 0.85;
  * @param {TubeConditions} c
  */
 export function plateRate(c) {
-  if (c.temp >= DESTROY_TEMP) return 0;
+  if (isDestroyed(c)) return 0;
   const start = c.temp <= 10 ? COLD_START : 1;
   return start * phFactor(c.ph) * (c.amount / 100);
 }

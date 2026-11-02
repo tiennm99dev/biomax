@@ -17,6 +17,7 @@ import {
   nextStep,
   phFactor,
   tempFactor,
+  turnFinished,
   updateSeen,
 } from './engine.js';
 
@@ -62,6 +63,14 @@ describe('enzyme activity', () => {
     expect(top.y).toBeCloseTo(activity(BASE, 7));
   });
 
+  it('starts pepsin away from its pH so the learner has to find it', () => {
+    expect(destroys({ ...BASE, ph: PEPSIN.startPh }, PEPSIN.bestPh)).toBe(false);
+    expect(updateSeen(NOTHING_SEEN, { ...BASE, ph: PEPSIN.startPh }, PEPSIN, false).acid).toBe(
+      false,
+    );
+    expect(updateSeen(NOTHING_SEEN, { ...BASE, ph: 2 }, PEPSIN, false).acid).toBe(true);
+  });
+
   it('records the cold enzyme recovering only after it was cold', () => {
     const warm = updateSeen(NOTHING_SEEN, BASE, AMYLASE, false);
     expect(warm.rewarmed).toBe(false);
@@ -98,14 +107,18 @@ describe('energy profile', () => {
 });
 
 describe('catalytic cycle', () => {
-  it('walks every step and counts a turn when it starts over', () => {
+  it('walks every step and starts over after the last', () => {
     let step = 0;
     for (let i = 1; i < CYCLE_STEPS.length; i++) {
-      const next = nextStep(step);
-      expect(next).toEqual({ step: i, finished: false });
-      step = next.step;
+      step = nextStep(step);
+      expect(step).toBe(i);
     }
-    expect(nextStep(step)).toEqual({ step: 0, finished: true });
+    expect(nextStep(step)).toBe(0);
+  });
+
+  it('counts a turn once the product is released, not before', () => {
+    expect(turnFinished(CYCLE_STEPS.length - 2)).toBe(false);
+    expect(turnFinished(CYCLE_STEPS.length - 1)).toBe(true);
   });
 });
 

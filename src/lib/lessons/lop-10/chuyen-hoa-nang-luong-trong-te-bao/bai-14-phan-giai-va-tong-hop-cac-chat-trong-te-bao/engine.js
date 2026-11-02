@@ -46,7 +46,7 @@ const GLYCOLYSIS = {
   inputs: ['1 glucose', '2 ATP (dùng để hoạt hoá glucose)', '2 NAD⁺'],
   outputs: ['2 pyruvate', '4 ATP, tức thu thêm 2 ATP', '2 NADH'],
   atp: /** @type {[number, number]} */ ([2, 2]),
-  note: 'Không cần O₂. Glucose (6C) bị tách thành hai pyruvate (3C). Mọi tế bào đều có giai đoạn này.',
+  note: 'Không cần O₂. Glucose (6C) bị tách thành hai pyruvate (3C). Hầu hết tế bào đều có giai đoạn này.',
 };
 
 /** @type {Stage[]} */
@@ -75,9 +75,9 @@ export const RESPIRATION = [
     name: 'Chuỗi truyền electron',
     place: 'Màng trong ti thể',
     inputs: ['10 NADH', '2 FADH₂', '6 O₂'],
-    outputs: ['6 H₂O', '32 đến 34 ATP'],
+    outputs: ['12 H₂O', '32 đến 34 ATP'],
     atp: chainAtp(),
-    note: 'Electron từ NADH và FADH₂ truyền qua chuỗi tới O₂, tạo nước. Năng lượng giải phóng dùng để tổng hợp phần lớn ATP.',
+    note: 'Electron từ NADH và FADH₂ truyền qua chuỗi tới O₂, tạo nước. Năng lượng giải phóng dùng để tổng hợp phần lớn ATP. Các giai đoạn trước dùng bớt một phần nước, nên phương trình tổng quát chỉ còn 6 H₂O.',
   },
 ];
 
@@ -115,20 +115,20 @@ export const PHOTOSYNTHESIS = [
     id: 'pha-sang',
     name: 'Pha sáng',
     place: 'Màng thylakoid của lục lạp',
-    inputs: ['Ánh sáng', '12 H₂O', '18 ADP', '12 NADP⁺'],
+    inputs: ['Ánh sáng', '12 H₂O', '18 ADP', '18 Pᵢ', '12 NADP⁺'],
     outputs: ['6 O₂', '18 ATP', '12 NADPH'],
     atp: [18, 18],
-    note: 'Diệp lục hấp thụ ánh sáng, chuyển quang năng thành hoá năng trong ATP và NADPH. Nước bị phân li, giải phóng O₂.',
+    note: 'Diệp lục hấp thụ ánh sáng, chuyển quang năng thành hoá năng trong ATP và NADPH. Nước bị phân li: 12 H₂O cho 6 O₂.',
   },
   {
     id: 'pha-toi',
     name: 'Pha tối (chu trình Calvin)',
     place: 'Chất nền lục lạp',
     inputs: ['6 CO₂', '18 ATP', '12 NADPH'],
-    outputs: ['1 glucose (C₆H₁₂O₆)', '18 ADP', '12 NADP⁺'],
+    outputs: ['1 glucose (C₆H₁₂O₆)', '6 H₂O', '18 ADP', '18 Pᵢ', '12 NADP⁺'],
     atp: [0, 0],
     usesAtp: 18,
-    note: 'Dùng ATP và NADPH của pha sáng để khử CO₂ thành carbohydrate. Không cần trực tiếp ánh sáng nhưng phải có sản phẩm của pha sáng.',
+    note: 'Dùng ATP và NADPH của pha sáng để khử CO₂ thành carbohydrate. Không cần trực tiếp ánh sáng nhưng phải có sản phẩm của pha sáng. Pha này trả lại 6 H₂O, nên phương trình tổng quát chỉ ghi 6 H₂O ở vế trái.',
   },
 ];
 

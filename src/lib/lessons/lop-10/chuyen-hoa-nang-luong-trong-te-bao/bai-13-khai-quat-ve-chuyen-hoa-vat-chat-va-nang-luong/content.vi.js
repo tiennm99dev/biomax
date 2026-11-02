@@ -107,7 +107,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Đa số enzyme là protein. Một số enzyme chỉ gồm protein; số khác có thêm cofactor là ion kim loại hoặc phân tử hữu cơ (như dẫn xuất của vitamin). Mỗi enzyme có một trung tâm hoạt động với cấu hình không gian phù hợp với cơ chất của nó. Chất chịu tác động của enzyme là cơ chất, nên enzyme có tính đặc hiệu: amylase thuỷ phân tinh bột nhưng không thuỷ phân protein.',
+          text: 'Đa số enzyme là protein. Một số enzyme chỉ gồm protein; số khác có thêm cofactor là ion kim loại hoặc phân tử hữu cơ (như dẫn xuất của vitamin). Chất chịu tác động của enzyme gọi là cơ chất. Mỗi enzyme có một trung tâm hoạt động với cấu hình không gian phù hợp với cơ chất của nó, nên enzyme có tính đặc hiệu: amylase thuỷ phân tinh bột nhưng không thuỷ phân protein.',
         },
         { type: 'widget', name: 'co-che' },
         {

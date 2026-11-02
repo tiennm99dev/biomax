@@ -88,7 +88,7 @@
   function newTube() {
     ruined = false;
     temp = 25;
-    ph = enzyme.bestPh;
+    ph = enzyme.startPh;
     settle();
   }
 
@@ -98,7 +98,7 @@
     enzymeId = next.id;
     ruined = false;
     temp = 25;
-    ph = next.bestPh;
+    ph = next.startPh;
     settle();
   }
 </script>

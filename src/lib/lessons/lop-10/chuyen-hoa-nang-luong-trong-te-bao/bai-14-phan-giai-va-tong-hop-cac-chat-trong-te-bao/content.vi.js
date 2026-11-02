@@ -113,10 +113,14 @@ export default {
             ['Nơi diễn ra', 'Màng thylakoid', 'Chất nền lục lạp'],
             [
               'Đầu vào',
-              'Ánh sáng, $\\mathrm{H_2O}$, ADP, $\\mathrm{NADP^+}$',
+              'Ánh sáng, $\\mathrm{H_2O}$, ADP, $\\mathrm{P_i}$, $\\mathrm{NADP^+}$',
               '$\\mathrm{CO_2}$, ATP, NADPH',
             ],
-            ['Đầu ra', '$\\mathrm{O_2}$, ATP, NADPH', 'Carbohydrate, ADP, $\\mathrm{NADP^+}$'],
+            [
+              'Đầu ra',
+              '$\\mathrm{O_2}$, ATP, NADPH',
+              'Carbohydrate, ADP, $\\mathrm{P_i}$, $\\mathrm{NADP^+}$',
+            ],
             [
               'Vai trò',
               'Chuyển quang năng thành hoá năng',
@@ -128,7 +132,7 @@ export default {
           type: 'callout',
           tone: 'warning',
           title: 'Dễ nhầm',
-          text: 'Toàn bộ $\\mathrm{O_2}$ thải ra trong quang hợp đến từ nước chứ không phải từ $\\mathrm{CO_2}$. "Pha tối" không có nghĩa là chỉ xảy ra ban đêm: nó không cần ánh sáng trực tiếp, nhưng cần ATP và NADPH do pha sáng tạo ra.',
+          text: 'Toàn bộ $\\mathrm{O_2}$ thải ra trong quang hợp đến từ nước chứ không phải từ $\\mathrm{CO_2}$: pha sáng phân li $12\\ \\mathrm{H_2O}$ để cho $6\\ \\mathrm{O_2}$, pha tối trả lại $6\\ \\mathrm{H_2O}$, nên phương trình trên chỉ ghi $6\\ \\mathrm{H_2O}$. "Pha tối" không có nghĩa là chỉ xảy ra ban đêm: nó không cần ánh sáng trực tiếp, nhưng cần ATP và NADPH do pha sáng tạo ra.',
         },
       ],
     },
@@ -137,7 +141,7 @@ export default {
       blocks: [
         {
           type: 'p',
-          text: 'Một số vi khuẩn cũng tự tổng hợp chất hữu cơ từ $\\mathrm{CO_2}$ theo cách khác. Hoá tổng hợp dùng năng lượng từ phản ứng oxy hoá chất vô cơ, như vi khuẩn nitrate hoá. Quang khử dùng ánh sáng nhưng thay $\\mathrm{H_2O}$ bằng $\\mathrm{H_2S}$, S, $\\mathrm{H_2}$ hay chất hữu cơ khác nên không giải phóng $\\mathrm{O_2}$, như vi khuẩn lưu huỳnh màu tía, màu lục.',
+          text: 'Một số vi khuẩn cũng tự tổng hợp chất hữu cơ từ $\\mathrm{CO_2}$ theo cách khác. Hoá tổng hợp dùng năng lượng từ phản ứng oxy hoá chất vô cơ, như vi khuẩn nitrate hoá. Quang khử dùng ánh sáng nhưng thay $\\mathrm{H_2O}$ bằng $\\mathrm{H_2S}$, S, $\\mathrm{H_2}$ hay một số chất hữu cơ nên không giải phóng $\\mathrm{O_2}$, như vi khuẩn lưu huỳnh màu tía, màu lục.',
         },
         { type: 'widget', name: 'so-sanh' },
       ],
@@ -267,7 +271,9 @@ export default {
       prompt: 'Những chất nào là sản phẩm của pha sáng?',
       options: ['$\\mathrm{O_2}$', 'ATP', 'NADPH', 'Glucose', '$\\mathrm{CO_2}$'],
       answers: [0, 1, 2],
-      hints: ['Glucose chỉ được tạo ở pha sau, còn $\\mathrm{CO_2}$ là nguyên liệu.'],
+      hints: [
+        'Pha sáng phân li nước và chuyển quang năng thành hoá năng. Chất nào được giải phóng, chất nào mang năng lượng sang pha sau?',
+      ],
       solution: 'Pha sáng tạo $\\mathrm{O_2}$, ATP và NADPH.',
     },
     {

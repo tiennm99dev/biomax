@@ -2,7 +2,7 @@
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import SegmentedControl from '#lib/core/segmented-control.svelte';
   import { button } from '#lib/core/ui.js';
-  import { CYCLE_STEPS, NO_FIT, nextStep } from './engine.js';
+  import { CYCLE_STEPS, NO_FIT, nextStep, turnFinished } from './engine.js';
 
   let substrate = $state('tinh-bot');
   let step = $state(0);
@@ -25,9 +25,8 @@
       tried = true;
       return;
     }
-    const next = nextStep(step);
-    step = next.step;
-    if (next.finished) turns += 1;
+    step = nextStep(step);
+    if (turnFinished(step)) turns += 1;
   }
 
   /** @param {string | number} _value */

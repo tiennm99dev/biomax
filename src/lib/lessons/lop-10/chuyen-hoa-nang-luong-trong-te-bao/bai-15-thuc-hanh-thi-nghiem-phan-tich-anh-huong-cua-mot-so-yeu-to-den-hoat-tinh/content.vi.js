@@ -54,7 +54,7 @@ export default {
           type: 'list',
           ordered: true,
           items: [
-            'Ép lõi dứa lấy nước. Cho $0{,}5$ mL dịch vào mỗi ống nghiệm, đánh số từ $1$ đến $4$. Nếu dùng đu đủ, nghiền vỏ hoặc lá với nước rồi lọc lấy dịch trong.',
+            'Ép lõi dứa lấy nước. Cho $0{,}5$ mL dịch vào mỗi ống nghiệm, đánh số từ $1$ đến $4$. Nếu dùng đu đủ, nghiền khoảng $5$ g vỏ hoặc lá tươi với $4$ mL nước rồi lọc lấy dịch trong.',
             'Xử lí từng ống như bảng dưới.',
             'Trộn $2$ mL lòng trắng trứng với $2$ mL nước cất. Cho $1$ mL hỗn hợp vào mỗi ống, lắc đều.',
             'Quan sát, ghi lại sự thay đổi và thời gian dung dịch chuyển trong ở từng ống.',
@@ -165,7 +165,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Trả lời thêm: vì sao dung dịch lòng trắng trứng từ đục chuyển sang trong? Vì sao ướp thịt bò với đu đủ thì thịt mềm hơn? Vì sao không nên đun sôi nước dứa trước khi ướp thịt?',
+          text: 'Trả lời thêm: vì sao dung dịch lòng trắng trứng từ đục chuyển sang trong và thời gian chuyển trong ở các ống khác nhau? Vì sao đường kính vết lõm ở các vị trí khác nhau? Vì sao ăn nhiều lõi dứa thấy rát lưỡi? Vì sao bát cháo ăn dở để lâu bị loãng, còn nhai cơm lâu thấy ngọt? Vì sao ướp thịt bò với đu đủ thì thịt mềm hơn, và vì sao không nên đun sôi nước dứa trước khi ướp thịt?',
         },
       ],
     },
@@ -348,6 +348,20 @@ export default {
       hints: ['Thành phần chính của thịt là gì, và thành phần nào trong dứa tác động lên nó?'],
       solution:
         'Bromelain trong dứa tươi phân giải protein của thịt, làm thịt mềm. Đun nóng làm enzyme biến tính nên tác dụng này giảm hoặc mất.',
+    },
+    {
+      type: 'choice',
+      prompt: 'Vì sao bát cháo ăn dở, để lâu thì bị loãng?',
+      options: [
+        'Vì cháo hút thêm nước từ không khí',
+        'Vì amylase trong nước bọt dính vào cháo thuỷ phân tinh bột',
+        'Vì tinh bột trong cháo tự bay hơi',
+        'Vì nhiệt độ phòng làm enzyme trong cháo biến tính',
+      ],
+      answer: 1,
+      hints: ['Thìa đã qua miệng đem theo enzyme nào, và cháo chứa chủ yếu chất gì?'],
+      solution:
+        'Nước bọt có amylase. Enzyme này thuỷ phân tinh bột của cháo thành đường tan trong nước, nên cháo loãng dần.',
     },
   ],
   takeaways: [

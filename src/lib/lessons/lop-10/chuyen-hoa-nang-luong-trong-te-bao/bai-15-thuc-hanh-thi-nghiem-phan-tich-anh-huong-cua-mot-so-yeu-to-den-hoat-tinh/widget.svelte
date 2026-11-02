@@ -13,6 +13,7 @@
     iodineColor,
     starchLeft,
     updateSeen,
+    withTemp,
   } from './engine.js';
 
   /** @type {import('./engine.js').Tube[]} */
@@ -62,9 +63,15 @@
     record();
   }
 
-  /** @param {'temp' | 'ph' | 'amount'} key @param {number} value */
+  /** @param {'ph' | 'amount'} key @param {number} value */
   function setTube(key, value) {
     tubes[selected][key] = value;
+    record();
+  }
+
+  /** @param {number} value */
+  function setTemp(value) {
+    tubes[selected] = withTemp(tube, value);
     record();
   }
 
@@ -120,7 +127,7 @@
     max={100}
     step={5}
     unit="°C"
-    oninput={(v) => setTube('temp', v)}
+    oninput={setTemp}
   />
   <SliderField
     label="Độ pH ống {tube.id}"
@@ -179,6 +186,8 @@
               {t.temp} °C, pH {formatNumber(t.ph, 1)}, enzyme {t.amount}%
               {#if t.temp === BOOK_TUBES[t.id - 1].temp && t.ph === BOOK_TUBES[t.id - 1].ph && t.amount === 100}
                 <span class="text-slate-500">(<LiveRichText text={t.name} />)</span>
+              {:else if t.ruined}
+                <span class="text-slate-500">(enzyme đã biến tính)</span>
               {/if}
             </td>
             <td class="py-1">{iodine ? colorOf(t).name : 'Chưa thử'}</td>

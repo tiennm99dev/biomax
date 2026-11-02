@@ -7,12 +7,12 @@
 
 /** @typedef {'temp' | 'ph' | 'substrate' | 'enzyme'} FactorId */
 /** @typedef {{ temp: number, ph: number, substrate: number, enzyme: number }} Conditions */
-/** @typedef {{ id: string, name: string, bestPh: number }} Enzyme */
+/** @typedef {{ id: string, name: string, bestPh: number, startPh: number }} Enzyme */
 
 /** @type {Enzyme[]} */
 export const ENZYMES = [
-  { id: 'amylase', name: 'Amylase nước bọt', bestPh: 7 },
-  { id: 'pepsin', name: 'Pepsin dạ dày', bestPh: 2 },
+  { id: 'amylase', name: 'Amylase nước bọt', bestPh: 7, startPh: 7 },
+  { id: 'pepsin', name: 'Pepsin dạ dày', bestPh: 2, startPh: 4.5 },
 ];
 
 export const BEST_TEMP = 37;
@@ -224,14 +224,17 @@ export const NO_FIT =
 
 /**
  * @param {number} step
- * @returns {{ step: number, finished: boolean }} The step after this one;
- *   the cycle starts over after the last step and counts one turn.
+ * @returns {number} The step after this one; the cycle starts over after the last.
  */
 export function nextStep(step) {
-  return step >= CYCLE_STEPS.length - 1
-    ? { step: 0, finished: true }
-    : { step: step + 1, finished: false };
+  return step >= CYCLE_STEPS.length - 1 ? 0 : step + 1;
 }
+
+/**
+ * @param {number} step
+ * @returns {boolean} Whether the enzyme has finished a turn at this step.
+ */
+export const turnFinished = (step) => step === CYCLE_STEPS.length - 1;
 
 const P_X = [212, 262, 312];
 const BOND_MID = [237, 287];
