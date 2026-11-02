@@ -10,6 +10,7 @@ export default {
     'Phân biệt được giảm phân với nguyên phân.',
     'Tính được số tổ hợp NST trong giao tử khi biết số cặp NST tương đồng.',
     'Giải thích được ý nghĩa của giảm phân đối với sinh sản hữu tính, tiến hoá và chọn giống.',
+    'Nêu được một số yếu tố ảnh hưởng đến giảm phân.',
   ],
   sections: [
     {
@@ -115,6 +116,20 @@ export default {
           text: 'Mỗi cặp NST tương đồng phân li độc lập với các cặp khác. Với $n$ cặp NST khác nhau, không có trao đổi chéo, số tổ hợp NST có thể có trong giao tử là $2^n$. Ở người, $n = 23$ cho $2^{23} = 8\\,388\\,608$ tổ hợp.',
         },
         { type: 'widget', name: 'to-hop' },
+      ],
+    },
+    {
+      heading: 'Các yếu tố ảnh hưởng đến giảm phân',
+      blocks: [
+        {
+          type: 'list',
+          items: [
+            'Di truyền: mỗi loài có một độ tuổi trưởng thành nhất định. Đến tuổi đó, tế bào sinh dục bắt đầu giảm phân và cơ thể có khả năng sinh sản.',
+            'Hormone sinh dục: có vai trò quan trọng trong giảm phân. Người ta có thể tiêm hormone sinh dục cho vật nuôi để kích thích sinh sản theo nhu cầu.',
+            'Môi trường: nhiều loài cây chỉ ra hoa khi gặp thời tiết và chế độ ánh sáng thích hợp.',
+            'Tuổi: ở người, phụ nữ càng lớn tuổi, đặc biệt từ $35$ tuổi trở lên, thì giảm phân càng dễ bị rối loạn và tỉ lệ giao tử bất thường càng tăng.',
+          ],
+        },
         {
           type: 'callout',
           tone: 'warning',
@@ -271,11 +286,26 @@ export default {
       solution:
         'Giảm phân giảm $2n$ xuống $n$, thụ tinh khôi phục $2n$ ở hợp tử, còn nguyên phân giữ nguyên $2n$ cho các tế bào của cơ thể mới.',
     },
+    {
+      type: 'choice',
+      prompt: 'Vì sao nguy cơ sinh con mắc hội chứng Down tăng khi người mẹ lớn tuổi?',
+      options: [
+        'Vì giảm phân ở người mẹ dễ bị rối loạn hơn, tạo nhiều giao tử bất thường hơn',
+        'Vì hợp tử không còn nguyên phân được',
+        'Vì DNA không nhân đôi trước giảm phân',
+        'Vì trao đổi chéo không còn xảy ra',
+      ],
+      answer: 0,
+      hints: ['Hội chứng Down liên quan đến giao tử thừa một NST số $21$.'],
+      solution:
+        'Phụ nữ càng lớn tuổi, đặc biệt từ $35$ tuổi trở lên, giảm phân càng dễ rối loạn. Cặp NST số $21$ không phân li tạo giao tử thừa NST này, nên dễ sinh con mắc hội chứng Down.',
+    },
   ],
   takeaways: [
     'Giảm phân có hai lần phân bào liên tiếp nhưng DNA chỉ nhân đôi một lần, từ một tế bào $2n$ tạo bốn tế bào con $n$.',
     'Giảm phân I tách các NST kép của cặp tương đồng; giảm phân II tách các nhiễm sắc tử.',
     'Trao đổi chéo ở kì đầu I và phân li, tổ hợp ngẫu nhiên của NST tạo nhiều loại giao tử; với $n$ cặp NST có $2^n$ tổ hợp.',
     'Giảm phân, thụ tinh và nguyên phân cùng duy trì bộ NST đặc trưng của loài.',
+    'Giảm phân chịu ảnh hưởng của di truyền, hormone sinh dục, môi trường và tuổi.',
   ],
 };

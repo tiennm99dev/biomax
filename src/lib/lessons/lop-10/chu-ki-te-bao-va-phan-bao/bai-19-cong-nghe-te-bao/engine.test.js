@@ -1,13 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import {
-  PROCESSES,
-  SOURCES,
-  TARGETS,
-  canBecome,
-  inPlace,
-  markGuess,
-  mixedOrder,
-} from './engine.js';
+import { PROCESSES, SOURCES, TARGETS, canBecome, inPlace, mixedOrder } from './engine.js';
 
 describe('putting a process in order', () => {
   it('starts every seed from a wrong order holding every step once', () => {
@@ -48,11 +40,5 @@ describe('what a cell can become', () => {
     expect(SOURCES.filter((s) => canBecome(s.id, 'co-the')).map((s) => s.id)).toEqual(['hop-tu']);
     expect(canBecome('tao-mau', 'hong-cau')).toBe(true);
     expect(canBecome('tao-mau', 'than-kinh')).toBe(false);
-  });
-
-  it('marks a guess against the facts', () => {
-    expect(markGuess('phoi', 'co-tim', true)).toBe(true);
-    expect(markGuess('phoi', 'co-the', true)).toBe(false);
-    expect(markGuess('da-biet-hoa', 'co-tim', false)).toBe(true);
   });
 });

@@ -2,7 +2,7 @@
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import SegmentedControl from '#lib/core/segmented-control.svelte';
   import PhasePlayer from '../_shared/phase-player.svelte';
-  import { distinctTypes, gametesOf, meiosisFrames } from '../_shared/frames.js';
+  import { BLUE, distinctTypes, gametesOf, meiosisFrames } from '../_shared/frames.js';
 
   const crossOptions = [
     { value: 'yes', label: 'Có trao đổi chéo' },
@@ -12,6 +12,18 @@
     { value: 'same', label: 'Xanh cùng phía xanh' },
     { value: 'other', label: 'Xanh cùng phía đỏ' },
   ];
+
+  /** @param {string} color */
+  const colorName = (color) => (color === BLUE ? 'xanh' : 'đỏ');
+
+  /** @param {{ long: [string, string], short: string }} gamete */
+  function gameteText(gamete) {
+    const long =
+      gamete.long[0] === gamete.long[1]
+        ? colorName(gamete.long[0])
+        : `${colorName(gamete.long[0])} và ${colorName(gamete.long[1])} do trao đổi chéo`;
+    return `NST dài ${long}, NST ngắn ${colorName(gamete.short)}`;
+  }
 
   let cross = $state('yes');
   let flipChoice = $state('same');
@@ -50,9 +62,7 @@
             viewBox="0 0 60 70"
             class="mx-auto block w-full max-w-20"
             role="img"
-            aria-label="Tế bào con {i + 1}: NST dài {g.long[0] === g.long[1]
-              ? 'một màu'
-              : 'hai màu do trao đổi chéo'}"
+            aria-label="Tế bào con {i + 1}: {gameteText(g)}"
           >
             <circle cx="30" cy="35" r="28" fill="#fef3c7" stroke="#b45309" stroke-width="2" />
             <g stroke-width="5" stroke-linecap="round">

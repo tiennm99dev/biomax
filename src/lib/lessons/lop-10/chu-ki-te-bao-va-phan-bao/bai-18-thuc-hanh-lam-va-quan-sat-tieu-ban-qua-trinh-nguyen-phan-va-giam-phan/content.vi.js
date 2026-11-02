@@ -214,7 +214,7 @@ export default {
       answer: 0,
       hints: ['Hãy nghĩ đến hình dạng tế bào khi gặp nhiệt độ cao.'],
       solution:
-        'Đun nhẹ giúp thuốc thấm qua thành tế bào cứng; đun sôi sẽ làm tế bào chết và biến dạng, khó quan sát.',
+        'Đun nhẹ giúp thuốc thấm qua thành tế bào cứng; đun sôi có thể làm tế bào biến dạng, thậm chí vỡ ra, nên khó quan sát.',
     },
     {
       type: 'choice',

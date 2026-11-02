@@ -106,6 +106,10 @@ export default {
           text: 'Từ một tế bào mẹ $2n$ tạo ra hai tế bào con có bộ NST $2n$ giống hệt nhau và giống tế bào mẹ. Sau $k$ lần nguyên phân liên tiếp, một tế bào tạo ra $2^k$ tế bào con.',
         },
         {
+          type: 'p',
+          text: 'Ý nghĩa của nguyên phân:',
+        },
+        {
           type: 'list',
           items: [
             'Ổn định bộ NST của loài qua các thế hệ tế bào.',

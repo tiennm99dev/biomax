@@ -202,7 +202,7 @@ export function strokesOf(stage, seed) {
       return many(11, (i) => rod(between(-2.5, 2.5), spread(11, 22, i), between(70, 110), 9, 3));
     case 'sau':
       return [-1, 1].flatMap((side) =>
-        many(7, (i) => vee(side * between(17, 20), spread(7, 18, i), side, 2.4)),
+        many(4, (i) => vee(side * between(17, 20), spread(4, 21, i), side, 2.4)),
       );
     case 'cuoi':
       return [-1, 1].flatMap((side) =>
@@ -220,7 +220,7 @@ export function strokesOf(stage, seed) {
       }).flat();
     case 'giua-1':
       return [-1, 1].flatMap((side) =>
-        many(8, (i) => rod(side * 4.5, spread(8, 24, i), between(-12, 12), 7, 4)),
+        many(8, (i) => rod(side * 7, spread(8, 24, i), between(-12, 12), 7, 4)),
       );
     case 'sau-1':
       return [-1, 1].flatMap((side) =>

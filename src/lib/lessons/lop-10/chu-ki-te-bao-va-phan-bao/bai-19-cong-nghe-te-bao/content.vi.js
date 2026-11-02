@@ -96,8 +96,8 @@ export default {
           type: 'list',
           items: [
             'Nhân bản vô tính: tạo ra các cá thể giống hệt nhau về kiểu gene mà không qua sinh sản hữu tính. Nổi bật là cừu Dolly (1996). Công nghệ này còn giúp tăng số lượng cá thể của các loài có nguy cơ tuyệt chủng.',
-            'Liệu pháp tế bào gốc: truyền tế bào gốc đã nuôi cấy vào cơ thể người bệnh để thay thế tế bào bệnh. Ưu tiên dùng tế bào gốc trưởng thành để tránh vấn đề đạo đức. Được kì vọng hỗ trợ điều trị Parkinson, tiểu đường type 1, tổn thương tim và thần kinh.',
-            'Liệu pháp gene: thay gene bệnh bằng gene lành. Tế bào được nuôi trong ống nghiệm, chỉnh sửa gene, sàng lọc, nhân lên rồi truyền lại cho người bệnh.',
+            'Liệu pháp tế bào gốc: truyền tế bào gốc đã nuôi cấy vào cơ thể người bệnh để thay thế tế bào bệnh, với ít nguy cơ cơ thể thải loại tế bào ghép. Ưu tiên dùng tế bào gốc trưởng thành để tránh vấn đề đạo đức. Được kì vọng hỗ trợ điều trị Parkinson, tiểu đường type 1, tổn thương tim và thần kinh.',
+            'Liệu pháp gene: thay gene bệnh bằng gene lành. Tế bào được nuôi trong ống nghiệm, chỉnh sửa gene, sàng lọc, nhân lên rồi truyền lại cho người bệnh. Cách này chỉ dùng được với bệnh do hỏng một gene nhất định và tế bào bệnh phải liên tục phân chia.',
             'Công nghệ tế bào còn mở ra hướng nghiên cứu thịt nhân tạo và sản xuất protein chữa bệnh.',
           ],
         },

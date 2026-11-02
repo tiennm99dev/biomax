@@ -99,10 +99,10 @@ export const SOURCES = [
   },
   {
     id: 'da-biet-hoa',
-    name: 'Tế bào thần kinh trưởng thành',
+    name: 'Tế bào da đã sừng hoá',
     kind: 'Tế bào đã biệt hoá',
     reach: [],
-    text: 'Tế bào động vật đã biệt hoá không còn khả năng phân chia để tạo thành các loại tế bào khác.',
+    text: 'Tế bào động vật đã biệt hoá hoàn toàn không còn khả năng phân chia để tạo thành các loại tế bào khác.',
   },
 ];
 
@@ -112,12 +112,4 @@ export const SOURCES = [
  */
 export function canBecome(sourceId, targetId) {
   return SOURCES.find((s) => s.id === sourceId)?.reach.includes(targetId) ?? false;
-}
-
-/**
- * The learner's guess about one target, marked.
- * @param {string} sourceId @param {string} targetId @param {boolean} guess
- */
-export function markGuess(sourceId, targetId, guess) {
-  return canBecome(sourceId, targetId) === guess;
 }
