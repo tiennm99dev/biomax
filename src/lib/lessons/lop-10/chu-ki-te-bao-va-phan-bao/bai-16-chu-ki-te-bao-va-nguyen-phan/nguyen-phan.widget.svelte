@@ -1,7 +1,7 @@
 <script>
   import SegmentedControl from '#lib/core/segmented-control.svelte';
-  import PhasePlayer from '../_shared/phase-player.svelte';
-  import { mitosisFrames } from '../_shared/frames.js';
+  import PhasePlayer from '#lib/domain/phase-player.svelte';
+  import { mitosisFrames } from '#lib/domain/frames.js';
 
   const options = [
     { value: 'animal', label: 'Tế bào động vật' },

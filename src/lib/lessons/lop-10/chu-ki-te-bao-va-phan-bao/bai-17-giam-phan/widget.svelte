@@ -1,8 +1,8 @@
 <script>
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import SegmentedControl from '#lib/core/segmented-control.svelte';
-  import PhasePlayer from '../_shared/phase-player.svelte';
-  import { BLUE, distinctTypes, gametesOf, meiosisFrames } from '../_shared/frames.js';
+  import PhasePlayer from '#lib/domain/phase-player.svelte';
+  import { BLUE, distinctTypes, gametesOf, meiosisFrames } from '#lib/domain/frames.js';
 
   const crossOptions = [
     { value: 'yes', label: 'Có trao đổi chéo' },
