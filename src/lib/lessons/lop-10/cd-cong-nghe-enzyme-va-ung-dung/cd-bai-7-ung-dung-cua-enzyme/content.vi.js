@@ -50,6 +50,7 @@ export default {
           head: ['Mục đích', 'Enzyme', 'Vai trò'],
           rows: [
             ['Chẩn đoán', 'Enzyme đo glucose máu', 'Giúp phát hiện và theo dõi bệnh tiểu đường'],
+            ['Chẩn đoán', 'Enzyme đo acid uric máu', 'Giúp phát hiện và theo dõi bệnh gout'],
             ['Điều trị', 'Enzyme tiêu hoá', 'Bổ sung cho người thiếu enzyme, hỗ trợ tiêu hoá'],
             ['Điều trị', 'Bromelain', 'Giảm đau, giảm viêm sau phẫu thuật, khi viêm khớp'],
             ['Điều trị', 'Trypsin, chymotrypsin', 'Chống viêm, giúp vết thương mau lành'],

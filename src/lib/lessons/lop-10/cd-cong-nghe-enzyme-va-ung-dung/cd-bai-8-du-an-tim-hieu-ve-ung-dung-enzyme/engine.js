@@ -13,7 +13,7 @@ export const CLEAR_GAP = 1;
 
 /** @type {Array<{ id: string, name: string, substance: string, enzyme: string }>} */
 export const STAINS = [
-  { id: 'trung', name: 'Lòng đỏ trứng', substance: 'protein', enzyme: 'protease' },
+  { id: 'trung', name: 'Lòng trắng trứng', substance: 'protein', enzyme: 'protease' },
   { id: 'com', name: 'Hồ cơm', substance: 'tinh bột', enzyme: 'amylase' },
   { id: 'dau', name: 'Dầu ăn', substance: 'lipid', enzyme: 'lipase' },
 ];

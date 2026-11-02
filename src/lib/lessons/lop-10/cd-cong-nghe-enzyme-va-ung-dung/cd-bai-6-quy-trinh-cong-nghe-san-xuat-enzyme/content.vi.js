@@ -29,12 +29,9 @@ export default {
             ],
             [
               'Tách chiết enzyme',
-              'Phá vỡ tế bào (nếu enzyme nội bào), thu dịch, ly tâm hoặc lọc, kết tủa enzyme',
+              'Phá vỡ tế bào (nếu enzyme nội bào), thu dịch, ly tâm hoặc lọc, kết tủa enzyme, thẩm tích nếu còn tạp chất',
             ],
-            [
-              'Tạo chế phẩm',
-              'Tinh sạch (thẩm tích), cô đặc, tạo dạng lỏng, dạng bột hoặc viên, đóng gói và bảo quản',
-            ],
+            ['Tạo chế phẩm', 'Cô đặc, tạo dạng lỏng, dạng bột hoặc viên, đóng gói và bảo quản'],
           ],
         },
         {

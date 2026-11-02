@@ -39,6 +39,14 @@ describe('the production line', () => {
   });
 });
 
+describe('the stages of the line', () => {
+  it('counts dialysis as part of extraction on every route', () => {
+    const steps = ROUTES.flatMap((r) => r.steps).filter((s) => s.id === 'tham-tich');
+    expect(steps.length).toBeGreaterThan(0);
+    expect(steps.filter((s) => s.stage !== 'tach')).toEqual([]);
+  });
+});
+
 describe('the batch', () => {
   it('keeps all the activity only when worked cold', () => {
     expect(keptShare(3)).toBe(100);

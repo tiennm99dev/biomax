@@ -78,7 +78,7 @@ export default {
       blocks: [
         {
           type: 'p',
-          text: 'Hầu hết enzyme là protein. Mỗi enzyme có trung tâm hoạt động với cấu hình không gian phù hợp với cơ chất. Một số enzyme còn có trung tâm điều hoà (enzyme dị lập thể): khi chất điều hoà gắn vào đây, hình dạng trung tâm hoạt động thay đổi, làm enzyme được hoạt hoá hoặc bị ức chế.',
+          text: 'Hầu hết enzyme là protein. Mỗi enzyme có trung tâm hoạt động với cấu hình không gian phù hợp với cơ chất. Một số enzyme (enzyme dị lập thể) còn có trung tâm điều hoà, còn gọi là vị trí dị lập thể: khi chất điều hoà gắn vào đây, hình dạng trung tâm hoạt động thay đổi, làm enzyme được hoạt hoá hoặc bị ức chế.',
         },
         {
           type: 'table',

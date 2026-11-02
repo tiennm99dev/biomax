@@ -78,7 +78,7 @@ export const ROUTES = [
         id: 'tham-tich',
         text: 'Hoà tan tủa, thẩm tích để loại tạp chất',
         product: 'enzyme đã tinh sạch',
-        stage: 'che-pham',
+        stage: 'tach',
         result: 'Các phân tử nhỏ qua màng thẩm tích, enzyme ở lại.',
       },
       {
@@ -185,7 +185,7 @@ export const ROUTES = [
         id: 'tham-tich',
         text: 'Thẩm tích để loại tạp chất',
         product: 'enzyme đã tinh sạch',
-        stage: 'che-pham',
+        stage: 'tach',
         result: 'Tạp chất phân tử nhỏ đi qua màng, enzyme ở lại.',
       },
       {
@@ -249,7 +249,7 @@ export const ROUTES = [
         id: 'tham-tich',
         text: 'Thẩm tích để loại tạp chất',
         product: 'enzyme đã tinh sạch',
-        stage: 'che-pham',
+        stage: 'tach',
         result: 'Enzyme được tinh sạch. Sản phẩm tái tổ hợp cần kiểm soát chất lượng chặt chẽ.',
       },
       {

@@ -134,10 +134,10 @@ export function verdict(enzyme, temp, ph, ruined) {
       text: `Gần tối ưu: ${enzyme.name} đạt ${percentText(value)} hoạt tính cao nhất. Trong sản xuất, người ta giữ điều kiện quanh mức này.`,
     };
   }
-  if (phFactor(enzyme, ph) < 0.5) {
+  if (phFactor(enzyme, ph) <= tempFactor(enzyme, temp)) {
     return {
       tone: 'info',
-      text: `pH lệch xa mức tối ưu của ${enzyme.name}, trung tâm hoạt động khó khớp với cơ chất, nên hoạt tính chỉ còn ${percentText(value)}.`,
+      text: `pH lệch khỏi mức tối ưu của ${enzyme.name}, trung tâm hoạt động khó khớp với cơ chất, nên hoạt tính chỉ còn ${percentText(value)}.`,
     };
   }
   if (temp < enzyme.bestTemp) {

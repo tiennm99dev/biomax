@@ -86,6 +86,12 @@ describe('the live explanation', () => {
     expect(verdict(e, 55, 6.8, false).text).toContain('bị phá vỡ');
   });
 
+  it('blames pH, not the heat, when the temperature is at its best', () => {
+    const text = verdict(enzyme('amylase'), 37, 6, false).text;
+    expect(text).toContain('pH lệch');
+    expect(text).not.toContain('bị phá vỡ');
+  });
+
   it('writes a share as a whole percentage', () => {
     expect(percentText(0.5)).toBe('50%');
   });

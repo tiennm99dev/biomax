@@ -1,4 +1,5 @@
 <script>
+  import { tick } from 'svelte';
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import { formatNumber } from '#lib/core/number-format.js';
   import SegmentedControl from '#lib/core/segmented-control.svelte';
@@ -37,6 +38,8 @@
   let temp = $state(25);
   let ph = $state(7);
   let ruined = $state(false);
+  /** @type {HTMLDivElement | undefined} */
+  let sliders = $state();
 
   const enzyme = $derived(ENZYMES.find((e) => e.id === enzymeId) ?? ENZYMES[0]);
   const value = $derived(activity(enzyme, temp, ph, ruined));
@@ -71,10 +74,13 @@
     settle();
   }
 
-  function freshEnzyme() {
+  // The button goes away with the ruined state, so focus moves to the sliders.
+  async function freshEnzyme() {
     ruined = false;
     temp = Math.min(temp, enzyme.ruinTemp - 1);
     ph = Math.min(Math.max(ph, enzyme.minPh), enzyme.maxPh);
+    await tick();
+    sliders?.querySelector('input')?.focus();
   }
 </script>
 
@@ -85,7 +91,7 @@
     tối ưu khoảng {formatNumber(enzyme.bestPh, 1)}.
   </p>
 
-  <div class="grid gap-3 sm:grid-cols-2">
+  <div class="grid gap-3 sm:grid-cols-2" bind:this={sliders}>
     <SliderField
       label="Nhiệt độ"
       bind:value={temp}

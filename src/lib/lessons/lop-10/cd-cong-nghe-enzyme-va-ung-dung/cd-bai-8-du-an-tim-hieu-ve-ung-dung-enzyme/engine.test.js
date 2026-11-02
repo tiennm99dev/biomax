@@ -82,7 +82,7 @@ describe('the proposal and the report', () => {
     });
     expect(text).toContain('Chuẩn bị vải và vết bẩn: An');
     expect(text).toContain('Làm thí nghiệm, ghi số liệu: chưa phân công');
-    expect(text).toContain('Lòng đỏ trứng: có enzyme 4,33, không có enzyme 2,33');
+    expect(text).toContain('Lòng trắng trứng: có enzyme 4,33, không có enzyme 2,33');
     expect(text).toContain('Đề xuất ứng dụng: Dùng protease để giặt');
   });
 });

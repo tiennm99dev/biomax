@@ -1,4 +1,5 @@
 <script>
+  import { tick } from 'svelte';
   import { shuffled } from '#lib/core/card-sorter.js';
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import { formatNumber } from '#lib/core/number-format.js';
@@ -31,6 +32,10 @@
   let lastOk = $state(true);
   let slips = $state(0);
   let workTemp = $state(25);
+  /** @type {HTMLUListElement | undefined} */
+  let cardList = $state();
+  /** @type {HTMLDivElement | undefined} */
+  let batchBox = $state();
 
   const route = $derived(ROUTES.find((r) => r.id === routeId) ?? ROUTES[0]);
   const cards = $derived(
@@ -48,13 +53,25 @@
     })),
   );
 
-  /** @param {string} id */
-  function run(id) {
+  /**
+   * A finished step's button leaves the list, so focus moves to the card that
+   * takes its place, or to the temperature slider once the line is done.
+   * @param {string} id
+   */
+  async function run(id) {
+    const at = cards.findIndex((c) => c.id === id);
     const out = attempt(route, done, id);
     done = out.done;
     message = out.text;
     lastOk = out.ok;
-    if (!out.ok) slips += 1;
+    if (!out.ok) {
+      slips += 1;
+      return;
+    }
+    await tick();
+    const left = cardList?.querySelectorAll('button');
+    const next = left?.[Math.min(at, left.length - 1)] ?? batchBox?.querySelector('input');
+    next?.focus();
   }
 
   function restart() {
@@ -111,7 +128,7 @@
   <FeedbackNote tone={lastOk ? 'info' : 'warn'} text={message} />
 
   {#if !finished}
-    <ul class="grid gap-2" aria-label="Các công đoạn chưa làm">
+    <ul bind:this={cardList} class="grid gap-2" aria-label="Các công đoạn chưa làm">
       {#each cards as card (card.id)}
         <li>
           <button
@@ -125,7 +142,7 @@
       {/each}
     </ul>
   {:else}
-    <div class="space-y-3 rounded-xl bg-slate-50 p-3">
+    <div bind:this={batchBox} class="space-y-3 rounded-xl bg-slate-50 p-3">
       <SliderField
         label="Nhiệt độ khi tách chiết"
         bind:value={workTemp}

@@ -51,7 +51,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Chuẩn bị: vải cotton trắng cắt thành các mảnh bằng nhau, lòng đỏ trứng, hồ cơm, dầu ăn, bột giặt có ghi enzyme trên nhãn, bột giặt không có enzyme (nếu không có, nhờ giáo viên đun sôi dung dịch bột giặt có enzyme rồi để nguội để làm biến tính enzyme), cốc, cân, nhiệt kế, găng tay.',
+          text: 'Chuẩn bị: vải cotton trắng cắt thành các mảnh bằng nhau, lòng trắng trứng, hồ cơm, dầu ăn, bột giặt có ghi enzyme trên nhãn, bột giặt không có enzyme (nếu không có, nhờ giáo viên đun sôi dung dịch bột giặt có enzyme rồi để nguội để làm biến tính enzyme), cốc, cân, nhiệt kế, găng tay.',
         },
         {
           type: 'list',
@@ -61,7 +61,7 @@ export default {
             'Tạo vết bẩn: nhỏ cùng một lượng mỗi loại lên từng mảnh vải, để khô cùng thời gian. Mỗi loại vết bẩn có $3$ mảnh cho mỗi nhóm dung dịch, cùng $1$ mảnh để so sánh màu ban đầu.',
             'Pha dung dịch: hai dung dịch cùng nồng độ và thể tích, trong nước ấm khoảng $30$-$40\\,^\\circ\\mathrm{C}$.',
             'Ngâm vải khoảng $30$ phút, giũ theo cùng một cách, phơi khô.',
-            'Chấm độ sạch từ $0$ đến $5$. Người chấm không biết mảnh nào thuộc nhóm nào, để kết quả khách quan.',
+            'Chấm độ sạch từ $0$ đến $5$ dưới cùng một nguồn sáng. Người chấm không biết mảnh nào thuộc nhóm nào, để kết quả khách quan.',
             'Tính điểm trung bình, lập bảng và vẽ biểu đồ so sánh; đối chiếu với kiến thức về cơ chất của từng enzyme.',
             'Đề xuất một ứng dụng đơn giản, báo cáo trước lớp và trả lời câu hỏi phản biện.',
           ],
@@ -106,12 +106,12 @@ export default {
   examples: [
     {
       problem:
-        'Với vết lòng đỏ trứng, ba mảnh vải giặt bằng bột giặt có enzyme được chấm $4$, $5$, $4$ điểm; ba mảnh giặt bằng bột giặt không có enzyme được chấm $2$, $2$, $3$ điểm. Tính điểm trung bình của mỗi nhóm, độ chênh lệch và nêu kết luận.',
+        'Với vết lòng trắng trứng, ba mảnh vải giặt bằng bột giặt có enzyme được chấm $4$, $5$, $4$ điểm; ba mảnh giặt bằng bột giặt không có enzyme được chấm $2$, $2$, $3$ điểm. Tính điểm trung bình của mỗi nhóm, độ chênh lệch và nêu kết luận.',
       steps: [
         'Có enzyme: $\\dfrac{4 + 5 + 4}{3} = \\dfrac{13}{3} \\approx 4{,}33$ điểm.',
         'Không có enzyme: $\\dfrac{2 + 2 + 3}{3} = \\dfrac{7}{3} \\approx 2{,}33$ điểm.',
         'Chênh lệch: $\\dfrac{13}{3} - \\dfrac{7}{3} = 2$ điểm.',
-        'Lòng đỏ trứng giàu protein; protease phân giải protein thành các đoạn nhỏ dễ hoà tan vào nước.',
+        'Lòng trắng trứng giàu protein; protease phân giải protein thành các đoạn nhỏ dễ hoà tan vào nước.',
       ],
       answer:
         'Hai nhóm đạt khoảng $4{,}33$ và $2{,}33$ điểm, chênh lệch $2$ điểm: bột giặt có enzyme tẩy vết này tốt hơn rõ rệt, phù hợp với vai trò của protease.',
@@ -147,7 +147,7 @@ export default {
     {
       type: 'match',
       prompt: 'Nối mỗi vết bẩn với enzyme phân giải thành phần chính của nó.',
-      left: ['Lòng đỏ trứng, sữa (giàu protein)', 'Hồ cơm (tinh bột)', 'Dầu ăn (lipid)'],
+      left: ['Lòng trắng trứng, sữa (giàu protein)', 'Hồ cơm (tinh bột)', 'Dầu ăn (lipid)'],
       right: ['Protease', 'Amylase', 'Lipase'],
       pairs: [
         [0, 0],
