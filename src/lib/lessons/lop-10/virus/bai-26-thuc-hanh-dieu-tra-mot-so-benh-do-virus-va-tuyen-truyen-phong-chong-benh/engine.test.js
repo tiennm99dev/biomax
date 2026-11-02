@@ -7,6 +7,7 @@ import {
   countsFit,
   percentText,
   questionsFor,
+  readCount,
   readResult,
   reviewForm,
   reviewNote,
@@ -71,6 +72,15 @@ describe('the form review', () => {
 });
 
 describe('the tally', () => {
+  it('reads a typed count as a whole number within the forms', () => {
+    expect(readCount('34', 40)).toBe(34);
+    expect(readCount('55', 40)).toBe(40);
+    expect(readCount('-3', 40)).toBe(0);
+    expect(readCount('7.9', 40)).toBe(7);
+    expect(readCount('', 40)).toBe(0);
+    expect(readCount('e', 40)).toBe(0);
+  });
+
   it('writes percentages with a decimal comma', () => {
     expect(percentText(1, 3)).toBe('33,3%');
     expect(percentText(10, 40)).toBe('25%');
@@ -88,7 +98,7 @@ describe('the tally', () => {
     const read = readResult(question('duong-lay'), [32, 20, 8], 40);
     expect(read.text).toContain('"Giọt dịch khi ho, hắt hơi": 32/40 phiếu, chiếm 80%');
     expect(read.text).toContain('20% phiếu hiểu sai');
-    expect(read.text).toContain('Muỗi đốt');
+    expect(read.text).toContain('chọn đường lây "Muỗi đốt"');
   });
 
   it('does not flag anything when nobody holds the false belief', () => {

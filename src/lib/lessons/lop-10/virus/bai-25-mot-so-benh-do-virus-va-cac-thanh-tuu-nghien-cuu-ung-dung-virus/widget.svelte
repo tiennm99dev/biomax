@@ -108,7 +108,7 @@
   <dl class="grid grid-cols-3 gap-2 text-center text-sm">
     <div class="rounded-xl bg-slate-100 p-2">
       <dt class="text-slate-600">Mỗi ca lây cho</dt>
-      <dd class="font-bold text-slate-900">{formatNumber(outbreak.re, 2)} người</dd>
+      <dd class="font-bold text-slate-900">{formatNumber(outbreak.re, 3)} người</dd>
     </div>
     <div class="rounded-xl bg-slate-100 p-2">
       <dt class="text-slate-600">Đỉnh dịch</dt>

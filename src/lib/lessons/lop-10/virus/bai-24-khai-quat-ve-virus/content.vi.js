@@ -66,7 +66,7 @@ export default {
         { type: 'widget', name: 'cau-tao' },
         {
           type: 'p',
-          text: 'Dựa vào vật chất di truyền, virus được chia thành virus DNA và virus RNA. Virus RNA thường mang theo một số enzyme mà tế bào chủ không có, như enzyme phiên mã ngược (ở HIV), enzyme giúp tích hợp gene của virus vào hệ gene của tế bào chủ.',
+          text: 'Dựa vào vật chất di truyền, virus được chia thành virus DNA và virus RNA. Virus RNA thường mang theo một số enzyme mà tế bào chủ không có, như enzyme phiên mã ngược (ở HIV), enzyme giúp tích hợp gene của virus vào hệ gene của tế bào chủ, enzyme giúp lắp ráp và giải phóng virus khỏi tế bào.',
         },
       ],
     },
@@ -92,7 +92,7 @@ export default {
             ],
             [
               '3. Tổng hợp',
-              'Nhân bản vật chất di truyền và tổng hợp protein của virus nhờ enzyme, nguyên liệu và năng lượng của tế bào chủ. Một số virus RNA mang enzyme phiên mã ngược để tạo DNA trước, rồi từ DNA phiên mã thành RNA.',
+              'Nhân bản vật chất di truyền và tổng hợp protein của virus nhờ enzyme, nguyên liệu và năng lượng của tế bào chủ. Virus DNA dùng enzyme của tế bào chủ để phiên mã, dịch mã. Một số virus RNA dịch mã trực tiếp; số khác mang enzyme phiên mã ngược để tạo DNA trước, rồi từ DNA phiên mã thành RNA.',
             ],
             [
               '4. Lắp ráp',
@@ -218,6 +218,20 @@ export default {
       hints: ['Vỏ ngoài chỉ có ở một số virus, và gai glycoprotein nằm trên đó.'],
       solution:
         'Mọi virus đều có lõi nucleic acid và vỏ protein. Vỏ ngoài với gai glycoprotein chỉ có ở một số virus, còn virus không có ribosome.',
+    },
+    {
+      type: 'choice',
+      prompt: 'Người ta chia virus thành virus DNA và virus RNA dựa vào đặc điểm nào?',
+      options: [
+        'Loại vật chất di truyền trong lõi',
+        'Có hay không có vỏ ngoài',
+        'Hình dạng của vỏ capsid',
+        'Loại sinh vật mà virus kí sinh',
+      ],
+      answer: 0,
+      hints: ['Hai tên gọi này chính là tên của hai loại nucleic acid.'],
+      solution:
+        'Lõi của virus chứa DNA hoặc RNA, nên vật chất di truyền là căn cứ để chia thành virus DNA và virus RNA.',
     },
     {
       type: 'match',

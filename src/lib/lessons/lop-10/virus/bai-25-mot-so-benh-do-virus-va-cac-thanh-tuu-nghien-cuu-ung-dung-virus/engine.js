@@ -75,6 +75,12 @@ export function simulate(measures) {
  */
 export function verdict(outbreak, untouched) {
   const saved = Math.floor((1 - outbreak.total / untouched.total) * 100);
+  if (Math.abs(outbreak.re - 1) < 1e-9) {
+    return {
+      tone: 'info',
+      text: `Mỗi ca bệnh lây cho đúng 1 người, nên số ca không tăng lên nhưng dịch còn âm ỉ. Số ca giảm ${saved}% so với khi không phòng bệnh. Hãy tăng thêm biện pháp để đưa con số này xuống dưới 1.`,
+    };
+  }
   if (outbreak.re < 1) {
     return {
       tone: 'ok',

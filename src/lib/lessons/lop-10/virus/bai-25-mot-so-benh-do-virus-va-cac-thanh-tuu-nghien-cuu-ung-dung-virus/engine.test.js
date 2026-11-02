@@ -74,6 +74,17 @@ describe('the verdict', () => {
   });
 });
 
+describe('the verdict at exactly one new case per case', () => {
+  it('claims neither that the outbreak spreads nor that it dies out', () => {
+    const text = verdict(
+      simulate({ r0: 2, vaccinated: 0, masked: 1 }),
+      simulate({ r0: 2, vaccinated: 0, masked: 0 }),
+    ).text;
+    expect(text).toContain('đúng 1 người');
+    expect(text).not.toContain('hơn 1 người');
+  });
+});
+
 describe('the prevention cards', () => {
   it('fills every disease bin with three different cards', () => {
     const sizes = PREVENTION_BINS.map((b) => PREVENTION_CARDS.filter((c) => c.bin === b.id).length);

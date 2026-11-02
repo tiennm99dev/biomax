@@ -1,5 +1,5 @@
 <script>
-  import { onDestroy } from 'svelte';
+  import { onDestroy, tick } from 'svelte';
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import SegmentedControl from '#lib/core/segmented-control.svelte';
   import { frameLoop, reducedMotion } from '#lib/core/motion.js';
@@ -29,6 +29,10 @@
 
   /** @type {(() => void) | null} */
   let stopLoop = null;
+  /** @type {HTMLElement | undefined} */
+  let picks = $state();
+  /** @type {HTMLElement | undefined} */
+  let replay = $state();
 
   const kind = $derived(/** @type {VirusKind} */ (kindValue));
   const mixed = $derived(mixedStages(seed));
@@ -84,6 +88,12 @@
     });
   }
 
+  /** A used control leaves the page, so keyboard focus moves to the next one. */
+  async function focusNextControl() {
+    await tick();
+    (finished ? replay : picks?.querySelector('button'))?.focus();
+  }
+
   /** @param {string} id */
   function pick(id) {
     if (isNext(done, id)) {
@@ -91,6 +101,7 @@
       clue = '';
       done += 1;
       play(done - 1);
+      focusNextControl();
     } else {
       wrongId = id;
       clue = clueFor(done);
@@ -130,6 +141,7 @@
     progress = 0;
     wrongId = null;
     clue = '';
+    focusNextControl();
   }
 
   /** @param {string | number} value */
@@ -320,7 +332,12 @@
   </ol>
 
   {#if !finished}
-    <div class="flex flex-wrap gap-2" role="group" aria-label="Chọn giai đoạn tiếp theo">
+    <div
+      bind:this={picks}
+      class="flex flex-wrap gap-2"
+      role="group"
+      aria-label="Chọn giai đoạn tiếp theo"
+    >
       {#each pool as s (s.id)}
         <button
           type="button"
@@ -340,7 +357,13 @@
 
   {#if finished}
     <div class="flex flex-wrap gap-2">
-      <button type="button" class={button.primary} disabled={playingAll} onclick={replayAll}>
+      <button
+        bind:this={replay}
+        type="button"
+        class={button.primary}
+        disabled={playingAll}
+        onclick={replayAll}
+      >
         Xem lại cả chu trình
       </button>
       <button type="button" class={button.quiet} onclick={restart}>Xếp lại</button>

@@ -56,7 +56,7 @@ export default {
             [
               'Vật chủ',
               'Người',
-              'Người, gà, ngan, vịt, chim, lợn. Loại A là tác nhân chủ yếu gây dịch cúm ở người',
+              'Người, gà, ngan, vịt, chim, lợn. Có ba loại A, B, C; loại A là tác nhân chủ yếu gây dịch cúm ở người',
             ],
             [
               'Đường lây',

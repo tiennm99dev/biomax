@@ -235,6 +235,15 @@ export const percentText = (count, forms) =>
   forms > 0 ? `${formatNumber((count / forms) * 100, 1)}%` : '0%';
 
 /**
+ * A typed count as a whole number from 0 to `max`; anything unreadable is 0.
+ * @param {string} text @param {number} max
+ */
+export function readCount(text, max) {
+  const value = Math.trunc(Number(text));
+  return Number.isFinite(value) ? Math.min(max, Math.max(0, value)) : 0;
+}
+
+/**
  * Whether the counts can come from this many forms. A single-choice question
  * must add up to the forms exactly; a multiple-choice one may go beyond.
  * @param {Question} question @param {number[]} counts @param {number} forms
@@ -271,7 +280,7 @@ export function readResult(question, counts, forms) {
   if (wrong) {
     return {
       tone: 'info',
-      text: `${lead} Có ${percentText(wrong.count, forms)} phiếu hiểu sai rằng bệnh lây qua "${wrong.o.text}", đây là điều tờ rơi cần đính chính.`,
+      text: `${lead} Có ${percentText(wrong.count, forms)} phiếu hiểu sai khi chọn đường lây "${wrong.o.text}", đây là điều tờ rơi cần đính chính.`,
     };
   }
   return { tone: 'ok', text: lead };

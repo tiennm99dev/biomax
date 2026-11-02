@@ -1,13 +1,13 @@
 <script>
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import SegmentedControl from '#lib/core/segmented-control.svelte';
-  import Stepper from '#lib/core/stepper.svelte';
-  import { button, focusRing } from '#lib/core/ui.js';
+  import { button, focusRing, textInput } from '#lib/core/ui.js';
   import {
     BAD_QUESTIONS,
     TOPICS,
     percentText,
     questionsFor,
+    readCount,
     readResult,
     reviewForm,
     reviewNote,
@@ -50,7 +50,12 @@
   const note = $derived(reviewNote(review));
   const asked = $derived(questions.filter((q) => chosen.includes(q.id)));
   const current = $derived(asked.find((q) => q.id === openId) ?? asked[0] ?? null);
-  const counts = $derived(current ? (tally[current.id] ?? current.options.map(() => 0)) : []);
+  /** Counts stay stored when the forms drop, so retyping the forms keeps the tally. */
+  const counts = $derived(
+    current
+      ? (tally[current.id] ?? current.options.map(() => 0)).map((c) => Math.min(c, forms))
+      : [],
+  );
   const reading = $derived(
     current
       ? readResult(current, counts, forms)
@@ -77,14 +82,6 @@
     tally = { ...tally, [current.id]: next };
   }
 
-  /** @param {number} value */
-  function setForms(value) {
-    forms = value;
-    tally = Object.fromEntries(
-      Object.entries(tally).map(([id, list]) => [id, list.map((c) => Math.min(c, value))]),
-    );
-  }
-
   function fillSample() {
     tally = Object.fromEntries(asked.map((q) => [q.id, sampleCounts(q, forms)]));
   }
@@ -93,6 +90,31 @@
     tally = {};
   }
 </script>
+
+{#snippet countField(
+  /** @type {string} */ label,
+  /** @type {number} */ value,
+  /** @type {number} */ max,
+  /** @type {(v: number) => void} */ set,
+)}
+  <label
+    class="flex flex-wrap items-center justify-between gap-2 text-sm font-semibold text-slate-700"
+  >
+    <span class="min-w-0">{label}</span>
+    <span class="w-24 shrink-0">
+      <input
+        type="number"
+        inputmode="numeric"
+        min="0"
+        {max}
+        class={textInput}
+        {value}
+        oninput={(e) => set(readCount(e.currentTarget.value, max))}
+        onblur={(e) => (e.currentTarget.value = String(readCount(e.currentTarget.value, max)))}
+      />
+    </span>
+  </label>
+{/snippet}
 
 <div class="space-y-3">
   <SegmentedControl label="Bước" options={stepOptions} bind:value={step} />
@@ -157,13 +179,7 @@
     />
   {:else}
     <div class="flex flex-wrap items-end gap-3">
-      <Stepper
-        label="Số phiếu thu được"
-        bind:value={forms}
-        min={0}
-        max={MAX_FORMS}
-        onchange={setForms}
-      />
+      {@render countField('Số phiếu thu được', forms, MAX_FORMS, (v) => (forms = v))}
       <button type="button" class={button.quiet} onclick={fillSample}>Điền số liệu mẫu</button>
       <button type="button" class={button.quiet} onclick={clearTally}>Xoá số liệu</button>
     </div>
@@ -184,13 +200,7 @@
     <ul class="space-y-3" aria-label="Kết quả của câu hỏi">
       {#each current.options as o, i (o.text)}
         <li class="rounded-xl bg-slate-50 p-3">
-          <Stepper
-            label={o.text}
-            value={counts[i]}
-            min={0}
-            max={forms}
-            onchange={(v) => setCount(i, v)}
-          />
+          {@render countField(o.text, counts[i], forms, (v) => setCount(i, v))}
           <div class="mt-2 flex items-center gap-2">
             <div class="h-4 min-w-0 flex-1 rounded bg-slate-200" aria-hidden="true">
               <div
