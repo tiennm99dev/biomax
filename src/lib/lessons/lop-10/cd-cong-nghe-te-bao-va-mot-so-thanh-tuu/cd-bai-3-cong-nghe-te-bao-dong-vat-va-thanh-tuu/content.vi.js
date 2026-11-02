@@ -62,7 +62,7 @@ export default {
           type: 'callout',
           tone: 'note',
           title: 'Vì sao tỉ lệ thành công thấp?',
-          text: 'Trong nhân tế bào đã chuyên hoá, nhiều gene bị khoá nhờ gắn nhóm methyl ($-CH_3$) vào cytosine. Muốn phôi phát triển bình thường, hệ gene phải được tái lập trình hoàn toàn. Quá trình này thường chưa trọn vẹn, nên nhiều phôi phát triển bất thường. Dolly cũng chỉ sống khoảng $6{,}5$ năm, ít hơn tuổi thọ thường thấy ở cừu.',
+          text: 'Trong nhân tế bào đã chuyên hoá, nhiều gene bị khoá nhờ gắn nhóm methyl ($-\\text{CH}_3$) vào cytosine. Muốn phôi phát triển bình thường, hệ gene phải được tái lập trình hoàn toàn. Quá trình này thường chưa trọn vẹn, nên nhiều phôi phát triển bất thường. Dolly chỉ sống khoảng $6{,}5$ năm, ít hơn tuổi thọ thường thấy ở cừu, và chết vì bệnh phổi do virus; chưa có bằng chứng chắc chắn rằng việc nhân bản đã làm Dolly chết sớm.',
         },
         {
           type: 'p',
@@ -77,15 +77,19 @@ export default {
           type: 'callout',
           tone: 'definition',
           title: 'Liệu pháp tế bào gốc',
-          text: 'Liệu pháp tế bào gốc là nuôi cấy tế bào gốc ngoài cơ thể, rồi truyền vào người bệnh để thay thế tế bào bị hỏng. Nguồn tế bào: tế bào gốc phôi, tế bào gốc trưởng thành, tế bào gốc cảm ứng.',
+          text: 'Liệu pháp tế bào gốc là nuôi cấy tế bào gốc ngoài cơ thể, rồi truyền vào người bệnh để thay thế tế bào bị hỏng. Nguồn tế bào: tế bào gốc phôi (từ phôi thụ tinh trong ống nghiệm khoảng $6$ ngày tuổi), tế bào gốc từ thai bị sảy, tế bào gốc trưởng thành, tế bào gốc cảm ứng.',
         },
         {
           type: 'table',
           caption: 'Hai nguồn tế bào khi truyền cho người bệnh',
-          head: ['Nguồn', 'Lấy từ', 'Nguy cơ đào thải'],
+          head: ['Nguồn', 'Lấy từ', 'Đặc điểm'],
           rows: [
             ['Tự thân', 'Chính người bệnh', 'Không gây đào thải'],
-            ['Đồng loại', 'Người hiến phù hợp', 'Có nguy cơ, cần thuốc ức chế miễn dịch'],
+            [
+              'Đồng loại',
+              'Người hiến phù hợp',
+              'Có nguy cơ đào thải, cần thuốc ức chế miễn dịch; tế bào ghép còn có thể tấn công tế bào ung thư sót lại',
+            ],
           ],
         },
         {
@@ -99,6 +103,7 @@ export default {
           items: [
             'Liệu pháp tế bào soma: sửa gene ở tế bào cơ thể, gene đã sửa không truyền cho đời sau.',
             'Liệu pháp tế bào mầm sinh dục: sửa gene có thể truyền cho đời sau, nên gây tranh cãi lớn về đạo đức.',
+            'Một số thử nghiệm ở người: sửa gene hỏng trong tế bào tuỷ xương của người bệnh suy giảm miễn dịch; đưa gene CFTR bình thường vào tế bào phổi bằng vector virus để chữa xơ nang; dùng tế bào CAR-T chữa ung thư máu cấp dòng lympho.',
             'Rủi ro: gene có thể gắn sai vị trí và làm bất hoạt gene khác; tác dụng phụ lâu dài chưa được đánh giá đầy đủ. Các công cụ như CRISPR/Cas9 đang giúp sửa gene chính xác hơn.',
           ],
         },

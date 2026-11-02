@@ -2,7 +2,7 @@
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import { fmt } from '#lib/core/number-format.js';
   import SliderField from '#lib/core/slider-field.svelte';
-  import { WEEKS_PER_CYCLE, compareText, shootChain } from './engine.js';
+  import { CUTTINGS_PER_YEAR, WEEKS_PER_CYCLE, compareText, shootChain } from './engine.js';
 
   let factor = $state(3);
   let cycles = $state(6);
@@ -14,7 +14,7 @@
 <div class="space-y-3 rounded-2xl border border-slate-200 bg-white p-4">
   <p class="text-sm font-bold text-slate-900">Một chồi sau nhiều lần cấy chuyền</p>
   <div class="grid gap-3 sm:grid-cols-2">
-    <SliderField label="Số chồi mới từ mỗi chồi" min={2} max={5} bind:value={factor} />
+    <SliderField label="Mỗi chồi được tách thành (chồi)" min={2} max={5} bind:value={factor} />
     <SliderField
       label="Số chu kì ({WEEKS_PER_CYCLE} tuần mỗi chu kì)"
       min={1}
@@ -39,6 +39,6 @@
   <FeedbackNote tone="info" text={compareText(factor, cycles)} />
   <p class="text-xs text-slate-600">
     Các con số là giả định để so sánh: mỗi chu kì {WEEKS_PER_CYCLE} tuần, mọi chồi đều sống, và một cây
-    mẹ cho khoảng 20 cành giâm mỗi năm. Thực tế phụ thuộc vào từng loài.
+    mẹ cho khoảng {CUTTINGS_PER_YEAR} cành giâm mỗi năm. Thực tế phụ thuộc vào từng loài.
   </p>
 </div>

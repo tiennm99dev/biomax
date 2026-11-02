@@ -126,7 +126,7 @@
     {/if}
     {#if has('lay-trung') && !fused}
       <circle
-        cx="300"
+        cx="183"
         cy="168"
         r="26"
         fill="#fef9c3"
@@ -135,9 +135,9 @@
         stroke-dasharray={has('loai-nhan') ? '5 3' : undefined}
       />
       {#if !has('loai-nhan')}
-        <circle cx="300" cy="168" r="9" fill="#ca8a04" />
+        <circle cx="183" cy="168" r="9" fill="#ca8a04" />
       {/if}
-      <text x="300" y="210" text-anchor="middle" font-size="11" fill="#334155">
+      <text x="183" y="210" text-anchor="middle" font-size="11" fill="#334155">
         {has('loai-nhan') ? 'Trứng đã loại nhân' : 'Trứng còn nhân'}
       </text>
     {/if}
@@ -211,7 +211,7 @@
     ondrop={(e) => {
       e.preventDefault();
       const id = e.dataTransfer?.getData('text/plain');
-      if (id) doStep(id);
+      if (STEPS.some((s) => s.id === id)) doStep(/** @type {string} */ (id));
     }}
   >
     Bàn thí nghiệm: thả thẻ vào đây

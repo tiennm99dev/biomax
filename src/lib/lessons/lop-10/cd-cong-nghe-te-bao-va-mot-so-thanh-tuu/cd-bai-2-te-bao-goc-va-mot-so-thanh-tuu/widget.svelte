@@ -60,6 +60,7 @@
     answered = result;
     if (result.ok) score += 1;
     selectedId = question.from;
+    if (question.from === INDUCED) induced = true;
   }
 
   function nextQuestion() {

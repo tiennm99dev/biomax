@@ -66,10 +66,14 @@ export default {
           text: 'Vi nhân giống là nhân giống vô tính cây trồng trong ống nghiệm, bình nuôi cấy từ những mẩu mô rất nhỏ. Từ một mẫu ban đầu có thể tạo ra số lượng rất lớn cây con có kiểu gene giống nhau.',
         },
         {
+          type: 'p',
+          text: 'Nuôi cấy mô có ba khâu lớn: chuẩn bị môi trường (đủ dinh dưỡng, có auxin và cytokinin theo tỉ lệ hợp với từng loài), khử trùng, rồi tái sinh cây. Khi nhân giống, ba khâu đó được chia thành các giai đoạn sau:',
+        },
+        {
           type: 'list',
           ordered: true,
           items: [
-            'Chọn mẫu: lấy mô non (thường là đỉnh chồi) từ cây mẹ khoẻ mạnh, mang đặc tính tốt.',
+            'Chọn mẫu: lấy mô non, sạch bệnh (đỉnh chồi, đỉnh rễ, lá non) từ cây mẹ khoẻ mạnh, mang đặc tính tốt.',
             'Khử trùng: khử trùng bề mặt mẫu, tiệt trùng môi trường và dụng cụ, thao tác trong tủ cấy vô trùng.',
             'Nuôi cấy tạo mô sẹo: đặt mẫu trên môi trường có dinh dưỡng và hormone cân đối, ở nhiệt độ và ánh sáng phù hợp.',
             'Nhân chồi: cấy chuyền sang môi trường có cytokinin trội hơn; tách các chồi và cấy tiếp nhiều lần để nhân số lượng.',
@@ -79,7 +83,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Một số loài có thể tạo chồi trực tiếp từ mẫu, không qua mô sẹo. Điểm mạnh của quy trình nằm ở khâu nhân chồi: mọi chồi mới lại được cấy tiếp, nên số chồi tăng theo cấp số nhân.',
+          text: 'Nhiều loài có thể tạo chồi trực tiếp từ mẫu, không qua mô sẹo; cách này giữ giống tốt hơn, vì tế bào mô sẹo dễ phát sinh biến dị. Điểm mạnh của quy trình nằm ở khâu nhân chồi: mọi chồi mới lại được cấy tiếp, nên số chồi tăng theo cấp số nhân.',
         },
         { type: 'widget', name: 'nhan-nhanh' },
         {
@@ -170,7 +174,7 @@ export default {
   examples: [
     {
       problem:
-        'Từ $1$ chồi lan, mỗi chu kì cấy chuyền kéo dài $4$ tuần, mỗi chồi cho $4$ chồi mới. Sau $5$ chu kì, tất cả các chồi được đưa đi tạo rễ, và có $75\\%$ thành cây con sống được ở vườn ươm. Tính thời gian nhân chồi và số cây con thu được.',
+        'Từ $1$ chồi lan, mỗi chu kì cấy chuyền kéo dài $4$ tuần, mỗi chồi được tách thành $4$ chồi để cấy tiếp. Sau $5$ chu kì, tất cả các chồi được đưa đi tạo rễ, và có $75\\%$ thành cây con sống được ở vườn ươm. Tính thời gian nhân chồi và số cây con thu được.',
       steps: [
         'Thời gian nhân chồi: $5 \\cdot 4 = 20$ tuần.',
         'Mỗi chu kì số chồi tăng $4$ lần, nên sau $5$ chu kì có $4^5 = 1024$ chồi.',
@@ -240,7 +244,7 @@ export default {
     {
       type: 'number',
       prompt:
-        'Mỗi chồi cho $3$ chồi mới sau một chu kì cấy chuyền. Từ $1$ chồi, sau $6$ chu kì có bao nhiêu chồi?',
+        'Sau một chu kì cấy chuyền, mỗi chồi được tách thành $3$ chồi để cấy tiếp. Từ $1$ chồi, sau $6$ chu kì có bao nhiêu chồi?',
       answer: 729,
       hints: ['Mỗi chu kì số chồi nhân lên $3$ lần.', 'Tính $3^6$.'],
       solution: 'Sau $6$ chu kì có $3^6 = 729$ chồi.',
@@ -248,7 +252,7 @@ export default {
     {
       type: 'number',
       prompt:
-        'Từ $1$ chồi, mỗi chu kì mỗi chồi cho $5$ chồi mới. Sau $4$ chu kì, có $80\\%$ số chồi tạo được cây con. Hỏi thu được bao nhiêu cây con?',
+        'Từ $1$ chồi, mỗi chu kì mỗi chồi được tách thành $5$ chồi để cấy tiếp. Sau $4$ chu kì, có $80\\%$ số chồi tạo được cây con. Hỏi thu được bao nhiêu cây con?',
       answer: 500,
       hints: ['Tính số chồi: $5^4$.', 'Lấy kết quả nhân với $80\\%$.'],
       solution: 'Số chồi là $5^4 = 625$. Số cây con là $625 \\cdot 80\\% = 500$.',

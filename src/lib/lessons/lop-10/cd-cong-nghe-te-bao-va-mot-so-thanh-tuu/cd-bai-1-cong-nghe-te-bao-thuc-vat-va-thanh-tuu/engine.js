@@ -203,7 +203,7 @@ export function readHormones(stage, auxin, cytokinin) {
 
 /**
  * The number of shoots after each cycle, starting from one shoot, when every
- * shoot gives `factor` shoots per cycle.
+ * shoot is split into `factor` shoots per cycle.
  * @param {number} factor @param {number} cycles
  * @returns {number[]}
  */
