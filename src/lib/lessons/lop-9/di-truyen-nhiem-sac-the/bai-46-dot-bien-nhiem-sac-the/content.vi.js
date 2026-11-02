@@ -262,7 +262,7 @@ export default {
         'Ung thư máu do chuyển đoạn NST $9$ và $22$',
       ],
       answers: [0, 1, 2],
-      hints: ['Hai lựa chọn cuối là bệnh ở người.'],
+      hints: ['Một hội chứng hay một bệnh ở người không phải là lợi ích trong sản xuất.'],
       solution:
         'Dưa hấu tam bội không hạt, lúa mạch lặp đoạn và tôm sú tam bội là các ứng dụng có ích. Hội chứng Down và ung thư máu là tác hại của đột biến NST.',
     },

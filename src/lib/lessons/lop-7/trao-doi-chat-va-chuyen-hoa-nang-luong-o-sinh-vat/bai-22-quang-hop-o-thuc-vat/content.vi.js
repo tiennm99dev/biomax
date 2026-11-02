@@ -168,7 +168,7 @@ export default {
       answer: 0,
       hints: ['Quang hợp lấy vào carbon dioxide và thải ra oxygen, cần ánh sáng.'],
       solution:
-        'Quang hợp: Nước + Carbon dioxide ⟶ (Ánh sáng, Diệp lục) ⟶ Glucose + Oxygen. Phương án thứ hai là chiều ngược lại (giống hô hấp tế bào).',
+        'Quang hợp: Nước + Carbon dioxide ⟶ (Ánh sáng, Diệp lục) ⟶ Glucose + Oxygen. Phương trình đi từ glucose và oxygen sang nước và carbon dioxide là chiều ngược lại (giống hô hấp tế bào).',
     },
     {
       type: 'match',

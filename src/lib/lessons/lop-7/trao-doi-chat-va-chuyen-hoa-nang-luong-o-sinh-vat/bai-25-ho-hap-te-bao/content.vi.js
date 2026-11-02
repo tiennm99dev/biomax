@@ -128,7 +128,7 @@ export default {
       answer: 0,
       hints: ['Hô hấp tế bào phân giải glucose và cần oxygen.'],
       solution:
-        'Hô hấp tế bào: Glucose + Oxygen ⟶ Carbon dioxide + Nước + Năng lượng (ATP + nhiệt). Phương án thứ hai là quang hợp.',
+        'Hô hấp tế bào: Glucose + Oxygen ⟶ Carbon dioxide + Nước + Năng lượng (ATP + nhiệt). Phương trình Nước + Carbon dioxide ⟶ Glucose + Oxygen là quang hợp.',
     },
     {
       type: 'multi',

@@ -143,7 +143,7 @@ export default {
       answer: 0,
       hints: ['Trao đổi chất gồm cả lấy vào, biến đổi và thải ra.'],
       solution:
-        'Trao đổi chất là quá trình cơ thể lấy các chất từ môi trường, biến đổi chúng thành các chất cần thiết cho cơ thể và tạo năng lượng, đồng thời trả lại cho môi trường các chất thải. Phương án cuối là khái niệm chuyển hoá năng lượng.',
+        'Trao đổi chất là quá trình cơ thể lấy các chất từ môi trường, biến đổi chúng thành các chất cần thiết cho cơ thể và tạo năng lượng, đồng thời trả lại cho môi trường các chất thải. Biến đổi năng lượng từ dạng này sang dạng khác là khái niệm chuyển hoá năng lượng.',
     },
     {
       type: 'multi',
