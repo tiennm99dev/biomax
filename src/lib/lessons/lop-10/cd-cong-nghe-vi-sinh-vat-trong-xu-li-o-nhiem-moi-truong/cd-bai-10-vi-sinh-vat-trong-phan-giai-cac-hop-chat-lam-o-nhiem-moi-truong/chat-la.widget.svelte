@@ -21,15 +21,24 @@
   let stepButton = $state();
   /** @type {HTMLButtonElement | undefined} */
   let againButton = $state();
+  /** @type {HTMLButtonElement | undefined} */
+  let cultureButton = $state();
 
   const foreign = $derived(FOREIGN.find((f) => f.id === foreignId) ?? FOREIGN[0]);
 
-  function restart() {
+  function reset() {
     cultured = false;
     chosen = null;
     verdict = null;
     solved = false;
     stepsShown = 0;
+  }
+
+  /** The restart button leaves after use, so focus goes to the culture button. */
+  async function restart() {
+    reset();
+    await tick();
+    cultureButton?.focus();
   }
 
   /** The culture button leaves after use, so focus goes to the first flask. */
@@ -41,6 +50,7 @@
 
   /** @param {string} strain */
   async function pick(strain) {
+    if (solved) return;
     chosen = strain;
     const out = checkStrain(foreignId, strain);
     verdict = out;
@@ -64,7 +74,7 @@
     label="Chất lạ cần nghiên cứu"
     {options}
     bind:value={foreignId}
-    onchange={restart}
+    onchange={reset}
   />
   <p class="text-sm text-slate-800">
     Chất lạ: {foreign.short}, {foreign.harm}.
@@ -74,7 +84,9 @@
   </p>
 
   {#if !cultured}
-    <button type="button" class={button.primary} onclick={culture}>Cấy bốn chủng và nuôi</button>
+    <button bind:this={cultureButton} type="button" class={button.primary} onclick={culture}
+      >Cấy bốn chủng và nuôi</button
+    >
   {:else}
     <div bind:this={bench} class="grid grid-cols-4 gap-2">
       {#each STRAINS as strain (strain)}

@@ -20,8 +20,8 @@
     setAir,
   } from './engine.js';
 
-  const WATER = { x: 26, y: 34, w: 288, h: 62 };
-  const SLUDGE = { x: 40, y: 106, w: 260, h: 14 };
+  const WATER = { x: 40, y: 34, w: 260, h: 54 };
+  const SLUDGE = { x: 115, y: 104, w: 110, h: 12 };
 
   /** @type {'huu-co' | 'kim-loai'} */
   let pollutant = $state('huu-co');

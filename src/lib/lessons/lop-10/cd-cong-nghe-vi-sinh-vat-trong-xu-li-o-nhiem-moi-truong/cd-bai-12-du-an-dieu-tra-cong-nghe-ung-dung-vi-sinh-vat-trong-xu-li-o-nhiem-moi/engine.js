@@ -112,7 +112,7 @@ export function placeTech(siteId, techId) {
   }
   return {
     grade: 'no',
-    text: `Chưa phù hợp với vấn đề ở đây: ${site.problem.toLowerCase()} Hãy nghĩ về điều kiện vi sinh vật cần.`,
+    text: `Chưa phù hợp với vấn đề ở đây: ${site.problem} Hãy nghĩ về điều kiện vi sinh vật cần.`,
   };
 }
 

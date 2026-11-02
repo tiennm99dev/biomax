@@ -29,6 +29,10 @@ describe('placing a technology on the map', () => {
     expect(placeTech('khong-co', 'dat').grade).toBe('no');
   });
 
+  it('quotes the problem with its element symbols intact', () => {
+    expect(placeTech('kho-xang', 'biogas').text).toContain('thiếu N, P.');
+  });
+
   it('keeps every site on the map', () => {
     const outside = SITES.filter((s) => s.left < 5 || s.left > 95 || s.top < 5 || s.top > 95);
     expect(outside).toEqual([]);

@@ -27,17 +27,17 @@ export default {
               'Phân giải hiếu khí',
               'Có oxygen, thông khí liên tục',
               '$\\mathrm{CO_2}$, $\\mathrm{H_2O}$, sinh khối',
-              'Nước thải chế biến sữa, sản xuất giấy, dệt vải; ao hồ nuôi cá',
+              'Đất, nước nhiễm hydrocarbon; nước thải chế biến sữa, sản xuất giấy, dệt vải; ao hồ nuôi cá',
             ],
             [
               'Phân giải kị khí',
               'Không có oxygen',
               '$\\mathrm{CH_4}$, $\\mathrm{CO_2}$, $\\mathrm{H_2O}$',
-              'Nước thải giàu lipid, protein, polysaccharide; khí sinh học',
+              'Rác hữu cơ, phế thải nông nghiệp, nước thải chăn nuôi giàu lipid, protein, polysaccharide; khí sinh học',
             ],
             [
               'Lên men',
-              'Có đường đơn do thuỷ phân tạo ra',
+              'Có đường đơn do thuỷ phân tạo ra, không cần oxygen',
               'Ethanol, $\\mathrm{CO_2}$',
               'Ethanol sinh học từ chất thải hữu cơ',
             ],
@@ -45,7 +45,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Trong phân giải kị khí, hai nhóm phối hợp với nhau: vi khuẩn kị khí phân giải lipid, protein, polysaccharide thành các đơn phân rồi chuyển hoá tiếp; nhóm Archaea chuyển các sản phẩm đó thành methane, $\\mathrm{CO_2}$ và nước.',
+          text: 'Trong phân giải kị khí, hai nhóm phối hợp với nhau: vi khuẩn kị khí phân giải lipid, protein, polysaccharide thành các đơn phân (acid béo, amino acid, đường đơn), rồi tiếp tục thành acetate, $\\mathrm{H_2}$ và $\\mathrm{CO_2}$; nhóm Archaea chuyển các sản phẩm đó thành methane, $\\mathrm{CO_2}$ và nước. Quá trình này còn tạo ra mùn giúp đất thêm màu mỡ.',
         },
         {
           type: 'p',
@@ -70,7 +70,7 @@ export default {
           type: 'callout',
           tone: 'definition',
           title: 'Xenobiotic (chất lạ)',
-          text: 'Là các hợp chất nhân tạo do con người thải vào môi trường mà sinh vật khó phân giải, ví dụ thuốc trừ sâu, hydrocarbon thơm dạng vòng (PAH) và nhựa phenolic.',
+          text: 'Là các hợp chất nhân tạo do con người thải vào môi trường mà sinh vật khó phân giải, ví dụ một số loại thuốc trừ sâu, hydrocarbon thơm dạng vòng (PAH), nhựa phenolic và một số hoạt chất trong thuốc chữa bệnh, mỹ phẩm.',
         },
         {
           type: 'p',
@@ -106,9 +106,9 @@ export default {
           type: 'list',
           ordered: true,
           items: [
-            'Cân mỗi vật liệu rồi chôn riêng trong một thùng đất ở cùng độ sâu; đánh dấu vị trí.',
+            'Phơi khô từng vật liệu rồi cân, chôn riêng trong một thùng đất ở cùng độ sâu; đánh dấu vị trí.',
             'Đặt các thùng cùng một chỗ, tưới cùng một lượng nước để đất luôn ẩm.',
-            'Sau $4$ tuần, đeo găng tay đào lên, rửa nhẹ, để khô và cân lại. Ghi hình ảnh trước và sau.',
+            'Sau $4$ tuần, đeo găng tay đào lên, rửa nhẹ, phơi khô như trước khi chôn rồi cân lại, để phần mất đi không phải chỉ là nước. Ghi hình ảnh trước và sau.',
             'Tính phần trăm khối lượng đã mất của mỗi vật liệu.',
           ],
         },

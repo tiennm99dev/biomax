@@ -36,6 +36,7 @@
    * @param {'hieu-khi' | 'ki-khi' | 'len-men'} route
    */
   async function pick(route) {
+    if (answer?.ok) return;
     const out = checkCase(caseIndex, route);
     answer = out;
     if (out.ok) {
@@ -52,9 +53,12 @@
     root?.querySelector('button')?.focus();
   }
 
-  function restartQuiz() {
+  /** The restart button leaves after use, so focus goes to the first button left. */
+  async function restartQuiz() {
     caseIndex = 0;
     answer = null;
+    await tick();
+    root?.querySelector('button')?.focus();
   }
 </script>
 

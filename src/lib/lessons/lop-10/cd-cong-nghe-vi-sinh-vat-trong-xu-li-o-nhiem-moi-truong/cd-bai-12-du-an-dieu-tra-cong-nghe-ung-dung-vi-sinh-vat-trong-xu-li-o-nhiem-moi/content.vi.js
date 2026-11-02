@@ -106,7 +106,7 @@ export default {
   examples: [
     {
       problem:
-        'Một nhóm khảo sát trạm xử lí nước thải và được cung cấp số liệu: BOD đầu vào $320$ mg/L, đầu ra $40$ mg/L. Tính hiệu suất. Biết tiêu chuẩn của trạm cho phép BOD đầu ra không quá $50$ mg/L, hãy nhận xét.',
+        'Một nhóm khảo sát trạm xử lí nước thải và được cung cấp số liệu về BOD (lượng oxygen vi sinh vật cần để phân giải chất hữu cơ trong nước): BOD đầu vào $320$ mg/L, đầu ra $40$ mg/L. Tính hiệu suất. Biết tiêu chuẩn của trạm cho phép BOD đầu ra không quá $50$ mg/L, hãy nhận xét.',
       steps: [
         'Lượng BOD đã giảm: $320 - 40 = 280$ mg/L.',
         'Hiệu suất: $\\dfrac{280}{320} \\cdot 100\\% = 87{,}5\\%$.',
@@ -180,7 +180,7 @@ export default {
       type: 'choice',
       prompt: 'Câu nào là kết luận tốt nhất trong báo cáo điều tra?',
       options: [
-        'Đầu ra của trạm giảm từ $320$ xuống $40$ mg/L BOD trong lần đo ngày $5/3$, theo số liệu trạm cung cấp',
+        'BOD giảm từ $320$ mg/L ở đầu vào xuống $40$ mg/L ở đầu ra trong lần đo ngày $5/3$, theo số liệu trạm cung cấp',
         'Trạm xử lí nước thải này rất tốt và không bao giờ gây ra ô nhiễm cho môi trường xung quanh',
         'Mọi người đều nói nước sau trạm xử lí rất sạch, nên chắc chắn là trạm hoạt động hiệu quả',
         'Theo nhóm em đoán, hiệu suất xử lí của trạm này có thể lên tới khoảng $90\\%$ hoặc hơn nữa',
@@ -192,7 +192,7 @@ export default {
     },
     {
       type: 'match',
-      prompt: 'Nối mỗi nơi khảo sát với công nghệ phù hợp nhất.',
+      prompt: 'Nối mỗi đối tượng khảo sát với công nghệ phù hợp nhất.',
       left: ['Trại lợn', 'Rác hữu cơ đã phân loại', 'Nước thải nhà máy sữa', 'Đất ngấm xăng dầu'],
       right: [
         'Hầm khí sinh học',

@@ -22,7 +22,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Để xác định một môi trường có bị ô nhiễm hay không, người ta xét nguồn gây ô nhiễm, khả năng lan truyền và đối tượng chịu tác động. Ví dụ, với đất nghi nhiễm kim loại nặng, cần đo hàm lượng kim loại xem có vượt giới hạn cho phép không, và mức độ ảnh hưởng đến sinh vật sống trên đất đó.',
+          text: 'Tiêu chí xác định một môi trường bị ô nhiễm là: các tính chất vật lí, hoá học, sinh học của môi trường bị thay đổi, gây tác hại tức thời hoặc lâu dài tới sức khoẻ con người, các loài sinh vật và các điều kiện sống khác. Khi đánh giá, người ta còn xét nguồn gây ô nhiễm, khả năng lan truyền và đối tượng chịu tác động. Ví dụ, với đất nghi nhiễm kim loại nặng, cần đo hàm lượng kim loại xem có vượt giới hạn cho phép không, và mức độ ảnh hưởng đến sinh vật sống trên đất đó.',
         },
         {
           type: 'p',
@@ -39,7 +39,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Một số vi sinh vật có khả năng hấp thụ, lưu giữ và thay đổi trạng thái điện tích của kim loại. Chúng chuyển ion kim loại thành dạng không độc hoặc kết tủa, hoặc tích tụ kim loại trong màng nhầy. Ví dụ điển hình: vi khuẩn Bacillus cereus, Enterobacter cloacae và nấm Penicillium chrysogenum.',
+          text: 'Một số vi sinh vật có khả năng hấp thụ, lưu giữ và thay đổi trạng thái điện tích của kim loại nhờ liên kết kim loại trong tế bào. Chúng chuyển ion kim loại thành dạng ít độc hoặc kết tủa, hoặc tích tụ, đóng gói ion kim loại trong màng nhầy ở ngoài tế bào. Nhờ đó, hàm lượng kim loại nặng trong môi trường giảm xuống. Ví dụ điển hình: vi khuẩn Bacillus cereus, Enterobacter cloacae và nấm Penicillium chrysogenum.',
         },
         {
           type: 'callout',
@@ -54,11 +54,11 @@ export default {
       blocks: [
         {
           type: 'p',
-          text: 'Chất thải hữu cơ đến từ rác sinh hoạt, chế biến thực phẩm, trồng trọt, chăn nuôi và nước thải của nhiều ngành sản xuất.',
+          text: 'Chất thải hữu cơ đến từ rác sinh hoạt, chế biến thực phẩm, trồng trọt, chăn nuôi và nước thải của nhiều ngành sản xuất. Phần lớn là sinh khối thực vật, giàu cellulose và pectin; ngoài ra còn có protein phức tạp và chất béo.',
         },
         {
           type: 'p',
-          text: 'Vi sinh vật tiết enzyme ra môi trường để thuỷ phân các chất có phân tử lớn. Chẳng hạn, cellulase thuỷ phân polysaccharide trong rơm rạ thành đường đơn. Đường đơn là nguồn carbon cho hô hấp và lên men của vi sinh vật; nhờ đó chất thải được chuyển hoá thành chất đơn giản, còn vi sinh vật có năng lượng để sinh sản.',
+          text: 'Vi sinh vật tiết enzyme ra môi trường để thuỷ phân các chất có phân tử lớn. Chẳng hạn, cellulase thuỷ phân polysaccharide trong rơm rạ thành đường đơn. Sản phẩm chính của quá trình phân giải là đường đơn, amino acid, acid béo,... Chúng vừa là nguyên liệu, vừa cung cấp năng lượng cho vi sinh vật qua hô hấp và lên men, nhờ đó vi sinh vật sinh trưởng, còn chất thải được chuyển hoá thành chất đơn giản.',
         },
         {
           type: 'table',
@@ -143,6 +143,20 @@ export default {
     },
   ],
   practice: [
+    {
+      type: 'choice',
+      prompt: 'Căn cứ vào tiêu chí nào để xác định một môi trường bị ô nhiễm?',
+      options: [
+        'Tính chất vật lí, hoá học, sinh học bị thay đổi, gây tác hại tức thời hoặc lâu dài cho con người và sinh vật',
+        'Môi trường có chứa vi sinh vật, dù chúng không gây ra bất kì tác hại nào cho con người và sinh vật',
+        'Màu sắc của môi trường khác với màu quen thuộc, dù các tính chất khác không hề bị thay đổi',
+        'Môi trường nằm gần khu dân cư đông đúc, dù chưa đo được bất kì biến đổi nào của môi trường',
+      ],
+      answer: 0,
+      hints: ['Tiêu chí phải gồm cả sự biến đổi của môi trường và tác hại mà nó gây ra.'],
+      solution:
+        'Môi trường bị ô nhiễm khi các tính chất vật lí, hoá học, sinh học bị thay đổi, gây tác hại tức thời hoặc lâu dài tới sức khoẻ con người, các loài sinh vật và các điều kiện sống khác.',
+    },
     {
       type: 'choice',
       prompt: 'Vì sao vi sinh vật là giải pháp hiệu quả để xử lí ô nhiễm môi trường?',
@@ -254,7 +268,7 @@ export default {
     },
   ],
   takeaways: [
-    'Ô nhiễm môi trường được xác định qua nguồn gây ô nhiễm, khả năng lan truyền và đối tượng chịu tác động.',
+    'Môi trường bị ô nhiễm khi các tính chất vật lí, hoá học, sinh học bị thay đổi, gây tác hại tức thời hoặc lâu dài cho con người và sinh vật.',
     'Vi sinh vật sinh trưởng, trao đổi chất và sinh sản nhanh, nên là giải pháp xử lí ô nhiễm hiệu quả.',
     'Với kim loại nặng, vi sinh vật hấp thụ, lưu giữ, chuyển sang dạng ít độc; kim loại không bị phân huỷ.',
     'Với chất hữu cơ, vi sinh vật tiết enzyme thuỷ phân chất lớn thành chất đơn giản rồi dùng cho hô hấp, lên men.',

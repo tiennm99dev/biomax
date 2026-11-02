@@ -72,6 +72,13 @@ describe('the wastewater station', () => {
     expect(lineNote(l, run).text).toContain('bể lắng cuối');
   });
 
+  it('talks about the air only while the aerobic tank runs', () => {
+    const l = line(250, { off: ['hieu-khi'], air: 1 });
+    const note = lineNote(l, runLine(l));
+    expect(note.tone).toBe('ok');
+    expect(note.text).not.toContain('sục khí');
+  });
+
   it('never makes the water dirtier inside a biological tank', () => {
     const run = runLine(line(1500, { air: 1, flow: 'nhanh' }));
     const rising = run.stages.filter((s) => s.out > s.in);

@@ -162,7 +162,7 @@ export function lineNote(line, run) {
         : ' Thử giảm sục khí xem còn đạt không: sục khí tốn nhiều điện.';
     return {
       tone: 'ok',
-      text: `Đạt: BOD đầu ra ${out} mg/L, không quá ${BOD_LIMIT} mg/L.${gas}${line.air > 0 ? air : ''}`,
+      text: `Đạt: BOD đầu ra ${out} mg/L, không quá ${BOD_LIMIT} mg/L.${gas}${line.on['hieu-khi'] && line.air > 0 ? air : ''}`,
     };
   }
   const head = `Chưa đạt: BOD đầu ra ${out} mg/L, vượt ${BOD_LIMIT} mg/L.`;
