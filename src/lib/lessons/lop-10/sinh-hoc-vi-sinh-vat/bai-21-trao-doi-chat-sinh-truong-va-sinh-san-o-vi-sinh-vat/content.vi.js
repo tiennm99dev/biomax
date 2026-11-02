@@ -28,7 +28,7 @@ export default {
           caption: 'Ứng dụng quá trình phân giải',
           head: ['Phân giải', 'Sản phẩm'],
           rows: [
-            ['Protein', 'Nước mắm, nước tương, acid hữu cơ'],
+            ['Protein', 'Nước mắm, nước tương'],
             ['Carbohydrate', 'Bánh mì, rượu, sữa chua, rau củ muối chua'],
             ['Chất thải hữu cơ, dầu loang, nước thải', 'Xử lí ô nhiễm môi trường'],
           ],
@@ -97,7 +97,7 @@ export default {
             ],
             [
               'Độ ẩm',
-              'Nước hoà tan dinh dưỡng; phần lớn vi sinh vật cần độ ẩm trên $90\\%$',
+              'Nước hoà tan dinh dưỡng; phần lớn vi sinh vật cần độ ẩm trên $90\\%$, xạ khuẩn và nấm sợi chịu được độ ẩm thấp hơn',
               'Phơi khô, sấy khô để bảo quản',
             ],
             [
@@ -112,7 +112,7 @@ export default {
             ],
             [
               'Áp suất thẩm thấu',
-              'Áp suất cao gây co nguyên sinh, tế bào không phân chia được',
+              'Áp suất cao gây co nguyên sinh, tế bào không phân chia được; áp suất thấp làm tế bào trương nước, có thể vỡ',
               'Ướp muối, ướp đường để bảo quản thực phẩm',
             ],
           ],
@@ -149,8 +149,8 @@ export default {
             ],
             [
               'Bào tử',
-              'Tạo bào tử vô tính hoặc hữu tính, phát tán thành cá thể mới',
-              'Bào tử đính ở vi nấm, bào tử đốt ở xạ khuẩn',
+              'Nấm tạo bào tử vô tính hoặc hữu tính, một số vi khuẩn tạo ngoại bào tử; bào tử phát tán thành cá thể mới',
+              'Bào tử đính ở nấm mốc, bào tử tiếp hợp ở nấm tiếp hợp, bào tử đốt ở xạ khuẩn',
             ],
             [
               'Nảy chồi',
@@ -320,14 +320,14 @@ export default {
       type: 'match',
       prompt: 'Nối mỗi hình thức sinh sản với sinh vật điển hình.',
       left: ['Phân đôi', 'Nảy chồi', 'Bào tử đính'],
-      right: ['Vi khuẩn', 'Nấm men', 'Vi nấm'],
+      right: ['Vi khuẩn', 'Nấm men', 'Nấm mốc'],
       pairs: [
         [0, 0],
         [1, 1],
         [2, 2],
       ],
       hints: ['Nấm men Saccharomyces là ví dụ quen thuộc của nảy chồi.'],
-      solution: 'Vi khuẩn phân đôi, nấm men nảy chồi, vi nấm tạo bào tử đính.',
+      solution: 'Vi khuẩn phân đôi, nấm men nảy chồi, nấm mốc tạo bào tử đính.',
     },
     {
       type: 'choice',

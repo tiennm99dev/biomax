@@ -5,7 +5,9 @@
 import { rng, shuffle } from '#lib/core/drill.js';
 
 /**
- * @typedef {{ id: string, name: string, microbe: string, how: string }} Product
+ * @typedef {{ id: string, name: string, microbe: string, how: string, kin?: string }} Product
+ * `kin` marks products whose microbes overlap, so one never stands as a wrong
+ * option for the other.
  * @typedef {{ id: string, name: string, products: Product[] }} Field
  */
 
@@ -19,12 +21,13 @@ export const FIELDS = [
         id: 'ruou-bia-banh-mi',
         name: 'Rượu, bia, bánh mì',
         microbe: 'Nấm men Saccharomyces cerevisiae',
-        how: 'Lên men đường tạo ethanol và $CO_2$; khí $CO_2$ làm bột bánh nở.',
+        how: 'Lên men đường tạo ethanol và $\\mathrm{CO_2}$; khí $\\mathrm{CO_2}$ làm bột bánh nở.',
       },
       {
         id: 'sua-chua',
         name: 'Sữa chua, pho mát',
         microbe: 'Vi khuẩn lactic',
+        kin: 'lactic',
         how: 'Lên men đường trong sữa thành lactic acid làm sữa đông tụ.',
       },
       {
@@ -43,7 +46,7 @@ export const FIELDS = [
         id: 'phan-vi-sinh',
         name: 'Phân bón vi sinh',
         microbe: 'Vi khuẩn cố định đạm, vi sinh vật phân giải lân',
-        how: 'Cố định $N_2$ trong không khí, biến lân khó tiêu thành lân dễ tiêu cho cây.',
+        how: 'Cố định $\\mathrm{N_2}$ trong không khí, biến lân khó tiêu thành lân dễ tiêu cho cây.',
       },
       {
         id: 'thuoc-tru-sau',
@@ -73,6 +76,7 @@ export const FIELDS = [
         id: 'probiotics',
         name: 'Men vi sinh (probiotics)',
         microbe: 'Lợi khuẩn đường ruột như vi khuẩn lactic',
+        kin: 'lactic',
         how: 'Bổ sung vi khuẩn có lợi giúp cân bằng hệ vi sinh, hỗ trợ tiêu hoá.',
       },
     ],
@@ -85,6 +89,7 @@ export const FIELDS = [
         id: 'nuoc-thai',
         name: 'Xử lí nước thải',
         microbe: 'Hệ vi sinh hiếu khí và kị khí',
+        kin: 'phan-giai-ki-khi',
         how: 'Phân giải chất hữu cơ trong các bể xử lí sinh học.',
       },
       {
@@ -97,6 +102,7 @@ export const FIELDS = [
         id: 'biogas',
         name: 'Khí biogas từ chất thải chăn nuôi',
         microbe: 'Archaea sinh methane',
+        kin: 'phan-giai-ki-khi',
         how: 'Phân giải kị khí chất thải, tạo khí methane làm chất đốt và phân bón hữu cơ.',
       },
     ],
@@ -121,7 +127,9 @@ export function buildQuiz(seed) {
   return shuffle(rand, PRODUCTS).map((product) => {
     const others = shuffle(
       rand,
-      PRODUCTS.filter((p) => p.microbe !== product.microbe).map((p) => p.microbe),
+      PRODUCTS.filter(
+        (p) => p.microbe !== product.microbe && (!p.kin || p.kin !== product.kin),
+      ).map((p) => p.microbe),
     ).slice(0, 3);
     const options = shuffle(rand, [product.microbe, ...others]);
     return { product, options, answer: options.indexOf(product.microbe) };

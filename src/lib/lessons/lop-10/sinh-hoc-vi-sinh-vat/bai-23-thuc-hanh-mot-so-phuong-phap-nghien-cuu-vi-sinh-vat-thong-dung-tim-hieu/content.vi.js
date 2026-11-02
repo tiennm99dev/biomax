@@ -8,6 +8,7 @@ export default {
     'Thực hiện được một số phương pháp nghiên cứu vi sinh vật thông dụng: làm tiêu bản, quan sát vi khuẩn trong sữa chua.',
     'Thực hiện được đúng các bước làm sữa chua và dưa chua, tạo ra sản phẩm đảm bảo chất lượng.',
     'Giải thích được các biến đổi của sản phẩm và vai trò của từng thao tác.',
+    'Nêu được nguyên lí lên men rượu ethylic nhờ nấm men.',
     'Thu thập thông tin, làm tập san về sản phẩm của công nghệ vi sinh vật.',
   ],
   sections: [
@@ -19,10 +20,16 @@ export default {
           ordered: true,
           items: [
             'Lấy một thìa sữa chua không đường đã để ở khoảng $40$ đến $45$ °C trong $1$ đến $2$ giờ, pha loãng với $10$ mL nước cất.',
-            'Hút một ít dịch đã pha loãng, nhỏ một giọt lên lam kính, đậy lamen, dùng giấy thấm nhẹ quanh viền lamen để loại nước thừa. Có thể nhuộm đơn bằng xanh methylene để vi khuẩn nổi rõ hơn.',
+            'Hút một ít dịch đã pha loãng, nhỏ một giọt lên lam kính, đậy lamen, dùng giấy thấm nhẹ quanh viền lamen để loại nước thừa.',
             'Đặt lam kính lên bàn kính hiển vi, điều chỉnh để nhìn rõ mẫu vật.',
             'Quan sát ở vật kính $10\\times$, chỉnh vùng quan sát vào nơi có nhiều vi khuẩn, rồi chuyển sang vật kính lớn hơn.',
           ],
+        },
+        {
+          type: 'callout',
+          tone: 'note',
+          title: 'Nhuộm đơn',
+          text: 'Vi khuẩn gần như trong suốt nên khó thấy khi soi tươi. Muốn chúng nổi rõ hơn, phết giọt dịch thành lớp mỏng trên lam kính, để khô, nhỏ xanh methylene phủ lên trong khoảng $1$ phút, rửa nhẹ bằng nước, thấm khô rồi đem quan sát.',
         },
         {
           type: 'p',
@@ -86,6 +93,23 @@ export default {
         {
           type: 'p',
           text: 'Kết quả: rau chuyển từ xanh sang vàng, có vị chua thơm nhẹ đặc trưng, do vi khuẩn lactic phân giải đường trong rau thành lactic acid.',
+        },
+      ],
+    },
+    {
+      heading: 'Lên men rượu ethylic',
+      blocks: [
+        {
+          type: 'p',
+          text: 'Rượu cũng là một sản phẩm lên men. Trong điều kiện yếm khí, nấm men chuyển đường thành ethanol và khí $\\mathrm{CO_2}$:',
+        },
+        {
+          type: 'tex',
+          tex: '\\mathrm{C_6H_{12}O_6} \\xrightarrow{\\text{nấm men}} 2\\,\\mathrm{C_2H_5OH} + 2\\,\\mathrm{CO_2}',
+        },
+        {
+          type: 'p',
+          text: 'Bình lên men vì vậy được đậy kín để hạn chế không khí, và có bọt khí nổi lên trong khi nấm men hoạt động. Sản phẩm khác với sữa chua và dưa chua, nơi vi khuẩn lactic tạo lactic acid.',
         },
       ],
     },
@@ -185,6 +209,29 @@ export default {
       unit: 'lần',
       hints: ['Độ phóng đại bằng tích độ phóng đại của thị kính và vật kính.'],
       solution: '$10 \\cdot 40 = 400$ lần.',
+    },
+    {
+      type: 'choice',
+      prompt: 'Nhuộm đơn vi khuẩn trong sữa chua bằng xanh methylene nhằm mục đích gì?',
+      options: [
+        'Làm vi khuẩn bắt màu, nổi rõ trên nền để dễ quan sát',
+        'Giữ vi khuẩn sống để xem khả năng di động',
+        'Phân biệt vi khuẩn Gram dương và Gram âm',
+        'Làm vi khuẩn sinh sản nhanh hơn',
+      ],
+      answer: 0,
+      hints: ['Vi khuẩn chưa nhuộm gần như trong suốt dưới kính hiển vi.'],
+      solution:
+        'Nhuộm đơn dùng một thuốc nhuộm để tăng độ tương phản, nhờ đó thấy rõ hình dạng và cách sắp xếp của vi khuẩn.',
+    },
+    {
+      type: 'choice',
+      prompt:
+        'Trong lên men rượu ethylic, vi sinh vật nào chuyển đường thành ethanol và $\\mathrm{CO_2}$?',
+      options: ['Nấm men', 'Vi khuẩn lactic', 'Nấm mốc', 'Vi khuẩn lam'],
+      answer: 0,
+      hints: ['Đây cũng là vi sinh vật làm nở bột bánh mì.'],
+      solution: 'Nấm men lên men đường trong điều kiện yếm khí, tạo ethanol và $\\mathrm{CO_2}$.',
     },
     {
       type: 'choice',

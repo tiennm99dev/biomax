@@ -56,7 +56,8 @@ export function spoilRate({ salt, temp, pressed }) {
 }
 
 /**
- * The jar, day by day. Acid made so far also holds spoilage back.
+ * The jar, day by day. Acid made so far holds spoilage back, and spoilage crowds
+ * out the lactic bacteria in turn.
  * @param {Brine} brine @returns {PickleDay[]}
  */
 export function ferment(brine) {
@@ -68,7 +69,7 @@ export function ferment(brine) {
   let spoil = 0;
   for (let day = 1; day <= MAX_DAYS; day++) {
     spoil = Math.min(1, spoil + SPOIL_PER_DAY * spoiler * (1 - acid));
-    acid = acid + ACID_PER_DAY * lactic * (1 - acid);
+    acid = acid + ACID_PER_DAY * lactic * (1 - acid) * (1 - spoil);
     days.push({ day, acid, spoil, ph: START_PH - PH_DROP * acid });
   }
   return days;

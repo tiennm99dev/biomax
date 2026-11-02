@@ -27,6 +27,20 @@ describe('the quiz', () => {
     expect(bad).toEqual([]);
   });
 
+  it('never offers a microbe overlapping the right one as a wrong option', () => {
+    const kinOf = new Map(PRODUCTS.map((p) => [p.microbe, p.kin]));
+    const bad = [];
+    for (const seed of [1, 2, 3, 4, 5]) {
+      for (const q of buildQuiz(seed)) {
+        for (const option of q.options) {
+          if (option === q.product.microbe || !q.product.kin) continue;
+          if (kinOf.get(option) === q.product.kin) bad.push(`${q.product.id}: ${option}`);
+        }
+      }
+    }
+    expect(bad).toEqual([]);
+  });
+
   it('is the same for a seed and differs across seeds', () => {
     expect(buildQuiz(5)).toEqual(buildQuiz(5));
     expect(buildQuiz(5).map((q) => q.product.id)).not.toEqual(

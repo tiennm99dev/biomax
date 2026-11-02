@@ -21,7 +21,7 @@ export default {
           rows: [
             [
               'Tự nhiên',
-              'Phân giải chất thải và xác sinh vật thành chất khoáng, đảm bảo tuần hoàn vật chất, làm giàu đất. Sinh vật tự dưỡng như vi khuẩn lam tạo $O_2$ và chất dinh dưỡng. Cộng sinh với nhiều loài, ví dụ trùng roi trong ruột mối giúp tiêu hoá cellulose',
+              'Phân giải chất thải và xác sinh vật thành chất khoáng, đảm bảo tuần hoàn vật chất, làm giàu đất. Sinh vật tự dưỡng như vi khuẩn lam tạo $\\mathrm{O_2}$ và chất dinh dưỡng. Cộng sinh với nhiều loài, ví dụ trùng roi trong ruột mối giúp tiêu hoá cellulose',
             ],
             [
               'Con người',
@@ -63,19 +63,23 @@ export default {
           rows: [
             [
               'Nông nghiệp',
-              'Cố định $N_2$, biến lân khó tiêu thành dễ tiêu, ức chế sâu bệnh',
-              'Phân bón vi sinh, thuốc trừ sâu vi sinh',
+              'Cố định $\\mathrm{N_2}$, biến lân khó tiêu thành dễ tiêu, ức chế sâu bệnh',
+              'Phân bón vi sinh; thuốc trừ sâu vi sinh từ Bacillus thuringiensis (Bt), diệt sâu hại và tránh tồn dư thuốc hoá học',
             ],
-            ['Thực phẩm', 'Phân giải ngoại bào, lên men', 'Rượu, bia, bánh mì, sữa chua, pho mát'],
+            [
+              'Thực phẩm',
+              'Phân giải ngoại bào, lên men',
+              'Rượu, bia, bánh mì nhờ nấm men Saccharomyces cerevisiae; sữa chua, pho mát nhờ vi khuẩn lactic',
+            ],
             [
               'Y dược',
               'Sản phẩm trao đổi chất',
-              'Kháng sinh, vaccine, amino acid, hormone, probiotics; hỗ trợ chẩn đoán bệnh',
+              'Kháng sinh như penicillin từ nấm Penicillium, vaccine, amino acid, hormone như insulin nhờ E. coli chuyển gene, probiotics; hỗ trợ chẩn đoán bệnh',
             ],
             [
               'Môi trường',
               'Hấp thụ, phân giải chất thải, chất độc, kim loại nặng',
-              'Xử lí nước thải, tràn dầu, tạo biogas từ chất thải chăn nuôi',
+              'Xử lí nước thải; xử lí tràn dầu nhờ vi khuẩn Alcanivorax borkumensis; tạo biogas từ chất thải chăn nuôi nhờ Archaea sinh methane',
             ],
           ],
         },
@@ -142,7 +146,7 @@ export default {
       prompt: 'Những vai trò nào của vi sinh vật là vai trò đối với tự nhiên?',
       options: [
         'Phân giải xác sinh vật, đảm bảo tuần hoàn vật chất',
-        'Vi khuẩn lam tạo $O_2$',
+        'Vi khuẩn lam tạo $\\mathrm{O_2}$',
         'Sản xuất thuốc kháng sinh',
         'Cộng sinh giúp mối tiêu hoá cellulose',
         'Lên men sữa chua',
@@ -150,7 +154,7 @@ export default {
       answers: [0, 1, 3],
       hints: ['Những việc diễn ra trong tự nhiên, không cần đến sản xuất của con người.'],
       solution:
-        'Phân giải xác, tạo $O_2$ và cộng sinh là vai trò với tự nhiên. Kháng sinh và sữa chua là ứng dụng trong đời sống con người.',
+        'Phân giải xác, tạo $\\mathrm{O_2}$ và cộng sinh là vai trò với tự nhiên. Kháng sinh và sữa chua là ứng dụng trong đời sống con người.',
     },
     {
       type: 'match',
@@ -168,7 +172,7 @@ export default {
         [2, 2],
         [3, 3],
       ],
-      hints: ['Lên men đường tạo $CO_2$ làm nở bánh là việc của nấm men.'],
+      hints: ['Lên men đường tạo $\\mathrm{CO_2}$ làm nở bánh là việc của nấm men.'],
       solution:
         'Bia, bánh mì: nấm men. Sữa chua: vi khuẩn lactic. Thuốc Bt: Bacillus thuringiensis. Biogas: Archaea sinh methane.',
     },
@@ -258,7 +262,7 @@ export default {
     },
   ],
   takeaways: [
-    'Vi sinh vật giữ vòng tuần hoàn vật chất, tạo $O_2$, cộng sinh với nhiều loài và có ích cho con người, nhưng cũng gây bệnh và làm hỏng thực phẩm, thiết bị.',
+    'Vi sinh vật giữ vòng tuần hoàn vật chất, tạo $\\mathrm{O_2}$, cộng sinh với nhiều loài và có ích cho con người, nhưng cũng gây bệnh và làm hỏng thực phẩm, thiết bị.',
     'Kích thước nhỏ, sinh trưởng nhanh, tổng hợp và phân giải nhanh, đa dạng di truyền và phổ dinh dưỡng rộng là cơ sở của công nghệ vi sinh vật.',
     'Công nghệ vi sinh vật được ứng dụng trong nông nghiệp, thực phẩm, y dược và xử lí môi trường.',
   ],

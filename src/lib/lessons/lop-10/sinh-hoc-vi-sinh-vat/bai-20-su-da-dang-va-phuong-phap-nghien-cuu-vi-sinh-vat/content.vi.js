@@ -77,7 +77,7 @@ export default {
           type: 'callout',
           tone: 'note',
           title: 'Cách nhớ tên',
-          text: '"Quang" là năng lượng từ ánh sáng, "hoá" là năng lượng từ chất hoá học. "Tự" là tự tổng hợp chất hữu cơ từ carbon vô cơ như $CO_2$, "dị" là lấy carbon từ chất hữu cơ có sẵn.',
+          text: '"Quang" là năng lượng từ ánh sáng, "hoá" là năng lượng từ chất hoá học. "Tự" là tự tổng hợp chất hữu cơ từ carbon vô cơ như $\\mathrm{CO_2}$, "dị" là lấy carbon từ chất hữu cơ có sẵn.',
         },
       ],
     },
@@ -226,7 +226,7 @@ export default {
       answer: 0,
       hints: ['Vi khuẩn này lấy năng lượng khi oxy hoá hợp chất nitrogen vô cơ.'],
       solution:
-        'Năng lượng lấy từ chất vô cơ và carbon lấy từ $CO_2$, nên vi khuẩn nitrate hoá là hoá tự dưỡng.',
+        'Năng lượng lấy từ chất vô cơ và carbon lấy từ $\\mathrm{CO_2}$, nên vi khuẩn nitrate hoá là hoá tự dưỡng.',
     },
     {
       type: 'multi',
@@ -240,11 +240,12 @@ export default {
     {
       type: 'choice',
       prompt:
-        'Một vi sinh vật sống nơi có ánh sáng, tự tổng hợp được chất hữu cơ từ $CO_2$. Nó thuộc kiểu dinh dưỡng nào?',
+        'Một vi sinh vật sống nơi có ánh sáng, tự tổng hợp được chất hữu cơ từ $\\mathrm{CO_2}$. Nó thuộc kiểu dinh dưỡng nào?',
       options: ['Quang tự dưỡng', 'Quang dị dưỡng', 'Hoá tự dưỡng', 'Hoá dị dưỡng'],
       answer: 0,
-      hints: ['$CO_2$ là chất vô cơ.'],
-      solution: 'Năng lượng ánh sáng là "quang", carbon từ $CO_2$ vô cơ là "tự": quang tự dưỡng.',
+      hints: ['$\\mathrm{CO_2}$ là chất vô cơ.'],
+      solution:
+        'Năng lượng ánh sáng là "quang", carbon từ $\\mathrm{CO_2}$ vô cơ là "tự": quang tự dưỡng.',
     },
     {
       type: 'order',

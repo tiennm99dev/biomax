@@ -67,13 +67,13 @@ export const MICROBES = [
     id: 'vi-khuan-lam',
     label: 'Vi khuẩn lam',
     bin: 'quang-tu-duong',
-    why: 'Quang hợp nhờ ánh sáng và lấy carbon từ $CO_2$.',
+    why: 'Quang hợp nhờ ánh sáng và lấy carbon từ $\\mathrm{CO_2}$.',
   },
   {
     id: 'tao-don-bao',
     label: 'Tảo đơn bào',
     bin: 'quang-tu-duong',
-    why: 'Có lục lạp, dùng năng lượng ánh sáng để tổng hợp chất hữu cơ từ $CO_2$.',
+    why: 'Có lục lạp, dùng năng lượng ánh sáng để tổng hợp chất hữu cơ từ $\\mathrm{CO_2}$.',
   },
   {
     id: 'trung-roi',
@@ -85,13 +85,13 @@ export const MICROBES = [
     id: 'nitrate-hoa',
     label: 'Vi khuẩn nitrate hoá',
     bin: 'hoa-tu-duong',
-    why: 'Lấy năng lượng từ việc oxy hoá hợp chất nitrogen vô cơ, lấy carbon từ $CO_2$.',
+    why: 'Lấy năng lượng từ việc oxy hoá hợp chất nitrogen vô cơ, lấy carbon từ $\\mathrm{CO_2}$.',
   },
   {
     id: 'oxy-hoa-hydrogen',
     label: 'Vi khuẩn oxy hoá hydrogen',
     bin: 'hoa-tu-duong',
-    why: 'Lấy năng lượng từ việc oxy hoá $H_2$ và lấy carbon từ $CO_2$.',
+    why: 'Lấy năng lượng từ việc oxy hoá $\\mathrm{H_2}$ và lấy carbon từ $\\mathrm{CO_2}$.',
   },
   {
     id: 'khong-luu-huynh-tia',
