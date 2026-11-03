@@ -12,9 +12,9 @@
 
 /** @type {Array<{ id: StageId, name: string, form: string }>} */
 export const STAGES = [
-  { id: 'tong-hop', name: 'Tổng hợp', form: 'Năng lượng hoá học trong chất hữu cơ' },
-  { id: 'phan-giai', name: 'Phân giải', form: 'Năng lượng dễ sử dụng trong ATP' },
-  { id: 'huy-dong', name: 'Huy động năng lượng', form: 'Công cho hoạt động sống, rồi nhiệt' },
+  { id: 'tong-hop', name: 'Tổng hợp', form: 'năng lượng hoá học trong chất hữu cơ' },
+  { id: 'phan-giai', name: 'Phân giải', form: 'năng lượng dễ sử dụng trong ATP' },
+  { id: 'huy-dong', name: 'Huy động năng lượng', form: 'công cho hoạt động sống, rồi nhiệt' },
 ];
 
 /**
@@ -32,7 +32,7 @@ export const ORGANISMS = [
     id: 'cay-xanh',
     name: 'Cây xanh',
     mode: 'Quang tự dưỡng',
-    source: 'Ánh sáng Mặt Trời',
+    source: 'ánh sáng Mặt Trời',
     detail: {
       'tong-hop':
         'Diệp lục hấp thụ ánh sáng. Quang năng được đổi thành hoá năng, tích luỹ trong chất hữu cơ tạo từ $\\mathrm{CO_2}$ và nước.',
@@ -46,7 +46,7 @@ export const ORGANISMS = [
     id: 'vi-khuan',
     name: 'Vi khuẩn nitrate hoá',
     mode: 'Hoá tự dưỡng',
-    source: 'Phản ứng oxy hoá chất vô cơ',
+    source: 'phản ứng oxy hoá chất vô cơ',
     detail: {
       'tong-hop':
         'Vi khuẩn oxy hoá chất vô cơ chứa nitrogen và dùng năng lượng thu được để tổng hợp chất hữu cơ từ $\\mathrm{CO_2}$. Không cần ánh sáng.',
@@ -60,7 +60,7 @@ export const ORGANISMS = [
     id: 'tho',
     name: 'Con thỏ',
     mode: 'Dị dưỡng',
-    source: 'Chất hữu cơ trong cỏ, lá cây',
+    source: 'chất hữu cơ trong cỏ, lá cây',
     detail: {
       'tong-hop':
         'Thỏ không tự tạo chất hữu cơ từ chất vô cơ. Nó lấy hoá năng có sẵn trong thức ăn, tiêu hoá rồi dùng để tổng hợp chất hữu cơ của cơ thể.',

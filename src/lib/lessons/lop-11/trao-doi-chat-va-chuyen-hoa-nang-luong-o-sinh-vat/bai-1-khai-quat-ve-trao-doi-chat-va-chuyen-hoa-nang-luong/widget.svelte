@@ -136,7 +136,7 @@
 
   <p class="text-sm">
     <span class="font-semibold">{organism.name}</span> ({organism.mode.toLowerCase()}). Nguồn năng
-    lượng: {organism.source.toLowerCase()}.
+    lượng: {organism.source}.
   </p>
 
   <ol class="grid gap-2 sm:grid-cols-3">
@@ -158,7 +158,7 @@
   </ol>
 
   <div class="rounded-xl bg-slate-50 p-4 text-sm text-slate-800">
-    <p class="font-semibold">{stage.name}: {stage.form.toLowerCase()}</p>
+    <p class="font-semibold">{stage.name}: {stage.form}</p>
     <p class="mt-1"><LiveRichText text={organism.detail[stageId]} /></p>
   </div>
 

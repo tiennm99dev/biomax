@@ -292,7 +292,7 @@ export const GROUP_CARDS = [
     id: 'ngo',
     label: 'Ngô',
     bin: 'c4',
-    why: 'Ngô cố định $\\mathrm{CO_2}$ sơ bộ ở tế bào mô giậu.',
+    why: 'Ngô cố định CO₂ sơ bộ ở tế bào mô giậu.',
   },
   { id: 'mia', label: 'Mía', bin: 'c4', why: 'Mía là cây C4 ưa nóng, ưa sáng.' },
   { id: 'den', label: 'Rau dền', bin: 'c4', why: 'Rau dền là cây C4.' },

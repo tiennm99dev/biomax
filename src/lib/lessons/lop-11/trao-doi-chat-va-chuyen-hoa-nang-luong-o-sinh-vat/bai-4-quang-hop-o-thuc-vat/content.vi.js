@@ -97,7 +97,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Pha sáng giống nhau ở mọi nhóm thực vật. Pha tối luôn có chu trình Calvin gồm ba giai đoạn: cố định $\\mathrm{CO_2}$ (RuBP nhận $\\mathrm{CO_2}$ tạo 3-PGA), khử (3-PGA thành AlPG, dùng ATP và NADPH), tái sinh RuBP (dùng ATP). Một phần AlPG đi tổng hợp glucose và các chất hữu cơ khác.',
+          text: 'Pha sáng giống nhau ở mọi nhóm thực vật. Pha tối luôn có chu trình Calvin gồm ba giai đoạn: cố định $\\mathrm{CO_2}$ (ribulose-1,5-bisphosphate, viết tắt RuBP, nhận $\\mathrm{CO_2}$ tạo 3-phosphoglyceric acid, viết tắt 3-PGA), khử (3-PGA thành aldehyde phosphoglyceric, viết tắt AlPG, dùng ATP và NADPH), tái sinh RuBP (dùng ATP). Một phần AlPG đi tổng hợp glucose và các chất hữu cơ khác.',
         },
         {
           type: 'tex',
@@ -153,7 +153,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Enzyme PEP-carboxylase có ái lực cao với $\\mathrm{CO_2}$, nên C4 và CAM vẫn lấy được $\\mathrm{CO_2}$ khi nồng độ trong lá thấp lúc khí khổng khép bớt. Nhờ đó chúng thích nghi tốt với nơi nóng, khô. Cả ba nhóm đều có chu trình Calvin.',
+          text: 'PEP là phosphoenolpyruvic acid, OAA là oxaloacetic acid. Enzyme PEP-carboxylase có ái lực cao với $\\mathrm{CO_2}$, nên C4 và CAM vẫn lấy được $\\mathrm{CO_2}$ khi nồng độ trong lá thấp lúc khí khổng khép bớt. Nhờ đó chúng thích nghi tốt với nơi nóng, khô. Cả ba nhóm đều có chu trình Calvin.',
         },
         { type: 'widget', name: 'nhom-thuc-vat' },
       ],
@@ -165,7 +165,7 @@ export default {
           type: 'list',
           items: [
             'Điểm bù ánh sáng: cường độ ánh sáng mà tại đó cường độ quang hợp bằng cường độ hô hấp.',
-            'Điểm bão hoà ánh sáng: cường độ ánh sáng mà từ đó quang hợp đạt cực đại, tăng ánh sáng nữa cũng không tăng thêm.',
+            'Điểm bão hoà ánh sáng: cường độ ánh sáng mà từ đó quang hợp đạt cực đại, tăng ánh sáng nữa quang hợp không tăng thêm, thậm chí có thể giảm.',
             'Cây ưa sáng có điểm bù, điểm bão hoà cao hơn cây ưa bóng. Thành phần ánh sáng cũng có ảnh hưởng: quang hợp mạnh nhất ở vùng ánh sáng đỏ, sau đó là xanh tím.',
           ],
         },
@@ -175,7 +175,7 @@ export default {
           rows: [
             [
               'Nồng độ $\\mathrm{CO_2}$',
-              'Trong không khí khoảng $0{,}04\\%$. Nồng độ tăng thì quang hợp tăng đến một giới hạn; điểm bão hoà của cây trồng khoảng $0{,}06$ đến $0{,}1\\%$. Nồng độ khoảng $0{,}2\\%$ có thể gây hại cho cây',
+              'Trong không khí khoảng $0{,}04\\%$. Nồng độ tăng thì quang hợp tăng đến một giới hạn; điểm bão hoà của cây trồng khoảng $0{,}06$ đến $0{,}1\\%$. Nồng độ quá thấp thì quang hợp không xảy ra; quá cao (khoảng $0{,}2\\%$) có thể làm cây chết vì ngộ độc',
             ],
             [
               'Nhiệt độ',
@@ -338,7 +338,7 @@ export default {
       answer: 0,
       hints: ['Điểm bão hoà $\\mathrm{CO_2}$ của cây trồng khoảng $0{,}06$ đến $0{,}1\\%$.'],
       solution:
-        'Mức $0{,}08\\%$ vẫn nằm trong vùng quang hợp còn tăng hoặc gần bão hoà, chưa tới mức có hại khoảng $0{,}2\\%$.',
+        'Mức $0{,}08\\%$ vẫn nằm trong vùng quang hợp còn tăng hoặc gần bão hoà, chưa tới mức gây ngộ độc khoảng $0{,}2\\%$.',
     },
     {
       type: 'multi',

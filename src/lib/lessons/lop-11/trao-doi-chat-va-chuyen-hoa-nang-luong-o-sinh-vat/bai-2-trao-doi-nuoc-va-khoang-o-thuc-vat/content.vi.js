@@ -22,8 +22,8 @@ export default {
         {
           type: 'callout',
           tone: 'definition',
-          title: 'Nguyên tố khoáng thiết yếu',
-          text: 'Là nguyên tố mà nếu thiếu thì cây không hoàn thành được chu trình sống, và không thể thay thế bằng nguyên tố khác. Cây trồng có khoảng $17$ nguyên tố như vậy, gồm nhóm đa lượng và nhóm vi lượng.',
+          title: 'Nguyên tố dinh dưỡng thiết yếu',
+          text: 'Là nguyên tố mà nếu thiếu thì cây không hoàn thành được chu trình sống, và không thể thay thế bằng nguyên tố khác. Cây có $17$ nguyên tố như vậy, gồm nhóm đa lượng và nhóm vi lượng. C, H, O lấy từ không khí và nước; $14$ nguyên tố còn lại là nguyên tố khoáng, cây lấy từ đất.',
         },
         {
           type: 'p',
@@ -37,7 +37,7 @@ export default {
           rows: [
             ['N', 'Cây chậm lớn, lá già vàng trước'],
             ['S', 'Lá non vàng trước'],
-            ['K', 'Lá ngắn, hẹp, xuất hiện chấm đỏ'],
+            ['K', 'Lá già vàng và cháy từ mép lá, có thể có chấm đỏ'],
             ['Mg', 'Phiến lá vàng, gân vẫn xanh'],
           ],
         },
@@ -251,7 +251,7 @@ export default {
     {
       type: 'number',
       prompt:
-        'Cây trồng cần khoảng $17$ nguyên tố khoáng thiết yếu, trong đó có $9$ nguyên tố đa lượng. Có bao nhiêu nguyên tố vi lượng?',
+        'Cây cần $17$ nguyên tố dinh dưỡng thiết yếu, trong đó có $9$ nguyên tố đa lượng. Có bao nhiêu nguyên tố vi lượng?',
       answer: 8,
       hints: ['Lấy tổng số trừ đi nhóm đa lượng.'],
       solution: '$17 - 9 = 8$ nguyên tố vi lượng.',

@@ -40,6 +40,17 @@ describe('water budget', () => {
     expect(describeBudget({ light: 100, air: 40, soil: 100 }).text).toContain('úng');
   });
 
+  it('warns about early waterlogging even while the roots still keep up', () => {
+    const w = { light: 60, air: 60, soil: 90 };
+    expect(waterBudget(w).stress).toBe(0);
+    expect(waterBudget(w).wilted).toBe(false);
+    expect(describeBudget(w).text).toContain('úng');
+  });
+
+  it('shows a wilted plant whenever waterlogging leaves the roots short', () => {
+    expect(waterBudget({ light: 60, air: 60, soil: 100 }).wilted).toBe(true);
+  });
+
   it('never pulls more water up than the roots supply', () => {
     const over = [];
     for (const soil of [0, 20, 50, 80, 90, 100]) {
@@ -67,6 +78,10 @@ describe('reference data', () => {
     expect(ELEMENT_CARDS).toHaveLength(17);
     expect(ELEMENT_CARDS.filter((c) => c.bin === 'da')).toHaveLength(9);
     expect(ELEMENT_CARDS.filter((c) => c.bin === 'vi')).toHaveLength(8);
+  });
+
+  it('writes the sorter hints as plain text, since the sorter prints them as is', () => {
+    expect(ELEMENT_CARDS.filter((c) => c.why.includes('$'))).toEqual([]);
   });
 
   it('draws a valid root diagram', () => {

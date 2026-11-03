@@ -52,7 +52,7 @@ export function waterBudget(w) {
     /** Sugar leaving the leaves through the phloem; needs light and open stomata. */
     phloem: (w.light / 100) * opening,
     stress,
-    wilted: stress >= WILT_STRESS,
+    wilted: stress >= WILT_STRESS || (w.soil >= WATERLOG_FROM && stress > 0),
     waterlogged: w.soil >= WATERLOG_FROM,
   };
 }
@@ -68,6 +68,12 @@ export function describeBudget(w) {
     return {
       tone: 'warn',
       text: 'Đất úng: rễ thiếu $\\mathrm{O_2}$ để hô hấp nên hút nước kém. Lá vẫn thoát hơi nước, cây héo dù đất đầy nước.',
+    };
+  }
+  if (b.waterlogged) {
+    return {
+      tone: 'warn',
+      text: 'Đất bắt đầu úng: rễ thiếu dần $\\mathrm{O_2}$ nên hút nước kém đi. Lượng nước hút còn đủ bù lượng nước thoát, nhưng úng nặng hơn thì cây sẽ héo.',
     };
   }
   if (b.wilted) {
@@ -130,9 +136,9 @@ export const ELEMENT_BINS = [
 
 /** @type {Array<[string, 'da' | 'vi', string]>} */
 const ELEMENTS = [
-  ['C', 'da', 'Carbon lấy từ $\\mathrm{CO_2}$, là khung của mọi chất hữu cơ.'],
+  ['C', 'da', 'Carbon lấy từ CO₂, là khung của mọi chất hữu cơ.'],
   ['H', 'da', 'Hydrogen lấy từ nước, có trong mọi chất hữu cơ.'],
-  ['O', 'da', 'Oxygen có trong nước, $\\mathrm{CO_2}$ và chất hữu cơ.'],
+  ['O', 'da', 'Oxygen có trong nước, CO₂ và chất hữu cơ.'],
   ['N', 'da', 'Nitrogen cấu tạo protein, nucleic acid, diệp lục.'],
   ['P', 'da', 'Phosphorus cấu tạo nucleic acid, ATP, phospholipid.'],
   ['K', 'da', 'Potassium điều tiết đóng mở khí khổng, cân bằng nước.'],
@@ -253,7 +259,7 @@ export const ROOT_DIAGRAM = {
       name: 'Con đường tế bào chất',
       info: 'Nước đi từ tế bào này sang tế bào khác qua cầu sinh chất: chậm hơn nhưng được kiểm soát chặt.',
       x: 200,
-      y: 136,
+      y: 112,
     },
     {
       id: 'caspary',
@@ -261,7 +267,7 @@ export const ROOT_DIAGRAM = {
       accept: ['vành đai Caspary'],
       info: 'Vòng chất không thấm nước ở thành tế bào nội bì: chặn con đường gian bào, buộc nước và khoáng phải đi qua tế bào chất, nên cây chọn lọc được chất đi vào.',
       x: 259,
-      y: 166,
+      y: 141,
     },
     {
       id: 'noi-bi',

@@ -70,7 +70,7 @@ export default {
           type: 'callout',
           tone: 'note',
           title: 'Đọc kết quả',
-          text: 'Từ vạch xuất phát lên có bốn dải: diệp lục b (xanh vàng), diệp lục a (xanh lam), xanthophyll (vàng), carotene (da cam). Giấy cellulose phân cực giữ các sắc tố phân cực hơn lại nên chúng đi gần; carotene ít phân cực nhất nên đi xa nhất.',
+          text: 'Từ vạch xuất phát lên có bốn dải: diệp lục b (xanh vàng), diệp lục a (xanh lá cây), xanthophyll (vàng), carotene (da cam). Giấy cellulose phân cực giữ các sắc tố phân cực hơn lại nên chúng đi gần; carotene ít phân cực nhất nên đi xa nhất.',
         },
         {
           type: 'tex',

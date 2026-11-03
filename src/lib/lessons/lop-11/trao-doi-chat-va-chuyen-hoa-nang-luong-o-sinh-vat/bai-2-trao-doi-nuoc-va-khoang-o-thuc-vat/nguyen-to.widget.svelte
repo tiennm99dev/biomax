@@ -9,6 +9,6 @@
 <CardSorter
   {cards}
   bins={ELEMENT_BINS}
-  label="Xếp mỗi nguyên tố khoáng thiết yếu vào nhóm đa lượng hoặc vi lượng"
+  label="Xếp mỗi nguyên tố dinh dưỡng thiết yếu vào nhóm đa lượng hoặc vi lượng"
   hintOnWrong
 />

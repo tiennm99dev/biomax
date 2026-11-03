@@ -131,4 +131,8 @@ describe('plant groups', () => {
     const ids = GROUP_BINS.map((b) => b.id);
     expect(GROUP_CARDS.every((c) => ids.includes(c.bin))).toBe(true);
   });
+
+  it('writes the sorter hints as plain text, since the sorter prints them as is', () => {
+    expect(GROUP_CARDS.filter((c) => c.why.includes('$'))).toEqual([]);
+  });
 });

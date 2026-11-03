@@ -37,6 +37,12 @@ describe('stages in a changed world', () => {
   });
 });
 
+describe('stage names', () => {
+  it('keeps the ATP abbreviation in capitals', () => {
+    expect(STAGES.find((s) => s.id === 'phan-giai')?.form).toContain('ATP');
+  });
+});
+
 describe('learning goals', () => {
   it('marks a goal only for the organism it is about', () => {
     const world = { light: false, plants: true };

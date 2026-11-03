@@ -82,7 +82,7 @@
       />
     {/each}
 
-    <path d="M 176 210 L 176 60" class="line" stroke="#2563eb" stroke-dashoffset={upOffset} />
+    <path d="M 176 210 L 176 60" class="line" stroke="#2563eb" stroke-dashoffset={-upOffset} />
     <path d="M 184 60 L 184 210" class="line" stroke="#ea580c" stroke-dashoffset={-downOffset} />
 
     <g fill="none" stroke="#713f12" stroke-width="3" stroke-linecap="round">
@@ -90,8 +90,18 @@
       <path d="M 180 210 L 180 280" />
       <path d="M 180 210 L 214 248 L 248 266" />
     </g>
-    <path d="M 118 262 L 170 225" class="line thin" stroke="#2563eb" stroke-dashoffset={upOffset} />
-    <path d="M 248 266 L 190 225" class="line thin" stroke="#2563eb" stroke-dashoffset={upOffset} />
+    <path
+      d="M 118 262 L 170 225"
+      class="line thin"
+      stroke="#2563eb"
+      stroke-dashoffset={-upOffset}
+    />
+    <path
+      d="M 248 266 L 190 225"
+      class="line thin"
+      stroke="#2563eb"
+      stroke-dashoffset={-upOffset}
+    />
 
     <text x="124" y="150" text-anchor="end" font-size="12" fill="#1d4ed8">mạch gỗ ↑</text>
     <text x="196" y="150" font-size="12" fill="#c2410c">mạch rây ↓↑</text>

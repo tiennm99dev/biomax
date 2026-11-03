@@ -26,7 +26,9 @@
     role="img"
     aria-label="Lá sau khi nhúng iodine: phần được chiếu sáng {starch.open
       ? 'có tinh bột'
-      : 'không có tinh bột'}, phần bị che {starch.covered ? 'có tinh bột' : 'không có tinh bột'}"
+      : 'không có tinh bột'}{test.cover
+      ? `, phần bị che ${starch.covered ? 'có tinh bột' : 'không có tinh bột'}`
+      : ''}"
   >
     <defs>
       <clipPath id="iodine-leaf">
@@ -46,7 +48,13 @@
       stroke-width="2"
     />
     {#if test.cover}
-      <text x="150" y="70" text-anchor="middle" font-size="11" fill="#0f172a">phần bị che</text>
+      <text
+        x="150"
+        y="70"
+        text-anchor="middle"
+        font-size="11"
+        fill={starch.covered ? '#ffffff' : '#0f172a'}>phần bị che</text
+      >
     {/if}
   </svg>
 

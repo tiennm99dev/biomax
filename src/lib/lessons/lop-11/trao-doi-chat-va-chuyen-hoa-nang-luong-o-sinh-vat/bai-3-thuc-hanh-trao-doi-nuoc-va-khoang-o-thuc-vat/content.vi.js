@@ -88,7 +88,7 @@ export default {
           type: 'list',
           ordered: true,
           items: [
-            'Dùng kim mũi mác tách một lớp biểu bì thật mỏng ở mặt dưới lá.',
+            'Dùng kim mũi mác tách một lớp biểu bì thật mỏng ở mặt dưới lá thài lài tía.',
             'Đặt lên lam kính có giọt nước, đậy lamen.',
             'Quan sát ở vật kính $10\\times$ rồi $40\\times$. Vẽ hình và ghi chú.',
           ],
@@ -104,7 +104,7 @@ export default {
       blocks: [
         {
           type: 'p',
-          text: 'Trồng các cây cùng loại, cùng cỡ vào các chậu giống nhau. Chậu $1$ không tưới, chậu $2$ tưới vừa phải, chậu $3$ tưới quá nhiều (hai lần mỗi ngày). So sánh sau một tuần. Muốn thấy vai trò của phân bón, giữ chế độ tưới vừa phải và thay đổi lượng phân: không bón, bón đúng liều, bón quá liều.',
+          text: 'Trồng các cây cùng loại, cùng cỡ vào các chậu giống nhau. Chậu $1$ không tưới, chậu $2$ tưới vừa phải, chậu $3$ tưới quá nhiều (mỗi lần gấp đôi chậu $2$, hai lần mỗi ngày). So sánh sau một tuần. Muốn thấy vai trò của phân bón, giữ chế độ tưới vừa phải và thay đổi lượng phân: không bón, bón đúng liều, bón quá liều.',
         },
         { type: 'widget', name: 'cham-soc' },
         {
