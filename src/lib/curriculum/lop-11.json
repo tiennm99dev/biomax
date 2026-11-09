@@ -39,8 +39,13 @@
           "title": "Bài 3. Thực hành: Trao đổi nước và khoáng ở thực vật",
           "slug": "bai-3-thuc-hanh-trao-doi-nuoc-va-khoang-o-thuc-vat",
           "kind": "practice",
-          "keyIdeas": ["Thí nghiệm thoát hơi nước", "Thí nghiệm vai trò phân bón"],
-          "interactiveIdea": "Thí nghiệm ảo cân cành cây theo thời gian, vẽ đồ thị lượng nước thoát."
+          "keyIdeas": [
+            "Thí nghiệm hút nước ở rễ, vận chuyển nước ở thân, thoát hơi nước ở lá",
+            "Quan sát khí khổng",
+            "Tưới nước và bón phân hợp lí",
+            "Trồng cây thuỷ canh, khí canh"
+          ],
+          "interactiveIdea": "Cân ba ống nghiệm (cành có lá, cành bỏ lá, ống đối chứng) theo thời gian, vẽ đồ thị lượng nước mất."
         },
         {
           "no": 4,
