@@ -69,14 +69,14 @@ export const ENDOCRINE_MAP = {
     {
       id: 'tuyen-tung',
       name: 'Tuyến tùng',
-      info: 'Nằm trong não. Tiết melatonin, điều hòa nhịp thức – ngủ theo ngày đêm.',
+      info: 'Nằm trong não. Tiết melatonin, điều hoà nhịp thức – ngủ theo ngày đêm.',
       x: 172,
       y: 40,
     },
     {
       id: 'tuyen-giap',
       name: 'Tuyến giáp',
-      info: 'Nằm ở cổ, trước khí quản. Tiết thyroxine (có iodine) làm tăng trao đổi chất, chuyển hóa năng lượng ở hầu hết tế bào, ảnh hưởng đến sinh trưởng và phát triển; tiết calcitonin làm giảm calcium trong máu (đưa calcium vào xương).',
+      info: 'Nằm ở cổ, trước khí quản. Tiết thyroxine (có iodine) làm tăng trao đổi chất, chuyển hoá năng lượng ở hầu hết tế bào, ảnh hưởng đến sinh trưởng và phát triển; tiết calcitonin làm giảm calcium trong máu (đưa calcium vào xương).',
       x: 150,
       y: 136,
     },
@@ -97,8 +97,8 @@ export const ENDOCRINE_MAP = {
     },
     {
       id: 'tuyen-tuy',
-      name: 'Tuyến tụy',
-      info: 'Nằm sau dạ dày. Tiết insulin làm giảm đường huyết (gan, cơ nhận glucose và dự trữ glycogen) và glucagon làm tăng đường huyết (gan phân giải glycogen thành glucose). Tụy còn tiết dịch tụy vào ruột non.',
+      name: 'Tuyến tuỵ',
+      info: 'Nằm sau dạ dày. Tiết insulin làm giảm đường huyết (gan, cơ nhận glucose và dự trữ glycogen) và glucagon làm tăng đường huyết (gan phân giải glycogen thành glucose). Tuỵ còn tiết dịch tuỵ vào ruột non.',
       x: 186,
       y: 230,
     },
@@ -106,7 +106,7 @@ export const ENDOCRINE_MAP = {
       id: 'tuyen-tren-than',
       name: 'Tuyến trên thận',
       accept: ['tuyến thượng thận', 'tuyen thuong than'],
-      info: 'Hai tuyến nằm trên hai quả thận. Tiết adrenaline làm tim đập nhanh, tăng huyết áp, tăng đường huyết khi cơ thể căng thẳng, sợ hãi; tiết cortisol, aldosterone điều hòa đường huyết, muối và nước.',
+      info: 'Hai tuyến nằm trên hai quả thận. Tiết adrenaline làm tim đập nhanh, tăng huyết áp, tăng đường huyết khi cơ thể căng thẳng, sợ hãi; tiết cortisol, aldosterone điều hoà đường huyết, muối và nước.',
       x: 110,
       y: 246,
     },
@@ -166,9 +166,9 @@ export const GLAND_CARDS = [
   },
   {
     id: 'tuy',
-    label: 'Tuyến tụy',
+    label: 'Tuyến tuỵ',
     bin: 'pha',
-    why: 'Tụy tiết dịch tụy theo ống dẫn vào ruột non (ngoại tiết) và tiết insulin, glucagon vào máu (nội tiết).',
+    why: 'Tuỵ tiết dịch tuỵ theo ống dẫn vào ruột non (ngoại tiết) và tiết insulin, glucagon vào máu (nội tiết).',
   },
   {
     id: 'sinh-duc',

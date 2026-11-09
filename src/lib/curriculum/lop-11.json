@@ -5,18 +5,18 @@
     {
       "no": 1,
       "label": "Chương 1",
-      "title": "Trao đổi chất và chuyển hóa năng lượng ở sinh vật",
+      "title": "Trao đổi chất và chuyển hoá năng lượng ở sinh vật",
       "slug": "trao-doi-chat-va-chuyen-hoa-nang-luong-o-sinh-vat",
       "strand": "sinh-hoc-co-the",
       "volume": "Sách giáo khoa (1 tập)",
       "lessons": [
         {
           "no": 1,
-          "title": "Bài 1. Khái quát về trao đổi chất và chuyển hóa năng lượng",
+          "title": "Bài 1. Khái quát về trao đổi chất và chuyển hoá năng lượng",
           "slug": "bai-1-khai-quat-ve-trao-doi-chat-va-chuyen-hoa-nang-luong",
           "kind": "theory",
           "keyIdeas": [
-            "Các giai đoạn chuyển hóa năng lượng trong sinh giới",
+            "Các giai đoạn chuyển hoá năng lượng trong sinh giới",
             "Phương thức trao đổi chất"
           ],
           "interactiveIdea": "Sơ đồ dòng năng lượng từ Mặt Trời qua sinh vật tự dưỡng và dị dưỡng."
@@ -48,7 +48,7 @@
           "slug": "bai-4-quang-hop-o-thuc-vat",
           "kind": "theory",
           "keyIdeas": ["Pha sáng và pha tối", "Thực vật C3, C4, CAM", "Yếu tố ảnh hưởng"],
-          "interactiveIdea": "Sơ đồ lục lạp hoạt hình pha sáng và chu trình Calvin; đồ thị điểm bù và điểm bão hòa ánh sáng."
+          "interactiveIdea": "Sơ đồ lục lạp hoạt hình pha sáng và chu trình Calvin; đồ thị điểm bù và điểm bão hoà ánh sáng."
         },
         {
           "no": 5,
@@ -71,16 +71,16 @@
           "title": "Bài 7. Thực hành: Hô hấp ở thực vật",
           "slug": "bai-7-thuc-hanh-ho-hap-o-thuc-vat",
           "kind": "practice",
-          "keyIdeas": ["Thí nghiệm hô hấp thải CO₂, tỏa nhiệt"],
+          "keyIdeas": ["Thí nghiệm hô hấp thải CO₂, toả nhiệt"],
           "interactiveIdea": "Thí nghiệm ảo đo nhiệt độ bình hạt nảy mầm theo thời gian."
         },
         {
           "no": 8,
-          "title": "Bài 8. Dinh dưỡng và tiêu hóa ở động vật",
+          "title": "Bài 8. Dinh dưỡng và tiêu hoá ở động vật",
           "slug": "bai-8-dinh-duong-va-tieu-hoa-o-dong-vat",
           "kind": "theory",
-          "keyIdeas": ["Các hình thức tiêu hóa", "Tiêu hóa ở người", "Dinh dưỡng hợp lí"],
-          "interactiveIdea": "So sánh ống tiêu hóa thú ăn thịt và thú ăn cỏ bằng hai sơ đồ tương tác."
+          "keyIdeas": ["Các hình thức tiêu hoá", "Tiêu hoá ở người", "Dinh dưỡng hợp lí"],
+          "interactiveIdea": "So sánh ống tiêu hoá thú ăn thịt và thú ăn cỏ bằng hai sơ đồ tương tác."
         },
         {
           "no": 9,
@@ -124,7 +124,7 @@
           "slug": "bai-13-bai-tiet-va-can-bang-noi-moi",
           "kind": "theory",
           "keyIdeas": ["Cơ quan bài tiết", "Cơ chế cân bằng nội môi", "Vai trò của thận và gan"],
-          "interactiveIdea": "Sơ đồ vòng điều hòa ngược: chỉnh đường huyết và xem insulin/glucagon phản hồi."
+          "interactiveIdea": "Sơ đồ vòng điều hoà ngược: chỉnh đường huyết và xem insulin/glucagon phản hồi."
         }
       ]
     },
@@ -174,7 +174,7 @@
           "slug": "bai-18-tap-tinh-o-dong-vat",
           "kind": "theory",
           "keyIdeas": ["Tập tính bẩm sinh và học được", "Các hình thức học tập", "Ứng dụng"],
-          "interactiveIdea": "Mô phỏng thí nghiệm điều kiện hóa của Pavlov với chuông và thức ăn."
+          "interactiveIdea": "Mô phỏng thí nghiệm điều kiện hoá của Pavlov với chuông và thức ăn."
         }
       ]
     },
@@ -274,8 +274,8 @@
           "title": "Bài 27. Sinh sản ở động vật",
           "slug": "bai-27-sinh-san-o-dong-vat",
           "kind": "theory",
-          "keyIdeas": ["Sinh sản vô tính và hữu tính", "Điều hòa sinh sản", "Sinh đẻ có kế hoạch"],
-          "interactiveIdea": "Sơ đồ trục hormone điều hòa sinh tinh, sinh trứng với điều hòa ngược."
+          "keyIdeas": ["Sinh sản vô tính và hữu tính", "Điều hoà sinh sản", "Sinh đẻ có kế hoạch"],
+          "interactiveIdea": "Sơ đồ trục hormone điều hoà sinh tinh, sinh trứng với điều hoà ngược."
         }
       ]
     },
@@ -326,11 +326,11 @@
         },
         {
           "no": 2,
-          "title": "Bài 2. Mô hình thủy canh theo hướng phát triển nông nghiệp sạch",
+          "title": "Bài 2. Mô hình thuỷ canh theo hướng phát triển nông nghiệp sạch",
           "slug": "cd-bai-2-mo-hinh-thuy-canh-theo-huong-phat-trien-nong-nghiep-sach",
           "kind": "chuyen-de",
-          "keyIdeas": ["Nguyên lí thủy canh", "Các mô hình thủy canh"],
-          "interactiveIdea": "Mô phỏng hệ thủy canh chỉnh pH, EC dung dịch và theo dõi cây phát triển."
+          "keyIdeas": ["Nguyên lí thuỷ canh", "Các mô hình thuỷ canh"],
+          "interactiveIdea": "Mô phỏng hệ thuỷ canh chỉnh pH, EC dung dịch và theo dõi cây phát triển."
         },
         {
           "no": 3,

@@ -115,7 +115,7 @@ export const ACTION_CARDS = [
     id: 'o-nhiem',
     label: 'Xả rác thải, nước thải chưa xử lí ra sông, biển',
     bin: 'suy-giam',
-    why: 'Ô nhiễm môi trường làm chết sinh vật, phá hủy môi trường sống.',
+    why: 'Ô nhiễm môi trường làm chết sinh vật, phá huỷ môi trường sống.',
   },
   {
     id: 'khai-thac',

@@ -38,7 +38,7 @@
       viewBox="0 0 240 400"
       class="mx-auto block w-full max-w-56"
       role="group"
-      aria-label="Ống tiêu hóa người; thức ăn đang ở {stage.organ.toLowerCase()}"
+      aria-label="Ống tiêu hoá người; thức ăn đang ở {stage.organ.toLowerCase()}"
     >
       <rect x="0" y="0" width="240" height="400" rx="14" fill="#fff7ed" />
       <!-- liver and pancreas (digestive glands) -->
@@ -49,7 +49,7 @@
       />
       <text x="70" y="166" font-size="10" fill="#422006">gan</text>
       <ellipse cx="150" cy="208" rx="24" ry="5" fill="#fde68a" stroke="#ca8a04" />
-      <text x="178" y="212" font-size="10" fill="#713f12">tụy</text>
+      <text x="178" y="212" font-size="10" fill="#713f12">tuỵ</text>
       {#each STAGES as st, k (st.id)}
         {@const active = k === i}
         <g
@@ -94,11 +94,11 @@
       </p>
       <dl class="space-y-2">
         <div>
-          <dt class="font-semibold text-slate-700">Tiêu hóa cơ học</dt>
+          <dt class="font-semibold text-slate-700">Tiêu hoá cơ học</dt>
           <dd>{stage.mechanical}</dd>
         </div>
         <div>
-          <dt class="font-semibold text-slate-700">Tiêu hóa hóa học</dt>
+          <dt class="font-semibold text-slate-700">Tiêu hoá hoá học</dt>
           <dd>{stage.chemical}</dd>
         </div>
         <div>

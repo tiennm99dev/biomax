@@ -6,7 +6,7 @@ export default {
     'Một bông hoa bưởi nở, ong bay tới hút mật. Ít lâu sau, cánh hoa rụng hết, ở chỗ bông hoa lại có một quả bưởi non. Một con gà mái đẻ trứng, ấp ba tuần thì nở ra gà con. Quả, hạt và gà con được tạo ra như thế nào, và chúng giống bố mẹ ra sao?',
   objectives: [
     'Phát biểu được khái niệm sinh sản hữu tính ở sinh vật.',
-    'Mô tả được cấu tạo hoa và các bộ phận sinh sản của hoa (nhị, nhụy); phân biệt hoa lưỡng tính và hoa đơn tính.',
+    'Mô tả được cấu tạo hoa và các bộ phận sinh sản của hoa (nhị, nhuỵ); phân biệt hoa lưỡng tính và hoa đơn tính.',
     'Mô tả được quá trình thụ phấn, thụ tinh và hình thành quả, hạt ở thực vật có hoa.',
     'Mô tả được các giai đoạn sinh sản hữu tính ở động vật; phân biệt thụ tinh ngoài và thụ tinh trong.',
     'Nêu được vai trò và ứng dụng của sinh sản hữu tính.',
@@ -50,13 +50,13 @@ export default {
       blocks: [
         {
           type: 'p',
-          text: 'Hoa là cơ quan sinh sản của cây có hoa. Hoa gồm cuống hoa, đế hoa, đài hoa, tràng hoa (các cánh hoa), nhị và nhụy. Nhị và nhụy là bộ phận sinh sản chủ yếu của hoa.',
+          text: 'Hoa là cơ quan sinh sản của cây có hoa. Hoa gồm cuống hoa, đế hoa, đài hoa, tràng hoa (các cánh hoa), nhị và nhuỵ. Nhị và nhuỵ là bộ phận sinh sản chủ yếu của hoa.',
         },
         {
           type: 'list',
           items: [
             'Nhị gồm chỉ nhị và bao phấn; bao phấn chứa các hạt phấn mang giao tử đực.',
-            'Nhụy gồm đầu nhụy, vòi nhụy và bầu nhụy; bầu nhụy chứa noãn mang giao tử cái.',
+            'Nhuỵ gồm đầu nhuỵ, vòi nhuỵ và bầu nhuỵ; bầu nhuỵ chứa noãn mang giao tử cái.',
           ],
         },
         { type: 'p', text: 'Bấm vào các số trên sơ đồ để tìm hiểu, gọi tên các bộ phận của hoa.' },
@@ -68,12 +68,12 @@ export default {
           rows: [
             [
               'Hoa lưỡng tính',
-              'Có cả nhị và nhụy trên cùng một hoa',
+              'Có cả nhị và nhuỵ trên cùng một hoa',
               'Hoa bưởi, hoa ly, hoa hồng, hoa đào, hoa cải',
             ],
             [
               'Hoa đơn tính',
-              'Chỉ có nhị (hoa đực) hoặc chỉ có nhụy (hoa cái)',
+              'Chỉ có nhị (hoa đực) hoặc chỉ có nhuỵ (hoa cái)',
               'Hoa mướp, hoa bí, hoa ngô',
             ],
           ],
@@ -88,10 +88,10 @@ export default {
           type: 'list',
           ordered: true,
           items: [
-            'Thụ phấn là hiện tượng hạt phấn tiếp xúc với đầu nhụy. Hoa tự thụ phấn khi hạt phấn rơi vào đầu nhụy của chính hoa đó; hoa giao phấn khi hạt phấn được chuyển tới đầu nhụy của hoa khác. Hạt phấn có thể được chuyển tới đầu nhụy nhờ gió, nhờ côn trùng (ong, bướm, ...), nhờ nước hoặc nhờ con người.',
-            'Hạt phấn nảy mầm thành ống phấn; ống phấn xuyên qua vòi nhụy vào bầu nhụy, tới noãn.',
+            'Thụ phấn là hiện tượng hạt phấn tiếp xúc với đầu nhuỵ. Hoa tự thụ phấn khi hạt phấn rơi vào đầu nhuỵ của chính hoa đó; hoa giao phấn khi hạt phấn được chuyển tới đầu nhuỵ của hoa khác. Hạt phấn có thể được chuyển tới đầu nhuỵ nhờ gió, nhờ côn trùng (ong, bướm, ...), nhờ nước hoặc nhờ con người.',
+            'Hạt phấn nảy mầm thành ống phấn; ống phấn xuyên qua vòi nhuỵ vào bầu nhuỵ, tới noãn.',
             'Thụ tinh là sự kết hợp giữa giao tử đực và giao tử cái (thực chất là sự hợp nhất nhân của chúng) tạo thành hợp tử.',
-            'Sau thụ tinh: hợp tử phát triển thành phôi; noãn phát triển thành hạt chứa phôi; bầu nhụy phát triển thành quả chứa hạt. Mỗi noãn được thụ tinh tạo thành một hạt.',
+            'Sau thụ tinh: hợp tử phát triển thành phôi; noãn phát triển thành hạt chứa phôi; bầu nhuỵ phát triển thành quả chứa hạt. Mỗi noãn được thụ tinh tạo thành một hạt.',
           ],
         },
       ],
@@ -148,16 +148,16 @@ export default {
   explore: {
     title: 'Từ hoa đến quả, từ trứng đến con non',
     instruction:
-      'Thẻ "Thực vật có hoa": chọn tác nhân thụ phấn rồi bấm "Bước tiếp" để theo dõi hạt phấn tới đầu nhụy, ống phấn tới noãn, thụ tinh và hình thành quả, hạt. Thẻ "Động vật": chọn cá chép, gà hoặc thỏ để so sánh thụ tinh ngoài với thụ tinh trong, đẻ trứng với đẻ con.',
+      'Thẻ "Thực vật có hoa": chọn tác nhân thụ phấn rồi bấm "Bước tiếp" để theo dõi hạt phấn tới đầu nhuỵ, ống phấn tới noãn, thụ tinh và hình thành quả, hạt. Thẻ "Động vật": chọn cá chép, gà hoặc thỏ để so sánh thụ tinh ngoài với thụ tinh trong, đẻ trứng với đẻ con.',
   },
   examples: [
     {
       problem:
         'Một cây bí ngô ra rất nhiều hoa nhưng đậu rất ít quả do vườn ít ong. Vì sao? Người trồng có thể làm gì?',
       steps: [
-        'Hoa bí là hoa đơn tính: hoa đực chỉ có nhị, hoa cái chỉ có nhụy. Muốn có quả, hạt phấn từ hoa đực phải được chuyển sang đầu nhụy của hoa cái.',
+        'Hoa bí là hoa đơn tính: hoa đực chỉ có nhị, hoa cái chỉ có nhuỵ. Muốn có quả, hạt phấn từ hoa đực phải được chuyển sang đầu nhuỵ của hoa cái.',
         'Hoa bí thụ phấn chủ yếu nhờ côn trùng. Ít ong thì ít hoa cái được thụ phấn, nên ít hoa được thụ tinh và phát triển thành quả.',
-        'Người trồng có thể ngắt hoa đực, quét phấn lên đầu nhụy của hoa cái (thụ phấn nhờ con người).',
+        'Người trồng có thể ngắt hoa đực, quét phấn lên đầu nhuỵ của hoa cái (thụ phấn nhờ con người).',
       ],
       answer:
         'Vì ít côn trùng nên hoa cái không được thụ phấn; có thể thụ phấn bổ sung bằng tay cho hoa cái.',
@@ -199,7 +199,7 @@ export default {
     {
       type: 'match',
       prompt: 'Nối mỗi bộ phận của hoa với chức năng (hoặc số phận sau thụ tinh) của nó.',
-      left: ['Bao phấn', 'Đầu nhụy', 'Bầu nhụy', 'Noãn'],
+      left: ['Bao phấn', 'Đầu nhuỵ', 'Bầu nhuỵ', 'Noãn'],
       right: [
         'Tiếp nhận hạt phấn',
         'Phát triển thành hạt',
@@ -213,16 +213,16 @@ export default {
         [2, 3],
         [3, 1],
       ],
-      hints: ['Sau thụ tinh: bầu nhụy → quả, noãn → hạt.'],
+      hints: ['Sau thụ tinh: bầu nhuỵ → quả, noãn → hạt.'],
       solution:
-        'Bao phấn chứa hạt phấn; đầu nhụy tiếp nhận hạt phấn; bầu nhụy phát triển thành quả; noãn phát triển thành hạt. (Đài hoa bảo vệ hoa khi còn là nụ.)',
+        'Bao phấn chứa hạt phấn; đầu nhuỵ tiếp nhận hạt phấn; bầu nhuỵ phát triển thành quả; noãn phát triển thành hạt. (Đài hoa bảo vệ hoa khi còn là nụ.)',
     },
     {
       type: 'order',
       prompt: 'Sắp xếp các giai đoạn sinh sản hữu tính ở thực vật có hoa theo đúng thứ tự.',
       items: ['Thụ tinh', 'Hình thành quả và hạt', 'Thụ phấn', 'Hạt phấn nảy mầm thành ống phấn'],
       answer: [2, 3, 0, 1],
-      hints: ['Hạt phấn phải tới đầu nhụy trước, rồi mới đi tới được noãn.'],
+      hints: ['Hạt phấn phải tới đầu nhuỵ trước, rồi mới đi tới được noãn.'],
       solution: 'Thụ phấn → hạt phấn nảy mầm thành ống phấn → thụ tinh → hình thành quả và hạt.',
     },
     {
@@ -231,15 +231,15 @@ export default {
       options: ['Hoa bí', 'Hoa bưởi', 'Hoa mướp', 'Hoa hồng', 'Hoa ngô'],
       answers: [0, 2, 4],
       hints: [
-        'Hoa đơn tính chỉ có nhị hoặc chỉ có nhụy; cây bí, mướp, ngô có hoa đực và hoa cái riêng.',
+        'Hoa đơn tính chỉ có nhị hoặc chỉ có nhuỵ; cây bí, mướp, ngô có hoa đực và hoa cái riêng.',
       ],
       solution:
-        'Hoa bí, hoa mướp, hoa ngô là hoa đơn tính. Hoa bưởi và hoa hồng có cả nhị và nhụy nên là hoa lưỡng tính.',
+        'Hoa bí, hoa mướp, hoa ngô là hoa đơn tính. Hoa bưởi và hoa hồng có cả nhị và nhuỵ nên là hoa lưỡng tính.',
     },
     {
       type: 'number',
       prompt:
-        'Một quả cà chua có 85 hạt. Có bao nhiêu noãn trong bầu nhụy đã được thụ tinh để tạo thành các hạt đó?',
+        'Một quả cà chua có 85 hạt. Có bao nhiêu noãn trong bầu nhuỵ đã được thụ tinh để tạo thành các hạt đó?',
       answer: 85,
       hints: ['Mỗi noãn được thụ tinh phát triển thành mấy hạt?'],
       solution: 'Mỗi noãn được thụ tinh tạo thành một hạt, nên có 85 noãn đã được thụ tinh.',
@@ -248,15 +248,15 @@ export default {
       type: 'choice',
       prompt: 'Thụ tinh ở thực vật có hoa là',
       options: [
-        'hiện tượng hạt phấn tiếp xúc với đầu nhụy',
+        'hiện tượng hạt phấn tiếp xúc với đầu nhuỵ',
         'sự kết hợp giữa giao tử đực và giao tử cái tạo thành hợp tử',
-        'sự lớn lên của bầu nhụy thành quả',
+        'sự lớn lên của bầu nhuỵ thành quả',
         'sự nảy mầm của hạt thành cây con',
       ],
       answer: 1,
       hints: ['Đừng nhầm thụ tinh với thụ phấn.'],
       solution:
-        'Thụ phấn là hạt phấn tiếp xúc với đầu nhụy; thụ tinh là giao tử đực kết hợp với giao tử cái trong noãn tạo thành hợp tử.',
+        'Thụ phấn là hạt phấn tiếp xúc với đầu nhuỵ; thụ tinh là giao tử đực kết hợp với giao tử cái trong noãn tạo thành hợp tử.',
     },
     {
       type: 'multi',
@@ -284,8 +284,8 @@ export default {
   ],
   takeaways: [
     'Sinh sản hữu tính: giao tử đực hợp nhất với giao tử cái tạo hợp tử; hợp tử phát triển thành cơ thể mới mang đặc điểm của cả bố và mẹ.',
-    'Hoa gồm cuống, đế, đài, tràng, nhị (chỉ nhị, bao phấn) và nhụy (đầu, vòi, bầu nhụy chứa noãn). Hoa lưỡng tính có cả nhị và nhụy; hoa đơn tính chỉ có một trong hai.',
-    'Thụ phấn (hạt phấn tới đầu nhụy, nhờ gió, côn trùng, con người) → thụ tinh (tạo hợp tử) → noãn thành hạt, bầu nhụy thành quả.',
+    'Hoa gồm cuống, đế, đài, tràng, nhị (chỉ nhị, bao phấn) và nhuỵ (đầu, vòi, bầu nhuỵ chứa noãn). Hoa lưỡng tính có cả nhị và nhuỵ; hoa đơn tính chỉ có một trong hai.',
+    'Thụ phấn (hạt phấn tới đầu nhuỵ, nhờ gió, côn trùng, con người) → thụ tinh (tạo hợp tử) → noãn thành hạt, bầu nhuỵ thành quả.',
     'Ở động vật: hình thành giao tử → thụ tinh (ngoài hoặc trong) → phát triển phôi (đẻ trứng hoặc đẻ con).',
     'Sinh sản hữu tính tạo con đa dạng, giúp loài thích nghi; là nguồn nguyên liệu cho chọn giống.',
   ],

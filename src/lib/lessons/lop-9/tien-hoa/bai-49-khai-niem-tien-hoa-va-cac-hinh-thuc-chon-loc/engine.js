@@ -147,9 +147,9 @@ export function trendText(history, bark) {
   if (history.length < 2)
     return `Thế hệ đầu có ${pct(first)} bướm màu tối. Hãy làm chim: chạm vào những con bướm em thấy rõ nhất.`;
   if (last === 1)
-    return `Sau ${history.length - 1} thế hệ, bướm màu sáng đã bị đào thải hết: cả quần thể là bướm màu tối${bark === 'sam' ? ', ngụy trang tốt trên thân cây sẫm' : ''}.`;
+    return `Sau ${history.length - 1} thế hệ, bướm màu sáng đã bị đào thải hết: cả quần thể là bướm màu tối${bark === 'sam' ? ', nguỵ trang tốt trên thân cây sẫm' : ''}.`;
   if (last === 0)
-    return `Sau ${history.length - 1} thế hệ, bướm màu tối đã bị đào thải hết: cả quần thể là bướm màu sáng${bark === 'sang' ? ', ngụy trang tốt trên thân cây sáng' : ''}.`;
+    return `Sau ${history.length - 1} thế hệ, bướm màu tối đã bị đào thải hết: cả quần thể là bướm màu sáng${bark === 'sang' ? ', nguỵ trang tốt trên thân cây sáng' : ''}.`;
   const change = last - first;
   if (Math.abs(change) < 0.05)
     return `Sau ${history.length - 1} thế hệ, tỉ lệ bướm màu tối gần như không đổi (${pct(last)}).`;

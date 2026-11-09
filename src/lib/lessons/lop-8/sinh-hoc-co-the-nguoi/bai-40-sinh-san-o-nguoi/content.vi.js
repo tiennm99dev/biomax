@@ -1,14 +1,14 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Chức năng và cấu tạo cơ quan sinh dục nam, nữ; thụ tinh và thụ thai; hiện tượng kinh nguyệt; các biện pháp tránh thai; một số bệnh lây truyền qua đường sinh dục và bảo vệ sức khỏe sinh sản ở tuổi vị thành niên.',
+    'Chức năng và cấu tạo cơ quan sinh dục nam, nữ; thụ tinh và thụ thai; hiện tượng kinh nguyệt; các biện pháp tránh thai; một số bệnh lây truyền qua đường sinh dục và bảo vệ sức khoẻ sinh sản ở tuổi vị thành niên.',
   intro:
-    'Mỗi người chúng ta đều bắt đầu từ một tế bào duy nhất, hợp tử, hình thành khi một tinh trùng kết hợp với một trứng. Hệ sinh dục làm thế nào để tạo ra tinh trùng, trứng và nuôi dưỡng một em bé? Ở tuổi dậy thì, em cần biết gì để bảo vệ sức khỏe sinh sản của mình?',
+    'Mỗi người chúng ta đều bắt đầu từ một tế bào duy nhất, hợp tử, hình thành khi một tinh trùng kết hợp với một trứng. Hệ sinh dục làm thế nào để tạo ra tinh trùng, trứng và nuôi dưỡng một em bé? Ở tuổi dậy thì, em cần biết gì để bảo vệ sức khoẻ sinh sản của mình?',
   objectives: [
     'Nêu được chức năng của hệ sinh dục; kể tên và nêu được chức năng của các cơ quan sinh dục nam và nữ.',
     'Phân biệt được thụ tinh và thụ thai; nêu được hiện tượng kinh nguyệt.',
     'Nêu được các nguyên tắc và một số biện pháp tránh thai.',
-    'Kể tên được một số bệnh lây truyền qua đường sinh dục và cách phòng tránh; nêu được ý nghĩa của bảo vệ sức khỏe sinh sản vị thành niên.',
+    'Kể tên được một số bệnh lây truyền qua đường sinh dục và cách phòng tránh; nêu được ý nghĩa của bảo vệ sức khoẻ sinh sản vị thành niên.',
   ],
   sections: [
     {
@@ -36,7 +36,7 @@ export default {
             ['Túi tinh', 'Chứa tinh trùng'],
             [
               'Tuyến tiền liệt, tuyến hành',
-              'Tiết dịch hòa với tinh trùng tạo thành tinh dịch, nuôi dưỡng tinh trùng',
+              'Tiết dịch hoà với tinh trùng tạo thành tinh dịch, nuôi dưỡng tinh trùng',
             ],
             [
               'Dương vật (có ống đái)',
@@ -158,7 +158,7 @@ export default {
       ],
     },
     {
-      heading: 'Bảo vệ sức khỏe sinh sản',
+      heading: 'Bảo vệ sức khoẻ sinh sản',
       blocks: [
         {
           type: 'table',
@@ -178,7 +178,7 @@ export default {
             [
               'HIV/AIDS',
               'Virus HIV',
-              'Phá hủy tế bào bạch cầu, làm suy giảm miễn dịch; người bệnh dễ mắc các bệnh cơ hội và tử vong',
+              'Phá huỷ tế bào bạch cầu, làm suy giảm miễn dịch; người bệnh dễ mắc các bệnh cơ hội và tử vong',
             ],
           ],
         },
@@ -189,7 +189,7 @@ export default {
         {
           type: 'list',
           items: [
-            'Không quan hệ tình dục sớm; sống chung thủy một vợ một chồng; sử dụng bao cao su.',
+            'Không quan hệ tình dục sớm; sống chung thuỷ một vợ một chồng; sử dụng bao cao su.',
             'Không dùng chung kim tiêm, dao cạo; chỉ truyền máu đã được xét nghiệm.',
             'Giữ vệ sinh cơ quan sinh dục, nhất là trong những ngày hành kinh; khám và điều trị sớm khi có dấu hiệu bất thường.',
           ],
@@ -198,7 +198,7 @@ export default {
           type: 'callout',
           tone: 'warning',
           title: 'Mang thai ở tuổi vị thành niên',
-          text: 'Ở tuổi vị thành niên, cơ thể, nhất là cơ quan sinh dục, chưa phát triển hoàn chỉnh. Mang thai sớm dễ gây sẩy thai, đẻ non, con nhẹ cân, nguy cơ tử vong của mẹ cao; nạo phá thai có thể gây viêm nhiễm, thủng tử cung, vô sinh; việc học tập và tương lai bị ảnh hưởng. Vì vậy cần tránh quan hệ tình dục sớm, tìm hiểu kiến thức sức khỏe sinh sản từ nguồn tin cậy và chia sẻ với cha mẹ, thầy cô, nhân viên y tế khi cần.',
+          text: 'Ở tuổi vị thành niên, cơ thể, nhất là cơ quan sinh dục, chưa phát triển hoàn chỉnh. Mang thai sớm dễ gây sẩy thai, đẻ non, con nhẹ cân, nguy cơ tử vong của mẹ cao; nạo phá thai có thể gây viêm nhiễm, thủng tử cung, vô sinh; việc học tập và tương lai bị ảnh hưởng. Vì vậy cần tránh quan hệ tình dục sớm, tìm hiểu kiến thức sức khoẻ sinh sản từ nguồn tin cậy và chia sẻ với cha mẹ, thầy cô, nhân viên y tế khi cần.',
         },
       ],
     },
@@ -238,7 +238,7 @@ export default {
       prompt: 'Nối mỗi bộ phận của cơ quan sinh dục nam với chức năng của nó.',
       left: ['Tinh hoàn', 'Túi tinh', 'Mào tinh', 'Tuyến tiền liệt'],
       right: [
-        'Tiết dịch hòa với tinh trùng tạo tinh dịch',
+        'Tiết dịch hoà với tinh trùng tạo tinh dịch',
         'Sản sinh tinh trùng, tiết testosterone',
         'Nơi tinh trùng tiếp tục hoàn thiện',
         'Chứa tinh trùng',

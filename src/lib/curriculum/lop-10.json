@@ -47,14 +47,14 @@
     {
       "no": 1,
       "label": "Chương 1",
-      "title": "Thành phần hóa học của tế bào",
+      "title": "Thành phần hoá học của tế bào",
       "slug": "thanh-phan-hoa-hoc-cua-te-bao",
       "strand": "te-bao",
       "volume": "Sách giáo khoa (1 tập)",
       "lessons": [
         {
           "no": 4,
-          "title": "Bài 4. Các nguyên tố hóa học và nước",
+          "title": "Bài 4. Các nguyên tố hoá học và nước",
           "slug": "bai-4-cac-nguyen-to-hoa-hoc-va-nuoc",
           "kind": "theory",
           "keyIdeas": [
@@ -96,7 +96,7 @@
           "slug": "bai-7-te-bao-nhan-so",
           "kind": "theory",
           "keyIdeas": ["Kích thước nhỏ và ưu thế", "Cấu tạo tế bào vi khuẩn"],
-          "interactiveIdea": "Mô hình tế bào vi khuẩn có nhãn; thanh trượt kích thước minh họa tỉ lệ S/V."
+          "interactiveIdea": "Mô hình tế bào vi khuẩn có nhãn; thanh trượt kích thước minh hoạ tỉ lệ S/V."
         },
         {
           "no": 8,
@@ -161,18 +161,18 @@
     {
       "no": 4,
       "label": "Chương 4",
-      "title": "Chuyển hóa năng lượng trong tế bào",
+      "title": "Chuyển hoá năng lượng trong tế bào",
       "slug": "chuyen-hoa-nang-luong-trong-te-bao",
       "strand": "te-bao",
       "volume": "Sách giáo khoa (1 tập)",
       "lessons": [
         {
           "no": 13,
-          "title": "Bài 13. Khái quát về chuyển hóa vật chất và năng lượng",
+          "title": "Bài 13. Khái quát về chuyển hoá vật chất và năng lượng",
           "slug": "bai-13-khai-quat-ve-chuyen-hoa-vat-chat-va-nang-luong",
           "kind": "theory",
           "keyIdeas": ["Các dạng năng lượng", "ATP", "Enzyme và cơ chế tác động"],
-          "interactiveIdea": "Đồ thị năng lượng hoạt hóa có/không enzyme; thanh trượt nhiệt độ, pH ảnh hưởng hoạt tính."
+          "interactiveIdea": "Đồ thị năng lượng hoạt hoá có/không enzyme; thanh trượt nhiệt độ, pH ảnh hưởng hoạt tính."
         },
         {
           "no": 14,
@@ -347,7 +347,7 @@
           "slug": "cd-bai-2-te-bao-goc-va-mot-so-thanh-tuu",
           "kind": "chuyen-de",
           "keyIdeas": ["Khái niệm và phân loại tế bào gốc", "Ứng dụng trong y học"],
-          "interactiveIdea": "Cây biệt hóa tế bào gốc bấm để xem loại tế bào có thể tạo ra."
+          "interactiveIdea": "Cây biệt hoá tế bào gốc bấm để xem loại tế bào có thể tạo ra."
         },
         {
           "no": 3,
@@ -430,7 +430,7 @@
           "title": "Bài 10. Vi sinh vật trong phân giải các hợp chất làm ô nhiễm môi trường",
           "slug": "cd-bai-10-vi-sinh-vat-trong-phan-giai-cac-hop-chat-lam-o-nhiem-moi-truong",
           "kind": "chuyen-de",
-          "keyIdeas": ["Phân giải hợp chất hữu cơ", "Phân giải chất khó phân hủy"],
+          "keyIdeas": ["Phân giải hợp chất hữu cơ", "Phân giải chất khó phân huỷ"],
           "interactiveIdea": "Sơ đồ con đường phân giải bấm vào từng nhóm vi sinh vật."
         },
         {

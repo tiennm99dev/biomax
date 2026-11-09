@@ -48,7 +48,7 @@ export default {
           caption: 'Câu hỏi giúp phân loại nhanh ngoài thực địa',
           head: ['Quan sát thấy', 'Nghĩ tới nhóm'],
           rows: [
-            ['Cơ thể đối xứng tỏa tròn, có tua, sống ở nước', 'Ruột khoang'],
+            ['Cơ thể đối xứng toả tròn, có tua, sống ở nước', 'Ruột khoang'],
             ['Cơ thể dài, mềm, không có chân, không có xương sống', 'Giun'],
             ['Cơ thể mềm, có vỏ đá vôi', 'Thân mềm'],
             ['Chân phân đốt, có vỏ cứng hoặc cánh', 'Chân khớp'],
@@ -156,7 +156,7 @@ export default {
       prompt: 'Nối mỗi ghi chép trong nhật kí với nhóm động vật phù hợp.',
       left: [
         'Da trần, ẩm; nhảy từ bờ xuống ao',
-        'Cơ thể hình dù, đối xứng tỏa tròn, có tua',
+        'Cơ thể hình dù, đối xứng toả tròn, có tua',
         'Hai mảnh vỏ đá vôi, cơ thể mềm',
         'Lông mao, đuôi xù, gặm quả bằng răng cửa',
       ],
@@ -169,7 +169,7 @@ export default {
       ],
       hints: ['Một nhóm ở cột phải không được dùng.'],
       solution:
-        'Da trần, ẩm: Lưỡng cư (ếch). Hình dù, tỏa tròn: Ruột khoang (sứa). Hai mảnh vỏ: Thân mềm (sò, trai). Lông mao, răng cửa: Thú (sóc). Bò sát không được dùng.',
+        'Da trần, ẩm: Lưỡng cư (ếch). Hình dù, toả tròn: Ruột khoang (sứa). Hai mảnh vỏ: Thân mềm (sò, trai). Lông mao, răng cửa: Thú (sóc). Bò sát không được dùng.',
     },
     {
       type: 'choice',

@@ -3,7 +3,7 @@ export default {
   summary:
     'Virus rất nhỏ, chưa có cấu tạo tế bào, gồm vỏ protein và lõi vật chất di truyền, có dạng xoắn, dạng khối hoặc dạng hỗn hợp; virus chỉ nhân lên được trong tế bào vật chủ, gây nhiều bệnh cho người, động vật, thực vật và được phòng chủ yếu bằng vaccine và vệ sinh.',
   intro:
-    'Cảm cúm, thủy đậu, quai bị, COVID-19 đều là những bệnh lây rất nhanh. Tác nhân gây ra chúng còn nhỏ hơn vi khuẩn hàng chục lần, nhỏ đến mức kính hiển vi quang học trong phòng thí nghiệm của trường cũng không nhìn thấy được. Đó là virus. Virus có cấu tạo thế nào và vì sao chúng chỉ "sống" được khi ở trong tế bào khác?',
+    'Cảm cúm, thuỷ đậu, quai bị, COVID-19 đều là những bệnh lây rất nhanh. Tác nhân gây ra chúng còn nhỏ hơn vi khuẩn hàng chục lần, nhỏ đến mức kính hiển vi quang học trong phòng thí nghiệm của trường cũng không nhìn thấy được. Đó là virus. Virus có cấu tạo thế nào và vì sao chúng chỉ "sống" được khi ở trong tế bào khác?',
   objectives: [
     'Mô tả được hình dạng và cấu tạo đơn giản của virus; phân biệt được virus với vi khuẩn.',
     'Giải thích được vì sao virus chỉ sống kí sinh trong tế bào vật chủ.',
@@ -90,14 +90,14 @@ export default {
           type: 'list',
           items: [
             'Có ích: virus được dùng để sản xuất vaccine phòng bệnh, sản xuất thuốc trừ sâu sinh học (virus gây bệnh cho sâu hại), làm công cụ trong nghiên cứu và chuyển gene.',
-            'Gây bệnh cho người: cúm, sởi, quai bị, thủy đậu, viêm gan B, HIV/AIDS, COVID-19, dại, sốt xuất huyết.',
+            'Gây bệnh cho người: cúm, sởi, quai bị, thuỷ đậu, viêm gan B, HIV/AIDS, COVID-19, dại, sốt xuất huyết.',
             'Gây bệnh cho động vật: cúm gia cầm, lở mồm long móng ở trâu bò, dịch tả lợn châu Phi.',
             'Gây bệnh cho thực vật: khảm thuốc lá, xoăn lá cà chua, vàng lùn và lùn xoắn lá ở lúa.',
           ],
         },
         {
           type: 'p',
-          text: 'Virus lây truyền qua nhiều con đường: đường hô hấp (giọt bắn khi ho, hắt hơi), đường tiêu hóa, đường máu, qua vết cắn của động vật (bệnh dại) hoặc qua côn trùng trung gian như muỗi (sốt xuất huyết), rầy (bệnh vàng lùn ở lúa).',
+          text: 'Virus lây truyền qua nhiều con đường: đường hô hấp (giọt bắn khi ho, hắt hơi), đường tiêu hoá, đường máu, qua vết cắn của động vật (bệnh dại) hoặc qua côn trùng trung gian như muỗi (sốt xuất huyết), rầy (bệnh vàng lùn ở lúa).',
         },
       ],
     },
@@ -111,7 +111,7 @@ export default {
             'Đeo khẩu trang nơi đông người, rửa tay thường xuyên bằng xà phòng, che miệng khi ho, hắt hơi.',
             'Giữ vệ sinh nơi ở, ăn chín uống sôi; diệt muỗi, bọ gậy để phòng sốt xuất huyết.',
             'Hạn chế tiếp xúc với người bệnh, động vật bệnh; tiêm phòng cho vật nuôi.',
-            'Với cây trồng: dùng giống sạch bệnh, diệt côn trùng truyền bệnh, tiêu hủy cây bệnh.',
+            'Với cây trồng: dùng giống sạch bệnh, diệt côn trùng truyền bệnh, tiêu huỷ cây bệnh.',
           ],
         },
         {
@@ -200,11 +200,11 @@ export default {
     {
       type: 'multi',
       prompt: 'Chọn tất cả các bệnh do virus gây ra ở người.',
-      options: ['Thủy đậu', 'Lao phổi', 'Sởi', 'Uốn ván', 'Viêm gan B', 'Tả'],
+      options: ['Thuỷ đậu', 'Lao phổi', 'Sởi', 'Uốn ván', 'Viêm gan B', 'Tả'],
       answers: [0, 2, 4],
       hints: ['Lao, uốn ván, tả là bệnh do vi khuẩn.'],
       solution:
-        'Thủy đậu, sởi, viêm gan B do virus gây ra. Lao phổi, uốn ván, tả do vi khuẩn gây ra.',
+        'Thuỷ đậu, sởi, viêm gan B do virus gây ra. Lao phổi, uốn ván, tả do vi khuẩn gây ra.',
     },
     {
       type: 'choice',
@@ -279,6 +279,6 @@ export default {
     'Virus rất nhỏ, chỉ thấy bằng kính hiển vi điện tử; chưa có cấu tạo tế bào, gồm vỏ protein và lõi vật chất di truyền.',
     'Virus có ba dạng: dạng xoắn, dạng khối, dạng hỗn hợp.',
     'Virus chỉ nhân lên được trong tế bào vật chủ: chúng sống kí sinh bắt buộc.',
-    'Virus gây nhiều bệnh (cúm, sởi, thủy đậu, viêm gan B, HIV/AIDS...); phòng bệnh bằng vaccine, vệ sinh, đeo khẩu trang, diệt vật trung gian; kháng sinh không diệt được virus.',
+    'Virus gây nhiều bệnh (cúm, sởi, thuỷ đậu, viêm gan B, HIV/AIDS...); phòng bệnh bằng vaccine, vệ sinh, đeo khẩu trang, diệt vật trung gian; kháng sinh không diệt được virus.',
   ],
 };

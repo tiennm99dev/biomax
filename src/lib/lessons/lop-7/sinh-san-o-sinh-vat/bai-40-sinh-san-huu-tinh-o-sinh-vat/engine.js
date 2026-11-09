@@ -8,18 +8,18 @@
 
 /** Stages of sexual reproduction in a flowering plant. */
 export const PLANT_STAGES = [
-  'Hoa nở: bao phấn của nhị chứa các hạt phấn (mang giao tử đực), bầu nhụy chứa noãn (mang giao tử cái).',
-  'Thụ phấn: hạt phấn được chuyển tới đầu nhụy.',
-  'Hạt phấn nảy mầm thành ống phấn; ống phấn xuyên qua vòi nhụy, đi vào bầu nhụy tới noãn.',
+  'Hoa nở: bao phấn của nhị chứa các hạt phấn (mang giao tử đực), bầu nhuỵ chứa noãn (mang giao tử cái).',
+  'Thụ phấn: hạt phấn được chuyển tới đầu nhuỵ.',
+  'Hạt phấn nảy mầm thành ống phấn; ống phấn xuyên qua vòi nhuỵ, đi vào bầu nhuỵ tới noãn.',
   'Thụ tinh: giao tử đực trong ống phấn kết hợp với giao tử cái trong noãn, tạo thành hợp tử.',
-  'Cánh hoa, nhị héo và rụng; hợp tử phát triển thành phôi, noãn phát triển thành hạt, bầu nhụy phát triển thành quả chứa hạt.',
+  'Cánh hoa, nhị héo và rụng; hợp tử phát triển thành phôi, noãn phát triển thành hạt, bầu nhuỵ phát triển thành quả chứa hạt.',
 ];
 
 /** @type {Record<Pollinator, string>} */
 export const POLLINATOR_TEXT = {
   'con-trung':
-    'Ong hút mật, hạt phấn dính vào lông ong rồi rơi lên đầu nhụy: thụ phấn nhờ côn trùng.',
-  gio: 'Gió thổi hạt phấn nhỏ, nhẹ bay tới đầu nhụy: thụ phấn nhờ gió.',
+    'Ong hút mật, hạt phấn dính vào lông ong rồi rơi lên đầu nhuỵ: thụ phấn nhờ côn trùng.',
+  gio: 'Gió thổi hạt phấn nhỏ, nhẹ bay tới đầu nhuỵ: thụ phấn nhờ gió.',
 };
 
 /**
@@ -212,7 +212,7 @@ export const FLOWER = {
       id: 'tranh-hoa',
       name: 'Tràng hoa',
       accept: ['cánh hoa', 'tràng'],
-      info: 'Gồm các cánh hoa, thường có màu sắc, hương thơm thu hút côn trùng; bảo vệ nhị và nhụy.',
+      info: 'Gồm các cánh hoa, thường có màu sắc, hương thơm thu hút côn trùng; bảo vệ nhị và nhuỵ.',
       x: 92,
       y: 162,
     },
@@ -232,29 +232,29 @@ export const FLOWER = {
     },
     {
       id: 'dau-nhuy',
-      name: 'Đầu nhụy',
-      info: 'Phần trên cùng của nhụy, nơi tiếp nhận hạt phấn khi thụ phấn.',
+      name: 'Đầu nhuỵ',
+      info: 'Phần trên cùng của nhuỵ, nơi tiếp nhận hạt phấn khi thụ phấn.',
       x: 180,
       y: 108,
     },
     {
       id: 'voi-nhuy',
-      name: 'Vòi nhụy',
-      info: 'Nối đầu nhụy với bầu nhụy; ống phấn đi qua vòi nhụy để tới noãn.',
+      name: 'Vòi nhuỵ',
+      info: 'Nối đầu nhuỵ với bầu nhuỵ; ống phấn đi qua vòi nhuỵ để tới noãn.',
       x: 180,
       y: 160,
     },
     {
       id: 'bau-nhuy',
-      name: 'Bầu nhụy',
-      info: 'Phần phình to ở gốc nhụy, chứa noãn; sau thụ tinh phát triển thành quả.',
+      name: 'Bầu nhuỵ',
+      info: 'Phần phình to ở gốc nhuỵ, chứa noãn; sau thụ tinh phát triển thành quả.',
       x: 150,
       y: 212,
     },
     {
       id: 'noan',
       name: 'Noãn',
-      info: 'Nằm trong bầu nhụy, mang giao tử cái; sau thụ tinh phát triển thành hạt.',
+      info: 'Nằm trong bầu nhuỵ, mang giao tử cái; sau thụ tinh phát triển thành hạt.',
       x: 190,
       y: 218,
     },

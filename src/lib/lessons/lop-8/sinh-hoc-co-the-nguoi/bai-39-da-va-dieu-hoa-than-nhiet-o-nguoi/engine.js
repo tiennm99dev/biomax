@@ -40,7 +40,7 @@ export function skinResponse(air, exercising = false) {
       sweat: 0,
       hairErect: true,
       shiver: true,
-      text: 'Rất lạnh: mạch máu dưới da co mạnh, giảm lượng máu qua da để giảm tỏa nhiệt; cơ co chân lông co (sởn gai ốc); cơ run lên để sinh thêm nhiệt; gần như không tiết mồ hôi.',
+      text: 'Rất lạnh: mạch máu dưới da co mạnh, giảm lượng máu qua da để giảm toả nhiệt; cơ co chân lông co (sởn gai ốc); cơ run lên để sinh thêm nhiệt; gần như không tiết mồ hôi.',
     };
   if (load < 20)
     return {
@@ -60,7 +60,7 @@ export function skinResponse(air, exercising = false) {
       sweat: 0,
       hairErect: false,
       shiver: false,
-      text: 'Dễ chịu: lượng nhiệt sinh ra cân bằng với lượng nhiệt tỏa ra, mạch máu dưới da và tuyến mồ hôi hoạt động bình thường.',
+      text: 'Dễ chịu: lượng nhiệt sinh ra cân bằng với lượng nhiệt toả ra, mạch máu dưới da và tuyến mồ hôi hoạt động bình thường.',
     };
   if (load <= 34)
     return {
@@ -70,7 +70,7 @@ export function skinResponse(air, exercising = false) {
       sweat: 1,
       hairErect: false,
       shiver: false,
-      text: 'Nóng: mạch máu dưới da dãn ra, nhiều máu qua da để tỏa nhiệt, da hồng hào; tuyến mồ hôi bắt đầu tiết mồ hôi.',
+      text: 'Nóng: mạch máu dưới da dãn ra, nhiều máu qua da để toả nhiệt, da hồng hào; tuyến mồ hôi bắt đầu tiết mồ hôi.',
     };
   return {
     band: 'nong',
@@ -151,7 +151,7 @@ export const SKIN_SECTION = {
     {
       id: 'tang-sung',
       name: 'Tầng sừng',
-      info: 'Lớp ngoài cùng của biểu bì, gồm những tế bào đã chết hóa sừng, xếp sít nhau, dễ bong ra; giúp chống thấm nước, ngăn vi khuẩn.',
+      info: 'Lớp ngoài cùng của biểu bì, gồm những tế bào đã chết hoá sừng, xếp sít nhau, dễ bong ra; giúp chống thấm nước, ngăn vi khuẩn.',
       x: 40,
       y: 34,
     },
@@ -195,7 +195,7 @@ export const SKIN_SECTION = {
     {
       id: 'mach-mau',
       name: 'Mạch máu',
-      info: 'Mạch máu trong lớp bì nuôi dưỡng da. Mạch dãn khi nóng để tỏa nhiệt, co khi lạnh để giữ nhiệt.',
+      info: 'Mạch máu trong lớp bì nuôi dưỡng da. Mạch dãn khi nóng để toả nhiệt, co khi lạnh để giữ nhiệt.',
       x: 160,
       y: 156,
     },
@@ -210,7 +210,7 @@ export const SKIN_SECTION = {
     {
       id: 'tuyen-mo-hoi',
       name: 'Tuyến mồ hôi',
-      info: 'Tiết mồ hôi theo ống dẫn ra bề mặt da: bài tiết nước, muối, urea và tỏa nhiệt khi mồ hôi bay hơi.',
+      info: 'Tiết mồ hôi theo ống dẫn ra bề mặt da: bài tiết nước, muối, urea và toả nhiệt khi mồ hôi bay hơi.',
       x: 258,
       y: 180,
     },

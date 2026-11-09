@@ -58,7 +58,7 @@
   </div>
 
   <div class="flex flex-wrap gap-2">
-    <button type="button" class={button.quiet} onclick={() => (plan = {})}>Xóa hết</button>
+    <button type="button" class={button.quiet} onclick={() => (plan = {})}>Xoá hết</button>
     <button type="button" class={button.quiet} onclick={() => (plan = { ...START_PLAN })}
       >Khẩu phần ban đầu</button
     >

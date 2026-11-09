@@ -20,7 +20,7 @@ export default {
         {
           type: 'callout',
           tone: 'definition',
-          title: 'Thành phần hóa học của xương',
+          title: 'Thành phần hoá học của xương',
           text: 'Xương gồm chất hữu cơ (chủ yếu là protein) và chất khoáng (chủ yếu là calcium). Chất khoáng làm xương cứng chắc, chất hữu cơ làm xương mềm dẻo, đàn hồi. Nhờ vậy, xương vừa vững chắc vừa chịu được va đập.',
         },
         {
@@ -137,7 +137,7 @@ export default {
     },
     {
       problem:
-        'Xương của trẻ em mềm dẻo hơn, còn xương của người già giòn, dễ gãy hơn. Hãy giải thích dựa vào thành phần hóa học của xương.',
+        'Xương của trẻ em mềm dẻo hơn, còn xương của người già giòn, dễ gãy hơn. Hãy giải thích dựa vào thành phần hoá học của xương.',
       steps: [
         'Xương gồm chất hữu cơ (tạo tính mềm dẻo) và chất khoáng, chủ yếu calcium (tạo tính cứng chắc).',
         'Ở trẻ em, tỉ lệ chất hữu cơ trong xương cao hơn nên xương mềm dẻo, đàn hồi.',
@@ -235,7 +235,7 @@ export default {
       answer: 0,
       hints: ['Loãng xương là do mật độ chất khoáng trong xương giảm.'],
       solution:
-        'Bổ sung đủ calcium, vitamin D, protein, tắm nắng hợp lí và tập luyện đều đặn giúp xương chắc khỏe, phòng loãng xương.',
+        'Bổ sung đủ calcium, vitamin D, protein, tắm nắng hợp lí và tập luyện đều đặn giúp xương chắc khoẻ, phòng loãng xương.',
     },
     {
       type: 'order',

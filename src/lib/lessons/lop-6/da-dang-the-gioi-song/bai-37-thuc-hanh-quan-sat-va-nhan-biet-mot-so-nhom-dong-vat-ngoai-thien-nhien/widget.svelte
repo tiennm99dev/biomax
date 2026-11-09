@@ -49,7 +49,7 @@
     journal = {};
     picks = {};
     mistakes = 0;
-    message = 'Đã xóa nhật kí. Bắt đầu lại từ điểm quan sát đầu tiên.';
+    message = 'Đã xoá nhật kí. Bắt đầu lại từ điểm quan sát đầu tiên.';
     site = SITES[0].id;
   }
 </script>
@@ -170,7 +170,7 @@
       </figure>
     {/if}
     <button type="button" class={button.quiet} disabled={recorded === 0} onclick={reset}
-      >Xóa nhật kí</button
+      >Xoá nhật kí</button
     >
   </section>
 </div>

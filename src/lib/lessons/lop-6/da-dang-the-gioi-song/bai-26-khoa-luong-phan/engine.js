@@ -1,5 +1,5 @@
 /**
- * Data for the "Khóa lưỡng phân" lesson: two groups of organisms described
+ * Data for the "Khoá lưỡng phân" lesson: two groups of organisms described
  * by yes/no traits, each with a ready-made dichotomous key. Reading and
  * building keys lives in `../_shared/dichotomous-key.js`.
  */

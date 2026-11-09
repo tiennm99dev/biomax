@@ -1,31 +1,31 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Khóa lưỡng phân là cách phân loại sinh vật dựa trên các đôi đặc điểm đối lập, mỗi lần chia một nhóm thành hai nhóm nhỏ hơn cho tới khi xác định được từng sinh vật.',
+    'Khoá lưỡng phân là cách phân loại sinh vật dựa trên các đôi đặc điểm đối lập, mỗi lần chia một nhóm thành hai nhóm nhỏ hơn cho tới khi xác định được từng sinh vật.',
   intro:
-    'Trong trò chơi "Đoán con vật", người chơi chỉ được hỏi những câu trả lời "có" hoặc "không": Nó có xương sống không? Nó có cánh không? Sau vài câu hỏi khéo léo, ta đoán trúng con vật. Các nhà sinh học cũng làm như vậy để nhận ra một sinh vật: họ dùng khóa lưỡng phân.',
+    'Trong trò chơi "Đoán con vật", người chơi chỉ được hỏi những câu trả lời "có" hoặc "không": Nó có xương sống không? Nó có cánh không? Sau vài câu hỏi khéo léo, ta đoán trúng con vật. Các nhà sinh học cũng làm như vậy để nhận ra một sinh vật: họ dùng khoá lưỡng phân.',
   objectives: [
-    'Nêu được khái niệm khóa lưỡng phân.',
-    'Nêu được các bước xây dựng khóa lưỡng phân.',
-    'Xây dựng được khóa lưỡng phân cho một nhóm sinh vật và dùng khóa để xác định tên một sinh vật.',
+    'Nêu được khái niệm khoá lưỡng phân.',
+    'Nêu được các bước xây dựng khoá lưỡng phân.',
+    'Xây dựng được khoá lưỡng phân cho một nhóm sinh vật và dùng khoá để xác định tên một sinh vật.',
   ],
   sections: [
     {
-      heading: 'Khóa lưỡng phân là gì?',
+      heading: 'Khoá lưỡng phân là gì?',
       blocks: [
         {
           type: 'callout',
           tone: 'definition',
-          title: 'Khóa lưỡng phân',
-          text: 'Khóa lưỡng phân là cách phân loại sinh vật dựa trên các đôi đặc điểm đối lập để chia chúng thành hai nhóm. "Lưỡng phân" nghĩa là chia đôi.',
+          title: 'Khoá lưỡng phân',
+          text: 'Khoá lưỡng phân là cách phân loại sinh vật dựa trên các đôi đặc điểm đối lập để chia chúng thành hai nhóm. "Lưỡng phân" nghĩa là chia đôi.',
         },
         {
           type: 'p',
-          text: 'Mỗi bước của khóa là một cặp đặc điểm đối lập, đánh số như 1a và 1b: một sinh vật chỉ có thể đúng với một trong hai ý. Mỗi ý dẫn tới một cặp tiếp theo hoặc tới tên một sinh vật.',
+          text: 'Mỗi bước của khoá là một cặp đặc điểm đối lập, đánh số như 1a và 1b: một sinh vật chỉ có thể đúng với một trong hai ý. Mỗi ý dẫn tới một cặp tiếp theo hoặc tới tên một sinh vật.',
         },
         {
           type: 'table',
-          caption: 'Ví dụ khóa lưỡng phân cho năm loài động vật',
+          caption: 'Ví dụ khoá lưỡng phân cho năm loài động vật',
           head: ['Cặp', 'Đặc điểm', 'Dẫn tới'],
           rows: [
             ['1a', 'Có xương sống', 'Cặp 2'],
@@ -47,7 +47,7 @@ export default {
       ],
     },
     {
-      heading: 'Các bước xây dựng khóa lưỡng phân',
+      heading: 'Các bước xây dựng khoá lưỡng phân',
       blocks: [
         {
           type: 'list',
@@ -60,7 +60,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Mỗi lần chia, số nhóm tăng thêm một. Bắt đầu từ một nhóm và kết thúc khi có $n$ nhóm (mỗi nhóm một sinh vật), nên khóa lưỡng phân của $n$ sinh vật luôn có $n - 1$ cặp đặc điểm.',
+          text: 'Mỗi lần chia, số nhóm tăng thêm một. Bắt đầu từ một nhóm và kết thúc khi có $n$ nhóm (mỗi nhóm một sinh vật), nên khoá lưỡng phân của $n$ sinh vật luôn có $n - 1$ cặp đặc điểm.',
         },
         {
           type: 'callout',
@@ -70,19 +70,19 @@ export default {
         },
         {
           type: 'p',
-          text: 'Ở phần khám phá, em hãy dùng khóa có sẵn để tìm ra sinh vật bí ẩn, rồi tự dựng khóa cho một nhóm sinh vật.',
+          text: 'Ở phần khám phá, em hãy dùng khoá có sẵn để tìm ra sinh vật bí ẩn, rồi tự dựng khoá cho một nhóm sinh vật.',
         },
       ],
     },
   ],
   explore: {
-    title: 'Trình tạo khóa lưỡng phân',
+    title: 'Trình tạo khoá lưỡng phân',
     instruction:
-      'Chế độ "Dùng khóa": đọc đặc điểm của sinh vật bí ẩn và chọn ý đúng ở mỗi cặp cho tới khi tìm ra tên nó. Chế độ "Tự dựng khóa": chọn các cặp đặc điểm đối lập để chia nhóm, cho tới khi mỗi nhóm chỉ còn một sinh vật.',
+      'Chế độ "Dùng khoá": đọc đặc điểm của sinh vật bí ẩn và chọn ý đúng ở mỗi cặp cho tới khi tìm ra tên nó. Chế độ "Tự dựng khoá": chọn các cặp đặc điểm đối lập để chia nhóm, cho tới khi mỗi nhóm chỉ còn một sinh vật.',
   },
   examples: [
     {
-      problem: 'Xây dựng khóa lưỡng phân cho bốn loài: con chó, con gà, cá rô, giun đất.',
+      problem: 'Xây dựng khoá lưỡng phân cho bốn loài: con chó, con gà, cá rô, giun đất.',
       steps: [
         'Liệt kê đặc điểm: chó có xương sống, có chân, phủ lông mao; gà có xương sống, có chân, phủ lông vũ; cá rô có xương sống, không có chân, có vây; giun đất không có xương sống, không có chân.',
         'Cặp 1 tách giun đất khỏi ba loài kia: 1a. Có xương sống → 2; 1b. Không có xương sống → giun đất.',
@@ -95,7 +95,7 @@ export default {
     },
     {
       problem:
-        'Cho khóa: 1a. Có hoa → 2; 1b. Không có hoa → 3. 2a. Thân gỗ → cây bưởi; 2b. Không phải thân gỗ → cây lúa. 3a. Có hạt → cây thông; 3b. Không có hạt → 4. 4a. Có rễ thật → cây dương xỉ; 4b. Chưa có rễ thật → cây rêu. Một cây không có hoa, không có hạt nhưng có rễ thật là cây gì?',
+        'Cho khoá: 1a. Có hoa → 2; 1b. Không có hoa → 3. 2a. Thân gỗ → cây bưởi; 2b. Không phải thân gỗ → cây lúa. 3a. Có hạt → cây thông; 3b. Không có hạt → 4. 4a. Có rễ thật → cây dương xỉ; 4b. Chưa có rễ thật → cây rêu. Một cây không có hoa, không có hạt nhưng có rễ thật là cây gì?',
       steps: [
         'Cặp 1: cây không có hoa, chọn 1b → đi đến cặp 3.',
         'Cặp 3: cây không có hạt, chọn 3b → đi đến cặp 4.',
@@ -105,18 +105,18 @@ export default {
     },
     {
       problem:
-        'Bạn Minh muốn xây dựng khóa lưỡng phân cho 6 loài cây trong vườn trường. Khóa của Minh có bao nhiêu cặp đặc điểm đối lập?',
+        'Bạn Minh muốn xây dựng khoá lưỡng phân cho 6 loài cây trong vườn trường. Khoá của Minh có bao nhiêu cặp đặc điểm đối lập?',
       steps: [
         'Mỗi cặp đặc điểm chia một nhóm thành hai, nên số nhóm tăng thêm 1.',
         'Từ 1 nhóm (cả 6 loài) đến 6 nhóm (mỗi nhóm một loài) cần tăng thêm $6 - 1 = 5$ nhóm.',
       ],
-      answer: 'Khóa có 5 cặp đặc điểm đối lập.',
+      answer: 'Khoá có 5 cặp đặc điểm đối lập.',
     },
   ],
   practice: [
     {
       type: 'choice',
-      prompt: 'Khóa lưỡng phân phân loại sinh vật dựa trên',
+      prompt: 'Khoá lưỡng phân phân loại sinh vật dựa trên',
       options: [
         'kích thước to hay nhỏ của sinh vật',
         'các đôi đặc điểm đối lập',
@@ -126,11 +126,11 @@ export default {
       answer: 1,
       hints: ['"Lưỡng phân" nghĩa là chia đôi.'],
       solution:
-        'Khóa lưỡng phân dựa trên các đôi đặc điểm đối lập để chia sinh vật thành hai nhóm ở mỗi bước.',
+        'Khoá lưỡng phân dựa trên các đôi đặc điểm đối lập để chia sinh vật thành hai nhóm ở mỗi bước.',
     },
     {
       type: 'choice',
-      prompt: 'Cặp nào sau đây là một cặp đặc điểm đối lập dùng được trong khóa lưỡng phân?',
+      prompt: 'Cặp nào sau đây là một cặp đặc điểm đối lập dùng được trong khoá lưỡng phân?',
       options: [
         'Có cánh / có chân',
         'Lông màu đẹp / lông màu xấu',
@@ -140,14 +140,14 @@ export default {
       answer: 2,
       hints: [
         'Hai ý phải nói về cùng một đặc điểm, một ý "có" và một ý "không".',
-        '"Đẹp" hay "xấu" tùy mỗi người cảm nhận.',
+        '"Đẹp" hay "xấu" tuỳ mỗi người cảm nhận.',
       ],
       solution:
         '"Có xương sống / không có xương sống" là cặp đối lập rõ ràng, quan sát được. "Có cánh / có chân" và "sống trên cạn / ăn cỏ" nói về hai đặc điểm khác nhau; "đẹp / xấu" là cảm nhận chủ quan.',
     },
     {
       type: 'order',
-      prompt: 'Sắp xếp các bước xây dựng khóa lưỡng phân theo đúng thứ tự.',
+      prompt: 'Sắp xếp các bước xây dựng khoá lưỡng phân theo đúng thứ tự.',
       items: [
         'Tiếp tục chia mỗi nhóm cho tới khi mỗi nhóm chỉ còn một sinh vật',
         'Liệt kê các đặc điểm đặc trưng của từng sinh vật',
@@ -161,7 +161,7 @@ export default {
     {
       type: 'number',
       prompt:
-        'Một khóa lưỡng phân hoàn chỉnh dùng để xác định 8 loài động vật có bao nhiêu cặp đặc điểm đối lập?',
+        'Một khoá lưỡng phân hoàn chỉnh dùng để xác định 8 loài động vật có bao nhiêu cặp đặc điểm đối lập?',
       answer: 7,
       hints: [
         'Mỗi cặp đặc điểm chia một nhóm thành hai, làm số nhóm tăng thêm 1.',
@@ -172,7 +172,7 @@ export default {
     {
       type: 'choice',
       prompt:
-        'Cho khóa: 1a. Có xương sống → 2; 1b. Không có xương sống → giun đất. 2a. Có vây → cá chép; 2b. Không có vây → 3. 3a. Cơ thể phủ lông vũ → chim bồ câu; 3b. Cơ thể phủ lông mao → con mèo. Một con vật có xương sống, không có vây, cơ thể phủ lông mao là',
+        'Cho khoá: 1a. Có xương sống → 2; 1b. Không có xương sống → giun đất. 2a. Có vây → cá chép; 2b. Không có vây → 3. 3a. Cơ thể phủ lông vũ → chim bồ câu; 3b. Cơ thể phủ lông mao → con mèo. Một con vật có xương sống, không có vây, cơ thể phủ lông mao là',
       options: ['giun đất', 'cá chép', 'chim bồ câu', 'con mèo'],
       answer: 3,
       hints: ['Bắt đầu từ cặp 1: con vật có xương sống, vậy đi đến cặp nào?'],
@@ -181,7 +181,7 @@ export default {
     {
       type: 'number',
       prompt:
-        'Dùng khóa ở câu trên, để xác định được chim bồ câu, em phải đọc qua bao nhiêu cặp đặc điểm?',
+        'Dùng khoá ở câu trên, để xác định được chim bồ câu, em phải đọc qua bao nhiêu cặp đặc điểm?',
       answer: 3,
       hints: ['Đi lần lượt: cặp 1, rồi cặp 2, rồi...'],
       solution:
@@ -190,7 +190,7 @@ export default {
     {
       type: 'match',
       prompt:
-        'Theo khóa lưỡng phân các loài cây ở ví dụ 2, nối mỗi cây với đặc điểm giúp nhận ra nó.',
+        'Theo khoá lưỡng phân các loài cây ở ví dụ 2, nối mỗi cây với đặc điểm giúp nhận ra nó.',
       left: ['Cây rêu', 'Cây dương xỉ', 'Cây thông', 'Cây bưởi'],
       right: [
         'Có hoa, thân gỗ',
@@ -207,7 +207,7 @@ export default {
       ],
       hints: [
         'Có một đặc điểm thừa: đó là đặc điểm của cây lúa.',
-        'Đi theo khóa: cây nào dừng ở cặp 4 vì chưa có rễ thật?',
+        'Đi theo khoá: cây nào dừng ở cặp 4 vì chưa có rễ thật?',
       ],
       solution:
         'Rêu: chưa có rễ thật. Dương xỉ: có rễ thật nhưng không có hạt. Thông: có hạt nhưng không có hoa. Bưởi: có hoa, thân gỗ. "Có hoa, không phải thân gỗ" là của cây lúa.',
@@ -229,7 +229,7 @@ export default {
     },
     {
       type: 'text',
-      prompt: 'Từ "lưỡng phân" trong "khóa lưỡng phân" có nghĩa là gì?',
+      prompt: 'Từ "lưỡng phân" trong "khoá lưỡng phân" có nghĩa là gì?',
       accept: [
         'chia đôi',
         'chia làm đôi',
@@ -243,9 +243,9 @@ export default {
     },
   ],
   takeaways: [
-    'Khóa lưỡng phân phân loại sinh vật dựa trên các đôi đặc điểm đối lập, mỗi bước chia một nhóm thành hai.',
+    'Khoá lưỡng phân phân loại sinh vật dựa trên các đôi đặc điểm đối lập, mỗi bước chia một nhóm thành hai.',
     'Ba bước: liệt kê đặc điểm; chọn cặp đặc điểm đối lập chia thành hai nhóm; tiếp tục chia tới khi mỗi nhóm còn một sinh vật.',
     'Cặp đặc điểm phải đối lập rõ ràng, dễ quan sát, không dựa vào cảm nhận chủ quan.',
-    'Khóa lưỡng phân của $n$ sinh vật có $n - 1$ cặp đặc điểm.',
+    'Khoá lưỡng phân của $n$ sinh vật có $n - 1$ cặp đặc điểm.',
   ],
 };

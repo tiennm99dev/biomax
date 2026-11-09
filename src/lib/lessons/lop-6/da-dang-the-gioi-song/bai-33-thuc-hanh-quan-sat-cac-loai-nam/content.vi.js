@@ -42,7 +42,7 @@ export default {
           ordered: true,
           items: [
             'Đặt mẫu nấm lên đĩa, quan sát bằng mắt thường hình dạng, màu sắc của mũ nấm, cuống nấm.',
-            'Lật ngửa mũ nấm, dùng kính lúp quan sát phiến nấm ở mặt dưới mũ: những lá mỏng xếp tỏa tròn từ cuống ra mép mũ.',
+            'Lật ngửa mũ nấm, dùng kính lúp quan sát phiến nấm ở mặt dưới mũ: những lá mỏng xếp toả tròn từ cuống ra mép mũ.',
             'Quan sát phần gốc nấm: tìm các sợi nấm trắng còn dính ở chân.',
             'Có thể đặt mũ nấm úp lên một tờ giấy, để vài giờ rồi nhấc lên: bào tử rơi xuống thành hình các phiến nấm.',
             'Vẽ hình nấm quan sát được và chú thích các phần.',
@@ -142,11 +142,11 @@ export default {
     },
     {
       type: 'choice',
-      prompt: 'Lật ngửa mũ nấm rơm, em thấy những lá mỏng xếp tỏa tròn. Đó là',
+      prompt: 'Lật ngửa mũ nấm rơm, em thấy những lá mỏng xếp toả tròn. Đó là',
       options: ['sợi nấm', 'phiến nấm', 'túi bào tử', 'vòng cuống nấm'],
       answer: 1,
       hints: ['Đây là nơi tạo ra bào tử của nấm mũ.'],
-      solution: 'Những lá mỏng xếp tỏa tròn ở mặt dưới mũ là phiến nấm, nơi tạo ra bào tử.',
+      solution: 'Những lá mỏng xếp toả tròn ở mặt dưới mũ là phiến nấm, nơi tạo ra bào tử.',
     },
     {
       type: 'choice',

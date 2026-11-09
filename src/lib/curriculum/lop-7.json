@@ -5,19 +5,19 @@
     {
       "no": 7,
       "label": "Chương VII",
-      "title": "Trao đổi chất và chuyển hóa năng lượng ở sinh vật",
+      "title": "Trao đổi chất và chuyển hoá năng lượng ở sinh vật",
       "slug": "trao-doi-chat-va-chuyen-hoa-nang-luong-o-sinh-vat",
       "strand": "trao-doi-chat",
       "volume": "Sách giáo khoa (1 tập)",
       "lessons": [
         {
           "no": 21,
-          "title": "Bài 21. Khái quát về trao đổi chất và chuyển hóa năng lượng",
+          "title": "Bài 21. Khái quát về trao đổi chất và chuyển hoá năng lượng",
           "slug": "bai-21-khai-quat-ve-trao-doi-chat-va-chuyen-hoa-nang-luong",
           "kind": "theory",
           "keyIdeas": [
             "Trao đổi chất với môi trường",
-            "Chuyển hóa năng lượng",
+            "Chuyển hoá năng lượng",
             "Vai trò đối với sự sống"
           ],
           "interactiveIdea": "Sơ đồ dòng vật chất và năng lượng vào/ra cơ thể, bấm từng mũi tên để xem chất được trao đổi."
@@ -30,7 +30,7 @@
           "keyIdeas": [
             "Nguyên liệu và sản phẩm quang hợp",
             "Lá là cơ quan quang hợp",
-            "Chuyển hóa quang năng thành hóa năng"
+            "Chuyển hoá quang năng thành hoá năng"
           ],
           "interactiveIdea": "Mô hình lá cây: kéo CO₂, nước, ánh sáng vào để tạo glucose và O₂, phương trình chữ hiện dần."
         },
@@ -92,7 +92,7 @@
           "slug": "bai-29-vai-tro-cua-nuoc-va-chat-dinh-duong-doi-voi-sinh-vat",
           "kind": "theory",
           "keyIdeas": ["Cấu trúc và tính chất của nước", "Vai trò của nước và chất dinh dưỡng"],
-          "interactiveIdea": "Mô hình phân tử nước có cực, kéo các phân tử để thấy liên kết và khả năng hòa tan."
+          "interactiveIdea": "Mô hình phân tử nước có cực, kéo các phân tử để thấy liên kết và khả năng hoà tan."
         },
         {
           "no": 30,
@@ -109,10 +109,10 @@
           "kind": "theory",
           "keyIdeas": [
             "Nhu cầu nước ở động vật",
-            "Con đường thu nhận và tiêu hóa thức ăn",
+            "Con đường thu nhận và tiêu hoá thức ăn",
             "Vận chuyển chất"
           ],
-          "interactiveIdea": "Sơ đồ ống tiêu hóa người tương tác theo dõi miếng thức ăn qua từng cơ quan."
+          "interactiveIdea": "Sơ đồ ống tiêu hoá người tương tác theo dõi miếng thức ăn qua từng cơ quan."
         },
         {
           "no": 32,
@@ -225,11 +225,11 @@
           "slug": "bai-40-sinh-san-huu-tinh-o-sinh-vat",
           "kind": "theory",
           "keyIdeas": ["Cấu tạo hoa", "Thụ phấn và thụ tinh", "Sinh sản hữu tính ở động vật"],
-          "interactiveIdea": "Sơ đồ hoa bấm từng bộ phận; hoạt hình hạt phấn tới nhụy, hình thành quả và hạt."
+          "interactiveIdea": "Sơ đồ hoa bấm từng bộ phận; hoạt hình hạt phấn tới nhuỵ, hình thành quả và hạt."
         },
         {
           "no": 41,
-          "title": "Bài 41. Một số yếu tố ảnh hưởng và điều hòa, điều khiển sinh sản ở sinh vật",
+          "title": "Bài 41. Một số yếu tố ảnh hưởng và điều hoà, điều khiển sinh sản ở sinh vật",
           "slug": "bai-41-mot-so-yeu-to-anh-huong-va-dieu-hoa-dieu-khien-sinh-san-o-sinh-vat",
           "kind": "theory",
           "keyIdeas": ["Yếu tố môi trường và bên trong", "Ứng dụng điều khiển sinh sản"],

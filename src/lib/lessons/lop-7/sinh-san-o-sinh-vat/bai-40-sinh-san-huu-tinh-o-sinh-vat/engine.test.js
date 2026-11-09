@@ -24,7 +24,7 @@ describe('plant stages', () => {
     expect(plantText(1, 'gio')).toContain('nhờ gió');
     expect(plantText(1, 'con-trung')).toContain('nhờ côn trùng');
     expect(plantText(0, 'gio')).not.toContain('nhờ gió');
-    expect(plantText(4, 'gio')).toContain('bầu nhụy phát triển thành quả');
+    expect(plantText(4, 'gio')).toContain('bầu nhuỵ phát triển thành quả');
     expect(plantText(12, 'gio')).toContain('Bước 5');
     expect(asPollinator('gio')).toBe('gio');
     expect(asPollinator('khac')).toBe('con-trung');

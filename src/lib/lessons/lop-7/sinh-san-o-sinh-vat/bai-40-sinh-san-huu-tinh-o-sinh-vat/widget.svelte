@@ -49,7 +49,7 @@
 
   {#if tab === 'thuc-vat'}
     <SegmentedControl
-      label="Hạt phấn được chuyển tới đầu nhụy nhờ"
+      label="Hạt phấn được chuyển tới đầu nhuỵ nhờ"
       options={[
         { value: 'con-trung', label: 'Côn trùng' },
         { value: 'gio', label: 'Gió' },
@@ -92,7 +92,7 @@
         <ellipse cx="108" cy="150" rx="7" ry="10" fill="#78350f" />
         <ellipse cx="132" cy="150" rx="7" ry="10" fill="#78350f" />
         <text x="120" y="104" text-anchor="middle" font-size="11" fill="#334155"
-          >quả (từ bầu nhụy)</text
+          >quả (từ bầu nhuỵ)</text
         >
         <line x1="136" y1="150" x2="164" y2="150" stroke="#334155" />
         <text x="168" y="154" font-size="11" fill="#334155">hạt (từ noãn)</text>

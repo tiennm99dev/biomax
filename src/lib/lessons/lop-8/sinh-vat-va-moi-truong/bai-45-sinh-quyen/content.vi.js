@@ -22,7 +22,7 @@ export default {
         {
           type: 'list',
           items: [
-            'Thành phần vô sinh của sinh quyển gồm: lớp đất (thuộc thạch quyển), lớp không khí (khí quyển) và lớp nước (thủy quyển) có sinh vật sinh sống.',
+            'Thành phần vô sinh của sinh quyển gồm: lớp đất (thuộc thạch quyển), lớp không khí (khí quyển) và lớp nước (thuỷ quyển) có sinh vật sinh sống.',
             'Thành phần hữu sinh: toàn bộ các sinh vật trên Trái Đất.',
             'Sinh quyển chỉ là một lớp mỏng bao quanh Trái Đất, dày khoảng 20 km: từ đáy đại dương sâu nhất tới độ cao vài kilômét trong khí quyển.',
           ],

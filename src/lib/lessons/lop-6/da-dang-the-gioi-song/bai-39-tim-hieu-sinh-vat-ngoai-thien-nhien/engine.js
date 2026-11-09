@@ -115,7 +115,7 @@ export const FINDS = [
     organism: 'duong-xi',
     station: 'bo-ao',
     tool: 'kính lúp',
-    note: 'Mọc cố định ở chỗ râm, lá xanh xẻ thùy; lá non cuộn tròn, mặt dưới lá già có đốm nâu.',
+    note: 'Mọc cố định ở chỗ râm, lá xanh xẻ thuỳ; lá non cuộn tròn, mặt dưới lá già có đốm nâu.',
     role: 'Che phủ, giữ ẩm cho đất ven ao; làm cảnh.',
   },
   {

@@ -1,32 +1,32 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Tiến hóa là quá trình thay đổi đặc tính di truyền của quần thể sinh vật qua các thế hệ; chọn lọc nhân tạo do con người tiến hành tạo ra giống vật nuôi, cây trồng; chọn lọc tự nhiên do điều kiện môi trường tạo ra quần thể sinh vật thích nghi.',
+    'Tiến hoá là quá trình thay đổi đặc tính di truyền của quần thể sinh vật qua các thế hệ; chọn lọc nhân tạo do con người tiến hành tạo ra giống vật nuôi, cây trồng; chọn lọc tự nhiên do điều kiện môi trường tạo ra quần thể sinh vật thích nghi.',
   intro:
     'Ở nước Anh vào thế kỉ XIX, khói bụi than của các nhà máy làm thân cây bạch dương sẫm màu lại. Chỉ sau vài chục năm, phần lớn bướm bạch dương trong vùng công nghiệp từ màu sáng chuyển thành màu tối. Không con bướm nào tự "đổi màu" cả. Vậy điều gì đã xảy ra với quần thể bướm? Trong bài này, em sẽ đóng vai chú chim săn bướm để tự tìm câu trả lời.',
   objectives: [
-    'Phát biểu được khái niệm tiến hóa.',
+    'Phát biểu được khái niệm tiến hoá.',
     'Nêu được khái niệm, cơ sở và kết quả của chọn lọc nhân tạo; lấy được ví dụ.',
     'Nêu được khái niệm, tác nhân và kết quả của chọn lọc tự nhiên; giải thích được ví dụ bướm bạch dương, vi khuẩn kháng thuốc kháng sinh.',
     'Phân biệt được chọn lọc nhân tạo với chọn lọc tự nhiên.',
   ],
   sections: [
     {
-      heading: 'Khái niệm tiến hóa',
+      heading: 'Khái niệm tiến hoá',
       blocks: [
         {
           type: 'callout',
           tone: 'definition',
-          title: 'Tiến hóa',
-          text: 'Tiến hóa (tiến hóa sinh học) là quá trình thay đổi đặc tính di truyền của quần thể sinh vật qua các thế hệ kế tiếp nhau theo thời gian.',
+          title: 'Tiến hoá',
+          text: 'Tiến hoá (tiến hoá sinh học) là quá trình thay đổi đặc tính di truyền của quần thể sinh vật qua các thế hệ kế tiếp nhau theo thời gian.',
         },
         {
           type: 'p',
-          text: 'Tiến hóa diễn ra ở cấp độ quần thể, qua nhiều thế hệ, chứ không phải ở một cá thể trong đời sống của nó. Một con bướm sinh ra màu sáng thì suốt đời vẫn màu sáng; điều thay đổi là tỉ lệ bướm sáng và bướm tối trong quần thể qua các thế hệ.',
+          text: 'Tiến hoá diễn ra ở cấp độ quần thể, qua nhiều thế hệ, chứ không phải ở một cá thể trong đời sống của nó. Một con bướm sinh ra màu sáng thì suốt đời vẫn màu sáng; điều thay đổi là tỉ lệ bướm sáng và bướm tối trong quần thể qua các thế hệ.',
         },
         {
           type: 'p',
-          text: 'Ví dụ: hóa thạch cho thấy tổ tiên của loài ngựa cách đây khoảng $55$ triệu năm chỉ to bằng con cáo, chân trước có $4$ ngón chạm đất. Qua thời gian rất dài, kích thước cơ thể ngựa tăng dần, xương chi dài ra và số ngón giảm dần, đến ngựa ngày nay chỉ còn một ngón (móng guốc) chạm đất, thích nghi với việc chạy nhanh trên đồng cỏ.',
+          text: 'Ví dụ: hoá thạch cho thấy tổ tiên của loài ngựa cách đây khoảng $55$ triệu năm chỉ to bằng con cáo, chân trước có $4$ ngón chạm đất. Qua thời gian rất dài, kích thước cơ thể ngựa tăng dần, xương chi dài ra và số ngón giảm dần, đến ngựa ngày nay chỉ còn một ngón (móng guốc) chạm đất, thích nghi với việc chạy nhanh trên đồng cỏ.',
         },
       ],
     },
@@ -87,7 +87,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Ví dụ bướm bạch dương (Biston betularia): trước thời kì công nghiệp, thân cây bạch dương phủ địa y màu sáng, bướm màu sáng khó bị chim phát hiện nên chiếm ưu thế, bướm màu tối rất hiếm. Khi khói bụi than làm thân cây sẫm lại, bướm màu tối lại được ngụy trang tốt hơn, ít bị chim ăn, sống sót và sinh sản nhiều hơn; qua các thế hệ, bướm màu tối trở nên phổ biến. Khi không khí sạch trở lại, tỉ lệ bướm màu sáng lại tăng lên.',
+          text: 'Ví dụ bướm bạch dương (Biston betularia): trước thời kì công nghiệp, thân cây bạch dương phủ địa y màu sáng, bướm màu sáng khó bị chim phát hiện nên chiếm ưu thế, bướm màu tối rất hiếm. Khi khói bụi than làm thân cây sẫm lại, bướm màu tối lại được nguỵ trang tốt hơn, ít bị chim ăn, sống sót và sinh sản nhiều hơn; qua các thế hệ, bướm màu tối trở nên phổ biến. Khi không khí sạch trở lại, tỉ lệ bướm màu sáng lại tăng lên.',
         },
         {
           type: 'p',
@@ -110,7 +110,7 @@ export default {
             [
               'Nội dung',
               'Giữ lại, nhân giống cá thể có đặc điểm con người mong muốn; loại bỏ cá thể khác',
-              'Tích lũy biến dị có lợi, đào thải biến dị bất lợi cho sinh vật',
+              'Tích luỹ biến dị có lợi, đào thải biến dị bất lợi cho sinh vật',
             ],
             [
               'Kết quả',
@@ -135,7 +135,7 @@ export default {
         'Bướm màu tối sống sót: $20 - 20 \\cdot 10\\% = 20 - 2 = 18$ con.',
         'Bướm màu sáng sống sót: $180 - 180 \\cdot 50\\% = 90$ con.',
         'Tỉ lệ bướm màu tối trong số sống sót: $\\dfrac{18}{18 + 90} = \\dfrac{18}{108} \\approx 16{,}7\\%$, cao hơn ban đầu là $\\dfrac{20}{200} = 10\\%$.',
-        'Bướm màu tối ngụy trang tốt trên thân cây sẫm nên ít bị ăn hơn; chúng sinh sản và truyền màu tối cho đời sau, nên tỉ lệ bướm màu tối tăng dần qua các thế hệ.',
+        'Bướm màu tối nguỵ trang tốt trên thân cây sẫm nên ít bị ăn hơn; chúng sinh sản và truyền màu tối cho đời sau, nên tỉ lệ bướm màu tối tăng dần qua các thế hệ.',
       ],
       answer:
         'Khoảng $16{,}7\\%$. Chọn lọc tự nhiên làm tăng tỉ lệ bướm màu tối trên thân cây sẫm.',
@@ -165,20 +165,20 @@ export default {
   practice: [
     {
       type: 'choice',
-      prompt: 'Phát biểu nào đúng về tiến hóa?',
+      prompt: 'Phát biểu nào đúng về tiến hoá?',
       options: [
-        'Tiến hóa là quá trình thay đổi đặc tính di truyền của quần thể sinh vật qua các thế hệ.',
-        'Tiến hóa là sự thay đổi hình dạng của một cá thể trong suốt đời sống của nó.',
-        'Tiến hóa là sự lớn lên và phát triển của một cơ thể từ hợp tử.',
-        'Tiến hóa chỉ xảy ra ở các loài vật nuôi, cây trồng.',
+        'Tiến hoá là quá trình thay đổi đặc tính di truyền của quần thể sinh vật qua các thế hệ.',
+        'Tiến hoá là sự thay đổi hình dạng của một cá thể trong suốt đời sống của nó.',
+        'Tiến hoá là sự lớn lên và phát triển của một cơ thể từ hợp tử.',
+        'Tiến hoá chỉ xảy ra ở các loài vật nuôi, cây trồng.',
       ],
       answer: 0,
       hints: [
-        'Tiến hóa xảy ra ở cấp độ nào: một cá thể hay cả quần thể?',
+        'Tiến hoá xảy ra ở cấp độ nào: một cá thể hay cả quần thể?',
         'Nó kéo dài trong một đời hay qua nhiều thế hệ?',
       ],
       solution:
-        'Tiến hóa là quá trình thay đổi đặc tính di truyền của quần thể sinh vật qua các thế hệ kế tiếp nhau. Sự lớn lên của một cơ thể là sự phát triển cá thể, không phải tiến hóa.',
+        'Tiến hoá là quá trình thay đổi đặc tính di truyền của quần thể sinh vật qua các thế hệ kế tiếp nhau. Sự lớn lên của một cơ thể là sự phát triển cá thể, không phải tiến hoá.',
     },
     {
       type: 'multi',
@@ -279,7 +279,7 @@ export default {
       prompt:
         'Khi các nhà máy giảm khói bụi, thân cây bạch dương sáng màu trở lại. Dự đoán điều gì xảy ra với quần thể bướm qua nhiều thế hệ?',
       options: [
-        'Tỉ lệ bướm màu sáng tăng dần, vì chúng ngụy trang tốt hơn nên ít bị chim ăn.',
+        'Tỉ lệ bướm màu sáng tăng dần, vì chúng nguỵ trang tốt hơn nên ít bị chim ăn.',
         'Bướm màu tối tự đổi sang màu sáng để thích nghi.',
         'Tỉ lệ hai loại bướm không đổi vì môi trường không ảnh hưởng đến bướm.',
         'Tỉ lệ bướm màu tối tiếp tục tăng.',
@@ -311,7 +311,7 @@ export default {
     },
   ],
   takeaways: [
-    'Tiến hóa là quá trình thay đổi đặc tính di truyền của quần thể sinh vật qua các thế hệ.',
+    'Tiến hoá là quá trình thay đổi đặc tính di truyền của quần thể sinh vật qua các thế hệ.',
     'Chọn lọc nhân tạo: con người giữ lại cá thể có đặc điểm mong muốn, loại bỏ cá thể khác; kết quả là các giống vật nuôi, cây trồng đa dạng.',
     'Chọn lọc tự nhiên: điều kiện môi trường giữ lại cá thể mang biến dị có lợi, đào thải cá thể mang biến dị bất lợi; kết quả là quần thể sinh vật thích nghi.',
     'Môi trường không tạo ra biến dị, chỉ chọn lọc những biến dị di truyền đã có.',

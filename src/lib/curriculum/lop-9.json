@@ -154,25 +154,25 @@
     {
       "no": 14,
       "label": "Chương XIV",
-      "title": "Tiến hóa",
+      "title": "Tiến hoá",
       "slug": "tien-hoa",
       "strand": "tien-hoa",
       "volume": "Sách giáo khoa (1 tập)",
       "lessons": [
         {
           "no": 49,
-          "title": "Bài 49. Khái niệm tiến hóa và các hình thức chọn lọc",
+          "title": "Bài 49. Khái niệm tiến hoá và các hình thức chọn lọc",
           "slug": "bai-49-khai-niem-tien-hoa-va-cac-hinh-thuc-chon-loc",
           "kind": "theory",
-          "keyIdeas": ["Khái niệm tiến hóa", "Chọn lọc nhân tạo", "Chọn lọc tự nhiên"],
+          "keyIdeas": ["Khái niệm tiến hoá", "Chọn lọc nhân tạo", "Chọn lọc tự nhiên"],
           "interactiveIdea": "Mô phỏng bướm sáng/tối trên thân cây: chọn lọc tự nhiên làm thay đổi tỉ lệ qua các thế hệ."
         },
         {
           "no": 50,
-          "title": "Bài 50. Cơ chế tiến hóa",
+          "title": "Bài 50. Cơ chế tiến hoá",
           "slug": "bai-50-co-che-tien-hoa",
           "kind": "theory",
-          "keyIdeas": ["Quan điểm của Darwin", "Thuyết tiến hóa hiện đại"],
+          "keyIdeas": ["Quan điểm của Darwin", "Thuyết tiến hoá hiện đại"],
           "interactiveIdea": "Mô phỏng quần thể với biến dị, chọn lọc và di truyền, đồ thị tần số đặc điểm theo thế hệ."
         },
         {

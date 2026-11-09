@@ -1,13 +1,13 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Cấu tạo da gồm lớp biểu bì, lớp bì và lớp mỡ dưới da; chức năng của da; một số bệnh về da, cách bảo vệ và làm đẹp da an toàn; thân nhiệt, vai trò của da và hệ thần kinh trong điều hòa thân nhiệt; biện pháp chống nóng, chống lạnh và sơ cứu người bị cảm nóng, cảm lạnh.',
+    'Cấu tạo da gồm lớp biểu bì, lớp bì và lớp mỡ dưới da; chức năng của da; một số bệnh về da, cách bảo vệ và làm đẹp da an toàn; thân nhiệt, vai trò của da và hệ thần kinh trong điều hoà thân nhiệt; biện pháp chống nóng, chống lạnh và sơ cứu người bị cảm nóng, cảm lạnh.',
   intro:
     'Mùa hè đá bóng dưới nắng, mặt em đỏ bừng và mồ hôi ướt đẫm áo; mùa đông gió bấc thổi, da tái đi và nổi da gà. Dù trời nóng hay lạnh, nhiệt độ cơ thể em vẫn giữ ở khoảng 37 °C. Làn da đã làm gì để giữ được điều đó?',
   objectives: [
     'Nêu được cấu tạo sơ lược và chức năng của da.',
     'Trình bày được một số bệnh về da, cách phòng chống và một số biện pháp chăm sóc, bảo vệ, làm đẹp da an toàn.',
-    'Nêu được khái niệm thân nhiệt; vai trò của da và hệ thần kinh trong điều hòa thân nhiệt.',
+    'Nêu được khái niệm thân nhiệt; vai trò của da và hệ thần kinh trong điều hoà thân nhiệt.',
     'Nêu được các biện pháp chống nóng, chống lạnh; biết cách sơ cứu khi bị cảm nóng, cảm lạnh.',
   ],
   sections: [
@@ -21,7 +21,7 @@ export default {
           rows: [
             [
               'Lớp biểu bì',
-              'Tầng sừng (tế bào chết hóa sừng, dễ bong) và tầng tế bào sống (phân chia tạo tế bào mới, chứa sắc tố)',
+              'Tầng sừng (tế bào chết hoá sừng, dễ bong) và tầng tế bào sống (phân chia tạo tế bào mới, chứa sắc tố)',
             ],
             [
               'Lớp bì',
@@ -37,7 +37,7 @@ export default {
             'Bảo vệ: tầng sừng, chất nhờn và sắc tố chống thấm nước, ngăn vi khuẩn, chống tia cực tím; lớp mỡ dưới da đệm, chống tác động cơ học.',
             'Cảm giác: các thụ quan tiếp nhận kích thích nóng, lạnh, đau, áp lực.',
             'Bài tiết: tuyến mồ hôi thải nước, muối khoáng, urea.',
-            'Điều hòa thân nhiệt: nhờ mạch máu dưới da, tuyến mồ hôi, cơ co chân lông và lớp mỡ.',
+            'Điều hoà thân nhiệt: nhờ mạch máu dưới da, tuyến mồ hôi, cơ co chân lông và lớp mỡ.',
             'Da cùng với lông, tóc, móng còn tạo nên vẻ đẹp của con người.',
           ],
         },
@@ -68,8 +68,8 @@ export default {
             ],
             [
               'Bỏng',
-              'Do nhiệt, hóa chất, điện; nặng có thể tổn thương các lớp sâu của da',
-              'Cẩn thận với lửa, nước sôi, hóa chất; sơ cứu bằng cách xả nước mát lên vết bỏng',
+              'Do nhiệt, hoá chất, điện; nặng có thể tổn thương các lớp sâu của da',
+              'Cẩn thận với lửa, nước sôi, hoá chất; sơ cứu bằng cách xả nước mát lên vết bỏng',
             ],
           ],
         },
@@ -82,22 +82,22 @@ export default {
       ],
     },
     {
-      heading: 'Thân nhiệt và điều hòa thân nhiệt',
+      heading: 'Thân nhiệt và điều hoà thân nhiệt',
       blocks: [
         {
           type: 'callout',
           tone: 'definition',
           title: 'Thân nhiệt',
-          text: 'Thân nhiệt là nhiệt độ của cơ thể. Ở người khỏe mạnh, thân nhiệt luôn ổn định ở khoảng 37 °C (dao động khoảng 36,5 – 37,5 °C) nhờ sự cân bằng giữa quá trình sinh nhiệt và tỏa nhiệt.',
+          text: 'Thân nhiệt là nhiệt độ của cơ thể. Ở người khoẻ mạnh, thân nhiệt luôn ổn định ở khoảng 37 °C (dao động khoảng 36,5 – 37,5 °C) nhờ sự cân bằng giữa quá trình sinh nhiệt và toả nhiệt.',
         },
         {
           type: 'table',
-          caption: 'Vai trò của da trong điều hòa thân nhiệt',
+          caption: 'Vai trò của da trong điều hoà thân nhiệt',
           head: ['Khi trời nóng hoặc vận động mạnh', 'Khi trời lạnh'],
           rows: [
             [
-              'Mạch máu dưới da dãn ra, máu qua da nhiều, tăng tỏa nhiệt',
-              'Mạch máu dưới da co lại, giảm tỏa nhiệt',
+              'Mạch máu dưới da dãn ra, máu qua da nhiều, tăng toả nhiệt',
+              'Mạch máu dưới da co lại, giảm toả nhiệt',
             ],
             ['Tuyến mồ hôi tăng tiết mồ hôi; mồ hôi bay hơi lấy đi nhiệt', 'Giảm tiết mồ hôi'],
             ['Cơ co chân lông dãn', 'Cơ co chân lông co, lông dựng lên (sởn gai ốc)'],
@@ -106,7 +106,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Mọi hoạt động điều hòa thân nhiệt đều do hệ thần kinh điều khiển: các thụ quan ở da báo về trung ương thần kinh, trung ương phát lệnh làm mạch máu co, dãn, tuyến mồ hôi tiết nhiều hay ít, cơ run… Khi trời nóng ẩm, mồ hôi khó bay hơi nên cơ thể khó tỏa nhiệt, dễ bị bức bối, say nóng.',
+          text: 'Mọi hoạt động điều hoà thân nhiệt đều do hệ thần kinh điều khiển: các thụ quan ở da báo về trung ương thần kinh, trung ương phát lệnh làm mạch máu co, dãn, tuyến mồ hôi tiết nhiều hay ít, cơ run… Khi trời nóng ẩm, mồ hôi khó bay hơi nên cơ thể khó toả nhiệt, dễ bị bức bối, say nóng.',
         },
         {
           type: 'list',
@@ -136,18 +136,18 @@ export default {
       problem:
         'Vì sao khi trời nóng, da ta hồng hào và đổ nhiều mồ hôi; còn khi trời rét, da tái đi và nổi da gà?',
       steps: [
-        'Trời nóng: thụ quan ở da báo về hệ thần kinh, hệ thần kinh điều khiển mạch máu dưới da dãn ra, nhiều máu qua da nên da hồng hào và tỏa nhiều nhiệt.',
+        'Trời nóng: thụ quan ở da báo về hệ thần kinh, hệ thần kinh điều khiển mạch máu dưới da dãn ra, nhiều máu qua da nên da hồng hào và toả nhiều nhiệt.',
         'Đồng thời tuyến mồ hôi tăng tiết mồ hôi; mồ hôi bay hơi lấy đi nhiệt của cơ thể.',
         'Trời rét: mạch máu dưới da co lại, ít máu qua da nên da tái, giảm mất nhiệt; cơ co chân lông co làm lông dựng lên, da nổi da gà.',
       ],
       answer:
-        'Đó là phản ứng điều hòa thân nhiệt của da do hệ thần kinh điều khiển: tăng tỏa nhiệt khi nóng, giảm tỏa nhiệt khi lạnh, giúp thân nhiệt ổn định khoảng 37 °C.',
+        'Đó là phản ứng điều hoà thân nhiệt của da do hệ thần kinh điều khiển: tăng toả nhiệt khi nóng, giảm toả nhiệt khi lạnh, giúp thân nhiệt ổn định khoảng 37 °C.',
     },
     {
       problem:
         'Một bạn vừa chạy bộ dưới trời nắng, mồ hôi ra nhiều liền vào phòng bật quạt mạnh thổi thẳng vào người rồi đi tắm nước lạnh. Việc làm này có đúng không? Vì sao?',
       steps: [
-        'Khi vận động mạnh dưới nắng, mạch máu dưới da đang dãn, tuyến mồ hôi tiết nhiều để tỏa nhiệt.',
+        'Khi vận động mạnh dưới nắng, mạch máu dưới da đang dãn, tuyến mồ hôi tiết nhiều để toả nhiệt.',
         'Gặp gió mạnh và nước lạnh đột ngột, mạch máu co lại nhanh, cơ thể mất nhiệt đột ngột, dễ bị cảm lạnh, viêm họng.',
         'Nên nghỉ ở chỗ thoáng mát, lau khô mồ hôi, uống nước từ từ, chờ cơ thể ổn định rồi mới tắm.',
       ],
@@ -171,7 +171,7 @@ export default {
       right: [
         'Tiếp nhận kích thích nóng, lạnh, đau',
         'Cách nhiệt, giữ ấm, đệm cơ học',
-        'Bài tiết, tỏa nhiệt',
+        'Bài tiết, toả nhiệt',
         'Làm da mềm mại, không thấm nước',
       ],
       pairs: [
@@ -182,7 +182,7 @@ export default {
       ],
       hints: ['Mồ hôi vừa chứa chất thải vừa lấy đi nhiệt khi bay hơi.'],
       solution:
-        'Tuyến mồ hôi: bài tiết, tỏa nhiệt; thụ quan: cảm giác; lớp mỡ: cách nhiệt, đệm; tuyến nhờn: làm da mềm, không thấm nước.',
+        'Tuyến mồ hôi: bài tiết, toả nhiệt; thụ quan: cảm giác; lớp mỡ: cách nhiệt, đệm; tuyến nhờn: làm da mềm, không thấm nước.',
     },
     {
       type: 'choice',
@@ -195,7 +195,7 @@ export default {
       ],
       answer: 1,
       hints: ['Khi lạnh, cơ thể cần giảm mất nhiệt.'],
-      solution: 'Khi lạnh, mạch máu dưới da co lại và tuyến mồ hôi giảm tiết để giảm tỏa nhiệt.',
+      solution: 'Khi lạnh, mạch máu dưới da co lại và tuyến mồ hôi giảm tiết để giảm toả nhiệt.',
     },
     {
       type: 'choice',
@@ -257,20 +257,20 @@ export default {
       type: 'choice',
       prompt: 'Vì sao vào ngày nóng ẩm, ta thấy bức bối, khó chịu hơn ngày nóng khô?',
       options: [
-        'Vì mồ hôi khó bay hơi nên cơ thể khó tỏa nhiệt',
+        'Vì mồ hôi khó bay hơi nên cơ thể khó toả nhiệt',
         'Vì da không tiết mồ hôi',
         'Vì mạch máu dưới da co lại',
         'Vì cơ run lên sinh nhiệt',
       ],
       answer: 0,
       hints: ['Mồ hôi chỉ lấy đi nhiệt khi nó bay hơi.'],
-      solution: 'Không khí ẩm làm mồ hôi khó bay hơi, nhiệt khó tỏa ra ngoài nên ta thấy bức bối.',
+      solution: 'Không khí ẩm làm mồ hôi khó bay hơi, nhiệt khó toả ra ngoài nên ta thấy bức bối.',
     },
   ],
   takeaways: [
     'Da gồm lớp biểu bì (tầng sừng, tầng tế bào sống), lớp bì (thụ quan, tuyến nhờn, tuyến mồ hôi, bao lông, cơ co chân lông, mạch máu) và lớp mỡ dưới da.',
-    'Da có chức năng bảo vệ, cảm giác, bài tiết, điều hòa thân nhiệt và tạo vẻ đẹp.',
-    'Thân nhiệt người khỏe mạnh ổn định ở khoảng 37 °C nhờ cân bằng sinh nhiệt và tỏa nhiệt, do hệ thần kinh điều khiển.',
+    'Da có chức năng bảo vệ, cảm giác, bài tiết, điều hoà thân nhiệt và tạo vẻ đẹp.',
+    'Thân nhiệt người khoẻ mạnh ổn định ở khoảng 37 °C nhờ cân bằng sinh nhiệt và toả nhiệt, do hệ thần kinh điều khiển.',
     'Nóng: mạch máu dưới da dãn, tăng tiết mồ hôi. Lạnh: mạch máu co, cơ co chân lông co, cơ run.',
     'Giữ vệ sinh da, ăn mặc phù hợp thời tiết; biết sơ cứu khi bị cảm nóng, cảm lạnh.',
   ],

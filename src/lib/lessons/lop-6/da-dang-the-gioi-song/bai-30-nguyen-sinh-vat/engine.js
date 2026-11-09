@@ -53,7 +53,7 @@ export const PROTISTS = [
     moves:
       'Tế bào chất dồn về một phía tạo thành chân giả, cơ thể "chảy" theo; di chuyển rất chậm.',
     shape: 'Không có hình dạng cố định, luôn thay đổi.',
-    feeds: 'Không có lục lạp: dùng chân giả bao lấy mồi (vi khuẩn, tảo nhỏ) rồi tiêu hóa.',
+    feeds: 'Không có lục lạp: dùng chân giả bao lấy mồi (vi khuẩn, tảo nhỏ) rồi tiêu hoá.',
     lives: 'Lớp bùn ở đáy ao, hồ, mương nước.',
     speed: 0.12,
   },
@@ -148,7 +148,7 @@ export const DISEASES = [
       'Người bệnh: trùng sốt rét sống trong máu',
       'Muỗi Anopheles hút máu người bệnh, mang trùng sốt rét',
       'Muỗi đốt người lành, truyền trùng sốt rét vào máu',
-      'Trùng sốt rét sinh sản trong hồng cầu, phá hủy hồng cầu: rét run, sốt cao, đổ mồ hôi',
+      'Trùng sốt rét sinh sản trong hồng cầu, phá huỷ hồng cầu: rét run, sốt cao, đổ mồ hôi',
     ],
     measures: [
       {
@@ -209,7 +209,7 @@ export const DISEASES = [
         id: 'man',
         text: 'Ngủ trong màn',
         breaks: null,
-        why: 'Kiết lị lây qua đường tiêu hóa, không lây qua muỗi đốt.',
+        why: 'Kiết lị lây qua đường tiêu hoá, không lây qua muỗi đốt.',
       },
     ],
   },

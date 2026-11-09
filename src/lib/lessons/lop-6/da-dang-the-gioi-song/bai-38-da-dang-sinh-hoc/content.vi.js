@@ -66,7 +66,7 @@ export default {
         {
           type: 'list',
           items: [
-            'Trong tự nhiên: giúp duy trì sự ổn định của sự sống trên Trái Đất; các loài trong một khu vực có quan hệ chặt chẽ với nhau (làm thức ăn, nơi ở cho nhau), giữ cân bằng tự nhiên. Rừng điều hòa khí hậu, bảo vệ đất và nguồn nước; nấm, vi khuẩn phân giải xác sinh vật làm sạch môi trường, tăng độ màu mỡ cho đất.',
+            'Trong tự nhiên: giúp duy trì sự ổn định của sự sống trên Trái Đất; các loài trong một khu vực có quan hệ chặt chẽ với nhau (làm thức ăn, nơi ở cho nhau), giữ cân bằng tự nhiên. Rừng điều hoà khí hậu, bảo vệ đất và nguồn nước; nấm, vi khuẩn phân giải xác sinh vật làm sạch môi trường, tăng độ màu mỡ cho đất.',
             'Đối với con người: cung cấp lương thực, thực phẩm, dược liệu, nguyên liệu (gỗ, sợi), nước sạch; tạo cảnh quan thiên nhiên cho du lịch, nghỉ ngơi; giảm tác hại của thiên tai và khí hậu khắc nghiệt.',
           ],
         },
@@ -188,14 +188,14 @@ export default {
       prompt: 'Chọn tất cả các vai trò của đa dạng sinh học trong tự nhiên.',
       options: [
         'Giữ cân bằng tự nhiên, ổn định sự sống',
-        'Rừng điều hòa khí hậu, bảo vệ đất và nước',
+        'Rừng điều hoà khí hậu, bảo vệ đất và nước',
         'Làm tăng ô nhiễm môi trường',
         'Nấm, vi khuẩn phân giải xác sinh vật, làm sạch môi trường',
       ],
       answers: [0, 1, 3],
       hints: ['Một ý nói về tác hại, không phải vai trò.'],
       solution:
-        'Đa dạng sinh học giữ cân bằng tự nhiên, rừng điều hòa khí hậu, bảo vệ đất và nước, nấm và vi khuẩn phân giải xác sinh vật làm sạch môi trường.',
+        'Đa dạng sinh học giữ cân bằng tự nhiên, rừng điều hoà khí hậu, bảo vệ đất và nước, nấm và vi khuẩn phân giải xác sinh vật làm sạch môi trường.',
     },
     {
       type: 'multi',
@@ -255,7 +255,7 @@ export default {
   takeaways: [
     'Đa dạng sinh học: sự phong phú về số loài, số cá thể trong loài và môi trường sống; thể hiện rõ nhất ở số lượng loài.',
     'Rừng mưa nhiệt đới đa dạng nhất; hoang mạc và đới lạnh có khí hậu khắc nghiệt nên ít loài.',
-    'Vai trò: giữ cân bằng tự nhiên, điều hòa khí hậu, bảo vệ đất và nước; cung cấp lương thực, thực phẩm, dược liệu, nguyên liệu, cảnh quan.',
+    'Vai trò: giữ cân bằng tự nhiên, điều hoà khí hậu, bảo vệ đất và nước; cung cấp lương thực, thực phẩm, dược liệu, nguyên liệu, cảnh quan.',
     'Suy giảm chủ yếu do con người: phá rừng, săn bắt, buôn bán động vật hoang dã, ô nhiễm. Bảo vệ: cấm phá rừng, cấm săn bắt, lập khu bảo tồn, trồng rừng, tuyên truyền.',
   ],
 };

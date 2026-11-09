@@ -23,7 +23,7 @@ export default {
           head: ['Thành phần', 'Chức năng'],
           rows: [
             [
-              'Huyết tương (chủ yếu là nước và các chất hòa tan)',
+              'Huyết tương (chủ yếu là nước và các chất hoà tan)',
               'Duy trì máu ở trạng thái lỏng để lưu thông dễ dàng; vận chuyển chất dinh dưỡng, hormone, kháng thể, chất thải',
             ],
             ['Hồng cầu', 'Vận chuyển khí O₂ và CO₂'],
@@ -35,11 +35,11 @@ export default {
           type: 'callout',
           tone: 'definition',
           title: 'Kháng nguyên và kháng thể',
-          text: 'Kháng nguyên là những chất lạ (thường có trên bề mặt virus, vi khuẩn, ...) khi xâm nhập vào cơ thể thì kích thích cơ thể tạo ra kháng thể. Kháng thể là phân tử protein do tế bào lympho B (một loại bạch cầu) tạo ra để chống lại kháng nguyên. Kháng nguyên và kháng thể tương ứng kết hợp với nhau theo cơ chế chìa khóa – ổ khóa.',
+          text: 'Kháng nguyên là những chất lạ (thường có trên bề mặt virus, vi khuẩn, ...) khi xâm nhập vào cơ thể thì kích thích cơ thể tạo ra kháng thể. Kháng thể là phân tử protein do tế bào lympho B (một loại bạch cầu) tạo ra để chống lại kháng nguyên. Kháng nguyên và kháng thể tương ứng kết hợp với nhau theo cơ chế chìa khoá – ổ khoá.',
         },
         {
           type: 'p',
-          text: 'Khi kháng nguyên xâm nhập, tế bào lympho B nhận diện kháng nguyên, phân chia và tạo ra kháng thể tiêu diệt mầm bệnh hoặc vô hiệu hóa độc tố. Một số tế bào lympho B trở thành tế bào nhớ, giúp cơ thể phản ứng nhanh và mạnh hơn khi mầm bệnh đó xâm nhập lần sau. Khả năng cơ thể chống lại mầm bệnh như vậy gọi là miễn dịch.',
+          text: 'Khi kháng nguyên xâm nhập, tế bào lympho B nhận diện kháng nguyên, phân chia và tạo ra kháng thể tiêu diệt mầm bệnh hoặc vô hiệu hoá độc tố. Một số tế bào lympho B trở thành tế bào nhớ, giúp cơ thể phản ứng nhanh và mạnh hơn khi mầm bệnh đó xâm nhập lần sau. Khả năng cơ thể chống lại mầm bệnh như vậy gọi là miễn dịch.',
         },
         {
           type: 'callout',
@@ -130,12 +130,12 @@ export default {
             [
               'Huyết áp cao',
               'Ăn nhiều muối, đường, chất béo; huyết áp tăng kéo dài làm tổn thương thành động mạch',
-              'Ăn uống khoa học, kiểm soát cân nặng, tập thể dục, khám sức khỏe định kì',
+              'Ăn uống khoa học, kiểm soát cân nặng, tập thể dục, khám sức khoẻ định kì',
             ],
             [
               'Xơ vữa động mạch',
               'Cholesterol trong máu cao lắng đọng ở thành mạch làm hẹp lòng mạch; hút thuốc lá, ít vận động',
-              'Ăn nhiều rau, quả, ngũ cốc nguyên hạt; hạn chế chất béo bão hòa, muối, đường, rượu bia, thuốc lá',
+              'Ăn nhiều rau, quả, ngũ cốc nguyên hạt; hạn chế chất béo bão hoà, muối, đường, rượu bia, thuốc lá',
             ],
           ],
         },
@@ -276,10 +276,10 @@ export default {
         'Ăn nhiều rau, quả, ngũ cốc nguyên hạt',
         'Tập thể dục đều đặn',
         'Hút thuốc lá',
-        'Kiểm soát cân nặng, khám sức khỏe định kì',
+        'Kiểm soát cân nặng, khám sức khoẻ định kì',
       ],
       answers: [1, 2, 4],
-      hints: ['Muối, chất béo bão hòa và thuốc lá làm tăng nguy cơ bệnh tim mạch.'],
+      hints: ['Muối, chất béo bão hoà và thuốc lá làm tăng nguy cơ bệnh tim mạch.'],
       solution:
         'Ăn nhiều rau quả, tập thể dục, kiểm soát cân nặng và khám định kì giúp phòng bệnh; ăn mặn, nhiều dầu mỡ và hút thuốc lá làm tăng nguy cơ.',
     },

@@ -99,7 +99,7 @@ export default {
             ],
             [
               'Viêm phổi',
-              'Virus, vi khuẩn, nấm hoặc hóa chất; phế nang viêm tiết dịch làm giảm trao đổi khí',
+              'Virus, vi khuẩn, nấm hoặc hoá chất; phế nang viêm tiết dịch làm giảm trao đổi khí',
               'Đau ngực, ho, sốt, khó thở, mệt mỏi',
             ],
             [

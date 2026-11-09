@@ -65,7 +65,7 @@ export const SUBSTANCES = [
     filtered: true,
     reabsorbed: 'most',
     secreted: false,
-    why: 'Phần lớn nước được hấp thụ lại, phần còn lại hòa tan các chất thải thành nước tiểu.',
+    why: 'Phần lớn nước được hấp thụ lại, phần còn lại hoà tan các chất thải thành nước tiểu.',
   },
   {
     id: 'muoi',

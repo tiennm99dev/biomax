@@ -1,5 +1,5 @@
 /**
- * The evolutionary factors (nhân tố tiến hóa) of the modern theory acting on
+ * The evolutionary factors (nhân tố tiến hoá) of the modern theory acting on
  * one gene with two alleles, A (dominant, dark fur) and a (recessive, light
  * fur), in a population. Each generation:
  *
@@ -171,7 +171,7 @@ export function explain(history, f) {
   const n = (/** @type {number} */ v) => formatFixed(v, 2);
   const on = FACTORS.filter((x) => f[x.key]);
   if (!on.length)
-    return `Không có nhân tố tiến hóa nào: tần số allele A giữ nguyên ${n(alleleA(last))} và tỉ lệ kiểu gene không đổi qua ${history.length - 1} thế hệ. Quần thể không tiến hóa.`;
+    return `Không có nhân tố tiến hoá nào: tần số allele A giữ nguyên ${n(alleleA(last))} và tỉ lệ kiểu gene không đổi qua ${history.length - 1} thế hệ. Quần thể không tiến hoá.`;
   if (on.length === 1 && f.inbreeding)
     return `Tự thụ phấn: tần số allele A vẫn là ${n(alleleA(last))}, nhưng tỉ lệ dị hợp Aa giảm từ ${n(first.Aa)} xuống ${n(last.Aa)}, đồng hợp tăng. Giao phối không ngẫu nhiên làm đổi thành phần kiểu gene, không đổi tần số allele.`;
   const dir = Math.abs(dp) < 0.005 ? 'gần như không đổi' : dp > 0 ? 'tăng' : 'giảm';

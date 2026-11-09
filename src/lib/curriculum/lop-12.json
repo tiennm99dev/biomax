@@ -28,10 +28,10 @@
         },
         {
           "no": 3,
-          "title": "Bài 3. Điều hòa biểu hiện gene",
+          "title": "Bài 3. Điều hoà biểu hiện gene",
           "slug": "bai-3-dieu-hoa-bieu-hien-gene",
           "kind": "theory",
-          "keyIdeas": ["Mô hình operon Lac", "Ý nghĩa điều hòa"],
+          "keyIdeas": ["Mô hình operon Lac", "Ý nghĩa điều hoà"],
           "interactiveIdea": "Mô phỏng operon Lac: thêm/bớt lactose để thấy protein ức chế gắn/rời và gene bật/tắt."
         },
         {
@@ -197,17 +197,17 @@
     {
       "no": 5,
       "label": "Chương 5",
-      "title": "Bằng chứng và các học thuyết tiến hóa",
+      "title": "Bằng chứng và các học thuyết tiến hoá",
       "slug": "bang-chung-va-cac-hoc-thuyet-tien-hoa",
       "strand": "tien-hoa",
       "volume": "Sách giáo khoa (1 tập)",
       "lessons": [
         {
           "no": 19,
-          "title": "Bài 19. Các bằng chứng tiến hóa",
+          "title": "Bài 19. Các bằng chứng tiến hoá",
           "slug": "bai-19-cac-bang-chung-tien-hoa",
           "kind": "theory",
-          "keyIdeas": ["Bằng chứng hóa thạch", "Giải phẫu so sánh", "Tế bào và sinh học phân tử"],
+          "keyIdeas": ["Bằng chứng hoá thạch", "Giải phẫu so sánh", "Tế bào và sinh học phân tử"],
           "interactiveIdea": "So sánh xương chi trước các loài (cơ quan tương đồng) bằng lớp phủ màu tương ứng."
         },
         {
@@ -220,18 +220,18 @@
         },
         {
           "no": 21,
-          "title": "Bài 21. Học thuyết tiến hóa tổng hợp hiện đại",
+          "title": "Bài 21. Học thuyết tiến hoá tổng hợp hiện đại",
           "slug": "bai-21-hoc-thuyet-tien-hoa-tong-hop-hien-dai",
           "kind": "theory",
-          "keyIdeas": ["Tiến hóa nhỏ", "Các nhân tố tiến hóa", "Cơ chế hình thành loài"],
+          "keyIdeas": ["Tiến hoá nhỏ", "Các nhân tố tiến hoá", "Cơ chế hình thành loài"],
           "interactiveIdea": "Mô phỏng tần số allele với các nhân tố: đột biến, di nhập gene, phiêu bạt, chọn lọc."
         },
         {
           "no": 22,
-          "title": "Bài 22. Tiến hóa lớn và quá trình phát sinh chủng loại",
+          "title": "Bài 22. Tiến hoá lớn và quá trình phát sinh chủng loại",
           "slug": "bai-22-tien-hoa-lon-va-qua-trinh-phat-sinh-chung-loai",
           "kind": "theory",
-          "keyIdeas": ["Tiến hóa lớn", "Cây phát sinh chủng loại", "Sự phát sinh loài người"],
+          "keyIdeas": ["Tiến hoá lớn", "Cây phát sinh chủng loại", "Sự phát sinh loài người"],
           "interactiveIdea": "Cây phát sinh chủng loại tương tác thu phóng theo thời gian địa chất."
         }
       ]
@@ -257,7 +257,7 @@
           "title": "Bài 24. Sinh thái học quần thể",
           "slug": "bai-24-sinh-thai-hoc-quan-the",
           "kind": "theory",
-          "keyIdeas": ["Đặc trưng quần thể", "Tăng trưởng quần thể", "Điều hòa số lượng"],
+          "keyIdeas": ["Đặc trưng quần thể", "Tăng trưởng quần thể", "Điều hoà số lượng"],
           "interactiveIdea": "Mô phỏng tăng trưởng hàm mũ và logistic với thanh trượt r và K."
         },
         {
@@ -304,7 +304,7 @@
         },
         {
           "no": 29,
-          "title": "Bài 29. Trao đổi vật chất và chuyển hóa năng lượng trong hệ sinh thái",
+          "title": "Bài 29. Trao đổi vật chất và chuyển hoá năng lượng trong hệ sinh thái",
           "slug": "bai-29-trao-doi-vat-chat-va-chuyen-hoa-nang-luong-trong-he-sinh-thai",
           "kind": "theory",
           "keyIdeas": ["Chuỗi, lưới thức ăn", "Bậc dinh dưỡng", "Tháp sinh thái và hiệu suất"],
@@ -320,19 +320,19 @@
         },
         {
           "no": 31,
-          "title": "Bài 31. Sinh quyển, khu sinh học và chu trình sinh - địa - hóa",
+          "title": "Bài 31. Sinh quyển, khu sinh học và chu trình sinh - địa - hoá",
           "slug": "bai-31-sinh-quyen-khu-sinh-hoc-va-chu-trinh-sinh-dia-hoa",
           "kind": "theory",
           "keyIdeas": ["Các khu sinh học", "Chu trình carbon, nitrogen, nước"],
-          "interactiveIdea": "Sơ đồ chu trình carbon động, chỉnh lượng đốt nhiên liệu hóa thạch và xem CO₂ khí quyển."
+          "interactiveIdea": "Sơ đồ chu trình carbon động, chỉnh lượng đốt nhiên liệu hoá thạch và xem CO₂ khí quyển."
         },
         {
           "no": 32,
           "title": "Bài 32. Thực hành: Thiết kế một hệ sinh thái nhân tạo",
           "slug": "bai-32-thuc-hanh-thiet-ke-mot-he-sinh-thai-nhan-tao",
           "kind": "practice",
-          "keyIdeas": ["Thiết kế bể thủy sinh/terrarium", "Duy trì cân bằng"],
-          "interactiveIdea": "Trình thiết kế bể thủy sinh ảo, chọn sinh vật và theo dõi cân bằng qua thời gian."
+          "keyIdeas": ["Thiết kế bể thuỷ sinh/terrarium", "Duy trì cân bằng"],
+          "interactiveIdea": "Trình thiết kế bể thuỷ sinh ảo, chọn sinh vật và theo dõi cân bằng qua thời gian."
         }
       ]
     },
@@ -392,7 +392,7 @@
           "slug": "cd-bai-2-phuong-phap-tach-chiet-dna",
           "kind": "chuyen-de",
           "keyIdeas": ["Nguyên lí tách chiết", "Các bước thực hiện"],
-          "interactiveIdea": "Quy trình tách chiết DNA tương tác với giải thích vai trò từng hóa chất."
+          "interactiveIdea": "Quy trình tách chiết DNA tương tác với giải thích vai trò từng hoá chất."
         },
         {
           "no": 3,

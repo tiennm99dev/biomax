@@ -96,7 +96,7 @@ export default {
             ],
             [
               'Tháp năng lượng',
-              'Năng lượng tích lũy trên một đơn vị diện tích hoặc thể tích, trong một đơn vị thời gian',
+              'Năng lượng tích luỹ trên một đơn vị diện tích hoặc thể tích, trong một đơn vị thời gian',
             ],
           ],
         },
@@ -249,7 +249,7 @@ export default {
       answers: [0, 2, 3],
       hints: ['Chọn các việc giữ cho sinh vật và môi trường sống của chúng ổn định.'],
       solution:
-        'Trồng rừng, xử lí nước thải, lập khu bảo tồn giúp bảo vệ hệ sinh thái; chất nổ và lạm dụng thuốc trừ sâu phá hủy hệ sinh thái.',
+        'Trồng rừng, xử lí nước thải, lập khu bảo tồn giúp bảo vệ hệ sinh thái; chất nổ và lạm dụng thuốc trừ sâu phá huỷ hệ sinh thái.',
     },
   ],
   takeaways: [

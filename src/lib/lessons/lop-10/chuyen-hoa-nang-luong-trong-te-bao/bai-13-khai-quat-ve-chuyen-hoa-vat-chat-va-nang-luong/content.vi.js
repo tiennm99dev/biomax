@@ -321,7 +321,7 @@ export default {
       type: 'text',
       prompt:
         'Sản phẩm cuối của một chuỗi phản ứng quay lại ức chế enzyme ở đầu chuỗi. Kiểu điều hoà này gọi là gì?',
-      accept: ['ức chế ngược', 'điều hoà ngược', 'ức chế phản hồi', 'điều hòa ngược âm'],
+      accept: ['ức chế ngược', 'điều hoà ngược', 'ức chế phản hồi', 'điều hoà ngược âm'],
       hints: ['Sản phẩm "quay ngược" lại đầu chuỗi và làm enzyme giảm hoạt động.'],
       solution: 'Đó là ức chế ngược.',
     },

@@ -60,7 +60,7 @@ export default {
           items: [
             'Chế biến thực phẩm: vi khuẩn lactic dùng để làm sữa chua, muối dưa, muối cà; vi khuẩn được dùng để làm giấm, nước mắm.',
             'Sản xuất: một số vi khuẩn được dùng để sản xuất thuốc kháng sinh, vitamin; xử lí rác thải, nước thải.',
-            'Trong cơ thể người: vi khuẩn sống trong ruột giúp tiêu hóa thức ăn và tổng hợp một số vitamin.',
+            'Trong cơ thể người: vi khuẩn sống trong ruột giúp tiêu hoá thức ăn và tổng hợp một số vitamin.',
           ],
         },
         {
@@ -133,7 +133,7 @@ export default {
       problem:
         'Vì sao thức ăn cất trong tủ lạnh để được lâu hơn thức ăn để ngoài trời nóng, còn thức ăn đã đun sôi kĩ thì lâu bị ôi thiu hơn?',
       steps: [
-        'Thức ăn bị ôi thiu là do vi khuẩn sinh sản nhanh và phân hủy thức ăn.',
+        'Thức ăn bị ôi thiu là do vi khuẩn sinh sản nhanh và phân huỷ thức ăn.',
         'Ở nhiệt độ thấp trong tủ lạnh, vi khuẩn gần như ngừng sinh sản (nhưng không chết), nên thức ăn lâu hỏng.',
         'Ở trời nóng (khoảng $30$ đến $40\\ ^\\circ\\text{C}$), vi khuẩn sinh sản rất nhanh nên thức ăn nhanh hỏng.',
         'Đun sôi tiêu diệt phần lớn vi khuẩn có trong thức ăn.',
@@ -222,10 +222,10 @@ export default {
     {
       type: 'choice',
       prompt: 'Bệnh nào sau đây do vi khuẩn gây ra?',
-      options: ['Cúm', 'Thủy đậu', 'Lao phổi', 'Sởi'],
+      options: ['Cúm', 'Thuỷ đậu', 'Lao phổi', 'Sởi'],
       answer: 2,
       hints: ['Ba bệnh còn lại đều do virus gây ra.'],
-      solution: 'Lao phổi do trực khuẩn lao gây ra. Cúm, thủy đậu, sởi là bệnh do virus.',
+      solution: 'Lao phổi do trực khuẩn lao gây ra. Cúm, thuỷ đậu, sởi là bệnh do virus.',
     },
     {
       type: 'choice',

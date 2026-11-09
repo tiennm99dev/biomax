@@ -1,11 +1,11 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Sự sống phát sinh qua tiến hóa hóa học và tiến hóa tiền sinh học, rồi phát triển qua tiến hóa sinh học trong các đại địa chất Thái cổ, Nguyên sinh, Cổ sinh, Trung sinh, Tân sinh; loài người hình thành qua các giai đoạn từ người vượn đến người tinh khôn.',
+    'Sự sống phát sinh qua tiến hoá hoá học và tiến hoá tiền sinh học, rồi phát triển qua tiến hoá sinh học trong các đại địa chất Thái cổ, Nguyên sinh, Cổ sinh, Trung sinh, Tân sinh; loài người hình thành qua các giai đoạn từ người vượn đến người tinh khôn.',
   intro:
     'Trái Đất hình thành cách đây khoảng $4{,}6$ tỉ năm, khi đó chỉ có các chất vô cơ và chưa hề có sinh vật nào. Vậy sự sống đã xuất hiện như thế nào, và từ những tế bào đầu tiên, sinh giới đã phát triển ra sao để có khủng long, cây có hoa và cuối cùng là con người? Nếu thu cả lịch sử Trái Đất vào một ngày $24$ giờ, loài người chỉ xuất hiện vài giây trước nửa đêm. Hãy đi dọc dòng thời gian để tự kiểm chứng.',
   objectives: [
-    'Trình bày được các giai đoạn phát sinh sự sống: tiến hóa hóa học, tiến hóa tiền sinh học và tiến hóa sinh học.',
+    'Trình bày được các giai đoạn phát sinh sự sống: tiến hoá hoá học, tiến hoá tiền sinh học và tiến hoá sinh học.',
     'Nêu được các đại địa chất theo thứ tự thời gian và sinh vật điển hình của mỗi đại.',
     'Trình bày được các giai đoạn chính trong quá trình phát sinh loài người.',
   ],
@@ -15,31 +15,31 @@ export default {
       blocks: [
         {
           type: 'p',
-          text: 'Theo quan niệm hiện đại, sự sống trên Trái Đất có nguồn gốc từ các chất vô cơ, hình thành qua ba giai đoạn: tiến hóa hóa học và tiến hóa tiền sinh học (phát sinh sự sống), sau đó là tiến hóa sinh học (phát triển sự sống).',
+          text: 'Theo quan niệm hiện đại, sự sống trên Trái Đất có nguồn gốc từ các chất vô cơ, hình thành qua ba giai đoạn: tiến hoá hoá học và tiến hoá tiền sinh học (phát sinh sự sống), sau đó là tiến hoá sinh học (phát triển sự sống).',
         },
         {
           type: 'callout',
           tone: 'definition',
-          title: 'Tiến hóa hóa học',
-          text: 'Là quá trình tổng hợp các chất hữu cơ từ chất vô cơ bằng các phản ứng hóa học, nhờ nguồn năng lượng tự nhiên (tia tử ngoại, sét, núi lửa, ...). Từ các nguyên tố C, H, O, N trong khí quyển nguyên thủy hình thành các chất hữu cơ đơn giản (amino acid, nucleotide, đường, lipid), rồi các đại phân tử phức tạp hơn (protein, nucleic acid, phospholipid).',
+          title: 'Tiến hoá hoá học',
+          text: 'Là quá trình tổng hợp các chất hữu cơ từ chất vô cơ bằng các phản ứng hoá học, nhờ nguồn năng lượng tự nhiên (tia tử ngoại, sét, núi lửa, ...). Từ các nguyên tố C, H, O, N trong khí quyển nguyên thuỷ hình thành các chất hữu cơ đơn giản (amino acid, nucleotide, đường, lipid), rồi các đại phân tử phức tạp hơn (protein, nucleic acid, phospholipid).',
         },
         {
           type: 'callout',
           tone: 'note',
           title: 'Thí nghiệm của Miller và Urey (1953)',
-          text: 'Hai nhà khoa học cho hỗn hợp khí $CH_4$, $NH_3$, $H_2$ và hơi nước (giống khí quyển nguyên thủy) vào bình kín rồi phóng tia lửa điện liên tục. Sau một tuần, trong bình xuất hiện nhiều amino acid. Thí nghiệm cho thấy chất hữu cơ có thể được tổng hợp từ chất vô cơ trong điều kiện tự nhiên của Trái Đất nguyên thủy.',
+          text: 'Hai nhà khoa học cho hỗn hợp khí $CH_4$, $NH_3$, $H_2$ và hơi nước (giống khí quyển nguyên thuỷ) vào bình kín rồi phóng tia lửa điện liên tục. Sau một tuần, trong bình xuất hiện nhiều amino acid. Thí nghiệm cho thấy chất hữu cơ có thể được tổng hợp từ chất vô cơ trong điều kiện tự nhiên của Trái Đất nguyên thuỷ.',
         },
         {
           type: 'callout',
           tone: 'definition',
-          title: 'Tiến hóa tiền sinh học',
+          title: 'Tiến hoá tiền sinh học',
           text: 'Là giai đoạn hình thành tế bào sơ khai từ các đại phân tử: phospholipid tạo thành lớp màng kép bao lấy các đại phân tử, tạo thành những giọt nhỏ; RNA có khả năng tự nhân đôi xuất hiện, về sau DNA mạch kép thay thế RNA làm vật chất di truyền vì bền và sao chép chính xác hơn. Dưới tác động của chọn lọc tự nhiên, các giọt có khả năng trao đổi chất, sinh sản và duy trì cấu trúc ổn định trở thành tế bào sơ khai.',
         },
         {
           type: 'callout',
           tone: 'definition',
-          title: 'Tiến hóa sinh học',
-          text: 'Từ tế bào sơ khai, dưới tác động của các nhân tố tiến hóa, hình thành các sinh vật nhân sơ (vi khuẩn, cổ khuẩn). Sinh vật nhân thực đơn bào hình thành nhờ cộng sinh nội bào: vi khuẩn hiếu khí và vi khuẩn quang hợp sống trong một tế bào nhân sơ lớn, dần trở thành ti thể và lục lạp. Một số sinh vật nhân thực đơn bào sống tập hợp, tiến hóa thành sinh vật đa bào; sinh giới ngày càng đa dạng cho đến ngày nay.',
+          title: 'Tiến hoá sinh học',
+          text: 'Từ tế bào sơ khai, dưới tác động của các nhân tố tiến hoá, hình thành các sinh vật nhân sơ (vi khuẩn, cổ khuẩn). Sinh vật nhân thực đơn bào hình thành nhờ cộng sinh nội bào: vi khuẩn hiếu khí và vi khuẩn quang hợp sống trong một tế bào nhân sơ lớn, dần trở thành ti thể và lục lạp. Một số sinh vật nhân thực đơn bào sống tập hợp, tiến hoá thành sinh vật đa bào; sinh giới ngày càng đa dạng cho đến ngày nay.',
         },
       ],
     },
@@ -48,7 +48,7 @@ export default {
       blocks: [
         {
           type: 'p',
-          text: 'Dựa vào các biến đổi lớn của địa chất, khí hậu và các hóa thạch điển hình, các nhà khoa học chia lịch sử Trái Đất thành các đại: Thái cổ, Nguyên sinh, Cổ sinh, Trung sinh và Tân sinh. Hóa thạch là di tích của sinh vật để lại trong các lớp đất đá, là bằng chứng trực tiếp về lịch sử phát triển của sinh giới.',
+          text: 'Dựa vào các biến đổi lớn của địa chất, khí hậu và các hoá thạch điển hình, các nhà khoa học chia lịch sử Trái Đất thành các đại: Thái cổ, Nguyên sinh, Cổ sinh, Trung sinh và Tân sinh. Hoá thạch là di tích của sinh vật để lại trong các lớp đất đá, là bằng chứng trực tiếp về lịch sử phát triển của sinh giới.',
         },
         {
           type: 'table',
@@ -64,7 +64,7 @@ export default {
             [
               'Nguyên sinh',
               '$2\\,500 - 540$',
-              'Khí quyển tích lũy oxygen; sinh vật nhân thực đơn bào, tảo đa bào, động vật không xương sống ở biển',
+              'Khí quyển tích luỹ oxygen; sinh vật nhân thực đơn bào, tảo đa bào, động vật không xương sống ở biển',
             ],
             [
               'Cổ sinh',
@@ -85,7 +85,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Khí hậu và địa chất biến đổi, có lúc rất mạnh (băng hà, núi lửa, thiên thạch va chạm), gây ra những đợt tuyệt chủng hàng loạt. Sau mỗi đợt, những loài sống sót mang đặc điểm thích nghi tiếp tục tiến hóa, hình thành nhiều loài mới. Nhìn chung, sinh giới phát triển theo hướng từ đơn giản đến phức tạp, từ sống dưới nước lên sống trên cạn.',
+          text: 'Khí hậu và địa chất biến đổi, có lúc rất mạnh (băng hà, núi lửa, thiên thạch va chạm), gây ra những đợt tuyệt chủng hàng loạt. Sau mỗi đợt, những loài sống sót mang đặc điểm thích nghi tiếp tục tiến hoá, hình thành nhiều loài mới. Nhìn chung, sinh giới phát triển theo hướng từ đơn giản đến phức tạp, từ sống dưới nước lên sống trên cạn.',
         },
       ],
     },
@@ -94,7 +94,7 @@ export default {
       blocks: [
         {
           type: 'p',
-          text: 'Các bằng chứng hóa thạch và bằng chứng phân tử (so sánh DNA, protein) cho thấy loài người và các loài vượn người ngày nay (tinh tinh, gorilla, đười ươi) có chung tổ tiên. Loài người hình thành qua các giai đoạn: người vượn phương Nam → người khéo léo → người đứng thẳng → người Neanderthal và người tinh khôn.',
+          text: 'Các bằng chứng hoá thạch và bằng chứng phân tử (so sánh DNA, protein) cho thấy loài người và các loài vượn người ngày nay (tinh tinh, gorilla, đười ươi) có chung tổ tiên. Loài người hình thành qua các giai đoạn: người vượn phương Nam → người khéo léo → người đứng thẳng → người Neanderthal và người tinh khôn.',
         },
         {
           type: 'table',
@@ -114,17 +114,17 @@ export default {
             [
               'Người đứng thẳng (Homo erectus)',
               'từ khoảng $1{,}8$ triệu năm trước',
-              'Đi thẳng, nhanh nhẹn; sống thành bầy có tổ chức; tỏa ra khỏi châu Phi',
+              'Đi thẳng, nhanh nhẹn; sống thành bầy có tổ chức; toả ra khỏi châu Phi',
             ],
             [
               'Người Neanderthal (Homo neanderthalensis)',
               'khoảng $400\\,000 - 40\\,000$ năm trước',
-              'Dáng gần người hiện đại; dùng lửa thành thạo; săn bắt, hái lượm, chế tác công cụ đá đa dạng; bước đầu có đời sống văn hóa',
+              'Dáng gần người hiện đại; dùng lửa thành thạo; săn bắt, hái lượm, chế tác công cụ đá đa dạng; bước đầu có đời sống văn hoá',
             ],
             [
               'Người tinh khôn (Homo sapiens)',
               'xuất hiện ở châu Phi khoảng $150\\,000$ năm trước',
-              'Hình thái, bộ xương như người hiện nay; chế tạo công cụ tinh xảo từ đá, xương, sừng; sống thành bộ lạc, có văn hóa phức tạp, mầm mống mĩ thuật và tôn giáo',
+              'Hình thái, bộ xương như người hiện nay; chế tạo công cụ tinh xảo từ đá, xương, sừng; sống thành bộ lạc, có văn hoá phức tạp, mầm mống mĩ thuật và tôn giáo',
             ],
           ],
         },
@@ -132,7 +132,7 @@ export default {
           type: 'callout',
           tone: 'warning',
           title: 'Chú ý',
-          text: 'Loài người không tiến hóa từ tinh tinh hay gorilla ngày nay; chúng ta và các loài vượn người chỉ có chung một tổ tiên. Hiện nay chỉ còn một loài người là Homo sapiens, phân bố ở khắp các châu lục. Những hóa thạch mới phát hiện cho thấy người tinh khôn có thể đã xuất hiện sớm hơn nữa, khoảng $300\\,000$ năm trước.',
+          text: 'Loài người không tiến hoá từ tinh tinh hay gorilla ngày nay; chúng ta và các loài vượn người chỉ có chung một tổ tiên. Hiện nay chỉ còn một loài người là Homo sapiens, phân bố ở khắp các châu lục. Những hoá thạch mới phát hiện cho thấy người tinh khôn có thể đã xuất hiện sớm hơn nữa, khoảng $300\\,000$ năm trước.',
         },
       ],
     },
@@ -147,10 +147,10 @@ export default {
       problem:
         'Sắp xếp các sự kiện sau theo đúng trình tự thời gian và cho biết mỗi sự kiện thuộc giai đoạn nào của quá trình phát sinh sự sống: (a) hình thành tế bào sơ khai; (b) amino acid được tổng hợp từ $CH_4$, $NH_3$, $H_2O$; (c) xuất hiện sinh vật nhân sơ; (d) hình thành protein, nucleic acid.',
       steps: [
-        'Chất hữu cơ đơn giản hình thành trước từ chất vô cơ: (b), thuộc tiến hóa hóa học.',
-        'Từ chất hữu cơ đơn giản tạo thành đại phân tử: (d), vẫn là tiến hóa hóa học.',
-        'Các đại phân tử được màng bao lại thành tế bào sơ khai: (a), thuộc tiến hóa tiền sinh học.',
-        'Tế bào sơ khai tiến hóa thành sinh vật nhân sơ: (c), thuộc tiến hóa sinh học.',
+        'Chất hữu cơ đơn giản hình thành trước từ chất vô cơ: (b), thuộc tiến hoá hoá học.',
+        'Từ chất hữu cơ đơn giản tạo thành đại phân tử: (d), vẫn là tiến hoá hoá học.',
+        'Các đại phân tử được màng bao lại thành tế bào sơ khai: (a), thuộc tiến hoá tiền sinh học.',
+        'Tế bào sơ khai tiến hoá thành sinh vật nhân sơ: (c), thuộc tiến hoá sinh học.',
       ],
       answer: '(b) → (d) → (a) → (c).',
     },
@@ -179,15 +179,15 @@ export default {
     {
       type: 'order',
       prompt: 'Sắp xếp các giai đoạn phát sinh và phát triển sự sống theo đúng thứ tự.',
-      items: ['Tiến hóa sinh học', 'Tiến hóa hóa học', 'Tiến hóa tiền sinh học'],
+      items: ['Tiến hoá sinh học', 'Tiến hoá hoá học', 'Tiến hoá tiền sinh học'],
       answer: [1, 2, 0],
       hints: ['Sự sống bắt đầu từ chất vô cơ, rồi mới có tế bào đầu tiên.'],
       solution:
-        'Tiến hóa hóa học (tạo chất hữu cơ từ chất vô cơ) → tiến hóa tiền sinh học (tạo tế bào sơ khai) → tiến hóa sinh học (từ tế bào sơ khai đến sinh giới ngày nay).',
+        'Tiến hoá hoá học (tạo chất hữu cơ từ chất vô cơ) → tiến hoá tiền sinh học (tạo tế bào sơ khai) → tiến hoá sinh học (từ tế bào sơ khai đến sinh giới ngày nay).',
     },
     {
       type: 'choice',
-      prompt: 'Kết quả của giai đoạn tiến hóa hóa học là',
+      prompt: 'Kết quả của giai đoạn tiến hoá hoá học là',
       options: [
         'hình thành các chất hữu cơ từ chất vô cơ',
         'hình thành tế bào sơ khai',
@@ -195,9 +195,9 @@ export default {
         'hình thành các loài sinh vật như ngày nay',
       ],
       answer: 0,
-      hints: ['Ở giai đoạn này chưa có tế bào nào; chỉ có các phản ứng hóa học.'],
+      hints: ['Ở giai đoạn này chưa có tế bào nào; chỉ có các phản ứng hoá học.'],
       solution:
-        'Tiến hóa hóa học tổng hợp các chất hữu cơ (amino acid, nucleotide, rồi protein, nucleic acid) từ chất vô cơ nhờ năng lượng tự nhiên. Tế bào sơ khai là kết quả của tiến hóa tiền sinh học.',
+        'Tiến hoá hoá học tổng hợp các chất hữu cơ (amino acid, nucleotide, rồi protein, nucleic acid) từ chất vô cơ nhờ năng lượng tự nhiên. Tế bào sơ khai là kết quả của tiến hoá tiền sinh học.',
     },
     {
       type: 'order',
@@ -264,7 +264,7 @@ export default {
       options: [
         'sự cộng sinh nội bào giữa vi khuẩn hiếu khí, vi khuẩn quang hợp và tế bào nhân sơ',
         'sự kết hợp của nhiều tế bào nhân sơ thành cơ thể đa bào',
-        'phản ứng hóa học giữa các chất vô cơ',
+        'phản ứng hoá học giữa các chất vô cơ',
         'đột biến làm mất màng nhân của tế bào',
       ],
       answer: 0,
@@ -291,7 +291,7 @@ export default {
       options: [
         'Hình thái và bộ xương giống người hiện nay',
         'Chế tạo công cụ tinh xảo từ đá, xương, sừng',
-        'Có văn hóa phức tạp, mầm mống mĩ thuật và tôn giáo',
+        'Có văn hoá phức tạp, mầm mống mĩ thuật và tôn giáo',
         'Thân hơi khom, chỉ dùng cành cây, hòn đá có sẵn để tự vệ',
         'Đã tuyệt chủng',
       ],
@@ -301,7 +301,7 @@ export default {
         'Loài người nào vẫn còn tồn tại đến ngày nay?',
       ],
       solution:
-        'Người tinh khôn có bộ xương như người hiện nay, chế tạo công cụ tinh xảo và có văn hóa phức tạp. Thân hơi khom là đặc điểm của người vượn phương Nam; người tinh khôn chưa tuyệt chủng, đó chính là chúng ta.',
+        'Người tinh khôn có bộ xương như người hiện nay, chế tạo công cụ tinh xảo và có văn hoá phức tạp. Thân hơi khom là đặc điểm của người vượn phương Nam; người tinh khôn chưa tuyệt chủng, đó chính là chúng ta.',
     },
     {
       type: 'text',
@@ -312,7 +312,7 @@ export default {
     },
   ],
   takeaways: [
-    'Sự sống có nguồn gốc từ chất vô cơ, qua tiến hóa hóa học (tạo chất hữu cơ) và tiến hóa tiền sinh học (tạo tế bào sơ khai), rồi phát triển qua tiến hóa sinh học.',
+    'Sự sống có nguồn gốc từ chất vô cơ, qua tiến hoá hoá học (tạo chất hữu cơ) và tiến hoá tiền sinh học (tạo tế bào sơ khai), rồi phát triển qua tiến hoá sinh học.',
     'Từ tế bào sơ khai hình thành sinh vật nhân sơ; sinh vật nhân thực hình thành nhờ cộng sinh nội bào; sau đó xuất hiện sinh vật đa bào.',
     'Các đại địa chất theo thứ tự: Thái cổ → Nguyên sinh → Cổ sinh → Trung sinh → Tân sinh; sinh giới phát triển từ đơn giản đến phức tạp, từ nước lên cạn.',
     'Loài người hình thành qua các giai đoạn: người vượn phương Nam → người khéo léo → người đứng thẳng → người tinh khôn; ngày nay chỉ còn Homo sapiens.',

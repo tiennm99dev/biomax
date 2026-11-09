@@ -4,7 +4,7 @@
  * Eye: a reduced eye with a fixed distance L from the lens to the retina
  * (màng lưới). Optical powers are in diopters (D), distances in metres.
  * An object at distance d sends light with vergence V = 1/d; the eye focuses
- * it on the retina when its power is P = 1/L + V. The lens (thể thủy tinh)
+ * it on the retina when its power is P = 1/L + V. The lens (thể thuỷ tinh)
  * can bulge to add up to `ACCOMMODATION` diopters to its relaxed power.
  *
  * - Normal eye: relaxed power 1/L (sees far objects sharply), near point
@@ -88,10 +88,10 @@ export function describeLook(type, cm, withGlasses = false) {
   const r = look(type, cm, withGlasses);
   const lens =
     r.bulge > 0.95
-      ? 'Thể thủy tinh đã phồng hết mức.'
+      ? 'Thể thuỷ tinh đã phồng hết mức.'
       : r.bulge > 0.05
-        ? 'Thể thủy tinh phồng lên để nhìn rõ vật.'
-        : 'Thể thủy tinh dẹt nhất (không phải điều tiết).';
+        ? 'Thể thuỷ tinh phồng lên để nhìn rõ vật.'
+        : 'Thể thuỷ tinh dẹt nhất (không phải điều tiết).';
   if (r.image === 'ro') return `Ảnh hiện rõ trên màng lưới: nhìn rõ vật. ${lens}`;
   if (r.image === 'truoc') {
     const why =
@@ -103,7 +103,7 @@ export function describeLook(type, cm, withGlasses = false) {
   const why =
     type === 'vien-thi' && !withGlasses
       ? 'Mắt viễn thị không nhìn rõ vật ở gần. Cần đeo kính hội tụ.'
-      : 'Vật ở quá gần mắt, thể thủy tinh không phồng thêm được nữa.';
+      : 'Vật ở quá gần mắt, thể thuỷ tinh không phồng thêm được nữa.';
   return `Ảnh hiện ở sau màng lưới: nhìn mờ. ${lens} ${why}`;
 }
 
@@ -122,9 +122,9 @@ export const NERVE_CARDS = [
   },
   {
     id: 'tuy-song',
-    label: 'Tủy sống',
+    label: 'Tuỷ sống',
     bin: 'trung-uong',
-    why: 'Tủy sống nằm trong ống xương sống, thuộc bộ phận trung ương.',
+    why: 'Tuỷ sống nằm trong ống xương sống, thuộc bộ phận trung ương.',
   },
   {
     id: 'tieu-nao',
@@ -142,12 +142,12 @@ export const NERVE_CARDS = [
     id: 'hach',
     label: 'Hạch thần kinh',
     bin: 'ngoai-bien',
-    why: 'Hạch thần kinh nằm ngoài não và tủy sống, thuộc bộ phận ngoại biên.',
+    why: 'Hạch thần kinh nằm ngoài não và tuỷ sống, thuộc bộ phận ngoại biên.',
   },
   {
     id: 'day-tuy',
-    label: 'Dây thần kinh tủy',
+    label: 'Dây thần kinh tuỷ',
     bin: 'ngoai-bien',
-    why: 'Dây thần kinh tủy đi ra từ tủy sống tới các cơ quan, thuộc bộ phận ngoại biên.',
+    why: 'Dây thần kinh tuỷ đi ra từ tuỷ sống tới các cơ quan, thuộc bộ phận ngoại biên.',
   },
 ];

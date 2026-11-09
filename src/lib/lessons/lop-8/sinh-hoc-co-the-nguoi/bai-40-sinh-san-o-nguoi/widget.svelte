@@ -263,7 +263,7 @@
     />
   {/if}
   <p class="text-xs text-slate-600">
-    Mô hình đơn giản hóa, mức hormone chỉ là tương đối. Trứng rụng khoảng 14 ngày trước kì kinh sau;
+    Mô hình đơn giản hoá, mức hormone chỉ là tương đối. Trứng rụng khoảng 14 ngày trước kì kinh sau;
     chu kì thực của mỗi người có thể dao động.
   </p>
 </div>

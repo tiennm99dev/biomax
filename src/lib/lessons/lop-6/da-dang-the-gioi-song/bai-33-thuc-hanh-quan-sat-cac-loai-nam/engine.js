@@ -88,7 +88,7 @@ export const MUSHROOM = {
       id: 'phien-nam',
       name: 'Phiến nấm',
       accept: ['phiến', 'lá nấm'],
-      info: 'Những lá mỏng xếp tỏa tròn ở mặt dưới mũ nấm; đây là nơi tạo ra bào tử.',
+      info: 'Những lá mỏng xếp toả tròn ở mặt dưới mũ nấm; đây là nơi tạo ra bào tử.',
       x: 140,
       y: 126,
     },

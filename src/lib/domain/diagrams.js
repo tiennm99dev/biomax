@@ -440,7 +440,7 @@ const WATER = {
     {
       id: 'lien-ket-cong-hoa-tri',
       name: 'Liên kết cộng hoá trị',
-      accept: ['liên kết cộng hóa trị', 'liên kết cộng hoá trị phân cực'],
+      accept: ['liên kết cộng hoá trị', 'liên kết cộng hoá trị phân cực'],
       info: 'Oxygen và hydrogen dùng chung một cặp electron; đây là liên kết bền bên trong phân tử.',
       x: Math.round((O1.x + H1A.x) / 2) - 2,
       y: Math.round((O1.y + H1A.y) / 2),

@@ -109,13 +109,13 @@ export const SYSTEMS = [
   },
   {
     id: 'tieu-hoa',
-    name: 'Hệ tiêu hóa',
+    name: 'Hệ tiêu hoá',
     color: '#ea580c',
     role: 'Biến đổi thức ăn thành các chất dinh dưỡng mà cơ thể hấp thụ được và thải chất cặn bã ra ngoài.',
     organs: [
       {
         id: 'ong-tieu-hoa',
-        name: 'Ống tiêu hóa',
+        name: 'Ống tiêu hoá',
         info: 'Gồm miệng, hầu, thực quản, dạ dày, ruột non, ruột già, hậu môn; thức ăn đi qua và được biến đổi dần.',
         shapes: [
           { kind: 'path', d: 'M 120 60 L 120 176 Q 146 172 148 190 Q 146 206 124 206', line: true },
@@ -129,7 +129,7 @@ export const SYSTEMS = [
       {
         id: 'gan',
         name: 'Gan',
-        info: 'Gan là tuyến tiêu hóa lớn nhất, tiết dịch mật đổ vào ruột non.',
+        info: 'Gan là tuyến tiêu hoá lớn nhất, tiết dịch mật đổ vào ruột non.',
         shapes: [{ kind: 'path', d: 'M 88 178 Q 110 170 126 180 Q 116 198 92 196 Z' }],
       },
     ],
@@ -162,7 +162,7 @@ export const SYSTEMS = [
     id: 'than-kinh',
     name: 'Hệ thần kinh và giác quan',
     color: '#4f46e5',
-    role: 'Thu nhận kích thích từ môi trường, điều khiển và điều hòa hoạt động của các cơ quan, giúp cơ thể thích nghi với môi trường.',
+    role: 'Thu nhận kích thích từ môi trường, điều khiển và điều hoà hoạt động của các cơ quan, giúp cơ thể thích nghi với môi trường.',
     organs: [
       {
         id: 'nao',
@@ -172,8 +172,8 @@ export const SYSTEMS = [
       },
       {
         id: 'tuy-song',
-        name: 'Tủy sống và dây thần kinh',
-        info: 'Tủy sống nằm trong cột sống; các dây thần kinh nối trung ương thần kinh với các cơ quan.',
+        name: 'Tuỷ sống và dây thần kinh',
+        info: 'Tuỷ sống nằm trong cột sống; các dây thần kinh nối trung ương thần kinh với các cơ quan.',
         shapes: [
           { kind: 'path', d: 'M 116 48 L 116 270', line: true },
           {
@@ -194,7 +194,7 @@ export const SYSTEMS = [
     id: 'noi-tiet',
     name: 'Hệ nội tiết',
     color: '#059669',
-    role: 'Các tuyến nội tiết tiết hormone vào máu để điều hòa hoạt động của các cơ quan.',
+    role: 'Các tuyến nội tiết tiết hormone vào máu để điều hoà hoạt động của các cơ quan.',
     organs: [
       {
         id: 'tuyen-yen',
@@ -205,13 +205,13 @@ export const SYSTEMS = [
       {
         id: 'tuyen-giap',
         name: 'Tuyến giáp',
-        info: 'Tuyến giáp nằm ở cổ, tiết hormone điều hòa quá trình trao đổi chất.',
+        info: 'Tuyến giáp nằm ở cổ, tiết hormone điều hoà quá trình trao đổi chất.',
         shapes: [{ kind: 'path', d: 'M 110 78 Q 120 90 130 78 Q 126 72 120 80 Q 114 72 110 78 Z' }],
       },
       {
         id: 'tuyen-tuy',
-        name: 'Tuyến tụy và tuyến trên thận',
-        info: 'Tuyến tụy tiết hormone điều hòa lượng đường trong máu; tuyến trên thận nằm trên hai quả thận.',
+        name: 'Tuyến tuỵ và tuyến trên thận',
+        info: 'Tuyến tuỵ tiết hormone điều hoà lượng đường trong máu; tuyến trên thận nằm trên hai quả thận.',
         shapes: [
           { kind: 'ellipse', cx: 126, cy: 204, rx: 16, ry: 4 },
           { kind: 'ellipse', cx: 100, cy: 207, rx: 6, ry: 3 },
@@ -289,7 +289,7 @@ export const ACTIVITY = [
   },
   {
     id: 'than-kinh',
-    rest: 'Điều hòa hoạt động các cơ quan.',
+    rest: 'Điều hoà hoạt động các cơ quan.',
     run: 'Điều khiển, phối hợp hoạt động của các hệ cơ quan.',
     up: true,
   },
@@ -323,9 +323,9 @@ export const ORGAN_CARDS = [
     id: 'da-day',
     label: 'Dạ dày',
     bin: 'tieu-hoa',
-    why: 'Dạ dày là một đoạn của ống tiêu hóa.',
+    why: 'Dạ dày là một đoạn của ống tiêu hoá.',
   },
-  { id: 'ruot-non', label: 'Ruột non', bin: 'tieu-hoa', why: 'Ruột non thuộc hệ tiêu hóa.' },
+  { id: 'ruot-non', label: 'Ruột non', bin: 'tieu-hoa', why: 'Ruột non thuộc hệ tiêu hoá.' },
   {
     id: 'than',
     label: 'Thận',
@@ -340,9 +340,9 @@ export const ORGAN_CARDS = [
   },
   {
     id: 'tuy-song',
-    label: 'Tủy sống',
+    label: 'Tuỷ sống',
     bin: 'than-kinh',
-    why: 'Tủy sống cùng với não là trung ương thần kinh.',
+    why: 'Tuỷ sống cùng với não là trung ương thần kinh.',
   },
   {
     id: 'mat',

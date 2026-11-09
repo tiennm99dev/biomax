@@ -47,7 +47,7 @@ const T = {
   panthera: { la: 'Panthera', vi: 'Báo' },
   angio: { la: 'Magnoliophyta', vi: 'Hạt kín' },
   mono: { la: 'Liliopsida', vi: 'Một lá mầm' },
-  poales: { la: 'Poales', vi: 'Hòa thảo' },
+  poales: { la: 'Poales', vi: 'Hoà thảo' },
   poaceae: { la: 'Poaceae', vi: 'Lúa' },
 };
 

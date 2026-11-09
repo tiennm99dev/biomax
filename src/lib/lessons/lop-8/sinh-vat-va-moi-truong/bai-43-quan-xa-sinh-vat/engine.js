@@ -104,7 +104,7 @@ export const PAIRS = [
     id: 'nap-am',
     label: 'Cây nắp ấm và côn trùng',
     bin: 'an-thit',
-    why: 'Cây nắp ấm bắt và tiêu hóa côn trùng: thực vật ăn sinh vật khác.',
+    why: 'Cây nắp ấm bắt và tiêu hoá côn trùng: thực vật ăn sinh vật khác.',
   },
 ];
 

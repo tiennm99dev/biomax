@@ -71,7 +71,7 @@ export default {
           type: 'callout',
           tone: 'note',
           title: 'Con người là nhân tố hữu sinh đặc biệt',
-          text: 'Con người cũng là sinh vật nên thuộc nhóm nhân tố hữu sinh. Nhưng khác các sinh vật khác, con người có trí tuệ và lao động có mục đích, nên tác động mạnh mẽ tới môi trường và sinh vật theo cả hai hướng: cải tạo, bảo vệ (trồng rừng, lập khu bảo tồn) hoặc phá hủy (chặt phá rừng, săn bắt, gây ô nhiễm).',
+          text: 'Con người cũng là sinh vật nên thuộc nhóm nhân tố hữu sinh. Nhưng khác các sinh vật khác, con người có trí tuệ và lao động có mục đích, nên tác động mạnh mẽ tới môi trường và sinh vật theo cả hai hướng: cải tạo, bảo vệ (trồng rừng, lập khu bảo tồn) hoặc phá huỷ (chặt phá rừng, săn bắt, gây ô nhiễm).',
         },
         {
           type: 'p',
@@ -192,7 +192,7 @@ export default {
       type: 'choice',
       prompt: 'Vì sao con người được xem là nhân tố có ảnh hưởng lớn trong nhóm nhân tố hữu sinh?',
       options: [
-        'Vì con người có trí tuệ, lao động có mục đích nên tác động mạnh mẽ tới môi trường, có thể cải tạo hoặc phá hủy môi trường',
+        'Vì con người có trí tuệ, lao động có mục đích nên tác động mạnh mẽ tới môi trường, có thể cải tạo hoặc phá huỷ môi trường',
         'Vì con người không phải là sinh vật',
         'Vì con người chỉ sống ở môi trường trên cạn',
         'Vì con người có số lượng nhiều nhất trong các loài',

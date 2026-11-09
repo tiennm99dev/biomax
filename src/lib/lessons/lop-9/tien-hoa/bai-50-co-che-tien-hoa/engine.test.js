@@ -91,7 +91,7 @@ describe('the evolutionary factors', () => {
 
   it('explains the run', () => {
     expect(explain(simulate(start, noFactors(), 30, rng(1)), noFactors())).toContain(
-      'không tiến hóa',
+      'không tiến hoá',
     );
     const f = only({ inbreeding: true });
     expect(explain(simulate(start, f, 30, rng(1)), f)).toContain('không đổi tần số allele');

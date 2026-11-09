@@ -111,7 +111,7 @@
           bind:checked={impaired}
           onchange={() => setValue(value)}
         />
-        Cơ chế điều hòa bị rối loạn: {x.impaired.toLowerCase()}
+        Cơ chế điều hoà bị rối loạn: {x.impaired.toLowerCase()}
       </label>
       <button
         type="button"
@@ -169,7 +169,7 @@
   </p>
   <FeedbackNote {tone} {text} />
   <p class="text-xs text-slate-600">
-    Mô hình đơn giản hóa để minh họa. Ngưỡng bình thường của người trưởng thành: đường huyết lúc đói
+    Mô hình đơn giản hoá để minh hoạ. Ngưỡng bình thường của người trưởng thành: đường huyết lúc đói
     3,9 – 6,4 mmol/L; thân nhiệt khoảng 36,5 – 37,5 °C.
   </p>
 </div>

@@ -156,7 +156,7 @@ export const SIGHTINGS = [
     name: 'Con sứa',
     group: 'ruot-khoang',
     tool: 'mắt thường',
-    note: 'Cơ thể hình dù trong suốt, đối xứng tỏa tròn, có nhiều tua (không chạm tay).',
+    note: 'Cơ thể hình dù trong suốt, đối xứng toả tròn, có nhiều tua (không chạm tay).',
   },
   {
     id: 'hai-quy',
@@ -164,7 +164,7 @@ export const SIGHTINGS = [
     name: 'Hải quỳ',
     group: 'ruot-khoang',
     tool: 'mắt thường',
-    note: 'Bám trên đá trong vũng nước, có vòng tua tỏa tròn quanh miệng.',
+    note: 'Bám trên đá trong vũng nước, có vòng tua toả tròn quanh miệng.',
   },
   {
     id: 'cua',

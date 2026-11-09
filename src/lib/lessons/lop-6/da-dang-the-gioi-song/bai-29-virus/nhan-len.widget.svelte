@@ -155,7 +155,7 @@
   >
     {cycleMessage(place, step)}
     {living && step === last
-      ? `Từ một virus, tế bào đã bị phá hủy và giải phóng ${RELEASED} virus mới (thực tế có thể tới hàng trăm).`
+      ? `Từ một virus, tế bào đã bị phá huỷ và giải phóng ${RELEASED} virus mới (thực tế có thể tới hàng trăm).`
       : ''}
   </p>
 </div>

@@ -16,7 +16,7 @@ export default {
       blocks: [
         {
           type: 'p',
-          text: 'Hệ thần kinh thu nhận thông tin từ môi trường trong và ngoài cơ thể, xử lí thông tin rồi điều khiển, điều hòa và phối hợp hoạt động của các cơ quan, giúp cơ thể là một khối thống nhất và thích nghi với môi trường.',
+          text: 'Hệ thần kinh thu nhận thông tin từ môi trường trong và ngoài cơ thể, xử lí thông tin rồi điều khiển, điều hoà và phối hợp hoạt động của các cơ quan, giúp cơ thể là một khối thống nhất và thích nghi với môi trường.',
         },
         {
           type: 'table',
@@ -25,7 +25,7 @@ export default {
           rows: [
             [
               'Trung ương',
-              'Não (trong hộp sọ) và tủy sống (trong ống xương sống)',
+              'Não (trong hộp sọ) và tuỷ sống (trong ống xương sống)',
               'Tiếp nhận, xử lí thông tin và phát lệnh điều khiển',
             ],
             [
@@ -53,7 +53,7 @@ export default {
           type: 'callout',
           tone: 'warning',
           title: 'Chất gây nghiện',
-          text: 'Ma túy, rượu bia, thuốc lá… tác động lên hệ thần kinh, gây nghiện, làm rối loạn hoạt động của não, suy giảm trí nhớ, tổn hại sức khỏe và kéo theo nhiều hệ lụy cho gia đình, xã hội. Tuyệt đối không thử ma túy; không uống rượu bia, không hút thuốc lá.',
+          text: 'Ma tuý, rượu bia, thuốc lá… tác động lên hệ thần kinh, gây nghiện, làm rối loạn hoạt động của não, suy giảm trí nhớ, tổn hại sức khoẻ và kéo theo nhiều hệ luỵ cho gia đình, xã hội. Tuyệt đối không thử ma tuý; không uống rượu bia, không hút thuốc lá.',
         },
         {
           type: 'p',
@@ -66,13 +66,13 @@ export default {
       blocks: [
         {
           type: 'p',
-          text: 'Cơ quan thị giác gồm mắt (cầu mắt) và dây thần kinh thị giác. Cầu mắt có ba lớp màng: màng cứng (phần trước trong suốt là màng giác), màng mạch (phần trước là lòng đen, giữa có lỗ đồng tử) và màng lưới chứa các tế bào thụ cảm thị giác (tế bào nón, tế bào que). Bên trong cầu mắt là môi trường trong suốt: thủy dịch, thể thủy tinh và dịch thủy tinh.',
+          text: 'Cơ quan thị giác gồm mắt (cầu mắt) và dây thần kinh thị giác. Cầu mắt có ba lớp màng: màng cứng (phần trước trong suốt là màng giác), màng mạch (phần trước là lòng đen, giữa có lỗ đồng tử) và màng lưới chứa các tế bào thụ cảm thị giác (tế bào nón, tế bào que). Bên trong cầu mắt là môi trường trong suốt: thuỷ dịch, thể thuỷ tinh và dịch thuỷ tinh.',
         },
         {
           type: 'callout',
           tone: 'theorem',
           title: 'Quá trình thu nhận ánh sáng',
-          text: 'Ánh sáng từ vật đi qua màng giác, thủy dịch, đồng tử, thể thủy tinh, dịch thủy tinh rồi hội tụ trên màng lưới, tạo ảnh. Tế bào thụ cảm ở màng lưới bị kích thích, phát sinh xung thần kinh truyền theo dây thần kinh thị giác về vùng thị giác ở não, cho ta cảm giác nhìn thấy vật. Thể thủy tinh có thể phồng lên (nhìn vật ở gần) hoặc dẹt xuống (nhìn vật ở xa) để ảnh luôn rơi đúng màng lưới.',
+          text: 'Ánh sáng từ vật đi qua màng giác, thuỷ dịch, đồng tử, thể thuỷ tinh, dịch thuỷ tinh rồi hội tụ trên màng lưới, tạo ảnh. Tế bào thụ cảm ở màng lưới bị kích thích, phát sinh xung thần kinh truyền theo dây thần kinh thị giác về vùng thị giác ở não, cho ta cảm giác nhìn thấy vật. Thể thuỷ tinh có thể phồng lên (nhìn vật ở gần) hoặc dẹt xuống (nhìn vật ở xa) để ảnh luôn rơi đúng màng lưới.',
         },
         {
           type: 'table',
@@ -81,13 +81,13 @@ export default {
           rows: [
             [
               'Cận thị: chỉ nhìn rõ vật ở gần',
-              'Cầu mắt dài bẩm sinh, hoặc thể thủy tinh quá phồng do đọc sách quá gần, sai tư thế lâu ngày',
+              'Cầu mắt dài bẩm sinh, hoặc thể thuỷ tinh quá phồng do đọc sách quá gần, sai tư thế lâu ngày',
               'Hiện ở trước màng lưới khi nhìn vật ở xa',
               'Đeo kính phân kì (kính cận)',
             ],
             [
               'Viễn thị: chỉ nhìn rõ vật ở xa',
-              'Cầu mắt ngắn bẩm sinh, hoặc thể thủy tinh bị lão hóa, kém đàn hồi ở người già',
+              'Cầu mắt ngắn bẩm sinh, hoặc thể thuỷ tinh bị lão hoá, kém đàn hồi ở người già',
               'Hiện ở sau màng lưới khi nhìn vật ở gần',
               'Đeo kính hội tụ (kính viễn, kính lão)',
             ],
@@ -97,7 +97,7 @@ export default {
           type: 'list',
           items: [
             'Bệnh đau mắt đỏ (viêm kết mạc) do virus, vi khuẩn; lây qua tiếp xúc, dùng chung khăn, chậu rửa mặt.',
-            'Đục thủy tinh thể: thể thủy tinh bị mờ đục, thường ở người cao tuổi, làm nhìn mờ.',
+            'Đục thuỷ tinh thể: thể thuỷ tinh bị mờ đục, thường ở người cao tuổi, làm nhìn mờ.',
             'Bảo vệ mắt: ngồi học đúng tư thế, đủ ánh sáng, giữ khoảng cách khi đọc sách, không dùng máy tính, điện thoại quá lâu; giữ vệ sinh mắt, không dùng chung khăn; ăn thức ăn giàu vitamin A; khám mắt định kì.',
           ],
         },
@@ -144,14 +144,14 @@ export default {
   explore: {
     title: 'Mô phỏng mắt nhìn vật',
     instruction:
-      'Chọn loại mắt và kéo thanh trượt để đưa vật lại gần hay ra xa. Quan sát thể thủy tinh phồng hay dẹt và ảnh hiện trên, trước hay sau màng lưới. Với mắt cận thị và viễn thị, bật "Đeo kính" để xem kính khắc phục tật như thế nào.',
+      'Chọn loại mắt và kéo thanh trượt để đưa vật lại gần hay ra xa. Quan sát thể thuỷ tinh phồng hay dẹt và ảnh hiện trên, trước hay sau màng lưới. Với mắt cận thị và viễn thị, bật "Đeo kính" để xem kính khắc phục tật như thế nào.',
   },
   examples: [
     {
       problem:
         'Vì sao người cận thị nhìn rõ chữ trong sách nhưng không nhìn rõ chữ trên bảng? Cần khắc phục bằng cách nào?',
       steps: [
-        'Ở mắt cận thị, cầu mắt dài hoặc thể thủy tinh quá phồng nên mắt hội tụ ánh sáng quá mạnh.',
+        'Ở mắt cận thị, cầu mắt dài hoặc thể thuỷ tinh quá phồng nên mắt hội tụ ánh sáng quá mạnh.',
         'Khi nhìn vật ở xa (chữ trên bảng), ảnh hiện ở trước màng lưới, trên màng lưới chỉ có vệt mờ nên nhìn không rõ.',
         'Khi nhìn vật ở gần (chữ trong sách), ánh sáng tới mắt phân kì hơn nên ảnh lùi về đúng màng lưới, nhìn rõ.',
         'Kính phân kì làm chùm sáng tới mắt loe rộng ra hơn, bù lại độ hội tụ quá mạnh của mắt, đưa ảnh của vật ở xa lùi về đúng màng lưới.',
@@ -176,22 +176,22 @@ export default {
       type: 'choice',
       prompt: 'Bộ phận trung ương của hệ thần kinh gồm',
       options: [
-        'não và tủy sống',
+        'não và tuỷ sống',
         'dây thần kinh và hạch thần kinh',
         'não và dây thần kinh',
-        'tủy sống và hạch thần kinh',
+        'tuỷ sống và hạch thần kinh',
       ],
       answer: 0,
       hints: ['Bộ phận trung ương được xương bảo vệ: hộp sọ và cột sống.'],
-      solution: 'Trung ương gồm não và tủy sống; ngoại biên gồm dây thần kinh và hạch thần kinh.',
+      solution: 'Trung ương gồm não và tuỷ sống; ngoại biên gồm dây thần kinh và hạch thần kinh.',
     },
     {
       type: 'order',
       prompt: 'Sắp xếp đường đi của ánh sáng từ vật đến màng lưới.',
-      items: ['Thể thủy tinh', 'Màng giác', 'Dịch thủy tinh', 'Thủy dịch', 'Màng lưới'],
+      items: ['Thể thuỷ tinh', 'Màng giác', 'Dịch thuỷ tinh', 'Thuỷ dịch', 'Màng lưới'],
       answer: [1, 3, 0, 2, 4],
       hints: ['Màng giác nằm ở phía trước, ngoài cùng của cầu mắt.'],
-      solution: 'Màng giác → thủy dịch → (đồng tử) → thể thủy tinh → dịch thủy tinh → màng lưới.',
+      solution: 'Màng giác → thuỷ dịch → (đồng tử) → thể thuỷ tinh → dịch thuỷ tinh → màng lưới.',
     },
     {
       type: 'match',
@@ -212,11 +212,11 @@ export default {
     },
     {
       type: 'choice',
-      prompt: 'Khi chuyển từ nhìn bảng sang nhìn vở trên bàn, thể thủy tinh thay đổi thế nào?',
+      prompt: 'Khi chuyển từ nhìn bảng sang nhìn vở trên bàn, thể thuỷ tinh thay đổi thế nào?',
       options: ['Dẹt xuống', 'Phồng lên', 'Không thay đổi', 'Di chuyển ra trước'],
       answer: 1,
       hints: ['Nhìn vật ở gần cần hội tụ ánh sáng mạnh hơn.'],
-      solution: 'Vở ở gần hơn bảng nên thể thủy tinh phồng lên để ảnh vẫn rơi đúng màng lưới.',
+      solution: 'Vở ở gần hơn bảng nên thể thuỷ tinh phồng lên để ảnh vẫn rơi đúng màng lưới.',
     },
     {
       type: 'match',
@@ -287,9 +287,9 @@ export default {
     },
   ],
   takeaways: [
-    'Hệ thần kinh gồm bộ phận trung ương (não, tủy sống) và bộ phận ngoại biên (dây thần kinh, hạch thần kinh); điều khiển, điều hòa, phối hợp hoạt động các cơ quan.',
+    'Hệ thần kinh gồm bộ phận trung ương (não, tuỷ sống) và bộ phận ngoại biên (dây thần kinh, hạch thần kinh); điều khiển, điều hoà, phối hợp hoạt động các cơ quan.',
     'Alzheimer, Parkinson, động kinh là bệnh về hệ thần kinh; chất gây nghiện làm tổn hại hệ thần kinh.',
-    'Ánh sáng qua màng giác, thủy dịch, thể thủy tinh, dịch thủy tinh hội tụ trên màng lưới; xung thần kinh theo dây thần kinh thị giác về não.',
+    'Ánh sáng qua màng giác, thuỷ dịch, thể thuỷ tinh, dịch thuỷ tinh hội tụ trên màng lưới; xung thần kinh theo dây thần kinh thị giác về não.',
     'Cận thị: ảnh của vật ở xa trước màng lưới, đeo kính phân kì. Viễn thị: ảnh của vật ở gần sau màng lưới, đeo kính hội tụ.',
     'Tai gồm tai ngoài, tai giữa, tai trong; ốc tai thu nhận âm thanh, bộ phận tiền đình giữ thăng bằng.',
   ],

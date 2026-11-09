@@ -16,7 +16,7 @@ export const STEPS = [
   'Đun sôi 1 lít nước, để nguội đến khoảng 50 °C (đo bằng nhiệt kế).',
   'Cho sữa đặc vào cốc, thêm nước ấm cho đủ 1 lít, khuấy cho tan hết.',
   'Cho hai hộp sữa chua không đường (sữa chua giống) vào, khuấy đều.',
-  'Rót vào các lọ thủy tinh, đậy nắp, đặt vào thùng xốp, đậy kín và ủ 10 đến 12 giờ.',
+  'Rót vào các lọ thuỷ tinh, đậy nắp, đặt vào thùng xốp, đậy kín và ủ 10 đến 12 giờ.',
   'Lấy các lọ sữa chua ra, cho vào tủ lạnh.',
 ];
 

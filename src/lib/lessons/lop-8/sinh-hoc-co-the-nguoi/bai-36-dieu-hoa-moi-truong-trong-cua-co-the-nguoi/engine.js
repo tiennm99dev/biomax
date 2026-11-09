@@ -49,7 +49,7 @@ export const INDICES = {
       { id: 'an', label: 'Ăn bữa nhiều tinh bột, đồ ngọt', value: 9.5 },
       { id: 'doi', label: 'Nhịn đói lâu, vận động mạnh', value: 3.1 },
     ],
-    impaired: 'Tuyến tụy tiết không đủ insulin',
+    impaired: 'Tuyến tuỵ tiết không đủ insulin',
   },
   'than-nhiet': {
     id: 'than-nhiet',
@@ -124,16 +124,16 @@ export function response(id, value, impaired = false) {
   if (id === 'duong-huyet') {
     if (level === 'cao')
       return impaired
-        ? 'Đường huyết cao nhưng tuyến tụy không tiết đủ insulin: glucose không được chuyển vào tế bào và dự trữ, đường huyết vẫn cao kéo dài. Đây là biểu hiện của bệnh tiểu đường.'
-        : 'Đường huyết cao: tuyến tụy tiết insulin, giúp tế bào nhận glucose và gan, cơ chuyển glucose thành glycogen dự trữ. Đường huyết giảm dần.';
+        ? 'Đường huyết cao nhưng tuyến tuỵ không tiết đủ insulin: glucose không được chuyển vào tế bào và dự trữ, đường huyết vẫn cao kéo dài. Đây là biểu hiện của bệnh tiểu đường.'
+        : 'Đường huyết cao: tuyến tuỵ tiết insulin, giúp tế bào nhận glucose và gan, cơ chuyển glucose thành glycogen dự trữ. Đường huyết giảm dần.';
     if (level === 'thap')
-      return 'Đường huyết thấp: tuyến tụy tiết glucagon, giúp gan phân giải glycogen thành glucose đưa vào máu. Đường huyết tăng dần. Cơ thể có cảm giác đói, mệt.';
+      return 'Đường huyết thấp: tuyến tuỵ tiết glucagon, giúp gan phân giải glycogen thành glucose đưa vào máu. Đường huyết tăng dần. Cơ thể có cảm giác đói, mệt.';
     return 'Đường huyết trong ngưỡng bình thường: môi trường trong cân bằng.';
   }
   if (level === 'cao')
     return impaired
-      ? 'Thân nhiệt cao nhưng cơ thể không tiết được mồ hôi để tỏa nhiệt: nhiệt tích tụ, thân nhiệt vẫn cao, có nguy cơ bị say nắng, say nóng.'
-      : 'Thân nhiệt cao: mạch máu dưới da dãn ra, tuyến mồ hôi tăng tiết mồ hôi để tỏa nhiệt. Thân nhiệt giảm dần.';
+      ? 'Thân nhiệt cao nhưng cơ thể không tiết được mồ hôi để toả nhiệt: nhiệt tích tụ, thân nhiệt vẫn cao, có nguy cơ bị say nắng, say nóng.'
+      : 'Thân nhiệt cao: mạch máu dưới da dãn ra, tuyến mồ hôi tăng tiết mồ hôi để toả nhiệt. Thân nhiệt giảm dần.';
   if (level === 'thap')
     return 'Thân nhiệt thấp: mạch máu dưới da co lại, cơ co chân lông co (sởn gai ốc), cơ run để sinh nhiệt. Thân nhiệt tăng dần.';
   return 'Thân nhiệt trong ngưỡng bình thường: môi trường trong cân bằng.';

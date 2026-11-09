@@ -139,7 +139,7 @@
       />
     {/if}
     <g font-size="9" fill="#334155">
-      <text x={LENS} y="132" text-anchor="middle">thể thủy tinh</text>
+      <text x={LENS} y="132" text-anchor="middle">thể thuỷ tinh</text>
       <text x="292" y="60" text-anchor="middle">màng lưới</text>
       <text x="8" y="170">(khoảng cách và độ lệch ảnh vẽ không theo tỉ lệ)</text>
     </g>

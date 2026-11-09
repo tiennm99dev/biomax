@@ -4,7 +4,7 @@ Sinh học tương tác cho học sinh Việt Nam lớp 6-12, theo bộ sách K�
 
 ## Status
 
-Mọi bài trong sách đều có trang; bài chưa soạn hiện dạng "Sắp ra mắt" (noindex). Bài mẫu đã soạn: Lớp 10 — Bài 4. Các nguyên tố hóa học và nước.
+Mọi bài trong sách đều có trang; bài chưa soạn hiện dạng "Sắp ra mắt" (noindex). Bài mẫu đã soạn: Lớp 10 — Bài 4. Các nguyên tố hoá học và nước.
 
 - `/` chọn lớp; `/lop-N/` các chương theo tập; `/lop-N/<chương>/` các bài; `/lop-N/<chương>/<bài>/` bài học.
 - `/te-bao/`, `/di-truyen/`, `/sinh-thai/`, ... gom chương của một mạch kiến thức qua mọi lớp.

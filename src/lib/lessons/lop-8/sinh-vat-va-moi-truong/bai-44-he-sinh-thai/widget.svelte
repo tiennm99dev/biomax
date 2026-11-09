@@ -199,7 +199,7 @@
         <p>Vi khuẩn, nấm phân giải xác và chất thải của mọi sinh vật trong lưới.</p>
       </div>
     {/if}
-    <button type="button" class={button.quiet} onclick={reset}>Xóa các mũi tên</button>
+    <button type="button" class={button.quiet} onclick={reset}>Xoá các mũi tên</button>
   {:else}
     <p class="text-sm text-slate-700">
       Bấm vào một loài để loại nó khỏi hệ sinh thái; các loài mất hết nguồn thức ăn sẽ bị đánh dấu.

@@ -54,7 +54,7 @@ export default {
         {
           type: 'list',
           items: [
-            'Trong tự nhiên: nấm phân hủy xác sinh vật, rơm rạ, gỗ mục thành chất đơn giản trả lại cho đất, làm sạch môi trường; một số nấm cộng sinh với rễ cây giúp cây hút nước và chất khoáng.',
+            'Trong tự nhiên: nấm phân huỷ xác sinh vật, rơm rạ, gỗ mục thành chất đơn giản trả lại cho đất, làm sạch môi trường; một số nấm cộng sinh với rễ cây giúp cây hút nước và chất khoáng.',
             'Làm thực phẩm: nấm rơm, nấm hương, nấm sò, nấm mỡ, nấm kim châm, mộc nhĩ.',
             'Làm dược liệu: nấm linh chi, đông trùng hạ thảo; nấm mốc xanh dùng để sản xuất thuốc kháng sinh penicillin.',
             'Chế biến thực phẩm: nấm men dùng làm bánh mì, nấu rượu, làm bia; nấm mốc dùng làm tương.',
@@ -199,8 +199,8 @@ export default {
       prompt: 'Bào tử của nấm mũ được tạo ra ở bộ phận nào?',
       options: ['Mũ nấm', 'Phiến nấm', 'Cuống nấm', 'Sợi nấm trong đất'],
       answer: 1,
-      hints: ['Lật mũ nấm lên, mặt dưới có những lá mỏng xếp tỏa tròn.'],
-      solution: 'Bào tử được tạo ra ở phiến nấm, những lá mỏng xếp tỏa tròn ở mặt dưới mũ nấm.',
+      hints: ['Lật mũ nấm lên, mặt dưới có những lá mỏng xếp toả tròn.'],
+      solution: 'Bào tử được tạo ra ở phiến nấm, những lá mỏng xếp toả tròn ở mặt dưới mũ nấm.',
     },
     {
       type: 'multi',
@@ -209,13 +209,13 @@ export default {
         'Nấm men làm bánh mì, nấu rượu',
         'Nấm mốc xanh sản xuất penicillin',
         'Gây bệnh hắc lào',
-        'Phân hủy xác sinh vật, gỗ mục',
+        'Phân huỷ xác sinh vật, gỗ mục',
         'Làm mốc lạc, ngô',
       ],
       answers: [0, 1, 3],
       hints: ['Hai ý là tác hại của nấm.'],
       solution:
-        'Có ích: nấm men làm bánh mì, nấu rượu; nấm mốc xanh sản xuất penicillin; nấm phân hủy xác sinh vật. Gây hắc lào và làm mốc lạc, ngô là tác hại.',
+        'Có ích: nấm men làm bánh mì, nấu rượu; nấm mốc xanh sản xuất penicillin; nấm phân huỷ xác sinh vật. Gây hắc lào và làm mốc lạc, ngô là tác hại.',
     },
     {
       type: 'choice',
@@ -229,7 +229,7 @@ export default {
       answer: 1,
       hints: ['Chất độc do nấm mốc tạo ra rất bền, đun nấu không hết.'],
       solution:
-        'Một số nấm mốc trên lạc, ngô tạo chất độc aflatoxin, có thể gây ung thư gan; nấu chín cũng không phá hủy hết, nên phải bỏ đi.',
+        'Một số nấm mốc trên lạc, ngô tạo chất độc aflatoxin, có thể gây ung thư gan; nấu chín cũng không phá huỷ hết, nên phải bỏ đi.',
     },
     {
       type: 'choice',
@@ -243,7 +243,7 @@ export default {
       answer: 2,
       hints: ['Ở phần khám phá, các quy tắc chỉ dựa vào một đặc điểm đều có ngoại lệ.'],
       solution:
-        'Nấm độc tán trắng có màu trắng, nấm ô tán trắng phiến xanh không có bao gốc, và nhiều chất độc trong nấm không bị phá hủy khi nấu. Chỉ ăn nấm trồng, biết rõ loài và nguồn gốc.',
+        'Nấm độc tán trắng có màu trắng, nấm ô tán trắng phiến xanh không có bao gốc, và nhiều chất độc trong nấm không bị phá huỷ khi nấu. Chỉ ăn nấm trồng, biết rõ loài và nguồn gốc.',
     },
     {
       type: 'multi',
@@ -271,7 +271,7 @@ export default {
     'Nấm là sinh vật nhân thực, đơn bào (nấm men) hoặc đa bào (hệ sợi nấm), không có lục lạp, sống dị dưỡng, sinh sản bằng bào tử.',
     'Dựa vào cơ quan sinh sản, nấm gồm nấm đảm (nấm rơm, nấm hương), nấm túi (nấm men, nấm mốc xanh), nấm tiếp hợp (mốc đen bánh mì).',
     'Nấm mũ gồm mũ nấm, phiến nấm (tạo bào tử), cuống nấm và sợi nấm.',
-    'Có lợi: phân hủy chất hữu cơ, thực phẩm, dược liệu, kháng sinh, làm bánh mì, rượu; có hại: nấm độc, làm hỏng thực phẩm, gây bệnh hắc lào, lang ben, bệnh cây.',
+    'Có lợi: phân huỷ chất hữu cơ, thực phẩm, dược liệu, kháng sinh, làm bánh mì, rượu; có hại: nấm độc, làm hỏng thực phẩm, gây bệnh hắc lào, lang ben, bệnh cây.',
     'Không hái, không ăn nấm lạ, nấm mọc hoang: chỉ ăn nấm trồng biết rõ nguồn gốc.',
   ],
 };

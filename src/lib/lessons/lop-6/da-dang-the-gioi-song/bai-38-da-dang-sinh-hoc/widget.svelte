@@ -27,7 +27,7 @@
   function showAnyway() {
     revealed = true;
     message =
-      'Số liệu minh họa: rừng mưa nhiệt đới khoảng 300 loài, hoang mạc khoảng 40 loài, đới lạnh khoảng 25 loài trên ô quan sát cùng diện tích.';
+      'Số liệu minh hoạ: rừng mưa nhiệt đới khoảng 300 loài, hoang mạc khoảng 40 loài, đới lạnh khoảng 25 loài trên ô quan sát cùng diện tích.';
   }
 </script>
 
@@ -61,7 +61,7 @@
             data={actual}
             max={400}
             unit="Số loài"
-            title="Số liệu minh họa"
+            title="Số liệu minh hoạ"
             width={420}
             height={280}
           />
@@ -69,7 +69,7 @@
       {/if}
     </div>
     <p class="text-xs text-slate-600">
-      Số loài thực vật trên một ô quan sát có cùng diện tích; số liệu minh họa, làm tròn, chỉ để so
+      Số loài thực vật trên một ô quan sát có cùng diện tích; số liệu minh hoạ, làm tròn, chỉ để so
       sánh.
     </p>
     <div class="flex flex-wrap gap-2">

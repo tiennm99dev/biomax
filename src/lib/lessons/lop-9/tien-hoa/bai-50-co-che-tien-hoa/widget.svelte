@@ -54,7 +54,7 @@
 <div class="space-y-4">
   <fieldset class="space-y-1">
     <legend class="mb-1 text-sm font-semibold text-slate-700">
-      Bật các nhân tố tiến hóa tác động lên quần thể
+      Bật các nhân tố tiến hoá tác động lên quần thể
     </legend>
     {#each FACTORS as fac (fac.key)}
       <label

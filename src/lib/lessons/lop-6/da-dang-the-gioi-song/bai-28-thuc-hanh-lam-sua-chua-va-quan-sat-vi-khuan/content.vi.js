@@ -16,7 +16,7 @@ export default {
         {
           type: 'list',
           items: [
-            'Dụng cụ: kính hiển vi có vật kính $10\\times$ và $40\\times$, lam kính, lamen, ống nhỏ giọt, giấy thấm, nhiệt kế, cốc thủy tinh $1{,}2$ lít, thìa khuấy, ấm đun nước, thùng xốp có nắp, các lọ thủy tinh nhỏ có nắp.',
+            'Dụng cụ: kính hiển vi có vật kính $10\\times$ và $40\\times$, lam kính, lamen, ống nhỏ giọt, giấy thấm, nhiệt kế, cốc thuỷ tinh $1{,}2$ lít, thìa khuấy, ấm đun nước, thùng xốp có nắp, các lọ thuỷ tinh nhỏ có nắp.',
             'Nguyên liệu: hai hộp sữa chua không đường (để ở nhiệt độ phòng khoảng $25\\ ^\\circ\\text{C}$ từ 1 đến 2 giờ trước khi làm), một hộp sữa đặc có đường $380$ g, $1$ lít nước uống, nước cất.',
             'Tiêu bản cố định một số loài vi khuẩn khác (nếu có).',
           ],
@@ -36,7 +36,7 @@ export default {
           type: 'list',
           ordered: true,
           items: [
-            'Hòa khoảng một thìa sữa chua không đường với $10$ mL nước cất.',
+            'Hoà khoảng một thìa sữa chua không đường với $10$ mL nước cất.',
             'Dùng ống nhỏ giọt nhỏ một giọt hỗn hợp lên lam kính, đậy lamen lại.',
             'Dùng giấy thấm hút phần nước tràn ra xung quanh lamen.',
             'Đặt tiêu bản lên bàn kính, điều chỉnh cho mẫu vật nằm đúng giữa đường đi của ánh sáng.',
@@ -62,9 +62,9 @@ export default {
           ordered: true,
           items: [
             'Đun sôi $1$ lít nước, để nguội đến khoảng $50\\ ^\\circ\\text{C}$ (dùng nhiệt kế để đo).',
-            'Cho sữa đặc vào cốc thủy tinh, thêm nước ấm cho đủ $1$ lít, khuấy cho sữa tan hết.',
+            'Cho sữa đặc vào cốc thuỷ tinh, thêm nước ấm cho đủ $1$ lít, khuấy cho sữa tan hết.',
             'Cho hai hộp sữa chua không đường vào, khuấy đều.',
-            'Rót hỗn hợp vào các lọ thủy tinh, đậy nắp, xếp vào thùng xốp, đậy kín nắp thùng và ủ trong 10 đến 12 giờ.',
+            'Rót hỗn hợp vào các lọ thuỷ tinh, đậy nắp, xếp vào thùng xốp, đậy kín nắp thùng và ủ trong 10 đến 12 giờ.',
             'Lấy các lọ sữa chua ra và cho vào tủ lạnh.',
           ],
         },
@@ -146,7 +146,7 @@ export default {
       prompt: 'Sắp xếp các bước làm tiêu bản và quan sát vi khuẩn trong sữa chua theo đúng thứ tự.',
       items: [
         'Chuyển sang vật kính $40\\times$ để quan sát rõ hình dạng vi khuẩn',
-        'Hòa một thìa sữa chua với $10$ mL nước cất',
+        'Hoà một thìa sữa chua với $10$ mL nước cất',
         'Đậy lamen, dùng giấy thấm hút nước tràn ra',
         'Quan sát ở vật kính $10\\times$ để tìm vùng có nhiều vi khuẩn',
         'Nhỏ một giọt hỗn hợp lên lam kính',
@@ -157,7 +157,7 @@ export default {
         'Luôn tìm mẫu ở vật kính nhỏ trước, rồi mới chuyển sang vật kính lớn.',
       ],
       solution:
-        'Hòa sữa chua với nước cất → nhỏ một giọt lên lam kính → đậy lamen, thấm nước thừa → quan sát ở vật kính $10\\times$ → chuyển sang vật kính $40\\times$.',
+        'Hoà sữa chua với nước cất → nhỏ một giọt lên lam kính → đậy lamen, thấm nước thừa → quan sát ở vật kính $10\\times$ → chuyển sang vật kính $40\\times$.',
     },
     {
       type: 'choice',
@@ -236,7 +236,7 @@ export default {
     {
       type: 'text',
       prompt: 'Dụng cụ nào dùng để kiểm tra nước đã nguội đến khoảng 50 °C?',
-      accept: ['nhiệt kế', 'cái nhiệt kế', 'nhiệt kế thủy ngân', 'nhiệt kế điện tử'],
+      accept: ['nhiệt kế', 'cái nhiệt kế', 'nhiệt kế thuỷ ngân', 'nhiệt kế điện tử'],
       hints: ['Dụng cụ đo nhiệt độ.'],
       solution: 'Dùng nhiệt kế để đo nhiệt độ của nước.',
     },
@@ -279,7 +279,7 @@ export default {
     },
   ],
   takeaways: [
-    'Tiêu bản sữa chua: hòa sữa chua với nước cất, nhỏ giọt lên lam kính, đậy lamen, tìm mẫu ở vật kính $10\\times$ rồi quan sát ở $40\\times$.',
+    'Tiêu bản sữa chua: hoà sữa chua với nước cất, nhỏ giọt lên lam kính, đậy lamen, tìm mẫu ở vật kính $10\\times$ rồi quan sát ở $40\\times$.',
     'Vi khuẩn lactic trong sữa chua có hình que hoặc hình cầu, thường xếp thành chuỗi.',
     'Làm sữa chua: nước nguội đến khoảng $50\\ ^\\circ\\text{C}$, pha sữa đặc, cho sữa chua giống, ủ ấm 10 đến 12 giờ, rồi cất tủ lạnh.',
     'Vi khuẩn lactic biến đường thành acid lactic làm sữa đông và chua; nước sôi giết vi khuẩn, tủ lạnh làm chúng hoạt động chậm lại.',

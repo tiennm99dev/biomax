@@ -16,7 +16,7 @@ export default {
         {
           type: 'list',
           items: [
-            'Dụng cụ: kính hiển vi, lam kính, lamen, ống hút nhỏ giọt, giấy thấm, khăn lau, một ít bông, cốc hoặc lọ thủy tinh sạch có nắp.',
+            'Dụng cụ: kính hiển vi, lam kính, lamen, ống hút nhỏ giọt, giấy thấm, khăn lau, một ít bông, cốc hoặc lọ thuỷ tinh sạch có nắp.',
             'Mẫu vật: nước ao, hồ, mương, ruộng lúa (lấy ở lớp váng xanh trên mặt hoặc sát gốc bèo, rong, gần lớp bùn đáy).',
             'Có thể tự nuôi cấy trùng giày: cho một nắm rơm khô hoặc cỏ khô đã cắt nhỏ vào bình nước ao hay nước máy để lắng, để nơi thoáng, có ánh sáng từ 5 đến 7 ngày. Lớp váng trắng trên mặt nước có rất nhiều trùng giày.',
           ],
@@ -185,9 +185,9 @@ export default {
         'Nước mưa vừa hứng',
       ],
       answer: 2,
-      hints: ['Trùng giày ăn vi khuẩn. Ở đâu có nhiều vi khuẩn phân hủy chất hữu cơ?'],
+      hints: ['Trùng giày ăn vi khuẩn. Ở đâu có nhiều vi khuẩn phân huỷ chất hữu cơ?'],
       solution:
-        'Rơm ngâm nước nhiều ngày bị vi khuẩn phân hủy, vi khuẩn là thức ăn của trùng giày nên trùng giày sinh sản rất nhiều. Nước đun sôi, nước máy, nước mưa hầu như không có nguyên sinh vật.',
+        'Rơm ngâm nước nhiều ngày bị vi khuẩn phân huỷ, vi khuẩn là thức ăn của trùng giày nên trùng giày sinh sản rất nhiều. Nước đun sôi, nước máy, nước mưa hầu như không có nguyên sinh vật.',
     },
     {
       type: 'match',

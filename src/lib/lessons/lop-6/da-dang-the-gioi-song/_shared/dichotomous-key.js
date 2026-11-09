@@ -1,5 +1,5 @@
 /**
- * Dichotomous keys (khóa lưỡng phân) for the lessons of this chapter: a set
+ * Dichotomous keys (khoá lưỡng phân) for the lessons of this chapter: a set
  * of organisms described by yes/no traits, reading a ready-made key to
  * identify an organism, listing a key as numbered pairs, and building a key
  * by splitting groups with chosen traits.

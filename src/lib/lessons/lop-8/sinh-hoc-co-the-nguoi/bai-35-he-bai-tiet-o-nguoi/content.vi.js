@@ -46,7 +46,7 @@ export default {
         {
           type: 'list',
           items: [
-            'Thận có hình hạt đậu, gồm ba phần: phần vỏ, phần tủy và bể thận.',
+            'Thận có hình hạt đậu, gồm ba phần: phần vỏ, phần tuỷ và bể thận.',
             'Mỗi quả thận có khoảng một triệu đơn vị chức năng (nephron) để lọc máu và tạo nước tiểu.',
             'Mỗi đơn vị chức năng gồm cầu thận (một búi mao mạch), nang cầu thận (bọc quanh cầu thận) và ống thận.',
           ],
@@ -74,7 +74,7 @@ export default {
             [
               'Lọc máu',
               'Cầu thận',
-              'Nước và các chất hòa tan có kích thước nhỏ lọt qua lỗ lọc của thành mao mạch vào nang cầu thận; tế bào máu và protein không lọt qua được',
+              'Nước và các chất hoà tan có kích thước nhỏ lọt qua lỗ lọc của thành mao mạch vào nang cầu thận; tế bào máu và protein không lọt qua được',
               'Nước tiểu đầu',
             ],
             [
@@ -95,7 +95,7 @@ export default {
           type: 'callout',
           tone: 'theorem',
           title: 'So sánh hai loại nước tiểu',
-          text: 'Nước tiểu đầu có nồng độ các chất hòa tan loãng, còn chứa nhiều chất dinh dưỡng (glucose…). Nước tiểu chính thức đậm đặc các chất cặn bã, chất độc, gần như không còn chất dinh dưỡng. Ở người khỏe mạnh, nước tiểu chính thức không có tế bào máu, protein và glucose.',
+          text: 'Nước tiểu đầu có nồng độ các chất hoà tan loãng, còn chứa nhiều chất dinh dưỡng (glucose…). Nước tiểu chính thức đậm đặc các chất cặn bã, chất độc, gần như không còn chất dinh dưỡng. Ở người khoẻ mạnh, nước tiểu chính thức không có tế bào máu, protein và glucose.',
         },
       ],
     },
@@ -137,7 +137,7 @@ export default {
           type: 'callout',
           tone: 'note',
           title: 'Thành tựu chạy thận nhân tạo và ghép thận',
-          text: 'Người suy thận nặng có thể được chạy thận nhân tạo: máu được dẫn qua một màng lọc ở máy để loại bỏ chất thải rồi đưa trở lại cơ thể. Ghép thận là thay thận hỏng bằng một quả thận khỏe của người hiến tặng; ở Việt Nam, ca ghép thận đầu tiên được thực hiện năm 1992. Một người khỏe mạnh vẫn sống bình thường với một quả thận.',
+          text: 'Người suy thận nặng có thể được chạy thận nhân tạo: máu được dẫn qua một màng lọc ở máy để loại bỏ chất thải rồi đưa trở lại cơ thể. Ghép thận là thay thận hỏng bằng một quả thận khoẻ của người hiến tặng; ở Việt Nam, ca ghép thận đầu tiên được thực hiện năm 1992. Một người khoẻ mạnh vẫn sống bình thường với một quả thận.',
         },
       ],
     },
@@ -152,7 +152,7 @@ export default {
       problem:
         'Kết quả xét nghiệm nước tiểu của một người có protein và hồng cầu. Hãy cho biết bộ phận nào của thận có thể bị tổn thương. Giải thích.',
       steps: [
-        'Ở người khỏe mạnh, protein và tế bào máu có kích thước lớn, không lọt qua lỗ lọc của thành mao mạch cầu thận nên không có trong nước tiểu đầu.',
+        'Ở người khoẻ mạnh, protein và tế bào máu có kích thước lớn, không lọt qua lỗ lọc của thành mao mạch cầu thận nên không có trong nước tiểu đầu.',
         'Các chất không có trong nước tiểu đầu thì cũng không thể có trong nước tiểu chính thức.',
         'Nước tiểu có protein và hồng cầu chứng tỏ lỗ lọc ở cầu thận đã bị tổn thương, để lọt các thành phần lớn.',
       ],
@@ -201,7 +201,7 @@ export default {
     {
       type: 'choice',
       prompt:
-        'Ở người khỏe mạnh, chất nào có trong nước tiểu đầu nhưng không có trong nước tiểu chính thức?',
+        'Ở người khoẻ mạnh, chất nào có trong nước tiểu đầu nhưng không có trong nước tiểu chính thức?',
       options: ['Protein', 'Glucose', 'Urea', 'Hồng cầu'],
       answer: 1,
       hints: [
@@ -263,7 +263,7 @@ export default {
       answer: 1,
       hints: ['Khi thận không lọc được máu, cần thay thế chức năng lọc của thận.'],
       solution:
-        'Chạy thận nhân tạo lọc máu thay thận; ghép thận thay thận hỏng bằng thận khỏe của người hiến tặng.',
+        'Chạy thận nhân tạo lọc máu thay thận; ghép thận thay thận hỏng bằng thận khoẻ của người hiến tặng.',
     },
     {
       type: 'text',

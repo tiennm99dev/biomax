@@ -1,12 +1,12 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Hoạt động trải nghiệm ngoài thiên nhiên: quan sát sinh vật bằng mắt thường, kính lúp, ống nhòm; ghi chép, chụp ảnh, đo đếm; dùng khóa lưỡng phân để định danh và phân loại; nhận biết vai trò của sinh vật trong tự nhiên, rồi làm bộ sưu tập ảnh và báo cáo kết quả.',
+    'Hoạt động trải nghiệm ngoài thiên nhiên: quan sát sinh vật bằng mắt thường, kính lúp, ống nhòm; ghi chép, chụp ảnh, đo đếm; dùng khoá lưỡng phân để định danh và phân loại; nhận biết vai trò của sinh vật trong tự nhiên, rồi làm bộ sưu tập ảnh và báo cáo kết quả.',
   intro:
-    'Cả chương này, em đã học về vi khuẩn, nấm, thực vật, động vật và cách xây dựng khóa lưỡng phân. Giờ là lúc mang sổ, kính lúp và ống nhòm ra vườn trường hay công viên để dùng tất cả những điều đó. Một mảnh vườn nhỏ thôi cũng có thể là nơi sống của hàng chục loài sinh vật mà hằng ngày em đi qua không để ý.',
+    'Cả chương này, em đã học về vi khuẩn, nấm, thực vật, động vật và cách xây dựng khoá lưỡng phân. Giờ là lúc mang sổ, kính lúp và ống nhòm ra vườn trường hay công viên để dùng tất cả những điều đó. Một mảnh vườn nhỏ thôi cũng có thể là nơi sống của hàng chục loài sinh vật mà hằng ngày em đi qua không để ý.',
   objectives: [
     'Thực hiện được các phương pháp tìm hiểu sinh vật ngoài thiên nhiên: quan sát bằng mắt thường, kính lúp, ống nhòm; ghi chép, đo đếm, nhận xét và rút ra kết luận.',
-    'Sử dụng được khóa lưỡng phân để nhận diện và phân loại một số sinh vật quan sát được.',
+    'Sử dụng được khoá lưỡng phân để nhận diện và phân loại một số sinh vật quan sát được.',
     'Nhận biết được vai trò của sinh vật trong tự nhiên; chụp ảnh và làm được bộ sưu tập ảnh về các nhóm sinh vật.',
   ],
   sections: [
@@ -20,7 +20,7 @@ export default {
             'Dụng cụ quan sát: kính lúp, ống nhòm, máy ảnh hoặc điện thoại.',
             'Dụng cụ ghi chép, đo đếm: sổ, bút, thước dây, bảng ghi kết quả kẻ sẵn.',
             'Dụng cụ lấy mẫu (khi được phép): panh, găng tay, túi hoặc lọ có nắp để đựng lá rụng, vỏ ốc, xác côn trùng đã chết.',
-            'Tài liệu: khóa lưỡng phân, tranh ảnh các nhóm sinh vật đã học.',
+            'Tài liệu: khoá lưỡng phân, tranh ảnh các nhóm sinh vật đã học.',
           ],
         },
         {
@@ -60,11 +60,11 @@ export default {
         },
         {
           type: 'p',
-          text: 'Khi gặp một sinh vật chưa biết tên, hãy ghi lại những đặc điểm dễ thấy (sống cố định hay di chuyển, có hoa không, có xương sống không, có chân phân đốt không...) rồi dùng khóa lưỡng phân: đọc từng cặp đặc điểm đối lập, chọn ý đúng và đi tiếp tới khi gặp tên sinh vật.',
+          text: 'Khi gặp một sinh vật chưa biết tên, hãy ghi lại những đặc điểm dễ thấy (sống cố định hay di chuyển, có hoa không, có xương sống không, có chân phân đốt không...) rồi dùng khoá lưỡng phân: đọc từng cặp đặc điểm đối lập, chọn ý đúng và đi tiếp tới khi gặp tên sinh vật.',
         },
         {
           type: 'p',
-          text: 'Ở phần khám phá, em hãy làm một chuyến dã ngoại ảo qua bốn điểm của vườn trường, đọc ghi chép và dùng khóa lưỡng phân để định danh từng sinh vật.',
+          text: 'Ở phần khám phá, em hãy làm một chuyến dã ngoại ảo qua bốn điểm của vườn trường, đọc ghi chép và dùng khoá lưỡng phân để định danh từng sinh vật.',
         },
       ],
     },
@@ -83,7 +83,7 @@ export default {
             'Chia lớp thành các nhóm 4 đến 6 bạn; mỗi nhóm nhận một khu vực (bồn hoa, bờ ao, gốc cây, bãi cỏ) và phân công: người quan sát, người chụp ảnh, người ghi chép.',
             'Quan sát trong khoảng 30 phút: chọn phương pháp phù hợp với từng sinh vật; chụp ảnh sinh vật và nơi sống của nó.',
             'Ghi vào bảng: tên (hoặc kí hiệu "sinh vật 1, 2..." nếu chưa biết tên), nơi sống, đặc điểm nhận biết, số lượng đếm được, vai trò.',
-            'Dùng khóa lưỡng phân để định danh các sinh vật chưa biết tên, rồi xếp chúng vào nhóm: vi khuẩn, nấm, thực vật (rêu, dương xỉ, hạt trần, hạt kín) hay động vật (không xương sống, có xương sống).',
+            'Dùng khoá lưỡng phân để định danh các sinh vật chưa biết tên, rồi xếp chúng vào nhóm: vi khuẩn, nấm, thực vật (rêu, dương xỉ, hạt trần, hạt kín) hay động vật (không xương sống, có xương sống).',
             'Về lớp, làm bộ sưu tập ảnh theo nhóm sinh vật, ghi tên và nhóm dưới mỗi ảnh.',
           ],
         },
@@ -118,7 +118,7 @@ export default {
         {
           type: 'list',
           items: [
-            'Báo cáo: bảng kết quả, bộ sưu tập ảnh, khóa lưỡng phân nhóm đã dùng.',
+            'Báo cáo: bảng kết quả, bộ sưu tập ảnh, khoá lưỡng phân nhóm đã dùng.',
             'Nhận xét: khu vực có bao nhiêu loài; nhóm sinh vật nào gặp nhiều nhất; các sinh vật liên quan với nhau thế nào (làm thức ăn, nơi ở cho nhau).',
             'Đề xuất: hai việc làm để bảo vệ các sinh vật ở khu vực đã tìm hiểu.',
           ],
@@ -129,12 +129,12 @@ export default {
   explore: {
     title: 'Bản đồ dã ngoại ảo',
     instruction:
-      'Chọn một điểm trên bản đồ, chọn một sinh vật chưa biết tên và đọc ghi chép về nó. Trong khóa lưỡng phân, chọn ý đúng của cặp đang sáng (a hoặc b) và đi tiếp cho tới khi gặp tên sinh vật. Định danh hết chín sinh vật ở bốn điểm để hoàn thành chuyến đi.',
+      'Chọn một điểm trên bản đồ, chọn một sinh vật chưa biết tên và đọc ghi chép về nó. Trong khoá lưỡng phân, chọn ý đúng của cặp đang sáng (a hoặc b) và đi tiếp cho tới khi gặp tên sinh vật. Định danh hết chín sinh vật ở bốn điểm để hoàn thành chuyến đi.',
   },
   examples: [
     {
       problem:
-        'Ở bãi cỏ, nhóm em ghi: "Sinh vật 1 chui lên khỏi đất ẩm sau mưa; di chuyển được, không có xương sống, không có chân, cơ thể dài, mềm, phân nhiều đốt." Dùng khóa lưỡng phân của bài để định danh sinh vật này.',
+        'Ở bãi cỏ, nhóm em ghi: "Sinh vật 1 chui lên khỏi đất ẩm sau mưa; di chuyển được, không có xương sống, không có chân, cơ thể dài, mềm, phân nhiều đốt." Dùng khoá lưỡng phân của bài để định danh sinh vật này.',
       steps: [
         'Cặp 1: sinh vật di chuyển được, không có màu xanh: chọn 1a, đi đến cặp 2.',
         'Cặp 2: không có xương sống: chọn 2b, đi đến cặp 5 (cặp về chân phân đốt).',
@@ -173,7 +173,7 @@ export default {
     {
       type: 'choice',
       prompt:
-        'Dùng khóa lưỡng phân của bài: một sinh vật di chuyển được, không có xương sống, có các đôi chân phân đốt, không có cánh và có bốn đôi chân. Đó là',
+        'Dùng khoá lưỡng phân của bài: một sinh vật di chuyển được, không có xương sống, có các đôi chân phân đốt, không có cánh và có bốn đôi chân. Đó là',
       options: ['con bướm', 'con nhện', 'ốc sên', 'giun đất'],
       answer: 1,
       hints: ['Bướm có cánh và ba đôi chân.'],
@@ -184,14 +184,14 @@ export default {
       type: 'order',
       prompt: 'Sắp xếp các bước khi gặp một sinh vật chưa biết tên ngoài thực địa.',
       items: [
-        'Dùng khóa lưỡng phân để định danh',
+        'Dùng khoá lưỡng phân để định danh',
         'Quan sát và ghi lại các đặc điểm dễ thấy',
         'Chụp ảnh, đưa vào bộ sưu tập theo nhóm',
       ],
       answer: [1, 0, 2],
-      hints: ['Muốn dùng khóa, em cần biết đặc điểm của sinh vật trước.'],
+      hints: ['Muốn dùng khoá, em cần biết đặc điểm của sinh vật trước.'],
       solution:
-        'Quan sát, ghi đặc điểm, dùng khóa lưỡng phân để định danh, rồi đưa ảnh vào bộ sưu tập đúng nhóm.',
+        'Quan sát, ghi đặc điểm, dùng khoá lưỡng phân để định danh, rồi đưa ảnh vào bộ sưu tập đúng nhóm.',
     },
     {
       type: 'multi',
@@ -233,7 +233,7 @@ export default {
   ],
   takeaways: [
     'Tìm hiểu sinh vật ngoài thiên nhiên bằng quan sát (mắt thường, kính lúp, ống nhòm), chụp ảnh, ghi chép, đo đếm.',
-    'Dùng khóa lưỡng phân: đọc từng cặp đặc điểm đối lập, chọn ý đúng, đi tiếp tới tên sinh vật.',
+    'Dùng khoá lưỡng phân: đọc từng cặp đặc điểm đối lập, chọn ý đúng, đi tiếp tới tên sinh vật.',
     'Mỗi sinh vật có vai trò trong tự nhiên; quan sát mà không làm hại sinh vật và giữ an toàn cho bản thân.',
   ],
 };

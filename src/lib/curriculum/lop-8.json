@@ -28,10 +28,10 @@
         },
         {
           "no": 32,
-          "title": "Bài 32. Dinh dưỡng và tiêu hóa ở người",
+          "title": "Bài 32. Dinh dưỡng và tiêu hoá ở người",
           "slug": "bai-32-dinh-duong-va-tieu-hoa-o-nguoi",
           "kind": "theory",
-          "keyIdeas": ["Chất dinh dưỡng và khẩu phần", "Các cơ quan tiêu hóa", "An toàn thực phẩm"],
+          "keyIdeas": ["Chất dinh dưỡng và khẩu phần", "Các cơ quan tiêu hoá", "An toàn thực phẩm"],
           "interactiveIdea": "Công cụ lập khẩu phần ăn tính năng lượng và nhóm chất; hoạt hình đường đi thức ăn."
         },
         {
@@ -60,7 +60,7 @@
         },
         {
           "no": 36,
-          "title": "Bài 36. Điều hòa môi trường trong của cơ thể người",
+          "title": "Bài 36. Điều hoà môi trường trong của cơ thể người",
           "slug": "bai-36-dieu-hoa-moi-truong-trong-cua-co-the-nguoi",
           "kind": "theory",
           "keyIdeas": [
@@ -87,10 +87,10 @@
         },
         {
           "no": 39,
-          "title": "Bài 39. Da và điều hòa thân nhiệt ở người",
+          "title": "Bài 39. Da và điều hoà thân nhiệt ở người",
           "slug": "bai-39-da-va-dieu-hoa-than-nhiet-o-nguoi",
           "kind": "theory",
-          "keyIdeas": ["Cấu tạo da", "Cơ chế điều hòa thân nhiệt", "Bảo vệ da"],
+          "keyIdeas": ["Cấu tạo da", "Cơ chế điều hoà thân nhiệt", "Bảo vệ da"],
           "interactiveIdea": "Lát cắt da tương tác; thanh trượt nhiệt độ môi trường làm mạch máu giãn/co và tiết mồ hôi."
         },
         {
@@ -98,7 +98,7 @@
           "title": "Bài 40. Sinh sản ở người",
           "slug": "bai-40-sinh-san-o-nguoi",
           "kind": "theory",
-          "keyIdeas": ["Cơ quan sinh dục", "Thụ tinh và thụ thai", "Bảo vệ sức khỏe sinh sản"],
+          "keyIdeas": ["Cơ quan sinh dục", "Thụ tinh và thụ thai", "Bảo vệ sức khoẻ sinh sản"],
           "interactiveIdea": "Lịch chu kì kinh nguyệt tương tác thể hiện các giai đoạn và hormone."
         }
       ]

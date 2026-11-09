@@ -32,7 +32,7 @@
     row = 1;
     message = identified.includes(organism)
       ? `Sinh vật này đã được định danh: ${nameOf(FIELD_SET, organism)}.`
-      : 'Đọc ghi chép, rồi chọn ý đúng của cặp 1 trong khóa lưỡng phân.';
+      : 'Đọc ghi chép, rồi chọn ý đúng của cặp 1 trong khoá lưỡng phân.';
   }
 
   /** @param {boolean} answer */
@@ -125,7 +125,7 @@
       {#if done}<p class="mt-1 text-emerald-900"><strong>Vai trò:</strong> {find.role}</p>{/if}
     </div>
 
-    <ol class="space-y-2" aria-label="Khóa lưỡng phân sinh vật vườn trường">
+    <ol class="space-y-2" aria-label="Khoá lưỡng phân sinh vật vườn trường">
       {#each table as r (r.n)}
         {@const active = !done && r.n === row}
         <li
@@ -186,7 +186,7 @@
       identified = [];
       current = null;
       row = 1;
-      message = 'Đã xóa bộ sưu tập. Chọn một điểm trên bản đồ để bắt đầu lại.';
+      message = 'Đã xoá bộ sưu tập. Chọn một điểm trên bản đồ để bắt đầu lại.';
     }}>Làm lại chuyến đi</button
   >
 </div>

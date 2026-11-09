@@ -88,7 +88,7 @@
     {/each}
     {#if arrows.length}
       <text x="80" y="18" font-size="9" fill="#9a3412"
-        >{air >= 35 ? 'nhiệt mất đi chủ yếu nhờ mồ hôi bay hơi' : 'nhiệt tỏa ra'}</text
+        >{air >= 35 ? 'nhiệt mất đi chủ yếu nhờ mồ hôi bay hơi' : 'nhiệt toả ra'}</text
       >
     {/if}
     <!-- blood vessel -->

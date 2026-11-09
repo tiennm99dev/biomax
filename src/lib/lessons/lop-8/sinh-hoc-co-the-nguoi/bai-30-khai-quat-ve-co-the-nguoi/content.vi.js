@@ -1,7 +1,7 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Các phần của cơ thể người; tám hệ cơ quan (vận động, tuần hoàn, hô hấp, tiêu hóa, bài tiết, thần kinh và giác quan, nội tiết, sinh dục) với các cơ quan và chức năng của chúng; sự phối hợp giữa các hệ cơ quan.',
+    'Các phần của cơ thể người; tám hệ cơ quan (vận động, tuần hoàn, hô hấp, tiêu hoá, bài tiết, thần kinh và giác quan, nội tiết, sinh dục) với các cơ quan và chức năng của chúng; sự phối hợp giữa các hệ cơ quan.',
   intro:
     'Khi em chạy thật nhanh, không chỉ đôi chân làm việc: tim đập thình thịch, em thở hổn hển và mồ hôi túa ra. Vì sao chỉ một hoạt động chạy mà nhiều bộ phận trong cơ thể cùng thay đổi như vậy? Để trả lời, trước hết em cần biết cơ thể người được cấu tạo từ những phần nào, gồm những hệ cơ quan nào và mỗi hệ làm nhiệm vụ gì.',
   objectives: [
@@ -53,8 +53,8 @@ export default {
               'Lấy oxygen từ môi trường vào và thải carbon dioxide ra ngoài',
             ],
             [
-              'Tiêu hóa',
-              'Miệng, thực quản, dạ dày, ruột non, ruột già, hậu môn và các tuyến tiêu hóa',
+              'Tiêu hoá',
+              'Miệng, thực quản, dạ dày, ruột non, ruột già, hậu môn và các tuyến tiêu hoá',
               'Biến đổi thức ăn thành chất dinh dưỡng cơ thể hấp thụ được; thải chất cặn bã',
             ],
             [
@@ -64,13 +64,13 @@ export default {
             ],
             [
               'Thần kinh và giác quan',
-              'Não, tủy sống, dây thần kinh, hạch thần kinh; các giác quan (mắt, tai, ...)',
-              'Thu nhận kích thích, điều khiển và điều hòa hoạt động của các cơ quan, giúp cơ thể thích nghi với môi trường',
+              'Não, tuỷ sống, dây thần kinh, hạch thần kinh; các giác quan (mắt, tai, ...)',
+              'Thu nhận kích thích, điều khiển và điều hoà hoạt động của các cơ quan, giúp cơ thể thích nghi với môi trường',
             ],
             [
               'Nội tiết',
-              'Tuyến yên, tuyến giáp, tuyến tụy, tuyến trên thận, tuyến sinh dục, ...',
-              'Tiết hormone điều hòa hoạt động của các cơ quan',
+              'Tuyến yên, tuyến giáp, tuyến tuỵ, tuyến trên thận, tuyến sinh dục, ...',
+              'Tiết hormone điều hoà hoạt động của các cơ quan',
             ],
             [
               'Sinh dục',
@@ -106,7 +106,7 @@ export default {
           type: 'callout',
           tone: 'theorem',
           title: 'Sự điều khiển',
-          text: 'Sự phối hợp hoạt động giữa các hệ cơ quan được điều khiển bởi hệ thần kinh, cùng với sự điều hòa của hệ nội tiết thông qua hormone.',
+          text: 'Sự phối hợp hoạt động giữa các hệ cơ quan được điều khiển bởi hệ thần kinh, cùng với sự điều hoà của hệ nội tiết thông qua hormone.',
         },
       ],
     },
@@ -121,13 +121,13 @@ export default {
       problem:
         'Em vừa ăn xong bữa trưa. Hãy kể tên các hệ cơ quan tham gia đưa chất dinh dưỡng trong cơm đến tế bào cơ ở chân và giải thích vai trò của từng hệ.',
       steps: [
-        'Hệ tiêu hóa biến đổi cơm (chủ yếu là tinh bột) thành chất dinh dưỡng đơn giản và hấp thụ chúng vào máu ở ruột non.',
+        'Hệ tiêu hoá biến đổi cơm (chủ yếu là tinh bột) thành chất dinh dưỡng đơn giản và hấp thụ chúng vào máu ở ruột non.',
         'Hệ tuần hoàn vận chuyển chất dinh dưỡng theo máu đến tế bào cơ ở chân.',
         'Để sử dụng chất dinh dưỡng tạo năng lượng, tế bào cần oxygen do hệ hô hấp lấy vào và hệ tuần hoàn vận chuyển đến.',
-        'Hệ thần kinh (và hệ nội tiết) điều khiển, điều hòa hoạt động của các hệ trên.',
+        'Hệ thần kinh (và hệ nội tiết) điều khiển, điều hoà hoạt động của các hệ trên.',
       ],
       answer:
-        'Hệ tiêu hóa (biến đổi, hấp thụ), hệ tuần hoàn (vận chuyển), hệ hô hấp (cung cấp oxygen), dưới sự điều khiển của hệ thần kinh và hệ nội tiết.',
+        'Hệ tiêu hoá (biến đổi, hấp thụ), hệ tuần hoàn (vận chuyển), hệ hô hấp (cung cấp oxygen), dưới sự điều khiển của hệ thần kinh và hệ nội tiết.',
     },
     {
       problem: 'Vì sao khi chơi bóng đá, cầu thủ thở nhanh hơn và tim đập nhanh hơn lúc ngồi nghỉ?',
@@ -157,7 +157,7 @@ export default {
       left: ['Hệ tuần hoàn', 'Hệ hô hấp', 'Hệ bài tiết', 'Hệ thần kinh'],
       right: [
         'Thận, ống dẫn nước tiểu, bóng đái',
-        'Não, tủy sống, dây thần kinh',
+        'Não, tuỷ sống, dây thần kinh',
         'Tim, mạch máu',
         'Đường dẫn khí, hai lá phổi',
         'Tinh hoàn, buồng trứng',
@@ -170,13 +170,13 @@ export default {
       ],
       hints: ['Hệ nào vận chuyển máu? Hệ nào lọc máu tạo nước tiểu?'],
       solution:
-        'Tuần hoàn: tim, mạch máu. Hô hấp: đường dẫn khí, hai lá phổi. Bài tiết: thận, ống dẫn nước tiểu, bóng đái. Thần kinh: não, tủy sống, dây thần kinh. Tinh hoàn, buồng trứng thuộc hệ sinh dục.',
+        'Tuần hoàn: tim, mạch máu. Hô hấp: đường dẫn khí, hai lá phổi. Bài tiết: thận, ống dẫn nước tiểu, bóng đái. Thần kinh: não, tuỷ sống, dây thần kinh. Tinh hoàn, buồng trứng thuộc hệ sinh dục.',
     },
     {
       type: 'choice',
       prompt:
         'Hệ cơ quan nào có chức năng vận chuyển chất dinh dưỡng, oxygen và hormone đến các tế bào?',
-      options: ['Hệ tiêu hóa', 'Hệ tuần hoàn', 'Hệ hô hấp', 'Hệ nội tiết'],
+      options: ['Hệ tiêu hoá', 'Hệ tuần hoàn', 'Hệ hô hấp', 'Hệ nội tiết'],
       answer: 1,
       hints: ['Các chất được chở đi khắp cơ thể nhờ dòng máu.'],
       solution:
@@ -184,7 +184,7 @@ export default {
     },
     {
       type: 'choice',
-      prompt: 'Hệ nội tiết điều hòa hoạt động của các cơ quan bằng cách nào?',
+      prompt: 'Hệ nội tiết điều hoà hoạt động của các cơ quan bằng cách nào?',
       options: [
         'Truyền xung thần kinh theo dây thần kinh',
         'Tiết hormone vào máu',
@@ -192,9 +192,9 @@ export default {
         'Lọc chất thải khỏi máu',
       ],
       answer: 1,
-      hints: ['Tuyến yên, tuyến giáp, tuyến tụy tiết ra chất gì?'],
+      hints: ['Tuyến yên, tuyến giáp, tuyến tuỵ tiết ra chất gì?'],
       solution:
-        'Các tuyến nội tiết tiết hormone; hormone theo máu đến các cơ quan và điều hòa hoạt động của chúng.',
+        'Các tuyến nội tiết tiết hormone; hormone theo máu đến các cơ quan và điều hoà hoạt động của chúng.',
     },
     {
       type: 'multi',
@@ -216,11 +216,11 @@ export default {
     {
       type: 'choice',
       prompt: 'Khi em chạy, hệ nào điều khiển sự phối hợp tăng hoạt động của tim, phổi và cơ?',
-      options: ['Hệ tiêu hóa', 'Hệ bài tiết', 'Hệ thần kinh', 'Hệ sinh dục'],
+      options: ['Hệ tiêu hoá', 'Hệ bài tiết', 'Hệ thần kinh', 'Hệ sinh dục'],
       answer: 2,
       hints: ['Hệ này thu nhận kích thích và điều khiển hoạt động các cơ quan.'],
       solution:
-        'Hệ thần kinh điều khiển và điều hòa hoạt động của các hệ cơ quan, giúp chúng phối hợp nhịp nhàng.',
+        'Hệ thần kinh điều khiển và điều hoà hoạt động của các hệ cơ quan, giúp chúng phối hợp nhịp nhàng.',
     },
     {
       type: 'order',
@@ -233,7 +233,7 @@ export default {
   ],
   takeaways: [
     'Cơ thể người gồm đầu, cổ, thân, hai tay và hai chân; ngoài cùng là da, dưới da là mỡ, cơ và xương.',
-    'Cơ thể có các hệ: vận động, tuần hoàn, hô hấp, tiêu hóa, bài tiết, thần kinh và giác quan, nội tiết, sinh dục; mỗi hệ gồm nhiều cơ quan cùng thực hiện một chức năng.',
-    'Các hệ cơ quan phối hợp chặt chẽ với nhau, tạo thành một thể thống nhất, dưới sự điều khiển của hệ thần kinh và sự điều hòa của hệ nội tiết.',
+    'Cơ thể có các hệ: vận động, tuần hoàn, hô hấp, tiêu hoá, bài tiết, thần kinh và giác quan, nội tiết, sinh dục; mỗi hệ gồm nhiều cơ quan cùng thực hiện một chức năng.',
+    'Các hệ cơ quan phối hợp chặt chẽ với nhau, tạo thành một thể thống nhất, dưới sự điều khiển của hệ thần kinh và sự điều hoà của hệ nội tiết.',
   ],
 };

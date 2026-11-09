@@ -251,7 +251,7 @@ export const SKELETON = {
       id: 'cot-song',
       name: 'Cột sống',
       accept: ['xương sống'],
-      info: 'Gồm nhiều đốt sống khớp bán động với nhau, nâng đỡ cơ thể và bảo vệ tủy sống.',
+      info: 'Gồm nhiều đốt sống khớp bán động với nhau, nâng đỡ cơ thể và bảo vệ tuỷ sống.',
       x: 150,
       y: 214,
     },

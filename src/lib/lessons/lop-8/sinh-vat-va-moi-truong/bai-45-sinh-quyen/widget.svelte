@@ -151,7 +151,7 @@
     {/each}
   </div>
   <p class="text-xs text-slate-600">
-    Biểu đồ đơn giản hóa: ranh giới giữa các khu sinh học trong thực tế không rõ nét như vậy và còn
+    Biểu đồ đơn giản hoá: ranh giới giữa các khu sinh học trong thực tế không rõ nét như vậy và còn
     phụ thuộc vào đất, địa hình, sự phân bố mưa trong năm.
   </p>
 </div>

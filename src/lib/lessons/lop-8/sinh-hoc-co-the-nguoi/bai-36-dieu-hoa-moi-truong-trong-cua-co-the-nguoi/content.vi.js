@@ -1,7 +1,7 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Môi trường trong của cơ thể gồm máu, nước mô và bạch huyết; cân bằng môi trường trong là sự duy trì ổn định các điều kiện lí, hóa của môi trường trong; vai trò của cân bằng môi trường trong; đọc kết quả xét nghiệm glucose và uric acid trong máu.',
+    'Môi trường trong của cơ thể gồm máu, nước mô và bạch huyết; cân bằng môi trường trong là sự duy trì ổn định các điều kiện lí, hoá của môi trường trong; vai trò của cân bằng môi trường trong; đọc kết quả xét nghiệm glucose và uric acid trong máu.',
   intro:
     'Dù em vừa ăn một bữa thật no hay đã nhịn đói cả buổi sáng, dù trời nắng 38 °C hay rét 10 °C, lượng đường trong máu và nhiệt độ cơ thể em vẫn chỉ dao động trong một khoảng rất hẹp. Cơ thể giữ các chỉ số đó ổn định bằng cách nào, và chuyện gì xảy ra khi sự ổn định ấy bị phá vỡ?',
   objectives: [
@@ -24,7 +24,7 @@ export default {
           items: [
             'Máu chảy trong hệ mạch; một phần huyết tương (cùng bạch cầu) thấm qua thành mao mạch ra khe giữa các tế bào tạo thành nước mô.',
             'Nước mô bao quanh tế bào: máu mang O₂ và chất dinh dưỡng đến tế bào qua nước mô; CO₂ và chất thải của tế bào đi vào nước mô rồi vào máu.',
-            'Một phần nước mô thấm vào mạch bạch huyết tạo thành bạch huyết; bạch huyết theo mạch bạch huyết đổ về tĩnh mạch, hòa vào máu.',
+            'Một phần nước mô thấm vào mạch bạch huyết tạo thành bạch huyết; bạch huyết theo mạch bạch huyết đổ về tĩnh mạch, hoà vào máu.',
           ],
         },
       ],
@@ -36,7 +36,7 @@ export default {
           type: 'callout',
           tone: 'definition',
           title: 'Cân bằng môi trường trong',
-          text: 'Cân bằng môi trường trong (cân bằng nội môi) là sự duy trì ổn định các điều kiện lí, hóa của môi trường trong cơ thể như nhiệt độ, độ pH, nồng độ glucose, nồng độ các ion, áp suất thẩm thấu…',
+          text: 'Cân bằng môi trường trong (cân bằng nội môi) là sự duy trì ổn định các điều kiện lí, hoá của môi trường trong cơ thể như nhiệt độ, độ pH, nồng độ glucose, nồng độ các ion, áp suất thẩm thấu…',
         },
         {
           type: 'p',
@@ -55,7 +55,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Nhiều cơ quan cùng tham gia giữ cân bằng: thận thải nước, muối thừa và chất thải; phổi thải CO₂ giúp ổn định pH máu; gan dự trữ và giải phóng glucose; da tỏa nhiệt. Hệ thần kinh và hệ nội tiết điều khiển, phối hợp hoạt động của các cơ quan đó. Khi một chỉ số lệch khỏi ngưỡng, cơ thể phản hồi để đưa chỉ số trở về ngưỡng bình thường.',
+          text: 'Nhiều cơ quan cùng tham gia giữ cân bằng: thận thải nước, muối thừa và chất thải; phổi thải CO₂ giúp ổn định pH máu; gan dự trữ và giải phóng glucose; da toả nhiệt. Hệ thần kinh và hệ nội tiết điều khiển, phối hợp hoạt động của các cơ quan đó. Khi một chỉ số lệch khỏi ngưỡng, cơ thể phản hồi để đưa chỉ số trở về ngưỡng bình thường.',
         },
         {
           type: 'callout',
@@ -93,7 +93,7 @@ export default {
   explore: {
     title: 'Đồng hồ chỉ số sinh lí',
     instruction:
-      'Chọn đường huyết hoặc thân nhiệt, chọn một tình huống (hay tự kéo thanh trượt) để đẩy chỉ số ra khỏi ngưỡng, rồi bấm "Theo dõi cơ thể phản hồi". Sau đó bật "Cơ chế điều hòa bị rối loạn" và làm lại để thấy khi nào mất cân bằng.',
+      'Chọn đường huyết hoặc thân nhiệt, chọn một tình huống (hay tự kéo thanh trượt) để đẩy chỉ số ra khỏi ngưỡng, rồi bấm "Theo dõi cơ thể phản hồi". Sau đó bật "Cơ chế điều hoà bị rối loạn" và làm lại để thấy khi nào mất cân bằng.',
   },
   examples: [
     {
@@ -134,13 +134,13 @@ export default {
       items: ['Bạch huyết', 'Máu trong mao mạch', 'Tĩnh mạch', 'Nước mô'],
       answer: [1, 3, 0, 2],
       hints: ['Huyết tương thấm qua thành mao mạch tạo thành nước mô trước.'],
-      solution: 'Máu trong mao mạch → nước mô → bạch huyết → đổ về tĩnh mạch, hòa vào máu.',
+      solution: 'Máu trong mao mạch → nước mô → bạch huyết → đổ về tĩnh mạch, hoà vào máu.',
     },
     {
       type: 'choice',
       prompt: 'Cân bằng môi trường trong là gì?',
       options: [
-        'Sự duy trì ổn định các điều kiện lí, hóa của môi trường trong cơ thể',
+        'Sự duy trì ổn định các điều kiện lí, hoá của môi trường trong cơ thể',
         'Lượng máu luôn bằng lượng nước mô',
         'Nhiệt độ cơ thể luôn bằng nhiệt độ môi trường',
         'Cơ thể không trao đổi chất với môi trường',
@@ -148,7 +148,7 @@ export default {
       answer: 0,
       hints: ['Hãy nghĩ đến các chỉ số như nhiệt độ, pH, nồng độ glucose.'],
       solution:
-        'Cân bằng môi trường trong là sự duy trì ổn định các điều kiện lí, hóa (nhiệt độ, pH, nồng độ các chất…) của môi trường trong.',
+        'Cân bằng môi trường trong là sự duy trì ổn định các điều kiện lí, hoá (nhiệt độ, pH, nồng độ các chất…) của môi trường trong.',
     },
     {
       type: 'number',
@@ -196,8 +196,8 @@ export default {
       type: 'choice',
       prompt: 'Khi đường huyết tăng cao sau bữa ăn, cơ thể phản hồi như thế nào?',
       options: [
-        'Tuyến tụy tiết insulin, gan và cơ chuyển glucose thành glycogen dự trữ',
-        'Tuyến tụy tiết glucagon, gan phân giải glycogen thành glucose',
+        'Tuyến tuỵ tiết insulin, gan và cơ chuyển glucose thành glycogen dự trữ',
+        'Tuyến tuỵ tiết glucagon, gan phân giải glycogen thành glucose',
         'Tim đập chậm lại',
         'Cơ thể run lên để sinh nhiệt',
       ],
@@ -213,18 +213,18 @@ export default {
         'Uống đủ nước mỗi ngày',
         'Ăn uống điều độ, hạn chế đồ ngọt và đồ ăn mặn',
         'Thường xuyên uống rượu bia',
-        'Khám sức khỏe, xét nghiệm máu định kì',
+        'Khám sức khoẻ, xét nghiệm máu định kì',
         'Ăn thật nhiều nội tạng động vật',
       ],
       answers: [0, 1, 3],
       hints: ['Rượu bia và nội tạng làm tăng uric acid trong máu.'],
       solution:
-        'Uống đủ nước, ăn uống điều độ và khám sức khỏe định kì giúp giữ các chỉ số ổn định. Rượu bia, nhiều nội tạng làm tăng uric acid, gây mất cân bằng.',
+        'Uống đủ nước, ăn uống điều độ và khám sức khoẻ định kì giúp giữ các chỉ số ổn định. Rượu bia, nhiều nội tạng làm tăng uric acid, gây mất cân bằng.',
     },
   ],
   takeaways: [
     'Môi trường trong gồm máu, nước mô và bạch huyết; tế bào trao đổi chất với môi trường ngoài thông qua môi trường trong.',
-    'Cân bằng môi trường trong là sự duy trì ổn định các điều kiện lí, hóa (nhiệt độ, pH, nồng độ glucose, ion…) của môi trường trong; nhờ đó tế bào và cơ thể hoạt động bình thường.',
+    'Cân bằng môi trường trong là sự duy trì ổn định các điều kiện lí, hoá (nhiệt độ, pH, nồng độ glucose, ion…) của môi trường trong; nhờ đó tế bào và cơ thể hoạt động bình thường.',
     'Khi chỉ số lệch khỏi ngưỡng, cơ thể phản hồi để đưa về ngưỡng; nếu mất cân bằng kéo dài sẽ gây bệnh như tiểu đường, gout.',
     'Đọc kết quả xét nghiệm: so sánh giá trị đo được với giá trị tham chiếu để biết thấp hơn, trong hay cao hơn ngưỡng.',
   ],

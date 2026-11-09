@@ -134,7 +134,7 @@
       onclick={() => {
         tried = [];
         mixed = false;
-      }}>Xóa bảng</button
+      }}>Xoá bảng</button
     >
   </div>
 

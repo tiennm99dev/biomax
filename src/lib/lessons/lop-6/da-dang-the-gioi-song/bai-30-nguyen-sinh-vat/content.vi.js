@@ -59,7 +59,7 @@ export default {
       blocks: [
         {
           type: 'p',
-          text: 'Trong tự nhiên, tảo và các nguyên sinh vật có lục lạp quang hợp, cung cấp khí oxygen cho các sinh vật sống dưới nước; nguyên sinh vật là nguồn thức ăn của nhiều động vật nhỏ như tôm, cá con, ấu trùng. Một số nguyên sinh vật sống cộng sinh, ví dụ trùng roi sống trong ruột mối giúp mối tiêu hóa được gỗ.',
+          text: 'Trong tự nhiên, tảo và các nguyên sinh vật có lục lạp quang hợp, cung cấp khí oxygen cho các sinh vật sống dưới nước; nguyên sinh vật là nguồn thức ăn của nhiều động vật nhỏ như tôm, cá con, ấu trùng. Một số nguyên sinh vật sống cộng sinh, ví dụ trùng roi sống trong ruột mối giúp mối tiêu hoá được gỗ.',
         },
         {
           type: 'list',
@@ -71,7 +71,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Tác hại: một số nguyên sinh vật kí sinh gây bệnh cho người và động vật như trùng sốt rét, trùng kiết lị. Khi tảo phát triển quá nhiều (hiện tượng "tảo nở hoa", "thủy triều đỏ"), nước thiếu oxygen và nhiễm độc, làm chết cá và các sinh vật khác.',
+          text: 'Tác hại: một số nguyên sinh vật kí sinh gây bệnh cho người và động vật như trùng sốt rét, trùng kiết lị. Khi tảo phát triển quá nhiều (hiện tượng "tảo nở hoa", "thuỷ triều đỏ"), nước thiếu oxygen và nhiễm độc, làm chết cá và các sinh vật khác.',
         },
       ],
     },
@@ -87,7 +87,7 @@ export default {
             [
               'Con đường lây',
               'Qua đường máu: muỗi Anopheles hút máu người bệnh rồi đốt người lành',
-              'Qua đường tiêu hóa: ăn, uống phải bào xác trùng kiết lị',
+              'Qua đường tiêu hoá: ăn, uống phải bào xác trùng kiết lị',
             ],
             [
               'Biểu hiện',
@@ -105,7 +105,7 @@ export default {
           type: 'callout',
           tone: 'note',
           title: 'Vì sao sốt rét làm người bệnh thiếu máu?',
-          text: 'Trùng sốt rét kí sinh và sinh sản trong hồng cầu. Mỗi lần chúng phá vỡ hồng cầu để chui ra là một cơn sốt. Hồng cầu bị phá hủy nhiều nên người bệnh thiếu máu, da xanh xao.',
+          text: 'Trùng sốt rét kí sinh và sinh sản trong hồng cầu. Mỗi lần chúng phá vỡ hồng cầu để chui ra là một cơn sốt. Hồng cầu bị phá huỷ nhiều nên người bệnh thiếu máu, da xanh xao.',
         },
         {
           type: 'p',
@@ -152,7 +152,7 @@ export default {
       problem:
         'Vì sao "ăn chín, uống sôi" phòng được bệnh kiết lị nhưng không phòng được bệnh sốt rét?',
       steps: [
-        'Kiết lị lây qua đường tiêu hóa: bào xác trùng kiết lị theo thức ăn, nước uống vào ruột.',
+        'Kiết lị lây qua đường tiêu hoá: bào xác trùng kiết lị theo thức ăn, nước uống vào ruột.',
         'Đun chín, đun sôi tiêu diệt bào xác, nên cắt được con đường lây của kiết lị.',
         'Sốt rét lây qua đường máu do muỗi đốt, không đi qua thức ăn, nước uống, nên ăn chín uống sôi không ngăn được.',
       ],
@@ -223,7 +223,7 @@ export default {
         'Hạn chế ăn rau sống chưa rửa sạch',
       ],
       answers: [0, 1, 3, 4],
-      hints: ['Kiết lị lây qua đường tiêu hóa.', 'Biện pháp nào chỉ chống muỗi?'],
+      hints: ['Kiết lị lây qua đường tiêu hoá.', 'Biện pháp nào chỉ chống muỗi?'],
       solution:
         'Kiết lị lây qua ăn uống, nên phòng bằng ăn chín uống sôi, rửa tay, đậy kín thức ăn, diệt ruồi nhặng, không ăn rau sống bẩn. Ngủ màn chống muỗi, dùng để phòng sốt rét.',
     },
@@ -247,14 +247,14 @@ export default {
       options: [
         'Tảo cung cấp oxygen cho sinh vật dưới nước',
         'Là thức ăn của tôm, cá con và nhiều động vật nhỏ',
-        'Gây hiện tượng thủy triều đỏ làm chết cá',
+        'Gây hiện tượng thuỷ triều đỏ làm chết cá',
         'Rau câu dùng để làm thạch',
         'Gây bệnh sốt rét',
       ],
       answers: [0, 1, 3],
       hints: ['Hai ý là tác hại.'],
       solution:
-        'Có ích: tảo quang hợp cung cấp oxygen, nguyên sinh vật là thức ăn của động vật nhỏ, rau câu làm thạch. Thủy triều đỏ và bệnh sốt rét là tác hại.',
+        'Có ích: tảo quang hợp cung cấp oxygen, nguyên sinh vật là thức ăn của động vật nhỏ, rau câu làm thạch. Thuỷ triều đỏ và bệnh sốt rét là tác hại.',
     },
     {
       type: 'text',

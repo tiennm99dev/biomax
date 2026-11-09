@@ -77,7 +77,7 @@
     chosen = [...chosen, traitId];
     const names = (/** @type {string[]} */ ids) => ids.map((id) => nameOf(set, id)).join(', ');
     const after = buildKey(set, chosen);
-    buildMessage = `Đã chia: "${t.yes}" gồm ${names(s.yes)}; "${t.no}" gồm ${names(s.no)}. ${after.done ? `Hoàn thành khóa với ${after.steps.length} cặp đặc điểm cho ${set.organisms.length} sinh vật: mỗi nhóm chỉ còn một sinh vật.` : `Tiếp tục chia nhóm: ${names(after.open ?? [])}.`}`;
+    buildMessage = `Đã chia: "${t.yes}" gồm ${names(s.yes)}; "${t.no}" gồm ${names(s.no)}. ${after.done ? `Hoàn thành khoá với ${after.steps.length} cặp đặc điểm cho ${set.organisms.length} sinh vật: mỗi nhóm chỉ còn một sinh vật.` : `Tiếp tục chia nhóm: ${names(after.open ?? [])}.`}`;
   }
 
   function undo() {
@@ -108,8 +108,8 @@
     <SegmentedControl
       label="Chế độ"
       options={[
-        { value: 'use', label: 'Dùng khóa' },
-        { value: 'build', label: 'Tự dựng khóa' },
+        { value: 'use', label: 'Dùng khoá' },
+        { value: 'build', label: 'Tự dựng khoá' },
       ]}
       bind:value={mode}
     />
@@ -131,7 +131,7 @@
       </ul>
     </div>
 
-    <ol class="space-y-2" aria-label="Khóa lưỡng phân">
+    <ol class="space-y-2" aria-label="Khoá lưỡng phân">
       {#each table as r (r.n)}
         {@const active = !found && r.n === row}
         <li
@@ -191,7 +191,7 @@
   {:else}
     <div>
       <p class="mb-1 text-sm font-semibold text-slate-700">
-        {built.done ? 'Khóa đã hoàn thành' : 'Nhóm đang chia:'}
+        {built.done ? 'Khoá đã hoàn thành' : 'Nhóm đang chia:'}
       </p>
       {#if built.open}
         <ul class="flex flex-wrap gap-2">
@@ -221,7 +221,7 @@
     {#if built.steps.length}
       <ol
         class="space-y-1 rounded-xl border border-slate-200 bg-white p-3 text-sm"
-        aria-label="Khóa em đang dựng"
+        aria-label="Khoá em đang dựng"
       >
         {#each built.steps as s (s.n)}
           <li>
@@ -242,7 +242,7 @@
         disabled={!chosen.length}
         onclick={() => {
           chosen = [];
-          buildMessage = 'Đã xóa khóa. Chọn cặp đặc điểm đầu tiên.';
+          buildMessage = 'Đã xoá khoá. Chọn cặp đặc điểm đầu tiên.';
         }}>Dựng lại</button
       >
     </div>

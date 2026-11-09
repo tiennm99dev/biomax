@@ -124,7 +124,7 @@ export const SHAPES = [
     name: 'Dạng khối',
     parts:
       'Vỏ protein ghép thành khối nhiều mặt (20 mặt tam giác) bao bọc lõi vật chất di truyền bên trong.',
-    examples: 'Virus bại liệt, virus adeno; virus thủy đậu có thêm vỏ ngoài.',
+    examples: 'Virus bại liệt, virus adeno; virus thuỷ đậu có thêm vỏ ngoài.',
   },
   {
     id: 'hon-hop',

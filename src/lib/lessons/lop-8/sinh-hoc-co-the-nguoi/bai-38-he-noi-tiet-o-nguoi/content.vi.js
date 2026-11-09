@@ -1,9 +1,9 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Tuyến nội tiết và hormone; vị trí, hormone và vai trò của các tuyến nội tiết chính ở người (tuyến yên, tuyến tùng, tuyến giáp, tuyến cận giáp, tuyến ức, tuyến tụy, tuyến trên thận, tuyến sinh dục); một số bệnh nội tiết như tiểu đường, bướu cổ và cách phòng tránh.',
+    'Tuyến nội tiết và hormone; vị trí, hormone và vai trò của các tuyến nội tiết chính ở người (tuyến yên, tuyến tùng, tuyến giáp, tuyến cận giáp, tuyến ức, tuyến tuỵ, tuyến trên thận, tuyến sinh dục); một số bệnh nội tiết như tiểu đường, bướu cổ và cách phòng tránh.',
   intro:
-    'Vì sao khi sợ hãi, tim em đập thình thịch và tay chân run lên? Vì sao ở tuổi dậy thì, cơ thể bạn nam và bạn nữ thay đổi rất nhanh? Đằng sau những thay đổi ấy là những "sứ giả hóa học" nhỏ bé gọi là hormone, do các tuyến nội tiết tiết ra.',
+    'Vì sao khi sợ hãi, tim em đập thình thịch và tay chân run lên? Vì sao ở tuổi dậy thì, cơ thể bạn nam và bạn nữ thay đổi rất nhanh? Đằng sau những thay đổi ấy là những "sứ giả hoá học" nhỏ bé gọi là hormone, do các tuyến nội tiết tiết ra.',
   objectives: [
     'Phân biệt được tuyến nội tiết và tuyến ngoại tiết; nêu được hormone là gì.',
     'Kể tên được các tuyến nội tiết chính, nêu được vị trí, hormone và vai trò của chúng.',
@@ -17,15 +17,15 @@ export default {
           type: 'callout',
           tone: 'definition',
           title: 'Tuyến nội tiết, tuyến ngoại tiết',
-          text: 'Tuyến nội tiết tiết hormone ngấm thẳng vào máu, theo máu đến các cơ quan (không có ống dẫn). Tuyến ngoại tiết tiết chất theo ống dẫn ra ngoài hoặc vào một khoang của cơ thể (tuyến nước bọt, tuyến mồ hôi, tuyến lệ…). Tuyến tụy và tuyến sinh dục vừa có chức năng nội tiết vừa có chức năng ngoại tiết.',
+          text: 'Tuyến nội tiết tiết hormone ngấm thẳng vào máu, theo máu đến các cơ quan (không có ống dẫn). Tuyến ngoại tiết tiết chất theo ống dẫn ra ngoài hoặc vào một khoang của cơ thể (tuyến nước bọt, tuyến mồ hôi, tuyến lệ…). Tuyến tuỵ và tuyến sinh dục vừa có chức năng nội tiết vừa có chức năng ngoại tiết.',
         },
         {
           type: 'list',
           items: [
-            'Hormone là chất hóa học do tuyến nội tiết tiết ra, theo máu đến tác động lên cơ quan đích (cơ quan chịu tác động của hormone).',
+            'Hormone là chất hoá học do tuyến nội tiết tiết ra, theo máu đến tác động lên cơ quan đích (cơ quan chịu tác động của hormone).',
             'Hormone có hoạt tính sinh học rất cao: chỉ một lượng rất nhỏ đã gây tác dụng rõ rệt.',
             'Mỗi hormone chỉ tác động lên một hoặc một số cơ quan đích xác định.',
-            'Hệ nội tiết cùng với hệ thần kinh điều hòa các quá trình sinh lí, giữ cân bằng môi trường trong cơ thể.',
+            'Hệ nội tiết cùng với hệ thần kinh điều hoà các quá trình sinh lí, giữ cân bằng môi trường trong cơ thể.',
           ],
         },
         { type: 'widget', name: 'phan-loai-tuyen' },
@@ -44,7 +44,7 @@ export default {
               'Nền sọ',
               'GH kích thích sinh trưởng; các hormone điều khiển tuyến giáp, tuyến trên thận, tuyến sinh dục',
             ],
-            ['Tuyến tùng', 'Trong não', 'Melatonin điều hòa nhịp thức – ngủ'],
+            ['Tuyến tùng', 'Trong não', 'Melatonin điều hoà nhịp thức – ngủ'],
             [
               'Tuyến giáp',
               'Cổ, trước khí quản',
@@ -56,7 +56,7 @@ export default {
               'Trong lồng ngực',
               'Hormone giúp phát triển tế bào lympho T (miễn dịch); hoạt động mạnh ở trẻ em',
             ],
-            ['Tuyến tụy', 'Sau dạ dày', 'Insulin giảm đường huyết; glucagon tăng đường huyết'],
+            ['Tuyến tuỵ', 'Sau dạ dày', 'Insulin giảm đường huyết; glucagon tăng đường huyết'],
             [
               'Tuyến trên thận',
               'Trên hai quả thận',
@@ -72,8 +72,8 @@ export default {
         {
           type: 'callout',
           tone: 'theorem',
-          title: 'Điều hòa đường huyết',
-          text: 'Sau bữa ăn, đường huyết tăng: tuyến tụy tiết insulin, giúp tế bào nhận glucose và gan, cơ chuyển glucose thành glycogen dự trữ, đường huyết giảm về mức bình thường. Lúc đói, đường huyết giảm: tuyến tụy tiết glucagon, gan phân giải glycogen thành glucose đưa vào máu, đường huyết tăng lên. Hai hormone tác dụng ngược chiều giữ đường huyết ổn định.',
+          title: 'Điều hoà đường huyết',
+          text: 'Sau bữa ăn, đường huyết tăng: tuyến tuỵ tiết insulin, giúp tế bào nhận glucose và gan, cơ chuyển glucose thành glycogen dự trữ, đường huyết giảm về mức bình thường. Lúc đói, đường huyết giảm: tuyến tuỵ tiết glucagon, gan phân giải glycogen thành glucose đưa vào máu, đường huyết tăng lên. Hai hormone tác dụng ngược chiều giữ đường huyết ổn định.',
         },
       ],
     },
@@ -87,7 +87,7 @@ export default {
           rows: [
             [
               'Tiểu đường (đái tháo đường)',
-              'Tuyến tụy tiết không đủ insulin hoặc tế bào giảm đáp ứng với insulin, làm glucose trong máu cao kéo dài',
+              'Tuyến tuỵ tiết không đủ insulin hoặc tế bào giảm đáp ứng với insulin, làm glucose trong máu cao kéo dài',
               'Khát nhiều, tiểu nhiều, ăn nhiều nhưng sút cân, mệt mỏi; về lâu dài gây tổn thương mắt, thận, tim mạch, thần kinh',
               'Ăn uống hợp lí, hạn chế đồ ngọt, tinh bột tinh chế, đồ uống có đường; tập thể dục, giữ cân nặng hợp lí; kiểm tra đường huyết định kì',
             ],
@@ -127,7 +127,7 @@ export default {
     },
     {
       problem:
-        'Một người bị bệnh tiểu đường do tuyến tụy không tiết đủ insulin. Hãy giải thích vì sao đường huyết của người này luôn cao và vì sao trong nước tiểu có thể có glucose.',
+        'Một người bị bệnh tiểu đường do tuyến tuỵ không tiết đủ insulin. Hãy giải thích vì sao đường huyết của người này luôn cao và vì sao trong nước tiểu có thể có glucose.',
       steps: [
         'Insulin giúp tế bào nhận glucose và giúp gan, cơ chuyển glucose thành glycogen dự trữ, làm giảm đường huyết.',
         'Thiếu insulin, glucose không được đưa vào tế bào và dự trữ, nên tồn lại trong máu: đường huyết luôn cao.',
@@ -155,7 +155,7 @@ export default {
     {
       type: 'match',
       prompt: 'Nối mỗi tuyến nội tiết với hormone mà nó tiết ra.',
-      left: ['Tuyến tụy', 'Tuyến giáp', 'Tuyến trên thận', 'Tuyến tùng'],
+      left: ['Tuyến tuỵ', 'Tuyến giáp', 'Tuyến trên thận', 'Tuyến tùng'],
       right: ['Melatonin', 'Adrenaline', 'Insulin', 'Thyroxine'],
       pairs: [
         [0, 2],
@@ -165,7 +165,7 @@ export default {
       ],
       hints: ['Thyroxine chứa iodine; adrenaline tiết ra khi căng thẳng, sợ hãi.'],
       solution:
-        'Tuyến tụy: insulin; tuyến giáp: thyroxine; tuyến trên thận: adrenaline; tuyến tùng: melatonin.',
+        'Tuyến tuỵ: insulin; tuyến giáp: thyroxine; tuyến trên thận: adrenaline; tuyến tùng: melatonin.',
     },
     {
       type: 'choice',
@@ -187,7 +187,7 @@ export default {
     {
       type: 'choice',
       prompt: 'Bệnh bướu cổ do thiếu iodine liên quan đến tuyến nội tiết nào?',
-      options: ['Tuyến yên', 'Tuyến tụy', 'Tuyến giáp', 'Tuyến trên thận'],
+      options: ['Tuyến yên', 'Tuyến tuỵ', 'Tuyến giáp', 'Tuyến trên thận'],
       answer: 2,
       hints: ['Tuyến này nằm ở cổ và dùng iodine để tạo hormone.'],
       solution: 'Thiếu iodine, tuyến giáp không tạo đủ thyroxine và phình to, gây bướu cổ.',
@@ -210,7 +210,7 @@ export default {
     {
       type: 'match',
       prompt: 'Nối mỗi tuyến với vị trí của nó trong cơ thể.',
-      left: ['Tuyến yên', 'Tuyến giáp', 'Tuyến trên thận', 'Tuyến tụy'],
+      left: ['Tuyến yên', 'Tuyến giáp', 'Tuyến trên thận', 'Tuyến tuỵ'],
       right: ['Ở cổ, trước khí quản', 'Sau dạ dày', 'Ở nền sọ', 'Trên hai quả thận'],
       pairs: [
         [0, 2],
@@ -220,7 +220,7 @@ export default {
       ],
       hints: ['Tên "trên thận" đã gợi ý vị trí của tuyến.'],
       solution:
-        'Tuyến yên ở nền sọ; tuyến giáp ở cổ; tuyến trên thận trên hai quả thận; tuyến tụy sau dạ dày.',
+        'Tuyến yên ở nền sọ; tuyến giáp ở cổ; tuyến trên thận trên hai quả thận; tuyến tuỵ sau dạ dày.',
     },
     {
       type: 'choice',
@@ -235,8 +235,8 @@ export default {
   ],
   takeaways: [
     'Tuyến nội tiết tiết hormone thẳng vào máu; hormone có hoạt tính cao, tác động lên cơ quan đích xác định.',
-    'Các tuyến nội tiết chính: tuyến yên, tuyến tùng, tuyến giáp, tuyến cận giáp, tuyến ức, tuyến tụy, tuyến trên thận, tuyến sinh dục; tuyến tụy và tuyến sinh dục vừa nội tiết vừa ngoại tiết.',
-    'Insulin (giảm) và glucagon (tăng) của tuyến tụy giữ đường huyết ổn định.',
+    'Các tuyến nội tiết chính: tuyến yên, tuyến tùng, tuyến giáp, tuyến cận giáp, tuyến ức, tuyến tuỵ, tuyến trên thận, tuyến sinh dục; tuyến tuỵ và tuyến sinh dục vừa nội tiết vừa ngoại tiết.',
+    'Insulin (giảm) và glucagon (tăng) của tuyến tuỵ giữ đường huyết ổn định.',
     'Tiểu đường do thiếu insulin hoặc tế bào kém đáp ứng insulin; bướu cổ do thiếu iodine. Phòng bệnh: ăn uống hợp lí, dùng muối iodine, tập thể dục.',
   ],
 };

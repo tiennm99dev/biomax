@@ -111,11 +111,11 @@
         },
         {
           "no": 26,
-          "title": "Bài 26. Khóa lưỡng phân",
+          "title": "Bài 26. Khoá lưỡng phân",
           "slug": "bai-26-khoa-luong-phan",
           "kind": "theory",
-          "keyIdeas": ["Phân chia theo cặp đặc điểm đối lập", "Xây dựng khóa lưỡng phân"],
-          "interactiveIdea": "Trình tạo khóa lưỡng phân: trả lời câu hỏi có/không để xác định sinh vật, và tự dựng khóa cho nhóm mới."
+          "keyIdeas": ["Phân chia theo cặp đặc điểm đối lập", "Xây dựng khoá lưỡng phân"],
+          "interactiveIdea": "Trình tạo khoá lưỡng phân: trả lời câu hỏi có/không để xác định sinh vật, và tự dựng khoá cho nhóm mới."
         },
         {
           "no": 27,
@@ -234,8 +234,8 @@
           "title": "Bài 39. Tìm hiểu sinh vật ngoài thiên nhiên",
           "slug": "bai-39-tim-hieu-sinh-vat-ngoai-thien-nhien",
           "kind": "activity",
-          "keyIdeas": ["Kĩ năng quan sát thực địa", "Dùng khóa lưỡng phân nhận diện"],
-          "interactiveIdea": "Bản đồ dã ngoại ảo: đi qua các điểm, quan sát sinh vật và dùng khóa lưỡng phân để định danh."
+          "keyIdeas": ["Kĩ năng quan sát thực địa", "Dùng khoá lưỡng phân nhận diện"],
+          "interactiveIdea": "Bản đồ dã ngoại ảo: đi qua các điểm, quan sát sinh vật và dùng khoá lưỡng phân để định danh."
         }
       ]
     }

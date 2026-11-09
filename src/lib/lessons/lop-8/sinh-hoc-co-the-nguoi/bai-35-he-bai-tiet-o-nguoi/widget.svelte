@@ -231,7 +231,7 @@
     </table>
   {/if}
   <p class="text-xs text-slate-600">
-    Sơ đồ vẽ sơ lược, ở người khỏe mạnh. Chấm tím: chất ở trong máu; chấm xanh: chất ở trong nước
+    Sơ đồ vẽ sơ lược, ở người khoẻ mạnh. Chấm tím: chất ở trong máu; chấm xanh: chất ở trong nước
     tiểu.
   </p>
 </div>

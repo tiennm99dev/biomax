@@ -20,7 +20,7 @@ export const ERAS = [
     from: 4600,
     to: 4000,
     color: '#7f1d1d',
-    life: 'Chưa có sự sống. Khí quyển nguyên thủy có hơi nước, CO₂, NH₃, CH₄, ... nhưng hầu như chưa có O₂; tiến hóa hóa học bắt đầu tạo ra các chất hữu cơ.',
+    life: 'Chưa có sự sống. Khí quyển nguyên thuỷ có hơi nước, CO₂, NH₃, CH₄, ... nhưng hầu như chưa có O₂; tiến hoá hoá học bắt đầu tạo ra các chất hữu cơ.',
   },
   {
     id: 'thai-co',
@@ -36,7 +36,7 @@ export const ERAS = [
     from: 2500,
     to: 540,
     color: '#ca8a04',
-    life: 'Oxygen tích lũy trong khí quyển; xuất hiện sinh vật nhân thực đơn bào, tảo đa bào, động vật không xương sống đơn giản ở biển.',
+    life: 'Oxygen tích luỹ trong khí quyển; xuất hiện sinh vật nhân thực đơn bào, tảo đa bào, động vật không xương sống đơn giản ở biển.',
   },
   {
     id: 'co-sinh',
@@ -76,7 +76,7 @@ export const EVENTS = [
     t: 3500,
     short: 'Nhân sơ',
     group: 'sinh vật nhân sơ',
-    text: 'Hóa thạch cổ nhất của sinh vật nhân sơ (vi khuẩn).',
+    text: 'Hoá thạch cổ nhất của sinh vật nhân sơ (vi khuẩn).',
   },
   {
     t: 2400,
@@ -122,7 +122,7 @@ export const EVENTS = [
   },
   { t: 230, short: 'Khủng long', group: 'khủng long', text: 'Khủng long xuất hiện.' },
   { t: 200, short: 'Thú', group: 'thú', text: 'Thú đầu tiên (thú nhỏ) xuất hiện.' },
-  { t: 150, short: 'Chim', group: 'chim', text: 'Chim xuất hiện (hóa thạch chim cổ).' },
+  { t: 150, short: 'Chim', group: 'chim', text: 'Chim xuất hiện (hoá thạch chim cổ).' },
   {
     t: 130,
     short: 'Hạt kín',
@@ -146,7 +146,7 @@ export const EVENTS = [
     t: 1.8,
     short: 'H. erectus',
     group: 'người đứng thẳng',
-    text: 'Người đứng thẳng (Homo erectus) đi thẳng, nhanh nhẹn, sống thành bầy có tổ chức, tỏa ra khỏi châu Phi.',
+    text: 'Người đứng thẳng (Homo erectus) đi thẳng, nhanh nhẹn, sống thành bầy có tổ chức, toả ra khỏi châu Phi.',
   },
   {
     t: 0.4,
@@ -157,7 +157,7 @@ export const EVENTS = [
     t: 0.15,
     short: 'H. sapiens',
     group: 'người tinh khôn',
-    text: 'Người tinh khôn (Homo sapiens) xuất hiện ở châu Phi, rồi tỏa đi khắp các châu lục.',
+    text: 'Người tinh khôn (Homo sapiens) xuất hiện ở châu Phi, rồi toả đi khắp các châu lục.',
   },
 ];
 

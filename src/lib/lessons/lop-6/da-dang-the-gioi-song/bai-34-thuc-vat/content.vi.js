@@ -58,7 +58,7 @@ export default {
         {
           type: 'list',
           items: [
-            'Trong tự nhiên: thực vật cung cấp thức ăn và nơi ở cho nhiều loài động vật; quang hợp thải ra khí oxygen, hấp thụ khí carbon dioxide, góp phần điều hòa khí hậu, làm sạch không khí.',
+            'Trong tự nhiên: thực vật cung cấp thức ăn và nơi ở cho nhiều loài động vật; quang hợp thải ra khí oxygen, hấp thụ khí carbon dioxide, góp phần điều hoà khí hậu, làm sạch không khí.',
             'Rễ và tán cây giữ đất, chống xói mòn, sạt lở; giữ nước, hạn chế lũ lụt, hạn hán.',
             'Đối với con người: cung cấp lương thực, thực phẩm (lúa, ngô, rau, quả), dược liệu (nhân sâm, tam thất, bạc hà), gỗ (lim, thông, xoan), nguyên liệu (bông, mía, cao su), làm cảnh và tạo bóng mát.',
           ],
@@ -67,7 +67,7 @@ export default {
           type: 'callout',
           tone: 'warning',
           title: 'Một số cây có hại',
-          text: 'Một số cây có độc, ăn phải gây ngộ độc như cà độc dược, trúc đào, lá ngón. Một số cây gây nghiện, hại sức khỏe như cây thuốc lá, cây thuốc phiện, cây cần sa: trồng, sử dụng cây thuốc phiện, cần sa là vi phạm pháp luật.',
+          text: 'Một số cây có độc, ăn phải gây ngộ độc như cà độc dược, trúc đào, lá ngón. Một số cây gây nghiện, hại sức khoẻ như cây thuốc lá, cây thuốc phiện, cây cần sa: trồng, sử dụng cây thuốc phiện, cần sa là vi phạm pháp luật.',
         },
         {
           type: 'p',
@@ -201,12 +201,12 @@ export default {
         'Giữ đất, chống xói mòn',
         'Cung cấp thức ăn, nơi ở cho động vật',
         'Gây nghiện cho con người',
-        'Điều hòa khí hậu',
+        'Điều hoà khí hậu',
       ],
       answers: [0, 1, 2, 4],
       hints: ['Một ý là tác hại của một số cây.'],
       solution:
-        'Thực vật cung cấp oxygen, hấp thụ carbon dioxide, giữ đất, điều hòa khí hậu, cung cấp thức ăn và nơi ở cho động vật. Gây nghiện là tác hại của một số cây như thuốc phiện, cần sa.',
+        'Thực vật cung cấp oxygen, hấp thụ carbon dioxide, giữ đất, điều hoà khí hậu, cung cấp thức ăn và nơi ở cho động vật. Gây nghiện là tác hại của một số cây như thuốc phiện, cần sa.',
     },
     {
       type: 'choice',
@@ -215,7 +215,7 @@ export default {
       answer: 1,
       hints: ['Trồng loại cây này là vi phạm pháp luật.'],
       solution:
-        'Cây thuốc phiện gây nghiện, hại sức khỏe; nhân sâm, bạc hà là cây dược liệu, lim cho gỗ.',
+        'Cây thuốc phiện gây nghiện, hại sức khoẻ; nhân sâm, bạc hà là cây dược liệu, lim cho gỗ.',
     },
     {
       type: 'text',
@@ -229,6 +229,6 @@ export default {
     'Thực vật là sinh vật nhân thực, đa bào, có lục lạp, quang hợp được, tế bào có thành cellulose.',
     'Rêu: chưa có mạch dẫn, rễ giả, sinh sản bằng bào tử. Dương xỉ: có mạch dẫn, rễ thật, sinh sản bằng bào tử ở mặt dưới lá.',
     'Hạt trần: có mạch dẫn, có hạt lộ trên nón, chưa có hoa. Hạt kín: có hoa, quả, hạt nằm trong quả; đa dạng nhất.',
-    'Vai trò: cung cấp oxygen, thức ăn, nơi ở; điều hòa khí hậu, chống xói mòn, lũ lụt; lương thực, thực phẩm, dược liệu, gỗ. Một số cây có độc hoặc gây nghiện.',
+    'Vai trò: cung cấp oxygen, thức ăn, nơi ở; điều hoà khí hậu, chống xói mòn, lũ lụt; lương thực, thực phẩm, dược liệu, gỗ. Một số cây có độc hoặc gây nghiện.',
   ],
 };

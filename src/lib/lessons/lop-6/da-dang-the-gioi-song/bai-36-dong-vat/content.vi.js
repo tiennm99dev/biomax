@@ -5,7 +5,7 @@ export default {
   intro:
     'Con sứa trôi lững lờ ngoài biển, con giun đất chui trong vườn, con tôm trong rổ, con chim sẻ trên mái nhà và chú mèo nằm sưởi nắng: thế giới động vật đa dạng đến mức người ta ước tính có hơn một triệu loài đã được đặt tên. Vậy làm sao để sắp xếp chúng? Câu hỏi đầu tiên rất đơn giản: con vật có xương sống không?',
   objectives: [
-    'Phân biệt được hai nhóm động vật không xương sống và có xương sống, lấy được ví dụ minh họa.',
+    'Phân biệt được hai nhóm động vật không xương sống và có xương sống, lấy được ví dụ minh hoạ.',
     'Nhận biết được các nhóm động vật không xương sống (ruột khoang, giun, thân mềm, chân khớp) và có xương sống (cá, lưỡng cư, bò sát, chim, thú) dựa vào đặc điểm bên ngoài.',
     'Nêu được vai trò và tác hại của động vật trong tự nhiên và đối với con người.',
   ],
@@ -35,8 +35,8 @@ export default {
           rows: [
             [
               'Ruột khoang',
-              'Cơ thể đối xứng tỏa tròn, ruột hình túi, có tế bào gai để tự vệ và bắt mồi; sống ở nước',
-              'Thủy tức, sứa, hải quỳ, san hô',
+              'Cơ thể đối xứng toả tròn, ruột hình túi, có tế bào gai để tự vệ và bắt mồi; sống ở nước',
+              'Thuỷ tức, sứa, hải quỳ, san hô',
             ],
             [
               'Giun',
@@ -196,7 +196,7 @@ export default {
       right: [
         'Cơ thể mềm, thường có vỏ đá vôi',
         'Chân phân đốt, bộ xương ngoài bằng chitin',
-        'Đối xứng tỏa tròn, có tế bào gai',
+        'Đối xứng toả tròn, có tế bào gai',
         'Cơ thể dài, đối xứng hai bên',
       ],
       pairs: [
@@ -207,7 +207,7 @@ export default {
       ],
       hints: ['Tên "Chân khớp" gợi ý đặc điểm của các đôi chân.'],
       solution:
-        'Ruột khoang: đối xứng tỏa tròn, có tế bào gai. Giun: cơ thể dài, đối xứng hai bên. Thân mềm: cơ thể mềm, thường có vỏ đá vôi. Chân khớp: chân phân đốt, bộ xương ngoài bằng chitin.',
+        'Ruột khoang: đối xứng toả tròn, có tế bào gai. Giun: cơ thể dài, đối xứng hai bên. Thân mềm: cơ thể mềm, thường có vỏ đá vôi. Chân khớp: chân phân đốt, bộ xương ngoài bằng chitin.',
     },
     {
       type: 'choice',
@@ -273,7 +273,7 @@ export default {
   ],
   takeaways: [
     'Động vật chia thành hai nhóm lớn: không xương sống và có xương sống.',
-    'Không xương sống: Ruột khoang (đối xứng tỏa tròn, tế bào gai), Giun (cơ thể dài, đối xứng hai bên), Thân mềm (cơ thể mềm, vỏ đá vôi), Chân khớp (chân phân đốt, xương ngoài bằng chitin).',
+    'Không xương sống: Ruột khoang (đối xứng toả tròn, tế bào gai), Giun (cơ thể dài, đối xứng hai bên), Thân mềm (cơ thể mềm, vỏ đá vôi), Chân khớp (chân phân đốt, xương ngoài bằng chitin).',
     'Có xương sống: Cá (mang, vây), Lưỡng cư (da trần ẩm), Bò sát (da khô, vảy sừng), Chim (lông vũ, cánh, mỏ sừng), Thú (lông mao, đẻ con, nuôi con bằng sữa).',
     'Động vật cung cấp thực phẩm, nguyên liệu, dược liệu, sức kéo, giúp thụ phấn, phát tán hạt; một số loài gây bệnh, truyền bệnh, phá hoại mùa màng, đồ gỗ.',
   ],

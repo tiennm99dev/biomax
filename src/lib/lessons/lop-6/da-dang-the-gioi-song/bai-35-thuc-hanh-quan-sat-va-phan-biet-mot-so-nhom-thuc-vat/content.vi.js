@@ -133,7 +133,7 @@ export default {
     },
     {
       problem:
-        'Một mẫu cây có rễ thật, lá xẻ thùy; mặt dưới lá có nhiều đốm nâu, không thấy hoa, quả. Mẫu thuộc nhóm nào? Dùng dụng cụ gì để quan sát các đốm nâu?',
+        'Một mẫu cây có rễ thật, lá xẻ thuỳ; mặt dưới lá có nhiều đốm nâu, không thấy hoa, quả. Mẫu thuộc nhóm nào? Dùng dụng cụ gì để quan sát các đốm nâu?',
       steps: [
         'Có rễ thật nên có mạch dẫn: không phải rêu.',
         'Không có hoa, quả; các đốm nâu ở mặt dưới lá là ổ túi bào tử: cây sinh sản bằng bào tử.',

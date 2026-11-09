@@ -84,7 +84,7 @@ export default {
             [
               'Trồng trọt',
               'Tạo quả không hạt',
-              'Ngăn hoa thụ phấn và dùng hormone kích thích bầu nhụy phát triển thành quả (nho, dưa hấu, chanh không hạt)',
+              'Ngăn hoa thụ phấn và dùng hormone kích thích bầu nhuỵ phát triển thành quả (nho, dưa hấu, chanh không hạt)',
             ],
             [
               'Chăn nuôi',
@@ -183,7 +183,7 @@ export default {
       prompt: 'Nối mỗi biện pháp với mục đích của nó.',
       left: [
         'Thụ phấn bổ sung cho hoa',
-        'Ngăn hoa thụ phấn, dùng hormone kích thích bầu nhụy',
+        'Ngăn hoa thụ phấn, dùng hormone kích thích bầu nhuỵ',
         'Lọc, tách tinh trùng trước khi thụ tinh',
         'Thụ tinh trong ống nghiệm rồi cấy phôi',
       ],
