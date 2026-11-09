@@ -3,7 +3,7 @@
   import { formatNumber } from '#lib/core/number-format.js';
   import SegmentedControl from '#lib/core/segmented-control.svelte';
   import { button } from '#lib/core/ui.js';
-  import TraceChart from '../_shared/trace-chart.svelte';
+  import TraceChart from '#lib/domain/trace-chart.svelte';
   import {
     DAY_MAX,
     DOSE_MAX,
