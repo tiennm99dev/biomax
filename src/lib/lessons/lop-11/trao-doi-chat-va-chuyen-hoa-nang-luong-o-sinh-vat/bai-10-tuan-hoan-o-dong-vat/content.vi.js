@@ -138,7 +138,7 @@ export default {
           type: 'callout',
           tone: 'warning',
           title: 'Bệnh tim mạch',
-          text: 'Thiếu máu, cao huyết áp, xơ vữa động mạch… do di truyền, bẩm sinh (hở van, hẹp van) hoặc lối sống (ăn nhiều chất béo gây xơ vữa động mạch). Rượu bia làm tim đập nhanh, tăng huyết áp; cao huyết áp lâu ngày làm suy tim, tổn thương mạch, có thể gây xuất huyết não.',
+          text: 'Cao huyết áp, xơ vữa động mạch, nhồi máu cơ tim, suy tim… do di truyền, bẩm sinh (hở van, hẹp van) hoặc lối sống (ăn nhiều chất béo gây xơ vữa động mạch). Rượu bia làm tim đập nhanh, tăng huyết áp; cao huyết áp lâu ngày làm suy tim, tổn thương mạch, có thể gây xuất huyết não.',
         },
         {
           type: 'list',
@@ -252,7 +252,7 @@ export default {
         'Nhịp tim $75$ lần/phút, mỗi lần tâm thất trái co đẩy đi $70$ mL máu. Tính lưu lượng tim (lít/phút).',
       answer: 5.25,
       tolerance: 0.001,
-      unit: 'L',
+      unit: 'L/phút',
       hints: ['Lưu lượng tim bằng nhịp tim nhân thể tích máu mỗi lần co; đổi mL sang L.'],
       solution: '$75 \\cdot 70 = 5\\,250$ mL $= 5{,}25$ L mỗi phút.',
     },

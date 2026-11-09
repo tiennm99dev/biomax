@@ -93,7 +93,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Ở người, thông khí theo cơ chế áp suất âm: khi hít vào, cơ liên sườn ngoài và cơ hoành co, lồng ngực và phổi dãn, không khí tràn vào; khi thở ra, các cơ này dãn, lồng ngực thu nhỏ, khí bị đẩy ra. Phổi chim không có phế nang mà có các mao quản khí; nhờ túi khí, không khí đi qua phổi theo một chiều cả khi hít vào và thở ra, nên phổi chim không có khí cặn. Mao quản khí và mao mạch máu cũng xếp song song, ngược chiều như ở mang cá.',
+          text: 'Ở người, thông khí theo cơ chế áp suất âm: khi hít vào, cơ liên sườn ngoài và cơ hoành co, lồng ngực và phổi dãn, không khí tràn vào; khi thở ra, các cơ này dãn, lồng ngực thu nhỏ, khí bị đẩy ra. Phổi chim không có phế nang mà có các mao mạch khí; nhờ túi khí, không khí đi qua phổi theo một chiều cả khi hít vào và thở ra, nên phổi chim không có khí cặn. Dòng máu trong mao mạch máu chảy song song và ngược chiều với dòng khí trong mao mạch khí, như ở mang cá.',
         },
       ],
     },

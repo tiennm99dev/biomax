@@ -93,6 +93,12 @@ export function describeHeat(s, hours) {
       text: 'Cốc hở để nhiệt thoát ra ngoài gần hết nên hai nhiệt kế gần như bằng nhau. Cần bình cách nhiệt để giữ nhiệt do hô hấp toả ra.',
     };
   }
+  if (s.control === 'kho') {
+    return {
+      tone: 'warn',
+      text: 'Hạt khô vẫn sống, hô hấp rất yếu nên bình B gần như không ấm lên. Nhưng hai bình khác nhau cả ở lượng nước trong hạt lẫn hạt sống hay chết, nên chưa kết luận chắc được. Đối chứng đúng là hạt nảy mầm đã luộc chín: chỉ khác ở chỗ hạt đã chết.',
+    };
+  }
   if (gap < 1) {
     return {
       tone: 'info',

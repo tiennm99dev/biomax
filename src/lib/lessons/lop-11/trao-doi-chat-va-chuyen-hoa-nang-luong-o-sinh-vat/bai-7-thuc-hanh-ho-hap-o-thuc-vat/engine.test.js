@@ -40,6 +40,9 @@ describe('heat from respiring seeds', () => {
     expect(describeHeat(book, 24).tone).toBe('ok');
     expect(describeHeat({ ...book, control: 'nay-mam' }, 24).tone).toBe('warn');
     expect(describeHeat({ ...book, flask: 'coc' }, 24).tone).toBe('warn');
+    const dry = describeHeat({ ...book, control: 'kho' }, 24);
+    expect(dry.tone).toBe('warn');
+    expect(dry.text).toContain('Hạt khô');
   });
 });
 

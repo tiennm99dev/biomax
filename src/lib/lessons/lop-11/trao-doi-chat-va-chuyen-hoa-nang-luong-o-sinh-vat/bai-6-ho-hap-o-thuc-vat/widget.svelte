@@ -81,7 +81,7 @@
         {#if i < done}
           <div class="mt-1 text-slate-700">
             <LiveRichText
-              text={`Tạo ra: ${s.atp > 0 ? `${formatNumber(s.atp)} ATP; ` : ''}${s.nadh > 0 ? `${s.nadh} NADH; ` : ''}${s.fadh2 > 0 ? `${s.fadh2} FADH₂; ` : ''}${s.nadh < 0 ? `dùng ${-s.nadh} NADH; ` : ''}sản phẩm ${s.product}.`}
+              text={`Tạo ra: ${s.atp > 0 ? `${formatNumber(s.atp)} ATP; ` : ''}${s.nadh > 0 ? `${s.nadh} NADH; ` : ''}${s.fadh2 > 0 ? `${s.fadh2} FADH₂; ` : ''}${s.nadh < 0 ? `dùng ${-s.nadh} NADH; ` : ''}${s.fadh2 < 0 ? `dùng ${-s.fadh2} FADH₂; ` : ''}sản phẩm ${s.product}.`}
             />
           </div>
         {/if}
