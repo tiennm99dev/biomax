@@ -65,5 +65,6 @@ describe('water balance', () => {
     expect(k.reabsorbed).toBeCloseTo(178.5);
     expect(k.percent).toBeCloseTo(99.17, 1);
     expect(kidney('binh-thuong', false).urine).toBeGreaterThan(10);
+    expect(kidney('uong-nhieu', false)).toMatchObject({ pressure: 'tăng', thirst: true });
   });
 });

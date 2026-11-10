@@ -179,7 +179,9 @@ export function kidney(id, adh) {
   const urine = adh ? c.urine : NO_ADH_URINE;
   const level = !adh ? 'không có' : c.pressure > 0 ? 'nhiều' : c.pressure < 0 ? 'ít' : 'vừa';
   return {
-    pressure: c.pressure > 0 ? 'tăng' : c.pressure < 0 ? 'giảm' : 'bình thường',
+    // Without ADH so much water leaves in the urine that the blood's osmotic
+    // pressure rises whatever the situation, which is why the person is thirsty.
+    pressure: !adh || c.pressure > 0 ? 'tăng' : c.pressure < 0 ? 'giảm' : 'bình thường',
     adh: level,
     urine,
     reabsorbed: FILTRATE - urine,

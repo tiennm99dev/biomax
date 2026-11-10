@@ -57,7 +57,7 @@ export default {
           ordered: true,
           items: [
             'Người được đo ngồi trên ghế, tay duỗi trên mặt bàn sao cho cánh tay ngang với vị trí của tim; kéo tay áo lên sát nách.',
-            'Quấn túi khí (vòng bít) vừa đủ chặt quanh bắp tay, mép dưới trên khuỷu tay khoảng $2$ đến $3$ cm.',
+            'Quấn túi khí (vòng bít) vừa đủ chặt quanh bắp tay, phía trên khuỷu tay khoảng $1$ cm.',
             'Bấm nút khởi động; máy tự bơm khí rồi xả khí. Ngồi yên, không nói chuyện trong khi đo.',
             'Đọc trên màn hình huyết áp tối đa (tâm thu), huyết áp tối thiểu (tâm trương) và nhịp tim. Nếu màn hình hiện "Err" thì đo lại.',
           ],
@@ -93,7 +93,7 @@ export default {
           ordered: true,
           items: [
             'Tính tự động của tim: đếm nhịp tim trong $1$ phút. Buộc một sợi chỉ thắt chặt giữa xoang tĩnh mạch và tâm nhĩ, đếm nhịp đập của xoang tĩnh mạch và của tâm thất.',
-            'Tác dụng của dây thần kinh: tìm dây thần kinh pha (chứa sợi giao cảm và đối giao cảm) chạy dọc mạch máu lớn gần chi trước, tách ra, đặt lên điện cực. Đếm nhịp tim lúc bình thường, kích thích khoảng $5$ s, đếm nhịp tim trong và sau khi kích thích.',
+            'Tác dụng của dây thần kinh: tìm dây thần kinh hỗn hợp (gồm cả sợi giao cảm và sợi đối giao cảm) chạy song song với mạch máu lớn, vùng góc hàm và chi trước, tách khỏi mạch máu, đặt lên điện cực. Đếm nhịp tim lúc bình thường, kích thích khoảng $5$ s, đếm nhịp tim trong và sau khi kích thích.',
             'Tác dụng của adrenaline: cắt các mạch máu ra vào tim, giữ lại xoang tĩnh mạch, lấy tim ra (tim rời) đặt vào cốc $100$ mL dung dịch sinh lí, đếm nhịp tim. Thay bằng dung dịch sinh lí có adrenaline, đếm lại.',
           ],
         },
@@ -309,7 +309,7 @@ export default {
     {
       type: 'choice',
       prompt:
-        'Kích thích mạnh dây thần kinh pha (có sợi đối giao cảm) đến tim ếch thì tim thế nào?',
+        'Kích thích mạnh dây thần kinh hỗn hợp (có sợi đối giao cảm) đến tim ếch thì tim thế nào?',
       options: [
         'Tim đập chậm lại, có thể ngừng ở thì dãn, thôi kích thích thì đập lại',
         'Tim đập nhanh gấp đôi',
