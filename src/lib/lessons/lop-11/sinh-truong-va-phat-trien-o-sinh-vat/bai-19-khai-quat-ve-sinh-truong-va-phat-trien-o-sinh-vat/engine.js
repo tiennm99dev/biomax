@@ -59,11 +59,11 @@ export const SPECIES = [
       {
         name: 'Muỗi trưởng thành',
         from: 10,
-        to: 35,
+        to: 30,
         what: 'Muỗi bay lên khỏi mặt nước, giao phối; muỗi cái hút máu rồi đẻ trứng, bắt đầu vòng đời mới.',
       },
     ],
-    lifespan: 35,
+    lifespan: 30,
     lifespanText: 'khoảng 1 tháng',
   },
   {
@@ -191,11 +191,11 @@ export const SPECIES = [
       {
         name: 'Trưởng thành, già',
         from: 266 + 18 * YEAR,
-        to: 266 + 74 * YEAR,
+        to: 74 * YEAR,
         what: 'Cơ thể ngừng tăng chiều cao, có khả năng sinh sản; về già các cơ quan suy giảm dần.',
       },
     ],
-    lifespan: 266 + 74 * YEAR,
+    lifespan: 74 * YEAR,
     lifespanText: 'tuổi thọ trung bình ở Việt Nam khoảng 74 năm',
   },
 ];

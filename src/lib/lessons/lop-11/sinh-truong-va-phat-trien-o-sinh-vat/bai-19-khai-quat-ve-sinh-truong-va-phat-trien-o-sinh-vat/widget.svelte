@@ -121,9 +121,7 @@
     {/each}
   </ol>
 
-  <div aria-live="polite">
-    <FeedbackNote tone="info" text={note} />
-  </div>
+  <FeedbackNote tone="info" text={note} />
 
   <figure class="space-y-1">
     <figcaption class="text-sm font-semibold text-slate-700">

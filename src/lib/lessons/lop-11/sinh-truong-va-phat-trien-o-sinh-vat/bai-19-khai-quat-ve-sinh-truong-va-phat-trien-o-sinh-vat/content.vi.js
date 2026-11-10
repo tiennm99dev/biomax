@@ -164,7 +164,7 @@ export default {
         'So sánh: $888 : 1 = 888$.',
       ],
       answer:
-        'Gấp khoảng $888$ lần: tuổi thọ là đặc điểm của loài, do di truyền quy định và chịu ảnh hưởng của môi trường.',
+        'Gấp khoảng $888$ lần, tức gần $900$ lần: tuổi thọ là đặc điểm của loài, do di truyền quy định và chịu ảnh hưởng của môi trường.',
     },
   ],
   practice: [
@@ -203,7 +203,7 @@ export default {
       type: 'choice',
       prompt: 'Phát biểu nào phân biệt đúng vòng đời và tuổi thọ?',
       options: [
-        'Vòng đời là chuỗi giai đoạn từ khi sinh ra đến khi trưởng thành, sinh sản tạo thế hệ mới; tuổi thọ là thời gian sống của một cá thể',
+        'Vòng đời là chuỗi giai đoạn từ khi sinh ra, lớn lên, trưởng thành, sinh sản tạo thế hệ mới đến già và chết; tuổi thọ là thời gian sống của một cá thể',
         'Vòng đời và tuổi thọ là hai tên gọi của cùng một khái niệm',
         'Tuổi thọ là chuỗi giai đoạn lặp lại qua các thế hệ; vòng đời là thời gian sống trung bình',
         'Vòng đời chỉ có ở động vật, tuổi thọ chỉ có ở thực vật',

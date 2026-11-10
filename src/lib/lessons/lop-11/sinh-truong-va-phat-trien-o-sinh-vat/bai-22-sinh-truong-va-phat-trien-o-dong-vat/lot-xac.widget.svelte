@@ -78,9 +78,7 @@
     </button>
     <button type="button" class={button.quiet} onclick={reset}>Làm lại</button>
   </div>
-  <div aria-live="polite">
-    <FeedbackNote tone={larva.form === 'buom' ? 'ok' : 'info'} {text} />
-  </div>
+  <FeedbackNote tone={larva.form === 'buom' ? 'ok' : 'info'} {text} />
   {#if log.length > 0}
     <p class="text-sm text-slate-600">Đã đi qua: {[...log, formName].join(' → ')}</p>
   {/if}

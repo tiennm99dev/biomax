@@ -115,9 +115,7 @@
     format={(v) => (v < 0 ? 'lõi' : v >= n ? 'vỏ' : `dải ${v + 1}`)}
     oninput={() => (result = null)}
   />
-  <div aria-live="polite">
-    <FeedbackNote tone="info" text={spot} />
-  </div>
+  <FeedbackNote tone="info" text={spot} />
 
   <div class="flex flex-wrap gap-2">
     <button type="button" class={button.primary} onclick={mark} disabled={at < 0 || at >= n}>

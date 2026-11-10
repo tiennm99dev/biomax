@@ -9,6 +9,7 @@ import {
   logPosition,
   species,
   stageAt,
+  timesLonger,
 } from './engine.js';
 
 describe('life cycle time line', () => {
@@ -33,6 +34,11 @@ describe('life cycle time line', () => {
     expect(stageAt(muoi, 9)).toBe(2);
     expect(stageAt(muoi, 35)).toBe(3);
     expect(stageAt(species('ga'), 21)).toBe(1);
+  });
+
+  it('compares lifespans from birth, as the worked example does', () => {
+    // 74 years against a one-month mosquito: 888 times, close to 900.
+    expect(timesLonger(species('nguoi').lifespan, species('muoi').lifespan)).toBe(900);
   });
 
   it('writes durations in days, months or years', () => {

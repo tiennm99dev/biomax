@@ -189,9 +189,7 @@
     >
   </div>
 
-  <div aria-live="polite">
-    <FeedbackNote tone="info" text={note} />
-  </div>
+  <FeedbackNote tone="info" text={note} />
   <div class="grid gap-2 text-sm sm:grid-cols-2">
     <p class="rounded-lg bg-white px-3 py-2">{CYCLES.buom.stages[bi].what}</p>
     <p class="rounded-lg bg-white px-3 py-2">{CYCLES['chau-chau'].stages[ci].what}</p>

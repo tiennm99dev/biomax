@@ -139,9 +139,7 @@
     {/if}
   </p>
 
-  <div aria-live="polite">
-    <FeedbackNote tone={note.tone} text={note.text} />
-  </div>
+  <FeedbackNote tone={note.tone} text={note.text} />
 
   <table class="w-full text-sm">
     <caption class="pb-1 text-left text-slate-600">
