@@ -138,7 +138,5 @@
     <button type="button" class={button.quiet} onclick={() => (step = 0)}>Làm lại</button>
     <span class="text-sm text-slate-600">Bước {step}/{SYNAPSE_STEPS}</span>
   </div>
-  <div aria-live="polite">
-    <FeedbackNote tone={view.tone} text={view.text} />
-  </div>
+  <FeedbackNote tone={view.tone} text={view.text} />
 </div>

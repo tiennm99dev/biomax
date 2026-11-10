@@ -155,7 +155,5 @@
     <button type="button" class={button.quiet} onclick={reset}>Làm lại</button>
   </div>
 
-  <div aria-live="polite">
-    <FeedbackNote tone={note.tone} text={note.text} />
-  </div>
+  <FeedbackNote tone={note.tone} text={note.text} />
 </div>

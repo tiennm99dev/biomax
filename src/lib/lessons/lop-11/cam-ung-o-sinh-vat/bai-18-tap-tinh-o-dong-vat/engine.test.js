@@ -33,4 +33,14 @@ describe('Pavlov conditioning model', () => {
     expect(t.saliva).toBe(9);
     expect(explain('chi-tin-hieu', t, 20, 'den').text).toContain('bật đèn');
   });
+
+  it('keeps a firm reflex firm after one test, then marks it fading', () => {
+    let s = 0;
+    for (let i = 0; i < 20; i++) s = trial(s, 'cap').after;
+    s = trial(s, 'chi-tin-hieu').after;
+    expect(stage(s)).toBe('dang');
+    expect(stage(s, true)).toBe('vung');
+    for (let i = 0; i < 5; i++) s = trial(s, 'chi-tin-hieu').after;
+    expect(stage(s, true)).toBe('yeu');
+  });
 });

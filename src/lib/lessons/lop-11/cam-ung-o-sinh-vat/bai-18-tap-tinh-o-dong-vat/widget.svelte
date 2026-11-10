@@ -4,7 +4,17 @@
   import SegmentedControl from '#lib/core/segmented-control.svelte';
   import { button } from '#lib/core/ui.js';
   import { linear } from '#lib/core/visuals/svg-math.js';
-  import { FIRM, FULL_DROPS, SIGNALS, drops, explain, signal, stage, trial } from './engine.js';
+  import {
+    FIRM,
+    FULL_DROPS,
+    SIGNALS,
+    SILENT,
+    drops,
+    explain,
+    signal,
+    stage,
+    trial,
+  } from './engine.js';
 
   /** @type {import('./engine.js').SignalId} */
   let sig = $state('chuong');
@@ -18,7 +28,9 @@
 
   const s = $derived(signal(sig));
   const note = $derived(explain(lastKind, last, pairs, sig));
-  const st = $derived(stage(strength));
+  /** Whether the reflex has been firm since it was last lost. */
+  let wasFirm = $state(false);
+  const st = $derived(stage(strength, wasFirm));
 
   /** @param {import('./engine.js').TrialId} kind @param {number} [times] */
   function run(kind, times = 1) {
@@ -34,6 +46,8 @@
       added.push(drops(v));
     }
     strength = v;
+    if (v >= FIRM) wasFirm = true;
+    else if (v < SILENT) wasFirm = false;
     last = t;
     lastKind = kind;
     history = [...history, ...added].slice(-41);
@@ -41,6 +55,7 @@
 
   function reset() {
     strength = 0;
+    wasFirm = false;
     pairs = 0;
     last = null;
     lastKind = null;
@@ -178,9 +193,11 @@
     Số lần ghép: {pairs}. Nếu chỉ {s.verb} lúc này, chó tiết khoảng {drops(strength)} giọt nước bọt (mức
     liên hệ {formatNumber(strength * 100, 0)}%). Phản xạ có điều kiện: {st === 'vung'
       ? 'đã vững'
-      : st === 'dang'
-        ? 'đang hình thành'
-        : 'chưa có'}.
+      : st === 'yeu'
+        ? 'đang yếu dần vì không được củng cố'
+        : st === 'dang'
+          ? 'đang hình thành'
+          : 'chưa có'}.
   </p>
   <FeedbackNote tone={note.tone} text={note.text} />
 </div>

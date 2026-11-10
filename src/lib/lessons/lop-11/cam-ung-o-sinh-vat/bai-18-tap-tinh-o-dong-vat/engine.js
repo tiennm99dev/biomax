@@ -84,12 +84,22 @@ export function pairingsToFirm() {
 }
 
 /**
- * Stage of the conditioned reflex.
- * @param {number} strength
- * @returns {'chua' | 'dang' | 'vung'}
+ * A reflex that has once become firm still counts as firm down to this
+ * strength, so a single test with the stimulus alone does not undo it.
  */
-export function stage(strength) {
-  return strength >= FIRM ? 'vung' : strength >= SILENT ? 'dang' : 'chua';
+export const HOLD = 0.8;
+
+/**
+ * Stage of the conditioned reflex. `wasFirm` tells whether it has been firm
+ * since the dog last lost it: below HOLD such a reflex is fading ('yeu')
+ * rather than still forming.
+ * @param {number} strength @param {boolean} [wasFirm]
+ * @returns {'chua' | 'dang' | 'vung' | 'yeu'}
+ */
+export function stage(strength, wasFirm = false) {
+  if (strength >= FIRM || (wasFirm && strength >= HOLD)) return 'vung';
+  if (strength < SILENT) return 'chua';
+  return wasFirm ? 'yeu' : 'dang';
 }
 
 /**
@@ -135,7 +145,7 @@ export function explain(kind, last, pairs, sig) {
     };
   }
   return {
-    tone: last.before >= FIRM ? 'ok' : 'info',
+    tone: last.saliva >= FULL_DROPS * HOLD ? 'ok' : 'info',
     text: `Chỉ ${s.verb}, không cho ăn: chó vẫn tiết ${last.saliva} giọt nước bọt nhờ phản xạ có điều kiện. Nhưng nếu lặp lại nhiều lần mà không cho ăn (không củng cố), phản xạ sẽ yếu dần rồi mất.`,
   };
 }
@@ -189,10 +199,10 @@ export const LEARNING_CARDS = [
     why: 'Hành động nhấn bàn đạp được thưởng thức ăn nên được lặp lại: thí nghiệm của Skinner.',
   },
   {
-    id: 'chim-sau',
-    label: 'Chim không ăn lại loài sâu có màu sặc sỡ sau một lần ăn bị đắng',
+    id: 'cho-xiec',
+    label: 'Chó làm xiếc lặp lại động tác vì lần nào làm đúng cũng được thưởng thức ăn',
     bin: 'dk-hanh-dong',
-    why: 'Hành vi bị "phạt" (vị đắng) nên con vật tránh lặp lại: học thử và sai.',
+    why: 'Một hành động được thưởng nên được lặp lại: điều kiện hoá hành động.',
   },
   {
     id: 'tinh-tinh-da',

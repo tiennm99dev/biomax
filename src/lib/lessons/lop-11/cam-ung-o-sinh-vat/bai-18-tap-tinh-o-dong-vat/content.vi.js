@@ -3,7 +3,7 @@ export default {
   summary:
     'Khái niệm và vai trò của tập tính; tập tính bẩm sinh và học được; các hình thức học tập (quen nhờn, in vết, học liên kết theo Pavlov và Skinner, học xã hội, học khôn); các dạng tập tính phổ biến và ứng dụng.',
   intro:
-    'Gà con thấy bóng diều hâu liền chạy nấp vào cánh mẹ; nhện mới nở chưa từng thấy ai giăng tơ mà vẫn đan được lưới; trâu bò nghe tiếng kẻng thì tự về chuồng. Những hành động ấy là bẩm sinh hay học được? Con người đã vận dụng chúng ra sao?',
+    'Gà con lúc đầu chạy nấp mỗi khi có bóng đen lướt qua, về sau quen dần thì thôi; nhện mới nở chưa từng thấy ai giăng tơ mà vẫn đan được lưới; trâu bò nghe tiếng kẻng thì tự về chuồng. Những hành động ấy là bẩm sinh hay học được? Con người đã vận dụng chúng ra sao?',
   objectives: [
     'Phát biểu được khái niệm tập tính và nêu được vai trò của tập tính.',
     'Phân biệt được tập tính bẩm sinh và tập tính học được.',
@@ -51,8 +51,8 @@ export default {
             ['Trung ương thần kinh', 'Tuỷ sống, thân não', 'Có sự tham gia của vỏ não'],
             [
               'Ví dụ',
-              'Nhện giăng tơ, gà trống gáy sáng, cóc nghiến răng trước mưa',
-              'Gà con nấp vào cánh mẹ khi thấy diều hâu, người tập thể dục buổi sáng',
+              'Nhện giăng tơ, gà trống gáy sáng, ếch đực kêu vào mùa sinh sản',
+              'Trâu bò nghe tiếng kẻng thì về chuồng, chó nghiệp vụ đánh hơi tìm ma tuý',
             ],
           ],
         },
@@ -181,12 +181,12 @@ export default {
         'Gà trống gáy vào buổi sáng',
         'Trâu bò về chuồng khi nghe tiếng kẻng',
         'Chó nghiệp vụ đánh hơi tìm ma tuý',
-        'Cóc nghiến răng trước khi trời mưa',
+        'Ếch đực kêu vào mùa sinh sản',
       ],
       answers: [0, 1, 4],
       hints: ['Tập tính bẩm sinh có ở mọi cá thể của loài, không cần dạy.'],
       solution:
-        'Nhện giăng tơ, gà gáy sáng, cóc nghiến răng là bẩm sinh. Trâu bò nghe kẻng và chó nghiệp vụ là tập tính học được nhờ huấn luyện.',
+        'Nhện giăng tơ, gà gáy sáng, ếch đực kêu vào mùa sinh sản là bẩm sinh. Trâu bò nghe kẻng và chó nghiệp vụ là tập tính học được nhờ huấn luyện.',
     },
     {
       type: 'match',
@@ -269,7 +269,7 @@ export default {
         'Tập tính học được qua huấn luyện',
         'Côn trùng bị thu hút bởi chất dẫn dụ của đồng loại',
         'Chim, chuột sợ hình dáng giống người',
-        'Ong non ăn thịt sâu hại',
+        'Ong mắt đỏ đẻ trứng vào trứng sâu hại, ấu trùng ong làm hỏng trứng sâu',
       ],
       pairs: [
         [0, 1],
@@ -279,7 +279,7 @@ export default {
       ],
       hints: ['Pheromone là tín hiệu hoá học giữa các cá thể cùng loài.'],
       solution:
-        'Pheromone nhân tạo dẫn dụ côn trùng vào bẫy; bù nhìn làm chim, chuột sợ; ong mắt đỏ đẻ trứng, ong non ăn sâu; chó nghiệp vụ là tập tính học được.',
+        'Pheromone nhân tạo dẫn dụ côn trùng vào bẫy; bù nhìn làm chim, chuột sợ; ong mắt đỏ đẻ trứng vào trứng sâu, ấu trùng ong diệt trứng sâu; chó nghiệp vụ là tập tính học được.',
     },
     {
       type: 'text',
