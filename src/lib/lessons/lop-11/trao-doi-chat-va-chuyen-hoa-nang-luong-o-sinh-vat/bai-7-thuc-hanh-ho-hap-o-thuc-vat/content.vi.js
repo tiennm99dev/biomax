@@ -7,7 +7,7 @@ export default {
   objectives: [
     'Chuẩn bị được hạt nảy mầm cho thí nghiệm hô hấp.',
     'Thực hiện được thí nghiệm chứng minh hô hấp thải $\\mathrm{CO_2}$ và giải thích kết quả.',
-    'Thực hiện được thí nghiệm chứng minh hô hấp toả nhiệt; bố trí được bình đối chứng.',
+    'Mở rộng: thực hiện được thí nghiệm chứng minh hô hấp toả nhiệt; bố trí được bình đối chứng.',
     'Ghi, xử lí số liệu và viết được báo cáo thực hành.',
   ],
   sections: [
@@ -60,8 +60,12 @@ export default {
       ],
     },
     {
-      heading: 'Thí nghiệm 2: hô hấp toả nhiệt',
+      heading: 'Thí nghiệm 2 (mở rộng): hô hấp toả nhiệt',
       blocks: [
+        {
+          type: 'p',
+          text: 'Sách Kết nối tri thức làm một thí nghiệm (hô hấp thải $\\mathrm{CO_2}$); thí nghiệm toả nhiệt với bình cách nhiệt là phần mở rộng, gặp trong sách bài tập.',
+        },
         {
           type: 'p',
           text: 'Nguyên lí: một phần năng lượng giải phóng khi hô hấp mất đi dưới dạng nhiệt. Trong bình cách nhiệt, nhiệt này giữ lại được và làm nhiệt độ trong bình tăng lên.',

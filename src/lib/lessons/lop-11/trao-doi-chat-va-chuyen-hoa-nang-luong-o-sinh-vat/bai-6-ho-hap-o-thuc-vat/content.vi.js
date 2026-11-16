@@ -1,13 +1,13 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Khái niệm, phương trình và vai trò của hô hấp ở thực vật; hai con đường hô hấp hiếu khí và lên men, số ATP mỗi con đường tạo ra; hô hấp sáng; mối quan hệ giữa hô hấp và quang hợp; các nhân tố ảnh hưởng và ứng dụng trong bảo quản nông sản, trồng trọt.',
+    'Khái niệm, phương trình và vai trò của hô hấp ở thực vật; hai con đường hô hấp hiếu khí và lên men, số ATP mỗi con đường tạo ra; hô hấp sáng (mở rộng); mối quan hệ giữa hô hấp và quang hợp; các nhân tố ảnh hưởng và ứng dụng trong bảo quản nông sản, trồng trọt.',
   intro:
     'Một đống thóc vừa gặt chưa phơi khô sẽ nóng dần lên và có thể mọc mầm, thối hỏng. Hơi nóng ấy từ đâu ra? Lúa ngập úng lâu ngày lại vàng úa rồi chết dù đứng ngập trong nước. Cả hai chuyện đều xoay quanh một quá trình diễn ra ở mọi tế bào sống của cây: hô hấp.',
   objectives: [
     'Nêu được khái niệm, phương trình tổng quát và vai trò của hô hấp ở thực vật.',
     'Trình bày được các giai đoạn của hô hấp hiếu khí và lên men; so sánh được số ATP tạo ra.',
-    'Nêu được hô hấp sáng xảy ra khi nào, ở đâu và ảnh hưởng của nó.',
+    'Mở rộng: nêu được hô hấp sáng xảy ra khi nào, ở đâu và ảnh hưởng của nó.',
     'Phân tích được mối quan hệ giữa hô hấp và quang hợp.',
     'Giải thích được ảnh hưởng của nước, nhiệt độ, $\\mathrm{O_2}$, $\\mathrm{CO_2}$ đến hô hấp và vận dụng vào bảo quản nông sản, trồng trọt.',
   ],
@@ -70,8 +70,12 @@ export default {
       ],
     },
     {
-      heading: 'Hô hấp sáng',
+      heading: 'Mở rộng: hô hấp sáng',
       blocks: [
+        {
+          type: 'p',
+          text: 'Phần này mở rộng thêm, sách Kết nối tri thức không học hô hấp sáng trong bài này.',
+        },
         {
           type: 'p',
           text: 'Ở thực vật C3, khi cường độ ánh sáng cao, trời nóng và khô, khí khổng đóng lại: $\\mathrm{CO_2}$ trong lá cạn dần còn $\\mathrm{O_2}$ do quang hợp thải ra tích luỹ nhiều. Lúc đó enzyme Rubisco gắn $\\mathrm{O_2}$ (thay vì $\\mathrm{CO_2}$) vào RuBP. Sản phẩm được chuyển lần lượt qua lục lạp, peroxisome và ti thể, cuối cùng thải ra $\\mathrm{CO_2}$.',

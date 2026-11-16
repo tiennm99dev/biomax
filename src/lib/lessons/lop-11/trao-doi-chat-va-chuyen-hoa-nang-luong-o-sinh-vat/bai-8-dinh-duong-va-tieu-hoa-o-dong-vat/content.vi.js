@@ -7,7 +7,7 @@ export default {
   objectives: [
     'Nêu được các giai đoạn của quá trình dinh dưỡng và các phương thức lấy thức ăn ở động vật.',
     'Phân biệt được tiêu hoá nội bào, tiêu hoá trong túi tiêu hoá và trong ống tiêu hoá.',
-    'So sánh được ống tiêu hoá của thú ăn thịt và thú ăn thực vật, giải thích được sự thích nghi.',
+    'Mở rộng: so sánh được ống tiêu hoá của thú ăn thịt và thú ăn thực vật, giải thích được sự thích nghi.',
     'Trình bày được quá trình tiêu hoá và hấp thụ ở người.',
     'Vận dụng được hiểu biết về dinh dưỡng hợp lí, thực phẩm sạch và phòng bệnh tiêu hoá.',
   ],
@@ -77,8 +77,12 @@ export default {
       ],
     },
     {
-      heading: 'Ống tiêu hoá của thú ăn thịt và thú ăn thực vật',
+      heading: 'Mở rộng: ống tiêu hoá của thú ăn thịt và thú ăn thực vật',
       blocks: [
+        {
+          type: 'p',
+          text: 'Phần này mở rộng thêm, sách Kết nối tri thức không so sánh ống tiêu hoá của hai nhóm thú.',
+        },
         {
           type: 'p',
           text: 'Thịt mềm, giàu dinh dưỡng và dễ tiêu; cỏ dai, nghèo dinh dưỡng, chứa nhiều cellulose mà thú không tự tiết được enzyme phân giải. Vì vậy ống tiêu hoá của hai nhóm thú khác nhau rõ rệt.',
