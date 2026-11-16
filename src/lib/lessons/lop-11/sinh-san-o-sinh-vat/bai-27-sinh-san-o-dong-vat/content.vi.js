@@ -134,7 +134,7 @@ export default {
           type: 'list',
           items: [
             'Điều khiển số con: thụ tinh nhân tạo, thay đổi yếu tố môi trường (chiếu sáng, nhiệt độ), nuôi cấy phôi, dùng hormone.',
-            'Điều khiển giới tính: tách tinh trùng mang X và mang Y (lọc, li tâm, điện di); nuôi cá rô phi bột bằng 17-methyltestosterone kết hợp vitamin C để tạo ra toàn cá đực; chiếu tia tử ngoại lên trứng tằm.',
+            'Điều khiển giới tính: tách tinh trùng mang X và mang Y (lọc, li tâm, điện di); nuôi cá rô phi bột bằng 17-methyltestosterone kết hợp vitamin C để tạo ra toàn cá đực (dùng hormone nhân tạo).',
             'Thụ tinh trong ống nghiệm: trứng và tinh trùng thụ tinh ngoài cơ thể tạo phôi, rồi chuyển phôi vào tử cung người phụ nữ để làm tổ và phát triển thành thai; giúp các cặp vợ chồng hiếm muộn có con.',
           ],
         },
@@ -293,21 +293,20 @@ export default {
       options: [
         'Tách tinh trùng mang X và mang Y bằng lọc, li tâm, điện di',
         'Nuôi cá rô phi bột bằng 17-methyltestosterone kết hợp vitamin C',
-        'Chiếu tia tử ngoại lên trứng tằm',
         'Dùng bao cao su',
         'Thắt ống dẫn trứng',
       ],
-      answers: [0, 1, 2],
+      answers: [0, 1],
       hints: ['Hai lựa chọn còn lại là biện pháp tránh thai ở người.'],
       solution:
-        'Tách tinh trùng X, Y, dùng 17-methyltestosterone cho cá rô phi và chiếu tia tử ngoại lên trứng tằm là các biện pháp điều khiển giới tính; bao cao su và thắt ống dẫn trứng là biện pháp tránh thai.',
+        'Tách tinh trùng X, Y và dùng hormone nhân tạo (17-methyltestosterone cho cá rô phi) là các biện pháp điều khiển giới tính; bao cao su và thắt ống dẫn trứng là biện pháp tránh thai.',
     },
     {
       type: 'match',
       prompt: 'Ghép mỗi biện pháp tránh thai với cơ chế của nó.',
       left: ['Bao cao su', 'Thuốc tránh thai', 'Dụng cụ tử cung', 'Thắt ống dẫn trứng'],
       right: [
-        'Ngăn tinh trùng gặp trứng ở bên ngoài cơ quan sinh dục nữ',
+        'Ngăn tinh trùng đi vào cơ quan sinh dục nữ',
         'Ức chế tuyến yên, trứng không chín, không rụng',
         'Ngăn hợp tử làm tổ trong tử cung',
         'Trứng không di chuyển tới gặp tinh trùng',

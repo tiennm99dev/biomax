@@ -21,7 +21,7 @@ export const MODE_NAMES = { 'vo-tinh': 'Sinh sản vô tính', 'huu-tinh': 'Sinh
 export const EVENT_NAMES = {
   'on-dinh': 'Môi trường ổn định',
   'dich-benh': 'Dịch bệnh mới (chỉ cây aa kháng bệnh)',
-  'mot-ca-the': 'Chỉ còn một cá thể, không có bạn tình',
+  'mot-ca-the': 'Chỉ còn một cá thể (không tự thụ phấn được)',
 };
 
 /**
@@ -111,5 +111,5 @@ export function verdict(event) {
   if (event === 'dich-benh') {
     return `Dịch bệnh mới: ${a.survivors}/${a.born.length} cây con vô tính sống sót vì tất cả cùng kiểu gene ${PARENT}, cùng không kháng bệnh; ${s.survivors}/${s.born.length} cây con hữu tính sống sót nhờ có kiểu gene aa. Đa dạng di truyền giúp loài tồn tại khi môi trường thay đổi.`;
   }
-  return `Chỉ còn một cá thể: sinh sản vô tính vẫn tạo ${a.born.length} cây con; sinh sản hữu tính không xảy ra vì không có giao tử của cá thể khác. Sinh sản vô tính có lợi khi mật độ cá thể thấp.`;
+  return `Chỉ còn một cá thể: sinh sản vô tính vẫn tạo ${a.born.length} cây con; sinh sản hữu tính không xảy ra vì cây không tự thụ phấn được và không có giao tử của cá thể khác. Sinh sản vô tính có lợi khi mật độ cá thể thấp.`;
 }

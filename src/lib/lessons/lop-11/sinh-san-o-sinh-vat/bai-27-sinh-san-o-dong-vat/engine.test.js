@@ -24,6 +24,12 @@ describe('hormone axis with negative feedback', () => {
     expect(l.product).toBe(0);
   });
 
+  it('does not call the levels normal when gonad removal and stress pull opposite ways', () => {
+    const text = explain('nam', ['cat-bo', 'cang-thang']);
+    expect(text).toContain('bù lại');
+    expect(text).not.toContain('LH bình thường');
+  });
+
   it('lowers everything under long stress', () => {
     const l = levels('nu', ['cang-thang']);
     expect(word(l.gnrh)).toBe('giảm');

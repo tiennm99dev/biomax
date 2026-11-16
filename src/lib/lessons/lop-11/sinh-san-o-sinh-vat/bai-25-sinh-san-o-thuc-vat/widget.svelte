@@ -178,11 +178,11 @@
         bind:value={second}
         onchange={() => (checked = false)}
       />
-      <p class="text-sm text-slate-700">
-        {#if first}Giao tử đực thứ nhất (n) + {CELLS[first].name} → tế bào {fuse(first)}n.
-        {/if}
-        {#if second}Giao tử đực thứ hai + {CELLS[second].name} → tế bào {fuse(second)}n.{/if}
-      </p>
+      {#if fused && first && second}<p class="text-sm text-slate-700">
+          {#if first}Giao tử đực thứ nhất (n) + {CELLS[first].name} → tế bào {fuse(first)}n.
+          {/if}
+          {#if second}Giao tử đực thứ hai + {CELLS[second].name} → tế bào {fuse(second)}n.{/if}
+        </p>{/if}
       <button type="button" class={button.secondary} onclick={check} disabled={!first || !second}>
         Kiểm tra
       </button>

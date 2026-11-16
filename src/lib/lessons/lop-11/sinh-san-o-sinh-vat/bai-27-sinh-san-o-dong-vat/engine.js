@@ -101,7 +101,7 @@ export function explain(sex, changes) {
   }
   if (changes.includes('cat-bo')) {
     parts.push(
-      `Không còn ${AXIS[sex].gonad.toLowerCase()} nên không có ${sex === 'nam' ? 'tinh trùng' : 'trứng'}; thiếu ${h} của cơ thể, mất ức chế ngược nên GnRH, FSH, LH ${word(l.gnrh)}.`,
+      `Không còn ${AXIS[sex].gonad.toLowerCase()} nên không có ${sex === 'nam' ? 'tinh trùng' : 'trứng'}; thiếu ${h} của cơ thể, mất ức chế ngược nên GnRH, FSH, LH ${changes.includes('cang-thang') ? 'được tiết nhiều hơn, bù lại phần giảm do căng thẳng' : word(l.gnrh)}.`,
     );
   }
   if (changes.includes('cang-thang')) {

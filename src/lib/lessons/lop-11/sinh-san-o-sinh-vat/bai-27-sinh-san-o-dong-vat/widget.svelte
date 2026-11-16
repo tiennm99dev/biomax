@@ -70,9 +70,9 @@
       l.fsh,
     )}, {axis.gonad.toLowerCase()} {l.gonad
       ? ''
-      : 'đã cắt bỏ, '}{axis.hormone.toLowerCase()} trong máu {word(
-      l.blood,
-    )}, ức chế ngược vùng dưới đồi và tuyến yên"
+      : 'đã cắt bỏ, '}{axis.hormone.toLowerCase()} trong máu {word(l.blood)}{l.blood < 0.05
+      ? ', không còn ức chế ngược'
+      : ', ức chế ngược vùng dưới đồi và tuyến yên'}"
   >
     <defs>
       <marker
@@ -80,8 +80,9 @@
         viewBox="0 0 10 10"
         refX="8"
         refY="5"
-        markerWidth="5"
-        markerHeight="5"
+        markerUnits="userSpaceOnUse"
+        markerWidth="14"
+        markerHeight="14"
         orient="auto"
       >
         <path d="M 0 0 L 10 5 L 0 10 Z" fill="#334155" />
@@ -116,7 +117,7 @@
       opacity={l.gnrh < 0.05 ? 0.15 : 1}
       marker-end="url(#{uid}-arrow)"
     />
-    <text x="106" y="74" font-size="9">GnRH: {word(l.gnrh)}</text>
+    <text x="110" y="74" font-size="9">GnRH: {word(l.gnrh)}</text>
     <line
       x1="100"
       y1="134"
@@ -127,7 +128,7 @@
       opacity={l.fsh < 0.05 ? 0.15 : 1}
       marker-end="url(#{uid}-arrow)"
     />
-    <text x="106" y="164" font-size="9">FSH, LH: {word(l.fsh)}</text>
+    <text x="110" y="164" font-size="9">FSH, LH: {word(l.fsh)}</text>
 
     <!-- điều hoà ngược âm -->
     <path
@@ -151,7 +152,9 @@
     <text x="246" y="160" font-size="9" fill="#991b1b"
       >{sex === 'nam' ? 'Testosterone' : 'Pro., estro.'}</text
     >
-    <text x="246" y="172" font-size="9" fill="#991b1b">{word(l.blood)}</text>
+    {#each word(l.blood).split(/(?<=như) /) as line, i (i)}
+      <text x="246" y={172 + 11 * i} font-size="9" fill="#991b1b">{line}</text>
+    {/each}
     {#if changes.includes('ngoai')}
       <rect x="268" y="190" width="46" height="30" rx="6" fill="#fef3c7" stroke="#b45309" />
       <text x="291" y="203" font-size="8" text-anchor="middle"
