@@ -1,11 +1,11 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Bệnh dịch lây từ nguồn bệnh sang người lành qua ba con đường chính: đường hô hấp, đường tiêu hoá và đường máu (kể cả qua muỗi đốt). Thời tiết nóng ẩm, vệ sinh môi trường kém, dân cư đông đúc và kinh tế kém phát triển là những yếu tố làm dịch dễ bùng phát.',
+    'Bệnh dịch lây từ nguồn bệnh sang người lành qua bốn con đường: đường tiêu hoá, đường hô hấp, đường máu (kể cả qua muỗi đốt) và đường da. Thời tiết nóng ẩm, vệ sinh môi trường kém, dân cư đông đúc và kinh tế kém phát triển là những yếu tố làm dịch dễ bùng phát.',
   intro:
     'Cùng một lớp học, bệnh cúm có thể lây cho cả lớp trong hai tuần, còn bệnh viêm gan B thì hầu như không lây khi ngồi học cạnh nhau. Vì sao vậy? Mỗi bệnh dịch có con đường lây riêng, và chỉ khi gặp điều kiện thuận lợi, bệnh mới bùng phát thành dịch.',
   objectives: [
-    'Trình bày được các con đường lây nhiễm bệnh dịch ở người: qua đường hô hấp, đường tiêu hoá, đường máu.',
+    'Trình bày được các con đường lây nhiễm bệnh dịch ở người: qua đường tiêu hoá, đường hô hấp, đường máu và đường da.',
     'Nêu được ví dụ về bệnh và những việc làm dẫn đến lây nhiễm theo mỗi con đường.',
     'Phân tích được các yếu tố thuận lợi làm bùng phát dịch: thời tiết, khí hậu, vệ sinh môi trường, mật độ dân cư, điều kiện kinh tế.',
     'Đề xuất được một số việc làm giảm nguy cơ bùng phát dịch ở địa phương.',
@@ -40,7 +40,7 @@ export default {
       blocks: [
         {
           type: 'table',
-          caption: 'Ba con đường lây nhiễm bệnh dịch chính ở người',
+          caption: 'Bốn con đường lây nhiễm bệnh dịch ở người',
           head: ['Con đường', 'Mầm bệnh xâm nhập thế nào', 'Ví dụ bệnh'],
           rows: [
             [
@@ -57,6 +57,11 @@ export default {
               'Đường máu',
               'Truyền máu chưa kiểm tra, dùng chung kim tiêm, vết thương hở tiếp xúc với máu người bệnh; mẹ truyền sang thai nhi qua nhau thai; bị muỗi mang mầm bệnh đốt',
               'Sốt xuất huyết, sốt rét, AIDS, viêm gan B',
+            ],
+            [
+              'Đường da',
+              'Da, niêm mạc tiếp xúc trực tiếp với người bệnh, vết loét, dịch tiết của họ; dùng chung khăn, quần áo, chăn chiếu; mầm bệnh vào qua vết thương hở, vết xước; ấu trùng giun móc chui qua da khi đi chân đất',
+              'Ghẻ, hắc lào, nấm da, uốn ván, bệnh giun móc',
             ],
           ],
         },
@@ -215,6 +220,16 @@ export default {
         'Mầm bệnh trong cá sống và nước chưa đun sôi đi vào cơ thể qua miệng, xuống ruột: đó là con đường tiêu hoá.',
     },
     {
+      type: 'choice',
+      prompt:
+        'Ở một kí túc xá, nhiều bạn nằm chung chăn chiếu, dùng chung khăn tắm với một bạn bị ghẻ; sau vài tuần, các bạn đó cũng bị ngứa, nổi mụn nước ở kẽ tay. Bệnh lây theo con đường nào?',
+      options: ['Đường da', 'Đường hô hấp', 'Đường tiêu hoá', 'Đường máu'],
+      answer: 0,
+      hints: ['Cái ghẻ kí sinh ở đâu trên cơ thể người, và đi sang người khác bằng cách nào?'],
+      solution:
+        'Cái ghẻ kí sinh dưới da, lây khi da tiếp xúc trực tiếp với người bệnh hoặc với chăn chiếu, khăn, quần áo dùng chung: đó là con đường lây qua da.',
+    },
+    {
       type: 'multi',
       prompt: 'Những yếu tố nào thuận lợi cho dịch sốt xuất huyết bùng phát?',
       options: [
@@ -284,7 +299,7 @@ export default {
   ],
   takeaways: [
     'Bệnh dịch lây khi có nguồn bệnh, con đường lây truyền và người cảm nhiễm.',
-    'Ba con đường lây chính: đường hô hấp (giọt bắn, đồ vật), đường tiêu hoá (thức ăn, nước uống, ruồi, gián), đường máu (truyền máu, kim tiêm, mẹ sang con, muỗi đốt).',
+    'Bốn con đường lây: đường tiêu hoá (thức ăn, nước uống, ruồi, gián), đường hô hấp (giọt bắn, đồ vật), đường máu (truyền máu, kim tiêm, mẹ sang con, muỗi đốt), đường da (tiếp xúc với người bệnh, đồ dùng chung, vết thương hở).',
     'Thời tiết nóng ẩm, giao mùa, vệ sinh môi trường kém, dân cư đông đúc, kinh tế kém phát triển làm dịch dễ bùng phát; mỗi yếu tố tác động lên những con đường lây phù hợp.',
     'Mỗi người bệnh lây cho trung bình $R_0$ người; $R_0 > 1$ thì dịch bùng phát, $R_0 < 1$ thì bệnh tắt dần.',
   ],

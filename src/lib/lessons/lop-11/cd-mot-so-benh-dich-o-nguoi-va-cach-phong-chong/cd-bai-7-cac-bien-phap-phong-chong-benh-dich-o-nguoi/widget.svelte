@@ -44,7 +44,7 @@
   <SegmentedControl label="Bệnh dịch" options={diseaseOptions} bind:value={diseaseId} />
   <p class="rounded-xl bg-slate-50 p-3 text-sm text-slate-700">
     Bệnh {disease.name.toLowerCase()} lây qua {disease.routeName}. Khi không có biện pháp nào, mỗi
-    người bệnh lây cho trung bình {formatNumber(base.r0, 1)} người.
+    người bệnh lây cho trung bình {formatNumber(base.r0, 2)} người.
   </p>
 
   <fieldset>

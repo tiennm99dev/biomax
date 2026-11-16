@@ -11,7 +11,7 @@ import { formatNumber, tidy } from '#lib/core/number-format.js';
 import { POPULATION, simulate } from '../_shared/epidemic.js';
 
 /**
- * @typedef {'ho-hap' | 'tieu-hoa' | 'muoi' | 'mau'} RouteId
+ * @typedef {'ho-hap' | 'tieu-hoa' | 'muoi' | 'mau' | 'da'} RouteId
  * @typedef {{ id: RouteId, name: string, example: string, beta: number, days: number, how: string }} Route
  * @typedef {{ id: string, name: string, beta: Partial<Record<RouteId, number>>, days?: number, why: string }} Factor
  */
@@ -50,6 +50,14 @@ export const ROUTES = [
     days: 14,
     how: 'Mầm bệnh trong máu người bệnh đi vào máu người lành khi truyền máu chưa kiểm tra, dùng chung kim tiêm, dụng cụ xăm, hoặc từ mẹ sang con.',
   },
+  {
+    id: 'da',
+    name: 'Da',
+    example: 'ghẻ',
+    beta: 0.1,
+    days: 8,
+    how: 'Cái ghẻ kí sinh dưới da người bệnh; da người lành tiếp xúc trực tiếp với người bệnh, hoặc với chăn chiếu, khăn, quần áo dùng chung, thì cái ghẻ bò sang.',
+  },
 ];
 
 /** @type {Factor[]} */
@@ -57,20 +65,20 @@ export const FACTORS = [
   {
     id: 'giao-mua',
     name: 'Thời tiết nóng ẩm, giao mùa',
-    beta: { 'ho-hap': 1.25, 'tieu-hoa': 1.4, muoi: 1.6 },
-    why: 'Nóng ẩm giúp vi sinh vật sinh sản mạnh và muỗi phát triển; lúc giao mùa sức đề kháng của nhiều người giảm.',
+    beta: { 'ho-hap': 1.25, 'tieu-hoa': 1.4, muoi: 1.6, da: 1.2 },
+    why: 'Nóng ẩm giúp vi sinh vật sinh sản mạnh, muỗi phát triển và da hay ẩm ướt; lúc giao mùa sức đề kháng của nhiều người giảm.',
   },
   {
     id: 've-sinh',
-    name: 'Vệ sinh môi trường kém, nước đọng',
-    beta: { 'tieu-hoa': 1.6, muoi: 1.5 },
-    why: 'Rác thải, phân, nước bẩn làm mầm bệnh phát tán; vật chứa nước đọng là nơi muỗi đẻ trứng.',
+    name: 'Vệ sinh kém, nước đọng',
+    beta: { 'tieu-hoa': 1.6, muoi: 1.5, da: 1.5 },
+    why: 'Rác thải, phân, nước bẩn làm mầm bệnh phát tán; vật chứa nước đọng là nơi muỗi đẻ trứng; ít tắm giặt, dùng chung khăn, quần áo làm mầm bệnh ngoài da lan sang người khác.',
   },
   {
     id: 'dong-nguoi',
     name: 'Dân cư đông đúc, tụ tập đông người',
-    beta: { 'ho-hap': 1.6, 'tieu-hoa': 1.2, muoi: 1.2 },
-    why: 'Người sống, làm việc sát nhau thì giọt bắn dễ tới người khác, một con muỗi đốt được nhiều người.',
+    beta: { 'ho-hap': 1.6, 'tieu-hoa': 1.2, muoi: 1.2, da: 1.5 },
+    why: 'Người sống, làm việc sát nhau thì giọt bắn dễ tới người khác, một con muỗi đốt được nhiều người, da dễ tiếp xúc với da và đồ dùng của người bệnh.',
   },
   {
     id: 'an-song',
@@ -136,11 +144,11 @@ export function idleFactors(routeId, on) {
  * @returns {{ tone: 'ok' | 'warn', text: string }}
  */
 export function runVerdict(run) {
-  const r0 = formatNumber(run.r0, 1);
+  const r0 = formatNumber(run.r0, 2);
   if (run.r0 <= 1) {
     return {
       tone: 'ok',
-      text: `Mỗi người bệnh lây cho trung bình ${r0} người, chưa đến 1 người: bệnh chỉ xuất hiện lẻ tẻ rồi tắt dần, không thành dịch.`,
+      text: `Mỗi người bệnh lây cho trung bình ${r0} người, không quá 1 người: bệnh chỉ xuất hiện lẻ tẻ rồi tắt dần, không thành dịch.`,
     };
   }
   const share = formatNumber((run.total / POPULATION) * 100, 0);

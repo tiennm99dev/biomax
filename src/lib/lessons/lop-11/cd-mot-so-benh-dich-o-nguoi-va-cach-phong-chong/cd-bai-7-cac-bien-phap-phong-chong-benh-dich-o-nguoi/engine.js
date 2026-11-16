@@ -189,7 +189,7 @@ export function effectiveR(diseaseId, on, coverage) {
  * @returns {{ tone: 'ok' | 'warn' | 'info', text: string }}
  */
 export function preventionVerdict(run, base, r) {
-  const rText = formatNumber(r, 1);
+  const rText = formatNumber(r, 2);
   if (r <= 1) {
     return {
       tone: 'ok',

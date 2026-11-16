@@ -50,6 +50,19 @@ describe('the routes and their favourable conditions', () => {
     expect(conditions('tieu-hoa', ['y-te']).days).toBeCloseTo(9.8, 6);
   });
 
+  it('spreads a skin disease through close contact and poor hygiene, not through needles', () => {
+    expect(outbreak('da', []).r0).toBeLessThan(1);
+    expect(outbreak('da', ['dong-nguoi']).r0).toBeGreaterThan(1);
+    expect(idleFactors('da', ['kim-tiem', 'an-song', 've-sinh']).map((f) => f.id)).toEqual([
+      'an-song',
+      'kim-tiem',
+    ]);
+  });
+
+  it('writes the reproduction number to two decimals', () => {
+    expect(runVerdict(simulate({ beta: 0.204, days: 5 })).text).toContain('1,02 người: dịch');
+  });
+
   it('says whether the run is an outbreak', () => {
     expect(runVerdict(outbreak('mau', [])).tone).toBe('ok');
     expect(runVerdict(outbreak('ho-hap', ['dong-nguoi'])).text).toContain('Đỉnh dịch');

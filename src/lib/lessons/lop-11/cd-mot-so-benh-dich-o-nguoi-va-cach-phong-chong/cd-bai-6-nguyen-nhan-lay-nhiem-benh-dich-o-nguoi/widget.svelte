@@ -65,7 +65,7 @@
   <dl class="grid grid-cols-2 gap-2 text-sm sm:grid-cols-4">
     <div class="rounded-lg bg-slate-50 p-2">
       <dt class="text-xs text-slate-600">Một người bệnh lây cho</dt>
-      <dd class="font-bold tabular-nums">{formatNumber(run.r0, 1)} người</dd>
+      <dd class="font-bold tabular-nums">{formatNumber(run.r0, 2)} người</dd>
     </div>
     <div class="rounded-lg bg-slate-50 p-2">
       <dt class="text-xs text-slate-600">Cùng mắc lúc đỉnh</dt>
