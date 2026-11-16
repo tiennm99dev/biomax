@@ -160,7 +160,7 @@ export function describe(s) {
   if (s.sample === 'chuoi') {
     return {
       tone: 'ok',
-      text: 'Ở ranh giới giữa dịch và lớp cồn xuất hiện các sợi trắng đục: đó là DNA kết tủa. Mẫu chuối cho ít DNA hơn gan dù khối lượng gấp $10$ lần.',
+      text: 'Ở ranh giới giữa dịch và lớp cồn xuất hiện các sợi trắng đục: đó là DNA kết tủa. Mô thực vật ít DNA trên mỗi gam nên cần lượng mẫu gấp khoảng $10$ lần mô động vật.',
     };
   }
   return {

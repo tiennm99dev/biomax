@@ -71,7 +71,7 @@ export default {
           items: [
             'Nghiền nhỏ khoảng $5$ g gan gà bằng cối chày (hoặc xay máy $30$–$60$ giây), thêm khoảng $150$ mL nước lạnh, khuấy đều. Gọt vỏ $\\tfrac14$ quả dứa, nghiền và vắt lấy nước cho vào ống nghiệm.',
             'Lọc dịch nghiền gan qua giấy lọc, giữ lấy phần dịch trong.',
-            'Trộn dịch lọc với khoảng $30$ mL nước rửa bát pha loãng trong ống nghiệm sạch, khuấy đều, để trên giá $5$–$10$ phút.',
+            'Trộn dịch lọc với khoảng $30$ mL nước rửa bát pha loãng, khuấy đều, để yên $5$–$10$ phút.',
             'Chuyển hỗn hợp sang ống nghiệm mới đến khoảng $\\tfrac13$ đến $\\tfrac12$ ống. Thêm $5$ mL nước dứa tươi, khuấy nhẹ, để khoảng $10$ phút.',
             'Nghiêng ống, rót thật nhẹ cồn lạnh theo thành ống đến gần đầy ống. Sau vài phút, DNA kết tủa thành các sợi trắng đục ở lớp cồn.',
             'Xoay nhẹ que tre hoặc đũa thuỷ tinh trong lớp cồn để quấn DNA ra ngoài. Tránh khuấy mạnh làm đứt gãy DNA.',
@@ -129,7 +129,7 @@ export default {
       steps: [
         'DNA nằm trong nhân, được bao bởi màng nhân và màng tế bào; các màng này cấu tạo chủ yếu từ lipid và protein.',
         'Nước rửa bát hoà tan lipid của màng, phá vỡ màng để DNA ra ngoài dịch.',
-        'Thiếu nước rửa bát, các màng còn nguyên, DNA vẫn nằm trong nhân và bị lọc hoặc lắng cùng tế bào, nên trong dịch có rất ít DNA để cồn làm kết tủa.',
+        'Thiếu nước rửa bát, phần lớn các màng còn nguyên, DNA vẫn bị giữ trong nhân của các tế bào chứ không tan vào dịch, nên cồn hầu như không có DNA tự do để làm kết tủa.',
       ],
       answer: 'Không phá được màng tế bào và màng nhân nên DNA không được giải phóng ra dịch.',
     },
@@ -225,7 +225,7 @@ export default {
         'Lớp dầu trong suốt nổi trên mặt cồn',
       ],
       answer: 0,
-      hints: ['DNA không tan trong cồn và nhẹ, nên nó đi về phía lớp cồn phía trên.'],
+      hints: ['DNA không tan trong cồn, nên nó kết tủa ở chỗ dịch tế bào tiếp xúc với lớp cồn.'],
       solution:
         'DNA kết tủa thành các sợi trắng đục, nhầy ở ranh giới giữa dịch tế bào và lớp cồn rồi nổi lên lớp cồn. Màu xanh lam chỉ có khi thử bằng diphenylamine.',
     },
