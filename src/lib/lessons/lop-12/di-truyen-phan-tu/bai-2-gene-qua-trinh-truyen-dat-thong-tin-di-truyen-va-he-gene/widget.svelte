@@ -81,7 +81,7 @@
       ].filter(Boolean);
       note = {
         tone: 'warn',
-        text: `Tiền mRNA chưa trưởng thành, cần ${missing.join(', ')}. Nếu giữ intron, chuỗi polypeptide sẽ là ${proteinText(spliced(gene, removed))}, khác hẳn protein đúng.`,
+        text: `Tiền mRNA chưa trưởng thành, cần ${missing.join(', ')}.${allCut ? '' : ` Nếu giữ intron, chuỗi polypeptide sẽ là ${proteinText(spliced(gene, removed))}, khác hẳn chuỗi đúng ${proteinText(mrna)}.`}`,
       };
       return;
     }
@@ -101,7 +101,7 @@
       c.aa === STOP
         ? {
             tone: 'ok',
-            text: `Bộ ba ${c.codon} là mã kết thúc: không có tRNA nào khớp, ribosome tách khỏi mRNA và chuỗi polypeptide được giải phóng; sau đó Met mở đầu được cắt bỏ. Chuỗi: ${chainText([...chain])}.`,
+            text: `Bộ ba ${c.codon} là mã kết thúc: không có tRNA nào khớp, ribosome tách khỏi mRNA và chuỗi polypeptide ${chainText([...chain])} được giải phóng; sau đó Met mở đầu được cắt bỏ, còn ${chainText(chain.slice(1)) || '(trống)'}.`,
           }
         : {
             tone: 'ok',
