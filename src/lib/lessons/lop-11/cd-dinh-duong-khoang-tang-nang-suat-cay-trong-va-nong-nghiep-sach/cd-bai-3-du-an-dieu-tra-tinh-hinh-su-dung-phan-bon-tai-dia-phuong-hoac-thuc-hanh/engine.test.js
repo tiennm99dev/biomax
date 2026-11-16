@@ -26,7 +26,7 @@ describe('the survey tally', () => {
   it('keeps the sample apart from later edits', () => {
     const a = sampleTally();
     a.loai['huu-co'] += 5;
-    expect(sampleTally().loai['huu-co']).toBe(2);
+    expect(sampleTally().loai['huu-co']).toBe(3);
   });
 });
 

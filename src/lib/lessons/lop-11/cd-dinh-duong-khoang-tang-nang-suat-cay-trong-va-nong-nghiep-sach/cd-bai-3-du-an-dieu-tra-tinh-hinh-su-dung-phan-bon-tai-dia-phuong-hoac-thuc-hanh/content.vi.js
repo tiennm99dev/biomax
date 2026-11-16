@@ -44,7 +44,10 @@ export default {
           head: ['Nội dung', 'Ví dụ câu hỏi'],
           rows: [
             ['Thông tin chung', 'Cây trồng chính, diện tích canh tác'],
-            ['Loại phân', 'Gia đình dùng phân hữu cơ, vô cơ, vi sinh hay kết hợp?'],
+            [
+              'Loại phân',
+              'Gia đình chỉ dùng phân hoá học, chỉ dùng phân hữu cơ, vi sinh, hay kết hợp?',
+            ],
             ['Liều lượng', 'Gia đình căn cứ vào đâu để quyết định lượng phân bón?'],
             ['Thời điểm, cách bón', 'Bón lót, bón thúc mấy lần? Bón vào đất hay phun qua lá?'],
             ['An toàn nông sản', 'Ngừng bón đạm bao lâu trước khi thu hoạch?'],
@@ -55,7 +58,7 @@ export default {
           type: 'callout',
           tone: 'note',
           title: 'Câu hỏi tốt',
-          text: 'Câu hỏi ngắn, rõ, có sẵn các phương án để chọn và không gợi ý câu trả lời. Ví dụ, nên hỏi "Gia đình thường dùng loại phân bón nào?" thay vì "Gia đình có bón quá nhiều phân hoá học không?". Phiếu không hỏi thông tin riêng tư không cần thiết, và người được hỏi có quyền từ chối.',
+          text: 'Câu hỏi ngắn, rõ, có sẵn các phương án để chọn (mỗi hộ chỉ hợp với đúng một phương án) và không gợi ý câu trả lời. Ví dụ, nên hỏi "Gia đình thường dùng loại phân bón nào?" thay vì "Gia đình có bón quá nhiều phân hoá học không?". Phiếu không hỏi thông tin riêng tư không cần thiết, và người được hỏi có quyền từ chối.',
         },
       ],
     },
@@ -200,7 +203,7 @@ export default {
       type: 'choice',
       prompt: 'Câu hỏi nào phù hợp nhất để đưa vào phiếu khảo sát?',
       options: [
-        'Gia đình thường dùng loại phân bón nào? (hữu cơ; vô cơ; vi sinh; kết hợp)',
+        'Gia đình thường dùng loại phân bón nào? (chỉ phân hoá học; chỉ phân hữu cơ, vi sinh; kết hợp cả hai)',
         'Gia đình có bón phân bừa bãi làm hại môi trường không?',
         'Vì sao gia đình không chịu dùng phân hữu cơ?',
         'Gia đình thấy phân bón thế nào?',

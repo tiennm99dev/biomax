@@ -67,7 +67,12 @@
         </p>
         <label class="block text-sm text-slate-700">
           Loại phân
-          <select class={select} bind:value={pot.kind} onchange={() => (ran = false)}>
+          <select
+            class={select}
+            aria-label="Loại phân của chậu {i + 1}"
+            bind:value={pot.kind}
+            onchange={() => (ran = false)}
+          >
             {#each KINDS as k (k.value)}
               <option value={k.value}>{k.label}</option>
             {/each}
@@ -87,7 +92,12 @@
           </div>
           <label class="block text-sm text-slate-700">
             Cách bón
-            <select class={select} bind:value={pot.method} onchange={() => (ran = false)}>
+            <select
+              class={select}
+              aria-label="Cách bón của chậu {i + 1}"
+              bind:value={pot.method}
+              onchange={() => (ran = false)}
+            >
               {#each METHODS as m (m.value)}
                 <option value={m.value}>{m.label}</option>
               {/each}

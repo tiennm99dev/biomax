@@ -71,4 +71,22 @@ describe('the design check', () => {
     expect(checkDesign('ham-luong', pots).ok).toBe(true);
     expect(conclusion('ham-luong', pots).tone).toBe('warn');
   });
+
+  it('draws the kind and method conclusions only from what the pots show', () => {
+    const fair = [pot({}), pot({ kind: 'N', dose: 3 }), pot({ kind: 'P', dose: 3 })];
+    expect(conclusion('loai', [...fair, pot({ kind: 'NPK', dose: 3 })]).text).toContain(
+      'cân đối N, P, K cho kết quả tốt hơn',
+    );
+    expect(conclusion('loai', fair).text).toContain('Hãy thêm một chậu bón NPK');
+    expect(conclusion('loai', [pot({}), pot({ kind: 'NPK', dose: 3 })]).text).toContain(
+      'chỉ bón một loại phân',
+    );
+    const burnt8 = [pot({}), pot({ kind: 'N', dose: 8 }), pot({ kind: 'NPK', dose: 8 })];
+    expect(conclusion('loai', burnt8).text).toContain('giảm lượng phân');
+    const heavyMethod = [
+      pot({ kind: 'NPK', dose: 8 }),
+      pot({ kind: 'NPK', dose: 8, method: 'tron-dat' }),
+    ];
+    expect(conclusion('cach-bon', heavyMethod).text).toContain('giảm lượng phân');
+  });
 });

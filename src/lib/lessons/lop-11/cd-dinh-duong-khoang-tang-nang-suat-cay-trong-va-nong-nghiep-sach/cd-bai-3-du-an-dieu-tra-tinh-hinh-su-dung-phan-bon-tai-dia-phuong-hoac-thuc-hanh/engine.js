@@ -25,9 +25,13 @@ export const QUESTIONS = [
     text: 'Gia đình thường dùng loại phân bón nào?',
     answers: [
       { id: 'hoa-hoc', text: 'Chỉ dùng phân hoá học', short: 'Hoá học', good: false },
-      { id: 'huu-co', text: 'Chủ yếu phân hữu cơ', short: 'Hữu cơ', good: true },
-      { id: 'vi-sinh', text: 'Có dùng phân vi sinh', short: 'Vi sinh', good: true },
-      { id: 'ket-hop', text: 'Kết hợp hữu cơ và hoá học', short: 'Kết hợp', good: true },
+      { id: 'huu-co', text: 'Chỉ dùng phân hữu cơ, vi sinh', short: 'Hữu cơ, vi sinh', good: true },
+      {
+        id: 'ket-hop',
+        text: 'Kết hợp phân hữu cơ (hoặc vi sinh) với phân hoá học',
+        short: 'Kết hợp',
+        good: true,
+      },
     ],
     advice: 'Tăng phân hữu cơ ủ hoai, phân vi sinh để giảm phân hoá học và cải tạo đất.',
   },
@@ -74,7 +78,7 @@ export const QUESTIONS = [
 
 /** Invented answers of 20 households, to try the tools before a real survey. @type {Tally} */
 export const SAMPLE = {
-  loai: { 'hoa-hoc': 9, 'huu-co': 2, 'vi-sinh': 1, 'ket-hop': 8 },
+  loai: { 'hoa-hoc': 9, 'huu-co': 3, 'ket-hop': 8 },
   luong: { 'huong-dan': 7, 'kinh-nghiem': 10, nhieu: 3 },
   'thu-hoach': { dung: 11, sat: 6, 'khong-ro': 3 },
   'bao-bi': { 'thu-gom': 6, vut: 10, dot: 4 },

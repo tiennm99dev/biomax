@@ -159,7 +159,7 @@ export function checkDesign(exp, pots) {
 
 /** @param {Pot} pot */
 export function potName(pot) {
-  if (isControl(pot)) return 'đối chứng (không bón)';
+  if (isControl(pot)) return 'đối chứng, không bón';
   const kind = KINDS.find((k) => k.value === pot.kind)?.label ?? '';
   const method = pot.method === 'hoa-tan' ? 'hoà tan' : 'trộn đất';
   return `${kind}, ${formatNumber(pot.dose)} g, ${method}`;
@@ -187,10 +187,29 @@ export function conclusion(exp, pots) {
       `Chậu ${hurt.join(', ')} bị cháy phân: bón quá nhiều, rễ khó hút nước nên cây còi, lá cháy.`,
     );
   }
-  if (exp === 'loai') parts.push('Bón đủ và cân đối N, P, K cho kết quả tốt hơn bón một loại.');
+  const heavy = hurt.length > 0;
+  if (exp === 'loai') {
+    if (heavy) {
+      parts.push(
+        'Lượng phân đang quá nhiều nên chậu bón phân bị hại thay vì được lợi; hãy giảm lượng phân để thấy rõ tác dụng của từng loại phân.',
+      );
+    } else if (pots[best].kind === 'NPK' && pots.some((p) => ['N', 'P', 'K'].includes(p.kind))) {
+      parts.push('Bón đủ và cân đối N, P, K cho kết quả tốt hơn bón một loại.');
+    } else if (pots[best].kind === 'NPK') {
+      parts.push(
+        'Hãy thêm chậu chỉ bón một loại phân (đạm, lân hoặc kali) để so sánh với bón cân đối N, P, K.',
+      );
+    } else {
+      parts.push(
+        'Hãy thêm một chậu bón NPK cùng lượng, cùng cách bón để so sánh bón cân đối N, P, K với bón một loại.',
+      );
+    }
+  }
   if (exp === 'cach-bon') {
     parts.push(
-      'Phân hoà tan tác dụng nhanh; phân trộn vào đất tan chậm nên những ngày đầu cây lớn chậm hơn.',
+      heavy
+        ? 'Lượng phân đang quá nhiều: phân hoà tan gây hại ngay, phân trộn đất gây hại chậm hơn. Hãy giảm lượng phân để so sánh tác dụng của hai cách bón.'
+        : 'Phân hoà tan tác dụng nhanh; phân trộn vào đất tan chậm nên những ngày đầu cây lớn chậm hơn.',
     );
   }
   if (exp === 'ham-luong')
