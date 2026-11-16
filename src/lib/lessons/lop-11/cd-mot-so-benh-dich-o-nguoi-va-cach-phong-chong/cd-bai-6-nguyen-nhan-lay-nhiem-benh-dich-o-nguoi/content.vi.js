@@ -213,7 +213,7 @@ export default {
       type: 'choice',
       prompt:
         'Một gia đình ăn gỏi cá và uống nước giếng chưa đun sôi, sau đó cả nhà bị tiêu chảy cấp. Bệnh lây theo con đường nào?',
-      options: ['Đường tiêu hoá', 'Đường hô hấp', 'Đường máu', 'Qua muỗi đốt'],
+      options: ['Đường tiêu hoá', 'Đường hô hấp', 'Đường máu', 'Đường da'],
       answer: 0,
       hints: ['Mầm bệnh đi vào cơ thể qua cửa nào?'],
       solution:

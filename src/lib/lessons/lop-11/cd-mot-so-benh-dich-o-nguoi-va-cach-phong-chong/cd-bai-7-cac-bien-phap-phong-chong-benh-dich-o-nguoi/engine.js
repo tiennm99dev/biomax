@@ -196,7 +196,7 @@ export function preventionVerdict(run, base, r) {
       text: `Mỗi người bệnh chỉ còn lây cho ${rText} người: dịch bị chặn, cả đợt chỉ có ${formatNumber(run.total)} người mắc thay vì ${formatNumber(base.total)} người.`,
     };
   }
-  const cut = Math.round((1 - run.peak / base.peak) * 100);
+  const cut = Math.floor((1 - run.peak / base.peak) * 100);
   if (cut < 5) {
     return {
       tone: 'warn',

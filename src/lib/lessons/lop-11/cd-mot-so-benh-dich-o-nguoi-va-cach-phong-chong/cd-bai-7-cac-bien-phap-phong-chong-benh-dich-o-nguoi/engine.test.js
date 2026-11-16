@@ -61,6 +61,14 @@ describe('the prevention simulator', () => {
     expect(preventionVerdict(part, base, effectiveR('cum', ['khau-trang'], 0)).tone).toBe('info');
   });
 
+  it('never claims a peak cut of 100% while the outbreak still grows', () => {
+    const on = ['rua-tay', 'cach-li'];
+    const run = prevented('cum', on, 20);
+    const verdict = preventionVerdict(run, unchecked('cum'), effectiveR('cum', on, 20));
+    expect(verdict.text).toContain('1,02 người');
+    expect(verdict.text).toContain('thấp hơn 99%');
+  });
+
   it('gives every measure a reason', () => {
     expect(MEASURES.filter((m) => !m.why)).toEqual([]);
   });
