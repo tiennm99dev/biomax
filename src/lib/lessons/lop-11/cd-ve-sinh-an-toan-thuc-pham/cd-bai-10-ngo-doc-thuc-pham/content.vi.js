@@ -145,15 +145,15 @@ export default {
     },
     {
       problem:
-        'Nồi canh nấu lúc $11$ giờ trưa, ăn xong còn thừa. Hãy nêu cách bảo quản để có thể ăn lại an toàn vào bữa tối lúc $17$ giờ.',
+        'Nồi canh nấu lúc $11$ giờ trưa, ăn xong còn thừa. Gia đình muốn ăn nốt vào bữa xế lúc $15$ giờ $30$ phút. Hãy nêu cách bảo quản để ăn lại an toàn.',
       steps: [
-        'Từ $11$ giờ đến $17$ giờ là $6$ giờ, lâu hơn $4$ – $5$ giờ: không nên để canh ở nhiệt độ phòng.',
-        'Để nguội bớt, cho vào hộp có nắp và cất ngăn mát tủ lạnh (dưới $10\\,^\\circ\\mathrm{C}$), tách riêng khỏi thực phẩm sống.',
-        'Trước khi ăn, đun sôi kĩ lại toàn bộ phần canh sẽ ăn.',
-        'Nếu canh có mùi chua, lạ thì bỏ đi, không nếm thử.',
+        'Từ $11$ giờ đến $15$ giờ $30$ phút là $4{,}5$ giờ, vẫn trong khoảng $4$ – $5$ giờ thức ăn còn dư được bảo quản đúng cách.',
+        'Không để canh ở nhiệt độ phòng: khoảng nhiệt độ này thuận lợi cho vi khuẩn sinh sôi.',
+        'Cho canh vào hộp có nắp, cất ngăn mát tủ lạnh (gần hoặc dưới $10\\,^\\circ\\mathrm{C}$), tách riêng khỏi thực phẩm sống; hoặc giữ nóng canh trên bếp ở gần hoặc trên $60\\,^\\circ\\mathrm{C}$.',
+        'Trước khi ăn, đun sôi kĩ lại phần canh sẽ ăn; nếu canh có mùi chua, lạ thì bỏ đi, không nếm thử.',
       ],
       answer:
-        'Cất canh trong hộp kín ở ngăn mát tủ lạnh, tách khỏi đồ sống, rồi đun sôi kĩ lại trước bữa tối.',
+        'Bảo quản lạnh (gần hoặc dưới $10\\,^\\circ\\mathrm{C}$) trong hộp kín hoặc giữ nóng (gần hoặc trên $60\\,^\\circ\\mathrm{C}$), dùng trong $4$ – $5$ giờ và đun sôi kĩ lại trước khi ăn.',
     },
   ],
   practice: [

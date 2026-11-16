@@ -77,7 +77,7 @@ export const ACTIONS = [
     tone: 'warn',
     steps: [
       'Gọi cấp cứu 115 hoặc đưa ngay đến cơ sở y tế gần nhất.',
-      'Không tự gây nôn khi người bệnh co giật hoặc khó thở; cho nằm nghiêng nếu đang nôn.',
+      'Không tự gây nôn, không cho ăn uống (người khó thở, co giật, khó nuốt dễ bị sặc); cho nằm nghiêng nếu đang nôn.',
       'Không tự dùng thuốc; mang theo thức ăn nghi gây ngộ độc.',
     ],
   },

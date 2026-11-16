@@ -55,6 +55,7 @@ describe('the survey map', () => {
 
   it('finds the criterion met least across the evaluated points', () => {
     expect(summary({}).evaluated).toBe(0);
+    expect(summary({ 'can-tin': CRITERIA.map((c) => c.id) }).weakest).toBeNull();
     const s = summary(sampleForms());
     expect(s.evaluated).toBe(6);
     expect(s.weakest?.id).toBe('nuoc-sach');

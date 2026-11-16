@@ -185,6 +185,11 @@
           text="Tiêu chí ít điểm bán đạt nhất: {result.weakest.text.toLowerCase()} ({result.weakest
             .percent}%). Đề xuất: {result.weakest.fix}"
         />
+      {:else}
+        <FeedbackNote
+          tone="ok"
+          text="Mọi điểm đã đánh giá đều đạt tất cả tiêu chí; hãy khảo sát thêm điểm khác."
+        />
       {/if}
     {/if}
   </section>

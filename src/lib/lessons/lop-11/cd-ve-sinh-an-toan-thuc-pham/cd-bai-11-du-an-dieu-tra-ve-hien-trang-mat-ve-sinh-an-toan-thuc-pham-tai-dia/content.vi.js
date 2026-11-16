@@ -51,7 +51,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Mỗi tiêu chí đạt được $1$ điểm. Tỉ lệ đạt của một điểm bán là số tiêu chí đạt chia cho tổng số tiêu chí, nhân $100\\%$. Nhóm thống nhất trước cách xếp loại, ví dụ: từ $80\\%$ trở lên là "Đạt", từ $50\\%$ đến dưới $80\\%$ là "Cần cải thiện", dưới $50\\%$ là "Không đạt"; điểm bán có thực phẩm không rõ nguồn gốc hoặc quá hạn thì không được xếp "Đạt".',
+          text: 'Mỗi tiêu chí đạt được $1$ điểm. Tỉ lệ đạt của một điểm bán là số tiêu chí đạt chia cho tổng số tiêu chí, nhân $100\\%$. Nhóm thống nhất trước cách xếp loại, ví dụ: từ $80\\%$ trở lên là "Đạt", từ $50\\%$ đến dưới $80\\%$ là "Cần cải thiện", dưới $50\\%$ là "Không đạt"; điểm bán không đạt tiêu chí nguồn gốc (thực phẩm không rõ nguồn gốc, quá hạn hoặc dùng chất bảo quản lạ) thì không được xếp "Đạt".',
         },
         {
           type: 'callout',

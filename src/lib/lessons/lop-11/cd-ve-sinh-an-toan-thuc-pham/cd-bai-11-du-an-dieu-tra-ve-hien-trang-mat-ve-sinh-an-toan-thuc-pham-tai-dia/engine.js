@@ -214,6 +214,8 @@ export function summary(forms) {
     ...r,
     count: done.filter((p) => rate(forms[p.id]).rating.id === r.id).length,
   }));
-  const weakest = n ? byCriterion.reduce((a, b) => (b.met < a.met ? b : a)) : null;
+  const least = n ? byCriterion.reduce((a, b) => (b.met < a.met ? b : a)) : null;
+  // When every evaluated point meets every criterion there is nothing to fix.
+  const weakest = least && least.met < n ? least : null;
   return { evaluated: n, byCriterion, byRating, weakest };
 }
