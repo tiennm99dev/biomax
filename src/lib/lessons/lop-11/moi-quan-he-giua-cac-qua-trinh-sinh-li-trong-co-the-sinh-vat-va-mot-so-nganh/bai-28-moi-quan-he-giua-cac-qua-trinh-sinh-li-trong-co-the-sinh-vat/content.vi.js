@@ -61,7 +61,7 @@ export default {
             ],
             [
               'Chuyển hoá ở tế bào – các hệ cơ quan',
-              'Hô hấp tế bào tạo ATP cho tim co bóp, cơ hô hấp co dãn, thận lọc máu, tế bào thần kinh dẫn truyền xung.',
+              'Hô hấp tế bào tạo ATP cho tim co bóp, cơ hô hấp co dãn, tế bào ống thận tái hấp thu các chất, tế bào thần kinh dẫn truyền xung.',
             ],
             [
               'Thần kinh, nội tiết – các hệ cơ quan',

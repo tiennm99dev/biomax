@@ -3,7 +3,7 @@ export default {
   summary:
     'Sinh học cơ thể là nền tảng của các ngành y, dược, nuôi trồng thuỷ sản, trồng trọt, chăn nuôi, thú y và lâm nghiệp; hiểu các ngành này giúp định hướng nghề nghiệp phù hợp.',
   intro:
-    'Bác sĩ đọc kết quả xét nghiệm máu, kĩ sư cho cá đẻ nhân tạo, kĩ thuật viên nhân giống lan trong ống nghiệm, kiểm lâm chọn cây trồng rừng ngập mặn: những công việc rất khác nhau này đều dựa trên hiểu biết về sinh học cơ thể. Em hợp với ngành nào?',
+    'Bác sĩ đọc kết quả xét nghiệm máu, kĩ sư cho cá đẻ nhân tạo, kĩ thuật viên nhân giống lan trong ống nghiệm, kĩ sư lâm nghiệp chọn cây trồng rừng ngập mặn: những công việc rất khác nhau này đều dựa trên hiểu biết về sinh học cơ thể. Em hợp với ngành nào?',
   objectives: [
     'Kể tên được một số ngành nghề liên quan đến sinh học cơ thể: y học, dược học, nuôi trồng thuỷ sản, trồng trọt, chăn nuôi, thú y, lâm nghiệp.',
     'Nêu được những hiểu biết về sinh học cơ thể được ứng dụng trong mỗi ngành.',

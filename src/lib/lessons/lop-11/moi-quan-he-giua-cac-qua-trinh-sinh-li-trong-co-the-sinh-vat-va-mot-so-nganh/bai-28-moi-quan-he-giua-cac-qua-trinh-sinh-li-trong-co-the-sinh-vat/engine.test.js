@@ -40,9 +40,10 @@ describe('the network of physiological processes', () => {
     const circ = hits.find((h) => h.id === 'tuan-hoan');
     expect(circ?.step).toBe(1);
     expect(hitText(net, /** @type {any} */ (circ))).toContain('chất dinh dưỡng');
-    expect(hits.find((h) => h.id === 'chuyen-hoa')?.causes.map((l) => l.from)).toEqual([
-      'tuan-hoan',
-    ]);
+    const cell = /** @type {any} */ (hits.find((h) => h.id === 'chuyen-hoa'));
+    expect(cell.causes.map((/** @type {any} */ l) => l.from)).toEqual(['tuan-hoan']);
+    expect(hitText(net, cell)).toContain('tuần hoàn bị rối loạn');
+    expect(hitText(net, cell)).not.toContain('ngừng');
   });
 
   it('reports partial and full spread', () => {

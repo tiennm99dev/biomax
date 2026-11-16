@@ -184,7 +184,7 @@ export const NETWORKS = {
       {
         from: 'chuyen-hoa',
         to: 'bai-tiet',
-        why: 'thận lọc máu, tái hấp thu và tiết chủ động nhờ ATP',
+        why: 'tế bào ống thận tái hấp thu và tiết chủ động các chất nhờ ATP',
       },
       {
         from: 'chuyen-hoa',
@@ -301,12 +301,15 @@ export function depth(hits) {
 }
 
 /**
- * A sentence for one hit process: what it lost and from where.
+ * A sentence for one hit process: what it lost and from where. A step-1
+ * process lost the stopped one; a later one lost a process that was only
+ * disturbed, not stopped.
  * @param {Network} net @param {Hit} hit
  */
 export function hitText(net, hit) {
+  const state = hit.step === 1 ? 'ngừng' : 'bị rối loạn';
   const reasons = hit.causes.map(
-    (l) => `${processOf(net, l.from).name.toLowerCase()} ngừng: ${l.why}`,
+    (l) => `${processOf(net, l.from).name.toLowerCase()} ${state}: ${l.why}`,
   );
   return `${processOf(net, hit.id).name} bị ảnh hưởng (${reasons.join('; ')}).`;
 }
