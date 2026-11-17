@@ -27,11 +27,12 @@ export const NATURAL = { photosynthesis: 120, respiration: 60, decomposition: 60
 /** @typedef {'pha-rung' | 'giu-nguyen' | 'trong-rung'} Forest */
 
 /** Net carbon the forests add to the air each year, GtC (negative: taken up). */
-export const FOREST = /** @type {Record<Forest, { label: string, flux: number }>} */ ({
-  'pha-rung': { label: 'Phá rừng', flux: 1.5 },
-  'giu-nguyen': { label: 'Giữ nguyên', flux: 0 },
-  'trong-rung': { label: 'Trồng rừng', flux: -1.5 },
-});
+export const FOREST =
+  /** @type {Record<Forest, { label: string, phrase: string, flux: number }>} */ ({
+    'pha-rung': { label: 'Phá rừng', phrase: 'phá rừng', flux: 1.5 },
+    'giu-nguyen': { label: 'Giữ nguyên', phrase: 'giữ nguyên diện tích rừng', flux: 0 },
+    'trong-rung': { label: 'Trồng rừng', phrase: 'trồng rừng', flux: -1.5 },
+  });
 
 /**
  * Carbon taken out of the air in a year by the oceans and land plants,

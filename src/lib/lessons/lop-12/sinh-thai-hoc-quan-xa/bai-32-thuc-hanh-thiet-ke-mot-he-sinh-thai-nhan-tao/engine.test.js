@@ -16,6 +16,10 @@ describe('closed aquarium model', () => {
     expect(tank.end.fish).toBe(BALANCED.fish);
   });
 
+  it('does not call a fishless tank unbalanced', () => {
+    expect(run({ fish: 0 }).balanced).toBe(true);
+  });
+
   it('runs short of oxygen without plants or light', () => {
     for (const change of [{ plants: 0 }, { light: 2 }]) {
       const tank = run(change);

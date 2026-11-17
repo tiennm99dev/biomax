@@ -65,7 +65,7 @@
   const width = (id) => (id === 'dot' ? 1.5 + fossil * 0.35 : id === 'quang-hop' ? 4 : 2.5);
 
   const text = $derived(
-    `Đốt ${fossil} GtC/năm, ${FOREST[forest].label.toLowerCase()}: sau ${YEARS} năm $\\mathrm{CO_2}$ khoảng ${formatNumber(Math.round(v.end))} ppm${v.still} (mức tiền công nghiệp ${PRE_INDUSTRIAL} ppm). ${v.trend}`,
+    `Đốt ${fossil} GtC/năm, ${FOREST[forest].phrase}: sau ${YEARS} năm $\\mathrm{CO_2}$ khoảng ${formatNumber(Math.round(v.end))} ppm${v.still} (mức tiền công nghiệp ${PRE_INDUSTRIAL} ppm). ${v.trend}`,
   );
 </script>
 

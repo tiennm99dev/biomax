@@ -46,9 +46,11 @@
   );
 
   const text = $derived(
-    result.balanced
-      ? `Sau ${DAYS} ngày bể vẫn cân bằng: cây quang hợp đủ oxygen cho cá và ốc, vi khuẩn trong cát sỏi chuyển hoá chất thải thành nitrate, cây hấp thụ nitrate, tảo không phát triển quá mức. Đây là một hệ sinh thái nhân tạo tự duy trì được.`
-      : `Bể mất cân bằng. ${result.problems.join(' ')}`,
+    result.balanced && fish === 0
+      ? `Sau ${DAYS} ngày bể vẫn ổn định nhưng chưa có cá: hãy thả cá (sinh vật tiêu thụ) với số lượng phù hợp rồi xem cây có tạo đủ oxygen và vi khuẩn có chuyển hoá kịp chất thải không.`
+      : result.balanced
+        ? `Sau ${DAYS} ngày bể vẫn cân bằng: cây quang hợp đủ oxygen cho cá và ốc, vi khuẩn trong cát sỏi chuyển hoá chất thải thành nitrate, cây hấp thụ nitrate, tảo không phát triển quá mức. Đây là một hệ sinh thái nhân tạo tự duy trì được.`
+        : `Bể mất cân bằng. ${result.problems.join(' ')}`,
   );
 
   function reset() {

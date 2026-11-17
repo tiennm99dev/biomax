@@ -126,11 +126,6 @@ export function diagnose(design, days) {
   const minOxygen = Math.min(...days.map((d) => d.oxygen));
   const maxAmmonia = Math.max(...days.map((d) => d.ammonia));
   const maxAlgae = Math.max(...days.map((d) => d.algae));
-  if (design.fish === 0) {
-    problems.push(
-      'Bể chưa có cá: chưa có sinh vật tiêu thụ bậc cao, chuỗi thức ăn chưa hoàn chỉnh.',
-    );
-  }
   if (minOxygen < POOR_OXYGEN) {
     const cause =
       design.plants === 0 || design.light < 4
@@ -146,12 +141,12 @@ export function diagnose(design, days) {
     problems.push(
       design.microbes
         ? 'Ammonia tích tụ, gây độc: chất thải và thức ăn thừa nhiều hơn khả năng chuyển hoá của vi khuẩn.'
-        : 'Ammonia tích tụ, gây độc: thiếu lớp cát sỏi có vi khuẩn nitrate hoá (sinh vật phân giải, chuyển hoá chất thải).',
+        : 'Ammonia tích tụ, gây độc: thiếu lớp cát sỏi là nơi sống của vi khuẩn nitrate hoá, nên ammonia không được chuyển thành nitrate.',
     );
   }
   if (end.nitrate > HIGH_NITRATE && maxAlgae <= ALGAE_BLOOM) {
     problems.push(
-      'Nitrate tích tụ trong nước: thiếu cây thuỷ sinh hấp thụ, dễ dẫn tới tảo phát triển mạnh.',
+      'Nitrate tích tụ trong nước: cây thuỷ sinh hấp thụ không kịp (ít cây hoặc thiếu ánh sáng), dễ dẫn tới tảo phát triển mạnh.',
     );
   }
   if (maxAlgae > ALGAE_BLOOM) {

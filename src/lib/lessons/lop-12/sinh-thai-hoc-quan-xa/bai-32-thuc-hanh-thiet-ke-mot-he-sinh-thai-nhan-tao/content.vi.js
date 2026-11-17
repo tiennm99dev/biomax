@@ -36,7 +36,7 @@ export default {
             [
               'Sinh vật phân giải',
               'Vi khuẩn, nấm sống trong lớp cát sỏi, nước',
-              'Phân giải chất thải, thức ăn thừa, xác sinh vật; chuyển ammonia độc thành nitrate cho cây dùng',
+              'Phân giải chất thải, thức ăn thừa, xác sinh vật thành chất vô cơ (ammonia); cùng sống trong lớp cát sỏi có vi khuẩn nitrate hoá chuyển ammonia độc thành nitrate cho cây dùng',
             ],
           ],
         },
@@ -133,7 +133,12 @@ export default {
     {
       type: 'match',
       prompt: 'Ghép mỗi thành phần của bể cá cảnh với nhóm phù hợp trong hệ sinh thái.',
-      left: ['Rong đuôi chó', 'Cá bảy màu', 'Vi khuẩn trong lớp sỏi', 'Nước, cát sỏi, ánh sáng'],
+      left: [
+        'Rong đuôi chó',
+        'Cá bảy màu',
+        'Nấm, vi khuẩn phân giải thức ăn thừa',
+        'Nước, cát sỏi, ánh sáng',
+      ],
       right: ['Sinh vật sản xuất', 'Sinh vật tiêu thụ', 'Sinh vật phân giải', 'Môi trường vô sinh'],
       pairs: [
         [0, 0],
@@ -143,7 +148,7 @@ export default {
       ],
       hints: ['Ai quang hợp, ai ăn sinh vật khác, ai phân giải chất thải?'],
       solution:
-        'Rong quang hợp: sinh vật sản xuất. Cá ăn thức ăn: sinh vật tiêu thụ. Vi khuẩn phân giải chất thải: sinh vật phân giải. Nước, cát sỏi, ánh sáng: môi trường vô sinh.',
+        'Rong quang hợp: sinh vật sản xuất. Cá ăn thức ăn: sinh vật tiêu thụ. Nấm, vi khuẩn phân giải thức ăn thừa, chất thải: sinh vật phân giải. Nước, cát sỏi, ánh sáng: môi trường vô sinh.',
     },
     {
       type: 'number',
