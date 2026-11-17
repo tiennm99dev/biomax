@@ -170,7 +170,9 @@ const setTex = (k) => (k === 1 ? 'n' : `${k}n`);
  */
 export function classifyCounts(counts) {
   const total = counts.reduce((s, c) => s + c, 0);
-  const base = baseCount(counts);
+  const most = baseCount(counts);
+  // Empty groups are losses from a diploid set (thể không), never a "0n" set.
+  const base = most === 0 && total > 0 ? 2 : most;
   const diffs = counts.map((c) => c - base).filter((d) => d !== 0);
   if (diffs.length === 0) {
     if (base === 2)

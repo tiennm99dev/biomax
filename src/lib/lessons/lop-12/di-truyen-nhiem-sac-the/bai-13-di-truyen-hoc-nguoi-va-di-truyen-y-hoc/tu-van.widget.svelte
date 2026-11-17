@@ -22,7 +22,9 @@
     if (mode === 'AR')
       return `${all} ${
         r.child === 0
-          ? 'Con có thể mang allele bệnh nhưng không biểu hiện.'
+          ? mother === 'AA' && father === 'AA'
+            ? 'Cả hai vợ chồng không mang allele bệnh nên con không mắc bệnh và không mang allele bệnh.'
+            : 'Con có thể mang allele bệnh nhưng không biểu hiện.'
           : 'Bệnh do gene lặn trên NST thường nên con trai và con gái có nguy cơ như nhau.'
       }`;
     return `${all} Nếu sinh con trai: ${quarterText(r.son)}; nếu sinh con gái: ${quarterText(r.daughter)}. Con trai nhận NST X từ mẹ, nên nguy cơ của con trai phụ thuộc vào mẹ.`;

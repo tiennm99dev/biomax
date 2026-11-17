@@ -69,6 +69,7 @@ describe('numerical changes', () => {
       [[4, 4, 4, 4], 'Thể tứ bội (đa bội chẵn)', '4n', 16],
       [[1, 1, 1, 1], 'Thể đơn bội', 'n', 4],
       [[3, 3, 3, 2], 'Thể lệch bội', '3n − 1', 11],
+      [[0, 0, 0, 2], 'Thể lệch bội ở nhiều cặp', '2n − 2 − 2 − 2', 2],
     ];
     const bad = cases.filter(([c, name, notation, total]) => {
       const v = classifyCounts(/** @type {number[]} */ (c));

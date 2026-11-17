@@ -53,6 +53,8 @@ export const COUNT_PRESETS = [
  * @param {import('../_shared/mutations.js').CountVerdict} v
  */
 export function countMeaning(v) {
+  if (v.total === 0)
+    return 'Tế bào không còn nhiễm sắc thể nào nên không thể sống. Hãy tăng số chiếc ở các nhóm.';
   switch (v.kind) {
     case 'binh-thuong':
       return 'Mỗi nhóm có đúng 2 nhiễm sắc thể tương đồng: bộ lưỡng bội bình thường.';

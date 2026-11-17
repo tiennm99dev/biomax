@@ -179,7 +179,7 @@ export default {
         'Một NST bình thường có trình tự gene ABC•DEFGH (• là tâm động). Xác định dạng đột biến của mỗi NST sau: (1) ABC•DEFGFGH; (2) AB•CDEFGH; (3) ABC•DEH.',
       steps: [
         '(1) So với ABC•DEFGH, đoạn FG xuất hiện hai lần, số gene tăng: lặp đoạn FG.',
-        '(2) Các gene vẫn đủ, nhưng C nằm sau tâm động, nghĩa là đoạn C•D… đã bị đảo: đoạn "C•" quay $180^\\circ$ thành "•C". Đoạn đảo chứa tâm động: đảo đoạn.',
+        '(2) Các gene vẫn đủ, nhưng C chuyển sang phía sau tâm động: đoạn gồm gene C và tâm động bị đứt ra, quay $180^\\circ$ rồi nối lại ("C•" thành "•C"). Đoạn đảo chứa tâm động: đảo đoạn.',
         '(3) Thiếu các gene F, G, số gene giảm từ $8$ còn $6$: mất đoạn FG.',
       ],
       answer: '(1) lặp đoạn; (2) đảo đoạn chứa tâm động; (3) mất đoạn.',

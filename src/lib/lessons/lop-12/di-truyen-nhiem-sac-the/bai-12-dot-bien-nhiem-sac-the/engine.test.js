@@ -37,5 +37,6 @@ describe('count presets', () => {
     ]) {
       expect(countMeaning(classifyCounts(c)).length).toBeGreaterThan(20);
     }
+    expect(countMeaning(classifyCounts([0, 0, 0, 0]))).toContain('không còn nhiễm sắc thể');
   });
 });
