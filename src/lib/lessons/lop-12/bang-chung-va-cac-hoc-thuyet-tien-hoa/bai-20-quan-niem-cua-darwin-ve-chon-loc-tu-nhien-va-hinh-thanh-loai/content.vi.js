@@ -76,7 +76,7 @@ export default {
           type: 'list',
           items: [
             'Darwin ngâm hạt của nhiều loài cây trong nước biển trong thời gian dài: nhiều hạt vẫn nảy mầm, nên cây trên các đảo có thể được phát tán từ đất liền qua biển.',
-            'Darwin dự đoán cây bắt côn trùng thích nghi với đất nghèo nitrogen. Khi nhỏ dung dịch đường, lipid và protein lên lá cây nắp ấm, cây chỉ hấp thụ protein, đúng như dự đoán.',
+            'Darwin dự đoán cây bắt côn trùng thích nghi với đất nghèo nitrogen. Khi đặt lên lá cây gọng vó những mẩu chất khác nhau, các lông tuyến chỉ cụp lại và tiết dịch tiêu hoá mạnh với các chất chứa nitrogen như lòng trắng trứng, thịt; với đường hay dầu thì gần như không, đúng như dự đoán.',
             'Nhà tự nhiên học A. R. Wallace cũng độc lập đi đến ý tưởng chọn lọc tự nhiên; học thuyết mang tên Darwin vì ông đưa ra nhiều bằng chứng khoa học hơn.',
           ],
         },
@@ -236,7 +236,7 @@ export default {
     {
       type: 'text',
       prompt:
-        'Darwin gọi những sai khác giữa các cá thể sinh ra từ cùng một cặp bố mẹ là gì? (ghi ba chữ)',
+        'Darwin gọi những sai khác giữa các cá thể sinh ra từ cùng một cặp bố mẹ là gì? (ghi bốn chữ)',
       accept: ['biến dị cá thể'],
       hints: ['Đó là nguyên liệu của chọn lọc theo Darwin.'],
       solution: 'Darwin gọi đó là biến dị cá thể.',

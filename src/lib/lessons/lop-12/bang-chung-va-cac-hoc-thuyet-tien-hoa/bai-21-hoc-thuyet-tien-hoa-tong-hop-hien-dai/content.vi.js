@@ -63,7 +63,7 @@ export default {
           type: 'list',
           items: [
             'Hiệu ứng sáng lập: một nhóm nhỏ cá thể tách khỏi quần thể gốc (ví dụ bị gió bão đưa ra đảo) lập nên quần thể mới có vốn gene khác hẳn quần thể gốc.',
-            'Hiệu ứng thắt cổ chai: kích thước quần thể giảm mạnh do biến cố; quần thể mới phát triển từ số ít cá thể sống sót nên có cấu trúc di truyền khác và đa dạng di truyền thấp, như loài báo săn sau thời kì băng hà khoảng $10\\,000 - 12\\,000$ năm trước.',
+            'Hiệu ứng thắt cổ chai: kích thước quần thể giảm mạnh do biến cố; quần thể mới phát triển từ số ít cá thể sống sót nên có cấu trúc di truyền khác và đa dạng di truyền thấp, như loài báo săn sau thời kì băng hà khoảng $10\\,000$ – $12\\,000$ năm trước.',
             'Chọn lọc chống lại allele trội làm thay đổi tần số allele nhanh hơn chống lại allele lặn, vì allele trội biểu hiện ngay ở thể dị hợp; allele lặn có hại vẫn tồn tại lâu trong các cá thể dị hợp. Áp lực chọn lọc càng lớn, tần số allele biến đổi càng nhanh.',
           ],
         },

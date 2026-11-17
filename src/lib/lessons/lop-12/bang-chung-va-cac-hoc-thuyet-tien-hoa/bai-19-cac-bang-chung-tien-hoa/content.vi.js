@@ -63,7 +63,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Chi trước của người, mèo, cá voi, dơi, chim và ngựa đều gồm xương cánh tay, xương cẳng tay, xương cổ tay, xương bàn tay và xương ngón tay. Chúng được thừa hưởng từ một tổ tiên chung, rồi biến đổi khác nhau để thích nghi với các chức năng khác nhau: cơ quan tương đồng phản ánh tiến hoá phân li. Hươu cao cổ cũng chỉ có $7$ đốt sống cổ như mọi loài thú khác.',
+          text: 'Chi trước của người, mèo, cá voi, dơi, chim và ngựa đều gồm xương cánh tay, xương cẳng tay, xương cổ tay, xương bàn tay và xương ngón tay. Chúng được thừa hưởng từ một tổ tiên chung, rồi biến đổi khác nhau để thích nghi với các chức năng khác nhau: cơ quan tương đồng phản ánh tiến hoá phân li. Hươu cao cổ cũng chỉ có $7$ đốt sống cổ như hầu hết các loài thú khác.',
         },
         { type: 'widget', name: 'organ-sort' },
         {
@@ -159,7 +159,7 @@ export default {
         'Cánh dơi và cánh côn trùng đều dùng để bay; cánh dơi và chi trước của mèo có chức năng khác nhau. Cặp nào là cơ quan tương đồng, cặp nào là cơ quan tương tự? Mỗi cặp phản ánh hướng tiến hoá nào?',
       steps: [
         'Cánh dơi và chi trước mèo đều gồm xương cánh tay, cẳng tay, cổ tay, bàn tay, ngón tay ở cùng vị trí: cùng nguồn gốc, khác chức năng, nên là cơ quan tương đồng, phản ánh tiến hoá phân li.',
-        'Cánh côn trùng là nếp da ở lưng, không có xương; cánh dơi là chi trước có xương: khác nguồn gốc nhưng cùng chức năng bay, nên là cơ quan tương tự, phản ánh tiến hoá hội tụ.',
+        'Cánh côn trùng mọc ra từ lớp vỏ kitin ở mặt lưng, không có xương; cánh dơi là chi trước có xương: khác nguồn gốc nhưng cùng chức năng bay, nên là cơ quan tương tự, phản ánh tiến hoá hội tụ.',
       ],
       answer:
         'Cánh dơi – chi trước mèo: cơ quan tương đồng (tiến hoá phân li); cánh dơi – cánh côn trùng: cơ quan tương tự (tiến hoá hội tụ).',

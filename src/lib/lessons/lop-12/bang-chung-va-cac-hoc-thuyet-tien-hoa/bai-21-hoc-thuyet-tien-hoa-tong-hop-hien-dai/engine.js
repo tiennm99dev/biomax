@@ -149,6 +149,18 @@ export const STRENGTH = {
 const f2 = (v) => formatNumber(v, 2);
 
 /**
+ * A frequency at the end of a run: one that rounds to 0 or 1 without
+ * reaching it is "gần 0" or "gần 1", so a run that only nears loss does not
+ * read as the allele being gone.
+ * @param {number} v
+ */
+export function endText(v) {
+  if (v > 0 && v < 0.005) return 'gần 0';
+  if (v < 1 && v > 0.995) return 'gần 1';
+  return f2(v);
+}
+
+/**
  * What the widget says about a run.
  * @param {Factor} factor
  * @param {Array<{ name: string, values: number[] }>} lines
@@ -162,11 +174,11 @@ export function factorNote(factor, lines, k, against = 'lan') {
   if (factor === 'dot-bien')
     return k === 0
       ? 'Không có đột biến: tần số allele giữ nguyên.'
-      : `Tần số A từ ${f2(first)} còn ${f2(last)} ${span}. Trong tự nhiên tần số đột biến của mỗi gene rất thấp (khoảng $10^{-6}$ đến $10^{-4}$), nên đột biến làm thay đổi tần số allele rất chậm; vai trò chính của nó là tạo allele mới, nguồn biến dị sơ cấp cho tiến hoá.`;
+      : `Tần số A từ ${f2(first)} còn ${endText(last)} ${span}. Trong tự nhiên tần số đột biến của mỗi gene rất thấp (khoảng $10^{-6}$ đến $10^{-4}$), nên đột biến làm thay đổi tần số allele rất chậm; vai trò chính của nó là tạo allele mới, nguồn biến dị sơ cấp cho tiến hoá.`;
   if (factor === 'dong-gene')
     return k === 0
       ? 'Không có dòng gene: tần số allele giữ nguyên.'
-      : `Tần số A từ ${f2(first)} tiến dần về ${f2(DONOR_P)}, tần số của quần thể cho (${span} là ${f2(last)}). Dòng gene làm tần số allele thay đổi không theo hướng xác định, nhanh hay chậm tuỳ tỉ lệ nhập cư và độ chênh lệch tần số allele giữa hai quần thể; nó làm giảm khác biệt vốn gene giữa các quần thể.`;
+      : `Tần số A từ ${f2(first)} tiến dần về ${f2(DONOR_P)}, tần số của quần thể cho (${span} là ${endText(last)}). Dòng gene làm tần số allele thay đổi không theo hướng xác định, nhanh hay chậm tuỳ tỉ lệ nhập cư và độ chênh lệch tần số allele giữa hai quần thể; nó làm giảm khác biệt vốn gene giữa các quần thể.`;
   if (factor === 'phieu-bat') {
     const fixed = lines.filter(
       (l) => l.values[GENERATIONS] === 0 || l.values[GENERATIONS] === 1,
@@ -176,10 +188,10 @@ export function factorNote(factor, lines, k, against = 'lan') {
   }
   if (factor === 'giao-phoi') {
     const het = lines[1].values;
-    return `Tần số A vẫn là ${f2(first)}; tỉ lệ dị hợp giảm từ ${f2(het[0])} xuống ${f2(het[GENERATIONS])}. Giao phối không ngẫu nhiên không làm thay đổi tần số allele nhưng làm tăng đồng hợp, giảm dị hợp, làm giảm đa dạng di truyền.`;
+    return `Tần số A vẫn là ${f2(first)}; tỉ lệ dị hợp giảm từ ${f2(het[0])} xuống ${endText(het[GENERATIONS])}. Giao phối không ngẫu nhiên không làm thay đổi tần số allele nhưng làm tăng đồng hợp, giảm dị hợp, làm giảm đa dạng di truyền.`;
   }
   if (k === 0) return 'Không có chọn lọc: tần số allele giữ nguyên.';
   return against === 'lan'
-    ? `Đào thải kiểu hình lặn aa: tần số a từ ${f2(first)} giảm còn ${f2(last)} ${span}, ngày càng chậm vì allele a "ẩn" trong các cá thể Aa không bị chọn lọc phát hiện.`
-    : `Đào thải kiểu hình trội (AA và Aa): tần số A từ ${f2(first)} giảm còn ${f2(last)} ${span}. Chọn lọc chống allele trội làm thay đổi tần số allele nhanh hơn nhiều so với chống allele lặn, vì allele trội biểu hiện ngay cả ở thể dị hợp.`;
+    ? `Đào thải kiểu hình lặn aa: tần số a từ ${f2(first)} giảm còn ${endText(last)} ${span}, ngày càng chậm vì allele a "ẩn" trong các cá thể Aa không bị chọn lọc phát hiện.`
+    : `Đào thải kiểu hình trội (AA và Aa): tần số A từ ${f2(first)} giảm còn ${endText(last)} ${span}. Chọn lọc chống allele trội làm thay đổi tần số allele nhanh hơn nhiều so với chống allele lặn, vì allele trội biểu hiện ngay cả ở thể dị hợp.`;
 }

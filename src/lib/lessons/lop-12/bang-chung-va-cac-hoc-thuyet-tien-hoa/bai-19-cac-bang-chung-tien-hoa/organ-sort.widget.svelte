@@ -33,7 +33,7 @@
       id: 'canh-con-trung',
       label: 'Cánh côn trùng và cánh dơi',
       bin: 'tuong-tu',
-      why: 'Cùng chức năng bay nhưng cánh côn trùng là nếp da ở lưng, không có xương; khác nguồn gốc.',
+      why: 'Cùng chức năng bay nhưng cánh côn trùng mọc ra từ lớp vỏ kitin ở mặt lưng, không có xương; khác nguồn gốc.',
     },
     {
       id: 'mang',

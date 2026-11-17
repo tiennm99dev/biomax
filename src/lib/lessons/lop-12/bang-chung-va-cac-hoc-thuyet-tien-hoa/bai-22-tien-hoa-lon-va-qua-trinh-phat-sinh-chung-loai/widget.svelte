@@ -112,6 +112,11 @@
           stroke="#475569"
           stroke-width="1.5"
         />
+        {#if ancestor}
+          {#each placed.filter((c) => p.node.children?.includes(c.node) && lit.has(c.node.id)) as c (c.node.id)}
+            <line x1={p.x} y1={p.y} x2={p.x} y2={c.y} stroke="#e11d48" stroke-width="2.5" />
+          {/each}
+        {/if}
       {:else}
         <line x1={p.px} y1={p.y} x2={p.x} y2={p.y} stroke={color} stroke-width={on ? 2.5 : 1.5} />
         <line

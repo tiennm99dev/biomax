@@ -52,7 +52,7 @@ export default {
           ordered: true,
           items: [
             'Tiến hoá hoá học (hơn $4$ tỉ năm trước): từ các chất vô cơ hình thành các chất hữu cơ đơn giản rồi phức tạp. Oparin và Haldane cho rằng chúng hình thành nhờ năng lượng của sấm sét, núi lửa, tia tử ngoại; năm $1953$, Miller và Urey phóng tia lửa điện qua hỗn hợp khí mô phỏng khí quyển nguyên thuỷ và thu được các amino acid. Chất hữu cơ cũng có thể đến từ thiên thạch. Phân tử tự nhân đôi đầu tiên có lẽ là RNA.',
-            'Tiến hoá tiền sinh học (khoảng $4{,}2 - 3{,}8$ tỉ năm trước): lớp màng phospholipid bao lấy các đại phân tử tạo thành các giọt (protobiont); giọt nào trao đổi chất, lớn lên và phân chia được thì trở thành tế bào sơ khai.',
+            'Tiến hoá tiền sinh học (khoảng $4{,}2$ – $3{,}8$ tỉ năm trước): lớp màng phospholipid bao lấy các đại phân tử tạo thành các giọt (protobiont); giọt nào trao đổi chất, lớn lên và phân chia được thì trở thành tế bào sơ khai.',
             'Tiến hoá sinh học (từ ít nhất $3{,}5$ tỉ năm trước đến nay): chọn lọc tự nhiên biến tế bào sơ khai thành sinh vật nhân sơ; tế bào nhân thực xuất hiện khoảng $1{,}8$ tỉ năm trước (ti thể và lục lạp có nguồn gốc từ vi khuẩn được thực bào theo thuyết nội cộng sinh); từ đơn bào tiến hoá thành đa bào và toàn bộ sinh giới ngày nay.',
           ],
         },
@@ -60,20 +60,20 @@ export default {
           type: 'table',
           head: ['Đại', 'Thời gian (triệu năm trước)', 'Sinh vật điển hình'],
           rows: [
-            ['Thái cổ', 'khoảng $4\\,000 - 2\\,500$', 'Sinh vật nhân sơ'],
+            ['Thái cổ', 'khoảng $4\\,000$ – $2\\,500$', 'Sinh vật nhân sơ'],
             [
               'Nguyên sinh',
-              'khoảng $2\\,500 - 541$',
+              'khoảng $2\\,500$ – $541$',
               'Sinh vật nhân thực, tảo, động vật không xương sống ở biển',
             ],
             [
               'Cổ sinh',
-              'khoảng $541 - 252$',
+              'khoảng $541$ – $252$',
               'Cá, thực vật và động vật lên cạn, lưỡng cư, bò sát đầu tiên',
             ],
             [
               'Trung sinh',
-              'khoảng $252 - 66$',
+              'khoảng $252$ – $66$',
               'Bò sát (khủng long) ngự trị, thú và chim xuất hiện, thực vật hạt kín',
             ],
             [
@@ -102,7 +102,7 @@ export default {
           type: 'list',
           items: [
             'Hai nhóm có tổ tiên chung gần nhất càng gần hiện tại (điểm phân nhánh càng muộn) thì quan hệ họ hàng càng gần.',
-            'Cây được xây dựng dựa trên các đặc điểm tương đồng ở mọi cấp độ: phân tử (DNA, protein), nhiễm sắc thể, tế bào, hình thái, giải phẫu, tập tính; bằng chứng phân tử là chính xác nhất.',
+            'Cây được xây dựng dựa trên các đặc điểm tương đồng ở mọi cấp độ: phân tử (DNA, protein), nhiễm sắc thể, tế bào, hình thái, giải phẫu, tập tính, cùng với hoá thạch; bằng chứng phân tử là chính xác nhất.',
             'Dựa trên trình tự rRNA, sinh giới được chia thành ba lãnh giới: Vi khuẩn, Vi khuẩn cổ và Nhân thực, cùng tiến hoá từ một tổ tiên chung.',
             'Cây phát sinh chủng loại chỉ là giả thuyết, có thể được điều chỉnh khi có thêm bằng chứng mới.',
           ],
@@ -127,13 +127,13 @@ export default {
             ],
             [
               'Australopithecus (người vượn phương Nam)',
-              '$4 - 2{,}5$ triệu năm trước',
+              '$4$ – $2{,}5$ triệu năm trước',
               'Đi thẳng bằng hai chân; dùng cành cây, hòn đá có sẵn làm công cụ',
             ],
             [
               'Homo habilis (người khéo léo)',
               'khoảng $2{,}5$ triệu năm trước',
-              'Hộp sọ $600 - 800\\ \\mathrm{cm^3}$; chế tác công cụ đá; sống thành đàn',
+              'Hộp sọ $600$ – $800\\ \\mathrm{cm^3}$; chế tác công cụ đá; sống thành đàn',
             ],
             [
               'Homo erectus (người đứng thẳng)',
@@ -142,8 +142,8 @@ export default {
             ],
             [
               'Homo sapiens (người hiện đại)',
-              'từ khoảng $300\\,000 - 200\\,000$ năm trước',
-              'Hộp sọ $1\\,000 - 1\\,850\\ \\mathrm{cm^3}$, lồi cằm rõ, tiếng nói phát triển, công cụ tinh xảo, có văn hoá, nghệ thuật',
+              'từ khoảng $300\\,000$ – $200\\,000$ năm trước',
+              'Hộp sọ $1\\,000$ – $1\\,850\\ \\mathrm{cm^3}$, lồi cằm rõ, tiếng nói phát triển, công cụ tinh xảo, có văn hoá, nghệ thuật',
             ],
           ],
         },
@@ -245,7 +245,7 @@ export default {
       answer: [3, 1, 4, 0, 2],
       hints: ['Ardipithecus là tổ tiên cổ nhất được biết của nhánh người.'],
       solution:
-        'Ardipithecus (khoảng $4{,}4$ triệu năm) → Australopithecus ($4 - 2{,}5$ triệu năm) → Homo habilis (khoảng $2{,}5$ triệu năm) → Homo erectus (từ khoảng $1{,}9$ triệu năm) → Homo sapiens (khoảng $300\\,000 - 200\\,000$ năm).',
+        'Ardipithecus (khoảng $4{,}4$ triệu năm) → Australopithecus ($4$ – $2{,}5$ triệu năm) → Homo habilis (khoảng $2{,}5$ triệu năm) → Homo erectus (từ khoảng $1{,}9$ triệu năm) → Homo sapiens (khoảng $300\\,000$ – $200\\,000$ năm).',
     },
     {
       type: 'choice',

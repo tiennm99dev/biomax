@@ -5,6 +5,7 @@ import {
   GENERATIONS,
   REPEATS,
   drift,
+  endText,
   factorNote,
   inbreed,
   migrate,
@@ -75,5 +76,21 @@ describe('runs over the generations', () => {
     expect(lines[0].values[GENERATIONS]).toBeCloseTo(0.5 * 0.98 ** GENERATIONS, 6);
     expect(factorNote('dot-bien', lines, 2)).toContain('rất chậm');
     expect(factorNote('dot-bien', lines, 0)).toContain('giữ nguyên');
+  });
+});
+
+describe('end frequencies in the notes', () => {
+  it('writes a frequency that only nears 0 or 1 as gần 0 or gần 1', () => {
+    expect(endText(0)).toBe('0');
+    expect(endText(0.001)).toBe('gần 0');
+    expect(endText(0.999)).toBe('gần 1');
+    expect(endText(1)).toBe('1');
+    expect(endText(0.25)).toBe('0,25');
+  });
+
+  it('does not call a dominant allele lost while selection only shrinks it', () => {
+    const lines = trajectories('chon-loc', 0.5, 0.3, { against: 'troi' });
+    expect(lines[0].values[GENERATIONS]).toBeGreaterThan(0);
+    expect(factorNote('chon-loc', lines, 30, 'troi')).toContain('giảm còn gần 0');
   });
 });
