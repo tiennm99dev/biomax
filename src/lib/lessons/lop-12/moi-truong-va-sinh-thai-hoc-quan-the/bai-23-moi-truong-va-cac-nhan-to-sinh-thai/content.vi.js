@@ -233,7 +233,7 @@ export default {
         'vẫn sống nhưng hoạt động sống bị ức chế',
         'phát triển tốt nhất',
         'chết ngay',
-        'phát triển tốt hơn ở $30$ °C vì nhiệt độ cao hơn',
+        'phát triển tốt hơn so với ở $30$ °C vì nhiệt độ cao hơn',
       ],
       answer: 0,
       hints: ['Xác định $38$ °C nằm trong khoảng nào: thuận lợi, chống chịu hay ngoài giới hạn.'],

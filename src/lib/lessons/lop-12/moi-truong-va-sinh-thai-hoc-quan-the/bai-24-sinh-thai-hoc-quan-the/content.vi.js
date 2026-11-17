@@ -107,7 +107,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Trong tự nhiên, hầu hết quần thể tăng trưởng theo đường cong chữ S. Quần thể người tăng chậm suốt thời gian dài do sản xuất lương thực thấp, dịch bệnh, chiến tranh; từ khoảng thế kỉ XVI, nhờ những tiến bộ về kinh tế, xã hội, y tế, dân số thế giới tăng rất nhanh, gây sức ép lớn lên tài nguyên và môi trường.',
+          text: 'Trong tự nhiên, hầu hết quần thể tăng trưởng theo đường cong chữ S. Quần thể người tăng chậm suốt thời gian dài do sản xuất lương thực thấp, dịch bệnh, chiến tranh; từ thế kỉ XVIII, nhờ những tiến bộ về khoa học, công nghệ, y học, dân số thế giới tăng rất nhanh, gây sức ép lớn lên tài nguyên và môi trường.',
         },
       ],
     },
@@ -117,7 +117,7 @@ export default {
         {
           type: 'list',
           items: [
-            'Biến động theo chu kì: số lượng tăng giảm theo chu kì biến đổi của môi trường. Ví dụ: ếch nhái tăng mạnh vào mùa mưa, giảm vào mùa khô; số lượng thỏ rừng và linh miêu ở Canada biến động theo chu kì khoảng $9$ – $10$ năm; cá cơm ở vùng biển Peru biến động theo chu kì khoảng $10$ – $12$ năm do dòng hải lưu nóng.',
+            'Biến động theo chu kì: số lượng tăng giảm theo chu kì biến đổi của môi trường. Ví dụ: ếch nhái tăng mạnh vào mùa mưa, giảm vào mùa khô; số lượng rươi tăng mạnh vào khoảng cuối tháng 9, đầu tháng 10 âm lịch (theo chu kì tuần trăng); số lượng thỏ rừng và mèo rừng (linh miêu) ở Canada biến động theo chu kì khoảng $9$ – $10$ năm; cá cơm ở vùng biển Peru biến động theo chu kì khoảng $10$ – $12$ năm do dòng hải lưu nóng.',
             'Biến động không theo chu kì: số lượng tăng hoặc giảm đột ngột do các yếu tố ngẫu nhiên như cháy rừng, bão, lũ lụt, dịch bệnh, hoặc hoạt động của con người (khai thác quá mức, xả thải, xây dựng).',
           ],
         },
