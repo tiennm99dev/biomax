@@ -1,14 +1,14 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Sinh thái học phục hồi đưa các hệ sinh thái bị suy thoái trở về gần trạng thái tự nhiên bằng cải tạo sinh học và gia tăng sinh học; đa dạng sinh vật, nguyên nhân suy giảm và các biện pháp bảo tồn: bảo tồn tại chỗ, bảo tồn chuyển chỗ.',
+    'Sinh thái học phục hồi đưa các hệ sinh thái bị suy thoái trở về gần trạng thái tự nhiên bằng cải tạo sinh học và gia tăng sinh học; đa dạng sinh vật, nguyên nhân suy giảm và các biện pháp bảo tồn: bảo tồn nguyên vị, bảo tồn chuyển vị.',
   intro:
     'Trong chiến tranh, rừng ngập mặn Cần Giờ gần như bị chất độc hoá học huỷ diệt. Từ năm 1978, người dân và cán bộ lâm nghiệp trồng lại hàng chục nghìn hecta đước, mắm; ngày nay Cần Giờ là khu dự trữ sinh quyển thế giới, nơi khỉ, cá sấu, chim nước quay trở lại. Một hệ sinh thái bị phá huỷ được phục hồi như thế nào, và vì sao phải bảo tồn đa dạng sinh vật?',
   objectives: [
     'Trình bày được khái niệm và mục tiêu của sinh thái học phục hồi.',
     'Phân biệt được hai phương pháp phục hồi: cải tạo sinh học và gia tăng sinh học, lấy được ví dụ.',
     'Nêu được các cấp độ đa dạng sinh vật, nguyên nhân làm suy giảm đa dạng sinh vật.',
-    'Phân biệt được bảo tồn tại chỗ và bảo tồn chuyển chỗ; kể được một số khu bảo tồn ở Việt Nam.',
+    'Phân biệt được bảo tồn nguyên vị và bảo tồn chuyển vị; kể được một số khu bảo tồn ở Việt Nam.',
   ],
   sections: [
     {
@@ -91,11 +91,15 @@ export default {
       blocks: [
         {
           type: 'p',
+          text: 'Sinh thái học bảo tồn là lĩnh vực của sinh thái học và sinh học tiến hoá, nghiên cứu cách bảo tồn các loài, nơi sống, cảnh quan và hệ sinh thái một cách nhanh chóng, hiệu quả và ít tốn kém nhất.',
+        },
+        {
+          type: 'p',
           text: 'Bảo tồn đa dạng sinh vật nhằm hạn chế các tác động xấu lên sinh vật hoang dã, bảo vệ môi trường sống của chúng, duy trì các quần thể và hệ sinh thái, đồng thời sử dụng hợp lí tài nguyên sinh vật và chia sẻ công bằng lợi ích từ tài nguyên đó.',
         },
         {
           type: 'table',
-          head: ['Tiêu chí', 'Bảo tồn tại chỗ', 'Bảo tồn chuyển chỗ'],
+          head: ['Tiêu chí', 'Bảo tồn nguyên vị', 'Bảo tồn chuyển vị'],
           rows: [
             [
               'Cách làm',
@@ -118,6 +122,10 @@ export default {
               'Cứu được loài có nguy cơ tuyệt chủng cao khi nơi sống bị đe doạ; nhưng chi phí lớn, số cá thể ít, có thể giảm khả năng thích nghi khi thả lại tự nhiên',
             ],
           ],
+        },
+        {
+          type: 'p',
+          text: 'Bảo tồn nguyên vị còn được gọi là bảo tồn tại chỗ; bảo tồn chuyển vị còn được gọi là bảo tồn chuyển chỗ.',
         },
         { type: 'widget', name: 'bao-ton' },
         {
@@ -151,12 +159,12 @@ export default {
       problem:
         'Sao la là loài thú rất hiếm, chỉ sống ở rừng núi Trường Sơn. Hãy so sánh hai cách bảo tồn sao la: (1) thành lập khu bảo tồn sao la ở nơi chúng sống; (2) bắt một số cá thể về nuôi ở trung tâm cứu hộ. Cách nào nên là biện pháp chủ yếu?',
       steps: [
-        'Cách (1) là bảo tồn tại chỗ: sao la được bảo vệ cùng toàn bộ sinh cảnh, nguồn thức ăn và các loài khác trong quần xã.',
-        'Cách (2) là bảo tồn chuyển chỗ: chủ động chăm sóc được từng cá thể, nhưng số cá thể ít, chi phí cao, và sao la rất khó nuôi trong điều kiện nhân tạo.',
+        'Cách (1) là bảo tồn nguyên vị: sao la được bảo vệ cùng toàn bộ sinh cảnh, nguồn thức ăn và các loài khác trong quần xã.',
+        'Cách (2) là bảo tồn chuyển vị: chủ động chăm sóc được từng cá thể, nhưng số cá thể ít, chi phí cao, và sao la rất khó nuôi trong điều kiện nhân tạo.',
         'Nguyên nhân chính làm sao la suy giảm là mất môi trường sống và bẫy thú, nên bảo vệ nơi sống, gỡ bẫy là gốc rễ của vấn đề.',
       ],
       answer:
-        'Bảo tồn tại chỗ (khu bảo tồn) là biện pháp chủ yếu; bảo tồn chuyển chỗ chỉ hỗ trợ khi quần thể ngoài tự nhiên có nguy cơ biến mất.',
+        'Bảo tồn nguyên vị (khu bảo tồn) là biện pháp chủ yếu; bảo tồn chuyển vị chỉ hỗ trợ khi quần thể ngoài tự nhiên có nguy cơ biến mất.',
     },
   ],
   practice: [
@@ -192,7 +200,7 @@ export default {
     },
     {
       type: 'multi',
-      prompt: 'Những hình thức nào là bảo tồn chuyển chỗ?',
+      prompt: 'Những hình thức nào là bảo tồn chuyển vị?',
       options: [
         'Ngân hàng hạt giống',
         'Trung tâm cứu hộ động vật',
@@ -201,13 +209,13 @@ export default {
         'Khu dự trữ sinh quyển',
       ],
       answers: [0, 1, 3],
-      hints: ['Bảo tồn chuyển chỗ đưa sinh vật ra khỏi môi trường sống tự nhiên của chúng.'],
+      hints: ['Bảo tồn chuyển vị đưa sinh vật ra khỏi môi trường sống tự nhiên của chúng.'],
       solution:
-        'Ngân hàng hạt giống, trung tâm cứu hộ, vườn thực vật lưu giữ sinh vật ngoài nơi sống tự nhiên: bảo tồn chuyển chỗ. Vườn quốc gia và khu dự trữ sinh quyển bảo vệ sinh vật ngay tại nơi sống: bảo tồn tại chỗ.',
+        'Ngân hàng hạt giống, trung tâm cứu hộ, vườn thực vật lưu giữ sinh vật ngoài nơi sống tự nhiên: bảo tồn chuyển vị. Vườn quốc gia và khu dự trữ sinh quyển bảo vệ sinh vật ngay tại nơi sống: bảo tồn nguyên vị.',
     },
     {
       type: 'choice',
-      prompt: 'Vì sao bảo tồn tại chỗ được coi là biện pháp bảo tồn chủ yếu?',
+      prompt: 'Vì sao bảo tồn nguyên vị được coi là biện pháp bảo tồn chủ yếu?',
       options: [
         'Vì bảo vệ được cả môi trường sống, quần xã và mối quan hệ giữa các loài',
         'Vì chi phí lúc nào cũng bằng không',
@@ -217,7 +225,7 @@ export default {
       answer: 0,
       hints: ['Một loài không sống tách rời khỏi sinh cảnh và các loài khác.'],
       solution:
-        'Bảo tồn tại chỗ giữ nguyên hệ sinh thái nơi loài sống, nên bảo vệ cùng lúc nhiều loài, nguồn thức ăn, nơi ở và các mối quan hệ trong quần xã; sinh vật vẫn tiến hoá, thích nghi trong tự nhiên.',
+        'Bảo tồn nguyên vị giữ nguyên hệ sinh thái nơi loài sống, nên bảo vệ cùng lúc nhiều loài, nguồn thức ăn, nơi ở và các mối quan hệ trong quần xã; sinh vật vẫn tiến hoá, thích nghi trong tự nhiên.',
     },
     {
       type: 'multi',
@@ -273,6 +281,6 @@ export default {
     'Sinh thái học phục hồi ứng dụng các nguyên lí sinh thái học để đưa hệ sinh thái bị suy thoái trở về gần nhất với trạng thái tự nhiên ban đầu.',
     'Cải tạo sinh học dùng sinh vật loại bỏ chất độc hại; gia tăng sinh học bổ sung sinh vật hoặc chất thiết yếu cho hệ sinh thái.',
     'Đa dạng sinh vật gồm đa dạng di truyền, đa dạng loài và đa dạng hệ sinh thái; nó suy giảm do mất môi trường sống, khai thác quá mức, loài ngoại lai, ô nhiễm, biến đổi khí hậu.',
-    'Bảo tồn tại chỗ (vườn quốc gia, khu bảo tồn, khu dự trữ sinh quyển) là chủ yếu; bảo tồn chuyển chỗ (vườn thú, vườn thực vật, trung tâm cứu hộ, ngân hàng gene) hỗ trợ cứu các loài nguy cấp.',
+    'Bảo tồn nguyên vị (vườn quốc gia, khu bảo tồn, khu dự trữ sinh quyển) là chủ yếu; bảo tồn chuyển vị (vườn thú, vườn thực vật, trung tâm cứu hộ, ngân hàng gene) hỗ trợ cứu các loài nguy cấp.',
   ],
 };

@@ -40,7 +40,7 @@ export default {
             ],
             [
               'Biện pháp đang thực hiện',
-              'Bảo tồn tại chỗ hay chuyển chỗ? Có trồng lại, cải tạo sinh học, tuyên truyền không? Hiệu quả thế nào?',
+              'Bảo tồn nguyên vị hay chuyển vị? Có trồng lại, cải tạo sinh học, tuyên truyền không? Hiệu quả thế nào?',
             ],
             [
               'Giải pháp đề xuất',

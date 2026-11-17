@@ -140,7 +140,7 @@ export function suggestions(h) {
   if (h.kwh > 60) {
     ideas.push({
       text: 'Tắt thiết bị khi không dùng, dùng đèn LED, đặt điều hoà ở $26$ – $28\\,^\\circ\\mathrm{C}$: giảm khoảng một phần ba lượng điện.',
-      change: { kwh: Math.round((h.kwh * 2) / 3) },
+      change: { kwh: Math.round((h.kwh * 2) / 30) * 10 },
     });
   }
   if (h.goods !== 'it') {

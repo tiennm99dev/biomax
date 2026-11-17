@@ -44,7 +44,7 @@ export const SITES = [
     problem: 'Còn đàn voọc và nhiều loài lan quý; người ngoài vào đặt bẫy thú, chặt gỗ trộm.',
     best: 'khoanh-vung',
     also: ['sinh-ke'],
-    why: 'Nơi sống còn tốt, mối đe doạ là săn bắt và khai thác trái phép: bảo vệ ngay tại chỗ (bảo tồn tại chỗ) là cách chủ yếu.',
+    why: 'Nơi sống còn tốt, mối đe doạ là săn bắt và khai thác trái phép: bảo vệ ngay tại chỗ (bảo tồn nguyên vị) là cách chủ yếu.',
   },
   {
     id: 'doi-troc',
@@ -84,7 +84,7 @@ export const SITES = [
     problem: 'Vừa thu giữ một số cá thể rùa quý bị buôn bán trái phép, nhiều con bị thương.',
     best: 'chuyen-cho',
     also: [],
-    why: 'Rùa bị thương chưa thể thả ngay: cần chăm sóc ở trung tâm cứu hộ (bảo tồn chuyển chỗ) rồi mới tái thả về nơi sống phù hợp.',
+    why: 'Rùa bị thương chưa thể thả ngay: cần chăm sóc ở trung tâm cứu hộ (bảo tồn chuyển vị) rồi mới tái thả về nơi sống phù hợp.',
   },
   {
     id: 'bai-boi',

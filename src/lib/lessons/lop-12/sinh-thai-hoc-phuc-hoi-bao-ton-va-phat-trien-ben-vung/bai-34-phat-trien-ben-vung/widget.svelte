@@ -19,6 +19,7 @@
 
   /** @typedef {import('./engine.js').Habits} Habits */
 
+  const uid = $props.id();
   let habits = $state(/** @type {Habits} */ ({ ...DEFAULT_HABITS }));
 
   const PART_INFO = /** @type {const} */ ([
@@ -139,17 +140,22 @@
     <div class="space-y-2">
       <p class="text-sm font-semibold text-slate-800">Gợi ý giảm tác động (lớn nhất trước)</p>
       <ul class="space-y-2">
-        {#each ideas as idea (idea.text)}
+        {#each ideas as idea, i (idea.text)}
           <li
             class="flex flex-wrap items-center justify-between gap-2 rounded-lg bg-slate-50 p-2 text-sm text-slate-800"
           >
-            <span class="min-w-0 flex-1">
+            <span class="min-w-0 flex-1" id="{uid}-idea-{i}">
               <LiveRichText text={idea.text} />
               <span class="font-semibold text-emerald-800">
                 (giảm {formatFixed(idea.saving, 2)} gha)
               </span>
             </span>
-            <button type="button" class={button.quiet} onclick={() => apply(idea.change)}>
+            <button
+              type="button"
+              class={button.quiet}
+              aria-describedby="{uid}-idea-{i}"
+              onclick={() => apply(idea.change)}
+            >
               Áp dụng
             </button>
           </li>

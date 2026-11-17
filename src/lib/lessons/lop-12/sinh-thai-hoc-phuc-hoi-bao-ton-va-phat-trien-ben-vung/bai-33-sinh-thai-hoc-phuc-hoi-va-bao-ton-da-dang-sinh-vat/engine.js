@@ -23,7 +23,7 @@
 export const MEASURES = [
   {
     id: 'trong-cay',
-    name: 'Trồng cây ngập mặn bản địa (đước, mắm, bần) đúng vùng triều',
+    name: 'Trồng cây ngập mặn bản địa (đước, mắm, bần)',
     tag: 'Trồng lại thảm thực vật',
   },
   {
@@ -44,7 +44,7 @@ export const MEASURES = [
   {
     id: 'bao-ve',
     name: 'Khoanh vùng bảo vệ, cấm chặt phá và đánh bắt huỷ diệt',
-    tag: 'Bảo tồn tại chỗ',
+    tag: 'Bảo tồn nguyên vị',
   },
   {
     id: 'ngoai-lai',

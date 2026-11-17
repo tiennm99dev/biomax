@@ -3,8 +3,8 @@
   import { shuffled } from '#lib/core/card-sorter.js';
 
   const bins = [
-    { id: 'tai-cho', label: 'Bảo tồn tại chỗ' },
-    { id: 'chuyen-cho', label: 'Bảo tồn chuyển chỗ' },
+    { id: 'tai-cho', label: 'Bảo tồn nguyên vị' },
+    { id: 'chuyen-cho', label: 'Bảo tồn chuyển vị' },
   ];
 
   const cards = shuffled(
@@ -13,7 +13,7 @@
         id: 'vqg',
         label: 'Thành lập Vườn quốc gia Cúc Phương để bảo vệ rừng mưa nhiệt đới',
         bin: 'tai-cho',
-        why: 'Các loài được bảo vệ ngay trong môi trường sống tự nhiên của chúng: bảo tồn tại chỗ.',
+        why: 'Các loài được bảo vệ ngay trong môi trường sống tự nhiên của chúng: bảo tồn nguyên vị.',
       },
       {
         id: 'ramsar',
@@ -25,7 +25,7 @@
         id: 'du-tru',
         label: 'Khu dự trữ sinh quyển rừng ngập mặn Cần Giờ',
         bin: 'tai-cho',
-        why: 'Khu dự trữ sinh quyển giữ nguyên hệ sinh thái ở nơi nó tồn tại: bảo tồn tại chỗ.',
+        why: 'Khu dự trữ sinh quyển giữ nguyên hệ sinh thái ở nơi nó tồn tại: bảo tồn nguyên vị.',
       },
       {
         id: 'khu-bt',
@@ -37,19 +37,19 @@
         id: 'cuu-ho',
         label: 'Nuôi gấu bị buôn bán trái phép tại trung tâm cứu hộ',
         bin: 'chuyen-cho',
-        why: 'Gấu được đưa ra khỏi nơi sống tự nhiên tới trung tâm cứu hộ để chăm sóc: bảo tồn chuyển chỗ.',
+        why: 'Gấu được đưa ra khỏi nơi sống tự nhiên tới trung tâm cứu hộ để chăm sóc: bảo tồn chuyển vị.',
       },
       {
         id: 'vuon-thu',
         label: 'Nuôi và cho sinh sản loài thú quý hiếm trong vườn thú',
         bin: 'chuyen-cho',
-        why: 'Vườn thú giữ sinh vật bên ngoài môi trường sống tự nhiên: bảo tồn chuyển chỗ.',
+        why: 'Vườn thú giữ sinh vật bên ngoài môi trường sống tự nhiên: bảo tồn chuyển vị.',
       },
       {
         id: 'hat-giong',
         label: 'Lưu giữ hạt giống các giống lúa cổ trong ngân hàng hạt giống',
         bin: 'chuyen-cho',
-        why: 'Ngân hàng hạt giống, ngân hàng gene lưu giữ nguồn gene ngoài tự nhiên: bảo tồn chuyển chỗ.',
+        why: 'Ngân hàng hạt giống, ngân hàng gene lưu giữ nguồn gene ngoài tự nhiên: bảo tồn chuyển vị.',
       },
       {
         id: 'vuon-tv',
@@ -61,7 +61,7 @@
         id: 'phoi',
         label: 'Bảo quản tinh trùng, phôi của loài nguy cấp trong nitrogen lỏng',
         bin: 'chuyen-cho',
-        why: 'Lưu giữ vật liệu di truyền trong phòng thí nghiệm: bảo tồn chuyển chỗ.',
+        why: 'Lưu giữ vật liệu di truyền trong phòng thí nghiệm: bảo tồn chuyển vị.',
       },
     ],
     33,

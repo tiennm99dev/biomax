@@ -56,6 +56,10 @@ export default {
           ],
         },
         {
+          type: 'p',
+          text: 'Ô nhiễm môi trường làm suy giảm sức khoẻ con người, đa dạng sinh vật và năng suất của các hệ sinh thái. Có ba nhóm biện pháp hạn chế ô nhiễm môi trường:',
+        },
+        {
           type: 'list',
           items: [
             'Giáo dục, khuyến khích: tuyên truyền để mọi người hiểu tác hại của ô nhiễm; khuyến khích sản xuất sạch, tiêu dùng xanh, dùng năng lượng tái tạo.',
@@ -68,6 +72,10 @@ export default {
     {
       heading: 'Sử dụng hợp lí tài nguyên thiên nhiên',
       blocks: [
+        {
+          type: 'p',
+          text: 'Tài nguyên thiên nhiên là nguồn vật chất, năng lượng con người lấy từ tự nhiên để sống và phát triển. Sử dụng hợp lí tài nguyên giúp đáp ứng nhu cầu hôm nay mà vẫn để lại tài nguyên cho thế hệ sau. Mỗi nhóm tài nguyên cần một cách khai thác phù hợp:',
+        },
         {
           type: 'table',
           head: ['Nhóm tài nguyên', 'Ví dụ', 'Biện pháp sử dụng hợp lí'],
@@ -89,6 +97,11 @@ export default {
             ],
           ],
         },
+      ],
+    },
+    {
+      heading: 'Dân số, giáo dục môi trường và hành động của học sinh',
+      blocks: [
         {
           type: 'p',
           text: 'Dân số tăng hợp lí hoặc ổn định tạo nguồn lao động dồi dào mà không gây sức ép quá lớn lên tài nguyên, môi trường, giúp chủ động lập kế hoạch phát triển kinh tế, xã hội và bảo vệ môi trường. Giáo dục bảo vệ môi trường hình thành những công dân có nhận thức, ý thức và năng lực bảo vệ môi trường trong quá trình phát triển.',
@@ -99,6 +112,7 @@ export default {
           title: 'Dấu chân sinh thái',
           text: 'Dấu chân sinh thái của một người là diện tích đất, biển có năng suất sinh học cần để cung cấp những gì người đó tiêu dùng và hấp thụ lượng $\\mathrm{CO_2}$ người đó thải ra trong một năm, tính bằng hecta toàn cầu (gha). Khả năng tái tạo của Trái Đất chỉ vào khoảng $1{,}5$ gha cho mỗi người; khi dấu chân trung bình lớn hơn mức này, nhân loại đang dùng tài nguyên nhanh hơn tốc độ Trái Đất tái tạo, tức là phát triển không bền vững.',
         },
+        { type: 'p', text: 'Những việc học sinh có thể làm để góp phần phát triển bền vững:' },
         {
           type: 'list',
           items: [
@@ -250,6 +264,36 @@ export default {
       hints: ['So sánh lượng dự trữ và lượng khí thải của hai loại năng lượng.'],
       solution:
         'Năng lượng mặt trời, gió là tài nguyên khí hậu gần như vô tận, sinh điện hầu như không thải $\\mathrm{CO_2}$; còn than đá sẽ cạn kiệt và đốt than thải nhiều khí nhà kính.',
+    },
+    {
+      type: 'multi',
+      prompt: 'Những cách canh tác nào phù hợp với nông nghiệp bền vững?',
+      options: [
+        'Luân canh, xen canh cây họ Đậu để giữ độ phì của đất',
+        'Dùng thiên địch, bẫy côn trùng thay cho phun thuốc trừ sâu tràn lan',
+        'Bón thật nhiều phân hoá học để năng suất cao nhất',
+        'Phá rừng đầu nguồn để mở rộng diện tích canh tác',
+      ],
+      answers: [0, 1],
+      hints: [
+        'Nông nghiệp bền vững vẫn cho năng suất nhưng giữ được đất, nước và đa dạng sinh vật.',
+      ],
+      solution:
+        'Luân canh, xen canh cây họ Đậu và phòng trừ sâu hại bằng thiên địch vừa giữ năng suất vừa bảo vệ đất, nước, sinh vật có ích. Bón quá nhiều phân hoá học gây ô nhiễm, thoái hoá đất; phá rừng đầu nguồn gây xói mòn, lũ lụt.',
+    },
+    {
+      type: 'choice',
+      prompt: 'Chính sách dân số góp phần vào phát triển bền vững chủ yếu vì',
+      options: [
+        'dân số tăng hợp lí, ổn định giảm sức ép lên tài nguyên, môi trường mà vẫn bảo đảm nguồn lao động',
+        'dân số càng đông thì tài nguyên càng dồi dào',
+        'dân số giảm càng nhanh thì kinh tế càng phát triển',
+        'dân số không liên quan đến tài nguyên và môi trường',
+      ],
+      answer: 0,
+      hints: ['Mỗi người đều cần lương thực, nước, năng lượng, nơi ở.'],
+      solution:
+        'Mỗi người đều tiêu dùng tài nguyên và thải chất thải, nên dân số tăng quá nhanh gây sức ép lớn lên tài nguyên, môi trường. Dân số tăng hợp lí hoặc ổn định vẫn có nguồn lao động mà giúp chủ động lập kế hoạch phát triển kinh tế, xã hội và bảo vệ môi trường.',
     },
   ],
   takeaways: [
