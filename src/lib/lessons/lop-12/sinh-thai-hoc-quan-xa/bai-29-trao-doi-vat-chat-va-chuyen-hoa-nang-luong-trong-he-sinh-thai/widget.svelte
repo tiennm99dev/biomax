@@ -18,12 +18,17 @@
   const rows = $derived(pyramid(start, percent, levels));
   const top = $derived(rows[rows.length - 1]);
   const H = $derived(levels * ROW + 8);
+  // The log scale ends one step below the top level, so every level narrows by the same width.
+  const floor = $derived((top.energy * percent) / 100);
 
   /** @param {number} v */
   const energyText = (v) => formatNumber(tidy(v), v < 1 ? 4 : 2);
 
+  /** @param {number} v share in percent, never written as a bare 0% */
+  const shareText = (v) => (v >= 0.0001 ? `${formatNumber(tidy(v), 4)}%` : 'chưa tới 0,0001%');
+
   const text = $derived(
-    `Hiệu suất sinh thái ${percent}%: mỗi bậc chỉ chuyển lên bậc trên ${percent}% năng lượng của nó, còn ${100 - percent}% mất đi qua hô hấp (toả nhiệt), chất thải, phần rơi rụng hoặc không được ăn. ${top.name} (bậc dinh dưỡng cấp ${top.level}) chỉ nhận ${energyText(top.energy)} kcal/m²/năm, bằng ${formatNumber(tidy(top.share), 4)}% năng lượng của sinh vật sản xuất. Vì năng lượng giảm rất nhanh qua mỗi bậc, chuỗi thức ăn thường ngắn, ít khi dài quá 5 – 6 mắt xích.`,
+    `Hiệu suất sinh thái ${percent}%: mỗi bậc chỉ chuyển lên bậc trên ${percent}% năng lượng của nó, còn ${100 - percent}% mất đi qua hô hấp (toả nhiệt), chất thải, phần rơi rụng hoặc không được ăn. ${top.name} (bậc dinh dưỡng cấp ${top.level}) chỉ nhận ${energyText(top.energy)} kcal/m²/năm, bằng ${shareText(top.share)} năng lượng của sinh vật sản xuất. Vì năng lượng giảm rất nhanh qua mỗi bậc, chuỗi thức ăn thường ngắn: khoảng 4 – 5 mắt xích trên cạn, 6 – 7 mắt xích dưới nước.`,
   );
 </script>
 
@@ -37,7 +42,7 @@
       .join('; ')}"
   >
     {#each rows as r (r.level)}
-      {@const w = Math.max(3, (W - 20) * barShare(r.energy, start, scale))}
+      {@const w = Math.max(3, (W - 20) * barShare(r.energy, start, scale, floor))}
       {@const y = H - 4 - r.level * ROW + (ROW - BAR) / 2}
       <rect
         x={(W - w) / 2}

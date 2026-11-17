@@ -26,6 +26,11 @@ describe('community survey', () => {
     expect(s.species).toBe(6);
     expect(s.dominant).toEqual(['Cỏ gà']);
     expect(s.roles).toEqual(['san-xuat', 'tieu-thu', 'phan-giai']);
-    expect(summarize(SURVEYS['vuon-cay'].rows).layers.length).toBe(4);
+    expect(s.layers).toEqual(['Tầng cỏ']);
+    expect(summarize(SURVEYS['vuon-cay'].rows).layers).toEqual([
+      'Tầng cây gỗ',
+      'Tầng cây bụi',
+      'Tầng cỏ',
+    ]);
   });
 });

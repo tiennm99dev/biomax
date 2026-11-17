@@ -31,6 +31,11 @@ describe('aquarium ecosystem', () => {
     expect(bad).toEqual([]);
   });
 
+  it('keeps formulas in capitals inside a sentence', () => {
+    expect(judge(without('khi')).text).toContain('Thiếu CO₂, O₂ hoà tan:');
+    expect(judge(without('khi', 'khoang')).text).toContain('CO₂, O₂ hoà tan, muối khoáng');
+  });
+
   it('sorts parts into the four groups', () => {
     const g = grouped(['ca', 'nuoc', 'rong', 'vi-khuan']);
     expect(g['vo-sinh'].map((p) => p.id)).toEqual(['nuoc']);

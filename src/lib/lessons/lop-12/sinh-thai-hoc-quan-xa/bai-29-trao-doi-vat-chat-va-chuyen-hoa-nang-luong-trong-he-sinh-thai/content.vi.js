@@ -49,13 +49,13 @@ export default {
         },
         {
           type: 'p',
-          text: 'Năng lượng được truyền theo một chiều: từ sinh vật sản xuất qua các bậc dinh dưỡng rồi trở lại môi trường dưới dạng nhiệt. Ở mỗi bậc, phần lớn năng lượng bị thất thoát: khoảng $70\\%$ dùng cho hô hấp, tạo nhiệt và hoạt động sống; khoảng $10\\%$ mất qua chất thải (phân, nước tiểu) và bộ phận rơi rụng (lá, lông, xác...); chỉ khoảng $10\\%$ năng lượng được tích luỹ thành sinh khối và chuyển lên bậc dinh dưỡng cao hơn. Khác với năng lượng, vật chất được trao đổi theo chu trình: sinh vật phân giải trả chất vô cơ lại môi trường để sinh vật sản xuất dùng lại.',
+          text: 'Năng lượng được truyền theo một chiều: từ sinh vật sản xuất qua các bậc dinh dưỡng rồi trở lại môi trường dưới dạng nhiệt. Ở mỗi bậc, phần lớn năng lượng bị thất thoát: khoảng $70\\%$ dùng cho hô hấp, tạo nhiệt và hoạt động sống; khoảng $10\\%$ mất qua chất thải (phân, nước tiểu); khoảng $10\\%$ mất qua bộ phận rơi rụng (lá, lông, xác...); chỉ khoảng $10\\%$ năng lượng được tích luỹ thành sinh khối và chuyển lên bậc dinh dưỡng cao hơn. Khác với năng lượng, vật chất được trao đổi theo chu trình: sinh vật phân giải trả chất vô cơ lại môi trường để sinh vật sản xuất dùng lại.',
         },
         {
           type: 'callout',
           tone: 'theorem',
           title: 'Hiệu suất sinh thái',
-          text: 'Hiệu suất sinh thái là tỉ lệ phần trăm năng lượng được chuyển hoá giữa các bậc dinh dưỡng trong hệ sinh thái. Hiệu suất sinh thái giữa hai bậc dinh dưỡng kế tiếp trung bình khoảng $10\\%$; vì vậy năng lượng ở bậc dinh dưỡng càng cao càng ít, và chuỗi thức ăn không thể kéo dài mãi.',
+          text: 'Hiệu suất sinh thái là tỉ lệ phần trăm năng lượng được chuyển hoá giữa các bậc dinh dưỡng trong hệ sinh thái. Theo lí thuyết, hiệu suất sinh thái giữa hai bậc dinh dưỡng kế tiếp khoảng $10\\%$; thực tế dao động khoảng $5\\%$ – $20\\%$ tuỳ đặc điểm của loài và điều kiện môi trường. Vì vậy năng lượng ở bậc dinh dưỡng càng cao càng ít, và chuỗi thức ăn thường ngắn: khoảng $4$ – $5$ mắt xích trên cạn, $6$ – $7$ mắt xích dưới nước.',
         },
         {
           type: 'tex',
@@ -64,6 +64,10 @@ export default {
         {
           type: 'p',
           text: 'Trong đó $E_n$ và $E_{n+1}$ là năng lượng tích luỹ ở bậc dinh dưỡng thứ $n$ và bậc dinh dưỡng kế tiếp $n + 1$.',
+        },
+        {
+          type: 'p',
+          text: 'Ứng dụng: với cùng một nguồn năng lượng ở sinh vật sản xuất, nuôi động vật ăn thực vật hoặc ăn tạp (thỏ, trâu, bò, gà, cá trắm cỏ, lợn...) cho nhiều sản phẩm hơn nuôi động vật ăn thịt, vì sản phẩm thu được ở bậc dinh dưỡng thấp, ít bị thất thoát năng lượng qua các bậc.',
         },
       ],
     },
@@ -240,6 +244,19 @@ export default {
         'Rắn ăn chuột và ếch; mất rắn, chuột và ếch ít bị ăn nên tăng số lượng. Chuột tăng lại làm hại lúa nhiều hơn.',
     },
     {
+      type: 'choice',
+      prompt:
+        'Với cùng một diện tích đồng cỏ, nuôi loài nào sau đây thường thu được nhiều sản phẩm (sinh khối) nhất?',
+      options: ['Bò (ăn cỏ)', 'Cáo (ăn thỏ)', 'Diều hâu (ăn chim nhỏ)', 'Báo (ăn hươu)'],
+      answer: 0,
+      hints: [
+        'Mỗi lần chuyển lên một bậc dinh dưỡng, chỉ khoảng $10\\%$ năng lượng được giữ lại.',
+        'Loài nào ở bậc dinh dưỡng thấp nhất?',
+      ],
+      solution:
+        'Bò ăn cỏ ở bậc dinh dưỡng cấp 2, nhận khoảng $10\\%$ năng lượng của cỏ. Cáo, diều hâu, báo ăn thịt ở bậc cấp 3 trở lên, chỉ còn khoảng $1\\%$ năng lượng của cỏ hoặc ít hơn, nên sản phẩm thu được ít hơn nhiều.',
+    },
+    {
       type: 'text',
       prompt:
         'Trong lưới thức ăn, một loài tham gia vào nhiều chuỗi thức ăn khác nhau được gọi là gì?',
@@ -252,7 +269,7 @@ export default {
     'Chuỗi thức ăn: dãy loài có quan hệ dinh dưỡng, mở đầu bằng sinh vật sản xuất hoặc sinh vật ăn mùn bã; các chuỗi có mắt xích chung tạo thành lưới thức ăn.',
     'Bậc dinh dưỡng cấp 1 là sinh vật sản xuất, cấp 2 là sinh vật tiêu thụ bậc 1, cấp 3 là sinh vật tiêu thụ bậc 2...',
     'Năng lượng đi một chiều từ mặt trời qua các bậc dinh dưỡng và mất dần qua hô hấp, chất thải, rơi rụng; vật chất được trao đổi theo chu trình.',
-    'Hiệu suất sinh thái $H = \\dfrac{E_{n+1}}{E_n} \\cdot 100\\%$, trung bình khoảng $10\\%$; tháp năng lượng luôn có đáy rộng, tháp số lượng và tháp sinh khối có thể bị ngược.',
+    'Hiệu suất sinh thái $H = \\dfrac{E_{n+1}}{E_n} \\cdot 100\\%$, theo lí thuyết khoảng $10\\%$ (thực tế $5\\%$ – $20\\%$), nên chuỗi thức ăn thường ngắn; tháp năng lượng luôn có đáy rộng, tháp số lượng và tháp sinh khối có thể bị ngược.',
     'Chất độc khó phân huỷ tích tụ nhiều nhất ở bậc dinh dưỡng cao nhất.',
   ],
 };

@@ -35,6 +35,16 @@ export const PARTS = [
   { id: 'vi-khuan', name: 'Vi khuẩn phân giải', group: 'phan-giai' },
 ];
 
+/**
+ * A part's name inside a sentence: the first letter lowered, except in a
+ * formula such as CO₂, whose second letter is a capital too.
+ * @param {string} text
+ */
+export function lowerFirst(text) {
+  if (/^\p{Lu}\p{Lu}/u.test(text)) return text;
+  return text.charAt(0).toLowerCase() + text.slice(1);
+}
+
 /** Abiotic parts without which the producers cannot photosynthesise. */
 const NEEDED = ['anh-sang', 'nuoc', 'khi', 'khoang'];
 
@@ -90,7 +100,7 @@ export function judge(chosen) {
   if (lacking.length) {
     return {
       level: 'broken',
-      text: `Thiếu ${lacking.map((id) => name(id).toLowerCase()).join(', ')}: nguyên liệu để sinh vật sản xuất quang hợp, tổng hợp chất hữu cơ.`,
+      text: `Thiếu ${lacking.map((id) => lowerFirst(name(id))).join(', ')}: nguyên liệu để sinh vật sản xuất quang hợp, tổng hợp chất hữu cơ.`,
     };
   }
   if (g['phan-giai'].length === 0) {

@@ -46,7 +46,8 @@ export function dominant(counts) {
 }
 
 /**
- * Everything the survey table reports.
+ * Everything the survey table reports. `layers` are the vertical layers of
+ * the vegetation (tầng thực vật), as the book counts them.
  * @param {Row[]} rows
  */
 export function summarize(rows) {
@@ -58,7 +59,7 @@ export function summarize(rows) {
     abundance: abundances(counts),
     dominant: dominant(counts).map((i) => rows[i].name),
     shannon: shannon(counts),
-    layers: [...new Set(present.map((r) => r.layer))],
+    layers: [...new Set(present.filter((r) => r.role === 'san-xuat').map((r) => r.layer))],
     roles: /** @type {Role[]} */ (
       ['san-xuat', 'tieu-thu', 'phan-giai'].filter((role) => present.some((r) => r.role === role))
     ),

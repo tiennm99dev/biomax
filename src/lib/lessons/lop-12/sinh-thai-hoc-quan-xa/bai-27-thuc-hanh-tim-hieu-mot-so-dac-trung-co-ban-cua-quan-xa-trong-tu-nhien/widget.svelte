@@ -70,7 +70,7 @@
       <dd class="text-lg font-semibold tabular-nums">{formatNumber(sum.total)}</dd>
     </div>
     <div class="rounded-xl bg-slate-100 p-2">
-      <dt class="text-slate-600">Số tầng có sinh vật</dt>
+      <dt class="text-slate-600">Số tầng thực vật</dt>
       <dd class="text-lg font-semibold tabular-nums">{sum.layers.length}</dd>
     </div>
     <div class="rounded-xl bg-slate-100 p-2">
