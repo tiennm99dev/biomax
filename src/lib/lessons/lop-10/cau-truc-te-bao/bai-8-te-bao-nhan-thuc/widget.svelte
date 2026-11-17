@@ -48,6 +48,8 @@
     mode === 'do' && found < order.length ? ORGANELLES.find((o) => o.id === order[found]) : null,
   );
   const chosen = $derived(ORGANELLES.find((o) => o.id === selected) ?? null);
+  /** @param {string} id */
+  const nameOf = (id) => ORGANELLES.find((o) => o.id === id)?.name ?? id;
   const edges = $derived(type === 'thuc-vat' ? boxEdges() : []);
 
   /**
@@ -337,7 +339,7 @@
     use:turnDrag
     viewBox="0 0 {WIDTH} {HEIGHT}"
     class="mx-auto block w-full max-w-md cursor-grab touch-pan-y rounded-xl bg-slate-50 select-none"
-    role="img"
+    role="group"
     aria-label="Mô hình ba chiều của tế bào {type === 'dong-vat'
       ? 'động vật'
       : 'thực vật'}, đang xoay {yaw} độ{chosen ? `, đang chọn ${chosen.name}` : ''}"
@@ -373,6 +375,7 @@
       <circle
         role="button"
         tabindex="-1"
+        aria-label={nameOf('mang-sinh-chat')}
         cx={CX}
         cy={CY}
         r={RADIUS}
@@ -405,6 +408,7 @@
       <g
         role="button"
         tabindex="-1"
+        aria-label={nameOf(s.id)}
         transform="translate({s.x} {s.y})"
         class="cursor-pointer"
         opacity={dimmed ? 0.18 : fade(s.depth)}
