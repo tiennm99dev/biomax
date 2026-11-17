@@ -10,6 +10,7 @@ import {
   fieldOf,
   goodShare,
   observations,
+  readCount,
   removeMark,
   reportText,
   shares,
@@ -71,6 +72,16 @@ describe('the local survey board', () => {
     expect(text).toContain('- Thường xuyên: 20 người (50%)');
     expect(text).toContain('- Thỉnh thoảng: 15 người (37,5%)');
     expect(text).toContain('- Trường học: cây xanh, vườn hoa 1');
+  });
+
+  it('reads a typed number of people', () => {
+    expect(readCount('40')).toBe(40);
+    expect(readCount(' 7 ')).toBe(7);
+    expect(readCount('0')).toBe(0);
+    expect(readCount('999')).toBe(200);
+    expect(readCount('')).toBeNull();
+    expect(readCount('-3')).toBeNull();
+    expect(readCount('2,5')).toBeNull();
   });
 
   it('keeps every dot inside its zone', () => {

@@ -32,21 +32,15 @@
 </script>
 
 <div class="space-y-4">
-  <div class="grid gap-3 sm:grid-cols-3">
+  <div class="grid gap-3">
+    <SliderField label="Đất cây xanh, mặt nước" bind:value={green} min={0} max={60} unit="%" />
     <SliderField
-      label="Cây xanh, mặt nước"
-      bind:value={green}
-      min={0}
-      max={60}
-      unit="% diện tích"
-    />
-    <SliderField
-      label="Đi lại bằng giao thông công cộng"
+      label="Chuyến đi bằng xe công cộng"
       bind:value={transit}
       min={0}
       max={80}
       step={5}
-      unit="% chuyến đi"
+      unit="%"
     />
     <SliderField
       label="Rác được phân loại, tái chế"

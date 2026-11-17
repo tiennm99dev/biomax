@@ -46,7 +46,7 @@ export const FIELDS = [
     question: 'Gia đình bạn có phân loại rác tại nguồn không?',
     answers: [
       { id: 'thuong-xuyen', short: 'Thường xuyên', label: 'Thường xuyên', good: true },
-      { id: 'thinh-thoang', short: 'Đôi khi', label: 'Thỉnh thoảng', good: false },
+      { id: 'thinh-thoang', short: 'Thỉnh thoảng', label: 'Thỉnh thoảng', good: false },
       { id: 'khong', short: 'Không', label: 'Không', good: false },
     ],
     marks: [
@@ -121,6 +121,17 @@ export function dotSpot(z, i) {
 /** @param {Zone} z */
 export function dotRoom(z) {
   return Math.floor((z.w - 8) / DOT_STEP) * (Math.floor((z.h - 38) / DOT_STEP) + 1);
+}
+
+/**
+ * The number of people typed for one answer: a whole number from 0 to
+ * MAX_PEOPLE (a larger one is capped), or null while the box holds no number.
+ * @param {string} text
+ */
+export function readCount(text) {
+  const s = text.trim();
+  if (!/^\d+$/.test(s)) return null;
+  return Math.min(MAX_PEOPLE, Number(s));
 }
 
 /** @param {string} id */

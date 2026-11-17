@@ -2,8 +2,7 @@
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import { formatNumber } from '#lib/core/number-format.js';
   import SegmentedControl from '#lib/core/segmented-control.svelte';
-  import Stepper from '#lib/core/stepper.svelte';
-  import { button, focusRing } from '#lib/core/ui.js';
+  import { button, focusRing, textInput } from '#lib/core/ui.js';
   import BarChart from '#lib/core/visuals/bar-chart.svelte';
   import {
     FIELDS,
@@ -17,6 +16,7 @@
     fieldOf,
     goodShare,
     observations,
+    readCount,
     removeMark,
     reportText,
     shares,
@@ -73,6 +73,19 @@
   /** @param {string} id */
   function countText(id) {
     return field.marks.map((m) => `${m.label.toLowerCase()} ${marks[id]?.[m.id] ?? 0}`).join(', ');
+  }
+
+  /** @param {string} id @param {Event} event */
+  function typeCount(id, event) {
+    const input = /** @type {HTMLInputElement} */ (event.currentTarget);
+    const n = readCount(input.value);
+    if (n !== null) tally = { ...tally, [id]: n };
+  }
+
+  /** Puts the shown value back in step with the tally once typing ends. @param {string} id @param {Event} event */
+  function settleCount(id, event) {
+    const input = /** @type {HTMLInputElement} */ (event.currentTarget);
+    input.value = String(tally[id] ?? 0);
   }
 
   async function copyReport() {
@@ -189,14 +202,23 @@
     <p class="text-sm font-semibold text-slate-700">Số người chọn mỗi câu trả lời:</p>
     <ul class="space-y-2">
       {#each field.answers as a (a.id)}
-        <li class="rounded-lg bg-slate-50 p-2">
-          <Stepper
-            label={a.label}
-            bind:value={tally[a.id]}
-            min={0}
+        <li class="flex items-center gap-3 rounded-lg bg-slate-50 p-2">
+          <label for="tally-{a.id}" class="min-w-0 flex-1 text-sm font-semibold text-slate-700"
+            >{a.label}</label
+          >
+          <input
+            id="tally-{a.id}"
+            type="number"
+            inputmode="numeric"
+            min="0"
             max={MAX_PEOPLE}
-            format={(v) => formatNumber(v)}
+            step="1"
+            class="{textInput} w-24! shrink-0 text-right"
+            value={tally[a.id] ?? 0}
+            oninput={(e) => typeCount(a.id, e)}
+            onchange={(e) => settleCount(a.id, e)}
           />
+          <span class="shrink-0 text-sm text-slate-600" aria-hidden="true">người</span>
         </li>
       {/each}
     </ul>

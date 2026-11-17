@@ -59,6 +59,10 @@ export default {
             ],
           ],
         },
+        {
+          type: 'p',
+          text: 'Nhiều vùng còn kết hợp nông nghiệp sinh thái với du lịch: du khách trải nghiệm trồng rau ở làng rau Trà Quế (Hội An), tham quan trang trại ở Ba Vì (Hà Nội), ruộng bậc thang ở Sa Pa (Lào Cai). Người nông dân có thêm thu nhập, văn hoá và cảnh quan làng quê được giữ gìn.',
+        },
       ],
     },
     {
@@ -119,7 +123,7 @@ export default {
       blocks: [
         {
           type: 'p',
-          text: 'Nguyên nhân trực tiếp của biến đổi khí hậu là lượng khí nhà kính ($\\mathrm{CO_2}$, $\\mathrm{CH_4}$, $\\mathrm{N_2O}$, CFC...) tăng lên do hoạt động của con người: đốt nhiên liệu hoá thạch (khoảng $45\\%$), mất rừng (khoảng $20\\%$), công nghiệp hoá chất, nông nghiệp, sản xuất xi măng, phân huỷ rác thải. Nguyên nhân gián tiếp là chính sách ưu tiên kinh tế trong thời gian dài, dân số tăng nhanh, nhận thức còn hạn chế và nhu cầu tiêu dùng ngày càng cao.',
+          text: 'Nguyên nhân trực tiếp của biến đổi khí hậu là lượng khí nhà kính ($\\mathrm{CO_2}$, $\\mathrm{CH_4}$, $\\mathrm{N_2O}$, CFC...) tăng lên do hoạt động của con người: trước hết là đốt nhiên liệu hoá thạch (than, dầu, khí đốt), sau đó là mất rừng, cùng với công nghiệp hoá chất, nông nghiệp, sản xuất xi măng, phân huỷ rác thải. Nguyên nhân gián tiếp là chính sách ưu tiên kinh tế trong thời gian dài, dân số tăng nhanh, nhận thức còn hạn chế và nhu cầu tiêu dùng ngày càng cao.',
         },
         {
           type: 'table',
@@ -266,7 +270,7 @@ export default {
     {
       type: 'choice',
       prompt:
-        'Theo số liệu của bài, hoạt động nào của con người đóng góp nhiều nhất vào lượng khí nhà kính gây biến đổi khí hậu?',
+        'Hoạt động nào của con người đóng góp nhiều nhất vào lượng khí nhà kính gây biến đổi khí hậu?',
       options: [
         'Đốt nhiên liệu hoá thạch (than, dầu, khí đốt)',
         'Mất rừng',
@@ -274,9 +278,11 @@ export default {
         'Phân huỷ rác thải',
       ],
       answer: 0,
-      hints: ['Một nguồn chiếm khoảng $45\\%$, mất rừng khoảng $20\\%$.'],
+      hints: [
+        'Nguồn lớn nhất gắn với việc sản xuất điện, chạy máy móc và xe cộ trên khắp thế giới.',
+      ],
       solution:
-        'Đốt nhiên liệu hoá thạch chiếm khoảng $45\\%$, lớn nhất; mất rừng khoảng $20\\%$; xi măng và rác thải chiếm phần nhỏ hơn.',
+        'Đốt nhiên liệu hoá thạch để sản xuất điện, chạy máy móc, xe cộ là nguồn khí nhà kính lớn nhất; mất rừng đứng sau; xi măng và rác thải chiếm phần nhỏ hơn.',
     },
     {
       type: 'multi',

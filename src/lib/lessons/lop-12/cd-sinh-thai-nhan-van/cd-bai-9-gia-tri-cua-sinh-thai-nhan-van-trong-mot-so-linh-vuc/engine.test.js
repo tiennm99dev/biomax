@@ -30,7 +30,7 @@ describe('the green city model', () => {
 
   it('writes the plan with a decimal comma', () => {
     expect(planText({ green: 16, transit: 0, recycle: 0 })).toBe(
-      'Cây xanh, mặt nước 16% diện tích, tức 16 m²/người; trung tâm nóng hơn ngoại ô khoảng 3,2 °C.',
+      'Cây xanh, mặt nước 16% diện tích, tức 16\u00a0m²/người; trung tâm nóng hơn ngoại ô khoảng 3,2\u00a0°C.',
     );
   });
 });

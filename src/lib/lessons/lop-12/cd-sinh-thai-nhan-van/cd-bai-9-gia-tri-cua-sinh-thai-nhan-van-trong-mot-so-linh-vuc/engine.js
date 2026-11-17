@@ -127,5 +127,5 @@ export function advice(plan) {
  * @param {Plan} plan
  */
 export function planText(plan) {
-  return `Cây xanh, mặt nước ${formatNumber(plan.green)}% diện tích, tức ${formatNumber(greenPerPerson(plan.green), 1)} m²/người; trung tâm nóng hơn ngoại ô khoảng ${formatNumber(heatIsland(plan.green), 1)} °C.`;
+  return `Cây xanh, mặt nước ${formatNumber(plan.green)}% diện tích, tức ${formatNumber(greenPerPerson(plan.green), 1)}\u00a0m²/người; trung tâm nóng hơn ngoại ô khoảng ${formatNumber(heatIsland(plan.green), 1)}\u00a0°C.`;
 }
