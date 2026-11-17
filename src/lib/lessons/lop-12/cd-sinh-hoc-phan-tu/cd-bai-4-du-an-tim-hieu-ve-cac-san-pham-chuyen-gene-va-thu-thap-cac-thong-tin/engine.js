@@ -6,6 +6,7 @@
  */
 import { shuffled } from '#lib/core/card-sorter.js';
 import { roundToTotal } from '#lib/core/number-format.js';
+import { lowerFirst } from '../_shared/text.js';
 
 /**
  * @typedef {'loi-ich' | 'rui-ro'} Side
@@ -240,13 +241,13 @@ export function cardsOf(p) {
  * @param {Product} p @param {Vote} vote
  */
 export function voteNote(p, vote) {
-  const risks = p.args.filter((a) => a.side === 'rui-ro').map((a) => a.text.toLowerCase());
-  const gains = p.args.filter((a) => a.side === 'loi-ich').map((a) => a.text.toLowerCase());
+  const risks = p.args.filter((a) => a.side === 'rui-ro').map((a) => lowerFirst(a.text));
+  const gains = p.args.filter((a) => a.side === 'loi-ich').map((a) => lowerFirst(a.text));
   if (vote === 'ung-ho') {
-    return `Em ủng hộ ${p.name.toLowerCase()}. Hãy chuẩn bị trả lời phản biện về rủi ro: ${risks.join('; ')}.`;
+    return `Em ủng hộ ${lowerFirst(p.name)}. Hãy chuẩn bị trả lời phản biện về rủi ro: ${risks.join('; ')}.`;
   }
   if (vote === 'phan-doi') {
-    return `Em phản đối ${p.name.toLowerCase()}. Hãy nêu cách khác đạt được lợi ích: ${gains.join('; ')}.`;
+    return `Em phản đối ${lowerFirst(p.name)}. Hãy nêu cách khác đạt được lợi ích: ${gains.join('; ')}.`;
   }
   return `Em ủng hộ có điều kiện. Điều kiện gợi ý: ${p.conditions.join('; ')}. Em có thể thêm điều kiện của mình.`;
 }
@@ -279,7 +280,7 @@ export function tallyText(counts) {
   const leaders = VOTES.filter((_, i) => counts[i] === top).map((v) => v.label.toLowerCase());
   const lead =
     leaders.length > 1
-      ? `Hai ý kiến ngang nhau: ${leaders.join(' và ')}.`
+      ? `${leaders.length === 2 ? 'Hai' : 'Ba'} ý kiến ngang nhau: ${leaders.slice(0, -1).join(', ')} và ${leaders.at(-1)}.`
       : `Nhiều nhất: ${leaders[0]}.`;
   return `${total} bạn bình chọn: ${parts.join(', ')}. ${lead}`;
 }

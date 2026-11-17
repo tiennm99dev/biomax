@@ -6,6 +6,7 @@
  * No DOM here, so all of it is tested in Node.
  */
 import { shuffled } from '#lib/core/card-sorter.js';
+import { lowerFirst } from '../_shared/text.js';
 
 /**
  * @typedef {'li-thuyet' | 'ung-dung'} Field
@@ -79,9 +80,9 @@ export const MILESTONES = [
     id: 'cohen-boyer',
     year: 1973,
     field: 'ung-dung',
-    short: 'Chuyển gene của ếch vào vi khuẩn bằng plasmid',
+    short: 'Đưa DNA tái tổ hợp vào vi khuẩn bằng plasmid',
     who: 'S. Cohen và H. Boyer',
-    what: 'Gắn gene của ếch vào plasmid rồi đưa vào E. coli; gene lạ vẫn được nhân lên cùng vi khuẩn. Đây là lần đầu chuyển gene giữa hai loài rất xa nhau.',
+    what: 'Gắn gene lạ vào plasmid rồi đưa vào E. coli; gene lạ được nhân lên cùng vi khuẩn. Năm sau, nhóm chuyển được cả gene của ếch vào E. coli, lần đầu chuyển gene giữa hai loài rất xa nhau.',
     needs: ['berg'],
   },
   {
@@ -218,7 +219,7 @@ export function rootsText(id) {
   const m = milestone(id);
   if (m.needs.length === 0)
     return `${m.short} (${m.year}) là điểm khởi đầu của dòng thời gian này.`;
-  const names = m.needs.map((n) => `${milestone(n).short.toLowerCase()} (${milestone(n).year})`);
+  const names = m.needs.map((n) => `${lowerFirst(milestone(n).short)} (${milestone(n).year})`);
   return `Thành tựu này dựa trên: ${names.join('; ')}.`;
 }
 
@@ -305,7 +306,7 @@ export function pick(round, placed, id) {
   const earliest = left.reduce((a, b) => (b.year < a.year ? b : a));
   const m = milestone(id);
   if (m.year === earliest.year) {
-    return { ok: true, text: `Đúng: ${m.year}, ${m.short.toLowerCase()}. ${m.who}.` };
+    return { ok: true, text: `Đúng: ${m.year}, ${lowerFirst(m.short)}. ${m.who}.` };
   }
   // The nearest link first: rootsOf lists direct needs before their own roots.
   const rootId = rootsOf(id).find((r) => left.some((x) => x.id === r));

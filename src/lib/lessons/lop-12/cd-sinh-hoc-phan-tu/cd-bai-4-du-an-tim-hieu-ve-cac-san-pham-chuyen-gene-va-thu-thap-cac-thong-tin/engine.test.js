@@ -38,7 +38,8 @@ describe('the vote', () => {
   it('answers each vote with what to weigh', () => {
     const p = product('gao-vang');
     expect(voteNote(p, 'ung-ho')).toContain('gene có thể phát tán');
-    expect(voteNote(p, 'phan-doi')).toContain('bổ sung tiền vitamin a');
+    expect(voteNote(p, 'phan-doi')).toContain('bổ sung tiền vitamin A');
+    expect(voteNote(product('bong-bt'), 'ung-ho')).toContain('Em ủng hộ bông Bt kháng sâu');
     expect(voteNote(p, 'co-dieu-kien')).toContain(p.conditions[0]);
   });
 
@@ -49,7 +50,12 @@ describe('the vote', () => {
     expect(tallyText([0, 0, 0])).toContain('Chưa nhập');
     expect(tallyText([12, 20, 8])).toContain('40 bạn');
     expect(tallyText([12, 20, 8])).toContain('Nhiều nhất: ủng hộ có điều kiện');
-    expect(tallyText([10, 10, 5])).toContain('ngang nhau');
+    expect(tallyText([10, 10, 5])).toContain(
+      'Hai ý kiến ngang nhau: ủng hộ và ủng hộ có điều kiện.',
+    );
+    expect(tallyText([4, 4, 4])).toContain(
+      'Ba ý kiến ngang nhau: ủng hộ, ủng hộ có điều kiện và phản đối.',
+    );
   });
 
   it('writes a report of the products that were voted on', () => {

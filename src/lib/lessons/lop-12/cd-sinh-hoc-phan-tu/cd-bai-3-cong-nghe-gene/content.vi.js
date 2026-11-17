@@ -144,7 +144,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Độc tố Bt được tạo ra ở dạng tiền độc tố không hoạt động; nó chỉ được hoạt hoá trong ruột có môi trường kiềm của sâu, phá huỷ màng ruột làm sâu chết. Ruột người có môi trường acid, không có cơ chế hoạt hoá này.',
+          text: 'Độc tố Bt được tạo ra ở dạng tiền độc tố không hoạt động; nó chỉ được hoạt hoá trong ruột có môi trường kiềm của sâu, phá huỷ màng ruột làm sâu chết. Ở người, dạ dày có môi trường acid và tế bào ruột không có thụ thể gắn độc tố, nên độc tố Bt không gây hại.',
         },
         {
           type: 'callout',
@@ -341,7 +341,7 @@ export default {
       answer: 0,
       hints: ['So sánh môi trường trong ruột sâu và trong dạ dày người.'],
       solution:
-        'Độc tố Bt ở dạng tiền độc tố, chỉ được hoạt hoá trong môi trường kiềm của ruột sâu rồi phá huỷ màng ruột. Đường tiêu hoá của người có môi trường acid, không hoạt hoá được nó.',
+        'Độc tố Bt ở dạng tiền độc tố, chỉ được hoạt hoá trong môi trường kiềm của ruột sâu rồi phá huỷ màng ruột. Ở người, dạ dày có môi trường acid và tế bào ruột không có thụ thể gắn độc tố, nên nó không gây hại.',
     },
   ],
   takeaways: [

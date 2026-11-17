@@ -73,14 +73,14 @@ export default {
               'Có công cụ cắt DNA và tổng hợp DNA từ RNA',
             ],
             [
-              '$1998$',
-              'Fire và Mello phát hiện cơ chế can thiệp RNA (RNAi)',
-              'Có thể "tắt" một gene đặc hiệu; giải Nobel năm $2006$',
-            ],
-            [
               '$1990$–$2003$',
               'Dự án hệ gene người giải trình tự khoảng $3$ tỉ cặp nucleotide',
               'Nền tảng cho xét nghiệm di truyền, y học cá thể hoá',
+            ],
+            [
+              '$1998$',
+              'Fire và Mello phát hiện cơ chế can thiệp RNA (RNAi)',
+              'Có thể "tắt" một gene đặc hiệu; giải Nobel năm $2006$',
             ],
           ],
         },
@@ -123,7 +123,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Mốc khởi đầu của công nghệ gene là năm $1972$, khi P. Berg tạo phân tử DNA tái tổ hợp đầu tiên. Năm $1973$, S. Cohen và H. Boyer chuyển thành công gene của ếch vào vi khuẩn E. coli. Năm $2012$, công cụ CRISPR-Cas9 ra đời, cho phép chỉnh sửa gene chính xác đến từng nucleotide.',
+          text: 'Mốc khởi đầu của công nghệ gene là năm $1972$, khi P. Berg tạo phân tử DNA tái tổ hợp đầu tiên. Năm $1973$, S. Cohen và H. Boyer dùng plasmid đưa DNA tái tổ hợp vào vi khuẩn E. coli; năm sau, họ chuyển được cả gene của ếch vào vi khuẩn này. Năm $2012$, công cụ CRISPR-Cas9 ra đời, cho phép chỉnh sửa gene chính xác đến từng nucleotide.',
         },
         {
           type: 'p',

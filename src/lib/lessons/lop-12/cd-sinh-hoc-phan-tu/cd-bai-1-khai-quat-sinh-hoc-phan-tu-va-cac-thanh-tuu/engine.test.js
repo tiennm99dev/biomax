@@ -31,7 +31,7 @@ describe('the milestones', () => {
   it('follows the links back to the double helix', () => {
     expect(rootsOf('insulin')).toEqual(['cohen-boyer', 'berg', 'enzyme-cat', 'xoan-kep']);
     expect(rootsOf('xoan-kep')).toEqual([]);
-    expect(rootsText('pcr')).toContain('1953');
+    expect(rootsText('pcr')).toContain('mô hình chuỗi xoắn kép của DNA (1953)');
     expect(rootsText('xoan-kep')).toContain('điểm khởi đầu');
   });
 });
@@ -65,7 +65,7 @@ describe('the time-order challenge', () => {
     const r = ROUNDS[1];
     const wrong = pick(r, [], 'insulin');
     expect(wrong.ok).toBe(false);
-    expect(wrong.text).toContain('Chuyển gene của ếch');
+    expect(wrong.text).toContain('Đưa DNA tái tổ hợp vào vi khuẩn');
     const plain = pick(r, ['berg', 'cohen-boyer'], 'pcr');
     expect(plain.ok).toBe(false);
     expect(plain.text).toContain('chưa phải mốc sớm nhất');

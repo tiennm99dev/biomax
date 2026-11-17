@@ -8,8 +8,8 @@
 
   let minutes = $state(0);
   let poles = $state('am');
-  /** @type {{ ok: boolean, text: string } | null} */
-  let verdict = $state(null);
+  /** @type {string | null} */
+  let picked = $state(null);
 
   const wellsAtMinus = $derived(poles === 'am');
   const note = $derived(runNote(minutes, wellsAtMinus));
@@ -23,10 +23,8 @@
   /** @param {number} i */
   const laneX = (i) => LEFT + i * LANE_W;
 
-  /** @param {string} id */
-  function pickSuspect(id) {
-    verdict = judge(id, minutes, wellsAtMinus);
-  }
+  /** The verdict on the picked suspect, kept up to date as the gel changes. */
+  const verdict = $derived(picked ? judge(picked, minutes, wellsAtMinus) : null);
 
   const gelText = $derived.by(() => {
     if (minutes > 0 && !wellsAtMinus) return 'Gel trống: DNA đã chạy ra khỏi gel.';
@@ -70,7 +68,7 @@
     />
     {#each LANES as lane, i (lane.id)}
       <text x={laneX(i) + LANE_W / 2 - 2} y="34" text-anchor="middle" font-size="10" fill="#f8fafc"
-        >{lane.name}</text
+        >{lane.short}</text
       >
       <rect x={laneX(i) + 6} y={TOP - 6} width={LANE_W - 16} height="6" fill="#0f172a" />
       {#each lane.bands as bp (bp)}
@@ -108,7 +106,6 @@
     step={5}
     unit="phút"
     bind:value={minutes}
-    oninput={() => (verdict = null)}
   />
   <FeedbackNote tone={note.tone} text={note.text} />
 
@@ -118,7 +115,12 @@
     </p>
     <div class="flex flex-wrap gap-2" role="group" aria-label="Chọn nghi phạm">
       {#each LANES.filter((l) => l.id.startsWith('np')) as lane (lane.id)}
-        <button type="button" class={button.quiet} onclick={() => pickSuspect(lane.id)}>
+        <button
+          type="button"
+          class={button.quiet}
+          aria-pressed={picked === lane.id}
+          onclick={() => (picked = lane.id)}
+        >
           {lane.name}
         </button>
       {/each}
