@@ -184,7 +184,7 @@
         >
       {/each}
     </div>
-    <div aria-live="polite"><FeedbackNote tone={verdict.tone} text={verdict.text} /></div>
+    <FeedbackNote tone={verdict.tone} text={verdict.text} />
     <button type="button" class={button.quiet} onclick={nextPuzzle}>Số liệu khác</button>
   </div>
 </div>

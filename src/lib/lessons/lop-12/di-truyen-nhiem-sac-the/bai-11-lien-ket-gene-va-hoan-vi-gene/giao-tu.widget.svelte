@@ -55,5 +55,5 @@
   <p class="text-xs text-slate-600">
     Lai phân tích với cơ thể ab/ab: tỉ lệ kiểu hình đời con bằng đúng tỉ lệ các loại giao tử trên.
   </p>
-  <div aria-live="polite"><FeedbackNote tone={note.tone} text={note.text} /></div>
+  <FeedbackNote tone={note.tone} text={note.text} />
 </div>

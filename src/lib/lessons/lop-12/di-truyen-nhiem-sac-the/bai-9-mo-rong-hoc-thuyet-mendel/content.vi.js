@@ -1,12 +1,12 @@
 /** @type {import('#lib/core/content-schema.js').LessonContent} */
 export default {
   summary:
-    'Mở rộng học thuyết Mendel: tương tác giữa các allele của cùng một gene (trội không hoàn toàn, đồng trội, gene đa allele), tương tác giữa các gene không allele (tương tác bổ sung, tương tác cộng gộp) và gene đa hiệu.',
+    'Mở rộng học thuyết Mendel: tương tác giữa các allele của cùng một gene (trội không hoàn toàn, đồng trội, gene đa allele), tương tác giữa các gene khác nhau (tương tác gián tiếp, tương tác cộng gộp) và gene đa hiệu.',
   intro:
     'Lai hai giống đậu thơm đều có hoa trắng, Bateson và Punnett lại thu được toàn cây hoa đỏ; cho chúng tự thụ phấn, đời sau có $9$ đỏ $: 7$ trắng chứ không phải $3 : 1$ hay $9 : 3 : 3 : 1$. Phải chăng mọi tính trạng đều do một gene quy định, và một gene chỉ quy định một tính trạng?',
   objectives: [
     'Phân biệt được trội hoàn toàn, trội không hoàn toàn và đồng trội; nêu được ví dụ gene đa allele (nhóm máu ABO).',
-    'Giải thích được tương tác bổ sung và tương tác cộng gộp giữa các gene không allele qua sản phẩm của gene.',
+    'Giải thích được tương tác gián tiếp (kiểu bổ sung) và tương tác cộng gộp giữa các gene khác nhau qua sản phẩm của gene.',
     'Nêu được khái niệm và ví dụ về gene đa hiệu.',
     'Nhận ra kiểu tác động của gene từ tỉ lệ kiểu hình ở đời con.',
   ],
@@ -22,7 +22,7 @@ export default {
           type: 'callout',
           tone: 'definition',
           title: 'Trội không hoàn toàn',
-          text: 'Trội không hoàn toàn là hiện tượng thể dị hợp có kiểu hình trung gian giữa kiểu hình của hai thể đồng hợp. Ví dụ, ở hoa phấn: cây hoa đỏ $AA$ × cây hoa trắng $aa$ cho $F_1$ toàn hoa hồng $Aa$; $F_2$ có $1$ đỏ $: 2$ hồng $: 1$ trắng, tỉ lệ kiểu hình trùng với tỉ lệ kiểu gene.',
+          text: 'Trội không hoàn toàn là hiện tượng thể dị hợp có kiểu hình trung gian giữa kiểu hình của hai thể đồng hợp. Ví dụ, ở hoa mõm chó (và ở hoa phấn): cây hoa đỏ thuần chủng $AA$ × cây hoa trắng $aa$ cho $F_1$ toàn hoa hồng $Aa$; $F_2$ có $1$ đỏ $: 2$ hồng $: 1$ trắng, tỉ lệ kiểu hình trùng với tỉ lệ kiểu gene.',
         },
         {
           type: 'callout',
@@ -54,17 +54,17 @@ export default {
       ],
     },
     {
-      heading: 'Tương tác giữa các gene không allele',
+      heading: 'Tương tác giữa các gene khác nhau',
       blocks: [
         {
           type: 'p',
-          text: 'Nhiều tính trạng do hai hay nhiều gene không allele cùng quy định. Thực chất, các gene không tác động trực tiếp lên nhau mà sản phẩm của chúng (enzyme, protein) cùng tham gia hình thành một tính trạng.',
+          text: 'Nhiều tính trạng do hai hay nhiều gene khác nhau (gene không allele) cùng quy định. Thực chất, các gene không tác động trực tiếp lên nhau mà sản phẩm của chúng (enzyme, protein) cùng tham gia hình thành một tính trạng, theo hai cách: tương tác gián tiếp và tương tác trực tiếp kiểu cộng gộp.',
         },
         {
           type: 'callout',
           tone: 'definition',
-          title: 'Tương tác bổ sung',
-          text: 'Sản phẩm của các gene không allele cùng tham gia một chuỗi phản ứng, bổ sung cho nhau để tạo ra kiểu hình. Ở đậu thơm, enzyme do allele $A$ và enzyme do allele $B$ xúc tác hai bước liên tiếp tạo sắc tố đỏ; thiếu một trong hai enzyme ($aa$ hoặc $bb$), hoa trắng.',
+          title: 'Tương tác gián tiếp',
+          text: 'Sản phẩm của các gene khác nhau không tương tác trực tiếp với nhau mà cùng tham gia một chuỗi phản ứng chuyển hoá, bổ sung cho nhau để tạo ra kiểu hình. Ví dụ, ở ốc sên, enzyme do allele $A$ và enzyme do allele $B$ lần lượt biến một tiền chất không màu thành sắc tố nâu của vỏ; mất chức năng một trong hai gene, vỏ ốc màu trắng. Ở đậu thơm cũng vậy: thiếu một trong hai enzyme ($aa$ hoặc $bb$), hoa trắng. Kiểu tương tác gián tiếp cần đủ các allele trội của hai gene này thường được gọi là tương tác bổ sung.',
         },
         {
           type: 'tex',
@@ -78,7 +78,7 @@ export default {
           type: 'callout',
           tone: 'definition',
           title: 'Tương tác cộng gộp',
-          text: 'Mỗi allele trội của các gene không allele đều góp một phần như nhau vào sự biểu hiện của tính trạng; càng nhiều allele trội, tính trạng biểu hiện càng mạnh. Ví dụ: màu hạt lúa mì, màu da người, chiều cao, khối lượng cơ thể.',
+          text: 'Đây là kiểu tương tác trực tiếp: mỗi allele trội của các gene không allele đều góp một phần như nhau vào sự biểu hiện của tính trạng; càng nhiều allele trội, tính trạng biểu hiện càng mạnh. Ví dụ: màu hạt lúa mì, màu da người, chiều cao, khối lượng cơ thể.',
         },
         {
           type: 'p',
@@ -90,8 +90,8 @@ export default {
           head: ['Kiểu tác động', 'Tỉ lệ kiểu hình', 'Ví dụ'],
           rows: [
             ['Phân li độc lập, mỗi gene một tính trạng', '$9 : 3 : 3 : 1$', 'Hạt đậu Hà Lan'],
-            ['Tương tác bổ sung', '$9 : 7$', 'Màu hoa đậu thơm'],
-            ['Tương tác bổ sung', '$9 : 6 : 1$', 'Hình dạng quả bí ngô'],
+            ['Tương tác gián tiếp (bổ sung)', '$9 : 7$', 'Màu hoa đậu thơm'],
+            ['Tương tác gián tiếp (bổ sung)', '$9 : 6 : 1$', 'Hình dạng quả bí ngô'],
             ['Tương tác cộng gộp', '$1 : 4 : 6 : 4 : 1$ hoặc $15 : 1$', 'Màu hạt lúa mì'],
           ],
         },
@@ -161,7 +161,7 @@ export default {
       prompt:
         'Cho $F_1$ dị hợp hai cặp gene tự thụ phấn, $F_2$ có tỉ lệ $9$ cây hoa đỏ $: 7$ cây hoa trắng. Tính trạng màu hoa di truyền theo kiểu',
       options: [
-        'tương tác bổ sung',
+        'tương tác gián tiếp (kiểu bổ sung)',
         'tương tác cộng gộp',
         'trội không hoàn toàn',
         'phân li độc lập, mỗi gene một tính trạng',
@@ -172,7 +172,7 @@ export default {
         'Chỉ $A\\text{-}B\\text{-}$ cho hoa đỏ.',
       ],
       solution:
-        'Có $9 + 7 = 16$ tổ hợp nên tính trạng do hai gene không allele quy định; chỉ khi có cả hai allele trội hoa mới đỏ: tương tác bổ sung.',
+        'Có $9 + 7 = 16$ tổ hợp nên tính trạng do hai gene không allele quy định; chỉ khi có cả hai allele trội hoa mới đỏ: tương tác gián tiếp kiểu bổ sung.',
     },
     {
       type: 'fraction',
@@ -236,7 +236,12 @@ export default {
         '$I^AI^O \\times I^BI^O$: $1$ A $: 1$ AB $: 1$ B $: 1$ O',
         '$F_2$: $15$ hạt đỏ $: 1$ hạt trắng',
       ],
-      right: ['Tương tác bổ sung', 'Trội không hoàn toàn', 'Đồng trội', 'Tương tác cộng gộp'],
+      right: [
+        'Tương tác gián tiếp (bổ sung)',
+        'Trội không hoàn toàn',
+        'Đồng trội',
+        'Tương tác cộng gộp',
+      ],
       pairs: [
         [0, 0],
         [1, 1],
@@ -245,7 +250,7 @@ export default {
       ],
       hints: ['Tỉ lệ $1 : 2 : 1$ về kiểu hình ở một gene là dấu hiệu của kiểu hình trung gian.'],
       solution:
-        '$9 : 6 : 1$ là tương tác bổ sung; $1 : 2 : 1$ là trội không hoàn toàn; nhóm máu AB xuất hiện là đồng trội; $15 : 1$ là tương tác cộng gộp.',
+        '$9 : 6 : 1$ là tương tác gián tiếp kiểu bổ sung; $1 : 2 : 1$ là trội không hoàn toàn; nhóm máu AB xuất hiện là đồng trội; $15 : 1$ là tương tác cộng gộp.',
     },
     {
       type: 'fraction',
@@ -274,8 +279,8 @@ export default {
   takeaways: [
     'Trội không hoàn toàn: thể dị hợp có kiểu hình trung gian, $F_2$ $1 : 2 : 1$. Đồng trội: cả hai allele cùng biểu hiện ($I^AI^B$ – nhóm máu AB).',
     'Gene đa allele có nhiều hơn hai allele trong quần thể; $k$ allele tạo $\\frac{k(k+1)}{2}$ kiểu gene.',
-    'Tương tác bổ sung: sản phẩm các gene cùng tham gia một chuỗi phản ứng ($9 : 7$, $9 : 6 : 1$).',
-    'Tương tác cộng gộp: mỗi allele trội góp phần như nhau ($1 : 4 : 6 : 4 : 1$ hoặc $15 : 1$), thường gặp ở tính trạng số lượng.',
+    'Tương tác gián tiếp (kiểu bổ sung): sản phẩm các gene cùng tham gia một chuỗi phản ứng ($9 : 7$, $9 : 6 : 1$).',
+    'Tương tác cộng gộp (trực tiếp): mỗi allele trội góp phần như nhau ($1 : 4 : 6 : 4 : 1$ hoặc $15 : 1$), thường gặp ở tính trạng số lượng.',
     'Gene đa hiệu: một gene tác động lên nhiều tính trạng (allele $Hb^S$).',
   ],
 };

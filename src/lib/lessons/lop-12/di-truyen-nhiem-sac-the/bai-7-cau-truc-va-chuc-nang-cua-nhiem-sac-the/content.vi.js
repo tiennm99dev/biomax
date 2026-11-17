@@ -45,7 +45,7 @@ export default {
             [
               'Đầu mút (telomere)',
               'Hai đầu tận cùng của NST',
-              'Bảo vệ NST, giúp các NST không dính vào nhau',
+              'Gồm nhiều trình tự nucleotide lặp lại; bảo vệ NST, giúp các NST không dính vào nhau',
             ],
             [
               'Trình tự khởi đầu tái bản',
@@ -54,6 +54,10 @@ export default {
             ],
           ],
         },
+        {
+          type: 'p',
+          text: 'Dựa vào vị trí của tâm động, NST được chia thành NST tâm cân (tâm động ở giữa, hai cánh dài bằng nhau), NST tâm lệch (hai cánh dài ngắn khác nhau) và NST tâm mút (tâm động nằm gần một đầu mút).',
+        },
       ],
     },
     {
@@ -61,7 +65,7 @@ export default {
       blocks: [
         {
           type: 'p',
-          text: 'Đơn vị cấu trúc cơ bản của NST là nucleosome: một đoạn DNA khoảng $146$ cặp nucleotide quấn quanh khối cầu gồm $8$ phân tử histone. Các nucleosome nối nhau bằng đoạn DNA nối, tạo chuỗi nucleosome gọi là sợi cơ bản.',
+          text: 'Đơn vị cấu trúc cơ bản của NST là nucleosome: một đoạn DNA khoảng $146$ cặp nucleotide quấn quanh khối cầu gồm $8$ phân tử histone (thuộc $4$ loại). Các nucleosome nối nhau bằng đoạn DNA nối, tạo chuỗi nucleosome gọi là sợi cơ bản.',
         },
         {
           type: 'table',
@@ -82,7 +86,7 @@ export default {
         },
         {
           type: 'p',
-          text: 'Ở kì đầu, các protein condensin tạo nên khung NST; sợi nhiễm sắc luồn qua các vòng protein thành những vòng nhô ra khỏi khung, làm NST ngắn lại và to ra. Đến kì giữa, NST co xoắn cực đại, ngắn hơn phân tử DNA hàng nghìn lần, nhờ đó di chuyển trên thoi phân bào mà không bị rối hay đứt.',
+          text: 'Ở kì đầu, các protein condensin tạo nên khung NST; sợi nhiễm sắc luồn qua các vòng protein thành những vòng nhô ra khỏi khung, làm NST ngắn lại và to ra. Đến kì giữa, NST co xoắn cực đại, ngắn hơn phân tử DNA khoảng $15\\,000$ – $20\\,000$ lần, nhờ đó di chuyển trên thoi phân bào mà không bị rối hay đứt.',
         },
         {
           type: 'table',
@@ -253,6 +257,16 @@ export default {
       hints: ['Ở kì giữa, NST sắp phân li về hai cực.'],
       solution:
         'Co xoắn cực đại làm NST ngắn, gọn, nhờ đó di chuyển và phân li chính xác. Tái bản và phiên mã cần NST tháo xoắn (kì trung gian).',
+    },
+    {
+      type: 'choice',
+      prompt:
+        'Một NST kì giữa có tâm động nằm ở chính giữa, hai cánh dài bằng nhau. Đó là loại NST nào?',
+      options: ['NST tâm cân', 'NST tâm lệch', 'NST tâm mút', 'NST giới tính'],
+      answer: 0,
+      hints: ['NST được phân loại theo vị trí của tâm động.'],
+      solution:
+        'Tâm động ở giữa, hai cánh bằng nhau: NST tâm cân. Tâm lệch có hai cánh dài ngắn khác nhau; tâm mút có tâm động gần một đầu mút.',
     },
   ],
   takeaways: [

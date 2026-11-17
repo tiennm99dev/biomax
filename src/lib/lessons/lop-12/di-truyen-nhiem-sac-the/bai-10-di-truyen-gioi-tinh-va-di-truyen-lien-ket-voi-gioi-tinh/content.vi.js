@@ -30,13 +30,23 @@ export default {
           head: ['Kiểu', 'Giới cái', 'Giới đực', 'Ví dụ'],
           rows: [
             ['$XX$ – $XY$', '$XX$', '$XY$', 'Người, thú, ruồi giấm'],
-            ['$ZW$ – $ZZ$', '$ZW$', '$ZZ$', 'Chim (gà), bướm, một số loài bò sát, cá'],
-            ['$XX$ – $XO$', '$XX$', '$XO$ (chỉ có một NST $X$)', 'Châu chấu, rệp'],
+            [
+              '$ZW$ – $ZZ$',
+              '$ZW$',
+              '$ZZ$',
+              'Chim (gà), một số loài cá, một số loài côn trùng (bướm)',
+            ],
+            [
+              '$XX$ – $XO$',
+              '$XX$',
+              '$XO$ (chỉ có một NST $X$)',
+              'Châu chấu, dế, một số loài côn trùng khác',
+            ],
           ],
         },
         {
           type: 'p',
-          text: 'Cơ chế: giới đồng giao tử (như $XX$) chỉ cho một loại giao tử mang $X$; giới dị giao tử ($XY$) cho hai loại giao tử $X$ và $Y$ với tỉ lệ ngang nhau. Qua thụ tinh, hợp tử $XX$ và $XY$ được tạo ra với tỉ lệ xấp xỉ $1 : 1$. Ở người, gene $SRY$ trên NST $Y$ khởi động sự phát triển của tinh hoàn, quy định giới nam.',
+          text: 'Cơ chế: giới đồng giao tử (như $XX$) chỉ cho một loại giao tử mang $X$; giới dị giao tử ($XY$) cho hai loại giao tử $X$ và $Y$ với tỉ lệ ngang nhau. Qua thụ tinh, hợp tử $XX$ và $XY$ được tạo ra với tỉ lệ xấp xỉ $1 : 1$. Ở người, gene $SRY$ trên NST $Y$ khởi động sự phát triển của tinh hoàn, quy định giới nam. Ở một số loài như ong, kiến, giới tính phụ thuộc vào số bộ NST: con cái phát triển từ trứng được thụ tinh ($2n$), con đực từ trứng không thụ tinh ($n$).',
         },
         {
           type: 'callout',
@@ -80,14 +90,14 @@ export default {
           type: 'callout',
           tone: 'theorem',
           title: 'Gene trên vùng không tương đồng của NST X',
-          text: 'Gene trên NST $X$ di truyền chéo: allele trên $X$ của bố truyền cho con gái, rồi qua con gái truyền cho cháu trai. Tính trạng lặn biểu hiện ở giới dị giao tử ($XY$) nhiều hơn ở giới đồng giao tử. Ở người: bệnh mù màu đỏ – lục, bệnh máu khó đông gặp chủ yếu ở nam.',
+          text: 'Gene trên NST $X$ di truyền chéo: allele trên $X$ của bố truyền cho con gái, rồi qua con gái truyền cho cháu trai. Tính trạng lặn biểu hiện ở giới dị giao tử ($XY$) nhiều hơn ở giới đồng giao tử. Ở người: bệnh mù màu đỏ – lục, bệnh máu khó đông (do allele lặn) gặp chủ yếu ở nam. Nếu allele gây bệnh trên $X$ là trội, như bệnh còi xương do giảm phosphate máu, người bố mắc bệnh truyền bệnh cho tất cả con gái.',
         },
         { type: 'widget', name: 'pha-he' },
         {
           type: 'callout',
           tone: 'theorem',
           title: 'Gene trên vùng không tương đồng của NST Y',
-          text: 'Gene trên NST $Y$ di truyền thẳng: chỉ biểu hiện ở giới dị giao tử và truyền từ bố cho tất cả con trai. Ví dụ ở người: tật có túm lông ở vành tai.',
+          text: 'Gene trên NST $Y$ di truyền thẳng: chỉ biểu hiện ở giới dị giao tử và truyền từ bố cho tất cả con trai. Ví dụ ở người: tật có nhiều lông mọc ở vành tai, tật dính ngón tay $2$ và $3$.',
         },
         {
           type: 'p',
@@ -103,6 +113,7 @@ export default {
           items: [
             'Phân biệt giới tính sớm nhờ các gene liên kết với giới tính: phân biệt gà trống, gà mái từ khi mới nở theo màu lông; phân biệt tằm đực, tằm cái từ giai đoạn trứng theo màu trứng để chọn nuôi tằm đực (cho năng suất tơ cao hơn).',
             'Điều khiển tỉ lệ đực, cái theo nhu cầu sản xuất: chọn lọc tinh trùng mang $X$ để bò sữa đẻ nhiều bê cái; dùng hormone tạo đàn cá rô phi toàn đực (lớn nhanh).',
+            'Chuyển gene kháng thuốc diệt côn trùng sang NST $Y$ của muỗi để chọn lọc riêng muỗi đực, gây vô sinh rồi thả ra môi trường, làm giảm số lượng muỗi.',
             'Trong y học: dựa vào quy luật di truyền liên kết với giới tính để tư vấn di truyền, dự đoán khả năng con mắc các bệnh như mù màu, máu khó đông.',
           ],
         },
@@ -246,7 +257,7 @@ export default {
     },
   ],
   takeaways: [
-    'NST giới tính mang gene quy định giới tính; các kiểu: $XX/XY$ (người, ruồi giấm), $ZW/ZZ$ (chim, bướm), $XX/XO$ (châu chấu).',
+    'NST giới tính mang gene quy định giới tính; các kiểu: $XX/XY$ (người, ruồi giấm), $ZW/ZZ$ (chim, bướm), $XX/XO$ (châu chấu, dế).',
     'Giới dị giao tử cho hai loại giao tử ngang nhau, nên tỉ lệ đực : cái xấp xỉ $1 : 1$; môi trường cũng có thể ảnh hưởng đến giới tính.',
     'Gene trên $X$ (không có allele trên $Y$): lai thuận nghịch khác nhau, di truyền chéo, tính trạng lặn gặp nhiều ở giới $XY$.',
     'Gene trên $Y$: di truyền thẳng từ bố cho con trai.',
