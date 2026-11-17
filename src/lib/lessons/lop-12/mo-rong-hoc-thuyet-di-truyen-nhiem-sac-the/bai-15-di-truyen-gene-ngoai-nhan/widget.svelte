@@ -177,7 +177,7 @@
         </h4>
         {#if model === 'ngoai-nhan'}
           <svg
-            viewBox="0 0 240 90"
+            viewBox="0 0 240 100"
             class="w-full"
             role="img"
             aria-label="Noãn chứa lục lạp {c.mother === 'kham'
@@ -198,11 +198,11 @@
                 stroke-width="0.8"
               />
             {/each}
-            <text x="55" y="88" text-anchor="middle" font-size="10" fill="#334155">noãn (♀)</text>
+            <text x="55" y="97" text-anchor="middle" font-size="10" fill="#334155">noãn (♀)</text>
             <text x="120" y="50" text-anchor="middle" font-size="18" fill="#334155">+</text>
             <circle cx="180" cy="45" r="16" fill="#fefce8" stroke="#ca8a04" stroke-width="2" />
             <circle cx="180" cy="45" r="7" fill="#c4b5fd" stroke="#7c3aed" />
-            <text x="180" y="88" text-anchor="middle" font-size="10" fill="#334155"
+            <text x="180" y="97" text-anchor="middle" font-size="10" fill="#334155"
               >hạt phấn (♂): chỉ nhân</text
             >
           </svg>

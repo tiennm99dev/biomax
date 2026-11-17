@@ -44,12 +44,12 @@
   }
 
   // Chart geometry: x by condition, y by yield 0..10 tấn/ha.
-  const W = 320;
-  const H = 210;
+  const W = 340;
+  const H = 220;
   const L = 40;
   const R = 300;
-  const T = 12;
-  const B = 170;
+  const T = 22;
+  const B = 180;
   /** @param {number} i */
   const xAt = (i) => L + 10 + (i * (R - L - 20)) / (CONDITIONS.length - 1);
   /** @param {number} t */
@@ -57,12 +57,12 @@
   const COLORS = { A: '#4f46e5', B: '#d97706', C: '#059669' };
 
   const riceNote = $derived.by(() => {
-    const here = `${variety.label}, điều kiện ${CONDITIONS[level].toLowerCase()}: năng suất ${yieldText(variety.values[level])}. Ở điều kiện này, giống cho năng suất cao nhất là ${bestAt(level).label.toLowerCase()}.`;
+    const here = `${variety.label}, điều kiện ${CONDITIONS[level].toLowerCase()}: năng suất ${yieldText(variety.values[level])}. Ở điều kiện này, giống cho năng suất cao nhất là giống ${bestAt(level).id}.`;
     if (full) {
       const r = normRange(variety);
       return {
         tone: /** @type {const} */ ('ok'),
-        text: `${here} Em đã thử đủ ${CONDITIONS.length} điều kiện: mức phản ứng về năng suất của ${variety.label.toLowerCase()} là từ ${yieldText(r.min)} đến ${yieldText(r.max)} (${r.max - r.min >= 3 ? 'rộng' : 'hẹp'}).`,
+        text: `${here} Em đã thử đủ ${CONDITIONS.length} điều kiện: mức phản ứng về năng suất của giống ${variety.id} là từ ${yieldText(r.min)} đến ${yieldText(r.max)} (${r.max - r.min >= 3 ? 'rộng' : 'hẹp'}).`,
       };
     }
     return {
@@ -151,7 +151,7 @@
         <line x1={L - 3} y1={yAt(t)} x2={R} y2={yAt(t)} stroke="#e2e8f0" />
         <text x={L - 6} y={yAt(t) + 3} text-anchor="end" font-size="9" fill="#475569">{t}</text>
       {/each}
-      <text x="6" y={T + 2} font-size="9" fill="#475569">tấn/ha</text>
+      <text x="4" y="11" font-size="9" fill="#475569">tấn/ha</text>
       {#each CONDITIONS as c, i (c)}
         <text
           x={xAt(i)}
@@ -165,7 +165,7 @@
       <line x1={xAt(level)} y1={T} x2={xAt(level)} y2={B} stroke="#94a3b8" stroke-dasharray="3 3" />
       {#if seen}
         <rect
-          x={R - 6}
+          x={R + 22}
           y={yAt(seen.max)}
           width="8"
           height={Math.max(2, yAt(seen.min) - yAt(seen.max))}
@@ -184,7 +184,7 @@
           stroke-width={on ? 3 : 1.2}
           opacity={on ? 1 : 0.45}
         />
-        <text x={xAt(4) + 4} y={yAt(v.values[4]) + 3} font-size="9" fill={col} font-weight="700"
+        <text x={xAt(4) + 10} y={yAt(v.values[4]) + 3} font-size="9" fill={col} font-weight="700"
           >{v.id}</text
         >
         {#if on}
@@ -206,7 +206,7 @@
       </text>
     </svg>
     <p class="text-sm text-slate-600">
-      Dải màu bên phải đồ thị là khoảng năng suất đã quan sát của {variety.label.toLowerCase()}: từ {seen
+      Dải màu bên phải đồ thị là khoảng năng suất đã quan sát của giống {variety.id}: từ {seen
         ? formatNumber(seen.min, 1)
         : '…'} đến {seen ? formatNumber(seen.max, 1) : '…'} tấn/ha.
     </p>
