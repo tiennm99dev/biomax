@@ -1,4 +1,5 @@
 <script>
+  import { tick } from 'svelte';
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import { button, focusRing } from '#lib/core/ui.js';
   import {
@@ -52,9 +53,19 @@
     form = blankEntry();
   }
 
-  /** @param {string} id */
-  function remove(id) {
+  /** @type {SVGSVGElement | undefined} */
+  let map = $state();
+
+  /**
+   * Removes an own entry; its button goes with it, so keyboard focus moves
+   * to the region on the map instead of dropping to the page.
+   * @param {string} id
+   */
+  async function remove(id) {
     own = own.filter((e) => e.id !== id);
+    await tick();
+    const spot = map?.querySelector(`[data-region="${selectedRegion}"]`);
+    if (spot instanceof SVGElement) spot.focus();
   }
 
   /** @param {string} id @param {KeyboardEvent} event */
@@ -118,6 +129,7 @@
     </label>
     <div class="grid gap-3 md:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
       <svg
+        bind:this={map}
         viewBox="0 0 184 362"
         class="mx-auto block w-full max-w-xs rounded-xl bg-sky-50"
         role="group"
@@ -126,6 +138,7 @@
         {#each REGIONS as r (r.id)}
           {@const n = counts[r.id]}
           <g
+            data-region={r.id}
             role="button"
             tabindex="0"
             aria-pressed={r.id === selectedRegion}
@@ -195,7 +208,7 @@
                 {#if !e.sample}
                   <button
                     type="button"
-                    class="mt-1 text-xs text-rose-700 underline {focusRing}"
+                    class="mt-1 inline-flex min-h-11 items-center text-xs text-rose-700 underline {focusRing}"
                     onclick={() => remove(e.id)}>Xoá ví dụ này</button
                   >
                 {/if}

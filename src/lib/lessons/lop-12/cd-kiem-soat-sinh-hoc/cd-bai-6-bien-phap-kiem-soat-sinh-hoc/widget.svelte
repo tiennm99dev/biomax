@@ -1,9 +1,13 @@
 <script>
+  import { tick } from 'svelte';
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import { button, focusRing } from '#lib/core/ui.js';
   import { GROUPS, METHODS, check, method, pestDeck } from './engine.js';
 
   const deck = pestDeck();
+
+  /** @type {HTMLDivElement | undefined} */
+  let root = $state();
 
   /** @type {Record<string, string>} pest id → matched method id */
   let matched = $state({});
@@ -25,8 +29,22 @@
     if (p) note = { tone: 'info', text: `${p.name}. ${p.harm}` };
   }
 
-  /** @param {string} methodId */
-  function chooseMethod(methodId) {
+  /**
+   * A correct match disables the pressed measure, which drops keyboard focus
+   * to the page: hand it to the next pest, or to "Chơi lại" at the end.
+   * @param {EventTarget | null} from
+   */
+  async function keepFocus(from) {
+    await tick();
+    if (!(from instanceof HTMLButtonElement) || !from.disabled || !root) return;
+    const target = done
+      ? root.querySelector('[data-restart]')
+      : root.querySelector(`[data-pest="${current}"]`);
+    if (target instanceof HTMLElement) target.focus();
+  }
+
+  /** @param {string} methodId @param {EventTarget | null} [from] */
+  function chooseMethod(methodId, from = null) {
     const result = check(current, methodId);
     if (!result.ok) {
       misses += 1;
@@ -34,6 +52,7 @@
       return;
     }
     matched = { ...matched, [current]: methodId };
+    keepFocus(from);
     const next = deck.find((p) => !matched[p.id]);
     if (next) {
       current = next.id;
@@ -46,7 +65,7 @@
     }
   }
 
-  function restart() {
+  async function restart() {
     matched = {};
     misses = 0;
     current = deck[0].id;
@@ -54,6 +73,9 @@
       tone: 'info',
       text: 'Chọn một loài gây hại, rồi chọn biện pháp kiểm soát sinh học phù hợp nhất với nó.',
     };
+    await tick();
+    const first = root?.querySelector(`[data-pest="${current}"]`);
+    if (first instanceof HTMLElement) first.focus();
   }
 
   /** @param {string} g */
@@ -64,7 +86,7 @@
   }
 </script>
 
-<div class="space-y-3">
+<div class="space-y-3" bind:this={root}>
   <div class="grid gap-3 md:grid-cols-2">
     <section class="space-y-1" aria-label="Loài gây hại">
       <h3 class="text-sm font-semibold text-slate-900">Loài gây hại</h3>
@@ -73,6 +95,7 @@
           {@const m = matched[p.id]}
           <button
             type="button"
+            data-pest={p.id}
             aria-pressed={p.id === current}
             disabled={Boolean(m)}
             class="min-h-11 rounded-lg border px-3 py-2 text-left text-sm transition {focusRing} {m
@@ -99,7 +122,7 @@
             type="button"
             disabled={done || usedMethods.has(m.id)}
             class="flex min-h-11 items-center justify-between gap-2 rounded-lg border border-slate-300 bg-white px-3 py-2 text-left text-sm text-slate-800 transition hover:bg-slate-50 disabled:opacity-50 {focusRing}"
-            onclick={() => chooseMethod(m.id)}
+            onclick={(e) => chooseMethod(m.id, e.currentTarget)}
           >
             <span>{m.name}</span>
             {#if usedMethods.has(m.id)}
@@ -116,6 +139,6 @@
   <FeedbackNote tone={note.tone} text={note.text} />
 
   {#if done}
-    <button type="button" class={button.quiet} onclick={restart}>Chơi lại</button>
+    <button type="button" data-restart class={button.quiet} onclick={restart}>Chơi lại</button>
   {/if}
 </div>

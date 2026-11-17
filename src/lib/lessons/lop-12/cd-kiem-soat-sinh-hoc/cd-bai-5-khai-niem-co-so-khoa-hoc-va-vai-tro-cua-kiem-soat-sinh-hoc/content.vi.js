@@ -65,6 +65,10 @@ export default {
           ],
         },
         {
+          type: 'p',
+          text: 'Các vi sinh vật (vi khuẩn, nấm, động vật nguyên sinh) sống ở vùng rễ, trong đất cạnh tranh hoặc tiết chất ức chế, tiêu diệt sinh vật gây hại thường được gọi chung là vi sinh vật đối kháng; chúng là cơ sở của nhiều chế phẩm sinh học.',
+        },
+        {
           type: 'callout',
           tone: 'theorem',
           title: 'Khống chế sinh học',
@@ -162,7 +166,7 @@ export default {
   examples: [
     {
       problem:
-        'Năm $1888$, rệp sáp bông nhập vô tình từ Úc phá hoại nặng các vườn cam ở California (Mỹ). Người ta nhập từ Úc loài bọ rùa Rodolia cardinalis, chỉ ăn rệp sáp này. Chỉ sau khoảng $2$ năm, rệp không còn gây hại đáng kể. Giải thích kết quả theo cơ sở sinh thái học.',
+        'Cuối thế kỉ XIX, rệp sáp bông theo cây giống vô tình đến California (Mỹ) từ Úc và phá hoại nặng các vườn cam. Năm $1888$, người ta nhập từ Úc loài bọ rùa Rodolia cardinalis, chủ yếu ăn rệp sáp này. Chỉ sau khoảng $2$ năm, rệp không còn gây hại đáng kể. Giải thích kết quả theo cơ sở sinh thái học.',
       steps: [
         'Ở California, rệp sáp là loài mới đến, không có thiên địch nên tăng số lượng nhanh, vượt ngưỡng gây hại.',
         'Bọ rùa và rệp sáp có quan hệ vật ăn thịt – con mồi. Bọ rùa chuyên ăn rệp sáp nên nguồn thức ăn dồi dào giúp bọ rùa sinh sản nhanh.',

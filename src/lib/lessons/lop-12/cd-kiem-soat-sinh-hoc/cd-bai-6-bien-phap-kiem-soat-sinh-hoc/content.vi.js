@@ -31,7 +31,7 @@ export default {
             ['Bọ rùa', 'Vật ăn thịt', 'Rệp muội, rệp sáp'],
             ['Kiến vàng', 'Vật ăn thịt', 'Sâu, bọ xít hại cam, quýt, bưởi'],
             ['Nhện, bọ xít mù xanh', 'Vật ăn thịt', 'Rầy nâu, rầy lưng trắng hại lúa'],
-            ['Cá, cá bảy màu', 'Vật ăn thịt', 'Bọ gậy (ấu trùng muỗi)'],
+            ['Cá ăn bọ gậy (cá bảy màu, cá cờ)', 'Vật ăn thịt', 'Bọ gậy (ấu trùng muỗi)'],
           ],
         },
       ],
