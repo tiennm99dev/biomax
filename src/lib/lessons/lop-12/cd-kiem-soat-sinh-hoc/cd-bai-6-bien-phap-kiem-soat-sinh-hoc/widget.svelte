@@ -1,5 +1,6 @@
 <script>
   import { tick } from 'svelte';
+  import { passFocus } from '#lib/core/kid/pass-focus.js';
   import FeedbackNote from '#lib/core/feedback-note.svelte';
   import { button, focusRing } from '#lib/core/ui.js';
   import { GROUPS, METHODS, check, method, pestDeck } from './engine.js';
@@ -31,20 +32,10 @@
 
   /**
    * A correct match disables the pressed measure, which drops keyboard focus
-   * to the page: hand it to the next pest, or to "Chơi lại" at the end.
-   * @param {EventTarget | null} from
+   * to the page: it passes to the next pest, or to "Chơi lại" at the end.
+   * @param {string} methodId @param {HTMLButtonElement} [from]
    */
-  async function keepFocus(from) {
-    await tick();
-    if (!(from instanceof HTMLButtonElement) || !from.disabled || !root) return;
-    const target = done
-      ? root.querySelector('[data-restart]')
-      : root.querySelector(`[data-pest="${current}"]`);
-    if (target instanceof HTMLElement) target.focus();
-  }
-
-  /** @param {string} methodId @param {EventTarget | null} [from] */
-  function chooseMethod(methodId, from = null) {
+  function chooseMethod(methodId, from) {
     const result = check(current, methodId);
     if (!result.ok) {
       misses += 1;
@@ -52,7 +43,13 @@
       return;
     }
     matched = { ...matched, [current]: methodId };
-    keepFocus(from);
+    passFocus(
+      from,
+      () =>
+        /** @type {HTMLElement | null | undefined} */ (
+          root?.querySelector(done ? '[data-restart]' : `[data-pest="${current}"]`)
+        ),
+    );
     const next = deck.find((p) => !matched[p.id]);
     if (next) {
       current = next.id;
