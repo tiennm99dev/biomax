@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { mutate, translate } from '#lib/domain/codons.js';
-import { GENES, PATHWAYS, TASKS, changeOf, geneStats, pairBonds } from './engine.js';
+import { GENES, PATHWAYS, TASKS, changeOf, geneStats, oneChange, pairBonds } from './engine.js';
 
 /** Every single-base change of a sequence. @param {string} seq */
 function singleChanges(seq) {
@@ -30,6 +30,31 @@ describe('gene editor', () => {
       return TASKS.filter((t) => !all.some((s) => t.met(g.seq, s))).map((t) => `${g.id}:${t.id}`);
     });
     expect(missing).toEqual([]);
+  });
+
+  it('ticks a task only for a single change from the starting gene', () => {
+    const seq = GENES[0].seq;
+    const missense = mutate(seq, { type: 'substitution', at: 3, base: 'C' });
+    const two = mutate(missense, { type: 'substitution', at: 11, base: 'C' });
+    const shifted = mutate(seq, { type: 'insertion', at: 4, base: 'A' });
+    const task = (/** @type {string} */ id) => TASKS.find((t) => t.id === id);
+    expect(task('missense')?.met(seq, missense)).toBe(true);
+    expect(changeOf(seq, two).effect).toBe('missense');
+    expect(task('missense')?.met(seq, two)).toBe(false);
+    expect(task('frameshift')?.met(seq, shifted)).toBe(true);
+    expect(
+      task('frameshift')?.met(seq, mutate(shifted, { type: 'insertion', at: 8, base: 'C' })),
+    ).toBe(false);
+  });
+
+  it('counts one substitution, insertion or deletion as one change', () => {
+    expect(oneChange('ATGC', 'ATGC')).toBe(false);
+    expect(oneChange('ATGC', 'ACGC')).toBe(true);
+    expect(oneChange('ATGC', 'ACGA')).toBe(false);
+    expect(oneChange('ATGC', 'ATTGC')).toBe(true);
+    expect(oneChange('ATGC', 'AGC')).toBe(true);
+    expect(oneChange('ATGC', 'AC')).toBe(false);
+    expect(oneChange('ATGC', 'TAGC')).toBe(false);
   });
 
   it('measures the sickle-cell substitution', () => {

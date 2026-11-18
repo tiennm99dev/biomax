@@ -47,37 +47,50 @@ export function changeOf(before, after) {
 }
 
 /**
- * Tasks for the editor. Each is met by a single change from the starting gene.
+ * Whether `after` is `before` with exactly one change: one nucleotide pair
+ * substituted, added or lost.
+ * @param {string} before @param {string} after
+ */
+export function oneChange(before, after) {
+  const a = clean(before);
+  const b = clean(after);
+  if (a.length === b.length) {
+    let diff = 0;
+    for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) diff++;
+    return diff === 1;
+  }
+  const [long, short] = a.length > b.length ? [a, b] : [b, a];
+  if (long.length - short.length !== 1) return false;
+  let i = 0;
+  while (i < short.length && long[i] === short[i]) i++;
+  return long.slice(i + 1) === short.slice(i);
+}
+
+/**
+ * A task met only by one change from the starting gene whose effect passes `test`.
+ * @param {(c: ReturnType<typeof changeOf>) => boolean} test
+ * @returns {(before: string, after: string) => boolean}
+ */
+const byOneChange = (test) => (x, y) => oneChange(x, y) && test(changeOf(x, y));
+
+/**
+ * Tasks for the editor. Each is met only by a single change from the
+ * starting gene, as the checklist asks.
  * @type {Array<{ id: string, label: string, met: (before: string, after: string) => boolean }>}
  */
 export const TASKS = [
-  {
-    id: 'silent',
-    label: 'Đột biến đồng nghĩa',
-    met: (x, y) => changeOf(x, y).effect === 'silent',
-  },
-  {
-    id: 'missense',
-    label: 'Đột biến sai nghĩa',
-    met: (x, y) => changeOf(x, y).effect === 'missense',
-  },
-  {
-    id: 'nonsense',
-    label: 'Đột biến vô nghĩa',
-    met: (x, y) => changeOf(x, y).effect === 'nonsense',
-  },
+  { id: 'silent', label: 'Đột biến đồng nghĩa', met: byOneChange((c) => c.effect === 'silent') },
+  { id: 'missense', label: 'Đột biến sai nghĩa', met: byOneChange((c) => c.effect === 'missense') },
+  { id: 'nonsense', label: 'Đột biến vô nghĩa', met: byOneChange((c) => c.effect === 'nonsense') },
   {
     id: 'frameshift',
     label: 'Đột biến dịch khung',
-    met: (x, y) => changeOf(x, y).effect === 'frameshift',
+    met: byOneChange((c) => c.effect === 'frameshift'),
   },
   {
     id: 'plus-one',
     label: 'Số liên kết hydrogen tăng 1',
-    met: (x, y) => {
-      const c = changeOf(x, y);
-      return c.pairs === 0 && c.hydrogen === 1;
-    },
+    met: byOneChange((c) => c.pairs === 0 && c.hydrogen === 1),
   },
 ];
 

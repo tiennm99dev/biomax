@@ -3,7 +3,7 @@
   import SegmentedControl from '#lib/core/segmented-control.svelte';
   import { intText } from '#lib/core/number-format.js';
   import DnaCodonTranslator from '#lib/domain/dna-codon-translator.svelte';
-  import { GENES, TASKS, changeOf, geneStats } from './engine.js';
+  import { GENES, TASKS, changeOf, geneStats, oneChange } from './engine.js';
 
   let geneId = $state(GENES[0].id);
   const gene = $derived(GENES.find((g) => g.id === geneId) ?? GENES[0]);
@@ -14,6 +14,8 @@
   const before = $derived(geneStats(gene.seq));
   const after = $derived(geneStats(sequence));
   const change = $derived(changeOf(gene.seq, sequence));
+  /** Edited by more than one change, so the checklist cannot count it. */
+  const several = $derived(sequence !== gene.seq && !oneChange(gene.seq, sequence));
 
   /**
    * The translator keeps the sequence it mounts with as its starting gene,
@@ -79,6 +81,12 @@
   </dl>
 
   <FeedbackNote tone={note.tone} text={note.text} />
+  {#if several}
+    <FeedbackNote
+      tone="info"
+      text="Đã có nhiều hơn một thay đổi. Khôi phục gene rồi thử lại bằng một thay đổi."
+    />
+  {/if}
 
   <div class="rounded-xl border border-slate-200 bg-white p-3">
     <p class="text-sm font-semibold text-slate-700">
