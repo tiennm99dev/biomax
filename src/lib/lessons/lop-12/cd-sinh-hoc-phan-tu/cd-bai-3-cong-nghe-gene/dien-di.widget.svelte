@@ -4,7 +4,7 @@
   import SliderField from '#lib/core/slider-field.svelte';
   import { fmt } from '#lib/core/number-format.js';
   import { button } from '#lib/core/ui.js';
-  import { FULL_RUN, LANES, bandPosition, judge, runNote } from './gel.js';
+  import { FULL_RUN, LANES, bandPosition, judge, ladderLabels, runNote } from './gel.js';
 
   let minutes = $state(0);
   let poles = $state('am');
@@ -22,6 +22,9 @@
 
   /** @param {number} i */
   const laneX = (i) => LEFT + i * LANE_W;
+
+  /** Ladder sizes printed beside their bands, spaced so they do not overlap. */
+  const labels = $derived(ladderLabels(minutes, wellsAtMinus, LENGTH));
 
   /** The verdict on the picked suspect, kept up to date as the gel changes. */
   const verdict = $derived(picked ? judge(picked, minutes, wellsAtMinus) : null);
@@ -82,13 +85,13 @@
             rx="1"
             fill="#fef08a"
           />
-          {#if lane.id === 'thang' && minutes >= FULL_RUN / 2}
+          {#if lane.id === 'thang' && minutes >= FULL_RUN / 2 && labels.has(bp)}
             <text
               x={laneX(i) + 2}
               y={TOP + pos * LENGTH + 4}
               text-anchor="end"
-              font-size="8"
-              fill="#f8fafc">{bp}</text
+              font-size="10"
+              fill="#f8fafc">{fmt(bp)}</text
             >
           {/if}
         {/if}

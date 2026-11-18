@@ -51,6 +51,29 @@ export function bandPosition(bp, minutes, wellsAtMinus) {
 }
 
 /**
+ * The ladder bands that get a size label. Going up the gel from the shortest
+ * fragment, a band closer than `gap` SVG units to the last labelled band is
+ * left without a label, so the labels never overlap.
+ * @param {number} minutes @param {boolean} wellsAtMinus
+ * @param {number} length the gel length in SVG units
+ * @param {number} [gap]
+ * @returns {Set<number>}
+ */
+export function ladderLabels(minutes, wellsAtMinus, length, gap = 10) {
+  const labelled = new Set();
+  let last = Infinity;
+  for (const bp of LADDER) {
+    const pos = bandPosition(bp, minutes, wellsAtMinus);
+    if (pos === null) continue;
+    const y = pos * length;
+    if (last - y < gap) continue;
+    labelled.add(bp);
+    last = y;
+  }
+  return labelled;
+}
+
+/**
  * The live note on the gel.
  * @param {number} minutes @param {boolean} wellsAtMinus
  * @returns {{ tone: 'ok' | 'warn' | 'info', text: string }}

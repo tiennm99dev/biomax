@@ -1,5 +1,15 @@
 import { describe, expect, it } from 'vitest';
-import { FULL_RUN, LADDER, LANES, MATCH, bandPosition, judge, mobility, runNote } from './gel.js';
+import {
+  FULL_RUN,
+  LADDER,
+  LANES,
+  MATCH,
+  bandPosition,
+  judge,
+  ladderLabels,
+  mobility,
+  runNote,
+} from './gel.js';
 
 describe('the gel', () => {
   it('runs shorter fragments further, inside the gel', () => {
@@ -32,5 +42,11 @@ describe('the gel', () => {
     expect(wrong.ok).toBe(false);
     expect(wrong.text).toContain('800');
     expect(wrong.text).toContain('600');
+  });
+
+  it('labels the ladder bands without overlapping labels', () => {
+    expect([...ladderLabels(FULL_RUN / 2, true, 220)]).toEqual([100, 200, 500, 1000, 2000]);
+    expect([...ladderLabels(FULL_RUN, true, 220)]).toEqual(LADDER);
+    expect(ladderLabels(10, false, 220).size).toBe(0);
   });
 });
