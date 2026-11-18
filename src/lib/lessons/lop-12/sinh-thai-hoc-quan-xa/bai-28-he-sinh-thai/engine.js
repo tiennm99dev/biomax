@@ -11,6 +11,8 @@
  * the cycle but make it a full trophic structure.
  */
 
+import { lowerFirst } from '#lib/core/sentence-case.js';
+
 /** @typedef {'vo-sinh' | 'san-xuat' | 'tieu-thu' | 'phan-giai'} Group */
 /** @typedef {{ id: string, name: string, group: Group }} Part */
 
@@ -34,16 +36,6 @@ export const PARTS = [
   { id: 'ca', name: 'Cá bảy màu', group: 'tieu-thu' },
   { id: 'vi-khuan', name: 'Vi khuẩn phân giải', group: 'phan-giai' },
 ];
-
-/**
- * A part's name inside a sentence: the first letter lowered, except in a
- * formula such as CO₂, whose second letter is a capital too.
- * @param {string} text
- */
-export function lowerFirst(text) {
-  if (/^\p{Lu}\p{Lu}/u.test(text)) return text;
-  return text.charAt(0).toLowerCase() + text.slice(1);
-}
 
 /** Abiotic parts without which the producers cannot photosynthesise. */
 const NEEDED = ['anh-sang', 'nuoc', 'khi', 'khoang'];

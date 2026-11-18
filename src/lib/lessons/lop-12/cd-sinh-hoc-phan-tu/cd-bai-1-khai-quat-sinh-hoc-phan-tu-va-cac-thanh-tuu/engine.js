@@ -6,7 +6,7 @@
  * No DOM here, so all of it is tested in Node.
  */
 import { shuffled } from '#lib/core/card-sorter.js';
-import { lowerFirst } from '../_shared/text.js';
+import { lowerFirst } from '#lib/core/sentence-case.js';
 
 /**
  * @typedef {'li-thuyet' | 'ung-dung'} Field

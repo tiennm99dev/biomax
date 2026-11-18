@@ -6,7 +6,7 @@
  */
 import { shuffled } from '#lib/core/card-sorter.js';
 import { roundToTotal } from '#lib/core/number-format.js';
-import { lowerFirst } from '../_shared/text.js';
+import { lowerFirst } from '#lib/core/sentence-case.js';
 
 /**
  * @typedef {'loi-ich' | 'rui-ro'} Side

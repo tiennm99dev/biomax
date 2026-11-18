@@ -6,7 +6,7 @@
  */
 import { shuffled } from '#lib/core/card-sorter.js';
 import { GROUPS, groupLabel } from '../_shared/groups.js';
-import { lowerFirst } from '../_shared/text.js';
+import { lowerFirst } from '#lib/core/sentence-case.js';
 
 export { GROUPS };
 
