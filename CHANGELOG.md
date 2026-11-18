@@ -1,11 +1,12 @@
 # Changelog
 
-All notable changes to **BioBuddy** are documented here. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: 4-digit MAJOR.MINOR.PATCH.MICRO.
+All notable changes to **SinhSôi** are documented here. Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Versioning: 4-digit MAJOR.MINOR.PATCH.MICRO.
 
 ## [Unreleased]
 
 ### Changed
 
+- Đổi tên site từ BioBuddy thành SinhSôi: repo `tiennm99dev/sinhsoi`, địa chỉ mới `https://tiennm99dev.github.io/sinhsoi/`. Các site anh em cũng đổi sang tên tiếng Việt: MathMate thành ToánTốt, AlgorithmAlly thành TinTưởng, PhysicsFriend thành LíLẽ, ChemCoach thành HoáHợp. Tiến độ "đã làm" lưu trong trình duyệt dưới cả hai tên cũ (BioMax và BioBuddy) được chuyển sang tên mới ở lần mở bài đầu tiên.
 - Đổi tên site từ BioMax thành BioBuddy: repo `tiennm99dev/biobuddy`, địa chỉ mới `https://tiennm99dev.github.io/biobuddy/`. Site anh em MathMax đổi thành MathMate. Tiến độ "đã làm" lưu trong trình duyệt dưới tên cũ được chuyển sang tên mới ở lần mở bài đầu tiên.
 
 ## [0.0.1.0] - 2026-10-25

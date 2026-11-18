@@ -1,9 +1,9 @@
 export const site = {
-  title: 'BioBuddy',
-  repo: 'https://github.com/tiennm99dev/biobuddy',
+  title: 'SinhSôi',
+  repo: 'https://github.com/tiennm99dev/sinhsoi',
   tagline: 'Sinh học tương tác cho học sinh lớp 6-12',
   description:
-    'BioBuddy giúp học sinh lớp 6-12 học Sinh học theo sách Kết nối tri thức với cuộc sống qua mô hình tương tác: sơ đồ tế bào và cơ quan, bảng Punnett, phả hệ, lưới thức ăn, dịch mã DNA và đồ thị quần thể.',
+    'SinhSôi giúp học sinh lớp 6-12 học Sinh học theo sách Kết nối tri thức với cuộc sống qua mô hình tương tác: sơ đồ tế bào và cơ quan, bảng Punnett, phả hệ, lưới thức ăn, dịch mã DNA và đồ thị quần thể.',
 };
 
 export const home = {
