@@ -1,0 +1,9 @@
+/* SinhSôi's subject art and colours for the age-band theme in app.css. Each
+   site owns this file and the SVGs in ./decor/; core reads only these custom
+   properties. SinhSôi starts at grade 6, so it has no kid art. */
+:root {
+  --tile-line: url('./decor/tile-line.svg');
+  --spot-line: url('./decor/spot-line.svg');
+  --subject-tint: #ecfccb;
+  --subject-ink: #3f6212;
+}

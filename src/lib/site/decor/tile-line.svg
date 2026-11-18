@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(70 72) rotate(-15)"><path d="M0 28C-20 10-20-14 0-28C20-14 20 10 0 28ZM0 30V-22M0-6L-8-14M0-6L8-14M0 6L-10-2M0 6L10-2"/></g>
+<g transform="translate(190 70)"><ellipse cx="0" cy="0" rx="30" ry="22"/><circle cx="-4" cy="-2" r="8"/><circle cx="-4" cy="-2" r="2"/><ellipse cx="15" cy="9" rx="6" ry="3"/><circle cx="-17" cy="10" r="1.5"/><circle cx="15" cy="-10" r="1.5"/></g>
+<g transform="translate(305 70)"><circle cx="-8" cy="-6" r="6"/><circle cx="8" cy="-4" r="5"/><circle cx="0" cy="9" r="6"/></g>
+<g transform="translate(420 72) rotate(30)" stroke="#3f6212"><path d="M0-30Q28-22.5 0-15T0 0T0 15T0 30M0-30Q-28-22.5 0-15T0 0T0 15T0 30"/><path d="M-10-22.5H10M-10-7.5H10M-10 7.5H10M-10 22.5H10"/></g>
+<g transform="translate(68 185)"><path d="M-20 30H20V25H-20ZM-12-30H-2L0-6H-10ZM-8-6L-7 2H-1L0-6M-18 8H8M-1-18Q12-20 12-8V25M-8 17H0"/><circle cx="12" cy="4" r="3"/></g>
+<g transform="translate(185 185)"><path d="M0-14V16M0-6C-10-24-30-22-28-6C-26 2-10 2 0-2ZM0-6C10-24 30-22 28-6C26 2 10 2 0-2ZM0 2C-8 4-22 8-18 18C-14 24-4 18 0 8ZM0 2C8 4 22 8 18 18C14 24 4 18 0 8ZM0-14Q-4-24-10-26M0-14Q4-24 10-26"/></g>
+<g transform="translate(300 188)"><circle cx="0" cy="-10" r="5"/><circle cx="0" cy="-21" r="6"/><circle cx="10.5" cy="-13.4" r="6"/><circle cx="6.5" cy="-1.1" r="6"/><circle cx="-6.5" cy="-1.1" r="6"/><circle cx="-10.5" cy="-13.4" r="6"/><path d="M0 5V30M0 22Q12 10 16 16Q10 24 0 24"/></g>
+<g transform="translate(415 185) rotate(-30)"><rect x="-30" y="-9" width="40" height="18" rx="9"/><path d="M10 0Q16-6 22 0T34 0M-16 3Q-12-3-6-2"/><circle cx="-22" cy="-2" r="1.5"/><circle cx="0" cy="3" r="1.5"/></g>
+<g transform="translate(75 298)"><ellipse cx="0" cy="18" rx="12" ry="8"/><path d="M0 10Q-2-4 0-14M0-14C-4-26-20-26-22-18C-14-12-4-12 0-14ZM0-14C4-26 20-26 22-18C14-12 4-12 0-14ZM-4 25Q-8 30-12 31M4 25Q6 30 4 33"/></g>
+<g transform="translate(192 300)"><path d="M0 24C-30 4-26-20-10-20C-4-20 0-14 0-10C0-14 4-20 10-20C26-20 30 4 0 24ZM-4-17V-26M4-17Q6-26 14-26"/></g>
+<g transform="translate(310 300)"><path d="M-20 30H20M0 30V-4M0 8L-10-2M0 2L10-8M-10-2Q-22-6-20-16Q-10-12-10-2ZM10-8Q22-12 20-22Q10-18 10-8ZM0-4Q-8-16 0-28Q8-16 0-4Z"/></g>
+<g transform="translate(420 300) rotate(30)"><path d="M0 24C-14 10-14-10 0-24C14-10 14 10 0 24ZM0 28V-18M0 0L-6-6M0 0L6-6M0 10L-7 4M0 10L7 4"/></g>
+<g transform="translate(70 415)"><circle cx="-9" cy="0" r="6"/><circle cx="4" cy="-7" r="6"/><circle cx="6" cy="7" r="6"/><circle cx="-9" cy="0" r="1.5"/></g>
+<g transform="translate(185 415) rotate(60)" stroke="#3f6212"><path d="M0 26C-18 10-18-12 0-26C18-12 18 10 0 26ZM0 28V-20M0-4L-7-11M0-4L7-11M0 8L-9 1M0 8L9 1"/></g>
+<g transform="translate(305 415) rotate(15)"><path d="M0-10V10M0-4C-6-16-20-14-18-4C-16 2-6 2 0-1ZM0-4C6-16 20-14 18-4C16 2 6 2 0-1ZM0 2C-5 3-14 6-12 12C-9 16-3 12 0 6ZM0 2C5 3 14 6 12 12C9 16 3 12 0 6Z"/></g>
+<g transform="translate(420 418) rotate(-15)"><ellipse cx="0" cy="0" rx="22" ry="11"/><path d="M-16 0Q-12-7-8 0T0 0T8 0T16 0"/></g>
+</svg>
