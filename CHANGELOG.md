@@ -4,6 +4,10 @@ All notable changes to **SinhSôi** are documented here. Format: [Keep a Changel
 
 ## [Unreleased]
 
+### Added
+
+- Trang "Thuật ngữ" (`/thuat-ngu/`): thuật ngữ Sinh học của từng lớp xếp theo bảng chữ cái, kèm tên tiếng Anh, định nghĩa ngắn và liên kết tới bài học; tìm kiếm không cần gõ dấu. Liên kết ở thanh đầu trang, trang chủ, trang lớp, và khối "Thuật ngữ trong bài" ở cuối mỗi bài có thuật ngữ. Dữ liệu từng lớp nằm ở `src/lib/glossary/lop-<N>.js` (lớp 6-12), hiện còn rỗng: trang hiện "Thuật ngữ đang được cập nhật." cho tới khi có dữ liệu.
+
 ### Changed
 
 - Đổi tên site từ BioBuddy thành SinhSôi: repo `tiennm99dev/sinhsoi`, địa chỉ mới `https://tiennm99dev.github.io/sinhsoi/`. Các site anh em cũng đổi sang tên tiếng Việt: MathMate thành ToánTốt, AlgorithmAlly thành TinTưởng, PhysicsFriend thành LíLẽ, ChemCoach thành HoáHợp. Tiến độ "đã làm" lưu trong trình duyệt dưới cả hai tên cũ (BioMax và BioBuddy) được chuyển sang tên mới ở lần mở bài đầu tiên.
