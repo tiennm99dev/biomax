@@ -35,8 +35,8 @@ export default {
             ],
             [
               'Trinh sinh',
-              'Tế bào trứng không thụ tinh phát triển thành cơ thể mới (đơn bội)',
-              'Ong, kiến, rệp',
+              'Tế bào trứng không thụ tinh phát triển thành cơ thể mới',
+              'Ong, kiến (ong đực, kiến đực có bộ nhiễm sắc thể đơn bội $n$), rệp',
             ],
           ],
         },
