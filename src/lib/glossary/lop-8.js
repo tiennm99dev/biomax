@@ -42,7 +42,7 @@ export default [
     id: 'phe-nang',
     term: 'phế nang',
     en: 'alveolus',
-    def: 'Mỗi lá phổi gồm rất nhiều phế nang, bao quanh mỗi phế nang là mạng mao mạch dày đặc. Tại đây O₂ khuếch tán từ phế nang vào máu, còn CO₂ khuếch tán từ máu vào phế nang.',
+    def: 'Túi khí rất nhỏ trong phổi, có mạng mao mạch dày đặc bao quanh. Tại đây O₂ khuếch tán vào máu, còn CO₂ khuếch tán từ máu ra.',
     lesson: `${BODY}/bai-34-he-ho-hap-o-nguoi`,
   },
   {

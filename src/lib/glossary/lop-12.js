@@ -219,7 +219,7 @@ export default [
     id: 'bac-dinh-duong',
     term: 'bậc dinh dưỡng',
     en: 'trophic level',
-    def: 'Tập hợp các loài cùng có một mức năng lượng (cùng vị trí) trong chuỗi thức ăn. Bậc cấp 1 là sinh vật sản xuất.',
+    def: 'Tập hợp các loài cùng mức năng lượng (cùng vị trí) trong chuỗi thức ăn. Bậc dinh dưỡng cấp 1 là sinh vật sản xuất.',
     lesson:
       'sinh-thai-hoc-quan-xa/bai-29-trao-doi-vat-chat-va-chuyen-hoa-nang-luong-trong-he-sinh-thai',
     see: ['hieu-suat-sinh-thai'],

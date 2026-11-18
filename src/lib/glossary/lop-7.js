@@ -108,7 +108,7 @@ export default [
   {
     id: 'tap-tinh',
     term: 'tập tính',
-    en: 'behaviour',
+    en: 'behavior',
     def: 'Một chuỗi những phản ứng của động vật trả lời các kích thích từ môi trường bên trong hoặc bên ngoài cơ thể, nhờ đó động vật thích nghi với môi trường sống và tồn tại.',
     lesson: `${CU}/bai-33-cam-ung-o-sinh-vat-va-tap-tinh-o-dong-vat`,
     see: ['tap-tinh-bam-sinh', 'tap-tinh-hoc-duoc'],
@@ -116,7 +116,7 @@ export default [
   {
     id: 'tap-tinh-bam-sinh',
     term: 'tập tính bẩm sinh',
-    en: 'innate behaviour',
+    en: 'innate behavior',
     def: 'Tập tính sinh ra đã có, đặc trưng cho loài. Ví dụ: nhện chăng tơ, thú con bú mẹ.',
     lesson: `${CU}/bai-33-cam-ung-o-sinh-vat-va-tap-tinh-o-dong-vat`,
     see: ['tap-tinh-hoc-duoc'],
@@ -124,7 +124,7 @@ export default [
   {
     id: 'tap-tinh-hoc-duoc',
     term: 'tập tính học được',
-    en: 'learned behaviour',
+    en: 'learned behavior',
     def: 'Tập tính hình thành trong quá trình sống của cá thể, qua học tập và rút kinh nghiệm. Nếu lâu ngày không được lặp lại, tập tính này có thể mất đi.',
     lesson: `${CU}/bai-33-cam-ung-o-sinh-vat-va-tap-tinh-o-dong-vat`,
     see: ['tap-tinh-bam-sinh'],
@@ -196,7 +196,7 @@ export default [
   {
     id: 'thu-tinh',
     term: 'thụ tinh',
-    en: 'fertilisation',
+    en: 'fertilization',
     def: 'Sự kết hợp giữa giao tử đực và giao tử cái (thực chất là sự hợp nhất nhân của chúng) tạo thành hợp tử.',
     lesson: `${SS}/bai-40-sinh-san-huu-tinh-o-sinh-vat`,
     see: ['thu-phan', 'sinh-san-huu-tinh'],
@@ -205,7 +205,7 @@ export default [
     id: 'hormone',
     term: 'hormone',
     en: 'hormone',
-    def: 'Chất điều hoà các hoạt động sống như sinh trưởng và sinh sản; sinh sản được điều hoà chủ yếu nhờ hormone. Ví dụ: tuyến yên tiết FSH, LH điều khiển quá trình trứng chín và rụng.',
+    def: 'Chất điều hoà các hoạt động sống như sinh trưởng và sinh sản. Ví dụ: tuyến yên tiết FSH, LH điều khiển quá trình trứng chín và rụng.',
     lesson: `${SS}/bai-41-mot-so-yeu-to-anh-huong-va-dieu-hoa-dieu-khien-sinh-san-o-sinh-vat`,
   },
 ];

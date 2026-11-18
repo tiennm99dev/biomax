@@ -187,7 +187,7 @@ export default [
   {
     id: 'tu-van-di-truyen',
     term: 'tư vấn di truyền',
-    en: 'genetic counselling',
+    en: 'genetic counseling',
     def: 'Hoạt động của chuyên gia di truyền: dựa vào phả hệ, xét nghiệm và kiến thức di truyền học để chẩn đoán, cho biết khả năng mắc bệnh, tật di truyền ở đời con và khuyên về việc kết hôn, sinh con.',
     lesson: `${DOI_SONG}/bai-47-di-truyen-hoc-voi-con-nguoi`,
   },
