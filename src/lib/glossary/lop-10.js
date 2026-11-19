@@ -62,20 +62,13 @@ export default [
     en: 'biomolecule',
     def: 'Hợp chất hữu cơ do tế bào tổng hợp và tồn tại trong tế bào sống, gồm bốn nhóm chính: carbohydrate, lipid, protein và nucleic acid.',
     lesson: BAI_5,
-    see: ['bien-tinh', 'nguyen-tac-bo-sung'],
+    see: ['bien-tinh'],
   },
   {
     id: 'bien-tinh',
     term: 'biến tính',
     en: 'denaturation',
     def: 'Hiện tượng các liên kết yếu giữ cấu trúc không gian của protein bị phá vỡ do nhiệt độ quá cao hoặc pH thay đổi mạnh, làm protein mất chức năng. Ví dụ: lòng trắng trứng đông lại khi luộc.',
-    lesson: BAI_5,
-  },
-  {
-    id: 'nguyen-tac-bo-sung',
-    term: 'nguyên tắc bổ sung',
-    en: 'complementary base pairing',
-    def: 'Cách base của hai chuỗi DNA bắt cặp bằng liên kết hydrogen: A với T bằng 2 liên kết, G với C bằng 3 liên kết. Vì vậy, trong một phân tử DNA, A = T và G = C.',
     lesson: BAI_5,
   },
   {

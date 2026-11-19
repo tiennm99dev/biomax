@@ -40,7 +40,7 @@ export default [
     en: 'law of segregation',
     def: 'Mỗi tính trạng do một cặp allele quy định; khi phát sinh giao tử, hai allele của cặp phân li đồng đều về các giao tử, nên mỗi giao tử chỉ chứa một allele của cặp.',
     lesson: `${MENDEL}/bai-37-cac-quy-luat-di-truyen-cua-mendel`,
-    see: ['quy-luat-phan-li-doc-lap', 'lai-phan-tich'],
+    see: ['quy-luat-phan-li-doc-lap'],
   },
   {
     id: 'quy-luat-phan-li-doc-lap',
@@ -49,14 +49,6 @@ export default [
     def: 'Các cặp allele quy định các tính trạng khác nhau phân li độc lập trong quá trình phát sinh giao tử; nhờ đó đời con xuất hiện biến dị tổ hợp, những kiểu hình khác bố mẹ.',
     lesson: `${MENDEL}/bai-37-cac-quy-luat-di-truyen-cua-mendel`,
     see: ['quy-luat-phan-li', 'di-truyen-lien-ket'],
-  },
-  {
-    id: 'lai-phan-tich',
-    term: 'lai phân tích',
-    en: 'test cross',
-    def: 'Phép lai giữa cá thể mang tính trạng trội cần xác định kiểu gene với cá thể mang tính trạng lặn. Đời con đồng tính thì cá thể đó là AA, phân tính 1 trội : 1 lặn thì là Aa.',
-    lesson: `${MENDEL}/bai-37-cac-quy-luat-di-truyen-cua-mendel`,
-    see: ['kieu-gene'],
   },
   {
     id: 'gene',
